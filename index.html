@@ -8,6 +8,15 @@
 :root{--bg:#0f1b10;--sf:#1a2e1c;--sf2:#243d27;--gr:#4caf50;--lime:#e8f5e9;--warn:#ffb74d;--err:#ef5350;--txt:#e8f5e9;--sub:#8caf7a;--r:12px}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+#dedicatie{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:100;padding:24px}
+#ded-card{background:var(--sf);border-radius:20px;max-width:420px;width:100%;padding:36px 28px;text-align:center;border:1.5px solid var(--gr);box-shadow:0 0 60px #4caf5022}
+#ded-icon{font-size:48px;margin-bottom:16px}
+#ded-name{font-size:28px;font-weight:900;color:var(--lime);margin-bottom:6px;letter-spacing:-.5px}
+#ded-sub{font-size:13px;color:var(--sub);margin-bottom:24px;font-style:italic}
+#ded-text{font-size:15px;line-height:1.8;color:var(--lime);margin-bottom:28px}
+#ded-sign{font-size:13px;color:var(--sub);margin-bottom:28px;font-style:italic}
+#ded-btn{background:var(--gr);color:#0f1b10;border:none;border-radius:12px;padding:14px 32px;font-size:16px;font-weight:800;cursor:pointer;width:100%;transition:opacity .15s}
+#ded-btn:hover{opacity:.88}
 #session-bar{width:100%;max-width:760px;padding:16px 16px 0;display:flex;flex-direction:column;gap:8px}
 #session-title{font-size:17px;font-weight:800;color:var(--gr)}
 #session-sub{font-size:11px;color:var(--sub);margin-bottom:4px}
@@ -64,6 +73,27 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
 </style>
 </head>
 <body>
+<div id="dedicatie">
+  <div id="ded-card">
+    <div id="ded-icon">⚖️</div>
+    <div id="ded-name">Pentru Miruna</div>
+    <div id="ded-sub">de la Tată, cu drag</div>
+    <div id="ded-text">
+      Ai ales unul dintre cele mai frumoase și grele drumuri —
+      să aperi dreptatea.<br><br>
+      Tot ce ai învățat, tot ce ai muncit,
+      tot ce ai sacrificat pentru acest examen
+      are sens.<br><br>
+      Eu știu că poți. Acum e rândul tău
+      să îți demonstrezi și ție.
+    </div>
+    <div id="ded-sign">— Tata 🤍</div>
+    <button id="ded-btn" onclick="document.getElementById('dedicatie').style.display='none'">
+      Începe examenul →
+    </button>
+  </div>
+</div>
+
 <div id="session-bar">
   <div id="session-title">📚 Grilă Licență Drept — UNIBUC</div>
   <div id="session-sub">Facultatea de Drept București · 13 sesiuni · 2024–2026</div>
