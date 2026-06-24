@@ -26,6 +26,9 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
 #score-box{background:var(--sf);border-radius:var(--r);padding:6px 14px;text-align:center}
 #score-label{font-size:10px;color:var(--sub)}
 #score-val{font-size:20px;font-weight:800;color:var(--gr)}
+#timer-box{background:var(--sf);border-radius:var(--r);padding:6px 14px;text-align:center;min-width:76px}
+#timer-label{font-size:10px;color:var(--sub)}
+#timer-val{font-size:20px;font-weight:800;color:var(--gr);font-variant-numeric:tabular-nums;letter-spacing:1px}
 #progress-bar{width:100%;max-width:760px;height:4px;background:var(--sf2);margin:10px 0 0}
 #progress-fill{height:100%;background:var(--gr);transition:width .3s;width:0%}
 #sec-lbl{width:100%;max-width:760px;padding:8px 16px 0;font-size:11px;font-weight:700;letter-spacing:1px;color:var(--sub);text-transform:uppercase}
@@ -103,7 +106,10 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
 </div>
 <div id="header">
   <div id="session-name"></div>
-  <div id="score-box"><div id="score-label">Puncte</div><div id="score-val">0 / 0</div></div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <div id="timer-box"><div id="timer-label">Timp</div><div id="timer-val">00:00</div></div>
+    <div id="score-box"><div id="score-label">Puncte</div><div id="score-val">0 / 0</div></div>
+  </div>
 </div>
 <div id="progress-bar"><div id="progress-fill"></div></div>
 <div id="sec-lbl"></div>
@@ -127,6 +133,7 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
   <div id="r-big"></div>
   <div id="r-sub">din <span id="r-total">100</span> întrebări</div>
   <div id="r-grade"></div>
+  <div id="r-time" style="font-size:14px;color:var(--sub);margin:8px 0"></div>
   <div id="r-bars">
     <div class="rb ok"><div class="rv" id="r-ok">0</div><div class="rl">Corecte</div></div>
     <div class="rb ko"><div class="rv" id="r-ko">0</div><div class="rl">Greșite</div></div>
@@ -140,6 +147,14 @@ const ALL_SESSIONS={"feb2024_g1":[{"n":1,"stem":"Nulitatea relativă","a":"inter
 const ALL_LABELS={"feb2024_g1": "Feb 2024 · Grila 1", "feb2024_g2": "Feb 2024 · Grila 2", "jul2024_g1": "Jul 2024 · Grila 1", "jul2024_g2": "Jul 2024 · Grila 2", "jul2024_g3": "Jul 2024 · Grila 3", "jul2024_g4": "Jul 2024 · Grila 4", "feb2025_g1": "Feb 2025 · Grila 1", "feb2025_g2": "Feb 2025 · Grila 2", "jul2025_g1": "Jul 2025 · Grila 1", "jul2025_g2": "Jul 2025 · Grila 2", "jul2025_g3": "Jul 2025 · Grila 3", "jul2025_g4": "Jul 2025 · Grila 4", "feb2026_g1": "Feb 2026 · Grila 1"};
 const SESSION_ORDER=["feb2024_g1", "feb2024_g2", "jul2024_g1", "jul2024_g2", "jul2024_g3", "jul2024_g4", "feb2025_g1", "feb2025_g2", "jul2025_g1", "jul2025_g2", "jul2025_g3", "jul2025_g4", "feb2026_g1"];
 let QUESTIONS=[],current=0,userAnswers={},sessionKey='';
+let timerInterval=null,timerSecs=0;
+function timerFmt(s){const m=Math.floor(s/60),ss=s%60;return(m<10?'0':'')+m+':'+(ss<10?'0':'')+ss;}
+function startTimer(){
+  clearInterval(timerInterval);timerSecs=0;
+  document.getElementById('timer-val').textContent='00:00';
+  timerInterval=setInterval(()=>{timerSecs++;document.getElementById('timer-val').textContent=timerFmt(timerSecs);},1000);
+}
+function stopTimer(){clearInterval(timerInterval);}
 const sel=document.getElementById('session-select');
 SESSION_ORDER.forEach(k=>{
   if(!ALL_SESSIONS[k])return;
@@ -148,7 +163,7 @@ SESSION_ORDER.forEach(k=>{
   sel.appendChild(o);
 });
 function changeSession(key){
-  sessionKey=key;QUESTIONS=ALL_SESSIONS[key]||[];current=0;userAnswers={};
+  sessionKey=key;QUESTIONS=ALL_SESSIONS[key]||[];current=0;userAnswers={};startTimer();
   document.getElementById('result').classList.remove('show');
   ['card','nav','q-grid','sec-lbl'].forEach(id=>document.getElementById(id).style.display='');
   document.getElementById('session-name').textContent=ALL_LABELS[key]||key;
@@ -206,6 +221,7 @@ function renderGrid(){
   });
 }
 function showResult(){
+  stopTimer();
   ['card','nav','q-grid','sec-lbl'].forEach(id=>document.getElementById(id).style.display='none');
   document.getElementById('result').classList.add('show');
   const correct=Object.entries(userAnswers).filter(([k,v])=>{const qq=QUESTIONS.find(x=>x.n==k);return qq&&qq.correct===v;}).length;
@@ -214,8 +230,9 @@ function showResult(){
   document.getElementById('r-total').textContent=total;
   document.getElementById('r-grade').textContent=correct>=60?'✅ Promovat (≥60 puncte)':'❌ Nepromovat (<60 puncte)';
   document.getElementById('r-ok').textContent=correct;document.getElementById('r-ko').textContent=wrong;document.getElementById('r-sk').textContent=skip;
+  document.getElementById('r-time').textContent='⏱ Timp: '+timerFmt(timerSecs);
 }
-function restart(){userAnswers={};current=0;['card','nav','q-grid','sec-lbl'].forEach(id=>document.getElementById(id).style.display='');document.getElementById('result').classList.remove('show');render();}
+function restart(){userAnswers={};current=0;startTimer();['card','nav','q-grid','sec-lbl'].forEach(id=>document.getElementById(id).style.display='');document.getElementById('result').classList.remove('show');render();}
 function showSessionPicker(){userAnswers={};current=0;['card','nav','q-grid'].forEach(id=>document.getElementById(id).style.display='');document.getElementById('sec-lbl').style.display='';document.getElementById('result').classList.remove('show');window.scrollTo(0,0);}
 changeSession(SESSION_ORDER[SESSION_ORDER.length-1]);
 sel.value=SESSION_ORDER[SESSION_ORDER.length-1];
