@@ -192,8 +192,6 @@ function render(){
 function selectAnswer(letter){
   const q=QUESTIONS[current];if(userAnswers[q.n])return;
   userAnswers[q.n]=letter;render();
-  const delay=letter===q.correct?1200:2200;
-  if(current<QUESTIONS.length-1)setTimeout(()=>{current++;render();},delay);
 }
 function go(dir){current=Math.max(0,Math.min(QUESTIONS.length-1,current+dir));render();}
 function renderGrid(){
