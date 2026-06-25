@@ -392,7 +392,7 @@ function selectAnswer(letter){
     else{if(idx<0)arr.push(q.n);}}
   saveProgress();saveState();render();
 }
-function go(dir){current=Math.max(0,Math.min(QUESTIONS.length-1,current+dir));if(mode==='flash')flashRevealed=false;saveProgress();render();}
+function go(dir){current=Math.max(0,Math.min(QUESTIONS.length-1,current+dir));if(mode==='flash')flashRevealed=false;saveProgress();render();window.scrollTo(0,0);}
 function renderGrid(){
   const grid=document.getElementById('q-grid');grid.innerHTML='';
   QUESTIONS.forEach(function(q,i){const dot=document.createElement('div');dot.className='q-dot';dot.textContent=(mode==='normal'?q.n:(i+1));const ans=userAnswers[i];if(ans!==undefined)dot.classList.add(mode==='exam'?'ans':(ans===q.correct?'ok':'ko'));if(STATE.marked[qid(q)])dot.classList.add('mk');if(i===current)dot.classList.add('cur');dot.onclick=function(){current=i;render();};grid.appendChild(dot);});
