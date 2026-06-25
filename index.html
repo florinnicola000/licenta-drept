@@ -52,10 +52,12 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
 .opt.wrong .lbl{color:var(--err)}
 .opt.picked{border-color:var(--sub)}
 .q-dot.ans{background:var(--sub);color:#0f1b10}
-#flash-flip{display:none;margin:8px 0 12px}
-#flash-flip button{width:100%;padding:18px;background:var(--sf);border:2px dashed var(--sub);border-radius:12px;color:var(--sub);font-size:15px;font-weight:700;cursor:pointer;transition:.15s}
-#flash-flip button:hover{border-color:var(--gr);color:var(--gr)}
+#flash-flip{display:none;margin:16px 0 4px}
+#flash-flip button{width:100%;padding:20px;background:var(--gr);border:none;border-radius:12px;color:#0f1b10;font-size:16px;font-weight:800;cursor:pointer;transition:opacity .15s;letter-spacing:.3px}
+#flash-flip button:active{opacity:.8}
+#card.flash-mode{cursor:pointer}
 #card.flash-mode #q-text{font-size:17px;line-height:1.75;margin-bottom:4px}
+#flash-tap-hint{display:none;text-align:center;font-size:11px;color:var(--sub);margin-top:6px}
 #timer-val.hms{font-size:15px;letter-spacing:0}
 #note-area{width:100%;box-sizing:border-box;background:var(--sf);color:var(--txt);border:1px solid var(--sf2);border-radius:8px;padding:8px 10px;font-size:12px;font-family:inherit;resize:vertical;min-height:44px;margin-top:8px;outline:none;line-height:1.5;display:none}
 #note-area.show{display:block}
@@ -227,6 +229,7 @@ body.light #chart-body{background:var(--sf2)}
   </div>
   <div id="q-text"></div>
   <div id="flash-flip"><button onclick="doFlip()">👁 Arată răspunsul</button></div>
+  <div id="flash-tap-hint">sau atinge oriunde pe card</div>
   <div id="options"></div>
   <div id="abs-hint"></div>
   <div id="feedback"></div>
@@ -348,19 +351,22 @@ function render(){
   document.getElementById('card').classList.toggle('flash-mode',mode==='flash');
   document.getElementById('q-text').textContent=q.stem+':';
   const ff=document.getElementById('flash-flip');if(ff)ff.style.display=(mode==='flash'&&!flashRevealed)?'block':'none';
+  const fth=document.getElementById('flash-tap-hint');if(fth)fth.style.display=(mode==='flash'&&!flashRevealed)?'block':'none';
+  document.getElementById('card').onclick=(mode==='flash'&&!flashRevealed)?doFlip:null;
   const opts=document.getElementById('options');opts.innerHTML='';
-  if(mode!=='flash'||flashRevealed){
-    ['a','b','c'].forEach(function(letter){
-      const text=q[letter];if(!text)return;
-      const div=document.createElement('div');div.className='opt';
-      if(mode==='flash'){if(letter===q.correct)div.classList.add('correct');}
-      else if(mode==='exam'){if(answered!==undefined&&letter===answered)div.classList.add('picked');}
-      else{if(answered!==undefined){if(letter===q.correct)div.classList.add('correct');else if(letter===answered)div.classList.add('wrong');}
-        div.onclick=function(){selectAnswer(letter);};}
-      div.innerHTML='<span class="lbl">'+letter+')</span><span>'+esc(text)+'</span>';
-      opts.appendChild(div);
-    });
-  }
+  ['a','b','c'].forEach(function(letter){
+    const text=q[letter];if(!text)return;
+    const div=document.createElement('div');div.className='opt';
+    if(mode==='flash'){
+      if(flashRevealed&&letter===q.correct)div.classList.add('correct');
+    } else {
+      div.onclick=function(){selectAnswer(letter);};
+      if(mode==='exam'){if(answered!==undefined&&letter===answered)div.classList.add('picked');}
+      else{if(answered!==undefined){if(letter===q.correct)div.classList.add('correct');else if(letter===answered)div.classList.add('wrong');}}
+    }
+    div.innerHTML='<span class="lbl">'+letter+')</span><span>'+esc(text)+'</span>';
+    opts.appendChild(div);
+  });
   const hint=document.getElementById('abs-hint');if(hint){if(mode==='exam'||mode==='flash'){hint.className='';hint.textContent='';}else{const allOpts=['a','b','c'].map(function(l){return(q[l]||'').toLowerCase();}).join(' ');const ABS=['în toate cazurile','în niciun caz','niciodată','întotdeauna','exclusiv','obligatoriu','indiferent'];const found=ABS.filter(function(w){return allOpts.indexOf(w)>=0;});if(found.length){hint.className='show';hint.textContent='⚠ Atenție: cuvânt absolut („'+found[0]+'") — verifică bine opțiunile!';}else{hint.className='';hint.textContent='';}}}
   const fb=document.getElementById('feedback');
   if(mode==='flash'&&flashRevealed){fb.className='show correct';fb.textContent='✓ Răspuns: '+q.correct+') '+q[q.correct];}
