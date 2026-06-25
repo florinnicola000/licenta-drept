@@ -54,6 +54,9 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
 #explanation{border-radius:8px;padding:9px 13px;font-size:12px;margin-top:6px;display:none;background:#12263a;color:#a8c8e8;border:1px solid #2a5580;line-height:1.55}
 #explanation.show{display:block}
 #feedback.show{display:block}
+#abs-hint{border-radius:8px;padding:7px 12px;font-size:12px;margin-top:-3px;margin-bottom:6px;display:none;background:#2a2010;color:var(--warn);border:1px solid #5a4010;line-height:1.5}
+#abs-hint.show{display:block}
+body.light #abs-hint{background:#fff8e1;border-color:#f0c040;color:#7a5c00}
 #feedback.correct{background:#1a2e1c;color:var(--gr);border:1px solid var(--gr)}
 #feedback.wrong{background:#2e1a1a;color:var(--err);border:1px solid var(--err)}
 #nav{width:100%;max-width:760px;display:flex;justify-content:space-between;align-items:center;padding:12px 16px 16px;gap:10px}
@@ -208,6 +211,7 @@ body.light #chart-body{background:var(--sf2)}
   </div>
   <div id="q-text"></div>
   <div id="options"></div>
+  <div id="abs-hint"></div>
   <div id="feedback"></div>
   <div id="explanation"></div>
 </div>
@@ -325,6 +329,7 @@ function render(){
     div.innerHTML='<span class="lbl">'+letter+')</span><span>'+esc(text)+'</span>';
     opts.appendChild(div);
   });
+  const hint=document.getElementById('abs-hint');if(hint){const allOpts=['a','b','c'].map(function(l){return(q[l]||'').toLowerCase();}).join(' ');const ABS=['în toate cazurile','în niciun caz','niciodată','întotdeauna','exclusiv','obligatoriu','indiferent'];const found=ABS.filter(function(w){return allOpts.indexOf(w)>=0;});if(found.length){hint.className='show';hint.textContent='⚠ Atenție: cuvânt absolut („'+found[0]+'") — verifică bine opțiunile!';}else{hint.className='';hint.textContent='';}}
   const fb=document.getElementById('feedback');
   if(answered!==undefined){fb.className='show '+(answered===q.correct?'correct':'wrong');fb.textContent=answered===q.correct?'✓ Răspuns corect!':'✗ Greșit. Corect: '+q.correct+') '+q[q.correct];}else{fb.className='';fb.textContent='';}
   const ex=document.getElementById('explanation');
