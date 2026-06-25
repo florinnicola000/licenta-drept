@@ -379,7 +379,9 @@ function render(){
   document.getElementById('btn-prev').disabled=current===0;
   const nb=document.getElementById('btn-next');
   if(current===QUESTIONS.length-1){nb.textContent='Finalizează →';nb.onclick=showResult;nb.disabled=false;}else{nb.textContent='Înainte →';nb.onclick=function(){go(1);};nb.disabled=false;}
-  updMarkBtn();renderGrid();
+  updMarkBtn();
+  const qg=document.getElementById('q-grid');if(qg)qg.style.display=mode==='flash'?'none':'';
+  if(mode!=='flash')renderGrid();
 }
 function updMarkBtn(){var b=document.getElementById('mark-btn');if(!b)return;var q=QUESTIONS[current];var on=q&&STATE.marked[qid(q)];b.textContent=on?'★':'☆';b.classList.toggle('on',!!on);}
 function toggleMark(){var q=QUESTIONS[current];if(!q)return;var id=qid(q);if(STATE.marked[id])delete STATE.marked[id];else STATE.marked[id]=1;saveState();updMarkBtn();}
