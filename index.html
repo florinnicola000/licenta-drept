@@ -229,7 +229,7 @@ body.light #chart-body{background:var(--sf2)}
   </div>
   <div id="q-text"></div>
   <div id="flash-flip"><button onclick="doFlip()">👁 Arată răspunsul</button></div>
-  <div id="flash-tap-hint">sau atinge oriunde pe card</div>
+  <div id="flash-tap-hint">← swipe stânga/dreapta · swipe sus pentru răspuns →</div>
   <div id="options"></div>
   <div id="abs-hint"></div>
   <div id="feedback"></div>
@@ -525,6 +525,16 @@ function toggleTimed(){STATE.opts.timed=!STATE.opts.timed;saveState();applyOpts(
 applyOpts();
 changeSession(SESSION_ORDER[SESSION_ORDER.length-1]);
 (function(){var na=document.getElementById('note-area');if(na)na.addEventListener('input',function(){var q=QUESTIONS[current];if(!q)return;var v=this.value;if(v)STATE.notes[qid(q)]=v;else delete STATE.notes[qid(q)];saveState();});})();
+(function(){var card=document.getElementById('card'),tx=0,ty=0,swiped=false;
+card.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;ty=e.touches[0].clientY;swiped=false;},{passive:true});
+card.addEventListener('touchend',function(e){
+  if(mode!=='flash')return;
+  var dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;
+  if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.5){swiped=true;if(dx<0)go(1);else go(-1);}
+  else if(dy<-55&&Math.abs(dy)>Math.abs(dx)*1.5&&!flashRevealed){swiped=true;doFlip();}
+},{passive:true});
+var origFlip=window.doFlip;window.doFlip=function(){if(swiped){swiped=false;return;}flashRevealed=true;render();};
+})();
 </script>
 <script>
 if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(function(){});}
