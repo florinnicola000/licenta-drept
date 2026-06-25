@@ -50,6 +50,13 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
 .opt.wrong{border-color:var(--err);background:#2e1a1a}
 .lbl{font-weight:800;font-size:15px;min-width:22px;color:var(--gr);padding-top:1px}
 .opt.wrong .lbl{color:var(--err)}
+.opt.picked{border-color:var(--sub)}
+.q-dot.ans{background:var(--sub);color:#0f1b10}
+#timer-val.hms{font-size:15px;letter-spacing:0}
+#note-area{width:100%;box-sizing:border-box;background:var(--sf);color:var(--txt);border:1px solid var(--sf2);border-radius:8px;padding:8px 10px;font-size:12px;font-family:inherit;resize:vertical;min-height:44px;margin-top:8px;outline:none;line-height:1.5;display:none}
+#note-area.show{display:block}
+#note-area:focus{border-color:var(--gr)}
+#note-area::placeholder{color:var(--sub);font-style:italic}
 #feedback{min-height:34px;border-radius:8px;padding:9px 13px;font-size:13px;font-weight:600;margin-top:4px;display:none}
 #explanation{border-radius:8px;padding:9px 13px;font-size:12px;margin-top:6px;display:none;background:#12263a;color:#a8c8e8;border:1px solid #2a5580;line-height:1.55}
 #explanation.show{display:block}
@@ -167,6 +174,7 @@ body.light #chart-body{background:var(--sf2)}
 </div>
 <div class="toolbar">
   <button class="tbtn" data-mode="mixt" onclick="startMixt()">🎲 Examen mixt</button>
+  <button class="tbtn" data-mode="exam" onclick="startExam()">🎓 Simulare examen</button>
   <button class="tbtn" data-mode="wrong" onclick="startWrong()">📌 Greșelile mele</button>
   <button class="tbtn" data-mode="materie" onclick="toggleMatChooser()">🎯 Pe materie</button>
   <button class="tbtn" data-mode="marked" onclick="startMarked()">⭐ Marcate</button>
@@ -217,6 +225,7 @@ body.light #chart-body{background:var(--sf2)}
   <div id="abs-hint"></div>
   <div id="feedback"></div>
   <div id="explanation"></div>
+  <textarea id="note-area" placeholder="📝 Notița ta pentru această întrebare…"></textarea>
 </div>
 <div id="q-grid"></div>
 <div id="nav">
@@ -252,7 +261,7 @@ const LS_KEY='ldr_progress_v2';
 function loadState(){try{return JSON.parse(localStorage.getItem(LS_KEY))||{}}catch(e){return{}}}
 function saveState(){try{localStorage.setItem(LS_KEY,JSON.stringify(STATE))}catch(e){}}
 let STATE=loadState();
-STATE.prog=STATE.prog||{};STATE.best=STATE.best||{};STATE.wrong=STATE.wrong||{};STATE.stats=STATE.stats||{};STATE.opts=STATE.opts||{};STATE.marked=STATE.marked||{};STATE.hist=STATE.hist||[];
+STATE.prog=STATE.prog||{};STATE.best=STATE.best||{};STATE.wrong=STATE.wrong||{};STATE.stats=STATE.stats||{};STATE.opts=STATE.opts||{};STATE.marked=STATE.marked||{};STATE.hist=STATE.hist||[];STATE.notes=STATE.notes||{};
 const MAT=[['civ','⚖️ Drept civil'],['pciv','📜 Procedură civilă'],['pen','🔒 Drept penal'],['ppen','🛡️ Procedură penală']];
 function materieKey(n){return n<=35?'civ':n<=50?'pciv':n<=85?'pen':'ppen';}
 function materieLabel(n){return n<=35?'Drept civil':n<=50?'Procedură civilă':n<=85?'Drept penal':'Procedură penală';}
@@ -261,11 +270,11 @@ function isAnulata(q){return (q.explanation||'').trim().indexOf('[Întrebare ANU
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t;}return a;}
 function esc(s){return (s||'').replace(/[&<>]/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;'})[c];});}
 function qid(q){return (q._sk||sessionKey)+'#'+q.n;}
-function timerFmt(s){const m=Math.floor(s/60),ss=s%60;return(m<10?'0':'')+m+':'+(ss<10?'0':'')+ss;}
+function timerFmt(s){const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),ss=s%60;if(h>0)return(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(ss<10?'0':'')+ss;return(m<10?'0':'')+m+':'+(ss<10?'0':'')+ss;}
 function updTimer(){
   const box=document.getElementById('timer-val'),lbl=document.getElementById('timer-label');
-  if(timed&&timeLimit>0){const rem=Math.max(0,timeLimit-timerSecs);box.textContent=timerFmt(rem);lbl.textContent='Rămas';box.style.color=rem<=300?'var(--err)':'';}
-  else{box.textContent=timerFmt(timerSecs);lbl.textContent='Timp';box.style.color='';}
+  if(timed&&timeLimit>0){const rem=Math.max(0,timeLimit-timerSecs);box.textContent=timerFmt(rem);lbl.textContent=mode==='exam'?'🎓 Examen':'Rămas';box.style.color=rem<=(mode==='exam'?600:300)?'var(--err)':'';box.classList.toggle('hms',rem>=3600);}
+  else{box.textContent=timerFmt(timerSecs);lbl.textContent='Timp';box.style.color='';box.classList.remove('hms');}
 }
 function startTimer(from){clearInterval(timerInterval);timerSecs=from||0;updTimer();timerInterval=setInterval(function(){timerSecs++;updTimer();if(timed&&timeLimit>0&&timerSecs>=timeLimit){stopTimer();showResult();}},1000);}
 function stopTimer(){clearInterval(timerInterval);}
@@ -304,8 +313,10 @@ function changeSession(key){if(!key)return;sel.value=key;const qs=(ALL_SESSIONS[
 function startMixt(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);var qs=pool.slice(0,Math.min(50,pool.length));document.getElementById('session-name').textContent='🎲 Examen mixt — '+qs.length+' întrebări aleatorii';startSet(qs,'mixt','');}
 function startMaterie(k){matKey=k;var pool=[];SESSION_ORDER.forEach(function(s){(ALL_SESSIONS[s]||[]).forEach(function(q){if(q.correct&&!isAnulata(q)&&materieKey(q.n)===k)pool.push(Object.assign({_sk:s},q));});});shuffle(pool);var qs=pool.slice(0,Math.min(50,pool.length));document.getElementById('session-name').textContent='🎯 '+matLabelByKey(k)+' — '+qs.length+' întrebări';startSet(qs,'materie','');}
 function startWrong(){var pool=[];Object.keys(STATE.wrong).forEach(function(k){(STATE.wrong[k]||[]).forEach(function(n){var q=(ALL_SESSIONS[k]||[]).find(function(x){return x.n==n;});if(q&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});if(!pool.length){alert('🎉 Nu ai nicio întrebare greșită salvată!\nRezolvă câteva grile — aici vor apărea exact întrebările pe care le-ai greșit, ca să le exersezi până le stăpânești.');return;}shuffle(pool);document.getElementById('session-name').textContent='📌 Greșelile mele — '+pool.length+' de exersat';startSet(pool,'wrong','');}
+function startExam(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);var qs=pool.slice(0,100);document.getElementById('session-name').textContent='🎓 Simulare examen UNIBUC — 100 întrebări · 3 ore';timed=true;timeLimit=10800;startSet(qs,'exam','');}
 function startMarked(){var pool=[];Object.keys(STATE.marked).forEach(function(id){var p=id.split('#'),s=p[0],n=+p[1];var q=(ALL_SESSIONS[s]||[]).find(function(x){return x.n==n;});if(q)pool.push(Object.assign({_sk:s},q));});if(!pool.length){alert('Nu ai nicio întrebare marcată.\nApasă ☆ în dreptul unei întrebări ca s-o salvezi pentru recapitulare.');return;}shuffle(pool);document.getElementById('session-name').textContent='⭐ Marcate — '+pool.length+' de recapitulat';startSet(pool,'marked','');}
 function secLabel(){
+  if(mode==='exam')return '🎓 Simulare examen UNIBUC · fără feedback · limită 3 ore';
   if(mode==='mixt')return '🎲 Examen mixt — întrebări din toate sesiunile';
   if(mode==='materie')return '🎯 '+matLabelByKey(matKey)+' — din toate sesiunile';
   if(mode==='wrong')return '📌 Greșelile tale — exersează până le stăpânești';
@@ -322,23 +333,24 @@ function render(){
   document.getElementById('sec-lbl').textContent=secLabel();
   const done=Object.keys(userAnswers).length;
   document.getElementById('progress-fill').style.width=(done/QUESTIONS.length*100)+'%';
-  let correct=0;QUESTIONS.forEach(function(qq,i){if(userAnswers[i]!==undefined&&userAnswers[i]===qq.correct)correct++;});
-  document.getElementById('score-val').textContent=correct+' / '+QUESTIONS.length;
+  if(mode==='exam'){const answCnt=Object.keys(userAnswers).length;document.getElementById('score-val').textContent=answCnt+' / '+QUESTIONS.length;document.getElementById('score-label').textContent='Răspunse';}
+  else{let correct=0;QUESTIONS.forEach(function(qq,i){if(userAnswers[i]!==undefined&&userAnswers[i]===qq.correct)correct++;});document.getElementById('score-val').textContent=correct+' / '+QUESTIONS.length;document.getElementById('score-label').textContent='Puncte';}
   document.getElementById('q-text').textContent=q.stem+':';
   const opts=document.getElementById('options');opts.innerHTML='';
   ['a','b','c'].forEach(function(letter){
     const text=q[letter];if(!text)return;
     const div=document.createElement('div');div.className='opt';
-    if(answered!==undefined){if(letter===q.correct)div.classList.add('correct');else if(letter===answered)div.classList.add('wrong');}
+    if(answered!==undefined){if(mode==='exam'){if(letter===answered)div.classList.add('picked');}else{if(letter===q.correct)div.classList.add('correct');else if(letter===answered)div.classList.add('wrong');}}
     div.onclick=function(){selectAnswer(letter);};
     div.innerHTML='<span class="lbl">'+letter+')</span><span>'+esc(text)+'</span>';
     opts.appendChild(div);
   });
-  const hint=document.getElementById('abs-hint');if(hint){const allOpts=['a','b','c'].map(function(l){return(q[l]||'').toLowerCase();}).join(' ');const ABS=['în toate cazurile','în niciun caz','niciodată','întotdeauna','exclusiv','obligatoriu','indiferent'];const found=ABS.filter(function(w){return allOpts.indexOf(w)>=0;});if(found.length){hint.className='show';hint.textContent='⚠ Atenție: cuvânt absolut („'+found[0]+'") — verifică bine opțiunile!';}else{hint.className='';hint.textContent='';}}
+  const hint=document.getElementById('abs-hint');if(hint){if(mode==='exam'){hint.className='';hint.textContent='';}else{const allOpts=['a','b','c'].map(function(l){return(q[l]||'').toLowerCase();}).join(' ');const ABS=['în toate cazurile','în niciun caz','niciodată','întotdeauna','exclusiv','obligatoriu','indiferent'];const found=ABS.filter(function(w){return allOpts.indexOf(w)>=0;});if(found.length){hint.className='show';hint.textContent='⚠ Atenție: cuvânt absolut („'+found[0]+'") — verifică bine opțiunile!';}else{hint.className='';hint.textContent='';}}}
   const fb=document.getElementById('feedback');
-  if(answered!==undefined){fb.className='show '+(answered===q.correct?'correct':'wrong');fb.textContent=answered===q.correct?'✓ Răspuns corect!':'✗ Greșit. Corect: '+q.correct+') '+q[q.correct];}else{fb.className='';fb.textContent='';}
+  if(answered!==undefined&&mode!=='exam'){fb.className='show '+(answered===q.correct?'correct':'wrong');fb.textContent=answered===q.correct?'✓ Răspuns corect!':'✗ Greșit. Corect: '+q.correct+') '+q[q.correct];}else{fb.className='';fb.textContent='';}
   const ex=document.getElementById('explanation');
-  if(answered!==undefined&&q.explanation){ex.className='show';ex.textContent='💡 '+q.explanation;}else{ex.className='';ex.textContent='';}
+  if(answered!==undefined&&q.explanation&&mode!=='exam'){ex.className='show';ex.textContent='💡 '+q.explanation;}else{ex.className='';ex.textContent='';}
+  const na=document.getElementById('note-area');if(na){if(mode==='exam'){na.classList.remove('show');}else{na.classList.add('show');if(document.activeElement!==na)na.value=STATE.notes[qid(q)]||'';}}
   document.getElementById('btn-prev').disabled=current===0;
   const nb=document.getElementById('btn-next');
   if(current===QUESTIONS.length-1){nb.textContent='Finalizează →';nb.onclick=showResult;nb.disabled=false;}else{nb.textContent='Înainte →';nb.onclick=function(){go(1);};nb.disabled=false;}
@@ -358,7 +370,7 @@ function selectAnswer(letter){
 function go(dir){current=Math.max(0,Math.min(QUESTIONS.length-1,current+dir));saveProgress();render();}
 function renderGrid(){
   const grid=document.getElementById('q-grid');grid.innerHTML='';
-  QUESTIONS.forEach(function(q,i){const dot=document.createElement('div');dot.className='q-dot';dot.textContent=(mode==='normal'?q.n:(i+1));const ans=userAnswers[i];if(ans!==undefined)dot.classList.add(ans===q.correct?'ok':'ko');if(STATE.marked[qid(q)])dot.classList.add('mk');if(i===current)dot.classList.add('cur');dot.onclick=function(){current=i;render();};grid.appendChild(dot);});
+  QUESTIONS.forEach(function(q,i){const dot=document.createElement('div');dot.className='q-dot';dot.textContent=(mode==='normal'?q.n:(i+1));const ans=userAnswers[i];if(ans!==undefined)dot.classList.add(mode==='exam'?'ans':(ans===q.correct?'ok':'ko'));if(STATE.marked[qid(q)])dot.classList.add('mk');if(i===current)dot.classList.add('cur');dot.onclick=function(){current=i;render();};grid.appendChild(dot);});
 }
 function showResult(){
   stopTimer();
@@ -368,7 +380,8 @@ function showResult(){
   const total=QUESTIONS.length,wrong=ans-correct,skip=total-ans;
   document.getElementById('r-big').textContent=correct;
   document.getElementById('r-total').textContent=total;
-  if(mode==='normal'){document.getElementById('r-grade').textContent=correct>=60?'✅ Promovat (≥60 puncte)':'❌ Nepromovat (<60 puncte)';}
+  if(mode==='exam'){document.getElementById('r-grade').textContent=correct>=50?'✅ Promovat (≥50/100)':'❌ Nepromovat (<50/100)';}
+  else if(mode==='normal'){document.getElementById('r-grade').textContent=correct>=60?'✅ Promovat (≥60 puncte)':'❌ Nepromovat (<60 puncte)';}
   else{const pct=total?Math.round(correct/total*100):0;document.getElementById('r-grade').textContent=pct>=60?('✅ Foarte bine — '+pct+'%'):('💪 Continuă exersarea — '+pct+'%');}
   document.getElementById('r-ok').textContent=correct;document.getElementById('r-ko').textContent=wrong;document.getElementById('r-sk').textContent=skip;
   var pdfBtn=document.getElementById('btn-pdf');if(pdfBtn)pdfBtn.style.display=wrong>0?'block':'none';
@@ -386,6 +399,7 @@ function showResult(){
     extra='✅ Ai stăpânit '+correct+' din '+total+'.  📌 Rămase de revăzut: '+rest;
   }else if(mode==='materie'){extra='🎯 '+matLabelByKey(matKey)+' — '+correct+'/'+total;}
   else if(mode==='marked'){extra='⭐ Marcate — '+correct+'/'+total;}
+  else if(mode==='exam'){extra='🎓 Simulare examen — '+correct+'/100 · '+Math.round(correct)+'%';}
   else{extra='🎲 Examen mixt din toate sesiunile';}
   if(ans>0){STATE.hist.push({d:Date.now(),mode:mode,correct:correct,total:total});if(STATE.hist.length>60)STATE.hist=STATE.hist.slice(-60);}
   saveState();refreshOptions();
@@ -393,6 +407,7 @@ function showResult(){
   window.scrollTo(0,0);
 }
 function restart(){
+  if(mode==='exam'){startExam();return;}
   if(mode==='mixt'){startMixt();return;}
   if(mode==='materie'){startMaterie(matKey);return;}
   if(mode==='wrong'){startWrong();return;}
@@ -483,6 +498,7 @@ function toggleFont(){STATE.opts.big=!STATE.opts.big;saveState();applyOpts();}
 function toggleTimed(){STATE.opts.timed=!STATE.opts.timed;saveState();applyOpts();timed=!!STATE.opts.timed;timeLimit=timed?QUESTIONS.length*SECPERQ:0;updTimer();}
 applyOpts();
 changeSession(SESSION_ORDER[SESSION_ORDER.length-1]);
+(function(){var na=document.getElementById('note-area');if(na)na.addEventListener('input',function(){var q=QUESTIONS[current];if(!q)return;var v=this.value;if(v)STATE.notes[qid(q)]=v;else delete STATE.notes[qid(q)];saveState();});})();
 </script>
 <script>
 if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(function(){});}
