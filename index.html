@@ -52,6 +52,10 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
 .opt.wrong .lbl{color:var(--err)}
 .opt.picked{border-color:var(--sub)}
 .q-dot.ans{background:var(--sub);color:#0f1b10}
+body.flash-active .toolbar{display:none!important}
+body.flash-active #progress-bar{display:none!important}
+body.flash-active #sec-lbl{display:none!important}
+#flash-exit{display:none;background:var(--sf2);color:var(--sub);border:none;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;cursor:pointer;margin-left:8px}
 #flash-flip{display:none;margin:16px 0 4px}
 #flash-flip button{width:100%;padding:20px;background:var(--gr);border:none;border-radius:12px;color:#0f1b10;font-size:16px;font-weight:800;cursor:pointer;transition:opacity .15s;letter-spacing:.3px}
 #flash-flip button:active{opacity:.8}
@@ -225,6 +229,7 @@ body.light #chart-body{background:var(--sf2)}
   <div id="q-header">
     <span id="q-num">Întrebarea 1</span>
     <button id="mark-btn" onclick="toggleMark()" title="Marchează pentru recapitulare">☆</button>
+    <button id="flash-exit" onclick="exitFlash()">✕ Ieși</button>
     <span id="q-topic"></span>
   </div>
   <div id="q-text"></div>
@@ -307,6 +312,7 @@ function refreshOptions(){
 refreshOptions();
 /* ---- pornirea unui set de întrebări ---- */
 function startSet(qs,m,sk){
+  if(m!=='flash')document.body.classList.remove('flash-active');
   QUESTIONS=qs;mode=m;sessionKey=sk||'';
   document.getElementById('result').classList.remove('show');
   document.getElementById('stats').classList.remove('show');
@@ -322,7 +328,8 @@ function changeSession(key){if(!key)return;sel.value=key;const qs=(ALL_SESSIONS[
 function startMixt(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);var qs=pool.slice(0,Math.min(50,pool.length));document.getElementById('session-name').textContent='🎲 Examen mixt — '+qs.length+' întrebări aleatorii';startSet(qs,'mixt','');}
 function startMaterie(k){matKey=k;var pool=[];SESSION_ORDER.forEach(function(s){(ALL_SESSIONS[s]||[]).forEach(function(q){if(q.correct&&!isAnulata(q)&&materieKey(q.n)===k)pool.push(Object.assign({_sk:s},q));});});shuffle(pool);var qs=pool.slice(0,Math.min(50,pool.length));document.getElementById('session-name').textContent='🎯 '+matLabelByKey(k)+' — '+qs.length+' întrebări';startSet(qs,'materie','');}
 function startWrong(){var pool=[];Object.keys(STATE.wrong).forEach(function(k){(STATE.wrong[k]||[]).forEach(function(n){var q=(ALL_SESSIONS[k]||[]).find(function(x){return x.n==n;});if(q&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});if(!pool.length){alert('🎉 Nu ai nicio întrebare greșită salvată!\nRezolvă câteva grile — aici vor apărea exact întrebările pe care le-ai greșit, ca să le exersezi până le stăpânești.');return;}shuffle(pool);document.getElementById('session-name').textContent='📌 Greșelile mele — '+pool.length+' de exersat';startSet(pool,'wrong','');}
-function startFlash(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);document.getElementById('session-name').textContent='🃏 Flashcards — '+pool.length+' carduri din toate sesiunile';flashRevealed=false;startSet(pool,'flash','');}
+function startFlash(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);document.getElementById('session-name').textContent='🃏 Flashcards — '+pool.length+' carduri';flashRevealed=false;document.body.classList.add('flash-active');startSet(pool,'flash','');}
+function exitFlash(){document.body.classList.remove('flash-active');changeSession(sessionKey||SESSION_ORDER[SESSION_ORDER.length-1]);window.scrollTo(0,0);}
 function doFlip(){flashRevealed=true;render();}
 function startExam(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);var qs=pool.slice(0,100);document.getElementById('session-name').textContent='🎓 Simulare examen UNIBUC — 100 întrebări · 3 ore';timed=true;timeLimit=10800;startSet(qs,'exam','');}
 function startMarked(){var pool=[];Object.keys(STATE.marked).forEach(function(id){var p=id.split('#'),s=p[0],n=+p[1];var q=(ALL_SESSIONS[s]||[]).find(function(x){return x.n==n;});if(q)pool.push(Object.assign({_sk:s},q));});if(!pool.length){alert('Nu ai nicio întrebare marcată.\nApasă ☆ în dreptul unei întrebări ca s-o salvezi pentru recapitulare.');return;}shuffle(pool);document.getElementById('session-name').textContent='⭐ Marcate — '+pool.length+' de recapitulat';startSet(pool,'marked','');}
@@ -349,6 +356,9 @@ function render(){
   else if(mode==='flash'){document.getElementById('score-val').textContent=(current+1)+' / '+QUESTIONS.length;document.getElementById('score-label').textContent='Card';}
   else{let correct=0;QUESTIONS.forEach(function(qq,i){if(userAnswers[i]!==undefined&&userAnswers[i]===qq.correct)correct++;});document.getElementById('score-val').textContent=correct+' / '+QUESTIONS.length;document.getElementById('score-label').textContent='Puncte';}
   document.getElementById('card').classList.toggle('flash-mode',mode==='flash');
+  var fe=document.getElementById('flash-exit');if(fe)fe.style.display=mode==='flash'?'inline-block':'none';
+  var mb=document.getElementById('mark-btn');if(mb)mb.style.display=mode==='flash'?'none':'';
+
   document.getElementById('q-text').textContent=q.stem+':';
   const ff=document.getElementById('flash-flip');if(ff)ff.style.display=(mode==='flash'&&!flashRevealed)?'block':'none';
   const fth=document.getElementById('flash-tap-hint');if(fth)fth.style.display=(mode==='flash'&&!flashRevealed)?'block':'none';
@@ -394,7 +404,7 @@ function selectAnswer(letter){
     else{if(idx<0)arr.push(q.n);}}
   saveProgress();saveState();render();
 }
-function go(dir){current=Math.max(0,Math.min(QUESTIONS.length-1,current+dir));if(mode==='flash')flashRevealed=false;saveProgress();render();if(mode==='flash'){document.getElementById('card').scrollIntoView({block:'start'});}else{window.scrollTo(0,0);}}
+function go(dir){current=Math.max(0,Math.min(QUESTIONS.length-1,current+dir));if(mode==='flash')flashRevealed=false;saveProgress();render();window.scrollTo(0,0);}
 function renderGrid(){
   const grid=document.getElementById('q-grid');grid.innerHTML='';
   QUESTIONS.forEach(function(q,i){const dot=document.createElement('div');dot.className='q-dot';dot.textContent=(mode==='normal'?q.n:(i+1));const ans=userAnswers[i];if(ans!==undefined)dot.classList.add(mode==='exam'?'ans':(ans===q.correct?'ok':'ko'));if(STATE.marked[qid(q)])dot.classList.add('mk');if(i===current)dot.classList.add('cur');dot.onclick=function(){current=i;render();};grid.appendChild(dot);});
@@ -469,8 +479,8 @@ function printWrongs(){
 function showQuiz(on){['header','progress-bar','sec-lbl','card','q-grid','nav'].forEach(function(id){const e=document.getElementById(id);if(e)e.style.display=on?'':'none';});if(!on)document.getElementById('result').classList.remove('show');}
 function setActiveTab(m){var bs=document.querySelectorAll('.tbtn[data-mode]');for(var i=0;i<bs.length;i++){bs[i].classList.toggle('active',bs[i].getAttribute('data-mode')===m);}}
 function toggleMatChooser(force){var p=document.getElementById('mat-chooser');if(!p)return;var show=(force===undefined)?!p.classList.contains('show'):force;p.classList.toggle('show',show);}
-function openStats(){stopTimer();showQuiz(false);document.getElementById('search-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('stats').classList.add('show');setActiveTab('stats');renderStats();renderChart();window.scrollTo(0,0);}
-function openSearch(){stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');toggleMatChooser(false);document.getElementById('search-panel').classList.add('show');setActiveTab('search');var si=document.getElementById('search-input');if(si)si.focus();window.scrollTo(0,0);}
+function openStats(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('search-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('stats').classList.add('show');setActiveTab('stats');renderStats();renderChart();window.scrollTo(0,0);}
+function openSearch(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');toggleMatChooser(false);document.getElementById('search-panel').classList.add('show');setActiveTab('search');var si=document.getElementById('search-input');if(si)si.focus();window.scrollTo(0,0);}
 function backToQuiz(){document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');showQuiz(true);setActiveTab(mode);startTimer(timerSecs);window.scrollTo(0,0);}
 function renderStats(){
   const wrap=document.getElementById('stats-body');wrap.innerHTML='';var any=false;
