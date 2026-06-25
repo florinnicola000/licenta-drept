@@ -359,6 +359,8 @@ function render(){
     const div=document.createElement('div');div.className='opt';
     if(mode==='flash'){
       if(flashRevealed&&letter===q.correct)div.classList.add('correct');
+      if(flashRevealed&&answered===letter&&letter!==q.correct)div.classList.add('wrong');
+      if(!flashRevealed)div.onclick=function(){userAnswers[current]=letter;flashRevealed=true;render();};
     } else {
       div.onclick=function(){selectAnswer(letter);};
       if(mode==='exam'){if(answered!==undefined&&letter===answered)div.classList.add('picked');}
@@ -369,7 +371,7 @@ function render(){
   });
   const hint=document.getElementById('abs-hint');if(hint){if(mode==='exam'||mode==='flash'){hint.className='';hint.textContent='';}else{const allOpts=['a','b','c'].map(function(l){return(q[l]||'').toLowerCase();}).join(' ');const ABS=['în toate cazurile','în niciun caz','niciodată','întotdeauna','exclusiv','obligatoriu','indiferent'];const found=ABS.filter(function(w){return allOpts.indexOf(w)>=0;});if(found.length){hint.className='show';hint.textContent='⚠ Atenție: cuvânt absolut („'+found[0]+'") — verifică bine opțiunile!';}else{hint.className='';hint.textContent='';}}}
   const fb=document.getElementById('feedback');
-  if(mode==='flash'&&flashRevealed){fb.className='show correct';fb.textContent='✓ Răspuns: '+q.correct+') '+q[q.correct];}
+  if(mode==='flash'&&flashRevealed){if(answered!==undefined){fb.className='show '+(answered===q.correct?'correct':'wrong');fb.textContent=answered===q.correct?'✓ Corect!':'✗ Greșit. Corect: '+q.correct+') '+q[q.correct];}else{fb.className='show correct';fb.textContent='✓ Răspuns: '+q.correct+') '+q[q.correct];}}
   else if(answered!==undefined&&mode!=='exam'){fb.className='show '+(answered===q.correct?'correct':'wrong');fb.textContent=answered===q.correct?'✓ Răspuns corect!':'✗ Greșit. Corect: '+q.correct+') '+q[q.correct];}else{fb.className='';fb.textContent='';}
   const ex=document.getElementById('explanation');
   if((mode==='flash'&&flashRevealed&&q.explanation)||(answered!==undefined&&q.explanation&&mode!=='exam')){ex.className='show';ex.textContent='💡 '+q.explanation;}else{ex.className='';ex.textContent='';}

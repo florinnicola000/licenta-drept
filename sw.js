@@ -1,4 +1,4 @@
-const CACHE = 'ldr-v10';
+const CACHE = 'ldr-v11';
 const ASSETS = [
   '/licenta-drept/',
   '/licenta-drept/index.html',
