@@ -52,7 +52,7 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
 .opt.wrong .lbl{color:var(--err)}
 .opt.picked{border-color:var(--sub)}
 .q-dot.ans{background:var(--sub);color:#0f1b10}
-#flash-exit{display:none;background:#c0392b;color:#fff;border:none;border-radius:20px;padding:5px 14px;font-size:13px;font-weight:700;cursor:pointer;margin-left:auto}
+#flash-exit{display:none;background:#c0392b;color:#fff;border:none;border-radius:20px;padding:6px 16px;font-size:14px;font-weight:700;cursor:pointer}
 #flash-flip{display:none;margin:16px 0 4px}
 #flash-flip button{width:100%;padding:20px;background:var(--gr);border:none;border-radius:12px;color:#0f1b10;font-size:16px;font-weight:800;cursor:pointer;transition:opacity .15s;letter-spacing:.3px}
 #flash-flip button:active{opacity:.8}
@@ -356,7 +356,10 @@ function render(){
   var isFlash=mode==='flash';
   var fe=document.getElementById('flash-exit');if(fe)fe.style.display=isFlash?'inline-block':'none';
   var mb=document.getElementById('mark-btn');if(mb)mb.style.display=isFlash?'none':'';
+  var qn=document.getElementById('q-num');if(qn){if(isFlash){qn.textContent=(current+1)+' / '+QUESTIONS.length;qn.style.cssText='font-size:13px;color:var(--sub);margin-left:auto;margin-right:0';}else{qn.style.cssText='';}}
+  var qt=document.getElementById('q-topic');if(qt)qt.style.display=isFlash?'none':'';
   var tb=document.querySelector('.toolbar');if(tb)tb.style.display=isFlash?'none':'';
+  var hd=document.getElementById('header');if(hd)hd.style.display=isFlash?'none':'';
   var pb=document.getElementById('progress-bar');if(pb)pb.style.display=isFlash?'none':'';
   var sl=document.getElementById('sec-lbl');if(sl)sl.style.display=isFlash?'none':'';
 
