@@ -103,6 +103,7 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
   <div id="session-title">📚 Grilă Licență Drept — UNIBUC</div>
   <div id="session-sub">Facultatea de Drept București · 13 sesiuni · 2024–2026</div>
   <select id="session-select" onchange="changeSession(this.value)"></select>
+  <div onclick="resetProgress()" style="font-size:11px;color:var(--sub);cursor:pointer;text-align:right;opacity:.8">🗑 Resetează progresul salvat</div>
 </div>
 <div id="header">
   <div id="session-name"></div>
@@ -134,6 +135,7 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
   <div id="r-sub">din <span id="r-total">100</span> întrebări</div>
   <div id="r-grade"></div>
   <div id="r-time" style="font-size:14px;color:var(--sub);margin:8px 0"></div>
+  <div id="r-extra" style="font-size:13px;color:var(--gr);font-weight:600;margin:4px 0 14px"></div>
   <div id="r-bars">
     <div class="rb ok"><div class="rv" id="r-ok">0</div><div class="rl">Corecte</div></div>
     <div class="rb ko"><div class="rv" id="r-ko">0</div><div class="rl">Greșite</div></div>
@@ -148,22 +150,42 @@ const ALL_LABELS={"feb2024_g1": "Feb 2024 · Grila 1", "feb2024_g2": "Feb 2024 �
 const SESSION_ORDER=["feb2024_g1", "feb2024_g2", "jul2024_g1", "jul2024_g2", "jul2024_g3", "jul2024_g4", "feb2025_g1", "feb2025_g2", "jul2025_g1", "jul2025_g2", "jul2025_g3", "jul2025_g4", "feb2026_g1"];
 let QUESTIONS=[],current=0,userAnswers={},sessionKey='';
 let timerInterval=null,timerSecs=0;
+/* ---- salvare progres (localStorage) ---- */
+const LS_KEY='ldr_progress_v1';
+function loadState(){try{return JSON.parse(localStorage.getItem(LS_KEY))||{}}catch(e){return{}}}
+function saveState(){try{localStorage.setItem(LS_KEY,JSON.stringify(STATE))}catch(e){}}
+let STATE=loadState();
+STATE.prog=STATE.prog||{};STATE.best=STATE.best||{};STATE.wrong=STATE.wrong||{};
+function saveProgress(){if(!sessionKey)return;STATE.prog[sessionKey]={a:userAnswers,c:current,s:timerSecs};saveState();}
+function resetProgress(){if(confirm('Ștergi tot progresul salvat (scoruri, reluare, greșeli)?')){STATE={prog:{},best:{},wrong:{}};saveState();refreshOptions();changeSession(sessionKey);}}
 function timerFmt(s){const m=Math.floor(s/60),ss=s%60;return(m<10?'0':'')+m+':'+(ss<10?'0':'')+ss;}
-function startTimer(){
-  clearInterval(timerInterval);timerSecs=0;
-  document.getElementById('timer-val').textContent='00:00';
+function startTimer(from){
+  clearInterval(timerInterval);timerSecs=from||0;
+  document.getElementById('timer-val').textContent=timerFmt(timerSecs);
   timerInterval=setInterval(()=>{timerSecs++;document.getElementById('timer-val').textContent=timerFmt(timerSecs);},1000);
 }
 function stopTimer(){clearInterval(timerInterval);}
 const sel=document.getElementById('session-select');
-SESSION_ORDER.forEach(k=>{
-  if(!ALL_SESSIONS[k])return;
-  const o=document.createElement('option');
-  o.value=k;o.textContent=ALL_LABELS[k]+' ('+ALL_SESSIONS[k].length+' întrebări)';
-  sel.appendChild(o);
-});
+function refreshOptions(){
+  const keep=sel.value;sel.innerHTML='';
+  SESSION_ORDER.forEach(k=>{
+    if(!ALL_SESSIONS[k])return;
+    const o=document.createElement('option');
+    const b=STATE.best[k],p=STATE.prog[k];
+    let extra='';
+    if(b)extra=' · ⭐ '+b.correct+'/'+b.total;
+    else if(p&&p.a&&Object.keys(p.a).length)extra=' · ↻ în curs';
+    o.value=k;o.textContent=ALL_LABELS[k]+' ('+ALL_SESSIONS[k].length+' î)'+extra;
+    sel.appendChild(o);
+  });
+  if(keep)sel.value=keep;
+}
+refreshOptions();
 function changeSession(key){
-  sessionKey=key;QUESTIONS=ALL_SESSIONS[key]||[];current=0;userAnswers={};startTimer();
+  sessionKey=key;QUESTIONS=ALL_SESSIONS[key]||[];
+  const p=STATE.prog[key];
+  if(p&&p.a&&Object.keys(p.a).length){userAnswers=Object.assign({},p.a);current=Math.min(p.c||0,QUESTIONS.length-1);startTimer(p.s||0);}
+  else{userAnswers={};current=0;startTimer(0);}
   document.getElementById('result').classList.remove('show');
   ['card','nav','q-grid','sec-lbl'].forEach(id=>document.getElementById(id).style.display='');
   document.getElementById('session-name').textContent=ALL_LABELS[key]||key;
@@ -206,9 +228,9 @@ function render(){
 }
 function selectAnswer(letter){
   const q=QUESTIONS[current];if(userAnswers[q.n])return;
-  userAnswers[q.n]=letter;render();
+  userAnswers[q.n]=letter;saveProgress();render();
 }
-function go(dir){current=Math.max(0,Math.min(QUESTIONS.length-1,current+dir));render();}
+function go(dir){current=Math.max(0,Math.min(QUESTIONS.length-1,current+dir));saveProgress();render();}
 function renderGrid(){
   const grid=document.getElementById('q-grid');grid.innerHTML='';
   QUESTIONS.forEach((q,i)=>{
@@ -231,8 +253,20 @@ function showResult(){
   document.getElementById('r-grade').textContent=correct>=60?'✅ Promovat (≥60 puncte)':'❌ Nepromovat (<60 puncte)';
   document.getElementById('r-ok').textContent=correct;document.getElementById('r-ko').textContent=wrong;document.getElementById('r-sk').textContent=skip;
   document.getElementById('r-time').textContent='⏱ Timp: '+timerFmt(timerSecs);
+  /* salvare rezultat: cel mai bun scor, greșeli, golire reluare */
+  const prev=STATE.best[sessionKey];
+  if(!prev||correct>prev.correct){STATE.best[sessionKey]={correct:correct,total:total,date:Date.now()};}
+  STATE.wrong[sessionKey]=Object.entries(userAnswers).filter(([k,v])=>{const qq=QUESTIONS.find(x=>x.n==k);return qq&&qq.correct!==v;}).map(([k])=>+k);
+  delete STATE.prog[sessionKey];
+  saveState();refreshOptions();
+  const b=STATE.best[sessionKey],nw=STATE.wrong[sessionKey].length;
+  let extra='';
+  if(b)extra+='⭐ Cel mai bun: '+b.correct+'/'+b.total;
+  if(prev)extra+='  ·  Anterior: '+prev.correct+'/'+prev.total;
+  if(nw)extra+='  ·  📌 '+nw+' de revăzut';
+  document.getElementById('r-extra').textContent=extra;
 }
-function restart(){userAnswers={};current=0;startTimer();['card','nav','q-grid','sec-lbl'].forEach(id=>document.getElementById(id).style.display='');document.getElementById('result').classList.remove('show');render();}
+function restart(){userAnswers={};current=0;delete STATE.prog[sessionKey];saveState();startTimer(0);['card','nav','q-grid','sec-lbl'].forEach(id=>document.getElementById(id).style.display='');document.getElementById('result').classList.remove('show');render();}
 function showSessionPicker(){userAnswers={};current=0;['card','nav','q-grid'].forEach(id=>document.getElementById(id).style.display='');document.getElementById('sec-lbl').style.display='';document.getElementById('result').classList.remove('show');window.scrollTo(0,0);}
 changeSession(SESSION_ORDER[SESSION_ORDER.length-1]);
 sel.value=SESSION_ORDER[SESSION_ORDER.length-1];
