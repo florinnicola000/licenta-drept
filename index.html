@@ -102,7 +102,11 @@ body.light #abs-hint{background:#fff8e1;border-color:#f0c040;color:#7a5c00}
 #btn-pdf{background:var(--sf2);color:#a8c8e8;border:1px solid #2a5580;border-radius:10px;padding:11px 20px;font-size:13.5px;font-weight:700;cursor:pointer;margin-top:10px;width:100%;display:none}
 #print-wrongs{display:none}
 @media print{body>*{display:none!important}#print-wrongs{display:block!important;padding:24px;font-family:Georgia,serif;color:#000;background:#fff}.pw-title{font-size:22px;font-weight:bold;margin-bottom:4px}.pw-sub{font-size:13px;color:#555;margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid #333}.pw-q{margin-bottom:24px;page-break-inside:avoid}.pw-qnum{font-weight:bold;font-size:14px;margin-bottom:5px}.pw-stem{font-size:13.5px;margin-bottom:8px;line-height:1.55}.pw-opt{font-size:12.5px;padding:4px 10px;margin-bottom:3px;border-radius:3px;line-height:1.5}.pw-opt.cor{background:#d4edda;font-weight:700;border-left:3px solid #28a745}.pw-opt.my{background:#fde8e8;text-decoration:line-through;border-left:3px solid #dc3545}.pw-expl{font-size:12px;margin-top:8px;padding:8px 12px;background:#f0f6ff;border-left:3px solid #2a5580;line-height:1.6;border-radius:0 4px 4px 0}.pw-sep{border:none;border-top:1px solid #e0e0e0;margin:18px 0}}
-.toolbar{width:100%;max-width:760px;padding:10px 16px 0;display:flex;flex-wrap:wrap;gap:6px}
+#toolbar-wrap{width:100%;max-width:760px;padding:8px 16px 0}
+#toolbar-toggle{background:var(--sf2);color:var(--txt);border:1.5px solid transparent;border-radius:20px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;transition:.15s}
+#toolbar-toggle.open{border-color:var(--gr);color:var(--gr)}
+.toolbar{display:none;flex-wrap:wrap;gap:6px;margin-top:8px}
+.toolbar.open{display:flex}
 .tbtn{background:var(--sf2);color:var(--txt);border:1.5px solid transparent;border-radius:20px;padding:7px 12px;font-size:12.5px;font-weight:700;cursor:pointer;transition:.15s}
 .tbtn:hover{border-color:var(--gr)}
 .tbtn.active{background:var(--gr);color:#0f1b10}
@@ -179,18 +183,21 @@ body.light #chart-body{background:var(--sf2)}
   <select id="session-select" onchange="changeSession(this.value)"></select>
   <div onclick="resetProgress()" style="font-size:11px;color:var(--sub);cursor:pointer;text-align:right;opacity:.8">🗑 Resetează progresul salvat</div>
 </div>
-<div class="toolbar">
-  <button class="tbtn" data-mode="mixt" onclick="startMixt()">🎲 Examen mixt</button>
-  <button class="tbtn" data-mode="exam" onclick="startExam()">🎓 Simulare examen</button>
-  <button class="tbtn" data-mode="flash" onclick="startFlash()">🃏 Flashcards</button>
-  <button class="tbtn" data-mode="wrong" onclick="startWrong()">📌 Greșelile mele</button>
-  <button class="tbtn" data-mode="materie" onclick="toggleMatChooser()">🎯 Pe materie</button>
-  <button class="tbtn" data-mode="marked" onclick="startMarked()">⭐ Marcate</button>
-  <button class="tbtn" data-mode="stats" onclick="openStats()">📊 Statistici</button>
-  <button class="tbtn" data-mode="search" onclick="openSearch()">🔎 Caută</button>
-  <button class="tbtn" id="opt-timed" onclick="toggleTimed()">⏳ Cronometrat: oprit</button>
-  <button class="tbtn" id="opt-theme" onclick="toggleTheme()">☀️ Temă deschisă</button>
-  <button class="tbtn" id="opt-font" onclick="toggleFont()">A+ Font mare</button>
+<div id="toolbar-wrap">
+  <button id="toolbar-toggle" onclick="toggleToolbar()">☰ Meniu</button>
+  <div class="toolbar">
+    <button class="tbtn" data-mode="mixt" onclick="startMixt()">🎲 Examen mixt</button>
+    <button class="tbtn" data-mode="exam" onclick="startExam()">🎓 Simulare examen</button>
+    <button class="tbtn" data-mode="flash" onclick="startFlash()">🃏 Flashcards</button>
+    <button class="tbtn" data-mode="wrong" onclick="startWrong()">📌 Greșelile mele</button>
+    <button class="tbtn" data-mode="materie" onclick="toggleMatChooser()">🎯 Pe materie</button>
+    <button class="tbtn" data-mode="marked" onclick="startMarked()">⭐ Marcate</button>
+    <button class="tbtn" data-mode="stats" onclick="openStats()">📊 Statistici</button>
+    <button class="tbtn" data-mode="search" onclick="openSearch()">🔎 Caută</button>
+    <button class="tbtn" id="opt-timed" onclick="toggleTimed()">⏳ Cronometrat: oprit</button>
+    <button class="tbtn" id="opt-theme" onclick="toggleTheme()">☀️ Temă deschisă</button>
+    <button class="tbtn" id="opt-font" onclick="toggleFont()">A+ Font mare</button>
+  </div>
 </div>
 <div id="mat-chooser">
   <button class="mat-btn" onclick="startMaterie('civ')">⚖️ Drept civil</button>
@@ -358,7 +365,7 @@ function render(){
   var mb=document.getElementById('mark-btn');if(mb)mb.style.display=isFlash?'none':'';
   var qn=document.getElementById('q-num');if(qn){if(isFlash){qn.textContent=(current+1)+' / '+QUESTIONS.length;qn.style.cssText='font-size:13px;color:var(--sub);margin-left:auto;margin-right:0';}else{qn.style.cssText='';}}
   var qt=document.getElementById('q-topic');if(qt)qt.style.display=isFlash?'none':'';
-  var tb=document.querySelector('.toolbar');if(tb)tb.style.display=isFlash?'none':'';
+  var tw=document.getElementById('toolbar-wrap');if(tw)tw.style.display=isFlash?'none':'';
   var hd=document.getElementById('header');if(hd)hd.style.display=isFlash?'none':'';
   var pb=document.getElementById('progress-bar');if(pb)pb.style.display=isFlash?'none':'';
   var sl=document.getElementById('sec-lbl');if(sl)sl.style.display=isFlash?'none':'';
@@ -481,7 +488,9 @@ function printWrongs(){
 }
 /* ---- tab-uri / panouri ---- */
 function showQuiz(on){['header','progress-bar','sec-lbl','card','q-grid','nav'].forEach(function(id){const e=document.getElementById(id);if(e)e.style.display=on?'':'none';});if(!on)document.getElementById('result').classList.remove('show');}
-function setActiveTab(m){var bs=document.querySelectorAll('.tbtn[data-mode]');for(var i=0;i<bs.length;i++){bs[i].classList.toggle('active',bs[i].getAttribute('data-mode')===m);}}
+function toggleToolbar(){var tb=document.querySelector('.toolbar');var tg=document.getElementById('toolbar-toggle');if(!tb)return;var open=tb.classList.toggle('open');tg.classList.toggle('open',open);tg.textContent=open?'✕ Închide':'☰ Meniu';}
+function closeToolbar(){var tb=document.querySelector('.toolbar');var tg=document.getElementById('toolbar-toggle');if(tb)tb.classList.remove('open');if(tg){tg.classList.remove('open');tg.textContent='☰ Meniu';}}
+function setActiveTab(m){var bs=document.querySelectorAll('.tbtn[data-mode]');for(var i=0;i<bs.length;i++){bs[i].classList.toggle('active',bs[i].getAttribute('data-mode')===m);}closeToolbar();}
 function toggleMatChooser(force){var p=document.getElementById('mat-chooser');if(!p)return;var show=(force===undefined)?!p.classList.contains('show'):force;p.classList.toggle('show',show);}
 function openStats(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('search-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('stats').classList.add('show');setActiveTab('stats');renderStats();renderChart();window.scrollTo(0,0);}
 function openSearch(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');toggleMatChooser(false);document.getElementById('search-panel').classList.add('show');setActiveTab('search');var si=document.getElementById('search-input');if(si)si.focus();window.scrollTo(0,0);}
