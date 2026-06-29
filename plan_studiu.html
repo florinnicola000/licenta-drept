@@ -5,63 +5,85 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Plan Studiu Licență Drept · UNIBUC</title>
+<meta name="theme-color" content="#4caf50">
+<title>Planul Mirunei · Licență Drept</title>
 <style>
 :root{
   --bg:#0f1b10;--sf:#1a2e1c;--sf2:#243d27;--gr:#4caf50;--lime:#e8f5e9;
   --warn:#ffb74d;--err:#ef5350;--txt:#e8f5e9;--sub:#8caf7a;--r:12px;
   --civ:#4caf50;--pciv:#26c6da;--pen:#ef5350;--ppen:#ab47bc;
-  --recap:#ffd54f;--sim:#ff8a65
+  --recap:#ffd54f;--sim:#ff8a65;--gold:#ffd54f
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-height:100vh;padding-bottom:80px}
+body{background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,sans-serif;min-height:100vh;padding-bottom:84px}
 a{color:var(--gr);text-decoration:none}
 
 /* TOP */
-#topbar{background:var(--sf);border-bottom:1.5px solid var(--sf2);padding:12px 16px;position:sticky;top:0;z-index:50}
-#top-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:6px}
-#top-title{font-size:18px;font-weight:900;color:var(--lime);letter-spacing:-.5px}
+#topbar{background:var(--sf);border-bottom:1.5px solid var(--sf2);padding:10px 16px;position:sticky;top:0;z-index:50}
+#top-row{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+#top-title{font-size:16px;font-weight:900;color:var(--lime);letter-spacing:-.3px}
 #back-link{font-size:12px;color:var(--sub)}
-#today-badge{font-size:11px;color:var(--sub);background:var(--sf2);padding:3px 10px;border-radius:20px}
-#gbar{height:5px;background:var(--sf2);border-radius:3px;overflow:hidden}
+#exam-pill{font-size:11px;color:#0f1b10;background:var(--gold);padding:3px 11px;border-radius:20px;font-weight:800;white-space:nowrap}
+#gbar{height:5px;background:var(--sf2);border-radius:3px;overflow:hidden;margin-top:8px}
 #gfill{height:100%;background:linear-gradient(90deg,var(--gr),#a5d6a7);transition:width .4s;width:0%}
 #glabel{font-size:10px;color:var(--sub);text-align:right;margin-top:3px}
 
-/* NAV TABS */
-#tabs{display:flex;gap:4px;padding:10px 16px 0;max-width:800px;margin:0 auto;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+/* TABS */
+#tabs{display:flex;gap:4px;padding:10px 16px 0;max-width:820px;margin:0 auto;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 #tabs::-webkit-scrollbar{display:none}
-.tab{background:var(--sf);color:var(--sub);border:none;border-radius:20px;padding:6px 14px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:background .15s,color .15s}
+.tab{background:var(--sf);color:var(--sub);border:none;border-radius:20px;padding:7px 15px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:background .15s,color .15s}
 .tab.active{background:var(--gr);color:#0f1b10}
 
 /* MAIN */
-#main{max-width:800px;margin:0 auto;padding:0 16px}
-
-/* PANEL */
-.panel{display:none;padding-top:12px}
+#main{max-width:820px;margin:0 auto;padding:0 16px}
+.panel{display:none;padding-top:14px}
 .panel.active{display:block}
+
+/* ===== ASTĂZI DASHBOARD ===== */
+#hello{font-size:22px;font-weight:900;color:var(--lime);letter-spacing:-.5px;margin-bottom:2px}
+#hello-date{font-size:12px;color:var(--sub);margin-bottom:14px}
+.dash-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.dash-card{background:var(--sf);border-radius:var(--r);padding:14px;text-align:center;position:relative;overflow:hidden}
+.dash-big{font-size:34px;font-weight:900;line-height:1;margin-bottom:3px}
+.dash-lbl{font-size:11px;color:var(--sub)}
+.dash-sub{font-size:10px;color:var(--sub);margin-top:4px}
+#cd-card{border:1.5px solid var(--gold)}
+#cd-num{color:var(--gold)}
+#streak-card{border:1.5px solid var(--warn)}
+#streak-num{color:var(--warn)}
+.edit-exam{font-size:9px;color:var(--sub);text-decoration:underline;cursor:pointer;display:inline-block;margin-top:3px}
+
+#today-week{background:linear-gradient(135deg,var(--sf),var(--sf2));border-radius:var(--r);padding:16px;margin-bottom:10px;border-left:4px solid var(--gr)}
+#tw-tag{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--gr);margin-bottom:6px}
+#tw-title{font-size:16px;font-weight:800;color:var(--lime);margin-bottom:4px;line-height:1.3}
+#tw-phase{font-size:11px;color:var(--sub);margin-bottom:10px}
+#tw-prog{height:6px;background:#0f1b10;border-radius:3px;overflow:hidden;margin-bottom:6px}
+#tw-prog-fill{height:100%;background:var(--gr);transition:width .4s}
+#tw-prog-lbl{font-size:11px;color:var(--sub)}
+.tw-btn{display:inline-flex;align-items:center;gap:6px;background:var(--gr);color:#0f1b10;border:none;border-radius:20px;padding:9px 18px;font-size:13px;font-weight:800;cursor:pointer;margin-top:12px}
+
+#today-task{background:var(--sf);border-radius:var(--r);padding:14px;margin-bottom:10px}
+.tt-head{font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--sub);margin-bottom:8px}
+.tt-body{display:flex;align-items:flex-start;gap:10px}
+.tt-emoji{font-size:24px;flex-shrink:0}
+.tt-text{font-size:14px;color:var(--lime);line-height:1.4;flex:1}
+.tt-day{font-size:11px;color:var(--sub);margin-top:6px}
+
+#tata-msg{background:#ffffff08;border:1px dashed var(--sf2);border-radius:var(--r);padding:16px;margin-bottom:10px;text-align:center;font-size:14px;line-height:1.6;color:var(--lime);font-style:italic}
+
+#revazut-card{background:var(--sf);border-radius:var(--r);padding:14px;margin-bottom:10px}
+#revazut-card h3{font-size:12px;font-weight:800;color:var(--err);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+.rv-item{font-size:12px;color:var(--sub);padding:5px 0;cursor:pointer;border-bottom:1px solid var(--sf2);display:flex;justify-content:space-between;gap:8px}
+.rv-item:hover{color:var(--lime)}
+.rv-go{color:var(--gr);font-weight:700;flex-shrink:0}
 
 /* SUBJECT STATS */
 #stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
-.scard{background:var(--sf);border-radius:var(--r);padding:12px 14px}
+.scard{background:var(--sf);border-radius:var(--r);padding:11px 13px}
 .scard-name{font-size:11px;font-weight:700;margin-bottom:5px}
 .sbar{height:4px;background:var(--sf2);border-radius:2px;overflow:hidden;margin-bottom:4px}
 .sfill{height:100%;transition:width .4s}
 .spct{font-size:10px;color:var(--sub)}
-
-/* METODOLOGIE */
-#met-box{background:var(--sf);border-radius:var(--r);padding:14px;margin-bottom:12px;border-left:3px solid var(--warn)}
-#met-box h2{font-size:13px;font-weight:800;color:var(--warn);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px}
-.met-item{display:flex;gap:10px;margin-bottom:8px;align-items:flex-start}
-.met-icon{font-size:18px;flex-shrink:0;margin-top:1px}
-.met-text{font-size:12px;line-height:1.5;color:var(--lime)}
-.met-text b{color:var(--warn)}
-
-/* RITM */
-#ritm-box{background:var(--sf);border-radius:var(--r);padding:14px;margin-bottom:14px}
-#ritm-box h2{font-size:13px;font-weight:800;color:var(--pciv);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px}
-.ritm-row{display:flex;gap:8px;margin-bottom:6px;align-items:center;font-size:12px}
-.ritm-day{background:var(--sf2);border-radius:6px;padding:3px 8px;font-weight:700;font-size:11px;min-width:80px;text-align:center}
-.ritm-desc{color:var(--sub);flex:1}
 
 /* LEGEND */
 #leg-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
@@ -72,25 +94,26 @@ a{color:var(--gr);text-decoration:none}
 .phase{margin-bottom:6px;border-radius:var(--r);overflow:hidden}
 .phase-hdr{display:flex;align-items:center;gap:10px;padding:12px 14px;cursor:pointer;background:var(--sf);user-select:none}
 .phase-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
-.phase-ttl{font-size:14px;font-weight:800;color:var(--lime);flex:1}
+.phase-ttl{font-size:14px;font-weight:800;color:var(--lime);flex:1;line-height:1.3}
 .phase-meta{font-size:10px;color:var(--sub);text-align:right;line-height:1.4;white-space:nowrap}
-.phase-body{background:#ffffff08;padding:0 8px 8px}
+.phase-celebrate{font-size:15px}
+.phase-body{background:#ffffff06;padding:0 8px 8px}
 .phase-body.hidden{display:none}
-.phase-pbar{height:3px;background:var(--sf2);margin:0 14px 8px;border-radius:2px;overflow:hidden}
+.phase-pbar{height:3px;background:var(--sf2);margin:0 14px 6px;border-radius:2px;overflow:hidden}
 .phase-pfill{height:100%;transition:width .4s}
 
 /* MONTH SEP */
-.msep{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--sf2);padding:10px 6px 4px;border-top:1px solid var(--sf2);margin-top:4px}
-.msep:first-child{border-top:none;margin-top:0;padding-top:4px}
+.msep{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#4a6a4c;padding:10px 6px 4px;border-top:1px solid var(--sf2);margin-top:4px}
+.msep:first-child{border-top:none;margin-top:0}
 
-/* WEEK CARD */
+/* WEEK */
 .wk{background:var(--sf);border-radius:10px;margin-bottom:5px;border-left:3px solid transparent;transition:border-color .15s}
-.wk.done{border-left-color:var(--gr);opacity:.7}
+.wk.done{border-left-color:var(--gr);opacity:.72}
 .wk.today{box-shadow:0 0 0 1.5px var(--gr);border-left-color:var(--gr)}
 .wk.recap-wk{border-left-color:var(--recap)}
 .wk.sim-wk{border-left-color:var(--sim)}
 .wk-top{display:flex;align-items:center;gap:8px;padding:10px 12px;cursor:pointer}
-.wk-cb{width:16px;height:16px;border:2px solid var(--sf2);border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:background .12s,border-color .12s}
+.wk-cb{width:16px;height:16px;border:2px solid var(--sf2);border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#0f1b10;transition:background .12s,border-color .12s}
 .wk-cb.on{background:var(--gr);border-color:var(--gr)}
 .wk-cb svg{display:none;width:8px;height:8px}
 .wk-cb.on svg{display:block}
@@ -100,56 +123,87 @@ a{color:var(--gr);text-decoration:none}
 .wk.done .wk-ttl{color:var(--sub);text-decoration:line-through}
 .type-tag{font-size:9px;font-weight:800;padding:2px 7px;border-radius:10px;flex-shrink:0;white-space:nowrap}
 .today-tag{background:var(--gr);color:#0f1b10;font-size:9px;font-weight:800;padding:2px 7px;border-radius:10px;flex-shrink:0}
+.conf-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;background:var(--sf2)}
+.conf-dot.r{background:var(--err)}.conf-dot.a{background:var(--warn)}.conf-dot.g{background:var(--gr)}
 
-/* TASKS */
-.wk-body{padding:0 12px 10px 12px;display:none}
+.wk-body{padding:0 12px 12px;display:none}
 .wk-body.open{display:block}
 .wk-section{font-size:10px;font-weight:800;letter-spacing:1px;color:var(--sub);text-transform:uppercase;margin:8px 0 4px;display:flex;align-items:center;gap:6px}
 .wk-section::after{content:'';flex:1;height:1px;background:var(--sf2)}
 .task{display:flex;align-items:flex-start;gap:8px;padding:5px 0;cursor:pointer;border-radius:6px;transition:background .1s}
 .task:hover{background:#ffffff06}
-.tcb{width:14px;height:14px;border:1.5px solid #3a5e3c;border-radius:3px;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;transition:background .12s,border-color .12s}
+.tcb{width:14px;height:14px;border:1.5px solid #3a5e3c;border-radius:3px;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;color:#0f1b10;transition:background .12s,border-color .12s}
 .tcb.on{background:var(--gr);border-color:var(--gr)}
 .tcb svg{display:none;width:7px;height:7px}
 .tcb.on svg{display:block}
 .task.done-t .ttext{color:#3a5e3c;text-decoration:line-through}
+.tact{font-size:13px;flex-shrink:0;margin-top:1px}
 .ttext{font-size:12px;color:var(--sub);line-height:1.5;flex:1}
-.tact{font-size:10px;flex-shrink:0;margin-top:2px}
-.wk-tip{font-size:11px;color:var(--sub);background:var(--sf2);border-radius:6px;padding:6px 10px;margin-top:6px;font-style:italic}
-.wk-review{font-size:11px;background:#26c6da18;border:1px solid #26c6da33;border-radius:6px;padding:6px 10px;margin-top:6px;color:#80deea;line-height:1.5}
-.wk-review b{color:var(--pciv)}
-.wk-quiz-row{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.wk-tip{font-size:11px;color:var(--sub);background:var(--sf2);border-radius:6px;padding:7px 10px;margin-top:8px;line-height:1.5}
+.wk-review{font-size:11px;background:#26c6da14;border:1px solid #26c6da33;border-radius:6px;padding:7px 10px;margin-top:8px;color:#80deea;line-height:1.5}
+.wk-concepte{font-size:11px;background:#ffd54f12;border:1px solid #ffd54f33;border-radius:6px;padding:7px 10px;margin-top:8px;color:#ffe082;line-height:1.6}
+.wk-concepte b{color:var(--gold)}
+
+.wk-quiz-row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
 .quiz-btn{display:inline-flex;align-items:center;gap:5px;background:var(--sf2);color:var(--lime);border:1.5px solid var(--gr);border-radius:20px;padding:6px 14px;font-size:11px;font-weight:700;cursor:pointer;text-decoration:none;transition:background .15s}
 .quiz-btn:hover{background:var(--gr);color:#0f1b10}
 .quiz-btn.sim-btn{border-color:var(--sim);color:var(--sim)}
 .quiz-btn.sim-btn:hover{background:var(--sim);color:#0f1b10}
 
-/* CALENDAR view */
+/* CONFIDENCE */
+.conf-box{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
+.conf-q{font-size:11px;color:var(--sub);margin-bottom:6px}
+.conf-opts{display:flex;gap:6px;flex-wrap:wrap}
+.conf-opt{font-size:11px;font-weight:700;padding:5px 12px;border-radius:16px;cursor:pointer;border:1.5px solid var(--sf2);background:transparent;color:var(--sub);transition:all .12s}
+.conf-opt.sel-r{background:var(--err);color:#fff;border-color:var(--err)}
+.conf-opt.sel-a{background:var(--warn);color:#0f1b10;border-color:var(--warn)}
+.conf-opt.sel-g{background:var(--gr);color:#0f1b10;border-color:var(--gr)}
+
+/* NOTES */
+.notes-box{margin-top:10px}
+.notes-toggle{font-size:11px;color:var(--sub);cursor:pointer;user-select:none}
+.notes-area{width:100%;background:#0f1b10;color:var(--lime);border:1px solid var(--sf2);border-radius:8px;padding:8px 10px;font-size:12px;font-family:inherit;margin-top:6px;resize:vertical;min-height:60px;display:none}
+.notes-area.open{display:block}
+
+/* CALENDAR */
 #cal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.cal-month{background:var(--sf);border-radius:var(--r);padding:10px;cursor:pointer;transition:background .15s}
-.cal-month:hover{background:var(--sf2)}
+.cal-month{background:var(--sf);border-radius:var(--r);padding:10px;transition:background .15s}
 .cal-month-name{font-size:11px;font-weight:800;color:var(--sub);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px}
 .cal-bar{height:4px;border-radius:2px;overflow:hidden;background:var(--sf2);margin-bottom:4px}
-.cal-fill{height:100%;transition:width .4s}
+.cal-fill{height:100%;transition:width .4s;background:var(--gr)}
 .cal-pct{font-size:10px;color:var(--sub)}
 .cal-weeks{display:flex;flex-direction:column;gap:3px;margin-top:6px}
-.cal-wk{font-size:10px;color:var(--sub);padding:2px 6px;border-radius:4px;background:var(--sf2);cursor:pointer;transition:background .1s}
+.cal-wk{font-size:10px;color:var(--sub);padding:3px 6px;border-radius:4px;background:var(--sf2);cursor:pointer;transition:background .1s}
 .cal-wk:hover{background:var(--gr);color:#0f1b10}
 .cal-wk.wdone{background:#1a3a1c;color:var(--gr)}
 .cal-wk.wtoday{background:var(--gr);color:#0f1b10;font-weight:800}
 .cal-wk.wrecap{background:#ffd54f22;color:var(--recap)}
 .cal-wk.wsim{background:#ff8a6522;color:var(--sim)}
 
-/* FIXED BUTTONS */
+/* INFO PANELS */
+.info-box{background:var(--sf);border-radius:var(--r);padding:14px;margin-bottom:12px}
+.info-box h2{font-size:13px;font-weight:800;margin-bottom:10px;text-transform:uppercase;letter-spacing:1px}
+.met-item{display:flex;gap:10px;margin-bottom:8px;align-items:flex-start}
+.met-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+.met-text{font-size:12px;line-height:1.5;color:var(--lime)}
+.met-text b{color:var(--gold)}
+.ritm-row{display:flex;gap:8px;margin-bottom:6px;align-items:center;font-size:12px}
+.ritm-day{background:var(--sf2);border-radius:6px;padding:3px 8px;font-weight:700;font-size:11px;min-width:84px;text-align:center}
+.ritm-desc{color:var(--sub);flex:1;line-height:1.4}
+
+/* TOAST */
+#toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:var(--gr);color:#0f1b10;padding:12px 20px;border-radius:30px;font-size:13px;font-weight:800;box-shadow:0 6px 24px #0007;opacity:0;transition:opacity .3s,transform .3s;z-index:200;pointer-events:none;max-width:90vw;text-align:center}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* FIXED BTNS */
 #btn-row{position:fixed;bottom:16px;right:16px;display:flex;flex-direction:column;gap:8px;z-index:99}
-.fbn{border:none;border-radius:30px;padding:9px 16px;font-size:12px;font-weight:800;cursor:pointer;box-shadow:0 4px 20px #0005;transition:opacity .2s}
+.fbn{border:none;border-radius:30px;padding:9px 16px;font-size:12px;font-weight:800;cursor:pointer;box-shadow:0 4px 20px #0006;transition:opacity .2s}
 .fbn:hover{opacity:.88}
 #btn-today{background:var(--gr);color:#0f1b10}
 #btn-top{background:var(--sf2);color:var(--lime)}
 
-@media(max-width:500px){
+@media(max-width:520px){
   #cal-grid{grid-template-columns:repeat(2,1fr)}
-  #stats-grid{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -158,1232 +212,889 @@ a{color:var(--gr);text-decoration:none}
 <div id="topbar">
   <div id="top-row">
     <a href="index.html" id="back-link">← Grile</a>
-    <div id="top-title">Plan Studiu · 1 an</div>
-    <div id="today-badge">—</div>
+    <div id="top-title">🤍 Planul Mirunei</div>
+    <div id="exam-pill">—</div>
   </div>
   <div id="gbar"><div id="gfill"></div></div>
   <div id="glabel">0 / 0 sarcini (0%)</div>
 </div>
 
 <div id="tabs">
-  <button class="tab active" onclick="showPanel('plan')">📅 Plan</button>
+  <button class="tab active" onclick="showPanel('azi')">🏠 Astăzi</button>
+  <button class="tab" onclick="showPanel('plan')">📅 Plan</button>
   <button class="tab" onclick="showPanel('cal')">🗓 Calendar</button>
   <button class="tab" onclick="showPanel('met')">📚 Metodologie</button>
-  <button class="tab" onclick="showPanel('ritm')">⏱ Ritm zilnic</button>
+  <button class="tab" onclick="showPanel('ritm')">⏱ Ritm</button>
 </div>
 
 <div id="main">
 
-<!-- PLAN PANEL -->
-<div id="panel-plan" class="panel active">
-  <div style="padding-top:10px">
+<!-- ASTĂZI -->
+<div id="panel-azi" class="panel active">
+  <div id="hello">Bună, Miruna 🤍</div>
+  <div id="hello-date">—</div>
+
+  <div class="dash-row">
+    <div class="dash-card" id="cd-card">
+      <div class="dash-big" id="cd-num">—</div>
+      <div class="dash-lbl">zile până la examen</div>
+      <div class="dash-sub" id="cd-date">—</div>
+      <span class="edit-exam" onclick="changeExamDate()">schimbă data</span>
+    </div>
+    <div class="dash-card" id="streak-card">
+      <div class="dash-big" id="streak-num">0</div>
+      <div class="dash-lbl">zile la rând 🔥</div>
+      <div class="dash-sub" id="streak-sub">Începe azi!</div>
+    </div>
+  </div>
+
+  <div id="today-week">
+    <div id="tw-tag">Săptămâna aceasta</div>
+    <div id="tw-title">—</div>
+    <div id="tw-phase">—</div>
+    <div id="tw-prog"><div id="tw-prog-fill"></div></div>
+    <div id="tw-prog-lbl">—</div>
+    <button class="tw-btn" onclick="scrollToToday()">Deschide săptămâna →</button>
+  </div>
+
+  <div id="today-task">
+    <div class="tt-head">🎯 Sugestia de azi</div>
+    <div class="tt-body">
+      <div class="tt-emoji" id="tt-emoji">📖</div>
+      <div>
+        <div class="tt-text" id="tt-text">—</div>
+        <div class="tt-day" id="tt-day">—</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tata-msg">—</div>
+
+  <div id="revazut-card" style="display:none">
+    <h3>🔴 De revăzut (te-ai simțit nesigură)</h3>
+    <div id="revazut-list"></div>
+  </div>
+</div>
+
+<!-- PLAN -->
+<div id="panel-plan" class="panel">
   <div id="stats-grid">
     <div class="scard"><div class="scard-name" style="color:var(--civ)">⚖️ Drept Civil</div><div class="sbar"><div class="sfill" id="sf-civ" style="background:var(--civ);width:0%"></div></div><div class="spct" id="sp-civ">0%</div></div>
-    <div class="scard"><div class="scard-name" style="color:var(--pciv)">📜 Procedură Civilă</div><div class="sbar"><div class="sfill" id="sf-pciv" style="background:var(--pciv);width:0%"></div></div><div class="spct" id="sp-pciv">0%</div></div>
     <div class="scard"><div class="scard-name" style="color:var(--pen)">🔒 Drept Penal</div><div class="sbar"><div class="sfill" id="sf-pen" style="background:var(--pen);width:0%"></div></div><div class="spct" id="sp-pen">0%</div></div>
+    <div class="scard"><div class="scard-name" style="color:var(--pciv)">📜 Procedură Civilă</div><div class="sbar"><div class="sfill" id="sf-pciv" style="background:var(--pciv);width:0%"></div></div><div class="spct" id="sp-pciv">0%</div></div>
     <div class="scard"><div class="scard-name" style="color:var(--ppen)">🛡️ Procedură Penală</div><div class="sbar"><div class="sfill" id="sf-ppen" style="background:var(--ppen);width:0%"></div></div><div class="spct" id="sp-ppen">0%</div></div>
   </div>
   <div id="leg-row">
     <div class="leg"><div class="ldot" style="background:var(--civ)"></div>Civil</div>
-    <div class="leg"><div class="ldot" style="background:var(--pciv)"></div>Proc. Civilă</div>
     <div class="leg"><div class="ldot" style="background:var(--pen)"></div>Penal</div>
-    <div class="leg"><div class="ldot" style="background:var(--ppen)"></div>Proc. Penală</div>
+    <div class="leg"><div class="ldot" style="background:var(--pciv)"></div>Proc. Civ.</div>
+    <div class="leg"><div class="ldot" style="background:var(--ppen)"></div>Proc. Pen.</div>
     <div class="leg"><div class="ldot" style="background:var(--recap)"></div>Recapitulare</div>
     <div class="leg"><div class="ldot" style="background:var(--sim)"></div>Simulare</div>
   </div>
   <div id="phases-container"></div>
-  </div>
 </div>
 
-<!-- CALENDAR PANEL -->
+<!-- CALENDAR -->
 <div id="panel-cal" class="panel">
-  <div style="padding-top:12px">
-    <div id="cal-grid"></div>
-  </div>
+  <div id="cal-grid"></div>
 </div>
 
-<!-- METODOLOGIE PANEL -->
+<!-- METODOLOGIE -->
 <div id="panel-met" class="panel">
-  <div style="padding-top:12px">
-  <div id="met-box">
-    <h2>🧠 Principii pedagogice aplicate</h2>
-    <div class="met-item"><div class="met-icon">🔁</div><div class="met-text"><b>Repetare spațiată (Spaced Repetition):</b> Fiecare subiect e reluat la interval crescând — după 1 săptămână, 2 săptămâni, 1 lună. Săptămânile de recapitulare sunt plasate strategic, nu la întâmplare.</div></div>
-    <div class="met-item"><div class="met-icon">🧩</div><div class="met-text"><b>Recall activ (Retrieval Practice):</b> Înainte de a reciti notițele, încearcă să reproduci din memorie tot ce știi. Efortul de recuperare consolidează amintirea mai mult decât re-lectura.</div></div>
-    <div class="met-item"><div class="met-icon">🎯</div><div class="met-text"><b>Intercalare (Interleaving):</b> Nu studi aceeași materie zile întregi. Alternează Civil ↔ Penal în recapitulări. Creierul face conexiuni mai puternice între subiecte mixate.</div></div>
-    <div class="met-item"><div class="met-icon">📊</div><div class="met-text"><b>Testare frecventă (Testing Effect):</b> Rezolvă grile după fiecare subiect, nu doar la final. Fiecare greșeală din practică e o greșeală care nu va apărea la examen.</div></div>
-    <div class="met-item"><div class="met-icon">🏗️</div><div class="met-text"><b>Taxonomia lui Bloom:</b> Progresie deliberată de la <i>cunoaștere</i> (definiții, articole) → <i>înțelegere</i> (explicații proprii) → <i>aplicare</i> (grile, cazuri practice) → <i>analiză</i> (comparații, distincții). Nu sari etapele.</div></div>
-    <div class="met-item"><div class="met-icon">📝</div><div class="met-text"><b>Elaborare activă:</b> Nu copia cursul — reformulează în propriile cuvinte, construiește scheme, pune-ți întrebări: „De ce e astfel?", „Ce se întâmplă dacă…?"</div></div>
-    <div class="met-item"><div class="met-icon">🗺️</div><div class="met-text"><b>Hărți conceptuale:</b> La finalul fiecărei faze, desenează o hartă care leagă conceptele. Vizualizarea conexiunilor reduce confuziile la examen (ex: prescripție extinctivă vs. decădere).</div></div>
+  <div class="info-box" style="border-left:3px solid var(--gold)">
+    <h2 style="color:var(--gold)">🧠 De ce funcționează acest plan</h2>
+    <div class="met-item"><div class="met-icon">🔁</div><div class="met-text"><b>Repetare spațiată:</b> fiecare subiect revine la intervale crescânde (1 săpt., 2 săpt., 1 lună). Vezi liniile „Spaced review" din fiecare săptămână — nu sunt opționale, ele fixează ce ai învățat.</div></div>
+    <div class="met-item"><div class="met-icon">🧩</div><div class="met-text"><b>Recall activ:</b> înainte să recitești, scrii din memorie tot ce știi pe o foaie goală. Efortul de recuperare consolidează de 2-3 ori mai bine decât re-lectura.</div></div>
+    <div class="met-item"><div class="met-icon">🎯</div><div class="met-text"><b>Intercalare:</b> alternezi Civil ↔ Penal în recapitulări. Creierul face conexiuni mai solide când amesteci subiectele.</div></div>
+    <div class="met-item"><div class="met-icon">📊</div><div class="met-text"><b>Testare frecventă:</b> rezolvi grile după FIECARE temă, nu doar la final. Fiecare greșeală la antrenament e o greșeală mai puțin la examen.</div></div>
+    <div class="met-item"><div class="met-icon">🚦</div><div class="met-text"><b>Metacogniție:</b> după fiecare săptămână îți evaluezi încrederea (🔴🟡🟢). Ce marchezi roșu apare automat în „De revăzut" pe ecranul de start.</div></div>
+    <div class="met-item"><div class="met-icon">🔥</div><div class="met-text"><b>Consistență &gt; intensitate:</b> 2-3 ore în fiecare zi bat 12 ore într-o zi pe săptămână. Streak-ul te ajută să nu rupi lanțul.</div></div>
   </div>
-  <div style="background:var(--sf);border-radius:var(--r);padding:14px;margin-bottom:12px">
-    <h2 style="font-size:13px;font-weight:800;color:var(--pciv);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px">📖 Cum să studiezi eficient o temă nouă</h2>
-    <div class="met-item"><div class="met-icon">1️⃣</div><div class="met-text"><b>Preview (5 min):</b> Citește rapid titlurile și subtitlurile capitolului — creează scheletul mental înainte de detalii.</div></div>
-    <div class="met-item"><div class="met-icon">2️⃣</div><div class="met-text"><b>Lectură activă (60-90 min):</b> Citește cu pixul în mână. Subliniază PUȚIN — doar esențialul. Notează în margine întrebări și nedumeriri.</div></div>
-    <div class="met-item"><div class="met-icon">3️⃣</div><div class="met-text"><b>Recall imediat (15 min):</b> Închide cartea. Scrie pe o foaie GOALĂ tot ce îți amintești. Verifică apoi ce ai omis — acele goluri sunt prioritatea revizuirii.</div></div>
-    <div class="met-item"><div class="met-icon">4️⃣</div><div class="met-text"><b>Fișă de sinteză (20 min):</b> Creează o fișă compactă pe maximum o pagină A4: definiții cheie, condiții, excepții, articole de cod.</div></div>
-    <div class="met-item"><div class="met-icon">5️⃣</div><div class="met-text"><b>Grile imediate (30 min):</b> Rezolvă grile din aplicație pe tema respectivă. Analizează fiecare variantă greșită — nu bifezi și mergi mai departe.</div></div>
-    <div class="met-item"><div class="met-icon">6️⃣</div><div class="met-text"><b>Review la 24h (15 min):</b> A doua zi dimineața, fără să deschizi cursul, reproduci fișa de sinteză din memorie. Completează ce ai uitat. Aceasta e prima repetare spațiată.</div></div>
+  <div class="info-box">
+    <h2 style="color:var(--pciv)">📖 Cum studiezi o temă nouă (rutina în 6 pași)</h2>
+    <div class="met-item"><div class="met-icon">1️⃣</div><div class="met-text"><b>Preview (5 min):</b> citește titlurile și subtitlurile — îți faci scheletul mental.</div></div>
+    <div class="met-item"><div class="met-icon">2️⃣</div><div class="met-text"><b>Lectură activă (60 min):</b> cu pixul în mână, subliniezi PUȚIN, notezi în margine întrebări.</div></div>
+    <div class="met-item"><div class="met-icon">3️⃣</div><div class="met-text"><b>Recall imediat (15 min):</b> închizi cartea, scrii din memorie. Golurile = prioritatea ta.</div></div>
+    <div class="met-item"><div class="met-icon">4️⃣</div><div class="met-text"><b>Fișă de sinteză (20 min):</b> o pagină A4: definiții, condiții, excepții, articole de cod.</div></div>
+    <div class="met-item"><div class="met-icon">5️⃣</div><div class="met-text"><b>Grile (30 min):</b> din aplicație, pe tema zilei. Analizezi DE CE e greșită fiecare variantă.</div></div>
+    <div class="met-item"><div class="met-icon">6️⃣</div><div class="met-text"><b>Review la 24h (10 min):</b> a doua zi reproduci fișa din memorie. Aceasta e prima repetare spațiată.</div></div>
   </div>
-  <div style="background:var(--sf);border-radius:var(--r);padding:14px;margin-bottom:12px">
-    <h2 style="font-size:13px;font-weight:800;color:var(--sim);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px">📊 Cum să folosești grilele din aplicație</h2>
-    <div class="met-item"><div class="met-icon">🔍</div><div class="met-text">Folosește <b>Antrenament pe materie</b> după fiecare săptămână de studiu pentru a testa exact ce ai învățat.</div></div>
-    <div class="met-item"><div class="met-icon">⭐</div><div class="met-text">Marchează (⭐) întrebările la care ai ezitat sau le-ai greșit — revin la ele în săptămânile de recapitulare.</div></div>
-    <div class="met-item"><div class="met-icon">📈</div><div class="met-text">Urmărește graficul de progres: vrei să depășești 65% pe fiecare materie înainte de ultimele 4 săptămâni.</div></div>
-    <div class="met-item"><div class="met-icon">🎯</div><div class="met-text">La simulările complete, respectă cronometrul (3 ore pentru 100 de întrebări = ~1.8 min/întrebare). Antrenează viteza, nu doar acuratețea.</div></div>
-  </div>
+  <div class="info-box">
+    <h2 style="color:var(--err)">⚠️ Greșeli de evitat</h2>
+    <div class="met-item"><div class="met-icon">❌</div><div class="met-text"><b>Re-lectura pasivă</b> creează iluzia că știi. Înlocuiește cu recall activ.</div></div>
+    <div class="met-item"><div class="met-icon">❌</div><div class="met-text"><b>Subliniere excesivă:</b> dacă subliniezi peste 20%, nu ai filtrat nimic.</div></div>
+    <div class="met-item"><div class="met-icon">❌</div><div class="met-text"><b>Grile fără analiză:</b> dacă nu înțelegi de ce ai greșit, vei greși la fel la examen.</div></div>
+    <div class="met-item"><div class="met-icon">❌</div><div class="met-text"><b>Sacrificat somnul:</b> memoria se consolidează în somn. 7-8 ore sunt obligatorii.</div></div>
   </div>
 </div>
 
-<!-- RITM PANEL -->
+<!-- RITM -->
 <div id="panel-ritm" class="panel">
-  <div style="padding-top:12px">
-  <div id="ritm-box">
-    <h2>⏱ Ritm săptămânal recomandat</h2>
-    <div class="ritm-row"><div class="ritm-day">Luni</div><div class="ritm-desc">📖 Materie nouă — citire cursul + subliniere (2-3 ore)</div></div>
-    <div class="ritm-row"><div class="ritm-day">Marți</div><div class="ritm-desc">📖 Continuare materie + construiești fișa de sinteză (2 ore)</div></div>
-    <div class="ritm-row"><div class="ritm-day">Miercuri</div><div class="ritm-desc">🧠 Recall activ: foaie goală → scrie tot ce știi, completează golurile (1.5 ore)</div></div>
-    <div class="ritm-row"><div class="ritm-day">Joi</div><div class="ritm-desc">❓ Grile din aplicație pe tema săptămânii — analiză fiecare greșeală (1.5 ore)</div></div>
-    <div class="ritm-row"><div class="ritm-day">Vineri</div><div class="ritm-desc">🔄 Revizuire greșeli + consolidare: recitire fișă, răspunde la întrebările proprii (1 oră)</div></div>
-    <div class="ritm-row"><div class="ritm-day">Sâmbătă</div><div class="ritm-desc">🔁 Spaced review: revezi fișele din urmă cu 2 săptămâni (45 min) + odihnă</div></div>
-    <div class="ritm-row"><div class="ritm-day">Duminică</div><div class="ritm-desc">😌 Odihnă activă — opțional: citire ușoară, un podcast juridic, recitire fișe vechi</div></div>
+  <div class="info-box">
+    <h2 style="color:var(--pciv)">⏱ Ritm săptămânal (2-3 ore/zi)</h2>
+    <div class="ritm-row"><div class="ritm-day">Luni</div><div class="ritm-desc">📖 Materie nouă — lectură activă + subliniere</div></div>
+    <div class="ritm-row"><div class="ritm-day">Marți</div><div class="ritm-desc">📖 Continuare + ✍️ construiești fișa de sinteză</div></div>
+    <div class="ritm-row"><div class="ritm-day">Miercuri</div><div class="ritm-desc">🧠 Recall activ pe foaie goală + completezi golurile</div></div>
+    <div class="ritm-row"><div class="ritm-day">Joi</div><div class="ritm-desc">❓ Grile din aplicație — analiză fiecare greșeală</div></div>
+    <div class="ritm-row"><div class="ritm-day">Vineri</div><div class="ritm-desc">🔄 Consolidare: recitești fișa, răspunzi la întrebările tale</div></div>
+    <div class="ritm-row"><div class="ritm-day">Sâmbătă</div><div class="ritm-desc">🔁 Spaced review (subiectul de acum 2 săpt.) + 🚦 încredere</div></div>
+    <div class="ritm-row"><div class="ritm-day">Duminică</div><div class="ritm-desc">😌 Odihnă — opțional recitire ușoară a fișelor vechi</div></div>
   </div>
-  <div style="background:var(--sf);border-radius:var(--r);padding:14px;margin-bottom:12px">
-    <h2 style="font-size:13px;font-weight:800;color:var(--warn);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px">⏰ Sesiunea ideală de studiu</h2>
-    <div class="met-item"><div class="met-icon">🕐</div><div class="met-text"><b>Durata:</b> 45-90 minute cu pauză de 10-15 min. Nu studia mai mult de 2 ore continuu — randamentul scade dramatic.</div></div>
-    <div class="met-item"><div class="met-icon">📵</div><div class="met-text"><b>Focalizare:</b> Telefon în altă cameră (nu silent — absent). Un singur tab deschis. Notificările sunt inamicul memoriei de lungă durată.</div></div>
-    <div class="met-item"><div class="met-icon">🌅</div><div class="met-text"><b>Momentul zilei:</b> Materia nouă dimineața (cortizolul favorizează encodarea), grilele seara (consolidare).</div></div>
-    <div class="met-item"><div class="met-icon">💤</div><div class="met-text"><b>Somnul:</b> 7-8 ore sunt obligatorii. Consolidarea memoriei se face în somn — nu sacrifica somnul pentru studiu extra.</div></div>
-  </div>
-  <div style="background:var(--sf);border-radius:var(--r);padding:14px;margin-bottom:12px">
-    <h2 style="font-size:13px;font-weight:800;color:var(--err);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px">⚠️ Greșeli comune de evitat</h2>
-    <div class="met-item"><div class="met-icon">❌</div><div class="met-text"><b>Re-lectura pasivă:</b> Recitirea cursului de mai multe ori creează iluzia că știi, dar nu consolidează. Înlocuiește cu recall activ.</div></div>
-    <div class="met-item"><div class="met-icon">❌</div><div class="met-text"><b>Studiu în bloc (massing):</b> 8 ore de Civil sâmbăta nu compensează lipsa de studiu zilnic. Mai bine 1-2 ore/zi consistent.</div></div>
-    <div class="met-item"><div class="met-icon">❌</div><div class="met-text"><b>Subliniere excesivă:</b> Dacă subliniezi mai mult de 20% din text, nu ai filtrat nimic — rescrie în propriile cuvinte.</div></div>
-    <div class="met-item"><div class="met-icon">❌</div><div class="met-text"><b>Rezolvat grile fără analiză:</b> Dacă nu înțelegi DE CE ai greșit, vei greși același tip de întrebare la examen.</div></div>
-    <div class="met-item"><div class="met-icon">❌</div><div class="met-text"><b>Lăsat Penal pe ultima lună:</b> Dreptul Penal necesită același volum de timp ca Dreptul Civil. Planul de față le echilibrează — respectă-l.</div></div>
-  </div>
+  <div class="info-box">
+    <h2 style="color:var(--warn)">⏰ Sesiunea ideală</h2>
+    <div class="met-item"><div class="met-icon">🕐</div><div class="met-text"><b>45-90 min</b> cu pauză de 10-15 min. Peste 2 ore continuu randamentul scade.</div></div>
+    <div class="met-item"><div class="met-icon">📵</div><div class="met-text"><b>Telefon în altă cameră.</b> Un singur tab. Notificările sunt inamicul memoriei.</div></div>
+    <div class="met-item"><div class="met-icon">🌅</div><div class="met-text"><b>Materie nouă dimineața</b> (encodare mai bună), grile seara (consolidare).</div></div>
+    <div class="met-item"><div class="met-icon">💤</div><div class="met-text"><b>7-8 ore de somn.</b> Nu negociabil — somnul fixează ce ai învățat.</div></div>
   </div>
 </div>
 
 </div><!-- /main -->
 
+<div id="toast"></div>
 <div id="btn-row">
-  <button class="fbn" id="btn-today" onclick="scrollToToday()">📅 Azi</button>
+  <button class="fbn" id="btn-today" onclick="goAzi()">🏠 Azi</button>
   <button class="fbn" id="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Sus</button>
 </div>
 
 <script>
-// ══════════════════════════════════════════════════════════════════════════════
-// DATA
-// ══════════════════════════════════════════════════════════════════════════════
-// Activity icons
-const A = { read:'📖', recall:'🧠', grile:'❓', recap:'🔄', sim:'📊', err:'🎯', map:'🗺️', fisa:'✍️' };
-
-// Tag styles
+// ══════════════════════════════════════════════════════════════════════════
+//  PLANUL MIRUNEI — Licență Drept UNIBUC · examen Februarie 2027
+//  32 săptămâni · 29 iun 2026 → ~7 feb 2027 · 2-3 ore/zi
+// ══════════════════════════════════════════════════════════════════════════
+const A = {read:'📖', recall:'🧠', grile:'❓', recap:'🔄', sim:'📊', err:'🎯', fisa:'✍️'};
 const TAGS = {
-  civ:{label:'Civil',color:'var(--civ)'},
-  pciv:{label:'Proc. Civilă',color:'var(--pciv)'},
-  pen:{label:'Penal',color:'var(--pen)'},
-  ppen:{label:'Proc. Penală',color:'var(--ppen)'},
-  recap:{label:'Recapitulare',color:'var(--recap)'},
-  sim:{label:'Simulare',color:'var(--sim)'},
+  civ:{label:'Civil',color:'var(--civ)',emoji:'⚖️'},
+  pen:{label:'Penal',color:'var(--pen)',emoji:'🔒'},
+  pciv:{label:'Proc. Civ.',color:'var(--pciv)',emoji:'📜'},
+  ppen:{label:'Proc. Pen.',color:'var(--ppen)',emoji:'🛡️'},
+  recap:{label:'Recapitulare',color:'var(--recap)',emoji:'🔄'},
+  sim:{label:'Simulare',color:'var(--sim)',emoji:'📊'},
 };
-
-const PHASES = [
-// ─── FAZA 1 ──────────────────────────────────────────────────────────────────
-{id:'f1', subj:'civ', color:'var(--civ)', title:'① Teoria Generală a Actului Juridic Civil',
- period:'Iulie–August 2026',
- months:[
-  {m:'Iulie 2026', weeks:[
-    {n:1, id:'w01', dates:'1–7 iul', subj:'civ', tag:'civ',
-     title:'Actul juridic civil — noțiune și clasificare',
-     tasks:[
-      {a:A.read, t:'Citește: noțiunea AJC, clasificare după numărul de voințe, efecte, modalitate, conținut'},
-      {a:A.fisa, t:'Fișă: schema clasificărilor AJC (tabel comparativ pe criterii)'},
-      {a:A.recall, t:'Recall: reproduce din memorie schema clasificărilor, fără să te uiți la fișă'},
-      {a:A.grile, t:'Rezolvă 10 grile pe AJC din aplicație → analizează fiecare variantă greșită'},
-     ]},
-    {n:2, id:'w02', dates:'8–14 iul', subj:'civ', tag:'civ',
-     title:'Capacitatea civilă și consimțământul',
-     tasks:[
-      {a:A.read, t:'Capacitate de folosință vs. exercițiu; incapacități absolute și relative'},
-      {a:A.read, t:'Consimțământul: condiții de valabilitate, oferta și acceptarea, momentul încheierii'},
-      {a:A.fisa, t:'Fișă comparativă: capacitate de folosință vs. exercițiu (table)'},
-      {a:A.recall, t:'Recall: definește capacitatea, enumeră condițiile consimțământului fără fișă'},
-      {a:A.grile, t:'10 grile pe capacitate + consimțământ → notează temele la care ai ezitat'},
-     ]},
-    {n:3, id:'w03', dates:'15–21 iul', subj:'civ', tag:'civ',
-     title:'Viciile de consimțământ',
-     tasks:[
-      {a:A.read, t:'Eroarea: esențială vs. indiferentă, scuzabilă, eroarea de calcul'},
-      {a:A.read, t:'Dolul: elementele (intenție + manoperă dolosivă), dolul prin reticență'},
-      {a:A.read, t:'Violența și leziunea: condiții, persoane protejate, sancțiuni'},
-      {a:A.fisa, t:'Fișă comparativă: vicii de consimțământ (tabel: viciu / condiții / sancțiune / prescripție)'},
-      {a:A.recall, t:'Recall: reproduci tabelul complet din memorie'},
-      {a:A.grile, t:'15 grile pe vicii de consimțământ → analizează distincțiile eroare-dol'},
-     ]},
-    {n:4, id:'w04', dates:'22–28 iul', subj:'civ', tag:'civ',
-     title:'Obiectul, cauza și forma AJC',
-     tasks:[
-      {a:A.read, t:'Obiectul: condiții (determinat/determinabil, posibil, licit, moral)'},
-      {a:A.read, t:'Cauza: definiție, condiții, cauza ilicită/imorală — nulitate absolută'},
-      {a:A.read, t:'Forma: ad validitatem, ad probationem, pentru opozabilitate; sancțiunile'},
-      {a:A.recall, t:'Recall: enumeri condițiile obiectului și cauzei fără fișă'},
-      {a:A.grile, t:'15 grile pe obiect, cauză, formă → notează greșelile tipice'},
-     ],
-     review:'🔁 Spaced review W1: Revezi fișa clasificărilor AJC (5 min, fără să recitești cursul)'},
-    ]},
-  {m:'August 2026', weeks:[
-    {n:5, id:'w05', dates:'29 iul–4 aug', subj:'civ', tag:'civ',
-     title:'Nulitatea absolută',
-     tasks:[
-      {a:A.read, t:'Cauzele nulității absolute: nerespectarea normelor de ordine publică'},
-      {a:A.read, t:'Regimul juridic: cine o poate invoca, imprescriptibilitate, imposibilitatea confirmării'},
-      {a:A.fisa, t:'Fișă: lista cauzelor de nulitate absolută cu exemple concrete'},
-      {a:A.recall, t:'Recall: enumeri cauzele de nulitate absolută + regimul juridic'},
-      {a:A.grile, t:'15 grile pe nulitate absolută'},
-     ],
-     review:'🔁 Spaced review W2+W3: Revezi fișa viciilor de consimțământ (10 min recall)'},
-    {n:6, id:'w06', dates:'5–11 aug', subj:'civ', tag:'civ',
-     title:'Nulitatea relativă și efectele nulității',
-     tasks:[
-      {a:A.read, t:'Cauzele nulității relative: vicii de consimțământ, incapacitate relativă'},
-      {a:A.read, t:'Confirmarea nulității relative: condiții, efecte retroactive'},
-      {a:A.read, t:'Efectele nulității: quod nullum est nullum producit effectum + excepții (efectele față de terți)'},
-      {a:A.fisa, t:'Fișă comparativă: nulitate absolută vs. relativă (toate criteriile de distincție)'},
-      {a:A.recall, t:'Recall: compari cele două tipuri de nulitate fără fișă'},
-      {a:A.grile, t:'15 grile nulitate relativă + efecte'},
-     ]},
-    {n:7, id:'w07', dates:'12–18 aug', subj:'civ', tag:'civ',
-     title:'Modalitățile AJC + Prescripția extinctivă',
-     tasks:[
-      {a:A.read, t:'Condiția: clasificare (suspensivă/rezolutorie, cazuală/mixtă/potestativă), efecte'},
-      {a:A.read, t:'Termenul: clasificare, efecte; sarcina: noțiune, modalitate versus obligație'},
-      {a:A.read, t:'Prescripția extinctivă: termenul general 3 ani, termene speciale, suspendare, întrerupere'},
-      {a:A.read, t:'Decăderea: termen, regim juridic, distincția față de prescripție'},
-      {a:A.fisa, t:'Fișă: tabel condiție suspensivă vs. rezolutorie; tabel prescripție vs. decădere'},
-      {a:A.recall, t:'Recall: explici diferența prescripție-decădere + efectele condiției'},
-      {a:A.grile, t:'15 grile modalități + prescripție'},
-     ],
-     review:'🔁 Spaced review W4-W5: Revezi fișele obiect/cauză/formă și nulitate absolută (10 min)'},
-    {n:8, id:'w08', dates:'19–25 aug', subj:'civ', tag:'civ', type:'recap',
-     title:'⟳ RECAPITULARE — Teoria Generală a AJC',
-     tasks:[
-      {a:A.recall, t:'Recall complet pe hârtie: reproduce toată materia W1-W7 (structură proprie, fără fișe)'},
-      {a:A.fisa, t:'Hartă conceptuală: leagă AJC → condiții → nulitate → efecte → prescripție'},
-      {a:A.sim, t:'Simulare: 25 grile exclusiv Teoria Generală AJC (cronometrat 40 min)'},
-      {a:A.err, t:'Analiză greșeli: recitești explicațiile pentru fiecare întrebare greșită din simulare'},
-      {a:A.fisa, t:'Consolidare: rescrie fișele subtemelor cu scor < 60% din simulare'},
-     ],
-     tip:'Această săptămână e de consolidare, nu de materie nouă. Dacă ai sub 60% la simulare, repetă W1-W7 înainte de a avansa.'},
-  ]},
- ]},
-
-// ─── FAZA 2 ──────────────────────────────────────────────────────────────────
-{id:'f2', subj:'civ', color:'var(--civ)', title:'② Drepturi Reale',
- period:'Septembrie–Octombrie 2026',
- months:[
-  {m:'Septembrie 2026', weeks:[
-    {n:9, id:'w09', dates:'26 aug–1 sep', subj:'civ', tag:'civ',
-     title:'Dreptul de proprietate privată',
-     tasks:[
-      {a:A.read, t:'Caractere juridice: absolut, exclusiv, perpetuu — definiții precise'},
-      {a:A.read, t:'Atributele dreptului de proprietate: posesia (ius possidendi), folosința, dispoziția'},
-      {a:A.read, t:'Limitele legale, judiciare și convenționale ale dreptului de proprietate'},
-      {a:A.fisa, t:'Fișă: caractere + atribute + limite (câte 3 exemple pentru fiecare limită)'},
-      {a:A.recall, t:'Recall: reproduci atributele și caracterele + cel puțin 2 exemple de limite'},
-      {a:A.grile, t:'12 grile pe dreptul de proprietate privată'},
-     ]},
-    {n:10, id:'w10', dates:'2–8 sep', subj:'civ', tag:'civ',
-     title:'Modalitățile dreptului de proprietate',
-     tasks:[
-      {a:A.read, t:'Proprietatea rezolubilă și anulabilă: caractere, efecte retroactive'},
-      {a:A.read, t:'Coproprietatea obișnuită: cotele-părți, drepturi, obligații, partajul judiciar'},
-      {a:A.read, t:'Coproprietatea forțată: cazuri, regim juridic special'},
-      {a:A.fisa, t:'Fișă: tipuri de coproprietate + regim juridic comparativ'},
-      {a:A.recall, t:'Recall: ce drepturi poate exercita un coproprietar fără acordul celorlalți?'},
-      {a:A.grile, t:'12 grile pe modalitățile proprietății'},
-     ],
-     review:'🔁 Spaced review W1-W4 (AJC Teoria Generală): reiei rapid fișele de sinteză (15 min)'},
-    {n:11, id:'w11', dates:'9–15 sep', subj:'civ', tag:'civ',
-     title:'Uzufructul, Uzul și Abitația',
-     tasks:[
-      {a:A.read, t:'Uzufructul: constituire, drepturile uzufructuarului, obligații, stingere'},
-      {a:A.read, t:'Uzul și abitația: regim juridic, inalienabilitate, diferențe față de uzufruct'},
-      {a:A.fisa, t:'Fișă comparativă: proprietate / uzufruct / uz / abitație (drepturi + limitări)'},
-      {a:A.recall, t:'Recall: explici cum se stinge uzufructul (toate cauzele)'},
-      {a:A.grile, t:'12 grile pe uzufruct, uz, abitație'},
-     ]},
-    {n:12, id:'w12', dates:'16–22 sep', subj:'civ', tag:'civ',
-     title:'Servitutea și Superficia',
-     tasks:[
-      {a:A.read, t:'Servitutea: clasificare (continue/necontinue, aparente/neaparente, pozitive/negative)'},
-      {a:A.read, t:'Constituirea servituților, exercitarea, stingerea'},
-      {a:A.read, t:'Superficia: constituire, drepturile superficiarului, durata (max 99 ani), stingere'},
-      {a:A.fisa, t:'Fișă: schema clasificării servituților + comparație servitute/superficie'},
-      {a:A.recall, t:'Recall: prin ce moduri se poate constitui o servitute?'},
-      {a:A.grile, t:'12 grile servitute + superficie'},
-     ],
-     review:'🔁 Spaced review W5-W8 (nulitate + recapitulare T.G.): 15 min recall activ'},
-    ]},
-  {m:'Octombrie 2026', weeks:[
-    {n:13, id:'w13', dates:'23–29 sep', subj:'civ', tag:'recap', type:'recap',
-     title:'⟳ RECAPITULARE PARȚIALĂ — Proprietate + Dezmembrăminte',
-     tasks:[
-      {a:A.recall, t:'Recall W9-W12: reproduce din memorie toate dezmembrămintele cu caractere'},
-      {a:A.map, t:'Hartă conceptuală: proprietate → modalități → dezmembrăminte → stingere'},
-      {a:A.sim, t:'Simulare: 20 grile Drepturi Reale parte I (W9-W12)'},
-      {a:A.err, t:'Analiză greșeli + completare fișe'},
-     ]},
-    {n:14, id:'w14', dates:'30 sep–6 oct', subj:'civ', tag:'civ',
-     title:'Posesia și Uzucapiunea',
-     tasks:[
-      {a:A.read, t:'Posesia: elementele constitutive (corpus + animus domini), dobândire, pierdere'},
-      {a:A.read, t:'Calitățile posesiei (utilă): continuă, netulburată, publică, neechivocă'},
-      {a:A.read, t:'Uzucapiunea tabulară (art. 930 CC) și extratabulară (art. 931 CC)'},
-      {a:A.fisa, t:'Fișă: uzucapiune tabulară vs. extratabulară (termene, condiții, efecte)'},
-      {a:A.recall, t:'Recall: ce vicii afectează posesia și care sunt efectele fiecăruia?'},
-      {a:A.grile, t:'15 grile posesie + uzucapiune'},
-     ]},
-    {n:15, id:'w15', dates:'7–13 oct', subj:'civ', tag:'civ',
-     title:'Acțiunea în revendicare și Accesiunea',
-     tasks:[
-      {a:A.read, t:'Revendicarea imobiliară: condiții, dovada dreptului, compararea titlurilor'},
-      {a:A.read, t:'Revendicarea mobiliară: distincții față de imobiliară, excepțiile (art. 937 CC)'},
-      {a:A.read, t:'Accesiunea imobiliară: naturală și artificială; lucrările autonome vs. adăugate'},
-      {a:A.fisa, t:'Fișă: revendicare imobiliară vs. mobiliară + cazurile de accesiune'},
-      {a:A.recall, t:'Recall: ce opțiuni are proprietarul fondului față de lucrările terțului?'},
-      {a:A.grile, t:'15 grile revendicare + accesiune'},
-     ],
-     review:'🔁 Spaced review W9-W12 (proprietate + dezmembrăminte): recall activ 10 min'},
-    {n:16, id:'w16', dates:'14–20 oct', subj:'civ', tag:'civ',
-     title:'Cartea funciară, Gajul și Ipoteca',
-     tasks:[
-      {a:A.read, t:'Cartea funciară: principii (publicității, legalității, forței probante), intabulare, radiere'},
-      {a:A.read, t:'Gajul (bunuri mobile corporale): constituire, drepturi creditor gajist, stingere'},
-      {a:A.read, t:'Ipoteca: imobiliară și mobiliară; rangul ipotecar; executarea și urmărirea'},
-      {a:A.fisa, t:'Fișă comparativă: gaj vs. ipotecă (obiect, constituire, publicitate, efecte)'},
-      {a:A.recall, t:'Recall: ce principii guvernează cartea funciară și ce efecte produc?'},
-      {a:A.grile, t:'15 grile CF + gaj + ipotecă'},
-     ]},
-    {n:17, id:'w17', dates:'21–27 oct', subj:'civ', tag:'sim', type:'sim',
-     title:'📊 SIMULARE + RECAPITULARE — Drepturi Reale complet',
-     tasks:[
-      {a:A.recall, t:'Recall total W9-W16: reproduce schema completă drepturi reale fără fișe'},
-      {a:A.map, t:'Hartă conceptuală finală: proprietate → modalități → dezmembrăminte → posesie → garanții'},
-      {a:A.sim, t:'Simulare: 30 grile Drepturi Reale (cronometrat 50 min)'},
-      {a:A.err, t:'Analiză detaliată: fiecare greșeală → recitești explicația + fișa aferentă'},
-      {a:A.grile, t:'Retry 10 grile din sesiunile reale pe subiectele la care ai greșit'},
-     ],
-     tip:'Scop: ≥ 70% corect la simularea de 30 grile. Sub 60% → reia săptămânile cu probleme înainte de Faza 3.'},
-  ]},
- ]},
-
-// ─── FAZA 3 ──────────────────────────────────────────────────────────────────
-{id:'f3', subj:'civ', color:'var(--civ)', title:'③ Teoria Generală a Obligațiilor',
- period:'Octombrie–Decembrie 2026',
- months:[
-  {m:'Octombrie 2026', weeks:[
-    {n:18, id:'w18', dates:'28 oct–3 nov', subj:'civ', tag:'civ',
-     title:'Clasificarea obligațiilor și izvoarele',
-     tasks:[
-      {a:A.read, t:'Clasificare: după obiect, sancțiune, opozabilitate, certitudine'},
-      {a:A.read, t:'Izvoare: contractul, actul juridic unilateral, faptul juridic licit'},
-      {a:A.read, t:'Gestiunea de afaceri, plata nedatorată, îmbogățirea fără justă cauză'},
-      {a:A.fisa, t:'Fișă: tabel clasificare obligații + condiții fiecare izvor de fapt juridic licit'},
-      {a:A.recall, t:'Recall: definești și distingei gestiunea de afaceri vs. plata nedatorată'},
-      {a:A.grile, t:'12 grile clasificare obligații + izvoare'},
-     ],
-     review:'🔁 Spaced review F1 (Teoria Generală AJC): reiei fișa completă din W8 (15 min)'},
-  ]},
-  {m:'Noiembrie 2026', weeks:[
-    {n:19, id:'w19', dates:'4–10 nov', subj:'civ', tag:'civ',
-     title:'Răspunderea civilă delictuală — condiții generale',
-     tasks:[
-      {a:A.read, t:'Fapta ilicită: comisivă/omisivă, ilicitul obiectiv'},
-      {a:A.read, t:'Vinovăția: intenția directă/indirectă, culpa (imprudența, neglijența), formele'},
-      {a:A.read, t:'Prejudiciul: cert, direct, personal, nereparat; prejudiciul corporal și moral'},
-      {a:A.read, t:'Legătura de cauzalitate: teorii, cauza adecvată, concursul de cauze'},
-      {a:A.fisa, t:'Fișă: cele 4 condiții ale răspunderii delictuale cu subtipuri și exemple'},
-      {a:A.recall, t:'Recall: expui teoretic condițiile + dai un exemplu pentru fiecare'},
-      {a:A.grile, t:'15 grile răspundere delictuală'},
-     ]},
-    {n:20, id:'w20', dates:'11–17 nov', subj:'civ', tag:'civ',
-     title:'Răspunderea pentru fapta altuia și pentru lucruri',
-     tasks:[
-      {a:A.read, t:'Răspunderea părinților (art. 1372 CC): condiții cumulative, înlăturare'},
-      {a:A.read, t:'Răspunderea comitentului pentru prepuși (art. 1373 CC): raportul prepușenie'},
-      {a:A.read, t:'Răspunderea pentru animale (art. 1375 CC) și pentru lucruri (art. 1376 CC)'},
-      {a:A.fisa, t:'Fișă comparativă: toate formele de răspundere obiectivă (tabel)'},
-      {a:A.recall, t:'Recall: distingei răspunderea părinților vs. a comitentului'},
-      {a:A.grile, t:'15 grile răspundere pentru fapta altuia + lucruri'},
-     ],
-     review:'🔁 Spaced review F2 parțial (W9-W13): recall posesie + uzucapiune (10 min)'},
-    {n:21, id:'w21', dates:'18–24 nov', subj:'civ', tag:'recap', type:'recap',
-     title:'⟳ RECAPITULARE PARȚIALĂ — Răspunderea civilă',
-     tasks:[
-      {a:A.recall, t:'Recall W19-W20: toate formele de răspundere cu condițiile lor'},
-      {a:A.sim, t:'Simulare: 15 grile răspundere civilă (W19-W20)'},
-      {a:A.err, t:'Analiză greșeli → recitești explicațiile oficiale din aplicație'},
-      {a:A.grile, t:'Extinde cu 5 grile de comparație răspundere contractuală vs. delictuală'},
-     ]},
-    {n:22, id:'w22', dates:'25 nov–1 dec', subj:'civ', tag:'civ',
-     title:'Executarea obligațiilor și Plata',
-     tasks:[
-      {a:A.read, t:'Plata: subiectele, obiectul, locul, data, proba plății'},
-      {a:A.read, t:'Imputația plății: legală, convențională, judiciară'},
-      {a:A.read, t:'Oferta de plată urmată de consemnare; darea în plată (datio in solutum)'},
-      {a:A.read, t:'Solidaritatea activă și pasivă: efecte în raporturile externe și interne'},
-      {a:A.read, t:'Indivizibilitatea: deosebiri față de solidaritate'},
-      {a:A.fisa, t:'Fișă: solidaritate vs. indivizibilitate (criterii de distincție)'},
-      {a:A.recall, t:'Recall: ce se întâmplă cu creanța solidară dacă unul din creditori iartă datoria?'},
-      {a:A.grile, t:'12 grile plată + solidaritate'},
-     ]},
-  ]},
-  {m:'Decembrie 2026', weeks:[
-    {n:23, id:'w23', dates:'2–8 dec', subj:'civ', tag:'civ',
-     title:'Cesiunea de creanță, Subrogația și Stingerea obligațiilor',
-     tasks:[
-      {a:A.read, t:'Cesiunea de creanță (art. 1566-1592 CC): condiții, opozabilitate, garanții transferate'},
-      {a:A.read, t:'Subrogația personală: legală (art. 1596 CC) și convențională'},
-      {a:A.read, t:'Compensarea: legală, convențională, judiciară — condiții'},
-      {a:A.read, t:'Novația, confuziunea, remiterea de datorie: definiții și efecte'},
-      {a:A.fisa, t:'Fișă: moduri de stingere a obligațiilor (tabel cu toate formele + efecte)'},
-      {a:A.recall, t:'Recall: distingei cesiunea de creanță vs. subrogație'},
-      {a:A.grile, t:'12 grile cesiune + subrogație + stingere'},
-     ],
-     review:'🔁 Spaced review F2 (W14-W17): recall revendicare + CF + garanții (10 min)'},
-    {n:24, id:'w24', dates:'9–15 dec', subj:'civ', tag:'civ',
-     title:'Rezoluțiunea, Rezilierea și Daune-interese',
-     tasks:[
-      {a:A.read, t:'Rezoluțiunea: judiciară, unilaterală, de drept (pactul comisoriu)'},
-      {a:A.read, t:'Rezilierea: pentru contractele cu executare succesivă; efecte pro futuro'},
-      {a:A.read, t:'Daune-interese: moratorii vs. compensatorii; condiții, întindere'},
-      {a:A.read, t:'Clauza penală: funcții, raportul cu daunele-interese, reducerea judiciară'},
-      {a:A.fisa, t:'Fișă: rezoluțiune vs. reziliere + clauza penală vs. daune-interese'},
-      {a:A.recall, t:'Recall: prin ce moduri se poate opera rezoluțiunea și ce efecte are?'},
-      {a:A.grile, t:'15 grile rezoluțiune + daune'},
-     ]},
-    {n:25, id:'w25', dates:'16–22 dec', subj:'civ', tag:'sim', type:'sim',
-     title:'📊 SIMULARE — Teoria Generală a Obligațiilor + Review Civil I',
-     tasks:[
-      {a:A.recall, t:'Recall complet W18-W24: reproduci schema tuturor obligațiilor'},
-      {a:A.map, t:'Hartă conceptuală: izvoare → naștere → executare → stingere → răspundere'},
-      {a:A.sim, t:'Simulare: 30 grile Teoria Generală Obligații (cronometrat 50 min)'},
-      {a:A.err, t:'Analiză greșeli + completare fișe'},
-      {a:A.recap, t:'REVIEW GLOBAL: parcurgi rapid fișele F1 (AJC) și F2 (Drepturi Reale)'},
-     ],
-     tip:'Această săptămână marchează jumătatea Dreptului Civil. Evaluează: AJC și Drepturi Reale la 70%+ ? Dacă nu, planifică sesiuni de recuperare în perioada vacanței.'},
-    {n:26, id:'w26', dates:'23–31 dec', subj:'civ', tag:'recap', type:'recap',
-     title:'⟳ Vacanță + Consolidare liberă',
-     tasks:[
-      {a:A.fisa, t:'Recitești relaxat fișele de sinteză F1+F2+F3 (30 min/zi, fără presiune)'},
-      {a:A.grile, t:'Opțional: câte 10 grile/zi din aplicație (mod antrenament pe materie)'},
-      {a:A.recall, t:'Recall 2-3 subiecte pe care le simți mai slabe — scrii tot ce știi'},
-     ],
-     tip:'Nu impune un program rigid. Relaxarea activă în vacanță consolidează memoria. Nu învăța materie nouă — fixează ce ai.'},
-  ]},
- ]},
-
-// ─── FAZA 4 ──────────────────────────────────────────────────────────────────
-{id:'f4', subj:'civ', color:'var(--civ)', title:'④ Contracte Speciale + Drept Succesoral',
- period:'Ianuarie–Februarie 2027',
- months:[
-  {m:'Ianuarie 2027', weeks:[
-    {n:27, id:'w27', dates:'1–7 ian', subj:'civ', tag:'civ',
-     title:'Contractul de vânzare',
-     tasks:[
-      {a:A.read, t:'Caractere, condiții esențiale (lucrul vândut + prețul), promisiunea de vânzare'},
-      {a:A.read, t:'Obligațiile vânzătorului: predarea și garanția (evicțiune + vicii ascunse)'},
-      {a:A.read, t:'Obligațiile cumpărătorului: plata prețului, ridicarea bunului; vânzarea pe credit'},
-      {a:A.fisa, t:'Fișă: schema vânzării (caractere + obligații ambelor părți + garanții)'},
-      {a:A.recall, t:'Recall: ce garanții are cumpărătorul împotriva evicțiunii?'},
-      {a:A.grile, t:'12 grile vânzare'},
-     ],
-     review:'🔁 Spaced review W18-W21 (obligații I): recall rapid izvoare + răspundere (10 min)'},
-    {n:28, id:'w28', dates:'8–14 ian', subj:'civ', tag:'civ',
-     title:'Donația și Locațiunea',
-     tasks:[
-      {a:A.read, t:'Donația: caractere (liberalitate, irevocabil), forma autentică obligatorie'},
-      {a:A.read, t:'Clauzele de inalienabilitate; reductibilitatea donațiilor excesive; raportul'},
-      {a:A.read, t:'Locațiunea: obligații locator (predare + garanție) și locatar (folosință + plată chirie)'},
-      {a:A.read, t:'Sublocațiunea, cesiunea contractului de locațiune, tacita relocațiune, încetarea'},
-      {a:A.fisa, t:'Fișă comparativă: donație vs. vânzare; locator vs. locatar (obligații)'},
-      {a:A.grile, t:'12 grile donație + locațiune'},
-     ]},
-    {n:29, id:'w29', dates:'15–21 ian', subj:'civ', tag:'civ',
-     title:'Mandatul și Antrepriza',
-     tasks:[
-      {a:A.read, t:'Mandatul cu/fără reprezentare: obligațiile mandatarului (executare, informare, răspundere)'},
-      {a:A.read, t:'Obligațiile mandantului; substituirea mandatarului; mandatul în interes comun'},
-      {a:A.read, t:'Revocarea mandatului, renunțarea, moartea; efectele față de terți'},
-      {a:A.read, t:'Antrepriza: riscul pieirii lucrului, garanția pentru vicii, recepția lucrului'},
-      {a:A.fisa, t:'Fișă comparativă: mandat vs. antrepriză (obligații + riscuri)'},
-      {a:A.recall, t:'Recall: în ce condiții mandatarul poate substitui o altă persoană?'},
-      {a:A.grile, t:'12 grile mandat + antrepriză'},
-     ],
-     review:'🔁 Spaced review W22-W25 (obligații II + simulare): recall plată + stingere (10 min)'},
-    {n:30, id:'w30', dates:'22–28 ian', subj:'civ', tag:'civ',
-     title:'Împrumutul, Fidejusiunea și Tranzacția',
-     tasks:[
-      {a:A.read, t:'Comodatul: caractere, obligațiile comodatarului, restituirea, riscul pieirii'},
-      {a:A.read, t:'Mutuum (împrumut de consumație): dobânzi, uzura, restituirea'},
-      {a:A.read, t:'Fidejusiunea: beneficiul de discuțiune și de diviziune, acțiunea în regres'},
-      {a:A.read, t:'Tranzacția: caractere, efectele (autoritate de lucru judecat), limitele'},
-      {a:A.fisa, t:'Fișă: comodat vs. mutuum + fidejusiunea simplă vs. solidară'},
-      {a:A.grile, t:'12 grile împrumut + fidejusiune + tranzacție'},
-     ]},
-    {n:31, id:'w31', dates:'29 ian–4 feb', subj:'civ', tag:'recap', type:'recap',
-     title:'⟳ RECAPITULARE — Contracte Speciale',
-     tasks:[
-      {a:A.recall, t:'Recall W27-W30: reproduce schema tuturor contractelor cu obligațiile esențiale'},
-      {a:A.map, t:'Hartă: leagă contractele după criteriu (onerozitate, translativ, intuitu personae)'},
-      {a:A.sim, t:'Simulare: 25 grile contracte speciale (cronometrat 40 min)'},
-      {a:A.err, t:'Analiză greșeli + completare fișe contracte cu probleme'},
-     ]},
-  ]},
-  {m:'Februarie 2027', weeks:[
-    {n:32, id:'w32', dates:'5–11 feb', subj:'civ', tag:'civ',
-     title:'Dreptul succesoral — moștenirea legală',
-     tasks:[
-      {a:A.read, t:'Condițiile dreptului de moștenire: capacitate, vocație, nedemnitatea (art. 958-961 CC)'},
-      {a:A.read, t:'Devoluțiunea legală: principiile (rudenia, clasele, proximitatea, egalitatea)'},
-      {a:A.read, t:'Clasa I (descendenți) și Clasa II (ascendenți privilegiați + colaterali privilegiați)'},
-      {a:A.read, t:'Clasele III și IV; soțul supraviețuitor (cotele în concurs cu fiecare clasă)'},
-      {a:A.fisa, t:'Fișă: tabel cotele soțului supraviețuitor în concurs cu fiecare clasă'},
-      {a:A.recall, t:'Recall: cum se împarte moștenirea între copii și soțul supraviețuitor?'},
-      {a:A.grile, t:'12 grile moștenire legală'},
-     ]},
-    {n:33, id:'w33', dates:'12–18 feb', subj:'civ', tag:'civ',
-     title:'Reprezentarea succesorală și Testamentul',
-     tasks:[
-      {a:A.read, t:'Reprezentarea succesorală (art. 964 CC): condiții, efecte, dobândire per stirpes'},
-      {a:A.read, t:'Testamentul: forme (autentic, olograf, mistic), condiții, revocarea'},
-      {a:A.read, t:'Legatul: specii (universal, cu titlu universal, cu titlu particular), caducitatea'},
-      {a:A.read, t:'Rezerva succesorală: moștenitorii rezervatari, cotele, calculul rezervei'},
-      {a:A.fisa, t:'Fișă: testamentul olograf vs. autentic (condiții + avantaje)'},
-      {a:A.recall, t:'Recall: cine sunt moștenitorii rezervatari și care e cota fiecăruia?'},
-      {a:A.grile, t:'12 grile testament + rezervă'},
-     ],
-     review:'🔁 Spaced review F4 contracte (W27-W30): recall rapid schema contractelor (10 min)'},
-    {n:34, id:'w34', dates:'19–25 feb', subj:'civ', tag:'civ',
-     title:'Acceptarea, renunțarea și Partajul succesoral',
-     tasks:[
-      {a:A.read, t:'Acceptarea moștenirii: expresă, tacită; acceptarea sub beneficiu de inventar'},
-      {a:A.read, t:'Renunțarea la moștenire: condiții, termen (1 an), efecte'},
-      {a:A.read, t:'Reducțiunea liberalităților excesive: ordinea reducțiunii, efectele'},
-      {a:A.read, t:'Partajul succesoral: voluntar și judiciar; efectul declarativ al partajului'},
-      {a:A.fisa, t:'Fișă: comparație acceptare expresă vs. beneficiu de inventar'},
-      {a:A.recall, t:'Recall: care e termenul de opțiune succesorală și ce se întâmplă la expirare?'},
-      {a:A.grile, t:'12 grile opțiune succesorală + partaj'},
-     ]},
-  ]},
- ]},
-
-// ─── FAZA 5 ──────────────────────────────────────────────────────────────────
-{id:'f5', subj:'civ', color:'var(--civ)', title:'⑤ SIMULARE DREPT CIVIL COMPLET',
- period:'Martie 2027',
- months:[
-  {m:'Martie 2027', weeks:[
-    {n:35, id:'w35', dates:'26 feb–4 mar', subj:'civ', tag:'sim', type:'sim',
-     title:'📊 SIMULARE COMPLETĂ — Drept Civil (50 întrebări)',
-     tasks:[
-      {a:A.recall, t:'Recall global: reproduce schema completă Drept Civil (AJC → Drepturi Reale → Obligații → Contracte → Succesiuni)'},
-      {a:A.sim, t:'Simulare: 50 grile Drept Civil din sesiuni reale (cronometrat 85 min)'},
-      {a:A.err, t:'Analiză profundă: grupează greșelile pe subteme → identifică top 3 subteme slabe'},
-      {a:A.recap, t:'Recapitulare țintită: reiei fișele subtemelor cu cel mai mic scor'},
-      {a:A.grile, t:'Retry 15 grile pe subtemele identificate ca slabe'},
-     ],
-     tip:'Scop: ≥ 65% la simularea de 50 grile Civil. Aceasta e pragul de promovare. Sub 60% → rezervă 2 săptămâni pentru Civil înainte de Procedura Civilă.'},
-  ]},
- ]},
-
-// ─── FAZA 6 ──────────────────────────────────────────────────────────────────
-{id:'f6', subj:'pciv', color:'var(--pciv)', title:'⑥ Procedură Civilă',
- period:'Martie–Aprilie 2027',
- months:[
-  {m:'Martie 2027', weeks:[
-    {n:36, id:'w36', dates:'5–11 mar', subj:'pciv', tag:'pciv',
-     title:'Principii + Competența instanțelor',
-     tasks:[
-      {a:A.read, t:'Principiile fundamentale: contradictorialitate, oralitate, publicitate, disponibilitate, rolul activ al judecătorului'},
-      {a:A.read, t:'Competența materială: judecătorie, tribunal, curte de apel (în primă instanță)'},
-      {a:A.read, t:'Competența teritorială: generală, alternativă, exclusivă, cu alegere'},
-      {a:A.fisa, t:'Fișă: tabel competență materială pe tipuri de cauze + competență teritorială excepții'},
-      {a:A.recall, t:'Recall: definești prorogarea de competență și cazurile de conexitate'},
-      {a:A.grile, t:'12 grile competență instanțe'},
-     ]},
-    {n:37, id:'w37', dates:'12–18 mar', subj:'pciv', tag:'pciv',
-     title:'Participanții și actele de procedură',
-     tasks:[
-      {a:A.read, t:'Judecătorul: incompatibilitate, recuzare, abținere; colegiul de judecată'},
-      {a:A.read, t:'Procurorul în procesul civil; coparticiparea procesuală (activă, pasivă, mixtă)'},
-      {a:A.read, t:'Cererea de chemare în judecată: cuprins, regularizare, anulare'},
-      {a:A.read, t:'Întâmpinarea și cererea reconvențională; termenele procedurale (absolute vs. relative)'},
-      {a:A.fisa, t:'Fișă: cuprinsul cererii de chemare în judecată + sancțiunile lipsei'},
-      {a:A.recall, t:'Recall: care sunt motivele de recuzare a judecătorului?'},
-      {a:A.grile, t:'12 grile participanți + acte de procedură'},
-     ],
-     review:'🔁 Spaced review F3 (Obligații): recall activ stingere + rezoluțiune (10 min)'},
-    {n:38, id:'w38', dates:'19–25 mar', subj:'pciv', tag:'pciv',
-     title:'Judecata în primă instanță și Probele',
-     tasks:[
-      {a:A.read, t:'Judecata: fixarea primului termen, excepțiile procesuale (inadmisibilitate, prescripție)'},
-      {a:A.read, t:'Probele: sarcina probei, proba prin înscrisuri (autentice vs. sub semnătură privată)'},
-      {a:A.read, t:'Martori, mărturisire, prezumții, expertiza, cercetarea la fața locului'},
-      {a:A.read, t:'Hotărârea judecătorească: deliberare, redactare, comunicare, îndreptare de erori'},
-      {a:A.fisa, t:'Fișă: tipuri de probe + admisibilitate + forța probantă'},
-      {a:A.recall, t:'Recall: ce cuprinde dispozitivul hotărârii? Ce e motivarea?'},
-      {a:A.grile, t:'12 grile judecată primă instanță + probe'},
-     ]},
-    {n:39, id:'w39', dates:'26 mar–1 apr', subj:'pciv', tag:'pciv',
-     title:'Căile de atac',
-     tasks:[
-      {a:A.read, t:'Apelul: obiect (hotărârile primei instanțe), termen (30 zile), efectul devolutiv și suspensiv'},
-      {a:A.read, t:'Judecata în apel: soluțiile instanței de apel (admite/respinge/anulează)'},
-      {a:A.read, t:'Recursul: obiect (hotărâri irevocabile), motivele art. 488 CPC, judecata'},
-      {a:A.read, t:'Contestația în anulare și revizuirea: motive, termen, procedura'},
-      {a:A.fisa, t:'Fișă comparativă: apel vs. recurs (obiect / termen / motive / efecte / soluții)'},
-      {a:A.recall, t:'Recall: ce hotărâri sunt supuse recursului? Care sunt motivele de recurs?'},
-      {a:A.grile, t:'15 grile căi de atac'},
-     ]},
-  ]},
-  {m:'Aprilie 2027', weeks:[
-    {n:40, id:'w40', dates:'2–8 apr', subj:'pciv', tag:'sim', type:'sim',
-     title:'📊 Executarea silită + SIMULARE Procedură Civilă',
-     tasks:[
-      {a:A.read, t:'Titlul executoriu: ce acte constituie, investirea, perimarea'},
-      {a:A.read, t:'Poprirea, urmărirea silită mobiliară și imobiliară; contestația la executare'},
-      {a:A.recall, t:'Recall complet Procedură Civilă W36-W40: reproduce schema'},
-      {a:A.sim, t:'Simulare: 25 grile Procedură Civilă (cronometrat 40 min)'},
-      {a:A.err, t:'Analiză greșeli + consolidare subteme slabe'},
-     ],
-     tip:'Procedura Civilă are pondere mai mică în grilele de licență, dar apelul vs. recursul și competența sunt mereu prezente. Stăpânește-le bine.'},
-  ]},
- ]},
-
-// ─── FAZA 7 ──────────────────────────────────────────────────────────────────
-{id:'f7', subj:'pen', color:'var(--pen)', title:'⑦ Drept Penal — Teoria Generală',
- period:'Aprilie–Mai 2027',
- months:[
-  {m:'Aprilie 2027', weeks:[
-    {n:41, id:'w41', dates:'9–15 apr', subj:'pen', tag:'pen',
-     title:'Noțiunea infracțiunii + Elementele constitutive',
-     tasks:[
-      {a:A.read, t:'Trăsăturile esențiale (art. 15 CP): tipicitate, antijuridicitate, imputabilitate'},
-      {a:A.read, t:'Latura obiectivă: elementul material, urmarea imediată, legătura de cauzalitate'},
-      {a:A.read, t:'Latura subiectivă: intenția (directă/indirectă), culpa (imprudența/neglijența), praeterintenția'},
-      {a:A.read, t:'Subiectul activ: persoana fizică (condiții), persoana juridică; subiectul pasiv'},
-      {a:A.fisa, t:'Fișă: schema completă elementelor constitutive ale infracțiunii'},
-      {a:A.recall, t:'Recall: care sunt deosebirile dintre intenție indirectă și culpă cu prevedere?'},
-      {a:A.grile, t:'15 grile teoria generală a infracțiunii'},
-     ]},
-    {n:42, id:'w42', dates:'16–22 apr', subj:'pen', tag:'pen',
-     title:'Formele infracțiunii + Participația penală',
-     tasks:[
-      {a:A.read, t:'Actele preparatorii: de regulă nepedepsite; cazuri de excepție'},
-      {a:A.read, t:'Tentativa: perfectă și imperfectă, imposibilă; pedepsirea (jumătate din maximul special)'},
-      {a:A.read, t:'Infracțiunea consumată vs. epuizată (continua, continuată, de obicei)'},
-      {a:A.read, t:'Coautoratul (condiții), instigarea (formele), complicitatea (anterioară/concomitentă)'},
-      {a:A.fisa, t:'Fișă: tentativa + formele participației (condiții + pedeapsa pentru fiecare)'},
-      {a:A.recall, t:'Recall: ce distinge complicele de coautor? Dar instigatorul de complice?'},
-      {a:A.grile, t:'15 grile tentativă + participație'},
-     ],
-     review:'🔁 Spaced review F4 (Contracte): recall rapid vânzare + mandat + fidejusiune (10 min)'},
-    {n:43, id:'w43', dates:'23–29 apr', subj:'pen', tag:'pen',
-     title:'Concursul, Recidiva și Cauzele de neimputabilitate',
-     tasks:[
-      {a:A.read, t:'Concursul real și ideal de infracțiuni; sistemele de sancționare (absorbție, cumul juridic, spor)'},
-      {a:A.read, t:'Recidiva: postconkdamnatorie și postexecutorie; condițiile primului și celui de-al doilea termen'},
-      {a:A.read, t:'Pluralitatea intermediară; recidiva internațională'},
-      {a:A.read, t:'Cauzele de neimputabilitate: iresponsabilitatea, minoritatea, intoxicația, eroarea, constrângerea'},
-      {a:A.fisa, t:'Fișă: concurs real vs. ideal + recidivă (tabel cu condițiile termenilor)'},
-      {a:A.recall, t:'Recall: ce sistem de sancționare se aplică la concursul de infracțiuni?'},
-      {a:A.grile, t:'15 grile concurs + recidivă + neimputabilitate'},
-     ]},
-  ]},
-  {m:'Mai 2027', weeks:[
-    {n:44, id:'w44', dates:'30 apr–6 mai', subj:'pen', tag:'pen',
-     title:'Pedepsele și Individualizarea + Recapitulare Teorie Generală Penală',
-     tasks:[
-      {a:A.read, t:'Pedepsele principale: închisoarea, detențiunea pe viață, amenda penală'},
-      {a:A.read, t:'Pedepsele complementare și accesorii; măsurile de siguranță (art. 107-112 CP)'},
-      {a:A.read, t:'Individualizarea judiciară: circumstanțele atenuante (art. 75 CP) și agravante (art. 77 CP)'},
-      {a:A.read, t:'Suspendarea executării sub supraveghere: condiții, termenul de supraveghere, revocarea'},
-      {a:A.recall, t:'Recall complet F7 W41-W44: reproduce schema teoriei generale penale'},
-      {a:A.sim, t:'Simulare: 25 grile Teoria Generală Penal (cronometrat 40 min)'},
-      {a:A.err, t:'Analiză greșeli + consolidare'},
-     ],
-     tip:'Înainte de infracțiunile speciale, asigură-te că stăpânești bine teoria generală — elementele constitutive sunt cheia înțelegerii oricărei infracțiuni.'},
-  ]},
- ]},
-
-// ─── FAZA 8 ──────────────────────────────────────────────────────────────────
-{id:'f8', subj:'pen', color:'var(--pen)', title:'⑧ Drept Penal — Infracțiuni speciale',
- period:'Mai 2027',
- months:[
-  {m:'Mai 2027', weeks:[
-    {n:45, id:'w45', dates:'7–13 mai', subj:'pen', tag:'pen',
-     title:'Infracțiuni contra persoanei',
-     tasks:[
-      {a:A.read, t:'Omorul simplu (art. 188 CP) și calificat (art. 189 CP): elementele, deosebirile'},
-      {a:A.read, t:'Lovirile sau vătămările cauzatoare de moarte; vătămarea corporală (art. 194 CP)'},
-      {a:A.read, t:'Vătămarea corporală din culpă; lipsirea de libertate în mod ilegal (art. 205 CP)'},
-      {a:A.read, t:'Violul (art. 218 CP) și agresiunea sexuală (art. 219 CP): elementele constitutive'},
-      {a:A.fisa, t:'Fișă: tabel infracțiuni contra persoanei (latura obiectivă + subiectivă + pedeapsa)'},
-      {a:A.recall, t:'Recall: ce distinge omorul simplu de cel calificat? Dar de loviri cauzatoare de moarte?'},
-      {a:A.grile, t:'15 grile infracțiuni contra persoanei'},
-     ],
-     review:'🔁 Spaced review F5 Succesiuni (W32-W34): recall mostenire legala + testament (10 min)'},
-    {n:46, id:'w46', dates:'14–20 mai', subj:'pen', tag:'pen',
-     title:'Infracțiuni contra patrimoniului',
-     tasks:[
-      {a:A.read, t:'Furtul simplu (art. 228 CP) și calificat (art. 229 CP): condiții, deosebiri'},
-      {a:A.read, t:'Tâlhăria (art. 233 CP): elementele, formele agravate (art. 234 CP)'},
-      {a:A.read, t:'Înșelăciunea (art. 244 CP): manopera frauduloasă, prejudiciul'},
-      {a:A.read, t:'Abuzul de încredere (art. 238 CP); delapidarea (art. 295 CP)'},
-      {a:A.fisa, t:'Fișă comparativă: furt vs. tâlhărie (elementele constitutive)'},
-      {a:A.recall, t:'Recall: ce face din furt o tâlhărie? Dar din tâlhărie o tâlhărie calificată?'},
-      {a:A.grile, t:'15 grile infracțiuni contra patrimoniului'},
-     ]},
-    {n:47, id:'w47', dates:'21–27 mai', subj:'pen', tag:'pen',
-     title:'Infracțiuni de corupție și serviciu',
-     tasks:[
-      {a:A.read, t:'Luarea de mită (art. 289 CP): elementele, momentul consumării, variantele agravate'},
-      {a:A.read, t:'Darea de mită (art. 290 CP): subiect activ, elementele, relația cu luarea de mită'},
-      {a:A.read, t:'Traficul de influență (art. 291 CP) și cumpărarea de influență (art. 292 CP)'},
-      {a:A.read, t:'Abuzul în serviciu (art. 297 CP) și neglijența în serviciu (art. 298 CP)'},
-      {a:A.fisa, t:'Fișă: luare vs. dare de mită vs. trafic de influență (tabel)'},
-      {a:A.recall, t:'Recall: ce distinge traficul de influență de luarea de mită?'},
-      {a:A.grile, t:'12 grile corupție + infracțiuni de serviciu'},
-     ]},
-    {n:48, id:'w48', dates:'28 mai–3 iun', subj:'pen', tag:'sim', type:'sim',
-     title:'📊 SIMULARE COMPLETĂ — Drept Penal (50 întrebări)',
-     tasks:[
-      {a:A.recall, t:'Recall complet F7+F8: schema teoriei generale + infracțiunile speciale'},
-      {a:A.sim, t:'Simulare: 50 grile Drept Penal din sesiuni reale (cronometrat 85 min)'},
-      {a:A.err, t:'Analiză profundă: grupezi greșelile pe subteme → top 3 puncte slabe'},
-      {a:A.recap, t:'Recapitulare țintită pe subtemele slabe identificate'},
-     ],
-     tip:'Scop: ≥ 65% la simularea de 50 grile Penal. Aceasta e pragul de promovare.'},
-  ]},
- ]},
-
-// ─── FAZA 9 ──────────────────────────────────────────────────────────────────
-{id:'f9', subj:'ppen', color:'var(--ppen)', title:'⑨ Procedură Penală',
- period:'Iunie 2027',
- months:[
-  {m:'Iunie 2027', weeks:[
-    {n:49, id:'w49', dates:'4–10 iun', subj:'ppen', tag:'ppen',
-     title:'Principii, Probe și Măsuri preventive',
-     tasks:[
-      {a:A.read, t:'Principii: legalitatea, prezumția de nevinovăție, dreptul la apărare, contradictorialitate'},
-      {a:A.read, t:'Probele: mijloacele de probă (declarații, înscrisuri, expertize, interceptări), loialitate'},
-      {a:A.read, t:'Măsurile preventive: reținerea (24h), controlul judiciar (60 zile), arestul preventiv (30 zile)'},
-      {a:A.fisa, t:'Fișă: măsuri preventive (termen maxim + cine dispune + căi de atac)'},
-      {a:A.recall, t:'Recall: ce probe sunt interzise și ce consecință are probele obținute nelegal?'},
-      {a:A.grile, t:'12 grile principii + probe + măsuri preventive'},
-     ],
-     review:'🔁 Spaced review F7 Teoria Generală Penală: recall participație + concurs (10 min)'},
-    {n:50, id:'w50', dates:'11–17 iun', subj:'ppen', tag:'ppen',
-     title:'Urmărire penală, Camera preliminară și Judecată',
-     tasks:[
-      {a:A.read, t:'Urmărirea penală: sesizarea, actele de urmărire, soluțiile procurorului (clasare, renunțare, rechizitoriu)'},
-      {a:A.read, t:'Camera preliminară: competență, termenul (60 zile), verificarea actului de sesizare'},
-      {a:A.read, t:'Judecata: stadiile (cercetarea judecătorească, dezbateri, deliberare), achitarea vs. condamnarea'},
-      {a:A.read, t:'Căile de atac penale: apelul (art. 408-425 CPP), recursul în casație (art. 438 CPP motive)'},
-      {a:A.fisa, t:'Fișă: apel penal vs. recurs în casație (obiect / termen / motive / soluții)'},
-      {a:A.recall, t:'Recall: care sunt motivele de recurs în casație (art. 438 CPP)?'},
-      {a:A.sim, t:'Simulare: 20 grile Procedură Penală (cronometrat 30 min)'},
-      {a:A.err, t:'Analiză greșeli + consolidare'},
-     ]},
-  ]},
- ]},
-
-// ─── FAZA 10 ─────────────────────────────────────────────────────────────────
-{id:'f10', subj:'all', color:'#ffd54f', title:'⑩ Recapitulare Finală + Simulări complete',
- period:'Iunie 2027',
- months:[
-  {m:'Iunie 2027', weeks:[
-    {n:51, id:'w51', dates:'18–24 iun', subj:'all', tag:'sim', type:'sim',
-     title:'📊 SIMULARE FINALĂ — 100 întrebări mixte',
-     tasks:[
-      {a:A.recap, t:'Revizuire rapidă: parcurgi toate fișele de sinteză din cele 4 materii (2h)'},
-      {a:A.sim, t:'Simulare completă: 100 grile (50 Civil/PC + 50 Penal/PP) cronometrat 3 ore'},
-      {a:A.err, t:'Analiză detaliată: listezi toate greșelile + subiectele aferente'},
-      {a:A.recap, t:'Plan de urgență: pentru fiecare subiect greșit → recitești fișa + faci 5 grile extra'},
-      {a:A.grile, t:'Sesiune de recuperare: 20 grile suplimentare pe top-3 subtemele slabe'},
-     ],
-     tip:'Nu te descuraja la rezultat — scopul e să identifici lacunele, nu să obții 100%. Fiecare greșeală acum înseamnă o greșeală mai puțin la examen.'},
-    {n:52, id:'w52', dates:'25–30 iun', subj:'all', tag:'recap', type:'recap',
-     title:'🎓 Revizuire finală + EXAMEN',
-     tasks:[
-      {a:A.fisa, t:'Zi 1-2: Recitești relaxat fișele de sinteză pentru toate cele 4 materii'},
-      {a:A.grile, t:'Zi 3: 30 grile din sesiunile reale 2025-2026 (ultimele sesiuni = cele mai relevante)'},
-      {a:A.recall, t:'Zi 4: Recall final — scrii pe o foaie goală tot ce știi despre fiecare materie'},
-      {a:A.fisa, t:'Zi 5 (cu 1 zi înainte de examen): Recitești NUMAI fișele de sinteză, nu cursul'},
-      {a:A.sim, t:'EXAMEN — Ai studiat un an. Ai pregătire solidă. Citește cu atenție fiecare întrebare. 🎓'},
-     ],
-     tip:'Ultimele 48h: NU mai înveți materie nouă. Somnul complet este mai valoros decât 3 ore de studiu în plus. Mănâncă bine înainte de examen.'},
-  ]},
- ]},
+const TATA_MSG = [
+  'Un pas mic în fiecare zi te duce departe. Sunt mândru de tine. — Tata 🤍',
+  'Nu trebuie să fie perfect azi. Trebuie doar să continui. — Tata 🤍',
+  'Fiecare grilă rezolvată e o cărămidă la visul tău. — Tata 🤍',
+  'Când e greu, amintește-ți de ce ai început. Poți. — Tata 🤍',
+  'Disciplina de azi e libertatea de mâine. Te iubesc. — Tata 🤍',
+  'Ai mai multă putere decât crezi. Hai, încă puțin. — Tata 🤍',
+  'Odihna face parte din învățat. Ai grijă de tine. — Tata 🤍',
+  'Nu te compara cu nimeni. Drumul tău e al tău. — Tata 🤍',
+  'Cred în tine chiar și în zilele în care tu nu crezi. — Tata 🤍',
 ];
 
-// ══════════════════════════════════════════════════════════════════════════════
-// STATE
-// ══════════════════════════════════════════════════════════════════════════════
-const KEY = 'plan_licenta_v2';
+const PHASES = [
+// ═══ FAZA 1 · CIVIL — Teoria Generală a AJC (W1-W5) ═══
+{id:'f1', subj:'civ', color:'var(--civ)', title:'① Teoria Generală a Actului Juridic Civil', period:'Iulie 2026',
+ months:[{m:'Iulie 2026', weeks:[
+  {n:1, id:'w01', dates:'29 iun–5 iul', subj:'civ', tag:'civ', title:'AJC: noțiune, clasificare, capacitate',
+   tasks:[
+    {a:A.read,t:'Noțiunea AJC; clasificare (după voințe, efecte, modalitate, conținut)'},
+    {a:A.read,t:'Capacitatea civilă: de folosință vs. de exercițiu; incapacități'},
+    {a:A.fisa,t:'Fișă: schema clasificărilor + tabel capacitate folosință/exercițiu'},
+    {a:A.recall,t:'Recall: reproduci clasificările din memorie, fără fișă'},
+    {a:A.grile,t:'10 grile pe AJC + capacitate → analizezi fiecare variantă greșită'},
+   ],
+   concepte:'Act unilateral/bilateral · consensual/solemn/real · cu titlu oneros/gratuit · capacitate de exercițiu deplină la 18 ani'},
+  {n:2, id:'w02', dates:'6–12 iul', subj:'civ', tag:'civ', title:'Consimțământul și viciile de consimțământ',
+   tasks:[
+    {a:A.read,t:'Consimțământul: condiții de valabilitate, momentul încheierii actului'},
+    {a:A.read,t:'Eroarea (esențială/indiferentă, scuzabilă) și dolul (elemente, reticență)'},
+    {a:A.read,t:'Violența și leziunea: condiții, persoane protejate, sancțiuni'},
+    {a:A.fisa,t:'Fișă comparativă: cele 4 vicii (condiții / sancțiune / prescripție)'},
+    {a:A.recall,t:'Recall: reproduci tabelul viciilor complet'},
+    {a:A.grile,t:'12 grile pe consimțământ + vicii'},
+   ],
+   concepte:'Toate viciile → nulitate RELATIVĂ · eroarea esențială poartă asupra naturii/obiectului/identității · dolul = eroare provocată',
+   review:'🔁 Spaced: revezi clasificările AJC din W1 (5 min recall)'},
+  {n:3, id:'w03', dates:'13–19 iul', subj:'civ', tag:'civ', title:'Obiect, cauză, formă + Nulitatea',
+   tasks:[
+    {a:A.read,t:'Obiectul (determinat, posibil, licit) și cauza (condiții, cauza ilicită)'},
+    {a:A.read,t:'Forma actului: ad validitatem, ad probationem, pentru opozabilitate'},
+    {a:A.read,t:'Nulitatea absolută (cauze, regim) vs. relativă (cauze, confirmare)'},
+    {a:A.fisa,t:'Fișă: nulitate absolută vs. relativă — toate criteriile de distincție'},
+    {a:A.recall,t:'Recall: compari cele două nulități + cauzele fiecăreia'},
+    {a:A.grile,t:'12 grile obiect/cauză/formă/nulitate'},
+   ],
+   concepte:'Nulitate absolută = ordine publică, imprescriptibilă, oricine o invocă, NU se confirmă · Relativă = interes privat, prescriptibilă, se confirmă',
+   review:'🔁 Spaced: recall viciile de consimțământ din W2 (5 min)'},
+  {n:4, id:'w04', dates:'20–26 iul', subj:'civ', tag:'civ', title:'Efectele nulității, modalități, prescripția',
+   tasks:[
+    {a:A.read,t:'Efectele nulității: retroactivitate, repunere în situația anterioară, excepții'},
+    {a:A.read,t:'Modalitățile: condiția (suspensivă/rezolutorie) și termenul'},
+    {a:A.read,t:'Prescripția extinctivă: termen general 3 ani, suspendare, întrerupere'},
+    {a:A.read,t:'Decăderea: termen, regim, distincția față de prescripție'},
+    {a:A.fisa,t:'Fișă: condiție suspensivă/rezolutorie + prescripție vs. decădere'},
+    {a:A.recall,t:'Recall: explici diferența prescripție-decădere'},
+    {a:A.grile,t:'12 grile efecte nulitate + modalități + prescripție'},
+   ],
+   concepte:'Prescripția stinge dreptul la ACȚIUNE, nu dreptul subiectiv · decăderea stinge însuși dreptul · termen general 3 ani (art. 2517)'},
+  {n:5, id:'w05', dates:'27 iul–2 aug', subj:'civ', tag:'recap', type:'recap', title:'⟳ RECAPITULARE — Teoria Generală AJC',
+   tasks:[
+    {a:A.recall,t:'Recall complet pe hârtie: toată materia W1-W4 (structură proprie)'},
+    {a:A.fisa,t:'Hartă conceptuală: AJC → condiții → vicii → nulitate → efecte → prescripție'},
+    {a:A.sim,t:'Simulare: 25 grile Teoria Generală AJC (cronometrat 40 min)'},
+    {a:A.err,t:'Analiză: recitești explicația fiecărei greșeli din simulare'},
+   ],
+   tip:'Săptămână de consolidare. Dacă ai sub 60% la simulare, reia subtema mai slabă înainte de Drepturi Reale. Marchează-ți încrederea jos ⬇️'},
+ ]}]},
+
+// ═══ FAZA 2 · CIVIL — Drepturi Reale (W6-W9) ═══
+{id:'f2', subj:'civ', color:'var(--civ)', title:'② Drepturi Reale', period:'August 2026',
+ months:[{m:'August 2026', weeks:[
+  {n:6, id:'w06', dates:'3–9 aug', subj:'civ', tag:'civ', title:'Proprietatea privată și modalitățile ei',
+   tasks:[
+    {a:A.read,t:'Caractere (absolut, exclusiv, perpetuu) + atribute (posesie, folosință, dispoziție)'},
+    {a:A.read,t:'Limitele dreptului de proprietate (legale, judiciare, convenționale)'},
+    {a:A.read,t:'Proprietatea rezolubilă/anulabilă; coproprietatea obișnuită și forțată; partajul'},
+    {a:A.fisa,t:'Fișă: caractere + atribute + tipuri de coproprietate'},
+    {a:A.recall,t:'Recall: ce poate face un coproprietar fără acordul celorlalți?'},
+    {a:A.grile,t:'12 grile proprietate + modalități'},
+   ],
+   concepte:'Atribute: ius possidendi / ius utendi+fruendi / ius abutendi · coproprietatea forțată nu poate fi sistată prin partaj',
+   review:'🔁 Spaced: recall nulitatea (W3) — absolută vs. relativă (5 min)'},
+  {n:7, id:'w07', dates:'10–16 aug', subj:'civ', tag:'civ', title:'Dezmembrămintele dreptului de proprietate',
+   tasks:[
+    {a:A.read,t:'Uzufructul: constituire, drepturi/obligații uzufructuar, stingere'},
+    {a:A.read,t:'Uzul și abitația; servitutea (clasificare, constituire, stingere)'},
+    {a:A.read,t:'Superficia: constituire, drepturile superficiarului, durata (max 99 ani)'},
+    {a:A.fisa,t:'Fișă comparativă: uzufruct / uz / abitație / servitute / superficie'},
+    {a:A.recall,t:'Recall: cum se stinge uzufructul? (toate cauzele)'},
+    {a:A.grile,t:'12 grile dezmembrăminte'},
+   ],
+   concepte:'Dezmembrăminte: uzufruct, uz, abitație, servitute, superficie · uzufructul e temporar (viager pt. persoana fizică)',
+   review:'🔁 Spaced: recall prescripția extinctivă (W4) (5 min)'},
+  {n:8, id:'w08', dates:'17–23 aug', subj:'civ', tag:'civ', title:'Posesie, uzucapiune, revendicare, accesiune',
+   tasks:[
+    {a:A.read,t:'Posesia: elemente (corpus+animus), calități (utilă), vicii'},
+    {a:A.read,t:'Uzucapiunea tabulară (art. 930) și extratabulară (art. 931)'},
+    {a:A.read,t:'Acțiunea în revendicare (imobiliară/mobiliară); accesiunea'},
+    {a:A.read,t:'Scurt: cartea funciară (principii) + gajul și ipoteca (garanții reale)'},
+    {a:A.fisa,t:'Fișă: uzucapiune tabulară vs. extratabulară + revendicare imob./mob.'},
+    {a:A.recall,t:'Recall: ce vicii afectează posesia și cu ce efect?'},
+    {a:A.grile,t:'15 grile posesie + uzucapiune + revendicare'},
+   ],
+   concepte:'Posesie utilă = continuă, netulburată, publică, neechivocă · revendicarea e imprescriptibilă (regula)'},
+  {n:9, id:'w09', dates:'24–30 aug', subj:'civ', tag:'sim', type:'sim', title:'📊 SIMULARE + Recapitulare Drepturi Reale',
+   tasks:[
+    {a:A.recall,t:'Recall total W6-W8: schema completă drepturi reale'},
+    {a:A.fisa,t:'Hartă: proprietate → modalități → dezmembrăminte → posesie → garanții'},
+    {a:A.sim,t:'Simulare: 30 grile Drepturi Reale (cronometrat 50 min)'},
+    {a:A.err,t:'Analiză detaliată: fiecare greșeală → explicație + fișă aferentă'},
+   ],
+   tip:'Scop: ≥ 70%. Drepturile reale au pondere mare — uzucapiunea și revendicarea sunt mereu prezente în grile.'},
+ ]}]},
+
+// ═══ FAZA 3 · CIVIL — Teoria Generală a Obligațiilor (W10-W14) ═══
+{id:'f3', subj:'civ', color:'var(--civ)', title:'③ Teoria Generală a Obligațiilor', period:'Septembrie 2026',
+ months:[{m:'Septembrie 2026', weeks:[
+  {n:10, id:'w10', dates:'31 aug–6 sep', subj:'civ', tag:'civ', title:'Izvoarele obligațiilor + fapt juridic licit',
+   tasks:[
+    {a:A.read,t:'Clasificarea obligațiilor (obiect, sancțiune, opozabilitate)'},
+    {a:A.read,t:'Izvoare: contractul, actul unilateral, faptul juridic licit'},
+    {a:A.read,t:'Gestiunea de afaceri, plata nedatorată, îmbogățirea fără justă cauză'},
+    {a:A.fisa,t:'Fișă: tabel izvoare + condiții fapt juridic licit'},
+    {a:A.recall,t:'Recall: distingei gestiunea de afaceri vs. plata nedatorată'},
+    {a:A.grile,t:'12 grile izvoare + fapt juridic licit'},
+   ],
+   concepte:'Obligații de mijloace vs. de rezultat · îmbogățirea fără justă cauză e subsidiară',
+   review:'🔁 Spaced: recall AJC — efectele nulității (W4/W5) (5 min)'},
+  {n:11, id:'w11', dates:'7–13 sep', subj:'civ', tag:'civ', title:'Răspunderea civilă delictuală',
+   tasks:[
+    {a:A.read,t:'Cele 4 condiții: fapta ilicită, vinovăția, prejudiciul, cauzalitatea'},
+    {a:A.read,t:'Răspunderea pentru fapta altuia (părinți art.1372, comitent art.1373)'},
+    {a:A.read,t:'Răspunderea pentru animale (1375) și pentru lucruri (1376)'},
+    {a:A.fisa,t:'Fișă: cele 4 condiții + formele de răspundere obiectivă'},
+    {a:A.recall,t:'Recall: distingei răspunderea părinților vs. a comitentului'},
+    {a:A.grile,t:'15 grile răspundere delictuală'},
+   ],
+   concepte:'Vinovăția: intenție directă/indirectă, culpă (imprudență/neglijență) · răspunderea comitentului = obiectivă, fără vinovăție proprie',
+   review:'🔁 Spaced: recall posesie + uzucapiune (W8) (5 min)'},
+  {n:12, id:'w12', dates:'14–20 sep', subj:'civ', tag:'civ', title:'Executarea, plata, solidaritatea',
+   tasks:[
+    {a:A.read,t:'Plata: subiecte, obiect, loc, dată, imputația plății'},
+    {a:A.read,t:'Oferta de plată + consemnarea; darea în plată'},
+    {a:A.read,t:'Solidaritatea activă/pasivă; indivizibilitatea (distincții)'},
+    {a:A.fisa,t:'Fișă: solidaritate vs. indivizibilitate (criterii)'},
+    {a:A.recall,t:'Recall: ce efect are dacă un creditor solidar iartă datoria?'},
+    {a:A.grile,t:'12 grile plată + solidaritate'},
+   ],
+   concepte:'Solidaritatea NU se prezumă (trebuie prevăzută) · indivizibilitatea se transmite la moștenitori, solidaritatea nu'},
+  {n:13, id:'w13', dates:'21–27 sep', subj:'civ', tag:'civ', title:'Transmiterea și stingerea obligațiilor',
+   tasks:[
+    {a:A.read,t:'Cesiunea de creanță; subrogația (legală/convențională)'},
+    {a:A.read,t:'Stingerea: compensare, novație, confuziune, remitere de datorie'},
+    {a:A.read,t:'Rezoluțiunea/rezilierea; daune-interese; clauza penală'},
+    {a:A.fisa,t:'Fișă: moduri de stingere + rezoluțiune vs. reziliere'},
+    {a:A.recall,t:'Recall: distingei cesiunea de creanță vs. subrogația'},
+    {a:A.grile,t:'15 grile cesiune + stingere + rezoluțiune'},
+   ],
+   concepte:'Rezoluțiune = desființare retroactivă (contracte uno ictu) · reziliere = pentru viitor (executare succesivă)',
+   review:'🔁 Spaced: recall răspunderea delictuală — cele 4 condiții (W11) (5 min)'},
+  {n:14, id:'w14', dates:'28 sep–4 oct', subj:'civ', tag:'sim', type:'sim', title:'📊 SIMULARE — Teoria Generală a Obligațiilor',
+   tasks:[
+    {a:A.recall,t:'Recall complet W10-W13: schema tuturor obligațiilor'},
+    {a:A.fisa,t:'Hartă: izvoare → executare → transmitere → stingere → răspundere'},
+    {a:A.sim,t:'Simulare: 30 grile Obligații (cronometrat 50 min)'},
+    {a:A.err,t:'Analiză greșeli + completare fișe'},
+   ],
+   tip:'Obligațiile sunt coloana vertebrală a Dreptului Civil. Scop: ≥ 70%.'},
+ ]}]},
+
+// ═══ FAZA 4 · CIVIL — Contracte Speciale (W15-W17) ═══
+{id:'f4', subj:'civ', color:'var(--civ)', title:'④ Contracte Speciale', period:'Octombrie 2026',
+ months:[{m:'Octombrie 2026', weeks:[
+  {n:15, id:'w15', dates:'5–11 oct', subj:'civ', tag:'civ', title:'Vânzarea și Donația',
+   tasks:[
+    {a:A.read,t:'Vânzarea: condiții (lucru+preț), obligațiile vânzătorului (predare+garanție)'},
+    {a:A.read,t:'Garanția contra evicțiunii și contra viciilor ascunse'},
+    {a:A.read,t:'Donația: caractere, forma autentică, revocare, clauze de inalienabilitate'},
+    {a:A.fisa,t:'Fișă: obligațiile vânzătorului/cumpărătorului + donația'},
+    {a:A.recall,t:'Recall: ce garanții are cumpărătorul contra evicțiunii?'},
+    {a:A.grile,t:'12 grile vânzare + donație'},
+   ],
+   concepte:'Donația = act solemn (formă autentică ad validitatem) · vânzarea = consensuală (regula)',
+   review:'🔁 Spaced: recall stingerea obligațiilor (W13) (5 min)'},
+  {n:16, id:'w16', dates:'12–18 oct', subj:'civ', tag:'civ', title:'Locațiunea, Mandatul, Antrepriza',
+   tasks:[
+    {a:A.read,t:'Locațiunea: obligații locator/locatar, sublocațiune, încetare'},
+    {a:A.read,t:'Mandatul cu/fără reprezentare; revocare; mandatul în interes comun'},
+    {a:A.read,t:'Antrepriza: riscul pieirii, garanția pentru vicii, recepția'},
+    {a:A.fisa,t:'Fișă comparativă: mandat vs. antrepriză + locator vs. locatar'},
+    {a:A.recall,t:'Recall: în ce condiții mandatarul poate substitui altă persoană?'},
+    {a:A.grile,t:'12 grile locațiune + mandat + antrepriză'},
+   ],
+   concepte:'Mandatul e revocabil oricând (intuitu personae) · antreprenorul lucrează pe riscul său'},
+  {n:17, id:'w17', dates:'19–25 oct', subj:'civ', tag:'recap', type:'recap', title:'Împrumut, fidejusiune + ⟳ Recap Contracte',
+   tasks:[
+    {a:A.read,t:'Comodatul și mutuum (împrumutul); fidejusiunea (discuțiune, diviziune)'},
+    {a:A.read,t:'Tranzacția: caractere, autoritate de lucru judecat'},
+    {a:A.recall,t:'Recall W15-W17: schema tuturor contractelor cu obligațiile esențiale'},
+    {a:A.sim,t:'Simulare: 20 grile contracte speciale (cronometrat 35 min)'},
+    {a:A.err,t:'Analiză greșeli + completare fișe'},
+   ],
+   tip:'La contracte, compară mereu obligațiile AMBELOR părți. Marchează-ți încrederea ⬇️'},
+ ]}]},
+
+// ═══ FAZA 5 · CIVIL — Dreptul Succesoral (W18-W19) ═══
+{id:'f5', subj:'civ', color:'var(--civ)', title:'⑤ Dreptul Succesoral', period:'Octombrie–Noiembrie 2026',
+ months:[{m:'Octombrie–Noiembrie 2026', weeks:[
+  {n:18, id:'w18', dates:'26 oct–1 nov', subj:'civ', tag:'civ', title:'Moștenirea legală',
+   tasks:[
+    {a:A.read,t:'Condiții (capacitate, vocație, nedemnitate); principiile devoluțiunii'},
+    {a:A.read,t:'Clasele de moștenitori (I-IV); reprezentarea succesorală'},
+    {a:A.read,t:'Soțul supraviețuitor: cotele în concurs cu fiecare clasă'},
+    {a:A.fisa,t:'Fișă: tabel cotele soțului supraviețuitor pe clase'},
+    {a:A.recall,t:'Recall: cum se împarte între copii și soțul supraviețuitor?'},
+    {a:A.grile,t:'12 grile moștenire legală'},
+   ],
+   concepte:'Clase: I descendenți · II ascendenți+colaterali privilegiați · III ascendenți ordinari · IV colaterali ordinari · soțul: 1/4 cu clasa I',
+   review:'🔁 Spaced: recall contractele (vânzare/mandat) din W15-W16 (5 min)'},
+  {n:19, id:'w19', dates:'2–8 nov', subj:'civ', tag:'recap', type:'recap', title:'Testament, rezervă + ⟳ Recap Succesiuni',
+   tasks:[
+    {a:A.read,t:'Testamentul (forme: olograf, autentic, mistic); legatul; revocarea'},
+    {a:A.read,t:'Rezerva succesorală, moștenitorii rezervatari, reducțiunea'},
+    {a:A.read,t:'Acceptarea/renunțarea (termen 1 an); partajul (efect declarativ)'},
+    {a:A.recall,t:'Recall: cine sunt rezervatarii și care e cota fiecăruia?'},
+    {a:A.sim,t:'Simulare: 15 grile succesiuni (cronometrat 25 min)'},
+   ],
+   concepte:'Rezervatari: descendenți, ascendenți privilegiați, soț supraviețuitor · rezerva = 1/2 din cota legală',
+   tip:'Cota soțului supraviețuitor variază cu clasa — memoreaz-o exact. Marchează-ți încrederea ⬇️'},
+ ]}]},
+
+// ═══ FAZA 6 · SIMULARE CIVIL COMPLET (W20) ═══
+{id:'f6', subj:'civ', color:'var(--sim)', title:'⑥ SIMULARE Drept Civil complet', period:'Noiembrie 2026',
+ months:[{m:'Noiembrie 2026', weeks:[
+  {n:20, id:'w20', dates:'9–15 nov', subj:'civ', tag:'sim', type:'sim', title:'📊 SIMULARE COMPLETĂ — Drept Civil (50 întrebări)',
+   tasks:[
+    {a:A.recall,t:'Recall global: AJC → Drepturi Reale → Obligații → Contracte → Succesiuni'},
+    {a:A.sim,t:'Simulare: 50 grile Drept Civil din sesiuni reale (cronometrat 85 min)'},
+    {a:A.err,t:'Analiză profundă: grupezi greșelile pe subteme → top 3 puncte slabe'},
+    {a:A.recap,t:'Recapitulare țintită pe subtemele cu cel mai mic scor'},
+    {a:A.grile,t:'Retry 15 grile pe subtemele slabe identificate'},
+   ],
+   tip:'⭐ Moment-cheie: ≥ 65% la 50 grile Civil = pe drumul cel bun. Acum treci la Penal cu Civilul fixat.'},
+ ]}]},
+
+// ═══ FAZA 7 · PENAL — Teoria Generală a Infracțiunii (W21-W23) ═══
+{id:'f7', subj:'pen', color:'var(--pen)', title:'⑦ Drept Penal — Teoria Generală', period:'Noiembrie 2026',
+ months:[{m:'Noiembrie 2026', weeks:[
+  {n:21, id:'w21', dates:'16–22 nov', subj:'pen', tag:'pen', title:'Infracțiunea: trăsături și elemente constitutive',
+   tasks:[
+    {a:A.read,t:'Trăsături esențiale (art.15): tipicitate, antijuridicitate, imputabilitate'},
+    {a:A.read,t:'Latura obiectivă: element material, urmare, legătură de cauzalitate'},
+    {a:A.read,t:'Latura subiectivă: intenția, culpa, praeterintenția; subiecții'},
+    {a:A.fisa,t:'Fișă: schema completă a elementelor constitutive'},
+    {a:A.recall,t:'Recall: distingei intenția indirectă de culpa cu prevedere'},
+    {a:A.grile,t:'15 grile teoria generală a infracțiunii'},
+   ],
+   concepte:'Intenție indirectă: prevede + acceptă rezultatul · culpa cu prevedere: prevede dar NU acceptă (crede că nu survine)',
+   review:'🔁 Spaced: recall succesiuni — clasele de moștenitori (W18) (5 min)'},
+  {n:22, id:'w22', dates:'23–29 nov', subj:'pen', tag:'pen', title:'Formele infracțiunii și participația',
+   tasks:[
+    {a:A.read,t:'Actele preparatorii; tentativa (perfectă/imperfectă/imposibilă)'},
+    {a:A.read,t:'Infracțiunea consumată vs. epuizată (continuă, continuată, de obicei)'},
+    {a:A.read,t:'Participația: coautorat, instigare, complicitate'},
+    {a:A.fisa,t:'Fișă: tentativa + formele participației (condiții + pedeapsa)'},
+    {a:A.recall,t:'Recall: ce distinge complicele de coautor? Instigatorul de complice?'},
+    {a:A.grile,t:'15 grile tentativă + participație'},
+   ],
+   concepte:'Tentativa se pedepsește cu jumătate din limitele pedepsei pt. fapta consumată · instigatorul determină, complicele ajută'},
+  {n:23, id:'w23', dates:'30 nov–6 dec', subj:'pen', tag:'recap', type:'recap', title:'Concurs, recidivă, pedepse + ⟳ Recap TG Penal',
+   tasks:[
+    {a:A.read,t:'Concursul (real/ideal); recidiva (postcond./postexec.); pluralitate intermediară'},
+    {a:A.read,t:'Cauzele de neimputabilitate (iresponsabilitate, eroare, minoritate, constrângere)'},
+    {a:A.read,t:'Pedepsele + individualizarea (circumstanțe atenuante/agravante, suspendarea)'},
+    {a:A.recall,t:'Recall complet W21-W23: schema teoriei generale penale'},
+    {a:A.sim,t:'Simulare: 25 grile Teoria Generală Penal (cronometrat 40 min)'},
+   ],
+   concepte:'Concurs = mai multe infracțiuni înainte de condamnare · recidiva = după condamnare definitivă',
+   tip:'Teoria generală e cheia oricărei infracțiuni speciale. Marchează-ți încrederea ⬇️'},
+ ]}]},
+
+// ═══ FAZA 8 · PENAL — Infracțiuni speciale (W24-W26) ═══
+{id:'f8', subj:'pen', color:'var(--pen)', title:'⑧ Drept Penal — Infracțiuni speciale', period:'Decembrie 2026',
+ months:[{m:'Decembrie 2026', weeks:[
+  {n:24, id:'w24', dates:'7–13 dec', subj:'pen', tag:'pen', title:'Infracțiuni contra persoanei',
+   tasks:[
+    {a:A.read,t:'Omorul simplu (188) și calificat (189); loviri cauzatoare de moarte'},
+    {a:A.read,t:'Vătămarea corporală (194); vătămarea din culpă; lipsirea de libertate (205)'},
+    {a:A.read,t:'Violul (218) și agresiunea sexuală (219): elemente constitutive'},
+    {a:A.fisa,t:'Fișă: tabel infracțiuni contra persoanei (latură obiectivă+subiectivă+pedeapsă)'},
+    {a:A.recall,t:'Recall: ce distinge omorul calificat de loviri cauzatoare de moarte?'},
+    {a:A.grile,t:'15 grile infracțiuni contra persoanei'},
+   ],
+   concepte:'Omor (intenție de a ucide) vs. loviri cauzatoare de moarte (praeterintenție) · omor calificat = circumstanțe art.189',
+   review:'🔁 Spaced: recall participația penală (W22) (5 min)'},
+  {n:25, id:'w25', dates:'14–20 dec', subj:'pen', tag:'pen', title:'Infracțiuni contra patrimoniului',
+   tasks:[
+    {a:A.read,t:'Furtul simplu (228) și calificat (229); furtul în scop de folosință'},
+    {a:A.read,t:'Tâlhăria (233) și formele agravate (234); pirateria'},
+    {a:A.read,t:'Înșelăciunea (244); abuzul de încredere (238); delapidarea (295)'},
+    {a:A.fisa,t:'Fișă comparativă: furt vs. tâlhărie (elemente)'},
+    {a:A.recall,t:'Recall: ce transformă furtul în tâlhărie?'},
+    {a:A.grile,t:'15 grile infracțiuni contra patrimoniului'},
+   ],
+   concepte:'Tâlhăria = furt + violență/amenințare · înșelăciunea = inducere în eroare + prejudiciu + scop injust'},
+  {n:26, id:'w26', dates:'21–27 dec', subj:'pen', tag:'recap', type:'recap', title:'Corupție + serviciu + ⟳ Recap (vacanță ușoară)',
+   tasks:[
+    {a:A.read,t:'Luarea de mită (289), darea de mită (290); trafic/cumpărare de influență'},
+    {a:A.read,t:'Abuzul în serviciu (297); neglijența în serviciu (298)'},
+    {a:A.recall,t:'Recall W24-W26: schema infracțiunilor speciale'},
+    {a:A.grile,t:'10 grile corupție + serviciu (ritm lejer de sărbători)'},
+   ],
+   concepte:'Luare de mită (funcționar primește) vs. trafic de influență (pretinde influență asupra unui funcționar)',
+   tip:'🎄 Vacanță de Crăciun — ritm lejer. Fixează ce ai, nu te epuiza. Odihna face parte din plan.'},
+ ]}]},
+
+// ═══ FAZA 9 · SIMULARE PENAL COMPLET (W27) ═══
+{id:'f9', subj:'pen', color:'var(--sim)', title:'⑨ SIMULARE Drept Penal complet', period:'Ianuarie 2027',
+ months:[{m:'Ianuarie 2027', weeks:[
+  {n:27, id:'w27', dates:'28 dec–3 ian', subj:'pen', tag:'sim', type:'sim', title:'📊 SIMULARE COMPLETĂ — Drept Penal (50 întrebări)',
+   tasks:[
+    {a:A.recall,t:'Recall global: teoria generală + infracțiunile speciale'},
+    {a:A.sim,t:'Simulare: 50 grile Drept Penal din sesiuni reale (cronometrat 85 min)'},
+    {a:A.err,t:'Analiză profundă: grupezi greșelile → top 3 puncte slabe'},
+    {a:A.recap,t:'Recapitulare țintită pe subtemele slabe'},
+   ],
+   tip:'⭐ ≥ 65% la 50 grile Penal. Acum ai ambele materii mari acoperite — urmează procedura și recapitularea finală.'},
+ ]}]},
+
+// ═══ FAZA 10 · PROCEDURĂ (civilă + penală) (W28-W29) ═══
+{id:'f10', subj:'pciv', color:'var(--pciv)', title:'⑩ Procedură Civilă și Penală (esențial)', period:'Ianuarie 2027',
+ months:[{m:'Ianuarie 2027', weeks:[
+  {n:28, id:'w28', dates:'4–10 ian', subj:'pciv', tag:'pciv', title:'Procedură Civilă — esențial',
+   tasks:[
+    {a:A.read,t:'Principii (contradictorialitate, disponibilitate, rol activ); competența materială și teritorială'},
+    {a:A.read,t:'Cererea de chemare în judecată; întâmpinarea; probele'},
+    {a:A.read,t:'Căile de atac: apelul (devolutiv) vs. recursul (motive art.488)'},
+    {a:A.fisa,t:'Fișă: apel vs. recurs (obiect/termen/motive/efecte) + competență'},
+    {a:A.recall,t:'Recall: ce hotărâri se atacă cu recurs și care sunt motivele?'},
+    {a:A.grile,t:'12 grile procedură civilă'},
+   ],
+   concepte:'Apelul = devolutiv (rejudecă fondul) · recursul = doar legalitate (motive limitative art.488)',
+   review:'🔁 Spaced: recall infracțiuni contra persoanei (W24) (5 min)'},
+  {n:29, id:'w29', dates:'11–17 ian', subj:'ppen', tag:'ppen', title:'Procedură Penală — esențial',
+   tasks:[
+    {a:A.read,t:'Principii (legalitate, prezumția de nevinovăție, dreptul la apărare); probele'},
+    {a:A.read,t:'Măsurile preventive (reținere 24h, control judiciar, arest preventiv)'},
+    {a:A.read,t:'Urmărirea penală, camera preliminară, soluțiile procurorului'},
+    {a:A.read,t:'Căile de atac: apelul (408-425) și recursul în casație (motive 438)'},
+    {a:A.fisa,t:'Fișă: măsuri preventive (termen+cine dispune) + apel vs. recurs în casație'},
+    {a:A.grile,t:'12 grile procedură penală'},
+   ],
+   concepte:'Reținerea max 24h (procuror/poliție) · arestul preventiv 30 zile (judecător de drepturi și libertăți)'},
+ ]}]},
+
+// ═══ FAZA 11 · RECAPITULARE FINALĂ + EXAMEN (W30-W32) ═══
+{id:'f11', subj:'pen', color:'var(--gold)', title:'⑪ Recapitulare Finală + EXAMEN', period:'Ianuarie–Februarie 2027',
+ months:[{m:'Ianuarie–Februarie 2027', weeks:[
+  {n:30, id:'w30', dates:'18–24 ian', subj:'civ', tag:'sim', type:'sim', title:'📊 SIMULARE FINALĂ — 100 întrebări mixte',
+   tasks:[
+    {a:A.recap,t:'Revizuire rapidă: parcurgi toate fișele de sinteză (Civil + Penal)'},
+    {a:A.sim,t:'Simulare completă: 100 grile mixt (50 Civil + 50 Penal) cronometrat 3 ore'},
+    {a:A.err,t:'Analiză detaliată: listezi toate greșelile + subiectele aferente'},
+    {a:A.recap,t:'Plan de recuperare: pentru fiecare greșeală → recitești fișa + 5 grile extra'},
+   ],
+   tip:'Scopul e să găsești lacunele, nu să iei 100%. Fiecare greșeală acum = una mai puțin la examen.'},
+  {n:31, id:'w31', dates:'25–31 ian', subj:'pen', tag:'recap', type:'recap', title:'⟳ Recapitulare țintită + a 2-a simulare',
+   tasks:[
+    {a:A.err,t:'„Greșelile mele" din aplicație: reiei toate întrebările marcate greșit'},
+    {a:A.recap,t:'Recapitulare pe top-3 subteme slabe din ambele materii'},
+    {a:A.sim,t:'A 2-a simulare: 100 grile mixt — compari scorul cu W30'},
+    {a:A.recall,t:'Recall final: scrii din memorie schema fiecărei materii'},
+   ],
+   tip:'Vrei să vezi progres față de simularea din W30. Concentrează-te pe ce încă te face nesigură 🔴'},
+  {n:32, id:'w32', dates:'1–7 feb', subj:'civ', tag:'recap', type:'recap', title:'🎓 Revizuire finală + EXAMEN',
+   tasks:[
+    {a:A.fisa,t:'Zilele 1-2: recitești RELAXAT fișele de sinteză, toate materiile'},
+    {a:A.grile,t:'Ziua 3: 30 grile din sesiunile recente 2025-2026 (cele mai relevante)'},
+    {a:A.recall,t:'Ziua 4: recall final pe foaie goală — tot ce știi, fiecare materie'},
+    {a:A.fisa,t:'Ziua dinainte: NUMAI fișele de sinteză, nu materie nouă. Somn bun.'},
+    {a:A.sim,t:'🎓 EXAMEN — Ai muncit un an. Ești pregătită. Citește cu atenție. Poți!'},
+   ],
+   tip:'🤍 Ultimele 48h: zero materie nouă. Somnul complet valorează mai mult decât 3 ore de studiu. Mănâncă bine. Respiră. Te iubim.'},
+ ]}]},
+];
+
+// ══════════════════════════════════════════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════════════════════════════════════════
+const KEY = 'plan_miruna_v1';
 let ST = JSON.parse(localStorage.getItem(KEY)||'{}');
+if(!ST._examDate) ST._examDate = '2027-02-08';
 function save(){ localStorage.setItem(KEY,JSON.stringify(ST)); }
 
-// ══════════════════════════════════════════════════════════════════════════════
-// CURRENT WEEK
-// ══════════════════════════════════════════════════════════════════════════════
-const MONTH_IDX = {ian:0,feb:1,mar:2,apr:3,mai:4,iun:5,iul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
-function parseWeek(dates, year) {
-  // "1–7 iul" / "29 iul–4 aug" / "25–30 iun"
+const ALL_WEEKS = PHASES.flatMap(ph=>ph.months.flatMap(mo=>mo.weeks.map(w=>({wk:w, ph:ph, month:mo.m}))));
+
+// ── date utils ──
+const MIDX = {ian:0,feb:1,mar:2,apr:3,mai:4,iun:5,iul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
+const MLBL = ['ian','feb','mar','apr','mai','iun','iul','aug','sep','oct','nov','dec'];
+function ymd(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+function parseWeek(dates, year){
   const s = dates.replace(/–/g,'-');
-  const parts = s.split('-');
-  if(parts.length < 2) return null;
-  const L = parts[0].trim().split(' ');
-  const R = parts[1].trim().split(' ');
-  const sd = parseInt(L[0]);
-  const ed = parseInt(R[0]);
-  const em = R[1] ? MONTH_IDX[R[1]] : (L[1] ? MONTH_IDX[L[1]] : null);
-  const sm = L[1] ? MONTH_IDX[L[1]] : em;
-  if(sm === undefined || em === undefined || sm === null || em === null) return null;
-  // handle year boundary (e.g. "29 ian–4 feb" when crossing year)
-  let ey = year;
-  return { start: new Date(year,sm,sd), end: new Date(ey,em,ed,23,59,59) };
+  const parts = s.split('-'); if(parts.length<2) return null;
+  const L = parts[0].trim().split(' '), R = parts[1].trim().split(' ');
+  const sd = parseInt(L[0]), ed = parseInt(R[0]);
+  const em = R[1]!==undefined ? MIDX[R[1]] : (L[1]!==undefined?MIDX[L[1]]:null);
+  const sm = L[1]!==undefined ? MIDX[L[1]] : em;
+  if(sm==null||em==null) return null;
+  let sy=year, ey=year;
+  if(sm > em){ sy = year-1; }   // cross-year (dec→ian) in a next-year group
+  return { start:new Date(sy,sm,sd), end:new Date(ey,em,ed,23,59,59) };
 }
-function findCurrentWeek() {
+function weekYear(month){ return parseInt((month.match(/(\d{4})/)||['2026'])[0]); }
+
+function findCurrentWeek(){
   const now = Date.now();
-  for(const ph of PHASES) {
-    for(const mo of ph.months) {
-      const yr = parseInt((mo.m.match(/\d{4}/)||['2027'])[0]);
-      for(const wk of mo.weeks) {
-        const r = parseWeek(wk.dates, yr);
-        if(!r) continue;
-        if(now >= r.start.getTime() && now <= r.end.getTime()) return wk.id;
-      }
-    }
+  for(const x of ALL_WEEKS){
+    const r = parseWeek(x.wk.dates, weekYear(x.month));
+    if(r && now>=r.start.getTime() && now<=r.end.getTime()) return x.wk.id;
   }
   return null;
 }
-const CURRENT_WEEK = findCurrentWeek();
+const CURRENT = findCurrentWeek();
 
-// ══════════════════════════════════════════════════════════════════════════════
-// RENDER PHASES
-// ══════════════════════════════════════════════════════════════════════════════
-const CHECKSVG = `<svg viewBox="0 0 10 8" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1,4 4,7 9,1"/></svg>`;
-const CHECKSVGS = `<svg viewBox="0 0 8 6" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="1,3 3,5 7,1"/></svg>`;
+// ── progress helpers ──
+function taskIds(w){ return (w.tasks||[]).map((_,i)=>w.id+'_t'+i); }
+function weekDone(w){ const ids=taskIds(w); return ids.length>0 && ids.every(id=>ST[id]); }
+function weekProgress(w){ const ids=taskIds(w); const d=ids.filter(id=>ST[id]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
+function phaseProgress(ph){ const ids=ph.months.flatMap(m=>m.weeks.flatMap(w=>taskIds(w))); const d=ids.filter(i=>ST[i]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
+function subjProgress(subj){ const ids=PHASES.filter(p=>p.subj===subj).flatMap(p=>p.months.flatMap(m=>m.weeks.flatMap(w=>taskIds(w)))); const d=ids.filter(i=>ST[i]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
+function globalProgress(){ const ids=PHASES.flatMap(p=>p.months.flatMap(m=>m.weeks.flatMap(w=>taskIds(w)))); const d=ids.filter(i=>ST[i]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
 
-function allTaskIds(wk) {
-  return (wk.tasks||[]).map((_,i)=>wk.id+'_t'+i);
+// ── streak ──
+function currentStreak(){
+  const s=ST._streak; if(!s) return 0;
+  const today=ymd(new Date()); const y=new Date(); y.setDate(y.getDate()-1);
+  if(s.last===today || s.last===ymd(y)) return s.count;
+  return 0;
 }
-function weekDone(wk) {
-  const ids = allTaskIds(wk);
-  return ids.length > 0 && ids.every(id=>ST[id]);
-}
-function phasePct(ph) {
-  const allT = ph.months.flatMap(m=>m.weeks.flatMap(w=>allTaskIds(w)));
-  if(!allT.length) return {done:0,total:0,pct:0};
-  const done = allT.filter(id=>ST[id]).length;
-  return {done, total:allT.length, pct:Math.round(done/allT.length*100)};
-}
-function subjPct(subj) {
-  const phases = PHASES.filter(p=>p.subj===subj);
-  const allT = phases.flatMap(p=>p.months.flatMap(m=>m.weeks.flatMap(w=>allTaskIds(w))));
-  if(!allT.length) return {done:0,total:0,pct:0};
-  const done = allT.filter(id=>ST[id]).length;
-  return {done,total:allT.length,pct:Math.round(done/allT.length*100)};
-}
-function globalPct() {
-  const allT = PHASES.flatMap(p=>p.months.flatMap(m=>m.weeks.flatMap(w=>allTaskIds(w))));
-  const done = allT.filter(id=>ST[id]).length;
-  return {done,total:allT.length,pct:allT.length?Math.round(done/allT.length*100):0};
+function touchStreak(){
+  const today=ymd(new Date()); const yd=new Date(); yd.setDate(yd.getDate()-1); const yday=ymd(yd);
+  let s=ST._streak||{count:0,last:null};
+  if(s.last===today){}
+  else if(s.last===yday){ s.count++; }
+  else { s.count=1; }
+  s.last=today; ST._streak=s;
 }
 
-function updateStats() {
-  const g = globalPct();
-  document.getElementById('gfill').style.width = g.pct+'%';
-  document.getElementById('glabel').textContent = g.done+' / '+g.total+' sarcini ('+g.pct+'%)';
-  ['civ','pciv','pen','ppen'].forEach(s=>{
-    const r = subjPct(s);
-    const f = document.getElementById('sf-'+s);
-    const l = document.getElementById('sp-'+s);
-    if(f) f.style.width=r.pct+'%';
-    if(l) l.textContent=r.done+'/'+r.total+' ('+r.pct+'%)';
-  });
+// ── exam countdown ──
+function examDate(){ const p=ST._examDate.split('-'); return new Date(+p[0],+p[1]-1,+p[2]); }
+function daysToExam(){ const ms=examDate().setHours(0,0,0,0)-new Date().setHours(0,0,0,0); return Math.round(ms/86400000); }
+function changeExamDate(){
+  const cur=examDate();
+  const def=String(cur.getDate()).padStart(2,'0')+'.'+String(cur.getMonth()+1).padStart(2,'0')+'.'+cur.getFullYear();
+  const v=prompt('Data examenului (ZZ.LL.AAAA):', def);
+  if(!v) return;
+  const m=v.trim().match(/^(\d{1,2})[.\/-](\d{1,2})[.\/-](\d{4})$/);
+  if(!m){ alert('Format invalid. Folosește ZZ.LL.AAAA (ex: 08.02.2027)'); return; }
+  ST._examDate = m[3]+'-'+String(+m[2]).padStart(2,'0')+'-'+String(+m[1]).padStart(2,'0');
+  save(); renderDashboard(); renderTop();
 }
 
-function makeWkCard(wk, ph) {
-  const isToday = wk.id === CURRENT_WEEK;
-  const isDone = weekDone(wk);
-  const isRecap = wk.type === 'recap';
-  const isSim = wk.type === 'sim';
-  const tagInfo = TAGS[wk.tag] || TAGS['civ'];
+// ══════════════════════════════════════════════════════════════════════════
+//  RENDER — PLAN
+// ══════════════════════════════════════════════════════════════════════════
+const CHK = `<svg viewBox="0 0 10 8" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1,4 4,7 9,1"/></svg>`;
+const CHKS = `<svg viewBox="0 0 8 6" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="1,3 3,5 7,1"/></svg>`;
+const phaseEls = {};
 
-  const card = document.createElement('div');
-  card.className = 'wk' + (isDone?' done':'') + (isToday?' today':'') + (isRecap?' recap-wk':'') + (isSim?' sim-wk':'');
-  card.id = 'wk-'+wk.id;
+function makeWeek(w, ph){
+  const isToday = w.id===CURRENT, isDone=weekDone(w), isRecap=w.type==='recap', isSim=w.type==='sim';
+  const tg = TAGS[w.tag]||TAGS.civ;
+  const card=document.createElement('div');
+  card.className='wk'+(isDone?' done':'')+(isToday?' today':'')+(isRecap?' recap-wk':'')+(isSim?' sim-wk':'');
+  card.id='wk-'+w.id;
 
-  // top row
-  const top = document.createElement('div');
-  top.className = 'wk-top';
-  top.onclick = () => {
-    const body = card.querySelector('.wk-body');
-    body.classList.toggle('open');
-  };
+  const top=document.createElement('div'); top.className='wk-top';
+  top.onclick=()=>card.querySelector('.wk-body').classList.toggle('open');
 
-  // week checkbox
-  const wcb = document.createElement('div');
-  wcb.className = 'wk-cb' + (isDone?' on':'');
-  wcb.innerHTML = CHECKSVG;
-  wcb.onclick = e => {
-    e.stopPropagation();
-    const targetDone = !weekDone(wk);
-    allTaskIds(wk).forEach((tid,i)=>{
-      ST[tid] = targetDone || undefined;
-      if(!targetDone) delete ST[tid];
-    });
-    rerenderCard(card, wk, ph);
-    updatePhasePct(ph);
-    updateStats();
-    renderCalendar();
-    save();
-  };
+  const cb=document.createElement('div'); cb.className='wk-cb'+(isDone?' on':''); cb.innerHTML=CHK;
+  cb.onclick=e=>{ e.stopPropagation(); const td=!weekDone(w); taskIds(w).forEach(id=>{ if(td){ST[id]=true;} else delete ST[id]; }); if(td) touchStreak(); afterChange(card,w,ph); };
 
-  const wnum = document.createElement('div');
-  wnum.className = 'wk-num';
-  wnum.textContent = 'W'+String(wk.n).padStart(2,'0');
+  const num=document.createElement('div'); num.className='wk-num'; num.textContent='W'+String(w.n).padStart(2,'0');
+  const dts=document.createElement('div'); dts.className='wk-dates'; dts.textContent=w.dates;
+  const ttl=document.createElement('div'); ttl.className='wk-ttl'; ttl.textContent=w.title;
+  const tag=document.createElement('span'); tag.className='type-tag'; tag.style.background=tg.color+'22'; tag.style.color=tg.color; tag.textContent=tg.label;
+  const cdot=document.createElement('div'); cdot.className='conf-dot'+(ST['conf_'+w.id]?(' '+ST['conf_'+w.id]):''); cdot.id='cdot-'+w.id;
 
-  const wdates = document.createElement('div');
-  wdates.className = 'wk-dates';
-  wdates.textContent = wk.dates;
-
-  const wttl = document.createElement('div');
-  wttl.className = 'wk-ttl';
-  wttl.textContent = wk.title;
-
-  const ttag = document.createElement('span');
-  ttag.className = 'type-tag';
-  ttag.style.background = tagInfo.color+'22';
-  ttag.style.color = tagInfo.color;
-  ttag.textContent = tagInfo.label;
-
-  top.appendChild(wcb);
-  top.appendChild(wnum);
-  top.appendChild(wdates);
-  top.appendChild(wttl);
-  top.appendChild(ttag);
-  if(isToday) {
-    const tday = document.createElement('span');
-    tday.className = 'today-tag';
-    tday.textContent = 'azi';
-    top.appendChild(tday);
-  }
+  top.append(cb,num,dts,ttl,tag,cdot);
+  if(isToday){ const t=document.createElement('span'); t.className='today-tag'; t.textContent='azi'; top.appendChild(t); }
   card.appendChild(top);
 
-  // body
-  const body = document.createElement('div');
-  body.className = 'wk-body' + (isToday?' open':'');
+  const body=document.createElement('div'); body.className='wk-body'+(isToday?' open':'');
 
-  if(wk.review) {
-    const rv = document.createElement('div');
-    rv.className = 'wk-review';
-    rv.innerHTML = wk.review;
-    body.appendChild(rv);
-  }
+  if(w.review){ const r=document.createElement('div'); r.className='wk-review'; r.innerHTML=w.review; body.appendChild(r); }
 
-  if(wk.tasks && wk.tasks.length) {
-    const secLbl = document.createElement('div');
-    secLbl.className = 'wk-section';
-    secLbl.textContent = 'Sarcini';
-    body.appendChild(secLbl);
-  }
-
-  (wk.tasks||[]).forEach((task, i) => {
-    const tid = wk.id+'_t'+i;
-    const tDiv = document.createElement('div');
-    tDiv.className = 'task' + (ST[tid]?' done-t':'');
-
-    const tcb = document.createElement('div');
-    tcb.className = 'tcb' + (ST[tid]?' on':'');
-    tcb.innerHTML = CHECKSVGS;
-
-    const tact = document.createElement('span');
-    tact.className = 'tact';
-    tact.textContent = task.a;
-
-    const ttext = document.createElement('span');
-    ttext.className = 'ttext';
-    ttext.textContent = task.t;
-
-    tDiv.appendChild(tcb);
-    tDiv.appendChild(tact);
-    tDiv.appendChild(ttext);
-
-    tDiv.onclick = () => {
-      const done = !ST[tid];
-      if(done) ST[tid] = true; else delete ST[tid];
-      tcb.classList.toggle('on', done);
-      tDiv.classList.toggle('done-t', done);
-      rerenderWkCb(card, wk, wcb);
-      updatePhasePct(ph);
-      updateStats();
-      renderCalendar();
-      save();
-    };
-    body.appendChild(tDiv);
+  const sl=document.createElement('div'); sl.className='wk-section'; sl.textContent='Sarcini'; body.appendChild(sl);
+  (w.tasks||[]).forEach((task,i)=>{
+    const tid=w.id+'_t'+i;
+    const t=document.createElement('div'); t.className='task'+(ST[tid]?' done-t':'');
+    const tcb=document.createElement('div'); tcb.className='tcb'+(ST[tid]?' on':''); tcb.innerHTML=CHKS;
+    const ta=document.createElement('span'); ta.className='tact'; ta.textContent=task.a;
+    const tx=document.createElement('span'); tx.className='ttext'; tx.textContent=task.t;
+    t.append(tcb,ta,tx);
+    t.onclick=()=>{ const d=!ST[tid]; if(d){ST[tid]=true; touchStreak();} else delete ST[tid]; afterChange(card,w,ph); };
+    body.appendChild(t);
   });
 
-  if(wk.tip) {
-    const tipDiv = document.createElement('div');
-    tipDiv.className = 'wk-tip';
-    tipDiv.textContent = '💡 '+wk.tip;
-    body.appendChild(tipDiv);
-  }
+  if(w.concepte){ const c=document.createElement('div'); c.className='wk-concepte'; c.innerHTML='<b>🔑 Concepte cheie:</b> '+w.concepte; body.appendChild(c); }
+  if(w.tip){ const tp=document.createElement('div'); tp.className='wk-tip'; tp.textContent='💡 '+w.tip; body.appendChild(tp); }
 
-  // Quiz / practice links
-  const subjForLink = (wk.subj && wk.subj !== 'all') ? wk.subj : null;
-  const qrow = document.createElement('div');
-  qrow.className = 'wk-quiz-row';
-  if(subjForLink) {
-    const btn = document.createElement('a');
-    btn.className = 'quiz-btn';
-    btn.href = 'index.html?mat='+subjForLink;
-    btn.target = '_blank';
-    const subjEmoji = {civ:'⚖️',pciv:'📜',pen:'🔒',ppen:'🛡️'}[subjForLink]||'❓';
-    btn.textContent = subjEmoji+' Testează-te pe '+TAGS[subjForLink].label;
-    qrow.appendChild(btn);
-  }
-  if(wk.type === 'sim' || wk.type === 'recap') {
-    const allBtn = document.createElement('a');
-    allBtn.className = 'quiz-btn sim-btn';
-    allBtn.href = 'index.html';
-    allBtn.target = '_blank';
-    allBtn.textContent = '🎲 Simulare examen complet';
-    qrow.appendChild(allBtn);
-  }
-  if(qrow.children.length) body.appendChild(qrow);
+  // quiz buttons
+  const sub=(w.subj&&w.subj!=='all')?w.subj:null;
+  const qr=document.createElement('div'); qr.className='wk-quiz-row';
+  if(sub){ const b=document.createElement('a'); b.className='quiz-btn'; b.href='index.html?mat='+sub; b.target='_blank'; b.textContent=TAGS[sub].emoji+' Testează-te pe '+TAGS[sub].label; qr.appendChild(b); }
+  if(isSim||isRecap){ const b=document.createElement('a'); b.className='quiz-btn sim-btn'; b.href='index.html'; b.target='_blank'; b.textContent='🎲 Simulare completă'; qr.appendChild(b); }
+  if(qr.children.length) body.appendChild(qr);
+
+  // confidence
+  const conf=document.createElement('div'); conf.className='conf-box';
+  conf.innerHTML='<div class="conf-q">🚦 Cât de sigură te simți pe această săptămână?</div>';
+  const opts=document.createElement('div'); opts.className='conf-opts';
+  [['r','🔴 Nesigură'],['a','🟡 Parțial'],['g','🟢 Stăpânesc']].forEach(([k,lbl])=>{
+    const o=document.createElement('button'); o.className='conf-opt'+(ST['conf_'+w.id]===k?(' sel-'+k):''); o.textContent=lbl;
+    o.onclick=()=>{ if(ST['conf_'+w.id]===k){ delete ST['conf_'+w.id]; } else { ST['conf_'+w.id]=k; } save(); opts.querySelectorAll('.conf-opt').forEach(x=>x.className='conf-opt'); if(ST['conf_'+w.id]) o.className='conf-opt sel-'+ST['conf_'+w.id]; const cd=document.getElementById('cdot-'+w.id); cd.className='conf-dot'+(ST['conf_'+w.id]?(' '+ST['conf_'+w.id]):''); renderDashboard(); };
+    opts.appendChild(o);
+  });
+  conf.appendChild(opts); body.appendChild(conf);
+
+  // notes
+  const nb=document.createElement('div'); nb.className='notes-box';
+  const ntog=document.createElement('div'); ntog.className='notes-toggle'; ntog.textContent='📝 Notițe';
+  const nar=document.createElement('textarea'); nar.className='notes-area'; nar.placeholder='Întrebări, nelămuriri, ce vrei să reții...'; nar.value=ST['note_'+w.id]||'';
+  if(ST['note_'+w.id]) nar.classList.add('open');
+  ntog.onclick=()=>nar.classList.toggle('open');
+  nar.oninput=()=>{ const v=nar.value; if(v) ST['note_'+w.id]=v; else delete ST['note_'+w.id]; save(); };
+  nb.append(ntog,nar); body.appendChild(nb);
 
   card.appendChild(body);
   return card;
 }
 
-function rerenderWkCb(card, wk, wcb) {
-  const done = weekDone(wk);
-  wcb.classList.toggle('on', done);
-  card.classList.toggle('done', done);
+function afterChange(card, w, ph){
+  // re-render checkboxes in this card
+  const done=weekDone(w);
+  card.querySelector('.wk-cb').classList.toggle('on',done);
+  card.classList.toggle('done',done);
+  card.querySelectorAll('.task').forEach((t,i)=>{ const on=!!ST[w.id+'_t'+i]; t.querySelector('.tcb').classList.toggle('on',on); t.classList.toggle('done-t',on); });
+  save();
+  updatePhase(ph);
+  updateStats();
+  renderDashboard();
+  renderCalendar();
+  // milestone celebration
+  if(phaseProgress(ph).pct===100 && !ST['_celebrated_'+ph.id]){ ST['_celebrated_'+ph.id]=true; save(); celebrate(ph); updatePhase(ph); }
 }
 
-function rerenderCard(card, wk, ph) {
-  const done = weekDone(wk);
-  card.querySelector('.wk-cb').classList.toggle('on', done);
-  card.classList.toggle('done', done);
-  card.querySelectorAll('.task').forEach((tDiv,i)=>{
-    const tid = wk.id+'_t'+i;
-    const on = !!ST[tid];
-    tDiv.querySelector('.tcb').classList.toggle('on', on);
-    tDiv.classList.toggle('done-t', on);
+function updatePhase(ph){
+  const el=phaseEls[ph.id]; if(!el) return;
+  const r=phaseProgress(ph);
+  el.fill.style.width=r.pct+'%';
+  el.label.textContent=r.done+' / '+r.total+' sarcini ('+r.pct+'%)';
+  el.celebrate.textContent = r.pct===100 ? '🎉' : '';
+}
+
+function updateStats(){
+  const g=globalProgress();
+  document.getElementById('gfill').style.width=g.pct+'%';
+  document.getElementById('glabel').textContent=g.done+' / '+g.total+' sarcini ('+g.pct+'%)';
+  ['civ','pen','pciv','ppen'].forEach(s=>{ const r=subjProgress(s); const f=document.getElementById('sf-'+s), l=document.getElementById('sp-'+s); if(f)f.style.width=r.pct+'%'; if(l)l.textContent=r.done+'/'+r.total+' ('+r.pct+'%)'; });
+}
+
+function buildPlan(){
+  const cont=document.getElementById('phases-container');
+  PHASES.forEach(ph=>{
+    const d=document.createElement('div'); d.className='phase';
+    const hdr=document.createElement('div'); hdr.className='phase-hdr';
+    const dot=`<div class="phase-dot" style="background:${ph.color}"></div>`;
+    hdr.innerHTML=`${dot}<div class="phase-ttl">${ph.title}</div><div class="phase-meta">${ph.period}</div><span class="phase-celebrate"></span>`;
+    const body=document.createElement('div'); body.className='phase-body';
+    hdr.onclick=()=>body.classList.toggle('hidden');
+    d.appendChild(hdr);
+
+    const pbar=document.createElement('div'); pbar.className='phase-pbar';
+    const pfill=document.createElement('div'); pfill.className='phase-pfill'; pfill.style.background=ph.color; pbar.appendChild(pfill); d.appendChild(pbar);
+    const plbl=document.createElement('div'); plbl.style.cssText='font-size:10px;color:var(--sub);padding:0 14px 6px;text-align:right'; d.appendChild(plbl);
+    phaseEls[ph.id]={fill:pfill,label:plbl,celebrate:hdr.querySelector('.phase-celebrate')};
+
+    const hasCur=ph.months.some(m=>m.weeks.some(w=>w.id===CURRENT));
+    if(!hasCur) body.classList.add('hidden');
+
+    ph.months.forEach(mo=>{
+      const ms=document.createElement('div'); ms.className='msep'; ms.textContent=mo.m; body.appendChild(ms);
+      mo.weeks.forEach(w=>body.appendChild(makeWeek(w,ph)));
+    });
+    d.appendChild(body); cont.appendChild(d);
+    updatePhase(ph);
   });
 }
 
-const phaseProgressEls = {};
+// ══════════════════════════════════════════════════════════════════════════
+//  RENDER — DASHBOARD
+// ══════════════════════════════════════════════════════════════════════════
+const WEEKDAY_TASK = {1:0,2:1,3:2,4:3,5:4,6:5,0:6}; // mon..sun → preferred task index hint
+function renderDashboard(){
+  const now=new Date();
+  document.getElementById('hello-date').textContent = now.getDate()+' '+['ianuarie','februarie','martie','aprilie','mai','iunie','iulie','august','septembrie','octombrie','noiembrie','decembrie'][now.getMonth()]+' '+now.getFullYear();
 
-function updatePhasePct(ph) {
-  const els = phaseProgressEls[ph.id];
-  if(!els) return;
-  const r = phasePct(ph);
-  els.fill.style.width = r.pct+'%';
-  els.label.textContent = r.done+' / '+r.total+' sarcini ('+r.pct+'%)';
+  // countdown
+  const dte=daysToExam();
+  document.getElementById('cd-num').textContent = dte>=0?dte:'—';
+  const ed=examDate();
+  document.getElementById('cd-date').textContent = ed.getDate()+' '+MLBL[ed.getMonth()]+' '+ed.getFullYear();
+
+  // streak
+  const st=currentStreak();
+  document.getElementById('streak-num').textContent=st;
+  document.getElementById('streak-sub').textContent = st===0?'Bifează o sarcină azi!':(st===1?'Ai început! 💪':'Continuă lanțul! 🔥');
+
+  // this week
+  const cur = ALL_WEEKS.find(x=>x.wk.id===CURRENT);
+  const twTitle=document.getElementById('tw-title'), twPhase=document.getElementById('tw-phase'), twFill=document.getElementById('tw-prog-fill'), twLbl=document.getElementById('tw-prog-lbl');
+  if(cur){
+    twTitle.textContent='W'+String(cur.wk.n).padStart(2,'0')+' · '+cur.wk.title;
+    twPhase.textContent=cur.ph.title+' · '+cur.wk.dates;
+    const p=weekProgress(cur.wk); twFill.style.width=p.pct+'%'; twLbl.textContent=p.done+' / '+p.total+' sarcini ('+p.pct+'%)';
+  } else {
+    // before start or after end
+    const firstUndone = ALL_WEEKS.find(x=>!weekDone(x.wk));
+    if(firstUndone){ twTitle.textContent='W'+String(firstUndone.wk.n).padStart(2,'0')+' · '+firstUndone.wk.title; twPhase.textContent=firstUndone.ph.title+' · '+firstUndone.wk.dates; const p=weekProgress(firstUndone.wk); twFill.style.width=p.pct+'%'; twLbl.textContent=p.done+' / '+p.total+' sarcini'; }
+    else { twTitle.textContent='🎓 Felicitări, Miruna!'; twPhase.textContent='Ai terminat tot planul.'; twFill.style.width='100%'; twLbl.textContent='100%'; }
+  }
+
+  // today's suggestion
+  const wkForSug = cur ? cur.wk : (ALL_WEEKS.find(x=>!weekDone(x.wk))||{}).wk;
+  const ttEmoji=document.getElementById('tt-emoji'), ttText=document.getElementById('tt-text'), ttDay=document.getElementById('tt-day');
+  const dayNames=['duminică','luni','marți','miercuri','joi','vineri','sâmbătă'];
+  if(wkForSug){
+    const undone=(wkForSug.tasks||[]).map((t,i)=>({t,i})).filter(o=>!ST[wkForSug.id+'_t'+o.i]);
+    if(undone.length){ const pick=undone[0]; ttEmoji.textContent=pick.t.a; ttText.textContent=pick.t.t; }
+    else { ttEmoji.textContent='✅'; ttText.textContent='Ai terminat sarcinile săptămânii! Revezi o fișă veche sau odihnește-te.'; }
+  } else { ttEmoji.textContent='🎓'; ttText.textContent='Totul e bifat. Mândru de tine.'; }
+  ttDay.textContent='Azi e '+dayNames[now.getDay()]+' · '+['📖 zi de lectură','📖 fișă de sinteză','🧠 zi de recall','❓ zi de grile','🔄 consolidare','🔁 spaced review + încredere','😌 odihnă'][WEEKDAY_TASK[now.getDay()]];
+
+  // tata message (rotating by day-of-year)
+  const doy=Math.floor((now-new Date(now.getFullYear(),0,0))/86400000);
+  document.getElementById('tata-msg').textContent=TATA_MSG[doy%TATA_MSG.length];
+
+  // de revăzut (red confidence)
+  const reds=ALL_WEEKS.filter(x=>ST['conf_'+x.wk.id]==='r');
+  const rvCard=document.getElementById('revazut-card'), rvList=document.getElementById('revazut-list');
+  if(reds.length){ rvCard.style.display='block'; rvList.innerHTML=''; reds.forEach(x=>{ const it=document.createElement('div'); it.className='rv-item'; it.innerHTML='<span>W'+String(x.wk.n).padStart(2,'0')+' · '+x.wk.title+'</span><span class="rv-go">revezi →</span>'; it.onclick=()=>openWeek(x.wk.id); rvList.appendChild(it); }); }
+  else rvCard.style.display='none';
 }
 
-function buildPlan() {
-  const container = document.getElementById('phases-container');
-  PHASES.forEach(ph => {
-    const phDiv = document.createElement('div');
-    phDiv.className = 'phase';
-
-    const hdr = document.createElement('div');
-    hdr.className = 'phase-hdr';
-    hdr.onclick = () => {
-      body.classList.toggle('hidden');
-    };
-    hdr.innerHTML = `<div class="phase-dot" style="background:${ph.color}"></div>
-      <div class="phase-ttl">${ph.title}</div>
-      <div class="phase-meta">${ph.period}</div>`;
-    phDiv.appendChild(hdr);
-
-    const pbar = document.createElement('div');
-    pbar.className = 'phase-pbar';
-    const pfill = document.createElement('div');
-    pfill.className = 'phase-pfill';
-    pfill.style.background = ph.color;
-    pbar.appendChild(pfill);
-    phDiv.appendChild(pbar);
-
-    const plbl = document.createElement('div');
-    plbl.style.cssText='font-size:10px;color:var(--sub);padding:0 14px 6px;text-align:right';
-    phDiv.appendChild(plbl);
-
-    phaseProgressEls[ph.id] = {fill:pfill, label:plbl};
-
-    const body = document.createElement('div');
-    body.className = 'phase-body';
-    // collapse all except current phase
-    const hasCurrent = ph.months.some(m=>m.weeks.some(w=>w.id===CURRENT_WEEK));
-    if(!hasCurrent) body.classList.add('hidden');
-
-    ph.months.forEach(mo => {
-      const msep = document.createElement('div');
-      msep.className = 'msep';
-      msep.textContent = mo.m;
-      body.appendChild(msep);
-      mo.weeks.forEach(wk => {
-        body.appendChild(makeWkCard(wk, ph));
-      });
+// ══════════════════════════════════════════════════════════════════════════
+//  RENDER — CALENDAR
+// ══════════════════════════════════════════════════════════════════════════
+function renderCalendar(){
+  const grid=document.getElementById('cal-grid'); grid.innerHTML='';
+  const monthOrder=[];
+  ALL_WEEKS.forEach(x=>{ if(!monthOrder.includes(x.month)) monthOrder.push(x.month); });
+  monthOrder.forEach(mLabel=>{
+    const weeks=ALL_WEEKS.filter(x=>x.month===mLabel).map(x=>x.wk);
+    const done=weeks.filter(w=>weekDone(w)).length;
+    const pct=Math.round(done/weeks.length*100);
+    const card=document.createElement('div'); card.className='cal-month';
+    card.innerHTML=`<div class="cal-month-name">${mLabel.replace(/\s\d{4}/g,'')}</div><div class="cal-bar"><div class="cal-fill" style="width:${pct}%"></div></div><div class="cal-pct">${done}/${weeks.length} săpt. (${pct}%)</div>`;
+    const wl=document.createElement('div'); wl.className='cal-weeks';
+    weeks.forEach(w=>{
+      const e=document.createElement('div');
+      e.className='cal-wk'+(weekDone(w)?' wdone':'')+(w.id===CURRENT?' wtoday':'')+(w.type==='recap'?' wrecap':'')+(w.type==='sim'?' wsim':'');
+      e.textContent='W'+String(w.n).padStart(2,'0')+' '+w.dates; e.title=w.title;
+      e.onclick=()=>openWeek(w.id);
+      wl.appendChild(e);
     });
-
-    phDiv.appendChild(body);
-    container.appendChild(phDiv);
-
-    updatePhasePct(ph);
+    card.appendChild(wl); grid.appendChild(card);
   });
 }
 
-// ══════════════════════════════════════════════════════════════════════════════
-// CALENDAR
-// ══════════════════════════════════════════════════════════════════════════════
-const MONTHS_ORDER = [
-  {label:'Iulie 2026', yr:2026},
-  {label:'August 2026', yr:2026},
-  {label:'Septembrie 2026', yr:2026},
-  {label:'Octombrie 2026', yr:2026},
-  {label:'Noiembrie 2026', yr:2026},
-  {label:'Decembrie 2026', yr:2026},
-  {label:'Ianuarie 2027', yr:2027},
-  {label:'Februarie 2027', yr:2027},
-  {label:'Martie 2027', yr:2027},
-  {label:'Aprilie 2027', yr:2027},
-  {label:'Mai 2027', yr:2027},
-  {label:'Iunie 2027', yr:2027},
-];
-
-// Flatten all weeks
-const ALL_WEEKS = PHASES.flatMap(ph=>ph.months.flatMap(mo=>mo.weeks.map(w=>({...w,phColor:ph.color}))));
-
-function renderCalendar() {
-  const grid = document.getElementById('cal-grid');
-  grid.innerHTML = '';
-  MONTHS_ORDER.forEach(mo => {
-    const weeksInMonth = ALL_WEEKS.filter(w => {
-      const ph = PHASES.find(p=>p.months.find(m=>m.weeks.find(ww=>ww.id===w.id)));
-      const moObj = ph && ph.months.find(m=>m.weeks.find(ww=>ww.id===w.id));
-      return moObj && moObj.m === mo.label;
-    });
-    if(!weeksInMonth.length) return;
-
-    const done = weeksInMonth.filter(w=>weekDone(w)).length;
-    const pct = Math.round(done/weeksInMonth.length*100);
-
-    const card = document.createElement('div');
-    card.className = 'cal-month';
-
-    const nameEl = document.createElement('div');
-    nameEl.className = 'cal-month-name';
-    nameEl.textContent = mo.label.replace(/\s\d{4}/,'');
-
-    const bar = document.createElement('div');
-    bar.className = 'cal-bar';
-    const fill = document.createElement('div');
-    fill.className = 'cal-fill';
-    fill.style.background = 'var(--gr)';
-    fill.style.width = pct+'%';
-    bar.appendChild(fill);
-
-    const pctEl = document.createElement('div');
-    pctEl.className = 'cal-pct';
-    pctEl.textContent = done+'/'+weeksInMonth.length+' săpt. ('+pct+'%)';
-
-    const wksEl = document.createElement('div');
-    wksEl.className = 'cal-weeks';
-    weeksInMonth.forEach(w=>{
-      const wEl = document.createElement('div');
-      const isToday = w.id === CURRENT_WEEK;
-      const isDone = weekDone(w);
-      const isRecap = w.type==='recap';
-      const isSim = w.type==='sim';
-      wEl.className = 'cal-wk' + (isDone?' wdone':'') + (isToday?' wtoday':'') + (isRecap?' wrecap':'') + (isSim?' wsim':'');
-      wEl.textContent = 'W'+String(w.n).padStart(2,'0')+' '+w.dates;
-      wEl.title = w.title;
-      wEl.onclick = () => {
-        showPanel('plan');
-        setTimeout(()=>{
-          const el = document.getElementById('wk-'+w.id);
-          if(el){ el.scrollIntoView({behavior:'smooth',block:'center'}); el.querySelector('.wk-body').classList.add('open'); }
-        },100);
-      };
-      wksEl.appendChild(wEl);
-    });
-
-    card.appendChild(nameEl);
-    card.appendChild(bar);
-    card.appendChild(pctEl);
-    card.appendChild(wksEl);
-    grid.appendChild(card);
-  });
-}
-
-// ══════════════════════════════════════════════════════════════════════════════
-// TABS
-// ══════════════════════════════════════════════════════════════════════════════
-function showPanel(id) {
+// ══════════════════════════════════════════════════════════════════════════
+//  NAV
+// ══════════════════════════════════════════════════════════════════════════
+function showPanel(id){
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('panel-'+id).classList.add('active');
-  const tabs = document.querySelectorAll('.tab');
-  const map = {plan:0,cal:1,met:2,ritm:3};
-  if(map[id]!==undefined) tabs[map[id]].classList.add('active');
+  const map={azi:0,plan:1,cal:2,met:3,ritm:4};
+  const tabs=document.querySelectorAll('.tab'); if(map[id]!==undefined) tabs[map[id]].classList.add('active');
   if(id==='cal') renderCalendar();
+  if(id==='azi') renderDashboard();
 }
-
-// ══════════════════════════════════════════════════════════════════════════════
-// SCROLL TO TODAY
-// ══════════════════════════════════════════════════════════════════════════════
-function scrollToToday() {
+function openWeek(id){
   showPanel('plan');
-  setTimeout(()=>{
-    if(CURRENT_WEEK) {
-      const el = document.getElementById('wk-'+CURRENT_WEEK);
-      if(el) { el.scrollIntoView({behavior:'smooth',block:'center'}); el.querySelector('.wk-body').classList.add('open'); return; }
-    }
-    // first incomplete week
-    for(const wk of ALL_WEEKS) {
-      if(!weekDone(wk)) {
-        const el = document.getElementById('wk-'+wk.id);
-        if(el) { el.scrollIntoView({behavior:'smooth',block:'center'}); return; }
-      }
-    }
-  },100);
+  // ensure its phase body is open
+  const x=ALL_WEEKS.find(w=>w.wk.id===id);
+  setTimeout(()=>{ const el=document.getElementById('wk-'+id); if(el){ el.scrollIntoView({behavior:'smooth',block:'center'}); el.querySelector('.wk-body').classList.add('open'); const pbody=el.closest('.phase-body'); if(pbody) pbody.classList.remove('hidden'); } },120);
+}
+function scrollToToday(){
+  const tgt = CURRENT || (ALL_WEEKS.find(x=>!weekDone(x.wk))||{}).wk && (ALL_WEEKS.find(x=>!weekDone(x.wk)).wk.id);
+  if(tgt) openWeek(tgt);
+}
+function goAzi(){ showPanel('azi'); window.scrollTo({top:0,behavior:'smooth'}); }
+
+// toast / celebrate
+let toastT;
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'),3500); }
+function celebrate(ph){ toast('🎉 Ai terminat „'+ph.title.replace(/^[①②③④⑤⑥⑦⑧⑨⑩⑪]\s*/,'')+'"! Mândru de tine, Miruna 🤍'); }
+
+// ══════════════════════════════════════════════════════════════════════════
+//  TOP + INIT
+// ══════════════════════════════════════════════════════════════════════════
+function renderTop(){
+  const d=daysToExam();
+  document.getElementById('exam-pill').textContent = d>=0 ? ('📅 '+d+' zile') : 'Examen trecut';
 }
 
-// ══════════════════════════════════════════════════════════════════════════════
-// INIT
-// ══════════════════════════════════════════════════════════════════════════════
 buildPlan();
 updateStats();
+renderTop();
+renderDashboard();
 
-// Today badge
-const now = new Date();
-const MLBL=['ian','feb','mar','apr','mai','iun','iul','aug','sep','oct','nov','dec'];
-document.getElementById('today-badge').textContent = now.getDate()+' '+MLBL[now.getMonth()]+' '+now.getFullYear();
-
-// Auto scroll to today
-if(CURRENT_WEEK) {
-  setTimeout(scrollToToday, 300);
-}
+if(CURRENT){ /* dashboard is default; plan scroll happens on demand */ }
 </script>
 </body>
 </html>

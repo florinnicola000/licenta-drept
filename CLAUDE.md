@@ -32,18 +32,20 @@ Materiile (`MAT` în HTML): `civ` (Drept civil), `pciv` (Procedură civilă), `p
 
 ---
 
-## Plan de studiu pe 1 an (`plan_studiu.html`)
+## Plan de studiu „Planul Mirunei" (`plan_studiu.html`)
 
-Pagină separată, autoconținută, cu un program de pregătire pe **52 de săptămâni** (1 iul 2026 – 30 iun 2027), structurat în **10 faze** pe cele 4 materii.
+Pagină separată, autoconținută, personalizată pentru **Miruna** (fiica userului; vezi dedicația „de la Tata" din `index.html`). Program ancorat pe **examenul de licență din Februarie 2027** (UNIBUC): **32 de săptămâni**, de la 29 iun 2026 până la ~7 feb 2027, calibrat pe **2-3 ore/zi**. Structurat în **11 faze** pe cele 4 materii (greutate mare pe Civil + Penal, care sunt cele examinate la grilă; Procedura civilă/penală condensate).
 
-- **Fundament pedagogic:** repetare spațiată (spaced review intercalate), recall activ, intercalare Civil↔Penal, testare frecventă, taxonomia Bloom, hărți conceptuale.
-- **Structură:** faze → luni → săptămâni → sarcini bifabile (📖 citire / ✍️ fișă / 🧠 recall / ❓ grile / 🔄 recapitulare / 📊 simulare). Săptămâni de tip `recap` și `sim` plasate strategic.
-- **Tracking:** progres per sarcină / per fază / per materie / global, salvat în `localStorage` sub cheia `plan_licenta_v2`.
-- **4 tab-uri:** Plan / Calendar lunar / Metodologie / Ritm zilnic.
-- **Integrare cu grilele:** fiecare săptămână are buton „Testează-te" care deschide `index.html?mat=<civ|pciv|pen|ppen>` → pornește direct antrenamentul pe materie (vezi handler-ul URLSearchParams de la finalul scriptului din `index.html`, care apelează `startMaterie(m)`).
-- **Săptămâna curentă** e detectată din dată (`findCurrentWeek`) și evidențiată + auto-scroll.
+- **Fundament pedagogic:** repetare spațiată (linii „🔁 Spaced review" intercalate), recall activ, intercalare Civil↔Penal, testare frecventă, metacogniție (auto-evaluare încredere), concepte-cheie per săptămână.
+- **Structură:** faze → luni → săptămâni → sarcini bifabile (📖 citire / ✍️ fișă / 🧠 recall / ❓ grile / 🔄 recapitulare / 📊 simulare). Săptămâni de tip `recap` și `sim` plasate strategic; simulări complete Civil (W20), Penal (W27), mixt 100 (W30, W31), examen (W32).
+- **Tab „Astăzi" (default):** salut personal, **numărătoare inversă** până la examen (editabilă, `changeExamDate`), **streak** (zile la rând, `currentStreak`/`touchStreak`), săptămâna curentă, sugestia de azi (după ziua săptămânii), mesaj rotativ „de la Tata", listă „De revăzut" (săptămânile marcate 🔴).
+- **Per săptămână:** auto-evaluare încredere 🔴🟡🟢 (`conf_<wkid>`), notițe (`note_<wkid>`), concepte-cheie, butoane de testare.
+- **Tracking:** sarcini + încredere + notițe + streak + examen, toate în `localStorage` sub cheia **`plan_miruna_v1`**. Felicitări (toast) la finalizarea fiecărei faze.
+- **5 tab-uri:** Astăzi / Plan / Calendar lunar / Metodologie / Ritm zilnic.
+- **Integrare cu grilele:** fiecare săptămână are buton „Testează-te" care deschide `index.html?mat=<civ|pciv|pen|ppen>` → pornește direct antrenamentul pe materie (handler URLSearchParams la finalul scriptului din `index.html` apelează `startMaterie(m)`).
+- **Detecție dată:** `parseWeek` gestionează și săptămânile care traversează anul (ex. „28 dec–3 ian" într-un grup „Ianuarie 2027" → start dec 2026). `findCurrentWeek` evidențiază săptămâna curentă.
 
-Legături în `index.html`: buton CTA verde „📅 Plan de studiu pe 1 an" sub titlu (`#plan-cta`) + intrare în meniul „☰".
+**La schimbarea datei examenului / a duratei** se rescriu `PHASES` (datele săptămânilor) și se ajustează `ST._examDate` default. Legături în `index.html`: buton CTA verde „📅 Plan de studiu pe 1 an" sub titlu (`#plan-cta`) + intrare în meniul „☰".
 
 ---
 
