@@ -41,7 +41,8 @@ Pagină separată, autoconținută, personalizată pentru **Miruna** (fiica user
 - **Tab „Astăzi" (default):** salut personal, **numărătoare inversă** până la examen (editabilă, `changeExamDate`), **streak** (zile la rând, `currentStreak`/`touchStreak`), săptămâna curentă, sugestia de azi (după ziua săptămânii), mesaj rotativ „de la Tata", listă „De revăzut" (săptămânile marcate 🔴).
 - **Per săptămână:** auto-evaluare încredere 🔴🟡🟢 (`conf_<wkid>`), notițe (`note_<wkid>`), concepte-cheie, butoane de testare.
 - **Tracking:** sarcini + încredere + notițe + streak + examen, toate în `localStorage` sub cheia **`plan_miruna_v1`**. Felicitări (toast) la finalizarea fiecărei faze.
-- **5 tab-uri:** Astăzi / Plan / Calendar lunar / Metodologie / Ritm zilnic.
+- **6 tab-uri:** Astăzi / Plan / Calendar lunar / Metodologie / Ritm zilnic / **Surse**.
+- **Tab „Surse":** linkuri reale verificate — legislație oficială (legislatie.just.ro: Cod civil 109884, Cod penal 109855, Cod pr. civilă 140271, Cod pr. penală 120611), codulcivil.ro, arhiva de subiecte + fișele de disciplină UNIBUC, grile online (universuljuridic.ro, aplicația proprie, studocu) și manuale de referință (Boroi, Streteanu/Nițu, Udroiu, culegeri C.H. Beck). Toate URL-urile au fost verificate ca valide (legislatie.just.ro dă 403 la curl = anti-bot, dar paginile sunt reale).
 - **Integrare cu grilele:** fiecare săptămână are buton „Testează-te" care deschide `index.html?mat=<civ|pciv|pen|ppen>` → pornește direct antrenamentul pe materie (handler URLSearchParams la finalul scriptului din `index.html` apelează `startMaterie(m)`).
 - **Detecție dată:** `parseWeek` gestionează și săptămânile care traversează anul (ex. „28 dec–3 ian" într-un grup „Ianuarie 2027" → start dec 2026). `findCurrentWeek` evidențiază săptămâna curentă.
 

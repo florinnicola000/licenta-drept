@@ -191,6 +191,20 @@ a{color:var(--gr);text-decoration:none}
 .ritm-day{background:var(--sf2);border-radius:6px;padding:3px 8px;font-weight:700;font-size:11px;min-width:84px;text-align:center}
 .ritm-desc{color:var(--sub);flex:1;line-height:1.4}
 
+/* SURSE */
+.src-intro{font-size:12px;color:var(--sub);line-height:1.6;margin-bottom:14px;background:var(--sf);border-radius:var(--r);padding:12px 14px;border-left:3px solid var(--gold)}
+.src-item{display:flex;gap:11px;padding:11px 12px;background:var(--sf2);border-radius:9px;margin-bottom:7px;text-decoration:none;transition:background .12s}
+.src-item:hover{background:#2f4d32}
+.src-ico{font-size:20px;flex-shrink:0;margin-top:1px}
+.src-body{flex:1;min-width:0}
+.src-title{font-size:13px;font-weight:700;color:var(--lime);line-height:1.3}
+.src-desc{font-size:11px;color:var(--sub);line-height:1.45;margin-top:2px}
+.src-dom{font-size:10px;color:var(--gr);margin-top:3px;font-weight:600}
+.src-badge{font-size:9px;font-weight:800;padding:2px 7px;border-radius:10px;flex-shrink:0;align-self:flex-start;margin-top:2px}
+.badge-off{background:#4caf5022;color:var(--gr)}
+.badge-free{background:#26c6da22;color:var(--pciv)}
+.badge-book{background:#ffd54f22;color:var(--gold)}
+
 /* TOAST */
 #toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:var(--gr);color:#0f1b10;padding:12px 20px;border-radius:30px;font-size:13px;font-weight:800;box-shadow:0 6px 24px #0007;opacity:0;transition:opacity .3s,transform .3s;z-index:200;pointer-events:none;max-width:90vw;text-align:center}
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -225,6 +239,7 @@ a{color:var(--gr);text-decoration:none}
   <button class="tab" onclick="showPanel('cal')">🗓 Calendar</button>
   <button class="tab" onclick="showPanel('met')">📚 Metodologie</button>
   <button class="tab" onclick="showPanel('ritm')">⏱ Ritm</button>
+  <button class="tab" onclick="showPanel('surse')">🔗 Surse</button>
 </div>
 
 <div id="main">
@@ -347,6 +362,44 @@ a{color:var(--gr);text-decoration:none}
     <div class="met-item"><div class="met-icon">📵</div><div class="met-text"><b>Telefon în altă cameră.</b> Un singur tab. Notificările sunt inamicul memoriei.</div></div>
     <div class="met-item"><div class="met-icon">🌅</div><div class="met-text"><b>Materie nouă dimineața</b> (encodare mai bună), grile seara (consolidare).</div></div>
     <div class="met-item"><div class="met-icon">💤</div><div class="met-text"><b>7-8 ore de somn.</b> Nu negociabil — somnul fixează ce ai învățat.</div></div>
+  </div>
+</div>
+
+<!-- SURSE -->
+<div id="panel-surse" class="panel">
+  <div class="src-intro">
+    🔑 <b>Regula de aur:</b> sursa supremă e mereu <b>textul codului</b>. Când o grilă te pune pe gânduri, caută articolul exact în cod — el bate orice rezumat. Sintezele și grilele te ajută să exersezi, dar verifică mereu față de legislația oficială (e gratuită și actualizată).
+  </div>
+
+  <div class="info-box">
+    <h2 style="color:var(--gr)">📕 Legislație oficială (gratuită, actualizată)</h2>
+    <a class="src-item" href="https://legislatie.just.ro/Public/DetaliiDocument/109884" target="_blank" rel="noopener"><div class="src-ico">⚖️</div><div class="src-body"><div class="src-title">Codul Civil (Legea 287/2009)</div><div class="src-desc">Text integral, consolidat și actualizat — pentru AJC, drepturi reale, obligații, contracte, succesiuni.</div><div class="src-dom">legislatie.just.ro</div></div><span class="src-badge badge-off">OFICIAL</span></a>
+    <a class="src-item" href="https://legislatie.just.ro/Public/DetaliiDocument/109855" target="_blank" rel="noopener"><div class="src-ico">🔒</div><div class="src-body"><div class="src-title">Codul Penal (Legea 286/2009)</div><div class="src-desc">Partea generală (teoria infracțiunii) + partea specială (infracțiunile).</div><div class="src-dom">legislatie.just.ro</div></div><span class="src-badge badge-off">OFICIAL</span></a>
+    <a class="src-item" href="https://legislatie.just.ro/Public/DetaliiDocument/140271" target="_blank" rel="noopener"><div class="src-ico">📜</div><div class="src-body"><div class="src-title">Codul de Procedură Civilă (Legea 134/2010)</div><div class="src-desc">Competență, judecată, căi de atac (apel/recurs), executare silită.</div><div class="src-dom">legislatie.just.ro</div></div><span class="src-badge badge-off">OFICIAL</span></a>
+    <a class="src-item" href="https://legislatie.just.ro/Public/DetaliiDocument/120611" target="_blank" rel="noopener"><div class="src-ico">🛡️</div><div class="src-body"><div class="src-title">Codul de Procedură Penală (Legea 135/2010)</div><div class="src-desc">Probe, măsuri preventive, urmărire, cameră preliminară, căi de atac.</div><div class="src-dom">legislatie.just.ro</div></div><span class="src-badge badge-off">OFICIAL</span></a>
+    <a class="src-item" href="https://www.codulcivil.ro/" target="_blank" rel="noopener"><div class="src-ico">📖</div><div class="src-body"><div class="src-title">codulcivil.ro</div><div class="src-desc">Cod civil într-un format curat, ușor de citit și de căutat pe articol.</div><div class="src-dom">codulcivil.ro</div></div><span class="src-badge badge-free">GRATUIT</span></a>
+  </div>
+
+  <div class="info-box">
+    <h2 style="color:var(--pciv)">🎓 UNIBUC — oficial</h2>
+    <a class="src-item" href="https://drept.unibuc.ro/Subiecte-la-examenele-anterioare-s71-ro.htm" target="_blank" rel="noopener"><div class="src-ico">📝</div><div class="src-body"><div class="src-title">Subiecte și bareme de la examenele anterioare</div><div class="src-desc">Exact sesiunile din aplicația de grile — sursa lor oficială. Bune și ca PDF-uri tipăribile.</div><div class="src-dom">drept.unibuc.ro</div></div><span class="src-badge badge-off">OFICIAL</span></a>
+    <a class="src-item" href="https://drept.unibuc.ro/Studii-de-licenta-invatamant-cu-frecventa-s26-ro.htm" target="_blank" rel="noopener"><div class="src-ico">📋</div><div class="src-body"><div class="src-title">Studii de licență — fișe de disciplină &amp; bibliografie</div><div class="src-desc">Bibliografia oficială pe fiecare materie (ce manuale și ce articole intră) + planuri de învățământ.</div><div class="src-dom">drept.unibuc.ro</div></div><span class="src-badge badge-off">OFICIAL</span></a>
+  </div>
+
+  <div class="info-box">
+    <h2 style="color:var(--sim)">❓ Grile &amp; sinteze online</h2>
+    <a class="src-item" href="index.html" target="_blank" rel="noopener"><div class="src-ico">🎯</div><div class="src-body"><div class="src-title">Aplicația ta de grile (Grilă Licență Drept)</div><div class="src-desc">~1340 întrebări din 19 sesiuni reale, cu explicații — prima ta sursă de exercițiu zilnic.</div><div class="src-dom">aceeași aplicație</div></div><span class="src-badge badge-free">AL TĂU</span></a>
+    <a class="src-item" href="https://www.universuljuridic.ro/grile-pentru-admitere-inm-barou-avocatura/" target="_blank" rel="noopener"><div class="src-ico">🧩</div><div class="src-body"><div class="src-title">Universul Juridic — grile online</div><div class="src-desc">Grile grupate pe cele 4 materii (civil, proc. civilă, penal, proc. penală). Utile și pentru admiterea în profesii.</div><div class="src-dom">universuljuridic.ro</div></div><span class="src-badge badge-free">GRATUIT</span></a>
+    <a class="src-item" href="https://www.studocu.com/ro/course/universitatea-din-bucuresti/drept-civil/3286919" target="_blank" rel="noopener"><div class="src-ico">📚</div><div class="src-body"><div class="src-title">Studocu — materiale UNIBUC (Drept Civil etc.)</div><div class="src-desc">Notițe de curs, sinteze și grile de la studenți UniBuc. De folosit cu spirit critic — verifică față de cod.</div><div class="src-dom">studocu.com</div></div><span class="src-badge badge-free">GRATUIT</span></a>
+  </div>
+
+  <div class="info-box">
+    <h2 style="color:var(--gold)">📗 Manuale de referință (recomandate)</h2>
+    <div class="src-item" style="cursor:default"><div class="src-ico">⚖️</div><div class="src-body"><div class="src-title">Gabriel Boroi — Drept civil</div><div class="src-desc">Partea generală · Drepturile reale · Teoria obligațiilor · Contracte. Reperul clasic pentru civil la UniBuc.</div></div><span class="src-badge badge-book">CARTE</span></div>
+    <div class="src-item" style="cursor:default"><div class="src-ico">🔒</div><div class="src-body"><div class="src-title">Fl. Streteanu / D. Nițu — Drept penal. Partea generală</div><div class="src-desc">Teoria infracțiunii, formele, participația, pedepsele — riguros și complet.</div></div><span class="src-badge badge-book">CARTE</span></div>
+    <div class="src-item" style="cursor:default"><div class="src-ico">📕</div><div class="src-body"><div class="src-title">Mihail Udroiu — Drept penal &amp; Procedură penală (Sinteze și grile)</div><div class="src-desc">Sinteze compacte + grile, ideal pentru recapitulare rapidă și antrenament înainte de examen.</div></div><span class="src-badge badge-book">CARTE</span></div>
+    <div class="src-item" style="cursor:default"><div class="src-ico">📘</div><div class="src-body"><div class="src-title">V. Cioclei / C. Rotaru / A. Trandafir — Culegeri de grile</div><div class="src-desc">Colecții de grile pentru examene de an, licență și admitere în profesii (Ed. C.H. Beck).</div></div><span class="src-badge badge-book">CARTE</span></div>
+    <div class="src-intro" style="margin-top:10px;margin-bottom:0;border-left-color:var(--sub)">💡 Verifică ediția: cumpără mereu cea mai <b>recentă</b> ediție (codurile se modifică). Bibliografia oficială exactă e în fișele de disciplină UNIBUC de mai sus.</div>
   </div>
 </div>
 
@@ -1059,7 +1112,7 @@ function showPanel(id){
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('panel-'+id).classList.add('active');
-  const map={azi:0,plan:1,cal:2,met:3,ritm:4};
+  const map={azi:0,plan:1,cal:2,met:3,ritm:4,surse:5};
   const tabs=document.querySelectorAll('.tab'); if(map[id]!==undefined) tabs[map[id]].classList.add('active');
   if(id==='cal') renderCalendar();
   if(id==='azi') renderDashboard();
