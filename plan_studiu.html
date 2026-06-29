@@ -101,6 +101,10 @@ a{color:var(--gr);text-decoration:none}
 .phase-body.hidden{display:none}
 .phase-pbar{height:3px;background:var(--sf2);margin:0 14px 6px;border-radius:2px;overflow:hidden}
 .phase-pfill{height:100%;transition:width .4s}
+.phase-refs{font-size:11px;color:var(--sub);padding:0 14px 10px;line-height:1.6}
+.phase-refs .pr-lbl{font-weight:700;color:#6d8f5c;display:block;margin-bottom:2px;letter-spacing:.3px}
+.phase-refs .pr-code{display:block}
+.phase-refs a{color:var(--gr);font-weight:700}
 
 /* MONTH SEP */
 .msep{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#4a6a4c;padding:10px 6px 4px;border-top:1px solid var(--sf2);margin-top:4px}
@@ -425,6 +429,28 @@ const TAGS = {
   recap:{label:'Recapitulare',color:'var(--recap)',emoji:'🔄'},
   sim:{label:'Simulare',color:'var(--sim)',emoji:'📊'},
 };
+// Coduri oficiale (legislatie.just.ro)
+const COD = {
+  civ:{name:'Cod civil', url:'https://legislatie.just.ro/Public/DetaliiDocument/109884'},
+  pen:{name:'Cod penal', url:'https://legislatie.just.ro/Public/DetaliiDocument/109855'},
+  pciv:{name:'Cod pr. civilă', url:'https://legislatie.just.ro/Public/DetaliiDocument/140271'},
+  ppen:{name:'Cod pr. penală', url:'https://legislatie.just.ro/Public/DetaliiDocument/120611'},
+};
+// Temei legal orientativ per fază (articolele-ancoră ale instituțiilor principale)
+const PHASE_REFS = {
+  f1:[{c:'civ', art:'vicii de consimțământ art. 1206-1224 · nulitatea art. 1246-1265 · modalități (condiția/termenul) art. 1399-1420 · prescripția extinctivă art. 2500-2544'}],
+  f2:[{c:'civ', art:'proprietatea privată art. 555-566 · dezmembrăminte (superficie/uzufruct/uz/servitute) art. 693-772 · posesia art. 916-929 · uzucapiunea art. 930-934 · revendicarea art. 563'}],
+  f3:[{c:'civ', art:'izvoarele obligațiilor art. 1165-1395 · răspunderea civilă delictuală art. 1357-1395 · plata art. 1469-1515 · stingerea obligațiilor art. 1615-1634'}],
+  f4:[{c:'civ', art:'vânzarea art. 1650-1762 · donația art. 1011-1033 · locațiunea art. 1777-1823 · mandatul art. 2009-2071 · fidejusiunea art. 2280-2320'}],
+  f5:[{c:'civ', art:'moștenirea legală art. 963-983 · testamentul și legatele art. 1034-1085 · rezerva succesorală art. 1086-1099 · opțiunea succesorală art. 1100-1124'}],
+  f6:[{c:'civ', art:'recapitulare integrală — toate instituțiile fazelor ①-⑤'}],
+  f7:[{c:'pen', art:'infracțiunea: trăsături, forme, tentativă, participație art. 15-52 · pedepsele și individualizarea art. 53-106'}],
+  f8:[{c:'pen', art:'infracțiuni contra persoanei art. 188-227 · contra patrimoniului art. 228-256 · corupție și de serviciu art. 289-309'}],
+  f9:[{c:'pen', art:'recapitulare: Partea generală art. 15-187 + Partea specială art. 188-446'}],
+  f10:[{c:'pciv', art:'competența art. 94-147 · căile de atac (apel/recurs) art. 466-513'},{c:'ppen', art:'măsurile preventive art. 202-244 · căile de atac (apel/recurs în casație) art. 408-470'}],
+  f11:[{c:'civ', art:'recapitulare finală — toate instituțiile de drept civil'},{c:'pen', art:'recapitulare finală — toate instituțiile de drept penal'}],
+};
+
 const TATA_MSG = [
   'Un pas mic în fiecare zi te duce departe. Sunt mândru de tine. — Tata 🤍',
   'Nu trebuie să fie perfect azi. Trebuie doar să continui. — Tata 🤍',
@@ -1012,6 +1038,15 @@ function buildPlan(){
     const pfill=document.createElement('div'); pfill.className='phase-pfill'; pfill.style.background=ph.color; pbar.appendChild(pfill); d.appendChild(pbar);
     const plbl=document.createElement('div'); plbl.style.cssText='font-size:10px;color:var(--sub);padding:0 14px 6px;text-align:right'; d.appendChild(plbl);
     phaseEls[ph.id]={fill:pfill,label:plbl,celebrate:hdr.querySelector('.phase-celebrate')};
+
+    // temei legal (articole din coduri)
+    const refs=PHASE_REFS[ph.id];
+    if(refs){
+      const rf=document.createElement('div'); rf.className='phase-refs';
+      let html='<span class="pr-lbl">📖 Temei legal (orientativ — verifică textul exact în cod):</span>';
+      refs.forEach(r=>{ const cd=COD[r.c]; html+='<span class="pr-code">📕 <a href="'+cd.url+'" target="_blank" rel="noopener">'+cd.name+'</a> — '+r.art+'</span>'; });
+      rf.innerHTML=html; d.appendChild(rf);
+    }
 
     const hasCur=ph.months.some(m=>m.weeks.some(w=>w.id===CURRENT));
     if(!hasCur) body.classList.add('hidden');
