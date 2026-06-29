@@ -198,6 +198,7 @@ body.light #chart-body{background:var(--sf2)}
     <button class="tbtn" data-mode="marked" onclick="startMarked()">⭐ Marcate</button>
     <button class="tbtn" data-mode="stats" onclick="openStats()">📊 Statistici</button>
     <button class="tbtn" data-mode="search" onclick="openSearch()">🔎 Caută</button>
+    <a class="tbtn" href="plan_studiu.html" style="text-decoration:none;display:inline-flex;align-items:center">📅 Plan studiu</a>
     <button class="tbtn" id="opt-timed" onclick="toggleTimed()">⏳ Cronometrat: oprit</button>
     <button class="tbtn" id="opt-theme" onclick="toggleTheme()">☀️ Temă deschisă</button>
     <button class="tbtn" id="opt-font" onclick="toggleFont()">A+ Font mare</button>
@@ -553,6 +554,7 @@ function toggleFont(){STATE.opts.big=!STATE.opts.big;saveState();applyOpts();}
 function toggleTimed(){STATE.opts.timed=!STATE.opts.timed;saveState();applyOpts();timed=!!STATE.opts.timed;timeLimit=timed?QUESTIONS.length*SECPERQ:0;updTimer();}
 applyOpts();
 changeSession(SESSION_ORDER[SESSION_ORDER.length-1]);
+(function(){var p=new URLSearchParams(location.search);var m=p.get('mat');if(m&&['civ','pciv','pen','ppen'].indexOf(m)>=0){document.getElementById('dedicatie').style.display='none';setTimeout(function(){startMaterie(m);},50);}})();
 (function(){var na=document.getElementById('note-area');if(na)na.addEventListener('input',function(){var q=QUESTIONS[current];if(!q)return;var v=this.value;if(v)STATE.notes[qid(q)]=v;else delete STATE.notes[qid(q)];saveState();});})();
 (function(){var card=document.getElementById('card'),tx=0,ty=0,swiped=false;
 card.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;ty=e.touches[0].clientY;swiped=false;},{passive:true});
