@@ -9,20 +9,49 @@ Aplicație web de pregătire pentru examenul de licență la Facultatea de Drept
 
 ## Ce conține
 
-- **13 sesiuni de examen** (2024–2026), fiecare cu câte 100 de întrebări grilă
-- **50 întrebări Drept Civil** + **50 întrebări Drept Penal** per sesiune
-- Răspunsurile corecte extrase automat din baremele oficiale UNIBUC
-- Un singur fișier HTML autoconținut (`index.html` / `licenta_drept_all.html`)
+- **19 sesiuni de examen** (2023–2026), fiecare cu ~100 de întrebări grilă (~1340 întrebări total)
+- **~50 întrebări Drept Civil** + **~50 întrebări Drept Penal** per sesiune (cu etichete și pentru Procedură Civilă / Procedură Penală)
+- Răspunsurile corecte verificate față de baremele oficiale UNIBUC + explicații stil 2026
+- Două pagini HTML autoconținute:
+  - `index.html` / `licenta_drept_all.html` — aplicația de grile (toate datele embed-uite ca JSON)
+  - `plan_studiu.html` — **plan de studiu pe 1 an** (vezi mai jos)
 
 ### Sesiuni incluse
 
-| Sesiune | Grile | Întrebări |
-|---------|-------|-----------|
-| Feb 2024 | 1, 2 | 100 fiecare |
-| Jul 2024 | 1, 2, 3, 4 | 94–98 |
-| Feb 2025 | 1, 2 | 96–100 |
-| Jul 2025 | 1, 2, 3, 4 | 91–98 |
-| Feb 2026 | 1 | 100 |
+| Sesiune | Grile |
+|---------|-------|
+| Feb 2023 | 1, 2 |
+| Iun 2023 | 1, 2, 3, 4 |
+| Feb 2024 | 1, 2 |
+| Jul 2024 | 1, 2, 3, 4 |
+| Feb 2025 | 1, 2 |
+| Jul 2025 | 1, 2, 3, 4 |
+| Feb 2026 | 1 |
+
+Materiile (`MAT` în HTML): `civ` (Drept civil), `pciv` (Procedură civilă), `pen` (Drept penal), `ppen` (Procedură penală). Materia fiecărei întrebări e dedusă din poziție prin `materieKey(n)`.
+
+---
+
+## Plan de studiu pe 1 an (`plan_studiu.html`)
+
+Pagină separată, autoconținută, cu un program de pregătire pe **52 de săptămâni** (1 iul 2026 – 30 iun 2027), structurat în **10 faze** pe cele 4 materii.
+
+- **Fundament pedagogic:** repetare spațiată (spaced review intercalate), recall activ, intercalare Civil↔Penal, testare frecventă, taxonomia Bloom, hărți conceptuale.
+- **Structură:** faze → luni → săptămâni → sarcini bifabile (📖 citire / ✍️ fișă / 🧠 recall / ❓ grile / 🔄 recapitulare / 📊 simulare). Săptămâni de tip `recap` și `sim` plasate strategic.
+- **Tracking:** progres per sarcină / per fază / per materie / global, salvat în `localStorage` sub cheia `plan_licenta_v2`.
+- **4 tab-uri:** Plan / Calendar lunar / Metodologie / Ritm zilnic.
+- **Integrare cu grilele:** fiecare săptămână are buton „Testează-te" care deschide `index.html?mat=<civ|pciv|pen|ppen>` → pornește direct antrenamentul pe materie (vezi handler-ul URLSearchParams de la finalul scriptului din `index.html`, care apelează `startMaterie(m)`).
+- **Săptămâna curentă** e detectată din dată (`findCurrentWeek`) și evidențiată + auto-scroll.
+
+Legături în `index.html`: buton CTA verde „📅 Plan de studiu pe 1 an" sub titlu (`#plan-cta`) + intrare în meniul „☰".
+
+---
+
+## Service worker (`sw.js`) — cache
+
+**Strategie (de la v26):** *network-first pentru HTML* (paginile se iau mereu proaspete de pe rețea, cache doar ca backup offline) + *cache-first pentru assets* (icoane, manifest). Asta evită problema „trebuie curățat cache după deploy".
+
+La fiecare modificare de assets precache-uite **bumpează `const CACHE = 'ldr-vNN'`** ca să forțezi invalidarea pe toate dispozitivele. `ASSETS` include `index.html` și `plan_studiu.html`.
 
 ---
 
@@ -139,14 +168,16 @@ git push
 Fișierul este autoconținut — toate datele (întrebări + răspunsuri) sunt embed-uite ca JSON în `<script>`.
 
 ```
-ALL_SESSIONS = { "feb2026_g1": [{n, stem, a, b, c, correct}, ...], ... }
+ALL_SESSIONS = { "feb2026_g1": [{n, stem, a, b, c, correct, explanation}, ...], ... }
 ALL_LABELS   = { "feb2026_g1": "Feb 2026 · Grila 1", ... }
-SESSION_ORDER = ["feb2024_g1", ..., "feb2026_g1"]
+SESSION_ORDER = ["feb2023_g1", "feb2023_g2", ..., "feb2026_g1"]   // 19 chei
+MAT          = [['civ','⚖️ Drept civil'],['pciv','📜 Procedură civilă'],['pen','🔒 Drept penal'],['ppen','🛡️ Procedură penală']]
 ```
 
 Funcții principale:
 - `changeSession(key)` — încarcă sesiunea selectată
 - `selectAnswer(letter)` — înregistrează răspunsul, afișează feedback, avansează automat
+- `startMaterie(k)` — pornește antrenamentul pe o materie (`civ`/`pciv`/`pen`/`ppen`); apelat și automat din `?mat=` de către `plan_studiu.html`
 - `showResult()` — ecran final cu scor și verdict
 - `renderGrid()` — grila de navigare (verde/roșu/gri)
 
