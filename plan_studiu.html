@@ -1282,7 +1282,7 @@ function renderDict(){
   cnt.textContent = items.length+' termeni';
   // update empty-state link
   const ol = document.getElementById('dict-search-online');
-  if(ol){ ol.href = legeazUrl(document.getElementById('dict-search').value||'termen juridic'); }
+  if(ol){ ol.href = legeazSearch(document.getElementById('dict-search').value||'termen juridic'); }
   if(!items.length){ list.innerHTML=''; empty.style.display='block'; return; }
   empty.style.display='none';
   const isLat = e=>e.mat==='lat';

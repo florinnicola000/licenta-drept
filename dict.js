@@ -165,6 +165,10 @@ function normTerm(s){
 const DICT_MAP = new Map();
 DICT.forEach(e=>{ DICT_MAP.set(normTerm(e.t), e); });
 function legeazUrl(term){
+  const slug = normTerm(term).replace(/\s+/g,'-');
+  return 'https://legeaz.net/dictionar-juridic/' + slug;
+}
+function legeazSearch(term){
   return 'https://legeaz.net/?s=' + encodeURIComponent(term);
 }
 
