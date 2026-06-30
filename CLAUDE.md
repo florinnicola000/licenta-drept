@@ -53,6 +53,18 @@ Modul JS partajat inclus în ambele pagini cu `<script src="dict.js"></script>` 
 
 ---
 
+## Modul de relaxare „🧩 Memory juridic" (`index.html`)
+
+Joc de memorie (perechi **termen ↔ definiție**) ca pauză de la grile. Buton „🧩 Memory" în meniu (`data-mode="memory"`) → `openMemory()` deschide panoul `#memory` (același tipar ca `#stats`/`#search-panel`; `backToQuiz`/`startSet`/`openStats`/`openSearch` ascund toate panourile reciproc).
+
+- Reutilizează `DICT` din dict.js. Cartonașe: pentru fiecare termen ales, unul arată termenul, altul definiția scurtată (`memShortDef`, ~78 caractere, tăiere la spațiu).
+- Controale: nr. perechi (6/8/10) + filtru materie (Toate/Civil/Penal/Pr.civ/Pr.pen/Latină). Schimbarea lor reîncepe jocul.
+- Logică: `memFlip(i)` întoarce 2 cartonașe; potrivire pe `id` egal → rămân (clasa `.matched`), altfel se reîntorc după 820ms (`MEM.lock` blochează în interval). Câștig la toate perechile → `memWin()` cu mesaj rotativ + nr. mutări.
+- **Fără timp, fără pierdere** (relaxare). Record (cele mai puține mutări) per `<materie>_<perechi>` în localStorage **separat** `ldr_mem_v1` (NU în `ldr_progress_v2`, ca să nu interfereze cu resetul progresului).
+- Animație flip 3D CSS (`.mem-inner` rotateY + `backface-visibility`, cu prefix `-webkit-` pentru Safari/iOS). Badge de materie colorat pe fiecare cartonaș.
+
+---
+
 ## Plan de studiu „Planul Mirunei" (`plan_studiu.html`)
 
 Pagină separată, autoconținută, personalizată pentru **Miruna** (fiica userului; vezi dedicația „de la Tata" din `index.html`). Program ancorat pe **examenul de licență din Februarie 2027** (UNIBUC): **32 de săptămâni**, de la 29 iun 2026 până la ~7 feb 2027, calibrat pe **2-3 ore/zi**. Structurat în **11 faze** pe cele 4 materii (greutate mare pe Civil + Penal, care sunt cele examinate la grilă; Procedura civilă/penală condensate).
