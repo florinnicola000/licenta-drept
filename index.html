@@ -203,6 +203,7 @@ body.light #chart-body{background:var(--sf2)}
     <button class="tbtn" data-mode="stats" onclick="openStats()">📊 Statistici</button>
     <button class="tbtn" data-mode="search" onclick="openSearch()">🔎 Caută</button>
     <a class="tbtn" href="plan_studiu.html" style="text-decoration:none;display:inline-flex;align-items:center">📅 Plan studiu</a>
+    <button class="tbtn" onclick="window.__dictOpen=true;window.open('plan_studiu.html','_blank')" id="tbtn-dict">📖 Dicționar</button>
     <button class="tbtn" id="opt-timed" onclick="toggleTimed()">⏳ Cronometrat: oprit</button>
     <button class="tbtn" id="opt-theme" onclick="toggleTheme()">☀️ Temă deschisă</button>
     <button class="tbtn" id="opt-font" onclick="toggleFont()">A+ Font mare</button>
@@ -571,6 +572,7 @@ card.addEventListener('touchend',function(e){
 var origFlip=window.doFlip;window.doFlip=function(){if(swiped){swiped=false;return;}flashRevealed=true;render();};
 })();
 </script>
+<script src="dict.js"></script>
 <script>
 if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(function(){});}
 </script>
