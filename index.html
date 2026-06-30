@@ -27,6 +27,9 @@ body{background:var(--bg);color:var(--txt);font-family:system-ui,sans-serif;min-
 #session-bar{width:100%;max-width:760px;padding:16px 16px 0;display:flex;flex-direction:column;gap:8px}
 #session-title{font-size:17px;font-weight:800;color:var(--gr)}
 #session-sub{font-size:11px;color:var(--sub);margin-bottom:4px}
+#cd-bar{display:none;background:var(--sf);border:1.5px solid var(--gold,#ffd54f);border-radius:22px;padding:6px 16px;font-size:12px;font-weight:700;color:var(--gold,#ffd54f);text-align:center;cursor:pointer;transition:opacity .15s}
+#cd-bar:hover{opacity:.8}
+#cd-bar.urgent{border-color:var(--err);color:var(--err)}
 #plan-cta{display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(90deg,#4caf50,#66bb6a);color:#0f1b10;border-radius:var(--r);padding:11px 14px;font-size:14px;font-weight:800;text-decoration:none;margin-bottom:8px;box-shadow:0 2px 12px #4caf5033;transition:opacity .15s}
 #plan-cta:hover{opacity:.9}
 #plan-cta .arrow{margin-left:auto;font-weight:900}
@@ -193,6 +196,7 @@ body.light #chart-body{background:var(--sf2)}
 <div id="session-bar">
   <div id="session-title">📚 Grilă Licență Drept — UNIBUC</div>
   <div id="session-sub">Facultatea de Drept București · 19 sesiuni · 2023–2026</div>
+  <div id="cd-bar" onclick="location.href='plan_studiu.html'"></div>
   <a id="plan-cta" href="plan_studiu.html">📅 Plan de studiu pe 1 an <span class="arrow">→</span></a>
   <select id="session-select" onchange="changeSession(this.value)"></select>
 </div>
@@ -613,6 +617,24 @@ function toggleTheme(){STATE.opts.light=!STATE.opts.light;saveState();applyOpts(
 function toggleFont(){STATE.opts.big=!STATE.opts.big;saveState();applyOpts();}
 function toggleTimed(){STATE.opts.timed=!STATE.opts.timed;saveState();applyOpts();timed=!!STATE.opts.timed;timeLimit=timed?QUESTIONS.length*SECPERQ:0;updTimer();}
 applyOpts();
+(function(){
+  var bar=document.getElementById('cd-bar'); if(!bar) return;
+  try{
+    var plan=JSON.parse(localStorage.getItem('plan_miruna_v2'))||{};
+    var raw=plan._examDate||'2027-02-08';
+    var p=raw.split('-');
+    var exam=new Date(+p[0],+p[1]-1,+p[2]);
+    var days=Math.round((exam.setHours(0,0,0,0)-new Date().setHours(0,0,0,0))/86400000);
+    if(days>0){
+      bar.textContent='📅 '+days+(days===1?' zi':' zile')+' până la licență';
+      bar.className=days<=10?'urgent':'';
+      bar.style.display='';
+    } else if(days===0){
+      bar.textContent='🎓 Azi e examenul! Mult succes, Miruna! 🍀';
+      bar.style.display='';
+    }
+  }catch(e){}
+})();
 changeSession(SESSION_ORDER[SESSION_ORDER.length-1]);
 (function(){var p=new URLSearchParams(location.search);var m=p.get('mat');if(m&&['civ','pciv','pen','ppen'].indexOf(m)>=0){document.getElementById('dedicatie').style.display='none';var kw=p.get('kw');var tl=p.get('tl');setTimeout(function(){if(kw){startMaterieTopic(m,kw.split(',').map(function(x){return normTerm(x);}).filter(Boolean),tl||'');}else{startMaterie(m);}},50);}})();
 (function(){var na=document.getElementById('note-area');if(na)na.addEventListener('input',function(){var q=QUESTIONS[current];if(!q)return;var v=this.value;if(v)STATE.notes[qid(q)]=v;else delete STATE.notes[qid(q)];saveState();});})();
