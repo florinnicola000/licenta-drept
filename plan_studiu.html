@@ -76,6 +76,18 @@ a{color:var(--gr);text-decoration:none}
 .rv-item{font-size:12px;color:var(--sub);padding:5px 0;cursor:pointer;border-bottom:1px solid var(--sf2);display:flex;justify-content:space-between;gap:8px}
 .rv-item:hover{color:var(--lime)}
 .rv-go{color:var(--gr);font-weight:700;flex-shrink:0}
+.rem-banner-card{background:#1a2e1c;border:2px solid var(--warn);border-radius:var(--r);padding:14px;margin-bottom:10px;display:flex;gap:10px;align-items:flex-start}
+.rem-banner-icon{font-size:28px;flex-shrink:0}
+.rem-banner-card b{color:var(--warn);font-size:14px}
+.rem-banner-close{background:none;border:none;color:var(--sub);font-size:16px;cursor:pointer;padding:0;margin-left:auto;flex-shrink:0}
+.rem-card{background:var(--sf);border-radius:var(--r);padding:14px;margin-bottom:10px}
+.rem-head{font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--sub);margin-bottom:8px}
+.rem-row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+.rem-input{background:var(--sf2);color:var(--txt);border:1.5px solid var(--gr);border-radius:9px;padding:8px 12px;font-size:14px;font-weight:700;flex:1;max-width:130px;outline:none}
+.rem-save-btn{background:var(--gr);color:#0f1b10;border:none;border-radius:20px;padding:8px 18px;font-size:13px;font-weight:800;cursor:pointer}
+.rem-notif-btn{width:100%;background:var(--sf2);color:var(--txt);border:1.5px solid var(--sf2);border-radius:20px;padding:8px 14px;font-size:12px;font-weight:700;cursor:pointer;margin-bottom:8px;text-align:left;display:block}
+.rem-notif-btn:disabled{opacity:.5;cursor:default}
+.rem-hint{font-size:10px;color:var(--sub);line-height:1.5}
 
 /* SUBJECT STATS */
 #stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
@@ -318,6 +330,22 @@ a{color:var(--gr);text-decoration:none}
   <div id="revazut-card" style="display:none">
     <h3>🔴 De revăzut (te-ai simțit nesigură)</h3>
     <div id="revazut-list"></div>
+  </div>
+
+  <div id="rem-banner" class="rem-banner-card" style="display:none">
+    <div class="rem-banner-icon">⏰</div>
+    <div style="flex:1"><b>E ora studiului!</b><br><span style="font-size:12px;color:var(--sub)">Nu ai bifat nicio sarcină azi. Hai să schimbăm asta! 💪</span></div>
+    <button class="rem-banner-close" onclick="document.getElementById('rem-banner').style.display='none'">✕</button>
+  </div>
+
+  <div class="rem-card">
+    <div class="rem-head">⏰ Reminder zilnic</div>
+    <div class="rem-row">
+      <input type="time" id="rem-time" class="rem-input" placeholder="HH:MM">
+      <button class="rem-save-btn" onclick="saveReminder()">Salvează</button>
+    </div>
+    <button id="rem-notif-btn" class="rem-notif-btn" onclick="requestNotif()">🔔 Activează notificări browser</button>
+    <div class="rem-hint">Setează ora la care vrei să fii reamintită. Dacă nu ai bifat nimic în ziua respectivă și deschizi aplicația după ora setată, apare un mesaj de start. Cu notificările activate, alertă directă în browser.</div>
   </div>
 </div>
 
@@ -1295,6 +1323,59 @@ function renderDict(){
     </div>
   `).join('');
 }
+
+// ── Reminder zilnic ──────────────────────────────────────────────────────
+function initReminder(){
+  const inp = document.getElementById('rem-time');
+  if(!inp) return;
+  if(ST.reminderTime) inp.value = ST.reminderTime;
+  updateNotifBtn();
+  if(!ST.reminderTime) return;
+  const now = new Date();
+  const today = ymd(now);
+  const lastStudy = ST._streak ? ST._streak.last : null;
+  if(lastStudy === today) return;  // already studied today — no banner
+  const parts = ST.reminderTime.split(':');
+  const remDt = new Date(now.getFullYear(), now.getMonth(), now.getDate(), +parts[0], +parts[1]);
+  if(now < remDt) return;  // not yet reminder time
+  const banner = document.getElementById('rem-banner');
+  if(banner) banner.style.display = 'flex';
+  if('Notification' in window && Notification.permission === 'granted'){
+    new Notification('📚 Licență Drept — reminder', {
+      body: 'Nu ai studiat azi! Deschide planul și bifează ceva. 💪',
+      icon: '/licenta-drept/icons/icon-192.png'
+    });
+  }
+}
+function saveReminder(){
+  const val = document.getElementById('rem-time').value;
+  ST.reminderTime = val; save();
+  toast('Reminder setat pentru ora ' + (val||'—') + ' ⏰');
+}
+async function requestNotif(){
+  if(!('Notification' in window)){ toast('Browserul nu suportă notificări.'); return; }
+  const perm = await Notification.requestPermission();
+  if(perm === 'granted'){
+    new Notification('📚 Licență Drept', {body:'Notificări activate! Te voi anunța la ora setată.', icon:'/licenta-drept/icons/icon-192.png'});
+  }
+  updateNotifBtn();
+}
+function updateNotifBtn(){
+  const btn = document.getElementById('rem-notif-btn');
+  if(!btn) return;
+  if(!('Notification' in window)){ btn.style.display='none'; return; }
+  if(Notification.permission === 'granted'){
+    btn.textContent = '✅ Notificări browser active';
+    btn.disabled = true;
+  } else if(Notification.permission === 'denied'){
+    btn.textContent = '🚫 Notificări blocate în browser';
+    btn.disabled = true;
+  } else {
+    btn.textContent = '🔔 Activează notificări browser';
+    btn.disabled = false;
+  }
+}
+initReminder();
 
 // init dicționar
 renderDict();

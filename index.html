@@ -155,7 +155,14 @@ body.light .opt.wrong{background:#fbe6e6}
 .ch-bar{display:flex;flex-direction:column;align-items:center;flex:1;height:100%;cursor:default}
 .ch-col{flex:1;width:100%;display:flex;align-items:flex-end}
 .ch-fill{width:100%;border-radius:3px 3px 0 0;min-height:3px}
-.ch-lbl{font-size:8px;color:var(--sub);margin-top:2px;padding-bottom:2px}
+.ch-lbl{font-size:7px;color:var(--sub);margin-top:2px;padding-bottom:2px;text-align:center;white-space:nowrap;overflow:hidden}
+.freq-section{margin-top:18px}
+.freq-head{font-size:11px;font-weight:800;color:var(--warn);margin-bottom:8px;letter-spacing:.4px;text-transform:uppercase}
+.freq-item{background:var(--sf);border-radius:9px;padding:9px 12px;margin-bottom:7px;cursor:pointer;border:1.5px solid transparent;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:10px;row-gap:2px}
+.freq-item:hover{border-color:var(--warn)}
+.freq-cnt{font-size:18px;font-weight:900;color:var(--warn);line-height:1;grid-row:span 2;align-self:center}
+.freq-meta{font-size:10px;color:var(--gr);font-weight:700}
+.freq-stem{font-size:12px;color:var(--txt);line-height:1.4}
 #opt-timed.active{background:var(--warn);color:#0f1b10;border-color:var(--warn)}
 body.light #chart-body{background:var(--sf2)}
 </style>
@@ -216,11 +223,11 @@ body.light #chart-body{background:var(--sf2)}
   <button class="mat-btn" onclick="startMaterie('ppen')">🛡️ Procedură penală</button>
 </div>
 <div id="stats">
-  <div class="panel-head"><span>📊 Statistica ta pe materii</span><button class="tbtn" onclick="backToQuiz()">← Înapoi</button></div>
+  <div class="panel-head"><span>📊 Statisticile tale</span><button class="tbtn" onclick="backToQuiz()">← Înapoi</button></div>
   <div id="stats-summary" class="panel-sub"></div>
   <div id="stats-body"></div>
   <div class="ch-wrap">
-    <div class="ch-head">📈 Ultimele 15 sesiuni finalizate</div>
+    <div class="ch-head">📈 Ultimele 20 sesiuni finalizate</div>
     <div id="chart-body"></div>
   </div>
 </div>
@@ -289,7 +296,7 @@ const LS_KEY='ldr_progress_v2';
 function loadState(){try{return JSON.parse(localStorage.getItem(LS_KEY))||{}}catch(e){return{}}}
 function saveState(){try{localStorage.setItem(LS_KEY,JSON.stringify(STATE))}catch(e){}}
 let STATE=loadState();
-STATE.prog=STATE.prog||{};STATE.best=STATE.best||{};STATE.wrong=STATE.wrong||{};STATE.stats=STATE.stats||{};STATE.opts=STATE.opts||{};STATE.marked=STATE.marked||{};STATE.hist=STATE.hist||[];STATE.notes=STATE.notes||{};
+STATE.prog=STATE.prog||{};STATE.best=STATE.best||{};STATE.wrong=STATE.wrong||{};STATE.stats=STATE.stats||{};STATE.opts=STATE.opts||{};STATE.marked=STATE.marked||{};STATE.hist=STATE.hist||[];STATE.notes=STATE.notes||{};STATE.wrongFreq=STATE.wrongFreq||{};
 const MAT=[['civ','⚖️ Drept civil'],['pciv','📜 Procedură civilă'],['pen','🔒 Drept penal'],['ppen','🛡️ Procedură penală']];
 function materieKey(n){return n<=35?'civ':n<=50?'pciv':n<=85?'pen':'ppen';}
 function materieLabel(n){return n<=35?'Drept civil':n<=50?'Procedură civilă':n<=85?'Drept penal':'Procedură penală';}
@@ -422,7 +429,7 @@ function selectAnswer(letter){
   const mk=materieKey(q.n);STATE.stats[mk]=STATE.stats[mk]||{c:0,t:0};STATE.stats[mk].t++;if(letter===q.correct)STATE.stats[mk].c++;
   if(q._sk){STATE.wrong[q._sk]=STATE.wrong[q._sk]||[];var arr=STATE.wrong[q._sk];var idx=arr.indexOf(q.n);
     if(letter===q.correct){if(idx>=0)arr.splice(idx,1);if(!arr.length)delete STATE.wrong[q._sk];}
-    else{if(idx<0)arr.push(q.n);}}
+    else{if(idx<0)arr.push(q.n);var fk=q._sk+':'+q.n;STATE.wrongFreq[fk]=(STATE.wrongFreq[fk]||0)+1;}}
   saveProgress();saveState();render();
 }
 function go(dir){current=Math.max(0,Math.min(QUESTIONS.length-1,current+dir));if(mode==='flash')flashRevealed=false;saveProgress();render();window.scrollTo(0,0);}
@@ -459,7 +466,7 @@ function showResult(){
   else if(mode==='marked'){extra='⭐ Marcate — '+correct+'/'+total;}
   else if(mode==='exam'){extra='🎓 Simulare examen — '+correct+'/100 · '+Math.round(correct)+'%';}
   else{extra='🎲 Examen mixt din toate sesiunile';}
-  if(ans>0){STATE.hist.push({d:Date.now(),mode:mode,correct:correct,total:total});if(STATE.hist.length>60)STATE.hist=STATE.hist.slice(-60);}
+  if(ans>0){STATE.hist.push({d:Date.now(),mode:mode,correct:correct,total:total,sk:mode==='normal'?sessionKey:'',matk:mode==='materie'?matKey:''});if(STATE.hist.length>60)STATE.hist=STATE.hist.slice(-60);}
   saveState();refreshOptions();
   document.getElementById('r-extra').textContent=extra;
   window.scrollTo(0,0);
@@ -517,12 +524,30 @@ function renderStats(){
   var mc=Object.keys(STATE.marked).length;
   document.getElementById('stats-summary').textContent=tt?('Total răspunsuri date: '+tt+' · Corecte: '+tc+' ('+Math.round(tc/tt*100)+'%) · 📌 '+wc+' de revăzut · ⭐ '+mc+' marcate'):'Încă nu ai răspuns la nicio întrebare — începe o sesiune!';
   if(!any)wrap.innerHTML='<div style="color:var(--sub);text-align:center;padding:24px">Rezolvă întrebări ca să apară statistica pe cele 4 materii.</div>';
+  var freqList=Object.entries(STATE.wrongFreq||{}).filter(function(e){return e[1]>=2;}).sort(function(a,b){return b[1]-a[1];}).slice(0,8);
+  if(freqList.length){
+    var fs=document.createElement('div');fs.className='freq-section';
+    fs.innerHTML='<div class="freq-head">⚠️ Greșite de mai multe ori</div>';
+    freqList.forEach(function(entry){
+      var parts=entry[0].split(':'),sk=parts[0],qn=parseInt(parts[1]);
+      var q=(ALL_SESSIONS[sk]||[]).find(function(x){return x.n===qn;});if(!q)return;
+      var d=document.createElement('div');d.className='freq-item';
+      d.innerHTML='<span class="freq-cnt">×'+entry[1]+'</span><span class="freq-meta">'+(ALL_LABELS[sk]||sk)+' · Î'+qn+'</span><div class="freq-stem">'+esc(q.stem.slice(0,100))+(q.stem.length>100?'…':'')+'</div>';
+      d.onclick=function(){changeSession(sk);};
+      fs.appendChild(d);
+    });
+    wrap.appendChild(fs);
+  }
+}
+function histLbl(e){
+  if(e.sk){var lbl=ALL_LABELS[e.sk]||e.sk;var m=lbl.match(/^(\w)\w*\s+\d{2}(\d{2})\s*·\s*Grila\s*(\d)/i);if(m)return m[1].toUpperCase()+m[2]+'·'+m[3];return lbl.slice(0,5);}
+  if(e.mode==='exam')return 'sim.';if(e.mode==='mixt')return 'mixt';if(e.mode==='materie')return e.matk||'mat';if(e.mode==='wrong')return 'greș.';if(e.mode==='marked')return 'marc.';return '·';
 }
 function renderChart(){
   var c=document.getElementById('chart-body');if(!c)return;c.innerHTML='';
-  var h=STATE.hist.slice(-15);
+  var h=STATE.hist.slice(-20);
   if(!h.length){c.innerHTML='<div style="color:var(--sub);font-size:12px;padding:8px">Încă nu ai finalizat nicio sesiune — aici va apărea evoluția scorurilor tale.</div>';return;}
-  h.forEach(function(e){var pct=e.total?Math.round(e.correct/e.total*100):0;var col=pct>=60?'var(--gr)':(pct>=40?'var(--warn)':'var(--err)');var bar=document.createElement('div');bar.className='ch-bar';bar.title=e.correct+'/'+e.total+' ('+pct+'%)';bar.innerHTML='<div class="ch-col"><div class="ch-fill" style="height:'+Math.max(3,pct)+'%;background:'+col+'"></div></div><div class="ch-lbl">'+pct+'</div>';c.appendChild(bar);});
+  h.forEach(function(e){var pct=e.total?Math.round(e.correct/e.total*100):0;var col=pct>=60?'var(--gr)':(pct>=40?'var(--warn)':'var(--err)');var bar=document.createElement('div');bar.className='ch-bar';bar.title=histLbl(e)+' · '+e.correct+'/'+e.total+' ('+pct+'%)';bar.innerHTML='<div class="ch-col"><div class="ch-fill" style="height:'+Math.max(3,pct)+'%;background:'+col+'"></div></div><div class="ch-lbl">'+histLbl(e)+'</div>';c.appendChild(bar);});
 }
 var SEARCH_INDEX=null;
 function buildIndex(){if(SEARCH_INDEX)return SEARCH_INDEX;SEARCH_INDEX=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){SEARCH_INDEX.push({k:k,q:q,hay:((q.stem||'')+' '+(q.a||'')+' '+(q.b||'')+' '+(q.c||'')).toLowerCase()});});});return SEARCH_INDEX;}
