@@ -167,6 +167,8 @@ a{color:var(--gr);text-decoration:none}
 .quiz-btn:hover{background:var(--gr);color:#0f1b10}
 .quiz-btn.sim-btn{border-color:var(--sim);color:var(--sim)}
 .quiz-btn.sim-btn:hover{background:var(--sim);color:#0f1b10}
+.quiz-btn.quiz-btn-sec{border-color:var(--sf2);color:var(--sub);font-weight:600;font-size:10px;padding:6px 11px}
+.quiz-btn.quiz-btn-sec:hover{background:var(--sf2);color:var(--lime)}
 
 /* CONFIDENCE */
 .conf-box{margin-top:12px;padding-top:10px;border-top:1px solid var(--sf2)}
@@ -944,6 +946,41 @@ const PHASES = [
 ];
 
 // ══════════════════════════════════════════════════════════════════════════
+//  CUVINTE-CHEIE PE SĂPTĂMÂNĂ — testul „pe această temă" filtrează grilele
+//  materiei după acești termeni (potrivire normalizată în index.html).
+//  Săptămânile de simulare/buffer/examen (W17,W25,W29-W32) NU au temă →
+//  păstrează testul pe toată materia / simularea completă.
+// ══════════════════════════════════════════════════════════════════════════
+const WEEK_KW = {
+ w01:['capacitate de exerc','capacitate de folos','incapabil','consensual','solemn','act unilateral','act bilateral'],
+ w02:['consimtam','viciu','eroare','dol','violent','leziune'],
+ w03:['nulitat','ad validitatem','ad probationem','obiectul actului','cauza ilicit','cauza imoral','forma autentic'],
+ w04:['prescript','decader','conditie suspensiv','conditie rezolutor','modalitat','retroactiv'],
+ w05:['proprietat','coproprietat','indiviz','partaj','devalmas'],
+ w06:['uzufruct','abitati','servitut','superfici','dezmembram','nuda proprietat'],
+ w07:['posesi','uzucap','revendicar','ipotec','gaj','cartea funciar','detenti precar'],
+ w08:['obligatie de mijloace','obligatie de rezultat','imbogatire','gestiune de afaceri','plata nedatorat','fapt juridic licit'],
+ w09:['raspundere delictual','raspunderea pentru','comitent','prepus','fapta lucrului','fapta altuia'],
+ w10:['solidar','indivizibil','oblic','paulian','subrogat','punere in intarziere','intarziere'],
+ w11:['cesiune de creant','novati','compensati','remitere de datorie','confuziun','simulati','rezolutiun','reziliere'],
+ w12:['vanzare','vanzator','cumparator','donati','donatar','donator','evictiun','vicii ascunse'],
+ w13:['locatiun','locatar','locator','chirie','mandat','mandatar','antrepriz','antreprenor'],
+ w14:['imprumut','comodat','fidejusiun','fideiusor','tranzacti'],
+ w15:['mostenire legal','mostenitor','descendent','ascendent','colateral','sot supravietuitor','reprezentar','nedemn'],
+ w16:['testament','legat','rezerva','rezervatar','cotitate disponibil','dezmostenir'],
+ w18:['trasaturi esentiale','tipicitate','vinovati','intentie direct','intentie indirect','praeterintenti','element constitutiv','latura obiectiv','latura subiectiv'],
+ w19:['tentativ','acte preparator','desistare','autor','coautor','instigator','complice','participati'],
+ w20:['concurs de infractiun','recidiv','pluralitate','cauza justificativ','legitima aparar','stare de necesitat','neimputabil','circumstant'],
+ w21:['omor','ucider','loviri','vatamar','santaj','lipsire de libertat','viol','agresiun sexual'],
+ w22:['furt','talhari','abuz de incredere','inselaciun','distrugere','tulburare de posesi','uz de fals','inscris'],
+ w23:['mita','trafic de influent','abuz in serviciu','marturie mincinoas','favorizar','ultraj','luare de mita'],
+ w24:['conducere','alcool','permis','circulati','rutier','inscris fals'],
+ w26:['apel','recurs','cale de atac','hotarare','competent','exceptie','citare','termen de judecat'],
+ w27:['executare silit','contestatie la executare','ordonanta de plata','titlu executoriu','poprire','urmarir'],
+ w28:['retiner','arestare preventiv','masuri preventive','camera preliminar','urmarire penal','acord de recunoaster','plangere','judecator de drepturi'],
+};
+
+// ══════════════════════════════════════════════════════════════════════════
 //  STATE
 // ══════════════════════════════════════════════════════════════════════════
 const KEY = 'plan_miruna_v2';
@@ -1078,7 +1115,19 @@ function makeWeek(w, ph){
   // quiz buttons
   const sub=(w.subj&&w.subj!=='all')?w.subj:null;
   const qr=document.createElement('div'); qr.className='wk-quiz-row';
-  if(sub){ const b=document.createElement('a'); b.className='quiz-btn'; b.href='index.html?mat='+sub; b.target='_blank'; b.textContent=TAGS[sub].emoji+' Testează-te pe '+TAGS[sub].label; qr.appendChild(b); }
+  if(sub){
+    const kws=WEEK_KW[w.id];
+    if(kws){
+      const cleanTitle=w.title.replace(/\s*[+·]\s*⟳.*$/,'').trim();
+      const bt=document.createElement('a'); bt.className='quiz-btn'; bt.target='_blank';
+      bt.href='index.html?mat='+sub+'&kw='+encodeURIComponent(kws.join(','))+'&tl='+encodeURIComponent(cleanTitle);
+      bt.textContent=TAGS[sub].emoji+' Testează-te pe această temă'; qr.appendChild(bt);
+      const ba=document.createElement('a'); ba.className='quiz-btn quiz-btn-sec'; ba.target='_blank';
+      ba.href='index.html?mat='+sub; ba.textContent='toată '+TAGS[sub].label; qr.appendChild(ba);
+    } else {
+      const b=document.createElement('a'); b.className='quiz-btn'; b.href='index.html?mat='+sub; b.target='_blank'; b.textContent=TAGS[sub].emoji+' Testează-te pe '+TAGS[sub].label; qr.appendChild(b);
+    }
+  }
   if(isSim||isRecap){ const b=document.createElement('a'); b.className='quiz-btn sim-btn'; b.href='index.html'; b.target='_blank'; b.textContent='🎲 Simulare completă'; qr.appendChild(b); }
   if(qr.children.length) body.appendChild(qr);
 

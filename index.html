@@ -289,7 +289,7 @@ const ALL_SESSIONS={"jun2023_g1":[{"n":1,"stem":"Forma","a":"cerută de lege pen
 const ALL_LABELS={"jun2023_g1": "Iun 2023 · Grila 1", "jun2023_g2": "Iun 2023 · Grila 2", "jun2023_g3": "Iun 2023 · Grila 3", "jun2023_g4": "Iun 2023 · Grila 4", "feb2023_g1": "Feb 2023 · Grila 1", "feb2023_g2": "Feb 2023 · Grila 2", "feb2024_g1": "Feb 2024 · Grila 1", "feb2024_g2": "Feb 2024 · Grila 2", "jul2024_g1": "Jul 2024 · Grila 1", "jul2024_g2": "Jul 2024 · Grila 2", "jul2024_g3": "Jul 2024 · Grila 3", "jul2024_g4": "Jul 2024 · Grila 4", "feb2025_g1": "Feb 2025 · Grila 1", "feb2025_g2": "Feb 2025 · Grila 2", "jul2025_g1": "Jul 2025 · Grila 1", "jul2025_g2": "Jul 2025 · Grila 2", "jul2025_g3": "Jul 2025 · Grila 3", "jul2025_g4": "Jul 2025 · Grila 4", "feb2026_g1": "Feb 2026 · Grila 1"};
 const SESSION_ORDER=["feb2023_g1", "feb2023_g2", "jun2023_g1", "jun2023_g2", "jun2023_g3", "jun2023_g4", "feb2024_g1", "feb2024_g2", "jul2024_g1", "jul2024_g2", "jul2024_g3", "jul2024_g4", "feb2025_g1", "feb2025_g2", "jul2025_g1", "jul2025_g2", "jul2025_g3", "jul2025_g4", "feb2026_g1"];
 let QUESTIONS=[],current=0,userAnswers={},sessionKey='',mode='normal',flashRevealed=false;
-let timerInterval=null,timerSecs=0,timed=false,timeLimit=0,matKey='';
+let timerInterval=null,timerSecs=0,timed=false,timeLimit=0,matKey='',topicKws=null,topicLabel='';
 const SECPERQ=90;
 /* ---- salvare progres (localStorage) ---- */
 const LS_KEY='ldr_progress_v2';
@@ -347,7 +347,8 @@ function startSet(qs,m,sk){
 }
 function changeSession(key){if(!key)return;sel.value=key;const qs=(ALL_SESSIONS[key]||[]).map(function(q){return Object.assign({_sk:key},q);});document.getElementById('session-name').textContent=ALL_LABELS[key]||key;startSet(qs,'normal',key);}
 function startMixt(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);var qs=pool.slice(0,Math.min(50,pool.length));document.getElementById('session-name').textContent='🎲 Examen mixt — '+qs.length+' întrebări aleatorii';startSet(qs,'mixt','');}
-function startMaterie(k){matKey=k;var pool=[];SESSION_ORDER.forEach(function(s){(ALL_SESSIONS[s]||[]).forEach(function(q){if(q.correct&&!isAnulata(q)&&materieKey(q.n)===k)pool.push(Object.assign({_sk:s},q));});});shuffle(pool);var qs=pool.slice(0,Math.min(50,pool.length));document.getElementById('session-name').textContent='🎯 '+matLabelByKey(k)+' — '+qs.length+' întrebări';startSet(qs,'materie','');}
+function startMaterie(k){matKey=k;topicKws=null;topicLabel='';var pool=[];SESSION_ORDER.forEach(function(s){(ALL_SESSIONS[s]||[]).forEach(function(q){if(q.correct&&!isAnulata(q)&&materieKey(q.n)===k)pool.push(Object.assign({_sk:s},q));});});shuffle(pool);var qs=pool.slice(0,Math.min(50,pool.length));document.getElementById('session-name').textContent='🎯 '+matLabelByKey(k)+' — '+qs.length+' întrebări';startSet(qs,'materie','');}
+function startMaterieTopic(k,kws,label){matKey=k;var pool=[];SESSION_ORDER.forEach(function(s){(ALL_SESSIONS[s]||[]).forEach(function(q){if(q.correct&&!isAnulata(q)&&materieKey(q.n)===k){var hay=normTerm((q.stem||'')+' '+(q.a||'')+' '+(q.b||'')+' '+(q.c||'')+' '+(q.explanation||''));for(var i=0;i<kws.length;i++){if(kws[i]&&hay.indexOf(kws[i])>=0){pool.push(Object.assign({_sk:s},q));break;}}}});});if(pool.length<6){startMaterie(k);return;}topicKws=kws;topicLabel=label||'';shuffle(pool);var qs=pool.slice(0,Math.min(50,pool.length));document.getElementById('session-name').textContent='🎯 '+(label||matLabelByKey(k))+' — '+qs.length+' întrebări pe temă';startSet(qs,'materie','');}
 function startWrong(){var pool=[];Object.keys(STATE.wrong).forEach(function(k){(STATE.wrong[k]||[]).forEach(function(n){var q=(ALL_SESSIONS[k]||[]).find(function(x){return x.n==n;});if(q&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});if(!pool.length){alert('🎉 Nu ai nicio întrebare greșită salvată!\nRezolvă câteva grile — aici vor apărea exact întrebările pe care le-ai greșit, ca să le exersezi până le stăpânești.');return;}shuffle(pool);document.getElementById('session-name').textContent='📌 Greșelile mele — '+pool.length+' de exersat';startSet(pool,'wrong','');}
 function startFlash(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);document.getElementById('session-name').textContent='🃏 Flashcards — '+pool.length+' carduri';flashRevealed=false;document.body.classList.add('flash-active');startSet(pool,'flash','');}
 function exitFlash(){document.body.classList.remove('flash-active');changeSession(sessionKey||SESSION_ORDER[SESSION_ORDER.length-1]);window.scrollTo(0,0);}
@@ -475,7 +476,7 @@ function restart(){
   if(mode==='flash'){startFlash();return;}
   if(mode==='exam'){startExam();return;}
   if(mode==='mixt'){startMixt();return;}
-  if(mode==='materie'){startMaterie(matKey);return;}
+  if(mode==='materie'){if(topicKws&&topicKws.length)startMaterieTopic(matKey,topicKws,topicLabel);else startMaterie(matKey);return;}
   if(mode==='wrong'){startWrong();return;}
   if(mode==='marked'){startMarked();return;}
   userAnswers={};current=0;delete STATE.prog[sessionKey];saveState();timed=!!STATE.opts.timed;timeLimit=timed?QUESTIONS.length*SECPERQ:0;startTimer(0);['card','nav','q-grid','sec-lbl'].forEach(function(id){document.getElementById(id).style.display='';});document.getElementById('result').classList.remove('show');render();
@@ -584,7 +585,7 @@ function toggleFont(){STATE.opts.big=!STATE.opts.big;saveState();applyOpts();}
 function toggleTimed(){STATE.opts.timed=!STATE.opts.timed;saveState();applyOpts();timed=!!STATE.opts.timed;timeLimit=timed?QUESTIONS.length*SECPERQ:0;updTimer();}
 applyOpts();
 changeSession(SESSION_ORDER[SESSION_ORDER.length-1]);
-(function(){var p=new URLSearchParams(location.search);var m=p.get('mat');if(m&&['civ','pciv','pen','ppen'].indexOf(m)>=0){document.getElementById('dedicatie').style.display='none';setTimeout(function(){startMaterie(m);},50);}})();
+(function(){var p=new URLSearchParams(location.search);var m=p.get('mat');if(m&&['civ','pciv','pen','ppen'].indexOf(m)>=0){document.getElementById('dedicatie').style.display='none';var kw=p.get('kw');var tl=p.get('tl');setTimeout(function(){if(kw){startMaterieTopic(m,kw.split(',').map(function(x){return normTerm(x);}).filter(Boolean),tl||'');}else{startMaterie(m);}},50);}})();
 (function(){var na=document.getElementById('note-area');if(na)na.addEventListener('input',function(){var q=QUESTIONS[current];if(!q)return;var v=this.value;if(v)STATE.notes[qid(q)]=v;else delete STATE.notes[qid(q)];saveState();});})();
 (function(){var card=document.getElementById('card'),tx=0,ty=0,swiped=false;
 card.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;ty=e.touches[0].clientY;swiped=false;},{passive:true});
