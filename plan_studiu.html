@@ -286,6 +286,7 @@ a{color:var(--gr);text-decoration:none}
   <button class="tab" onclick="showPanel('ritm')">⏱ Ritm</button>
   <button class="tab" onclick="showPanel('surse')">🔗 Surse</button>
   <button class="tab" onclick="showPanel('dict')">📖 Dicționar</button>
+  <button class="tab" onclick="showPanel('memory')">🧩 Joc</button>
 </div>
 
 <div id="main">
@@ -481,6 +482,20 @@ a{color:var(--gr);text-decoration:none}
   <div id="dict-empty">Niciun termen găsit. <a class="dict-online" href="#" id="dict-search-online" target="_blank" rel="noopener">Caută pe legeaz.net →</a></div>
 </div>
 
+<div id="panel-memory" class="panel">
+  <div class="info-box" style="border-left:3px solid var(--gr);margin-bottom:14px">
+    <h2 style="color:var(--gr)">🧩 Memory juridic — o pauză</h2>
+    <p style="font-size:13px;color:var(--sub);line-height:1.6;margin:0">Găsește perechile <b style="color:var(--lime)">termen ↔ definiție</b>. Fără cronometru, fără să poți pierde — relaxare cu termeni juridici. 🌿</p>
+  </div>
+  <div id="mem-controls">
+    <div class="mem-ctrl-group"><span class="mem-ctrl-lbl">Perechi:</span><div id="mem-pairs"></div></div>
+    <div class="mem-ctrl-group"><span class="mem-ctrl-lbl">Materie:</span><div id="mem-mat"></div></div>
+  </div>
+  <div id="mem-status"></div>
+  <div id="mem-grid"></div>
+  <div id="mem-win" style="display:none"></div>
+</div>
+
 </div><!-- /main -->
 
 <div id="toast"></div>
@@ -490,6 +505,7 @@ a{color:var(--gr);text-decoration:none}
 </div>
 
 <script src="dict.js"></script>
+<script src="memory.js"></script>
 <script>
 // ══════════════════════════════════════════════════════════════════════════
 //  PLANUL MIRUNEI — Licență Drept UNIBUC · examen Februarie 2027
@@ -1309,10 +1325,11 @@ function showPanel(id){
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('panel-'+id).classList.add('active');
-  const map={azi:0,plan:1,cal:2,met:3,ritm:4,surse:5,dict:6};
+  const map={azi:0,plan:1,cal:2,met:3,ritm:4,surse:5,dict:6,memory:7};
   const tabs=document.querySelectorAll('.tab'); if(map[id]!==undefined) tabs[map[id]].classList.add('active');
   if(id==='cal') renderCalendar();
   if(id==='azi') renderDashboard();
+  if(id==='memory'){ renderMemControls(); startMemory(); }
 }
 function openWeek(id){
   showPanel('plan');
@@ -1439,7 +1456,7 @@ initReminder();
 renderDict();
 
 // deschidere directă pe un tab via hash (ex. index.html → plan_studiu.html#dict)
-(function(){var h=(location.hash||'').replace('#','');if(['azi','plan','cal','met','ritm','surse','dict'].indexOf(h)>=0)showPanel(h);})();
+(function(){var h=(location.hash||'').replace('#','');if(['azi','plan','cal','met','ritm','surse','dict','memory'].indexOf(h)>=0)showPanel(h);})();
 </script>
 </body>
 </html>

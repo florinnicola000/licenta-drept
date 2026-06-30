@@ -16,6 +16,7 @@ Aplicație web de pregătire pentru examenul de licență la Facultatea de Drept
   - `index.html` — aplicația de grile (toate datele embed-uite ca JSON)
   - `plan_studiu.html` — **plan de studiu pe 1 an** (vezi mai jos)
   - `dict.js` — **dicționar juridic** partajat (142 termeni, popup pe selecție)
+  - `memory.js` — **joc Memory** partajat (perechi termen ↔ definiție, în ambele pagini)
 
 ### Sesiuni incluse
 
@@ -53,15 +54,19 @@ Modul JS partajat inclus în ambele pagini cu `<script src="dict.js"></script>` 
 
 ---
 
-## Modul de relaxare „🧩 Memory juridic" (`index.html`)
+## Modul de relaxare „🧩 Memory juridic" (`memory.js` — modul comun)
 
-Joc de memorie (perechi **termen ↔ definiție**) ca pauză de la grile. Buton „🧩 Memory" în meniu (`data-mode="memory"`) → `openMemory()` deschide panoul `#memory` (același tipar ca `#stats`/`#search-panel`; `backToQuiz`/`startSet`/`openStats`/`openSearch` ascund toate panourile reciproc).
+Joc de memorie (perechi **termen ↔ definiție**) ca pauză, în **ambele pagini**. Toată logica + stilul (injectat) stau în **`memory.js`** (auto-conținut: are propriile `_memShuffle`/`_memEsc`, depinde doar de `DICT` din dict.js). Inclus cu `<script src="memory.js">` după dict.js în ambele pagini; precache-uit în sw.
 
-- Reutilizează `DICT` din dict.js. Cartonașe: pentru fiecare termen ales, unul arată termenul, altul definiția scurtată (`memShortDef`, ~78 caractere, tăiere la spațiu).
+Pagina oferă doar glue-ul de deschidere + containerele cu id-urile `mem-pairs`, `mem-mat`, `mem-status`, `mem-grid`, `mem-win`:
+- **index.html:** buton „🧩 Memory" în meniu (`data-mode="memory"`) → `openMemory()` deschide panoul `#memory` (tipar `#stats`/`#search-panel`; `backToQuiz`/`startSet`/`openStats`/`openSearch` ascund panourile reciproc), apoi apelează `renderMemControls()`+`startMemory()`.
+- **plan_studiu.html:** tab „🧩 Joc" (`showPanel('memory')`, map index 7) → `#panel-memory`; `showPanel` apelează `renderMemControls()`+`startMemory()` la deschidere. Accesibil și prin `#memory` în hash.
+
+- Cartonașe: pentru fiecare termen ales, unul arată termenul, altul definiția scurtată (`memShortDef`, ~78 caractere, tăiere la spațiu).
 - Controale: nr. perechi (6/8/10) + filtru materie (Toate/Civil/Penal/Pr.civ/Pr.pen/Latină). Schimbarea lor reîncepe jocul.
-- Logică: `memFlip(i)` întoarce 2 cartonașe; potrivire pe `id` egal → rămân (clasa `.matched`), altfel se reîntorc după 820ms (`MEM.lock` blochează în interval). Câștig la toate perechile → `memWin()` cu mesaj rotativ + nr. mutări.
-- **Fără timp, fără pierdere** (relaxare). Record (cele mai puține mutări) per `<materie>_<perechi>` în localStorage **separat** `ldr_mem_v1` (NU în `ldr_progress_v2`, ca să nu interfereze cu resetul progresului).
-- Animație flip 3D CSS (`.mem-inner` rotateY + `backface-visibility`, cu prefix `-webkit-` pentru Safari/iOS). Badge de materie colorat pe fiecare cartonaș.
+- Logică: `memFlip(i)` întoarce 2 cartonașe; potrivire pe `id` egal → rămân (`.matched`), altfel se reîntorc după 820ms (`MEM.lock` blochează în interval). Câștig → `memWin()` cu mesaj rotativ + nr. mutări.
+- **Fără timp, fără pierdere** (relaxare). Record (cele mai puține mutări) per `<materie>_<perechi>` în localStorage **separat** `ldr_mem_v1` (NU în `ldr_progress_v2`).
+- Animație flip 3D CSS (`.mem-inner` rotateY + `backface-visibility`, prefix `-webkit-` pentru Safari/iOS). Badge de materie colorat pe fiecare cartonaș.
 
 ---
 
@@ -253,7 +258,7 @@ Orice `git push` pe `main` actualizează site-ul în ~1 minut.
 ```bash
 # Repo local pentru push rapid:
 cd /private/tmp/licenta-drept
-git add index.html plan_studiu.html dict.js sw.js
+git add index.html plan_studiu.html dict.js memory.js sw.js
 git commit -m "..."
 git push
 ```
