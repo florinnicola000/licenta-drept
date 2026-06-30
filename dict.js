@@ -199,7 +199,7 @@ function showPopup(entry, cx, cy){
   let lx=cx-pw/2, ly=cy+14;
   lx=Math.max(8,Math.min(vw-pw-8,lx));
   if(ly+ph>vh-8) ly=cy-ph-10;
-  _popup.style.left=lx+'px'; _popup.style.top=(ly+window.scrollY)+'px';
+  _popup.style.left=lx+'px'; _popup.style.top=ly+'px';
 }
 function closePopup(){ if(_popup) _popup.style.display='none'; _popEntry=null; }
 function goToDict(){
