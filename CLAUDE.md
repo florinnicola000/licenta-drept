@@ -12,9 +12,10 @@ Aplicație web de pregătire pentru examenul de licență la Facultatea de Drept
 - **19 sesiuni de examen** (2023–2026), fiecare cu ~100 de întrebări grilă (~1340 întrebări total)
 - **~50 întrebări Drept Civil** + **~50 întrebări Drept Penal** per sesiune (cu etichete și pentru Procedură Civilă / Procedură Penală)
 - Răspunsurile corecte verificate față de baremele oficiale UNIBUC + explicații stil 2026
-- Două pagini HTML autoconținute:
-  - `index.html` / `licenta_drept_all.html` — aplicația de grile (toate datele embed-uite ca JSON)
+- Trei fișiere principale:
+  - `index.html` — aplicația de grile (toate datele embed-uite ca JSON)
   - `plan_studiu.html` — **plan de studiu pe 1 an** (vezi mai jos)
+  - `dict.js` — **dicționar juridic** partajat (142 termeni, popup pe selecție)
 
 ### Sesiuni incluse
 
@@ -32,29 +33,71 @@ Materiile (`MAT` în HTML): `civ` (Drept civil), `pciv` (Procedură civilă), `p
 
 ---
 
+## Dicționar juridic (`dict.js`)
+
+Modul JS partajat inclus în ambele pagini cu `<script src="dict.js"></script>` și precache-uit în service worker.
+
+**Conținut:** 142 termeni în 5 categorii: Civil (58), Penal (27), Proc. Civ. (10), Proc. Pen. (7), Latină juridică (20).
+
+**Popup pe selecție text:** `mouseup`/`touchend` → `handleSelection()` → `findDictEntry()` (match exact, apoi cel mai lung substring) → `showPopup()` ancorată cu `position:fixed` la coordonatele selecției (din `getBoundingClientRect()` — **nu adăuga `window.scrollY`**, coordonatele sunt deja viewport-relative).
+
+**Funcții exportate global:**
+- `normTerm(s)` — normalizare diacritice (ă/â→a, î→i, ș/ş→s, ț/ţ→t) + lowercase, fără non-alfanumerice
+- `DICT_MAP` — `Map<normTerm, entry>` pentru lookup rapid
+- `legeazUrl(term)` — `https://legeaz.net/dictionar-juridic/{slug}` (slug = normTerm cu spații→cratime)
+- `legeazSearch(term)` — `https://legeaz.net/?s=` + encodeURIComponent (fallback pentru termeni necunoscuți)
+- `goToDict()` — context-aware: dacă `showPanel` există (plan_studiu.html) deschide tab Dicționar; altfel deschide plan_studiu.html într-un tab nou
+- `MAT_LBL` — `{civ:'Civil', pen:'Penal', pciv:'Proc. Civ.', ppen:'Proc. Pen.', lat:'Latină'}`
+
+**Tab „📖 Dicționar"** (doar în plan_studiu.html): search + filtrare pe materie + link legeaz.net per termen.
+
+---
+
 ## Plan de studiu „Planul Mirunei" (`plan_studiu.html`)
 
 Pagină separată, autoconținută, personalizată pentru **Miruna** (fiica userului; vezi dedicația „de la Tata" din `index.html`). Program ancorat pe **examenul de licență din Februarie 2027** (UNIBUC): **32 de săptămâni**, de la 29 iun 2026 până la ~7 feb 2027, calibrat pe **2-3 ore/zi**. Structurat în **11 faze** pe cele 4 materii (greutate mare pe Civil + Penal, care sunt cele examinate la grilă; Procedura civilă/penală condensate).
 
 - **Fundament pedagogic:** repetare spațiată (linii „🔁 Spaced review" intercalate), recall activ, intercalare Civil↔Penal, testare frecventă, metacogniție (auto-evaluare încredere), concepte-cheie per săptămână.
 - **Structură:** faze → luni → săptămâni → sarcini bifabile (📖 citire / ✍️ fișă / 🧠 recall / ❓ grile / 🔄 recapitulare / 📊 simulare). Săptămâni de tip `recap` și `sim` plasate strategic; simulări complete Civil (W20), Penal (W27), mixt 100 (W30, W31), examen (W32).
-- **Tab „Astăzi" (default):** salut personal, **numărătoare inversă** până la examen (editabilă, `changeExamDate`), **streak** (zile la rând, `currentStreak`/`touchStreak`), săptămâna curentă, sugestia de azi (după ziua săptămânii), mesaj rotativ „de la Tata", listă „De revăzut" (săptămânile marcate 🔴).
+- **Tab „Astăzi" (default):** salut personal, **numărătoare inversă** până la examen (editabilă, `changeExamDate`), **streak** (zile la rând, `currentStreak`/`touchStreak`), săptămâna curentă, sugestia de azi (după ziua săptămânii), mesaj rotativ „de la Tata", listă „De revăzut" (săptămânile marcate 🔴), **reminder zilnic** (oră setabilă, banner la deschidere, notificări browser).
 - **Per săptămână:** auto-evaluare încredere 🔴🟡🟢 (`conf_<wkid>`), notițe (`note_<wkid>`), concepte-cheie, butoane de testare.
-- **Tracking:** sarcini + încredere + notițe + streak + examen, toate în `localStorage` sub cheia **`plan_miruna_v1`**. Felicitări (toast) la finalizarea fiecărei faze.
-- **6 tab-uri:** Astăzi / Plan / Calendar lunar / Metodologie / Ritm zilnic / **Surse**.
+- **Tracking:** sarcini + încredere + notițe + streak + examen + reminderTime, toate în `localStorage` sub cheia **`plan_miruna_v2`**. Felicitări (toast) la finalizarea fiecărei faze.
+- **7 tab-uri:** Astăzi / Plan / Calendar lunar / Metodologie / Ritm zilnic / Surse / **📖 Dicționar**.
 - **Tab „Surse":** linkuri reale verificate — legislație oficială (legislatie.just.ro: Cod civil 109884, Cod penal 109855, Cod pr. civilă 140271, Cod pr. penală 120611), codulcivil.ro, arhiva de subiecte + fișele de disciplină UNIBUC, grile online (universuljuridic.ro, aplicația proprie, studocu) și manuale de referință (Boroi, Streteanu/Nițu, Udroiu, culegeri C.H. Beck). Toate URL-urile au fost verificate ca valide (legislatie.just.ro dă 403 la curl = anti-bot, dar paginile sunt reale).
 - **Integrare cu grilele:** fiecare săptămână are buton „Testează-te" care deschide `index.html?mat=<civ|pciv|pen|ppen>` → pornește direct antrenamentul pe materie (handler URLSearchParams la finalul scriptului din `index.html` apelează `startMaterie(m)`).
 - **Detecție dată:** `parseWeek` gestionează și săptămânile care traversează anul (ex. „28 dec–3 ian" într-un grup „Ianuarie 2027" → start dec 2026). `findCurrentWeek` evidențiază săptămâna curentă.
 
-**La schimbarea datei examenului / a duratei** se rescriu `PHASES` (datele săptămânilor) și se ajustează `ST._examDate` default. Legături în `index.html`: buton CTA verde „📅 Plan de studiu pe 1 an" sub titlu (`#plan-cta`) + intrare în meniul „☰".
+**Reminder zilnic:** `ST.reminderTime` (ex: "20:00") salvat în localStorage. La `initReminder()`: dacă ora a trecut și `ST._streak.last !== today`, afișează banner galben + încearcă `new Notification(...)` dacă permisiunea e acordată. Buton „Activează notificări browser" apelează `Notification.requestPermission()`.
+
+**La schimbarea datei examenului / a duratei** se rescriu `PHASES` (datele săptămânilor) și se ajustează `ST._examDate` default. Legături în `index.html`: buton CTA verde „📅 Plan de studiu pe 1 an" sub titlu (`#plan-cta`) + intrare în meniul „☰" + buton toolbar „📖 Dicționar".
+
+---
+
+## Statistici și progres (`index.html`)
+
+**`STATE`** (localStorage `ldr_progress_v2`):
+- `STATE.stats[matKey]` = `{t, c}` — total/corecte per materie
+- `STATE.hist[]` = `{d, mode, correct, total, sk, matk}` — istoric sesiuni finalizate (max 60, afișate ultimele 20); `sk` = sessionKey pentru mode=normal, `matk` = matKey pentru mode=materie
+- `STATE.wrong[sessionKey]` = `[n, ...]` — întrebări greșite curente (se șterg la răspuns corect)
+- `STATE.wrongFreq["sessionKey:n"]` = count — de câte ori a fost greșită o întrebare (nu se decrementează niciodată)
+- `STATE.marked`, `STATE.best`, `STATE.prog`, `STATE.notes`, `STATE.opts`
+
+**Panel „📊 Statisticile tale":**
+- Bare per materie (Civil/Penal/Proc.Civ/Proc.Pen) cu rata de succes
+- Grafic „Ultimele 20 sesiuni": bare colorate, etichete scurte generate de `histLbl(e)` → "F23·1" (Feb 2023 G1), "I23·2" (Iun 2023 G2), "J24·3" (Jul 2024 G3), "sim.", "mixt", "mat", "greș.", "marc."
+- Secțiunea **„⚠️ Greșite de mai multe ori"**: top 8 întrebări cu `wrongFreq ≥ 2`, sortate descrescător, cu contor (×3) și enunț trunchiat; click → deschide sesiunea
+
+**`histLbl(e)`:** `if(e.sk)` → regex `/^(\w)\w*\s+\d{2}(\d{2})\s*·\s*Grila\s*(\d)/i` pe `ALL_LABELS[e.sk]` → `"F23·1"`. Altfel după `e.mode`.
 
 ---
 
 ## Service worker (`sw.js`) — cache
 
-**Strategie (de la v26):** *network-first pentru HTML* (paginile se iau mereu proaspete de pe rețea, cache doar ca backup offline) + *cache-first pentru assets* (icoane, manifest). Asta evită problema „trebuie curățat cache după deploy".
+**Versiune curentă: `ldr-v36`**
 
-La fiecare modificare de assets precache-uite **bumpează `const CACHE = 'ldr-vNN'`** ca să forțezi invalidarea pe toate dispozitivele. `ASSETS` include `index.html` și `plan_studiu.html`.
+**Strategie (de la v26):** *network-first pentru HTML* (paginile se iau mereu proaspete de pe rețea, cache doar ca backup offline) + *cache-first pentru assets* (icoane, manifest, dict.js). Asta evită problema „trebuie curățat cache după deploy".
+
+La fiecare modificare de assets precache-uite **bumpează `const CACHE = 'ldr-vNN'`** ca să forțezi invalidarea pe toate dispozitivele. `ASSETS` include `index.html`, `plan_studiu.html` și **`dict.js`**.
 
 ---
 
@@ -157,8 +200,7 @@ for i, page in enumerate(doc):
 
 5. **Push pe GitHub:**
 ```bash
-cp licenta_drept_all.html /path/to/licenta-drept/index.html
-cd /path/to/licenta-drept
+cd /private/tmp/licenta-drept
 git add index.html
 git commit -m "Adaugă sesiunea nouă"
 git push
@@ -168,7 +210,7 @@ git push
 
 ## Structura HTML
 
-Fișierul este autoconținut — toate datele (întrebări + răspunsuri) sunt embed-uite ca JSON în `<script>`.
+`index.html` este autoconținut — toate datele (întrebări + răspunsuri) sunt embed-uite ca JSON în `<script>`.
 
 ```
 ALL_SESSIONS = { "feb2026_g1": [{n, stem, a, b, c, correct, explanation}, ...], ... }
@@ -177,12 +219,15 @@ SESSION_ORDER = ["feb2023_g1", "feb2023_g2", ..., "feb2026_g1"]   // 19 chei
 MAT          = [['civ','⚖️ Drept civil'],['pciv','📜 Procedură civilă'],['pen','🔒 Drept penal'],['ppen','🛡️ Procedură penală']]
 ```
 
-Funcții principale:
+Funcții principale (`index.html`):
 - `changeSession(key)` — încarcă sesiunea selectată
-- `selectAnswer(letter)` — înregistrează răspunsul, afișează feedback, avansează automat
+- `selectAnswer(letter)` — înregistrează răspunsul, actualizează `STATE.stats`, `STATE.wrong`, `STATE.wrongFreq`, avansează automat
 - `startMaterie(k)` — pornește antrenamentul pe o materie (`civ`/`pciv`/`pen`/`ppen`); apelat și automat din `?mat=` de către `plan_studiu.html`
-- `showResult()` — ecran final cu scor și verdict
+- `showResult()` — ecran final cu scor și verdict; salvează în `STATE.hist` cu `{sk, matk}`
 - `renderGrid()` — grila de navigare (verde/roșu/gri)
+- `histLbl(e)` — etichetă scurtă pentru graficul de istoric
+- `renderStats()` — statistici per materie + secțiunea „greșite de mai multe ori"
+- `renderChart()` — grafic ultimi 20 cu `histLbl`
 
 ---
 
@@ -193,9 +238,10 @@ Orice `git push` pe `main` actualizează site-ul în ~1 minut.
 
 ```bash
 # Repo local pentru push rapid:
-# /private/tmp/licenta-drept/
 cd /private/tmp/licenta-drept
-git add index.html && git commit -m "..." && git push
+git add index.html plan_studiu.html dict.js sw.js
+git commit -m "..."
+git push
 ```
 
 ---
