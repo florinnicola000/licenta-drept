@@ -439,15 +439,15 @@ const COD = {
 // Temei legal orientativ per fază (articolele-ancoră ale instituțiilor principale)
 const PHASE_REFS = {
   f1:[{c:'civ', art:'vicii de consimțământ art. 1206-1224 · nulitatea art. 1246-1265 · modalități (condiția/termenul) art. 1399-1420 · prescripția extinctivă art. 2500-2544'}],
-  f2:[{c:'civ', art:'proprietatea privată art. 555-566 · dezmembrăminte (superficie/uzufruct/uz/servitute) art. 693-772 · posesia art. 916-929 · uzucapiunea art. 930-934 · revendicarea art. 563'}],
-  f3:[{c:'civ', art:'izvoarele obligațiilor art. 1165-1395 · răspunderea civilă delictuală art. 1357-1395 · plata art. 1469-1515 · stingerea obligațiilor art. 1615-1634'}],
+  f2:[{c:'civ', art:'proprietatea privată art. 555-566 · dezmembrăminte (superficie/uzufruct/uz/servitute) art. 693-772 · posesia art. 916-929 · uzucapiunea art. 930-934 · revendicarea art. 563 · cartea funciară art. 876-915 · ipoteca art. 2343-2479 · gajul art. 2480-2494'}],
+  f3:[{c:'civ', art:'izvoarele obligațiilor art. 1165-1395 · simulația art. 1289-1294 · răspunderea civilă delictuală art. 1357-1395 · plata art. 1469-1515 · acțiunea oblică art. 1560-1561 · acțiunea pauliană art. 1562-1565 · stingerea obligațiilor art. 1615-1634'}],
   f4:[{c:'civ', art:'vânzarea art. 1650-1762 · donația art. 1011-1033 · locațiunea art. 1777-1823 · mandatul art. 2009-2071 · fidejusiunea art. 2280-2320'}],
   f5:[{c:'civ', art:'moștenirea legală art. 963-983 · testamentul și legatele art. 1034-1085 · rezerva succesorală art. 1086-1099 · opțiunea succesorală art. 1100-1124'}],
   f6:[{c:'civ', art:'recapitulare integrală — toate instituțiile fazelor ①-⑤'}],
-  f7:[{c:'pen', art:'infracțiunea: trăsături, forme, tentativă, participație art. 15-52 · pedepsele și individualizarea art. 53-106'}],
-  f8:[{c:'pen', art:'infracțiuni contra persoanei art. 188-227 · contra patrimoniului art. 228-256 · corupție și de serviciu art. 289-309'}],
+  f7:[{c:'pen', art:'infracțiunea: trăsături, forme, tentativă, participație art. 15-52 · cauze justificative art. 18-22 · cauze de neimputabilitate art. 23-31 · pedepsele și individualizarea art. 53-106'}],
+  f8:[{c:'pen', art:'infracțiuni contra persoanei art. 188-227 · contra patrimoniului art. 228-256 · de fals art. 320-328 · contra înfăptuirii justiției art. 266-288 · corupție și de serviciu art. 289-309 · contra siguranței circulației art. 334-341'}],
   f9:[{c:'pen', art:'recapitulare: Partea generală art. 15-187 + Partea specială art. 188-446'}],
-  f10:[{c:'pciv', art:'competența art. 94-147 · căile de atac (apel/recurs) art. 466-513'},{c:'ppen', art:'măsurile preventive art. 202-244 · căile de atac (apel/recurs în casație) art. 408-470'}],
+  f10:[{c:'pciv', art:'competența art. 94-147 · căile de atac (apel/recurs) art. 466-513 · executarea silită art. 622-913 · contestația la executare art. 712-720 · ordonanța de plată art. 1014-1025'},{c:'ppen', art:'măsurile preventive art. 202-244 · urmărirea penală art. 285-341 · camera preliminară art. 342-348 · acordul de recunoaștere art. 478-488 · căile de atac (apel/recurs în casație) art. 408-470'}],
   f11:[{c:'civ', art:'recapitulare finală — toate instituțiile de drept civil'},{c:'pen', art:'recapitulare finală — toate instituțiile de drept penal'}],
 };
 
@@ -464,7 +464,7 @@ const TATA_MSG = [
 ];
 
 const PHASES = [
-// ═══ FAZA 1 · CIVIL — Teoria Generală a AJC (W1-W5) ═══
+// ═══ FAZA 1 · CIVIL — Teoria Generală a AJC (W1-W4) ═══
 {id:'f1', subj:'civ', color:'var(--civ)', title:'① Teoria Generală a Actului Juridic Civil', period:'Iulie 2026',
  months:[{m:'Iulie 2026', weeks:[
   {n:1, id:'w01', dates:'29 iun–5 iul', subj:'civ', tag:'civ', title:'AJC: noțiune, clasificare, capacitate',
@@ -498,31 +498,23 @@ const PHASES = [
    ],
    concepte:'Nulitate absolută = ordine publică, imprescriptibilă, oricine o invocă, NU se confirmă · Relativă = interes privat, prescriptibilă, se confirmă',
    review:'🔁 Spaced: recall viciile de consimțământ din W2 (5 min)'},
-  {n:4, id:'w04', dates:'20–26 iul', subj:'civ', tag:'civ', title:'Efectele nulității, modalități, prescripția',
+  {n:4, id:'w04', dates:'20–26 iul', subj:'civ', tag:'civ', title:'Efecte nulitate, modalități, prescripție + ⟳ recap AJC',
    tasks:[
     {a:A.read,t:'Efectele nulității: retroactivitate, repunere în situația anterioară, excepții'},
     {a:A.read,t:'Modalitățile: condiția (suspensivă/rezolutorie) și termenul'},
-    {a:A.read,t:'Prescripția extinctivă: termen general 3 ani, suspendare, întrerupere'},
-    {a:A.read,t:'Decăderea: termen, regim, distincția față de prescripție'},
+    {a:A.read,t:'Prescripția extinctivă (termen general 3 ani, suspendare, întrerupere) vs. decăderea'},
     {a:A.fisa,t:'Fișă: condiție suspensivă/rezolutorie + prescripție vs. decădere'},
-    {a:A.recall,t:'Recall: explici diferența prescripție-decădere'},
-    {a:A.grile,t:'12 grile efecte nulitate + modalități + prescripție'},
+    {a:A.recall,t:'Recall complet AJC (W1-W4): condiții → vicii → nulitate → efecte → prescripție'},
+    {a:A.sim,t:'Simulare: 25 grile Teoria Generală AJC (cronometrat 40 min) + analiză greșeli'},
    ],
-   concepte:'Prescripția stinge dreptul la ACȚIUNE, nu dreptul subiectiv · decăderea stinge însuși dreptul · termen general 3 ani (art. 2517)'},
-  {n:5, id:'w05', dates:'27 iul–2 aug', subj:'civ', tag:'recap', type:'recap', title:'⟳ RECAPITULARE — Teoria Generală AJC',
-   tasks:[
-    {a:A.recall,t:'Recall complet pe hârtie: toată materia W1-W4 (structură proprie)'},
-    {a:A.fisa,t:'Hartă conceptuală: AJC → condiții → vicii → nulitate → efecte → prescripție'},
-    {a:A.sim,t:'Simulare: 25 grile Teoria Generală AJC (cronometrat 40 min)'},
-    {a:A.err,t:'Analiză: recitești explicația fiecărei greșeli din simulare'},
-   ],
-   tip:'Săptămână de consolidare. Dacă ai sub 60% la simulare, reia subtema mai slabă înainte de Drepturi Reale. Marchează-ți încrederea jos ⬇️'},
+   concepte:'Prescripția stinge dreptul la ACȚIUNE, nu dreptul subiectiv · decăderea stinge însuși dreptul · termen general 3 ani (art. 2517)',
+   tip:'Ultima săptămână de AJC — consolidare prin simulare. Sub 60%? reia subtema slabă înainte de Drepturi Reale. Marchează-ți încrederea ⬇️'},
  ]}]},
 
-// ═══ FAZA 2 · CIVIL — Drepturi Reale (W6-W9) ═══
-{id:'f2', subj:'civ', color:'var(--civ)', title:'② Drepturi Reale', period:'August 2026',
+// ═══ FAZA 2 · CIVIL — Drepturi Reale (W5-W7) ═══
+{id:'f2', subj:'civ', color:'var(--civ)', title:'② Drepturi Reale', period:'Iulie–August 2026',
  months:[{m:'August 2026', weeks:[
-  {n:6, id:'w06', dates:'3–9 aug', subj:'civ', tag:'civ', title:'Proprietatea privată și modalitățile ei',
+  {n:5, id:'w05', dates:'27 iul–2 aug', subj:'civ', tag:'civ', title:'Proprietatea privată și modalitățile ei',
    tasks:[
     {a:A.read,t:'Caractere (absolut, exclusiv, perpetuu) + atribute (posesie, folosință, dispoziție)'},
     {a:A.read,t:'Limitele dreptului de proprietate (legale, judiciare, convenționale)'},
@@ -533,7 +525,7 @@ const PHASES = [
    ],
    concepte:'Atribute: ius possidendi / ius utendi+fruendi / ius abutendi · coproprietatea forțată nu poate fi sistată prin partaj',
    review:'🔁 Spaced: recall nulitatea (W3) — absolută vs. relativă (5 min)'},
-  {n:7, id:'w07', dates:'10–16 aug', subj:'civ', tag:'civ', title:'Dezmembrămintele dreptului de proprietate',
+  {n:6, id:'w06', dates:'3–9 aug', subj:'civ', tag:'civ', title:'Dezmembrămintele dreptului de proprietate',
    tasks:[
     {a:A.read,t:'Uzufructul: constituire, drepturi/obligații uzufructuar, stingere'},
     {a:A.read,t:'Uzul și abitația; servitutea (clasificare, constituire, stingere)'},
@@ -544,31 +536,25 @@ const PHASES = [
    ],
    concepte:'Dezmembrăminte: uzufruct, uz, abitație, servitute, superficie · uzufructul e temporar (viager pt. persoana fizică)',
    review:'🔁 Spaced: recall prescripția extinctivă (W4) (5 min)'},
-  {n:8, id:'w08', dates:'17–23 aug', subj:'civ', tag:'civ', title:'Posesie, uzucapiune, revendicare, accesiune',
+  {n:7, id:'w07', dates:'10–16 aug', subj:'civ', tag:'civ', title:'Posesie, uzucapiune, revendicare, garanții reale + ⟳ sim DR',
    tasks:[
-    {a:A.read,t:'Posesia: elemente (corpus+animus), calități (utilă), vicii'},
-    {a:A.read,t:'Uzucapiunea tabulară (art. 930) și extratabulară (art. 931)'},
+    {a:A.read,t:'Posesia (corpus+animus, calități, vicii); uzucapiunea tabulară (930)/extratabulară (931)'},
     {a:A.read,t:'Acțiunea în revendicare (imobiliară/mobiliară); accesiunea'},
-    {a:A.read,t:'Scurt: cartea funciară (principii) + gajul și ipoteca (garanții reale)'},
-    {a:A.fisa,t:'Fișă: uzucapiune tabulară vs. extratabulară + revendicare imob./mob.'},
-    {a:A.recall,t:'Recall: ce vicii afectează posesia și cu ce efect?'},
-    {a:A.grile,t:'15 grile posesie + uzucapiune + revendicare'},
+    {a:A.read,t:'Garanțiile reale: ipoteca imobiliară/mobiliară, gajul, privilegiile — constituire, rang, caractere (accesorie, indivizibilă)'},
+    {a:A.read,t:'Cartea funciară: principiile publicității, intabulare vs. notare, efect de opozabilitate'},
+    {a:A.fisa,t:'Fișă: uzucapiune tabulară vs. extratabulară + revendicare imob./mob. + ipotecă vs. gaj'},
+    {a:A.recall,t:'Recall total Drepturi Reale (W5-W7): proprietate → dezmembrăminte → posesie → garanții'},
+    {a:A.sim,t:'Simulare: 30 grile Drepturi Reale (cronometrat 50 min) + analiză greșeli'},
    ],
-   concepte:'Posesie utilă = continuă, netulburată, publică, neechivocă · revendicarea e imprescriptibilă (regula)'},
-  {n:9, id:'w09', dates:'24–30 aug', subj:'civ', tag:'sim', type:'sim', title:'📊 SIMULARE + Recapitulare Drepturi Reale',
-   tasks:[
-    {a:A.recall,t:'Recall total W6-W8: schema completă drepturi reale'},
-    {a:A.fisa,t:'Hartă: proprietate → modalități → dezmembrăminte → posesie → garanții'},
-    {a:A.sim,t:'Simulare: 30 grile Drepturi Reale (cronometrat 50 min)'},
-    {a:A.err,t:'Analiză detaliată: fiecare greșeală → explicație + fișă aferentă'},
-   ],
-   tip:'Scop: ≥ 70%. Drepturile reale au pondere mare — uzucapiunea și revendicarea sunt mereu prezente în grile.'},
+   concepte:'Posesie utilă = continuă, netulburată, publică, neechivocă · revendicarea e imprescriptibilă (regula) · ipoteca = drept real accesoriu și indivizibil · cartea funciară: înscrierea drepturilor reale imobiliare are (de regulă) efect de opozabilitate',
+   tip:'Drepturile reale au pondere mare la grilă (uzucapiune + revendicare). Scop ≥ 70%. Marchează-ți încrederea ⬇️'},
  ]}]},
 
-// ═══ FAZA 3 · CIVIL — Teoria Generală a Obligațiilor (W10-W14) ═══
-{id:'f3', subj:'civ', color:'var(--civ)', title:'③ Teoria Generală a Obligațiilor', period:'Septembrie 2026',
- months:[{m:'Septembrie 2026', weeks:[
-  {n:10, id:'w10', dates:'31 aug–6 sep', subj:'civ', tag:'civ', title:'Izvoarele obligațiilor + fapt juridic licit',
+// ═══ FAZA 3 · CIVIL — Teoria Generală a Obligațiilor (W8-W11) ═══
+{id:'f3', subj:'civ', color:'var(--civ)', title:'③ Teoria Generală a Obligațiilor', period:'August–Septembrie 2026',
+ months:[
+  {m:'August 2026', weeks:[
+  {n:8, id:'w08', dates:'17–23 aug', subj:'civ', tag:'civ', title:'Izvoarele obligațiilor + fapt juridic licit',
    tasks:[
     {a:A.read,t:'Clasificarea obligațiilor (obiect, sancțiune, opozabilitate)'},
     {a:A.read,t:'Izvoare: contractul, actul unilateral, faptul juridic licit'},
@@ -578,8 +564,8 @@ const PHASES = [
     {a:A.grile,t:'12 grile izvoare + fapt juridic licit'},
    ],
    concepte:'Obligații de mijloace vs. de rezultat · îmbogățirea fără justă cauză e subsidiară',
-   review:'🔁 Spaced: recall AJC — efectele nulității (W4/W5) (5 min)'},
-  {n:11, id:'w11', dates:'7–13 sep', subj:'civ', tag:'civ', title:'Răspunderea civilă delictuală',
+   review:'🔁 Spaced: recall AJC — efectele nulității (W4) (5 min)'},
+  {n:9, id:'w09', dates:'24–30 aug', subj:'civ', tag:'civ', title:'Răspunderea civilă delictuală',
    tasks:[
     {a:A.read,t:'Cele 4 condiții: fapta ilicită, vinovăția, prejudiciul, cauzalitatea'},
     {a:A.read,t:'Răspunderea pentru fapta altuia (părinți art.1372, comitent art.1373)'},
@@ -589,42 +575,39 @@ const PHASES = [
     {a:A.grile,t:'15 grile răspundere delictuală'},
    ],
    concepte:'Vinovăția: intenție directă/indirectă, culpă (imprudență/neglijență) · răspunderea comitentului = obiectivă, fără vinovăție proprie',
-   review:'🔁 Spaced: recall posesie + uzucapiune (W8) (5 min)'},
-  {n:12, id:'w12', dates:'14–20 sep', subj:'civ', tag:'civ', title:'Executarea, plata, solidaritatea',
+   review:'🔁 Spaced: recall posesie + uzucapiune (W7) (5 min)'},
+  ]},
+  {m:'Septembrie 2026', weeks:[
+  {n:10, id:'w10', dates:'31 aug–6 sep', subj:'civ', tag:'civ', title:'Executarea, plata, solidaritatea + protecția creditorului',
    tasks:[
-    {a:A.read,t:'Plata: subiecte, obiect, loc, dată, imputația plății'},
-    {a:A.read,t:'Oferta de plată + consemnarea; darea în plată'},
+    {a:A.read,t:'Plata: subiecte, obiect, loc, dată, imputația plății; oferta de plată + consemnarea'},
     {a:A.read,t:'Solidaritatea activă/pasivă; indivizibilitatea (distincții)'},
-    {a:A.fisa,t:'Fișă: solidaritate vs. indivizibilitate (criterii)'},
+    {a:A.read,t:'Mijloacele de protecție a creditorului: acțiunea oblică (art. 1560-1561) și acțiunea pauliană/revocatorie (art. 1562-1565)'},
+    {a:A.fisa,t:'Fișă: solidaritate vs. indivizibilitate (criterii) + oblică vs. pauliană'},
     {a:A.recall,t:'Recall: ce efect are dacă un creditor solidar iartă datoria?'},
-    {a:A.grile,t:'12 grile plată + solidaritate'},
+    {a:A.grile,t:'12 grile plată + solidaritate + acțiunile creditorului'},
    ],
-   concepte:'Solidaritatea NU se prezumă (trebuie prevăzută) · indivizibilitatea se transmite la moștenitori, solidaritatea nu'},
-  {n:13, id:'w13', dates:'21–27 sep', subj:'civ', tag:'civ', title:'Transmiterea și stingerea obligațiilor',
+   concepte:'Solidaritatea NU se prezumă (trebuie prevăzută) · indivizibilitatea se transmite la moștenitori, solidaritatea nu · oblică = creditorul exercită drepturile pasive ale debitorului · pauliană = atacă actele frauduloase ale debitorului'},
+  {n:11, id:'w11', dates:'7–13 sep', subj:'civ', tag:'civ', title:'Transmiterea, stingerea, simulația + ⟳ sim Obligații',
    tasks:[
     {a:A.read,t:'Cesiunea de creanță; subrogația (legală/convențională)'},
-    {a:A.read,t:'Stingerea: compensare, novație, confuziune, remitere de datorie'},
-    {a:A.read,t:'Rezoluțiunea/rezilierea; daune-interese; clauza penală'},
+    {a:A.read,t:'Stingerea: compensare, novație, confuziune, remitere de datorie; rezoluțiune/reziliere'},
+    {a:A.read,t:'Simulația: act public vs. secret; efecte între părți și față de terți (art. 1289-1294)'},
     {a:A.fisa,t:'Fișă: moduri de stingere + rezoluțiune vs. reziliere'},
-    {a:A.recall,t:'Recall: distingei cesiunea de creanță vs. subrogația'},
-    {a:A.grile,t:'15 grile cesiune + stingere + rezoluțiune'},
+    {a:A.recall,t:'Recall total Obligații (W8-W11): izvoare → executare → transmitere → stingere → răspundere'},
+    {a:A.sim,t:'Simulare: 30 grile Obligații (cronometrat 50 min) + analiză greșeli'},
    ],
-   concepte:'Rezoluțiune = desființare retroactivă (contracte uno ictu) · reziliere = pentru viitor (executare succesivă)',
-   review:'🔁 Spaced: recall răspunderea delictuală — cele 4 condiții (W11) (5 min)'},
-  {n:14, id:'w14', dates:'28 sep–4 oct', subj:'civ', tag:'sim', type:'sim', title:'📊 SIMULARE — Teoria Generală a Obligațiilor',
-   tasks:[
-    {a:A.recall,t:'Recall complet W10-W13: schema tuturor obligațiilor'},
-    {a:A.fisa,t:'Hartă: izvoare → executare → transmitere → stingere → răspundere'},
-    {a:A.sim,t:'Simulare: 30 grile Obligații (cronometrat 50 min)'},
-    {a:A.err,t:'Analiză greșeli + completare fișe'},
-   ],
-   tip:'Obligațiile sunt coloana vertebrală a Dreptului Civil. Scop: ≥ 70%.'},
- ]}]},
+   concepte:'Rezoluțiune = desființare retroactivă (contracte uno ictu) · reziliere = pentru viitor (executare succesivă) · simulația: terții de bună-credință se pot prevala de actul public',
+   review:'🔁 Spaced: recall răspunderea delictuală — cele 4 condiții (W9) (5 min)',
+   tip:'Obligațiile = coloana vertebrală a Dreptului Civil. Scop ≥ 70%. Marchează-ți încrederea ⬇️'},
+  ]},
+ ]},
 
-// ═══ FAZA 4 · CIVIL — Contracte Speciale (W15-W17) ═══
-{id:'f4', subj:'civ', color:'var(--civ)', title:'④ Contracte Speciale', period:'Octombrie 2026',
- months:[{m:'Octombrie 2026', weeks:[
-  {n:15, id:'w15', dates:'5–11 oct', subj:'civ', tag:'civ', title:'Vânzarea și Donația',
+// ═══ FAZA 4 · CIVIL — Contracte Speciale (W12-W14) ═══
+{id:'f4', subj:'civ', color:'var(--civ)', title:'④ Contracte Speciale', period:'Septembrie–Octombrie 2026',
+ months:[
+  {m:'Septembrie 2026', weeks:[
+  {n:12, id:'w12', dates:'14–20 sep', subj:'civ', tag:'civ', title:'Vânzarea și Donația',
    tasks:[
     {a:A.read,t:'Vânzarea: condiții (lucru+preț), obligațiile vânzătorului (predare+garanție)'},
     {a:A.read,t:'Garanția contra evicțiunii și contra viciilor ascunse'},
@@ -634,8 +617,8 @@ const PHASES = [
     {a:A.grile,t:'12 grile vânzare + donație'},
    ],
    concepte:'Donația = act solemn (formă autentică ad validitatem) · vânzarea = consensuală (regula)',
-   review:'🔁 Spaced: recall stingerea obligațiilor (W13) (5 min)'},
-  {n:16, id:'w16', dates:'12–18 oct', subj:'civ', tag:'civ', title:'Locațiunea, Mandatul, Antrepriza',
+   review:'🔁 Spaced: recall stingerea obligațiilor (W11) (5 min)'},
+  {n:13, id:'w13', dates:'21–27 sep', subj:'civ', tag:'civ', title:'Locațiunea, Mandatul, Antrepriza',
    tasks:[
     {a:A.read,t:'Locațiunea: obligații locator/locatar, sublocațiune, încetare'},
     {a:A.read,t:'Mandatul cu/fără reprezentare; revocare; mandatul în interes comun'},
@@ -645,21 +628,24 @@ const PHASES = [
     {a:A.grile,t:'12 grile locațiune + mandat + antrepriză'},
    ],
    concepte:'Mandatul e revocabil oricând (intuitu personae) · antreprenorul lucrează pe riscul său'},
-  {n:17, id:'w17', dates:'19–25 oct', subj:'civ', tag:'recap', type:'recap', title:'Împrumut, fidejusiune + ⟳ Recap Contracte',
+  ]},
+  {m:'Octombrie 2026', weeks:[
+  {n:14, id:'w14', dates:'28 sep–4 oct', subj:'civ', tag:'recap', type:'recap', title:'Împrumut, fidejusiune, tranzacție + ⟳ Recap Contracte',
    tasks:[
     {a:A.read,t:'Comodatul și mutuum (împrumutul); fidejusiunea (discuțiune, diviziune)'},
     {a:A.read,t:'Tranzacția: caractere, autoritate de lucru judecat'},
-    {a:A.recall,t:'Recall W15-W17: schema tuturor contractelor cu obligațiile esențiale'},
+    {a:A.recall,t:'Recall W12-W14: schema tuturor contractelor cu obligațiile esențiale'},
     {a:A.sim,t:'Simulare: 20 grile contracte speciale (cronometrat 35 min)'},
     {a:A.err,t:'Analiză greșeli + completare fișe'},
    ],
    tip:'La contracte, compară mereu obligațiile AMBELOR părți. Marchează-ți încrederea ⬇️'},
- ]}]},
+  ]},
+ ]},
 
-// ═══ FAZA 5 · CIVIL — Dreptul Succesoral (W18-W19) ═══
-{id:'f5', subj:'civ', color:'var(--civ)', title:'⑤ Dreptul Succesoral', period:'Octombrie–Noiembrie 2026',
- months:[{m:'Octombrie–Noiembrie 2026', weeks:[
-  {n:18, id:'w18', dates:'26 oct–1 nov', subj:'civ', tag:'civ', title:'Moștenirea legală',
+// ═══ FAZA 5 · CIVIL — Dreptul Succesoral (W15-W16) ═══
+{id:'f5', subj:'civ', color:'var(--civ)', title:'⑤ Dreptul Succesoral', period:'Octombrie 2026',
+ months:[{m:'Octombrie 2026', weeks:[
+  {n:15, id:'w15', dates:'5–11 oct', subj:'civ', tag:'civ', title:'Moștenirea legală',
    tasks:[
     {a:A.read,t:'Condiții (capacitate, vocație, nedemnitate); principiile devoluțiunii'},
     {a:A.read,t:'Clasele de moștenitori (I-IV); reprezentarea succesorală'},
@@ -669,8 +655,8 @@ const PHASES = [
     {a:A.grile,t:'12 grile moștenire legală'},
    ],
    concepte:'Clase: I descendenți · II ascendenți+colaterali privilegiați · III ascendenți ordinari · IV colaterali ordinari · soțul: 1/4 cu clasa I',
-   review:'🔁 Spaced: recall contractele (vânzare/mandat) din W15-W16 (5 min)'},
-  {n:19, id:'w19', dates:'2–8 nov', subj:'civ', tag:'recap', type:'recap', title:'Testament, rezervă + ⟳ Recap Succesiuni',
+   review:'🔁 Spaced: recall contractele (vânzare/mandat) din W12-W13 (5 min)'},
+  {n:16, id:'w16', dates:'12–18 oct', subj:'civ', tag:'recap', type:'recap', title:'Testament, rezervă + ⟳ Recap Succesiuni',
    tasks:[
     {a:A.read,t:'Testamentul (forme: olograf, autentic, mistic); legatul; revocarea'},
     {a:A.read,t:'Rezerva succesorală, moștenitorii rezervatari, reducțiunea'},
@@ -682,10 +668,10 @@ const PHASES = [
    tip:'Cota soțului supraviețuitor variază cu clasa — memoreaz-o exact. Marchează-ți încrederea ⬇️'},
  ]}]},
 
-// ═══ FAZA 6 · SIMULARE CIVIL COMPLET (W20) ═══
-{id:'f6', subj:'civ', color:'var(--sim)', title:'⑥ SIMULARE Drept Civil complet', period:'Noiembrie 2026',
- months:[{m:'Noiembrie 2026', weeks:[
-  {n:20, id:'w20', dates:'9–15 nov', subj:'civ', tag:'sim', type:'sim', title:'📊 SIMULARE COMPLETĂ — Drept Civil (50 întrebări)',
+// ═══ FAZA 6 · SIMULARE CIVIL COMPLET (W17) ═══
+{id:'f6', subj:'civ', color:'var(--sim)', title:'⑥ SIMULARE Drept Civil complet', period:'Octombrie 2026',
+ months:[{m:'Octombrie 2026', weeks:[
+  {n:17, id:'w17', dates:'19–25 oct', subj:'civ', tag:'sim', type:'sim', title:'📊 SIMULARE COMPLETĂ — Drept Civil (50 întrebări)',
    tasks:[
     {a:A.recall,t:'Recall global: AJC → Drepturi Reale → Obligații → Contracte → Succesiuni'},
     {a:A.sim,t:'Simulare: 50 grile Drept Civil din sesiuni reale (cronometrat 85 min)'},
@@ -696,10 +682,10 @@ const PHASES = [
    tip:'⭐ Moment-cheie: ≥ 65% la 50 grile Civil = pe drumul cel bun. Acum treci la Penal cu Civilul fixat.'},
  ]}]},
 
-// ═══ FAZA 7 · PENAL — Teoria Generală a Infracțiunii (W21-W23) ═══
-{id:'f7', subj:'pen', color:'var(--pen)', title:'⑦ Drept Penal — Teoria Generală', period:'Noiembrie 2026',
+// ═══ FAZA 7 · PENAL — Teoria Generală a Infracțiunii (W18-W20) ═══
+{id:'f7', subj:'pen', color:'var(--pen)', title:'⑦ Drept Penal — Teoria Generală', period:'Octombrie–Noiembrie 2026',
  months:[{m:'Noiembrie 2026', weeks:[
-  {n:21, id:'w21', dates:'16–22 nov', subj:'pen', tag:'pen', title:'Infracțiunea: trăsături și elemente constitutive',
+  {n:18, id:'w18', dates:'26 oct–1 nov', subj:'pen', tag:'pen', title:'Infracțiunea: trăsături și elemente constitutive',
    tasks:[
     {a:A.read,t:'Trăsături esențiale (art.15): tipicitate, antijuridicitate, imputabilitate'},
     {a:A.read,t:'Latura obiectivă: element material, urmare, legătură de cauzalitate'},
@@ -709,8 +695,8 @@ const PHASES = [
     {a:A.grile,t:'15 grile teoria generală a infracțiunii'},
    ],
    concepte:'Intenție indirectă: prevede + acceptă rezultatul · culpa cu prevedere: prevede dar NU acceptă (crede că nu survine)',
-   review:'🔁 Spaced: recall succesiuni — clasele de moștenitori (W18) (5 min)'},
-  {n:22, id:'w22', dates:'23–29 nov', subj:'pen', tag:'pen', title:'Formele infracțiunii și participația',
+   review:'🔁 Spaced: recall succesiuni — clasele de moștenitori (W15) (5 min)'},
+  {n:19, id:'w19', dates:'2–8 nov', subj:'pen', tag:'pen', title:'Formele infracțiunii și participația',
    tasks:[
     {a:A.read,t:'Actele preparatorii; tentativa (perfectă/imperfectă/imposibilă)'},
     {a:A.read,t:'Infracțiunea consumată vs. epuizată (continuă, continuată, de obicei)'},
@@ -720,22 +706,24 @@ const PHASES = [
     {a:A.grile,t:'15 grile tentativă + participație'},
    ],
    concepte:'Tentativa se pedepsește cu jumătate din limitele pedepsei pt. fapta consumată · instigatorul determină, complicele ajută'},
-  {n:23, id:'w23', dates:'30 nov–6 dec', subj:'pen', tag:'recap', type:'recap', title:'Concurs, recidivă, pedepse + ⟳ Recap TG Penal',
+  {n:20, id:'w20', dates:'9–15 nov', subj:'pen', tag:'recap', type:'recap', title:'Concurs, recidivă, cauze justificative/neimputabilitate, pedepse + ⟳ Recap',
    tasks:[
     {a:A.read,t:'Concursul (real/ideal); recidiva (postcond./postexec.); pluralitate intermediară'},
-    {a:A.read,t:'Cauzele de neimputabilitate (iresponsabilitate, eroare, minoritate, constrângere)'},
+    {a:A.read,t:'Cauze justificative (art. 18-22): legitima apărare, starea de necesitate, exercitarea unui drept, consimțământul — fapta NU e infracțiune'},
+    {a:A.read,t:'Cauze de neimputabilitate (art. 23-31): constrângerea, excesul neimputabil, minoritatea, iresponsabilitatea, intoxicația, eroarea, cazul fortuit'},
     {a:A.read,t:'Pedepsele + individualizarea (circumstanțe atenuante/agravante, suspendarea)'},
-    {a:A.recall,t:'Recall complet W21-W23: schema teoriei generale penale'},
+    {a:A.recall,t:'Recall: distingei o cauză justificativă de una de neimputabilitate (efecte diferite!) + schema W18-W20'},
     {a:A.sim,t:'Simulare: 25 grile Teoria Generală Penal (cronometrat 40 min)'},
    ],
-   concepte:'Concurs = mai multe infracțiuni înainte de condamnare · recidiva = după condamnare definitivă',
-   tip:'Teoria generală e cheia oricărei infracțiuni speciale. Marchează-ți încrederea ⬇️'},
+   concepte:'Cauzele justificative înlătură caracterul ANTIJURIDIC → fapta nu e infracțiune pentru nimeni (efect in rem) · cauzele de neimputabilitate înlătură doar VINOVĂȚIA → efect personal, participanții pot răspunde · concurs = mai multe infracțiuni înainte de condamnare · recidiva = după condamnare definitivă',
+   tip:'Distincția justificative vs. neimputabilitate e clasică la grile — reține efectul (in rem vs. personal). Marchează-ți încrederea ⬇️'},
  ]}]},
 
-// ═══ FAZA 8 · PENAL — Infracțiuni speciale (W24-W26) ═══
-{id:'f8', subj:'pen', color:'var(--pen)', title:'⑧ Drept Penal — Infracțiuni speciale', period:'Decembrie 2026',
- months:[{m:'Decembrie 2026', weeks:[
-  {n:24, id:'w24', dates:'7–13 dec', subj:'pen', tag:'pen', title:'Infracțiuni contra persoanei',
+// ═══ FAZA 8 · PENAL — Infracțiuni speciale (W21-W24) ═══
+{id:'f8', subj:'pen', color:'var(--pen)', title:'⑧ Drept Penal — Infracțiuni speciale', period:'Noiembrie–Decembrie 2026',
+ months:[
+  {m:'Noiembrie 2026', weeks:[
+  {n:21, id:'w21', dates:'16–22 nov', subj:'pen', tag:'pen', title:'Infracțiuni contra persoanei',
    tasks:[
     {a:A.read,t:'Omorul simplu (188) și calificat (189); loviri cauzatoare de moarte'},
     {a:A.read,t:'Vătămarea corporală (194); vătămarea din culpă; lipsirea de libertate (205)'},
@@ -745,32 +733,47 @@ const PHASES = [
     {a:A.grile,t:'15 grile infracțiuni contra persoanei'},
    ],
    concepte:'Omor (intenție de a ucide) vs. loviri cauzatoare de moarte (praeterintenție) · omor calificat = circumstanțe art.189',
-   review:'🔁 Spaced: recall participația penală (W22) (5 min)'},
-  {n:25, id:'w25', dates:'14–20 dec', subj:'pen', tag:'pen', title:'Infracțiuni contra patrimoniului',
+   review:'🔁 Spaced: recall participația penală (W19) (5 min)'},
+  {n:22, id:'w22', dates:'23–29 nov', subj:'pen', tag:'pen', title:'Infracțiuni contra patrimoniului + de fals',
    tasks:[
     {a:A.read,t:'Furtul simplu (228) și calificat (229); furtul în scop de folosință'},
     {a:A.read,t:'Tâlhăria (233) și formele agravate (234); pirateria'},
     {a:A.read,t:'Înșelăciunea (244); abuzul de încredere (238); delapidarea (295)'},
+    {a:A.read,t:'Infracțiuni de fals: fals material în înscrisuri oficiale (320), fals intelectual (321), fals în înscrisuri sub semnătură privată (322), uzul de fals (323)'},
     {a:A.fisa,t:'Fișă comparativă: furt vs. tâlhărie (elemente)'},
     {a:A.recall,t:'Recall: ce transformă furtul în tâlhărie?'},
-    {a:A.grile,t:'15 grile infracțiuni contra patrimoniului'},
+    {a:A.grile,t:'15 grile infracțiuni contra patrimoniului + fals'},
    ],
-   concepte:'Tâlhăria = furt + violență/amenințare · înșelăciunea = inducere în eroare + prejudiciu + scop injust'},
-  {n:26, id:'w26', dates:'21–27 dec', subj:'pen', tag:'recap', type:'recap', title:'Corupție + serviciu + ⟳ Recap (vacanță ușoară)',
+   concepte:'Tâlhăria = furt + violență/amenințare · înșelăciunea = inducere în eroare + prejudiciu + scop injust · uzul de fals = folosirea înscrisului fals, infracțiune distinctă de actul de falsificare'},
+  ]},
+  {m:'Decembrie 2026', weeks:[
+  {n:23, id:'w23', dates:'30 nov–6 dec', subj:'pen', tag:'pen', title:'Corupție, infracțiuni de serviciu și contra justiției',
    tasks:[
-    {a:A.read,t:'Luarea de mită (289), darea de mită (290); trafic/cumpărare de influență'},
-    {a:A.read,t:'Abuzul în serviciu (297); neglijența în serviciu (298)'},
-    {a:A.recall,t:'Recall W24-W26: schema infracțiunilor speciale'},
-    {a:A.grile,t:'10 grile corupție + serviciu (ritm lejer de sărbători)'},
+    {a:A.read,t:'Luarea de mită (289), darea de mită (290); traficul (291)/cumpărarea de influență (292)'},
+    {a:A.read,t:'Abuzul în serviciu (297); neglijența în serviciu (298); purtarea abuzivă'},
+    {a:A.read,t:'Infracțiuni contra înfăptuirii justiției: mărturia mincinoasă (273), favorizarea făptuitorului (269), nedenunțarea (266)'},
+    {a:A.fisa,t:'Fișă: corupție (activă/pasivă) + tabel infracțiuni de serviciu'},
+    {a:A.recall,t:'Recall: luare de mită vs. trafic de influență vs. cumpărare de influență'},
+    {a:A.grile,t:'12 grile corupție + serviciu + contra justiției'},
    ],
-   concepte:'Luare de mită (funcționar primește) vs. trafic de influență (pretinde influență asupra unui funcționar)',
-   tip:'🎄 Vacanță de Crăciun — ritm lejer. Fixează ce ai, nu te epuiza. Odihna face parte din plan.'},
- ]}]},
+   concepte:'Luare de mită (funcționar primește) vs. trafic de influență (pretinde influență asupra unui funcționar) · mărturia mincinoasă: doar martor/expert/interpret',
+   review:'🔁 Spaced: recall infracțiuni contra persoanei (W21) (5 min)'},
+  {n:24, id:'w24', dates:'7–13 dec', subj:'pen', tag:'recap', type:'recap', title:'Circulație, fals + ⟳ Recap infracțiuni speciale',
+   tasks:[
+    {a:A.read,t:'Infracțiuni contra siguranței circulației: conducere fără permis (335), sub influența alcoolului/drogurilor (336), refuzul recoltării de mostre (337), părăsirea locului accidentului (338)'},
+    {a:A.read,t:'Recapitulare fals (320-323) + scurt: traficul de persoane/droguri (noțiuni generale)'},
+    {a:A.recall,t:'Recall complet W21-W24: schema tuturor infracțiunilor speciale studiate'},
+    {a:A.sim,t:'Simulare: 25 grile infracțiuni speciale (cronometrat 40 min) + analiză'},
+   ],
+   concepte:'Conducerea sub influența alcoolului = infracțiune de pericol (nu cere accident) · circulația și falsul sunt foarte frecvente la grilă',
+   tip:'Ai acoperit toate grupele mari de infracțiuni speciale. Scop ≥ 65%. Marchează-ți încrederea ⬇️'},
+  ]},
+ ]},
 
-// ═══ FAZA 9 · SIMULARE PENAL COMPLET (W27) ═══
-{id:'f9', subj:'pen', color:'var(--sim)', title:'⑨ SIMULARE Drept Penal complet', period:'Ianuarie 2027',
- months:[{m:'Ianuarie 2027', weeks:[
-  {n:27, id:'w27', dates:'28 dec–3 ian', subj:'pen', tag:'sim', type:'sim', title:'📊 SIMULARE COMPLETĂ — Drept Penal (50 întrebări)',
+// ═══ FAZA 9 · SIMULARE PENAL COMPLET (W25) ═══
+{id:'f9', subj:'pen', color:'var(--sim)', title:'⑨ SIMULARE Drept Penal complet', period:'Decembrie 2026',
+ months:[{m:'Decembrie 2026', weeks:[
+  {n:25, id:'w25', dates:'14–20 dec', subj:'pen', tag:'sim', type:'sim', title:'📊 SIMULARE COMPLETĂ — Drept Penal (50 întrebări)',
    tasks:[
     {a:A.recall,t:'Recall global: teoria generală + infracțiunile speciale'},
     {a:A.sim,t:'Simulare: 50 grile Drept Penal din sesiuni reale (cronometrat 85 min)'},
@@ -780,67 +783,97 @@ const PHASES = [
    tip:'⭐ ≥ 65% la 50 grile Penal. Acum ai ambele materii mari acoperite — urmează procedura și recapitularea finală.'},
  ]}]},
 
-// ═══ FAZA 10 · PROCEDURĂ (civilă + penală) (W28-W29) ═══
-{id:'f10', subj:'pciv', color:'var(--pciv)', title:'⑩ Procedură Civilă și Penală (esențial)', period:'Ianuarie 2027',
- months:[{m:'Ianuarie 2027', weeks:[
-  {n:28, id:'w28', dates:'4–10 ian', subj:'pciv', tag:'pciv', title:'Procedură Civilă — esențial',
+// ═══ FAZA 10 · PROCEDURĂ (civilă + penală) (W26-W28) ═══
+{id:'f10', subj:'pciv', color:'var(--pciv)', title:'⑩ Procedură Civilă și Penală', period:'Decembrie 2026 – Ianuarie 2027',
+ months:[
+  {m:'Decembrie 2026', weeks:[
+  {n:26, id:'w26', dates:'21–27 dec', subj:'pciv', tag:'pciv', title:'Procedură Civilă — judecata (ritm de sărbători)',
    tasks:[
     {a:A.read,t:'Principii (contradictorialitate, disponibilitate, rol activ); competența materială și teritorială'},
-    {a:A.read,t:'Cererea de chemare în judecată; întâmpinarea; probele'},
+    {a:A.read,t:'Cererea de chemare în judecată; întâmpinarea; excepțiile procesuale (de procedură vs. de fond); probele'},
     {a:A.read,t:'Căile de atac: apelul (devolutiv) vs. recursul (motive art.488)'},
     {a:A.fisa,t:'Fișă: apel vs. recurs (obiect/termen/motive/efecte) + competență'},
     {a:A.recall,t:'Recall: ce hotărâri se atacă cu recurs și care sunt motivele?'},
-    {a:A.grile,t:'12 grile procedură civilă'},
+    {a:A.grile,t:'12 grile procedură civilă (judecata)'},
    ],
    concepte:'Apelul = devolutiv (rejudecă fondul) · recursul = doar legalitate (motive limitative art.488)',
-   review:'🔁 Spaced: recall infracțiuni contra persoanei (W24) (5 min)'},
-  {n:29, id:'w29', dates:'11–17 ian', subj:'ppen', tag:'ppen', title:'Procedură Penală — esențial',
+   review:'🔁 Spaced: recall infracțiuni de fals (W22) (5 min)',
+   tip:'🎄 Vacanță de Crăciun — procedura e mai mecanică, ritm lejer. Nu te epuiza, fixează esențialul.'},
+  ]},
+  {m:'Ianuarie 2027', weeks:[
+  {n:27, id:'w27', dates:'28 dec–3 ian', subj:'pciv', tag:'pciv', title:'Procedură Civilă — executarea silită',
+   tasks:[
+    {a:A.read,t:'Executarea silită: titlul executoriu, încuviințarea, formele (poprire, urmărire mobiliară/imobiliară)'},
+    {a:A.read,t:'Contestația la executare (art. 712-720); întoarcerea executării'},
+    {a:A.read,t:'Proceduri speciale: ordonanța de plată (1014), cererea de valoare redusă (1026)'},
+    {a:A.fisa,t:'Fișă: fazele executării silite + contestația la executare'},
+    {a:A.recall,t:'Recall: cine poate face contestație la executare și în ce termen?'},
+    {a:A.grile,t:'12 grile executare silită + proceduri speciale'},
+   ],
+   concepte:'Contestația la executare = mijlocul de apărare al debitorului în faza executării · ordonanța de plată = procedură specială rapidă pt. creanțe certe, lichide și exigibile',
+   tip:'Executarea silită apare constant la grilă — e o zonă „de puncte". Marchează-ți încrederea ⬇️'},
+  {n:28, id:'w28', dates:'4–10 ian', subj:'ppen', tag:'ppen', title:'Procedură Penală — esențial',
    tasks:[
     {a:A.read,t:'Principii (legalitate, prezumția de nevinovăție, dreptul la apărare); probele'},
     {a:A.read,t:'Măsurile preventive (reținere 24h, control judiciar, arest preventiv)'},
-    {a:A.read,t:'Urmărirea penală, camera preliminară, soluțiile procurorului'},
-    {a:A.read,t:'Căile de atac: apelul (408-425) și recursul în casație (motive 438)'},
+    {a:A.read,t:'Urmărirea penală și soluțiile procurorului; camera preliminară (obiect, termene, contestația)'},
+    {a:A.read,t:'Acordul de recunoaștere a vinovăției; căile de atac: apelul (408-425) și recursul în casație (motive 438)'},
     {a:A.fisa,t:'Fișă: măsuri preventive (termen+cine dispune) + apel vs. recurs în casație'},
+    {a:A.recall,t:'Recall: cine dispune și pe ce durată fiecare măsură preventivă?'},
     {a:A.grile,t:'12 grile procedură penală'},
    ],
-   concepte:'Reținerea max 24h (procuror/poliție) · arestul preventiv 30 zile (judecător de drepturi și libertăți)'},
- ]}]},
+   concepte:'Reținerea max 24h (procuror/poliție) · arestul preventiv 30 zile (judecător de drepturi și libertăți) · acordul de recunoaștere: încheiat cu procurorul, confirmat de instanță · camera preliminară verifică legalitatea sesizării și a probelor înainte de judecată',
+   review:'🔁 Spaced: recall executarea silită (W27) (5 min)'},
+  ]},
+ ]},
 
-// ═══ FAZA 11 · RECAPITULARE FINALĂ + EXAMEN (W30-W32) ═══
+// ═══ FAZA 11 · RECAPITULARE FINALĂ + EXAMEN (W29-W32) ═══
 {id:'f11', subj:'pen', color:'var(--gold)', title:'⑪ Recapitulare Finală + EXAMEN', period:'Ianuarie–Februarie 2027',
- months:[{m:'Ianuarie–Februarie 2027', weeks:[
-  {n:30, id:'w30', dates:'18–24 ian', subj:'civ', tag:'sim', type:'sim', title:'📊 SIMULARE FINALĂ — 100 întrebări mixte',
+ months:[
+  {m:'Ianuarie 2027', weeks:[
+  {n:29, id:'w29', dates:'11–17 ian', subj:'civ', tag:'sim', type:'sim', title:'🫧 Buffer / recuperare + Simulare mixtă 100 (#1)',
    tasks:[
-    {a:A.recap,t:'Revizuire rapidă: parcurgi toate fișele de sinteză (Civil + Penal)'},
+    {a:A.recap,t:'Săptămână de recuperare: reia ce ai marcat 🔴 până acum (vezi „De revăzut")'},
+    {a:A.recap,t:'Revizuire rapidă: parcurgi toate fișele de sinteză (Civil + Penal + Procedură)'},
     {a:A.sim,t:'Simulare completă: 100 grile mixt (50 Civil + 50 Penal) cronometrat 3 ore'},
-    {a:A.err,t:'Analiză detaliată: listezi toate greșelile + subiectele aferente'},
-    {a:A.recap,t:'Plan de recuperare: pentru fiecare greșeală → recitești fișa + 5 grile extra'},
+    {a:A.err,t:'Analiză detaliată: listezi toate greșelile + subiectele aferente → top puncte slabe'},
    ],
-   tip:'Scopul e să găsești lacunele, nu să iei 100%. Fiecare greșeală acum = una mai puțin la examen.'},
-  {n:31, id:'w31', dates:'25–31 ian', subj:'pen', tag:'recap', type:'recap', title:'⟳ Recapitulare țintită + a 2-a simulare',
+   tip:'🫧 Săptămână-tampon: dacă ai rămas în urmă undeva, ACUM recuperezi. Apoi prima simulare reală pe 100 de întrebări.'},
+  {n:30, id:'w30', dates:'18–24 ian', subj:'pen', tag:'sim', type:'sim', title:'📊 Recapitulare țintită + Simulare mixtă 100 (#2)',
+   tasks:[
+    {a:A.recap,t:'Plan de recuperare: pentru fiecare greșeală din W29 → recitești fișa + 5 grile extra'},
+    {a:A.recap,t:'Recapitulare pe top-3 subteme slabe din fiecare materie'},
+    {a:A.sim,t:'A 2-a simulare: 100 grile mixt — compari scorul cu W29'},
+    {a:A.err,t:'Analiză: grupezi greșelile, vezi progresul față de prima simulare'},
+   ],
+   tip:'Vrei progres față de simularea din W29. Concentrează-te pe ce încă te face nesigură 🔴'},
+  {n:31, id:'w31', dates:'25–31 ian', subj:'civ', tag:'recap', type:'recap', title:'⟳ Greșelile mele + recall final',
    tasks:[
     {a:A.err,t:'„Greșelile mele" din aplicație: reiei toate întrebările marcate greșit'},
-    {a:A.recap,t:'Recapitulare pe top-3 subteme slabe din ambele materii'},
-    {a:A.sim,t:'A 2-a simulare: 100 grile mixt — compari scorul cu W30'},
-    {a:A.recall,t:'Recall final: scrii din memorie schema fiecărei materii'},
+    {a:A.recap,t:'Recapitulare finală pe ambele materii + procedură'},
+    {a:A.recall,t:'Recall final pe foaie goală: schema fiecărei materii din memorie'},
+    {a:A.grile,t:'30 grile din sesiunile recente 2025-2026 (cele mai relevante)'},
    ],
-   tip:'Vrei să vezi progres față de simularea din W30. Concentrează-te pe ce încă te face nesigură 🔴'},
-  {n:32, id:'w32', dates:'1–7 feb', subj:'civ', tag:'recap', type:'recap', title:'🎓 Revizuire finală + EXAMEN',
+   tip:'Ultima săptămână de muncă „grea". Săptămâna viitoare = doar revizuire ușoară + examen.'},
+  ]},
+  {m:'Februarie 2027', weeks:[
+  {n:32, id:'w32', dates:'1–7 feb', subj:'pen', tag:'recap', type:'recap', title:'🎓 Revizuire finală + EXAMEN',
    tasks:[
     {a:A.fisa,t:'Zilele 1-2: recitești RELAXAT fișele de sinteză, toate materiile'},
-    {a:A.grile,t:'Ziua 3: 30 grile din sesiunile recente 2025-2026 (cele mai relevante)'},
+    {a:A.grile,t:'Ziua 3: 20 grile ușoare de încredere (NU materie nouă)'},
     {a:A.recall,t:'Ziua 4: recall final pe foaie goală — tot ce știi, fiecare materie'},
     {a:A.fisa,t:'Ziua dinainte: NUMAI fișele de sinteză, nu materie nouă. Somn bun.'},
     {a:A.sim,t:'🎓 EXAMEN — Ai muncit un an. Ești pregătită. Citește cu atenție. Poți!'},
    ],
    tip:'🤍 Ultimele 48h: zero materie nouă. Somnul complet valorează mai mult decât 3 ore de studiu. Mănâncă bine. Respiră. Te iubim.'},
- ]}]},
+  ]},
+ ]},
 ];
 
 // ══════════════════════════════════════════════════════════════════════════
 //  STATE
 // ══════════════════════════════════════════════════════════════════════════
-const KEY = 'plan_miruna_v1';
+const KEY = 'plan_miruna_v2';
 let ST = JSON.parse(localStorage.getItem(KEY)||'{}');
 if(!ST._examDate) ST._examDate = '2027-02-08';
 function save(){ localStorage.setItem(KEY,JSON.stringify(ST)); }
@@ -880,7 +913,7 @@ function taskIds(w){ return (w.tasks||[]).map((_,i)=>w.id+'_t'+i); }
 function weekDone(w){ const ids=taskIds(w); return ids.length>0 && ids.every(id=>ST[id]); }
 function weekProgress(w){ const ids=taskIds(w); const d=ids.filter(id=>ST[id]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
 function phaseProgress(ph){ const ids=ph.months.flatMap(m=>m.weeks.flatMap(w=>taskIds(w))); const d=ids.filter(i=>ST[i]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
-function subjProgress(subj){ const ids=PHASES.filter(p=>p.subj===subj).flatMap(p=>p.months.flatMap(m=>m.weeks.flatMap(w=>taskIds(w)))); const d=ids.filter(i=>ST[i]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
+function subjProgress(subj){ const ids=ALL_WEEKS.filter(x=>x.wk.subj===subj).flatMap(x=>taskIds(x.wk)); const d=ids.filter(i=>ST[i]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
 function globalProgress(){ const ids=PHASES.flatMap(p=>p.months.flatMap(m=>m.weeks.flatMap(w=>taskIds(w)))); const d=ids.filter(i=>ST[i]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
 
 // ── streak ──
