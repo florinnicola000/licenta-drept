@@ -153,6 +153,8 @@ a{color:var(--gr);text-decoration:none}
 .tcb svg{display:none;width:7px;height:7px}
 .tcb.on svg{display:block}
 .task.done-t .ttext{color:#3a5e3c;text-decoration:line-through}
+.task-day{font-size:9px;font-weight:800;color:var(--gr);background:var(--sf2);border-radius:5px;padding:2px 5px;flex-shrink:0;margin-top:1px;min-width:58px;text-align:center;letter-spacing:.2px}
+.task.done-t .task-day{opacity:.45}
 .tact{font-size:13px;flex-shrink:0;margin-top:1px}
 .ttext{font-size:12px;color:var(--sub);line-height:1.5;flex:1}
 .wk-tip{font-size:11px;color:var(--sub);background:var(--sf2);border-radius:6px;padding:7px 10px;margin-top:8px;line-height:1.5}
@@ -981,6 +983,10 @@ const CURRENT = findCurrentWeek();
 
 // ── progress helpers ──
 function taskIds(w){ return (w.tasks||[]).map((_,i)=>w.id+'_t'+i); }
+// Maparea sarcinilor pe zile: în ordine, câte una de Luni → Sâmbătă (Duminică = odihnă).
+// Săptămânile mai încărcate (7 sarcini) dublează pe Sâmbătă; cele ușoare lasă zilele de la final libere.
+const STUDY_DAYS = ['Luni','Marți','Miercuri','Joi','Vineri','Sâmbătă'];
+function taskDay(i){ return STUDY_DAYS[Math.min(i, STUDY_DAYS.length-1)]; }
 function weekDone(w){ const ids=taskIds(w); return ids.length>0 && ids.every(id=>ST[id]); }
 function weekProgress(w){ const ids=taskIds(w); const d=ids.filter(id=>ST[id]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
 function phaseProgress(ph){ const ids=ph.months.flatMap(m=>m.weeks.flatMap(w=>taskIds(w))); const d=ids.filter(i=>ST[i]).length; return {done:d,total:ids.length,pct:ids.length?Math.round(d/ids.length*100):0}; }
@@ -1052,13 +1058,16 @@ function makeWeek(w, ph){
   if(w.review){ const r=document.createElement('div'); r.className='wk-review'; r.innerHTML=w.review; body.appendChild(r); }
 
   const sl=document.createElement('div'); sl.className='wk-section'; sl.textContent='Sarcini'; body.appendChild(sl);
+  // săptămânile care își descriu deja zilele în text (ex. W32 examen) nu primesc badge-uri auto
+  const ownDays=(w.tasks||[]).some(t=>/\bZiua\b|\bZilele\b/.test(t.t));
   (w.tasks||[]).forEach((task,i)=>{
     const tid=w.id+'_t'+i;
     const t=document.createElement('div'); t.className='task'+(ST[tid]?' done-t':'');
     const tcb=document.createElement('div'); tcb.className='tcb'+(ST[tid]?' on':''); tcb.innerHTML=CHKS;
     const ta=document.createElement('span'); ta.className='tact'; ta.textContent=task.a;
     const tx=document.createElement('span'); tx.className='ttext'; tx.textContent=task.t;
-    t.append(tcb,ta,tx);
+    if(ownDays){ t.append(tcb,ta,tx); }
+    else { const tday=document.createElement('span'); tday.className='task-day'; tday.textContent=taskDay(i); t.append(tcb,tday,ta,tx); }
     t.onclick=()=>{ const d=!ST[tid]; if(d){ST[tid]=true; touchStreak();} else delete ST[tid]; afterChange(card,w,ph); };
     body.appendChild(t);
   });
