@@ -488,7 +488,8 @@ var FISE_DATA = [
     sections:[
       { icon:'📋', title:'Clasificarea izvoarelor obligațiilor + tipuri de obligații',
         items:[
-          '<b>Contractul</b> (art. 1166 NCC); <b>actul unilateral</b> (art. 1324 NCC — promisiunea publică de recompensă, recunoașterea unui drept); <b>fapte juridice licite</b> (gestiunea de afaceri, plata nedatorată, îmbogățirea); <b>fapte ilicite</b> (delictul, cvasi-delictul); <b>legea</b> (obligația de întreținere, garanția legală).',
+          '<b>Obligația</b> (art. 1164 NCC) = legătura de drept prin care <b>debitorul</b> este ținut să procure o prestație <b>creditorului</b>, iar acesta are dreptul să o obțină. Izvoarele ei (art. 1165): contractul, actul unilateral, gestiunea de afaceri, îmbogățirea fără justă cauză, plata nedatorată, fapta ilicită și orice alt act sau fapt de care legea leagă nașterea unei obligații.',
+          '<b>Contractul</b> (art. 1166 NCC); <b>actul unilateral</b> (art. 1324 NCC — promisiunea publică de recompensă, recunoașterea unui drept); <b>fapte juridice licite</b> (gestiunea de afaceri, plata nedatorată, îmbogățirea); <b>fapta ilicită</b> (răspunderea delictuală — NCC a renunțat la distincția veche delict/cvasi-delict); <b>legea</b> (obligația de întreținere, garanția legală).',
           'Clasificare după obiect: <b>a da</b> (transferul unui drept real), <b>a face</b> (prestație pozitivă), <b>a nu face</b> (abținere). ⚠️ Obligația de a da ≠ predarea bunului (care e o obligație de a face).',
           '<b>Obligație de rezultat</b>: debitorul se obligă să obțină un rezultat determinat; dacă nu se obține → culpa e <b>prezumată</b> (creditorul nu trebuie să dovedească culpa). <i>Ex: transportatorul obligat să predea marfa la destinație intactă; antreprenorul să predea lucrarea.</i>',
           '<b>Obligație de mijloace</b> (de diligență): debitorul trebuie să depună diligența unui profesionist rezonabil, fără a garanta rezultatul; culpa trebuie <b>dovedită de creditor</b>. <i>Ex: medicul (obligație de îngrijire, nu de vindecare); avocatul (diligent, nu garantează câștigul).</i>',
@@ -500,7 +501,7 @@ var FISE_DATA = [
           'Gerantul administrează interesele geratului <b>fără știrea și fără mandatul</b> acestuia, fără a fi obligat prin lege sau contract. ≠ Mandatul (care presupune acordul geratului).',
           '<b>Condiții</b>: geratul absent sau în imposibilitate de a-și administra interesele; gerantul acționează voluntar și cu intenția de a gera; utilitate obiectivă la momentul actului (<b>nu contează rezultatul final</b>).',
           '<b>Obligațiile gerantului</b>: diligența unui bun proprietar (standard mai ridicat față de propriile afaceri); să continue gestiunea până la putința geratului de a prelua; să informeze geratul; să dea socoteală și să predea bunurile administrate.',
-          '<b>Obligațiile geratului</b>: restituie cheltuielile <b>utile și necesare</b> + dobânzi de la data efectuării; <b>nu datorează cheltuieli voluptuare</b> (de lux, fără utilitate).',
+          '<b>Obligațiile geratului</b> (art. 1337 NCC): restituie cheltuielile <b>necesare integral</b> + dobânzi din ziua efectuării; cheltuielile <b>utile</b> — numai <b>în limita sporului de valoare</b>; <b>nu datorează cheltuieli voluptuare</b> (de lux, fără utilitate). Trebuie să execute și obligațiile născute din actele necesare și utile încheiate de gerant în numele său.',
           'Gestiunea <b>contrară voinței cunoscute sau prezumate</b> a geratului: gerantul nu poate cere decât restituirea îmbogățirii geratului, în limita îmbogățirii existente la data cererii.',
           '<b>Ratificarea gestiunii</b>: retroactivă — geratul devine mandant; gestiunea produce efectele mandatului de la data actelor de gestiune. Geratul poate ratifica expres sau tacit (acceptarea beneficiilor gestiunii).'
         ]
@@ -508,9 +509,9 @@ var FISE_DATA = [
       { icon:'💸', title:'Plata nedatorată (art. 1341–1344 NCC)',
         items:[
           'Solvensul a executat o prestație pe care <b>nu o datora</b> nimănui sau nu o datora acelui accipiens. ⚠️ Plata nedatorată e un <i>fapt juridic</i> (nu AJC) — nu se cere capacitate deplină la solvens.',
-          '<b>Condiții</b>: existența unei plăți; absența datoriei față de accipiens; <i>eroarea</i> solvensului (deși aceasta nu e necesară în NCC când datoria aparținea altcuiva).',
+          '<b>Condiții</b> (art. 1341 NCC): existența unei plăți + absența datoriei. ⚠️ <b>Capcană</b>: sub NCC <b>eroarea solvensului NU mai e condiție</b> (era cerută de vechiul cod) — legea prezumă că plata s-a făcut cu intenția de a stinge o datorie proprie (alin. 3). Nu e supus restituirii ce s-a plătit cu titlu de <b>liberalitate</b> sau gestiune de afaceri (alin. 2).',
           'Accipiens <b>de rea-credință</b>: restituie integral + dobânzi de la data plății.',
-          'Accipiens <b>de bună-credință care a distrus titlul</b> de creanță față de adevăratul debitor sau a lăsat să se prescrie dreptul → exonerat de restituire (numai în limita prejudiciului cauzat solvensului prin această distugere).',
+          'Accipiens <b>de bună-credință care s-a lipsit de titlul</b> său de creanță, a renunțat la garanții sau a lăsat să se prescrie dreptul contra adevăratului debitor (art. 1342 NCC) → <b>exonerat complet</b> de restituire. Solvensul are în schimb <b>regres împotriva adevăratului debitor</b>.',
           'Accipiens de bună-credință care <b>a cheltuit suma</b>: restituire numai în limita îmbogățirii rămase. Accipiens care a înstrăinat bunul: restituie prețul obținut (sau valoarea dacă prețul e inferior).',
           '<b>Prescripție</b>: 3 ani de la data la care solvensul a cunoscut sau trebuia să cunoască lipsa datoriei și persoana accipiensului.'
         ]
@@ -542,7 +543,7 @@ var FISE_DATA = [
         ]
       }
     ],
-    grila:'Gestiunea ≠ mandat: la mandat există <b>acordul geratului</b>. Gestiunea contrară voinței geratului → restituire <b>numai în limita îmbogățirii</b>. Îmbogățirea fără justă cauză e <b>subsidiară</b>; limita = <b>minimul</b> dintre îmbogățire și sărăcire. Obligație de rezultat → culpa prezumată; de mijloace → creditorul dovedește culpa. Plata nedatorată = fapt juridic (nu AJC — nu cere capacitate deplină). Accipiens de bună-credință care distruge titlul: exonerat.'
+    grila:'Gestiunea ≠ mandat: la mandat există <b>acordul geratului</b>. Gestiunea contrară voinței geratului → restituire <b>numai în limita îmbogățirii</b>. Îmbogățirea fără justă cauză e <b>subsidiară</b>; limita = <b>minimul</b> dintre îmbogățire și sărăcire. Obligație de rezultat → culpa prezumată; de mijloace → creditorul dovedește culpa. Plata nedatorată = fapt juridic (nu AJC — nu cere capacitate deplină); <b>eroarea NU mai e condiție</b> sub NCC (capcană!). Accipiens de bună-credință care s-a lipsit de titlu: exonerat complet; solvensul are regres contra adevăratului debitor. Cheltuielile geratului: necesare integral, utile în limita sporului (art. 1337).'
   },
 
   {
