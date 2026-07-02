@@ -682,43 +682,43 @@ var FISE_DATA = [
     sections:[
       { icon:'💰', title:'Împrumutul de consumație — mutuum (art. 2158–2170 NCC)',
         items:[
-          '<b>Definiție</b>: împrumutătorul transferă <b>proprietatea</b> unor bunuri consumptibile; împrumutatul restituie bunuri de același gen, calitate și cantitate (<i>tantundem eiusdem generis</i>).',
-          '<b>Caractere</b>: <b>real</b> (se perfectează prin remiterea bunului); <b>unilateral</b> (numai împrumutatul are obligații după remitere); gratuit (prezumție între persoane fizice); poate fi cu dobândă.',
-          'De la predare, proprietatea și <b>riscul</b> trec la împrumutat.',
-          'Dobânda: trebuie stipulată expres; în lipsa stipulației, prezumție de gratuitate la persoane fizice. Dobânda nu poate depăși dublul dobânzii legale (în contracte civile).',
-          '<b>Scadența</b>: termenul stipulat; dacă nu e termen → instanța îl poate stabili, ținând cont de nevoile împrumutatului.'
+          '<b>Definiție</b>: împrumutătorul transferă <b>proprietatea</b> unor bunuri consumptibile (bani, alimente, combustibil). Împrumutatul restituie bunuri de același gen, calitate și cantitate (<i>tantundem eiusdem generis</i>).',
+          '<b>Caractere</b>: <b>real</b> (se perfectează prin remiterea bunului); <b>unilateral</b> (numai împrumutatul are obligații după remitere); <b>gratuit</b> (prezumție la persoane fizice); poate fi cu dobândă (expres stipulată).',
+          'La predare, proprietatea și <b>riscul</b> trec la împrumutat. Dacă bunul piere fortuit → împrumutatul tot trebuie să restituie (e proprietar al riscului).',
+          '<b>Dobânda</b>: trebuie stipulată expres. La persoane fizice, dobânda convențională nu poate depăși <b>de 2 ori dobânda legală</b> (OUG 13/2011). Depășirea → reducerea la limita maximă, nu nulitate.',
+          '<b>Scadența</b>: termenul stipulat. Dacă nu e termen → instanța îl poate stabili ținând cont de nevoile împrumutatului și de posibilitățile împrumutătorului. Dacă s-a stabilit că împrumutatul plătește când va putea → instanța trebuie să determine un termen rezonabil.'
         ]
       },
       { icon:'🏡', title:'Împrumutul de folosință — comodat (art. 2146–2157 NCC)',
         items:[
-          '<b>Definiție</b>: comodantul remite gratuit un bun <b>neconsumptibil</b> spre folosință; comodatarul restituie același bun.',
-          '<b>Caractere</b>: <b>real</b> (perfectat prin remitere); unilateral; <b>esențialmente gratuit</b> (dacă e cu plată → devine locațiune).',
-          'Proprietatea rămâne la comodant; riscul rămâne la comodant (excepție: dacă comodatarul a întrebuințat bunul altfel decât destinației sau l-a împrumutat altei persoane).',
-          '<b>Obligațiile comodatarului</b>: folosință conform destinației; reparații locative; suportarea cheltuielilor de conservare; restituirea la termen.',
-          'Comodantul poate cere restituirea anticipată pentru <b>nevoie urgentă și neprevăzută</b>; dacă termenul e stipulat, nu poate cere înainte de termen decât pentru nevoie urgentă.'
+          '<b>Definiție</b>: comodantul remite gratuit un bun <b>neconsumptibil</b> spre folosință; comodatarul restituie <b>același bun</b>. ≠ Mutuum (proprietatea nu se transferă).',
+          '<b>Caractere</b>: <b>real</b> (perfectat prin remiterea bunului); unilateral; <b>esențialmente gratuit</b> (dacă e cu plată → devine locațiune și pierde regimul comodatului).',
+          'Proprietatea și riscul rămân la comodant. Excepție: comodatarul răspunde pentru pieire dacă a folosit bunul altfel decât destinației sau l-a împrumutat altei persoane (fără acordul comodantului).',
+          '<b>Obligațiile comodatarului</b>: folosință conform destinației; reparații locative; cheltuielile de conservare curente; restituirea la termen sau la cererea comodantului (dacă nu e termen). ⚠️ Nu poate subînchiria bunul sau îl împrumuta altei persoane fără acordul comodantului.',
+          'Comodantul poate cere restituirea anticipată numai pentru <b>nevoie urgentă și neprevăzută</b> (dacă termenul e stipulat). Fără termen → poate cere oricând, cu preaviz rezonabil.'
         ]
       },
       { icon:'🛡️', title:'Fidejusiunea — cauțiunea (art. 2280–2320 NCC)',
         items:[
-          '<b>Definiție</b>: fidejusorul se obligă față de creditor să execute obligația debitorului dacă acesta nu o face.',
-          '<b>Caractere</b>: accesorie (urmează soarta obligației principale — dacă aceasta e nulă, fidejusiunea cade); consensuală; poate fi gratuită sau oneroasă.',
-          '<b>Beneficiul de discuțiune</b> (art. 2294): fidejusorul poate cere creditorului să urmărească mai întâi <b>bunurile debitorului principal</b>; trebuie invocat la momentul urmăririi, cu indicarea bunurilor.',
-          '<b>Beneficiul de diviziune</b> (art. 2296): dacă sunt mai mulți fidejusori, fiecare poate cere să fie urmărit <b>numai pentru partea sa</b>.',
-          'Fidejusorul care plătește se <b>subrogă</b> în drepturile creditorului față de debitorul principal.',
-          '<b>Fidejusiunea solidară</b>: fidejusorul renunță la beneficiile de discuțiune și diviziune; urmărit ca un codebitor solidar.'
+          '<b>Definiție</b>: fidejusorul se obligă față de creditor să execute obligația debitorului dacă acesta nu o execută. <b>Legală</b>: impusă de lege (ex: obligația moștenitorului de a da garanție creditorului); <b>judiciară</b>: ordonată de instanță; <b>convențională</b>: voluntară.',
+          '<b>Caractere</b>: <b>accesorie</b> (urmează soarta obligației principale — dacă aceasta e nulă → fidejusiunea cade); <b>indivizibilă</b> față de creditor; consensuală; poate fi gratuită sau oneroasă.',
+          '<b>Beneficiul de discuțiune</b> (art. 2294 NCC): fidejusorul poate cere creditorului să urmărească mai întâi bunurile debitorului principal. ⚠️ Trebuie invocat la primul termen de judecată cu indicarea bunurilor urmăribile.',
+          '<b>Beneficiul de diviziune</b> (art. 2296 NCC): dacă sunt mai mulți fidejusori, fiecare poate cere să fie urmărit numai pentru <b>partea sa</b>. Invocat la primul termen cu indicarea cofidejusorilor solvabili.',
+          'Fidejusorul care plătește se <b>subrogă</b> în drepturile creditorului față de debitorul principal (art. 2305 NCC). Are și acțiune personală de regres față de debitor.',
+          '<b>Stingerea fidejusiunii</b>: stingerea obligației principale → stingerea automată a fidejusiunii (accesorie). Dacă creditorul acordă debitorului termen suplimentar fără acordul fidejusorului → fidejusorul se liberează de prelungire. <b>Fidejusiunea solidară</b>: renunțare la discuțiune și diviziune; urmărit ca codebitor solidar.'
         ]
       },
       { icon:'🤝', title:'Tranzacția (art. 2267–2278 NCC)',
         items:[
-          '<b>Definiție</b>: contract prin care părțile sting un litigiu existent sau previn un litigiu viitor, prin concesii reciproce.',
-          '<b>Caractere</b>: sinalagmatic; cu titlu oneros; efecte <b>declarative</b> (nu constitutive/translative) — similar partajului.',
-          'Tranzacția are putere de lucru judecat relativ (inter partes); nu poate fi atacată prin intermediul altei tranzacții.',
-          'Dacă obiectul tranzacției era un drept inexistent sau dacă actul a cărui existență se disputase e ulterior declarat fals → tranzacția e nulă.',
-          'Tranzacția poate fi executată silit ca un titlu executoriu dacă e autentificată sau învestită cu formulă executorie.'
+          '<b>Definiție</b>: contract prin care părțile sting un litigiu existent sau previn un litigiu viitor, prin <b>concesii reciproce</b>. ⚠️ Dacă o parte renunță complet (fără concesii din partea celeilalte) → nu e tranzacție, ci remitere de datorie sau recunoaștere a dreptului.',
+          '<b>Caractere</b>: sinalagmatic; cu titlu oneros; efecte <b>declarative</b> (recunoaște drepturi existente, nu creează altele noi) — similar partajului.',
+          'Tranzacția are putere de lucru judecat relativ (inter partes). Nu poate fi atacată decât pe motive de nulitate (viciu de consimțământ, lipsă de obiect etc.) sau prin acțiune în constatarea obiectului inexistent.',
+          '<b>Cazuri de nulitate</b>: tranzacție asupra unui drept inexistent; actul de a cărui existență depinde a fost ulterior anulat sau declarat fals; tranzacție bazată pe documente false.',
+          '<b>Tranzacția judiciară</b>: consemnată în procesul-verbal de ședință → titlu executoriu fără altă procedură. Tranzacția extrajudiciară: necesită autentificare sau învestire cu formulă executorie pentru executare silită.'
         ]
       }
     ],
-    grila:'Mutuum = contract <b>real</b> + transferă <b>proprietatea</b>; riscul trece la împrumutat. Comodat = real + <b>esențialmente gratuit</b> (dacă e cu plată = locațiune) + proprietatea rămâne la comodant. Fidejusiune: beneficiul de discuțiune ≠ beneficiul de diviziune. Fidejusorul care plătește se <b>subrogă</b> creditorului. Tranzacție = efecte <b>declarative</b> (≠ constitutive).'
+    grila:'Mutuum = <b>real</b> + transferă <b>proprietatea și riscul</b> la împrumutat; dobânda max 2× dobânda legală la PF. Comodat = real + gratuit + proprietatea rămâne; comodatarul nu poate subînchiria. Fidejusionar solidar: renunță la discuțiune și diviziune. Fidejusor subrogat: drepturile creditorului + acțiunea proprie. Tranzacție = efecte <b>declarative</b>; concesii <b>reciproce</b> (altfel = remitere de datorie).'
   },
 
   {
