@@ -725,41 +725,45 @@ var FISE_DATA = [
     id:'w15', wk:'W15', dates:'5–11 oct', subj:'civ',
     title:'Moștenirea legală',
     sections:[
-      { icon:'📌', title:'Principii generale (art. 953–965 NCC)',
+      { icon:'📌', title:'Principii generale: deschidere, opțiune, sezină (art. 953–965 NCC)',
         items:[
-          '<b>Deschiderea succesiunii</b>: la data <b>morții</b> defunctului (inclusiv moartea declarată judecătorește — la data stabilită prin hotărâre).',
-          '<b>Condiții pentru a moșteni</b>: să existe la data deschiderii (capacitate succesorală); să nu fie nedemn; să aibă vocație succesorală (legală sau testamentară).',
-          '<b>Acceptarea</b>: expresă sau tacită; termenul de opțiune succesorală = <b>1 an</b> de la data cunoașterii deschiderii succesiunii.',
-          'Acceptarea forțată: moștenitorul care a sustras sau a ascuns bunuri succesorale nu mai poate renunța și e considerat acceptant pur și simplu.'
+          '<b>Deschiderea succesiunii</b>: la data <b>morții</b> defunctului. Moartea declarată judecătorește = la data stabilită de hotărâre (prezumată a 4-a zi de la ultimul zvon). <b>Comoriența</b> (art. 1097 NCC): dacă mai mulți moștenitori mor în aceeași împrejurare → nu se moștenesc reciproc; nu are vocație succesorală unii față de alții.',
+          '<b>Condiții pentru a moșteni</b>: (1) existența la data deschiderii (capacitate succesorală — <i>infans conceptus</i> include și concepuții dacă se nasc vii); (2) să nu fie nedemn; (3) să aibă vocație succesorală.',
+          '<b>Opțiunea succesorală</b> (art. 1100 NCC): termenul de <b>1 an</b> de la cunoașterea deschiderii și a vocației. Acceptare expresă (act autentic sau sub semnătură privată) sau tacită (orice act care presupune intenția de acceptare).',
+          '<b>Acceptarea forțată</b>: moștenitorul care a sustras/ascuns bunuri succesorale e considerat acceptant pur și simplu și răspunde ultra vires hereditatis.',
+          '<b>Renunțarea</b>: în termenul de 1 an, în formă autentică la notar. Renunțătorul = nu a existat niciodată; copiii săi pot moșteni numai în cont propriu (nu prin reprezentare). Renunțarea poate fi revocată înainte de expirare, dacă succesiunea nu a fost acceptată de alți moștenitori.',
+          '<b>Sezina</b>: moștenitorii sezinari (descendenți, ascendenți privilegiați, soțul supraviețuitor) intră de drept în posesia bunurilor la data deschiderii. Ceilalți moștenitori trebuie să ceară trimiterea în posesie de la instanță sau notar.',
+          '<b>Petiția de ereditate</b>: acțiunea moștenitorului real față de posesorul eredității. <b>Imprescriptibilă</b> extinctiv (drept real). Efecte: restituire bunuri + fructe (dacă pârâtul a fost de rea-credință).'
         ]
       },
       { icon:'⚖️', title:'Nedemnitatea succesorală (art. 958–961 NCC)',
         items:[
-          '<b>De drept</b> (operează automat, fără judecată): condamnat definitiv penal pentru omor sau tentativă de omor asupra defunctului; condamnat pentru fals/distrugere/alterare de testament.',
-          '<b>Judiciară</b> (trebuie pronunțată de instanță, la cererea celor interesați): acțiuni grave față de defunct (injurii grave, calomnie în justiție, tortură etc.).',
-          'Nedemnul e exclus de la moștenire; copiii nedemnului <b>vin prin reprezentare</b> (iau partea nedemnului).',
-          'Nedemnitatea poate fi <b>înlăturată</b> de defunct prin testament sau declarație autentică (iertare expresă).'
+          '<b>De drept</b> (automat, fără judecată, art. 958 NCC): condamnat definitiv penal pentru <b>omor sau tentativă de omor</b> asupra defunctului, ascendenților/descendenților defunctului, soțului defunctului; condamnat pentru <b>fals, distrugere, alterare de testament</b>.',
+          '<b>Judiciară</b> (pronunțată de instanță la cererea celor interesați, art. 959 NCC): acțiuni grave — <b>injurii grave</b>; <b>denunț calomnios</b> sau mărturie mincinoasă; acțiuni de natură să împiedice testamentul; tortură sau cruzimi față de defunct.',
+          'Nedemnul e exclus de la moștenire; copiii nedemnului pot <b>veni prin reprezentare</b> (iau ce ar fi luat nedemnul). ⚠️ Copiii vin prin reprezentare, nu prin propria vocație.',
+          'Nedemnitatea poate fi <b>înlăturată</b> de defunct prin testament sau declarație autentică (iertare expresă). Iertarea nu se prezumă.',
+          'Efectele față de terți: actele de administrare ale nedemnului rămân valabile față de <b>terții de bună-credință</b>. Actele de dispoziție → în principiu anulabile față de terții de rea-credință.'
         ]
       },
-      { icon:'🏛️', title:'Clasele de moștenitori legali (art. 964–983 NCC)',
+      { icon:'🏛️', title:'Clasele de moștenitori legali și cotele (art. 964–983 NCC)',
         items:[
-          '<b>Clasa I — Descendenți</b>: copii, nepoți, strănepoți (la infinit, în linie dreaptă); exclud complet celelalte clase.',
-          '<b>Clasa II — Ascendenți privilegiați + colaterali privilegiați</b>: părinții (ambii/unul) + frați/surori/nepoți din frați. Dacă vin împreună: părinții = 1/4 fiecare; restul la colaterali privilegiați.',
-          '<b>Clasa III — Ascendenți ordinari</b>: bunici, străbunici (în linie ascendentă).',
-          '<b>Clasa IV — Colaterali ordinari</b>: unchi, mătuși, veri primari, frați ai bunicilor (max gradul IV).',
-          'Regula dublă: clasa superioară <b>exclude</b> clasele inferioare; în aceeași clasă, gradul mai <b>aproape exclude</b> gradul mai îndepărtat.'
+          '<b>Clasa I — Descendenți</b>: copii, nepoți, strănepoți (la infinit); exclud complet celelalte clase. Moștenesc în cote egale pe cap dacă sunt în același grad; prin reprezentare (pe tulpini) dacă sunt grade diferite.',
+          '<b>Clasa II — Ascendenți privilegiați + colaterali privilegiați</b>: părinți (cls II A) + frați/surori/nepoți din frați (cls II B). Dacă vin ambii părinți + colaterali privilegiați: părinți = 1/4 fiecare; restul la cls II B. Dacă vine un singur părinte = 1/4; dacă nu vin colaterali privilegiați, ascendentul ia totul.',
+          '<b>Clasa III — Ascendenți ordinari</b>: bunici, străbunici (linie ascendentă). Împart pe linie (paternă/maternă) și grad.',
+          '<b>Clasa IV — Colaterali ordinari</b>: unchi, mătuși, veri primari, frați ai bunicilor — max <b>gradul IV</b>. Statul = moștenitor al ultimului resort (dacă nu există niciun moștenitor).',
+          'Regula dublă: clasa superioară <b>exclude</b> clasele inferioare. În aceeași clasă, gradul mai aproape <b>exclude</b> gradul mai îndepărtat (cu excepția reprezentării).'
         ]
       },
       { icon:'🔁', title:'Reprezentarea succesorală și soțul supraviețuitor',
         items:[
-          '<b>Reprezentarea succesorală</b>: moștenitorul predecedat sau nedemn e înlocuit de descendenții săi (reprezentanți); aceștia culeg prin împărțire <b>pe tulpini</b> (nu pe capete).',
-          'Reprezentarea: numai la descendenți (cls I) și la colateralii privilegiați (frații cls II); nu funcționează pentru ascendenți.',
-          '<b>Soțul supraviețuitor</b>: nu face parte din nicio clasă; vine în concurs cu oricare clasă. Cote: cu cls I = <b>1/4</b>; cu cls II complet = <b>1/3</b>; cu cls II numai ascendenți = <b>3/8</b>; cu cls III = <b>1/2</b>; cu cls IV = <b>3/4</b>; singur = tot.',
-          '<b>Drept de abitație</b> al soțului supraviețuitor: <b>1 an</b> de la data decesului, în locuința familiei (dacă nu e coproprietar al locuinței sau moștenitor unic).'
+          '<b>Reprezentarea succesorală</b> (art. 965 NCC): descendentul predecedat sau nedemn e înlocuit de propriii descendenți; reprezentanții culeg prin împărțire <b>pe tulpini</b> (nu pe capete). Admisă: la descendenți (cls I) și la colaterali privilegiați (frații cls II). Inadmisă: la ascendenți.',
+          '<b>Soțul supraviețuitor</b>: vine în concurs cu oricare clasă (nu face parte dintr-o clasă). Cote: cls I = <b>1/4</b>; cls II complet (ascendenți + colaterali) = <b>1/3</b>; cls II numai ascendenți = <b>3/8</b>; cls III = <b>1/2</b>; cls IV = <b>3/4</b>; singur = <b>tot</b>.',
+          '<b>Drepturile speciale ale soțului</b> (art. 971–975 NCC): drept de abitație timp de <b>1 an</b> în locuința familiei (dacă nu e coproprietar sau moștenitor unic); drept preferențial la mobilierul și obiectele de uz casnic (în afara cotei din moștenire).',
+          '<b>Venire în concurs</b>: soțul supraviețuitor poate fi exheredat (dezmoștenit) total sau parțial; rezerva sa protejată = 1/4 din ceea ce ar fi moștenit ca moștenitor legal.'
         ]
       }
     ],
-    grila:'Termenul de opțiune succesorală: <b>1 an</b> de la cunoașterea deschiderii. Nedemnitate de drept ≠ judiciară: cea de drept operează automat; cea judiciară necesită hotărâre. Cotele soțului supraviețuitor — de memorat exact: cls I=1/4; cls II complet=1/3; cls II ascendenți=3/8; cls III=1/2; cls IV=3/4. Reprezentarea: numai pe <b>tulpini</b>, nu pe capete. Clasa I exclude complet clasele inferioare.'
+    grila:'Termenul de opțiune succesorală: <b>1 an</b>. Comoriența: nu se moștenesc reciproc. Sezina: descendenți, ascendenți privilegiați, soț supraviețuitor. Nedemnitate de drept ≠ judiciară (aceasta necesită hotărâre). Copiii nedemnului: vin prin <b>reprezentare</b>. Cotele soțului: cls I=<b>1/4</b>; cls II complet=<b>1/3</b>; cls II numai ascendenți=<b>3/8</b>; cls III=<b>1/2</b>; cls IV=<b>3/4</b>. Statul = moștenitor de ultimul resort. Petiția de ereditate: imprescriptibilă.'
   },
 
   {
