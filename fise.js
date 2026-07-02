@@ -692,6 +692,175 @@ var FISE_DATA = [
   }
 ];
 
+// ── Atenție la grile — sfaturi extinse, legate de tiparul întrebărilor UNIBUC ──
+
+var FISE_TIPS={
+  w01:[
+    '<b>Capacitate de folosință</b> lipsă → <b>nulitate absolută</b>; <b>capacitate de exercițiu</b> nerespectată → <b>nulitate relativă</b> (anulabilitate). Distincția apare des la grile.',
+    'Minorul 14–18 ani este <b>asistat</b> (acționează personal + reprezentantul alături), <b>nu reprezentat</b>. Dacă grila spune „minorul a încheiat singur un contract de vânzare" → actul e anulabil (NR), nu nul absolut.',
+    'Sub 14 ani și interzisul judecătoresc sunt <b>reprezentați</b>. Excepție pentru ambii: acte de <b>mică valoare cu executare imediată</b> (cumpărat o pâine) — le pot face singuri.',
+    'Minorul care și-a ascuns incapacitatea prin dol (a mințit că e major) <b>nu poate invoca nulitatea relativă</b> — nimeni nu beneficiază de propria fraudă.',
+    '<b>Infans conceptus</b>: drepturile se socotesc dobândite de la concepție <b>dacă se naște viu</b>, chiar și o clipă. Dacă grila spune „copilul s-a născut mort" → nu a dobândit niciun drept.',
+    'Actul <b>declarativ</b> (partajul, recunoașterea unui drept) ≠ actul <b>translativ</b> (vânzarea) ≠ actul <b>constitutiv</b> (uzufructul). Efectele declarative sunt retroactive (<i>ex tunc</i>).',
+    'Actul juridic unilateral (testamentul, oferta, acceptarea moștenirii) se formează prin <b>voința unei singure persoane</b>. Nu confunda cu contractul bilateral.',
+    'Capacitatea de exercițiu a minorului căsătorit: dobândește capacitate <b>deplină</b> de la data căsătoriei, chiar dacă nu a împlinit 18 ani.'
+  ],
+  w02:[
+    '<b>Violența de terț → NR întotdeauna</b>, indiferent dacă cealaltă parte a știut sau nu. <b>Dolul de terț → NR numai dacă</b> cealaltă parte a știut sau trebuia să știe. Această distincție apare frecvent.',
+    'Eroarea trebuie să fie <b>scuzabilă</b>: dacă cel care invocă eroarea nu a manifestat diligența unui om rezonabil, instanța respinge acțiunea. Ex: cumpărătorul care nu a verificat actele bunului.',
+    'Dolul prin <b>reticență</b>: tăcerea deliberată atunci când există obligație de informare. Ex: vânzătorul care nu spune că bunul are vicii cunoscute de el.',
+    'Dolul nu trebuie să fie cauza <b>esențială</b> a contractului (spre deosebire de eroare). Chiar o eroare neeseențială indusă prin dol → anulabilitate.',
+    '<b>Leziunea la majori</b>: disproporție <b>mai mare de jumătate</b> + prescripție <b>1 an de la data actului</b> (nu de la descoperire). Dacă grila spune „2 ani de la contract" → acțiunea e prescrisă.',
+    'Starea de necesitate <b>exploatată</b> de cealaltă parte = asimilată violenței (art. 1218 NCC). Dacă grila spune că o parte a profitat de dificultatea extremă a celeilalte → viciu de consimțământ.',
+    'Temerea reverenționară <b>singură</b> (față de părinți, tutore) nu e viciu de consimțământ. Devine viciu numai dacă e însoțită de amenințări.',
+    'Viciile de consimțământ → <b>NR</b> (anulabilitate), nu NCA; pot fi <b>acoperite prin confirmare</b> expresă sau tacită după ce viciul a încetat.',
+    'Sancțiunea pentru leziune: instanța poate <b>fie anula actul, fie reduce/mări prestațiile</b> pentru echilibru; pârâtul poate oferi el însuși echilibrarea pentru a evita anularea.'
+  ],
+  w03:[
+    'Forma <b>ad validitatem</b>: nerespectare → <b>NCA</b>. Forma <b>ad probationem</b>: actul e <b>valabil</b>, dar nu poate fi dovedit prin martori. Forma <b>pentru opozabilitate</b>: actul e valabil între părți, dar <b>inopozabil terților</b>.',
+    '<b>Cauza falsă</b> (eroare asupra motivului determinant) → <b>NR</b>. <b>Cauza ilicită</b> → <b>NCA</b>. Dacă grila zice „cauza a fost o eroare" → NR; dacă „cauza contravine ordinii publice" → NCA.',
+    '<b>Pactul asupra unei moșteniri nedeschise</b> a altei persoane = <b>NCA</b> (art. 956 NCC). Se poate ceda propria moștenire după decesul celui de cujus.',
+    'Imposibilitate <b>inițială și absolută</b> → nulitate. Imposibilitate <b>ulterioară fortuită</b> → stingerea obligației (nu nulitate; contractul a fost valabil la momentul încheierii).',
+    '<b>NCA</b>: imprescriptibilă, invocată de oricine (inclusiv instanța din oficiu), nu se acoperă prin confirmare. <b>NR</b>: 3 ani, numai persoana protejată, se acoperă prin confirmare.',
+    '<b>Nulitate parțială</b>: clauza nulă e înlăturată, restul actului rămâne. Dacă grila întreabă dacă actul e nul în totalitate: numai dacă clauza nulă a fost determinantă pentru încheierea actului.',
+    'Prezumție de existență și valabilitate a cauzei: sarcina probei revine <b>celui care contestă</b> cauza, nu celui care invocă actul.',
+    'Actul solemn defectuos formal poate valora ca <b>promisiune de contract</b> dacă exprimă acordul de voință al părților (art. 1242 alin. 3 NCC).'
+  ],
+  w04:[
+    'Condiția <b>pur potestativă din partea debitorului</b> (<i>„dacă vreau eu"</i>) → <b>NCA</b> (lipsa oricărei obligații reale). Condiția potestativă simplă, cazuală sau mixtă → <b>valabile</b>. Condiția pur potestativă din partea <b>creditorului</b> → valabilă.',
+    '<b>Suspendarea</b> prescripției: termenul se <b>oprește</b> pe durata cauzei, apoi <b>continuă</b> de unde a rămas. <b>Întreruperea</b>: tot termenul scurs se <b>șterge</b> și reia de la zero.',
+    'Termen general: <b>3 ani</b>. Drepturi reale: <b>10 ani</b>. Leziune: <b>1 an de la data actului</b>. Vicii ascunse: <b>6 luni</b> de la descoperire (aparente) sau <b>3 ani</b> în caz de garanție.',
+    'Prescripția <b>nu operează de drept</b>: judecătorul nu o poate invoca din oficiu dacă pârâtul nu o ridică.',
+    '<b>Conversiunea</b> actului nul: testamentul autentic nul din vici de formă poate valora ca testament olograf, dacă e scris integral olograf, datat și semnat.',
+    '<b>Nemo auditur propiam turpitudinem</b>: la cauza imorală, niciuna dintre părți nu poate cere restituirea prestațiilor. Dacă grila întreabă dacă restituirea e posibilă → nu.',
+    'Debitorul care plătește <b>înainte de termen</b> nu poate cere restituirea (termenul e prezumat în favoarea sa; el poate renunța la beneficiul termenului).',
+    '<b>Sarcina</b> în acte gratuite: neexecutarea după punere în întârziere → revocarea liberalității (nu nulitatea actului).'
+  ],
+  w05:[
+    '<b>Efectul declarativ al partajului</b>: fiecare coproprietar e considerat că a deținut lotul de la <b>momentul nașterii coproprietății</b>, nu de la partaj. Nu există transfer de drepturi între coproprietari.',
+    'Regula <b>unanimității</b>: numai pentru <b>actele de dispoziție</b> (înstrăinare, grevare). Acte de <b>administrare</b>: majoritate de cote. Acte de <b>conservare</b>: oricine singur.',
+    'Un coproprietar poate înstrăina liber <b>cota sa ideală</b>, nu bunul în întregime fără acordul celorlalți.',
+    'Coproprietatea <b>forțată</b> (scări, acoperișuri, fundații, hotar comun): <b>nu se poate cere partajul</b> judiciar.',
+    '<b>Clauza de inalienabilitate</b>: max <b>49 ani</b> + motiv licit și serios + publicitate pentru opozabilitate față de terți. Fără publicitate → inopozabilă terților de bună-credință.',
+    '<b>Devălmășia</b> (bunuri comune ale soților): cotele nu sunt determinate → nu se poate urmări o cotă de creditorii unui soț. Diferit de coproprietatea pe cote-părți.',
+    '<b>Abuzul de drept</b>: exercitare cu scopul exclusiv de a prejudicia, fără interes legitim propriu → răspundere delictuală, nu nulitate.',
+    'Proprietatea rezolubilă: la realizarea condiției rezolutorii, dreptul revine transmițătorului <b>retroactiv</b> (<i>resoluto iure dantis...</i>). Terții de bună-credință cu publicitate CF sunt protejați.'
+  ],
+  w06:[
+    'Uzufructuarul are drept la <b>fructe</b> (produse periodic, fără a altera substanța). <b>Productele</b> (minereuri, material lemnos) revin <b>nudului proprietar</b>. Distincție frecventă la grile.',
+    'Uzufructul este <b>personal</b>: se stinge la moartea uzufructuarului și <b>nu se transmite prin moștenire</b>. Poate fi cedat (dacă nu e interzis), dar nu poate fi legat.',
+    '<b>Abitația</b>: <b>inalienabilă și insesizabilă</b>. Nu poate fi cedată, nu poate fi ipotecată, nu poate fi urmărită de creditorii titularului. Dacă grila spune că titularul a cedat abitația → nul.',
+    'Servituțile <b>discontinue</b> (dreptul de trecere) <b>nu pot fi dobândite prin uzucapiune</b>. Numai servituțile <b>continue și aparente</b> pot fi uzucapate sau dobândite prin destinație de proprietar.',
+    'Uzufructuarul suportă <b>reparațiile de întreținere</b> (curente, periodice). Nudul proprietar suportă <b>reparațiile capitale</b> (care afectează substanța bunului). Confuzia dintre ele apare frecvent.',
+    'Servitutea urmărește <b>fondurile</b> (nu persoanele): dacă se vinde fondul dominant, cumpărătorul dobândește automat și servitutea; dacă se vinde fondul aservit, cumpărătorul preia sarcina.',
+    '<b>Superficia</b>: max <b>99 ani</b>. Superficiarul este <b>proprietar al construcției</b> (nu chiriaș) și are drept de folosință asupra terenului. Nu confunda cu locațiunea sau servitutea.',
+    'Stingerea uzufructului prin <b>neuz 10 ani</b>: aplică numai dacă uzufructuarul nu a exercitat nicio prerogativă în această perioadă.'
+  ],
+  w07:[
+    '<b>Detenția precară</b> (chiriaș, depozitar, comodatar): are <i>corpus</i> dar nu are <i>animus domini</i> → <b>nu poate uzucapa</b>. Dacă grila spune că un chiriaș a uzucapat → greșit.',
+    'Uzucapiune <b>extratabulară</b>: <b>10 ani</b> posesie utilă, bunul neînscris în CF sau proprietarul înscris a decedat/renunțat. Uzucapiune <b>tabulară</b>: <b>5 ani</b> de la înscrierea cu bună-credință în CF.',
+    'Posesorul de <b>bună-credință</b> dobândește <b>fructele</b> (nu productele). Posesorul de <b>rea-credință</b> trebuie să restituie toate fructele + contravaloarea celor consumate cu vinovăție.',
+    'Revendicare <b>mobiliară</b> față de un dobânditor de bună-credință cu <b>titlu oneros</b>: proprietarul <b>pierde acțiunea</b>. Excepție: bun <b>furat sau pierdut</b> → proprietarul poate revendica în <b>3 ani</b> de la furt/pierdere.',
+    'Viciile posesiei sunt <b>relative</b> (numai cel afectat le poate invoca) și <b>temporare</b> (odată încetat viciul, posesia devine utilă). Nu sunt absolute sau permanente.',
+    '<b>Ipoteca</b>: fără deposedare, publicitate prin CF sau AEGRM, rang după data înscrierii. <b>Gajul</b>: necesită deposedarea debitorului (predarea bunului). Nu confunda în grile.',
+    'Paza <b>juridică</b> ≠ paza <b>materială</b>: cel care cedează controlul independent al lucrului pierde paza juridică și nu mai răspunde pentru prejudicii cauzate de lucru.',
+    'Acțiunile posesorii (reintegranda, complânda): termen <b>1 an</b> de la tulburare; se pot exercita fără a proba dreptul de proprietate — numai faptul posesiei.'
+  ],
+  w08:[
+    'Gestiunea contrară voinței <b>cunoscute sau prezumate</b> a geratului: gerantul poate cere <b>numai restituirea îmbogățirii</b> geratului, nu cheltuielile utile + necesare în totalitate.',
+    'Îmbogățire fără justă cauză = acțiune <b>subsidiară</b>. Dacă există altă acțiune (contractuală, delictuală, plata nedatorată) → acțiunea de <i>in rem verso</i> e inadmisibilă.',
+    'Limita restituirii la îmbogățire: <b>minimul</b> dintre valoarea îmbogățirii și valoarea sărăcirii, apreciate la data sesizării instanței.',
+    'Gestiunea de afaceri ≠ mandat: la mandat există <b>acordul mandantului</b>; la gestiune, geratul este absent/în imposibilitate și nu știe.',
+    'Plata nedatorată — accipiens de <b>rea-credință</b>: restituie integral + <b>dobânzi de la data plății</b>. Accipiens de <b>bună-credință</b>: restituie numai în <b>limita îmbogățirii existente</b> la data cererii.',
+    'Accipiens de bună-credință care a <b>distrus titlul sau a lăsat să se prescrie</b> dreptul față de adevăratul debitor: <b>exonerat</b> de restituire în limita prejudiciului cauzat solvensului.',
+    'Utilitatea gestiunii se apreciază <b>la momentul actului</b>, nu după rezultat. Dacă la start actul era util dar a eșuat din cauze externe → geratul tot datorează cheltuielile.',
+    'Obligația de informare precontractuală (art. 1184–1185 NCC): încălcarea ei poate constitui <b>dol prin reticență</b> → anulabilitatea contractului + daune-interese.'
+  ],
+  w09:[
+    'Răspunderea <b>comitenților pentru prepuși</b>: prezumție <b>absolută (irefragabilă)</b> — nu poate fi răsturnată prin nicio probă. Comitentul nu se poate exonera dovedind că a selectat bine prepusul.',
+    'Răspunderea <b>părinților pentru minori</b>: prezumție <b>relativă</b> — părinții pot proba că nu puteau împiedica fapta (supraveghere corectă, minor cu comportament neașteptat).',
+    'La răspunderea obiectivă (art. 1376 lucruri, art. 1375 animale, art. 1378 ruina edificiului): <b>cazul fortuit nu exonerează</b> — numai <b>forța majoră</b> (externă, imprevizibilă, insurmontabilă).',
+    'Paza <b>juridică</b>: cel care are controlul independent al lucrului. Dacă proprietarul a predat lucrul, pierde paza juridică. Dacă grila spune că proprietarul a dat mașina unui șofer → șoferul are paza juridică.',
+    'Comitentul care a plătit despăgubiri are <b>acțiune în regres</b> față de prepus, dacă acesta a acționat cu vinovăție în exercitarea funcțiilor. Dacă prepusul nu a acționat în cadrul funcțiilor → comitentul nu răspunde.',
+    'Vinovăția la fapta proprie: apreciată <b>in abstracto</b> (comparație cu un om diligent mediu), nu in concreto (față de capacitățile personale ale autorului).',
+    '<b>Consimțământul victimei</b> la risc: nu exonerează niciodată pentru <b>vătămări corporale grave sau moarte</b>; poate exonera pentru prejudicii patrimoniale dacă consimțământul e informat.',
+    'Prejudiciul moral: <b>compensabil în bani</b>; nu trebuie cuantificat prin înscrisuri exacte — judecătorul apreciază echitabil.',
+    'Fapta terțului exonerează numai dacă este <b>cauza exclusivă și suficientă</b> a prejudiciului. Dacă autorul a contribuit și el → răspundere proporțională.'
+  ],
+  w10:[
+    'Principiul integrității plății: creditorul <b>nu poate fi forțat să accepte plăți parțiale</b>, nici dacă datoria e divisibilă și nici dacă restul e cert. Excepție: convenție sau dispoziție legală expresă.',
+    'Plata unui <b>terț neautorizat</b>: invalidă față de creditor (care poate cere din nou), DAR creditorul nu poate refuza o plată făcută de un terț care justifică un interes legitim.',
+    'Imputația plăților (mai multe datorii față de același creditor): <b>întâi cheltuieli → dobânzi → capital</b>. Dacă mai multe datorii egale: <b>cea mai veche</b>.',
+    'Solidaritate pasivă: <b>nu se prezumă</b> — trebuie să rezulte expres din lege sau convenție. Dacă grila spune „doi codebitori" fără a preciza solidaritate → datoria e conjunctă (fiecare datorează partea sa).',
+    'Acțiunea <b>oblică</b>: efectele revin patrimoniului debitorului (alți creditori concurează). <b>Nu</b> aduce direct bani creditorului care a exercitat-o.',
+    'Acțiunea <b>pauliană</b>: terțul de bună-credință cu titlu <b>oneros</b> = protejat, actul nu se revocă față de el. Terțul gratificat = <b>nu e protejat</b>, chiar dacă e de bună-credință.',
+    'Debitorul solidar poate opune excepțiile <b>comune</b> (nulitate, compensație față de creditor) și <b>propriile</b> excepții personale. <b>Nu</b> poate invoca excepțiile personale ale altui codebitor solidar.',
+    'Oferta reală de plată + consemnațiune (art. 1510–1515 NCC): dacă creditorul refuză nejustificat, debitorul depune suma la o instituție de credit și e liberat din ziua consemnațiunii.'
+  ],
+  w11:[
+    'Cesiunea de creanță: <b>nu necesită acordul debitorului cedat</b>, CI notificarea sau acceptarea sa. Fără notificare, debitorul se poate libera plătind cedentului.',
+    'Cesionarul dobândește creanța <b>în starea în care se găsea la cedent</b>: cu toate garanțiile și cu toate excepțiile pe care debitorul le putea opune cedentului.',
+    'Compensația: ambele datorii trebuie să fie <b>certe + lichide + exigibile</b> simultan. Dacă una e condiționată → nu operează compensația legală.',
+    'Simulație: între părți prevalează <b>actul secret</b> (dacă e valid). Față de terții de bună-credință prevalează <b>actul public</b>. Terții pot alege să invoce actul care le e mai favorabil.',
+    'Acțiunea în simulație față de terți: <b>imprescriptibilă</b>. Între părți: 3 ani de la data când au cunoscut actul secret.',
+    '<b>Confuziunea</b>: creditorul devine și debitor față de sine → obligația se stinge automat. Efectul se extinde la garanțiile accesorii (fidejusiunea se stinge).',
+    'Remiterea de datorie: <b>tacită</b> — restituirea voluntară a titlului de creanță original → prezumție de remitere. Dacă creditorul restituie înscrisul, nu mai poate cere datoria.',
+    '<b>Darea în plată</b>: creditorul acceptă o altă prestație; riscul de evicțiune cade în sarcina debitorului (ca la vânzare — dacă prestatia e un bun evins, datoria renaște).'
+  ],
+  w12:[
+    'Transferul proprietății la vânzare: la perfectarea contractului pentru bunuri <b>individual determinate</b> (nu la predare, nu la plata prețului). Dacă grila spune că predarea n-a avut loc → proprietatea a trecut oricum.',
+    'Riscul pieirii fortuite: urmărește proprietatea. Dacă bunul piere după transfer dar <b>înainte de predare</b> → riscul e <b>al cumpărătorului</b> (el e proprietar).',
+    'Cheltuielile vânzării (taxa notarială, autentificare): în lipsa convenției, <b>în sarcina cumpărătorului</b>. Dacă grila întreabă cine plătește taxele → cumpărătorul, dacă nu s-a stipulat altfel.',
+    'Vânzătorul <b>de bună-credință</b> (nu a cunoscut viciile ascunse): restituire preț sau înlocuire; <b>nu datorează daune</b> (decât dacă s-a angajat expres la garanție). Vânzătorul <b>RF</b>: daune-interese suplimentare.',
+    'Evicțiune totală → <b>rezoluțiunea</b> vânzării + restituire preț + daune. Evicțiune parțială → <b>reducerea prețului</b> + daune. Nu confunda efectele.',
+    'Donație: formă autentică <b>ad validitatem</b>. Excepție: <b>darul manual</b> = remiterea efectivă (tradițiunea) a unui bun mobil; simpla promisiune de dar manual nu obligă.',
+    'Principiul irevocabilității donațiilor: clauzele care dau donatorului posibilitatea revocării unilaterale sau condiția pur potestativă din partea donatorului → <b>nulitate absolută a donației</b>.',
+    'Donație <b>deghizată</b> sub forma vânzării cu preț fictiv: dacă prețul e fictiv → simulație; actul secret (donația) trebuie să respecte forma autentică pentru a fi valabil.'
+  ],
+  w13:[
+    'Locatarul: obligat la <b>reparații locative (de întreținere)</b> (văruit, mici reparații). Locatorul: obligat la <b>reparații capitale</b> (care afectează structura, instalații majore). Inversarea lor → răspuns greșit.',
+    'Mandat = acte <b>juridice</b>; antrepriză = acte <b>materiale</b>. Dacă grila spune că mandatarul a construit o casă → greșit, e antreprenor.',
+    'Mandat <b>gratuit</b> (prezumție între persoane fizice). La profesioniști (avocați, agenți imobiliari) → prezumție de onerozitate.',
+    'Mandantul poate revoca mandatul <b>oricând</b>, chiar dacă l-a declarat irevocabil. Excepție: mandat <b>în interesul exclusiv al mandatarului sau terțului</b> → revocarea abuzivă angajează răspunderea.',
+    '<b>Mandatul aparent</b>: mandatarul depășește puterile, dar terțul de BF care s-a bazat rezonabil pe aparența de putere e protejat; actul e opozabil mandantului.',
+    'Antreprenorul <b>nu e prepusul clientului</b>: clientul nu răspunde ca și comitent pentru faptele antreprenorului față de terți.',
+    '<b>Emptio non tollit locatum</b>: vânzarea bunului dat în locațiune nu pune capăt locațiunii; noul proprietar este ținut de contract (dacă era înregistrat sau dacă a cunoscut locațiunea).',
+    '<b>Comodatul</b> e esențialmente gratuit: dacă se stipulează o sumă de bani pentru folosință → recalificat ca locațiune, cu toate efectele acesteia.'
+  ],
+  w14:[
+    '<b>Mutuum</b>: contract <b>real</b> (perfectat prin remiterea bunului, nu prin simplul acord). Transferă <b>proprietatea</b> lucrurilor consumptibile; împrumutatul restituie <i>tantundem</i>. Riscul → împrumutat.',
+    '<b>Comodat</b>: contract <b>real</b> + <b>gratuit esențial</b>. Proprietatea rămâne la comodant. Riscul rămâne la comodant (excepție: comodatarul a folosit bunul altfel decât destinația sau l-a dat altcuiva).',
+    'Dacă comodantul cere o sumă pentru folosință → <b>recalificat ca locațiune</b>. Dacă suma e simbolică (jeton) → se discută.',
+    'Fidejusiunea: accesorietate strictă — dacă datoria principală este <b>nulă absolut, fidejusiunea cade</b>. Dacă datoria principală e anulabilă (NR), fidejusiunea rămâne până la anulare.',
+    '<b>Beneficiul de discuțiune</b>: fidejusorul poate cere creditorului să urmărească <b>mai întâi bunurile debitorului principal</b>; trebuie invocat și indicate bunurile la momentul urmăririi.',
+    '<b>Beneficiul de diviziune</b>: dacă mai mulți fidejusori, fiecare e ținut numai pentru <b>partea sa proporțională</b>. Dacă fidejusiunea e solidară → renunță la ambele beneficii.',
+    'Fidejusorul care plătește se <b>subrogă</b> în drepturile creditorului față de debitorul principal: dobândește creanța + garanțiile acesteia.',
+    'Tranzacția: efecte <b>declarative</b> (nu constitutive/translative). Are putere de <b>lucru judecat</b> relativ (inter partes). Nu poate fi atacată printr-o altă tranzacție.'
+  ],
+  w15:[
+    '<b>Clasa I exclude COMPLET clasele II, III, IV</b> — chiar dacă vine un singur descendent. Nu există împărțire între clase diferite (cu excepția soțului supraviețuitor).',
+    'Cotele <b>soțului supraviețuitor</b> — de memorat exact: <b>cls I = 1/4; cls II complet = 1/3; cls II numai ascendenți = 3/8; cls III = 1/2; cls IV = 3/4; singur = tot patrimoniul</b>.',
+    'Nedemnitate <b>de drept</b>: operează <b>automat</b>, fără hotărâre judecătorească (ex: condamnat penal definitiv pentru omor). Nedemnitate <b>judiciară</b>: trebuie <b>pronunțată de instanță</b>.',
+    'Copiii nedemnului <b>vin prin reprezentare</b> și culeg partea nedemnului. Ei nu sunt sancționați pentru fapta părintelui — dacă grila spune că și ei sunt excluși → greșit.',
+    'Reprezentarea succesorală: împărțire <b>pe tulpini</b> (nu pe capete). Ex: un predecedat lasă 3 copii → cei 3 împart împreună cota părintelui, nu primesc fiecare câte o cotă separată.',
+    'Reprezentarea: <b>numai la descendenți (cls I) și colaterali privilegiați (frați, cls II)</b>. Nu funcționează pentru ascendenți (cls III, IV).',
+    'Termenul de opțiune succesorală: <b>1 an</b> de la data la care moștenitorul a cunoscut deschiderea. Dacă grila pune termenul la 6 luni sau 3 ani → greșit.',
+    'Acceptarea <b>forțată</b>: moștenitorul care a sustras sau ascuns bunuri succesorale este socotit acceptant pur și simplu; nu mai poate renunța.',
+    'În clasa II: dacă vin <b>și părinți și frați</b> → părinții primesc câte <b>1/4</b> fiecare (max 1/2 total); restul revine colateralilor privilegiați.'
+  ],
+  w16:[
+    'Testament <b>olograf</b>: trebuie scris <b>în întregime de mână</b> + <b>datat complet</b> (zi, lună, an) + <b>semnat</b>. Lipsa oricăreia din aceste condiții → <b>nulitate absolută</b>. Dactilografiat → nul.',
+    '<b>Rezerva</b> de memorat: descendenți = <b>1/2</b> din moștenire; ascendenți privilegiați (părinți) = <b>1/2</b>; soț supraviețuitor = <b>1/4</b>.',
+    '<b>Reducțiunea legatelor</b>: în <b>ordine inversă creației</b> — cel mai <b>recent</b> legat se reduce primul; dacă mai e nevoie, se trece la cel anterior.',
+    'Raportul donațiilor: se face prin <b>echivalent</b> (valoarea donației se impută din cota succesorală), nu prin restituire în natură.',
+    '<b>Dispensa de raport</b> scutește de egalitate cu ceilalți moștenitori, dar <b>nu</b> scutește de reducțiune dacă donația depășește cotitatea disponibilă. Donatarul e scutit de raport dar poate fi obligat la reducțiune.',
+    'Revocarea <b>tacită</b> a testamentului: testamentul ulterior incompatibil; distrugerea <b>voluntară</b> a testamentului olograf; înstrăinarea bunului legat.',
+    'Incapacitate de a <b>primi</b> prin legat: medicii, farmaciștii, preoții care au îngrijit testatorul în <b>ultima boală</b> → prezumție de captație/sugestie (NR a legatului).',
+    'Calculul rezervei include <b>TOATE donațiile</b> (raportabile + neraportabile, indiferent de beneficiar), nu numai donațiile date moștenitorilor.',
+    'Testamentul <b>autentic</b> nul din vici de formă poate fi <b>convertit</b> în testament olograf, dacă testatorul l-a scris personal, l-a datat și semnat.'
+  ]
+};
+
 // ── Randare ──────────────────────────────────────────────────────────────────
 
 var FISE_CAT_LBL={civ:'⚖️ Drept Civil',pen:'🔒 Drept Penal',pciv:'📜 Procedură Civilă',ppen:'🛡️ Procedură Penală',lat:'🏛️ Latină juridică'};
@@ -708,8 +877,14 @@ function _buildCard(f){
     s.items.forEach(function(it){ html+='<li>'+it+'</li>'; });
     html+='</ul></div>';
   });
-  var gPts=f.grila.split(/\.\s+(?=[A-ZĂÎȘȚ<🎯⚖️])/);
-  var gHtml=gPts.map(function(p){return '<li>'+p.replace(/\.$/,'')+'.</li>';}).join('');
+  var tips=FISE_TIPS[f.id];
+  var gHtml;
+  if(tips&&tips.length){
+    gHtml=tips.map(function(p){return '<li>'+p+'</li>';}).join('');
+  } else {
+    var gPts=f.grila.split(/\.\s+(?=[A-ZĂÎȘȚ<])/);
+    gHtml=gPts.map(function(p){return '<li>'+p.replace(/\.$/,'')+'.</li>';}).join('');
+  }
   html+='<div class="fisa-grila"><span class="fisa-glbl">💡 La grilă — atenție</span><ul class="fisa-glist">'+gHtml+'</ul></div>';
   body.innerHTML=html;
   card.appendChild(head); card.appendChild(body);
