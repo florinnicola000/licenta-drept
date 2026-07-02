@@ -859,32 +859,34 @@ var FISE_DATA = [
     sections:[
       { icon:'🔢', title:'Fazele activității infracționale și tentativa (art. 32–34 NCP)',
         items:[
-          'Etapele: rezoluție infracțională (internă, nepedepsibilă) → acte pregătitoare → tentativă → consumare → epuizare.',
-          '<b>Actele pregătitoare</b>: de regulă <b>nepedepsibile</b>; pedepsibile numai când legea prevede expres și numai dacă sunt asimilate tentativei.',
-          '<b>Tentativa</b>: punerea în executare a intenției de a săvârși infracțiunea + neproducerea urmării, fie din cauze independente de voința autorului (tentativă proprie), fie prin desistare/împiedicare.',
-          '<b>Tentativa imposibilă</b>: mijloace absolut improprii sau obiect absolut inexistent → <b>nepedepsibilă</b> (art. 32 alin. 2 NCP).',
-          '<b>Desistarea</b> (autorul renunță de bună voie) și <b>împiedicarea rezultatului</b> (autorul împiedică producerea urmării): cauze de <b>nepedepsire</b>, nu de înlăturare a caracterului penal.',
-          'Tentativa se pedepsește numai dacă legea prevede expres; pedeapsa = <b>jumătate din minimul și maximul</b> special al infracțiunii consumate.'
+          'Etapele: rezoluție infracțională (nepedepsibilă) → acte pregătitoare → tentativă → consumare → epuizare (la infracțiunile continue/de obicei).',
+          '<b>Actele pregătitoare</b>: <b>nepedepsibile</b> ca regulă; pedepsibile numai când legea le asimilează tentativei (ex: art. 412 NCP — pregătiri pentru infracțiuni contra securității naționale).',
+          '<b>Tentativa proprie</b>: executarea a început, urmarea nu s-a produs din cauze independente de voința autorului. <b>Tentativa relativ improprie</b>: mijloace relativ improprii sau obiect relativ inexistent la momentul actului → <b>pedepsibilă</b>.',
+          '<b>Tentativa absolut improprie</b> (imposibilă): mijloace <b>absolut</b> improprii sau obiect <b>absolut</b> inexistent → <b>nepedepsibilă</b> (art. 32 alin. 2 NCP). Ex: tentativă de omor cu apă turnată în timp ce victima deja murise — obiect absolut inexistent.',
+          '<b>Desistarea</b> (renunțare voluntară înainte de consumare) și <b>împiedicarea rezultatului</b> (autorul înlătură urmarea deja declanșată): cauze de <b>nepedepsire</b>. ⚠️ Infracțiunea există dar autorul nu se pedepsește.',
+          'Tentativa se sancționează numai dacă legea prevede expres; pedeapsa = <b>jumătate din minimul și maximul</b> special. Tentativa nu e posibilă la: infracțiunile din culpă, infracțiunile de obicei, unele infracțiuni omisive.'
         ]
       },
       { icon:'👥', title:'Participația penală (art. 46–52 NCP)',
         items:[
-          '<b>Autorul</b> (art. 46): cel care săvârșește nemijlocit fapta. <b>Coautoratul</b>: mai mulți autori, fiecare săvârșind acte de executare.',
-          '<b>Instigatorul</b> (art. 47): cel care determină cu intenție o altă persoană să comită infracțiunea. Pedepsit <b>cu pedeapsa prevăzută de lege pentru autor</b>.',
-          '<b>Complicele</b> (art. 48): cel care ajută la pregătire sau executare (material sau moral). Pedeapsa poate fi redusă față de autor.',
-          '<b>Participația improprie</b> (art. 52): autorul acționează fără vinovăție (e constrâns, e în eroare, e iresponsabil) → numai instigatorul/complicele răspunde, în calitate de <b>autor mediat</b>.',
-          'La infracțiunile cu subiect activ special: calitatea specială trebuie să o aibă autorul; complicele/instigatorul pot fi persoane obișnuite.'
+          '<b>Autorul</b>: săvârșește nemijlocit elementul material. <b>Coautoratul</b>: fiecare coautor săvârșește acte de executare (nu doar ajutor). Coautoratul nu e posibil la infracțiunile cu subiect activ unic (ex: violul).',
+          '<b>Instigatorul</b> (art. 47): determină cu intenție altă persoană să comită infracțiunea. Pedepsit <b>cu pedeapsa prevăzută pentru autor</b>. Instigare neurmată de executare: instigatorul răspunde numai dacă legea prevede expres (sau dacă actele sale constituie deja altă infracțiune).',
+          '<b>Complicele</b> (art. 48): ajutor material sau moral. Complicitate <b>anterioară</b>: promisiunea de a ajuta sau procurarea de instrumente înainte de comitere. Complicitate <b>concomitentă</b>: ajutor în timpul executării. Complicele se pedepsește cu pedeapsa autorului, instanța putând coborî sub minim.',
+          '<b>Autorul mediat</b>: instigatorul/complicele care determină/folosește o persoană lipsită de discernământ sau constrânsă (participație improprie, art. 52 NCP) → răspunde ca <b>autor</b>, nu ca instigator.',
+          'La infracțiunile proprii (subiect activ special): calitatea specială cerută numai <b>autorului</b>; complicele/instigatorul pot fi extranei. Dacă autorul nu are calitatea → fapta nu e infracțiune pentru el, dar instigatorul/complicele pot răspunde.'
         ]
       },
-      { icon:'⚖️', title:'Circumstanțele reale și personale',
+      { icon:'⚖️', title:'Circumstanțe reale, personale și generale (art. 75–78 NCP)',
         items:[
-          '<b>Circumstanțele reale</b> (referitoare la faptă: mijloace, metode, loc): se răsfrâng asupra <b>tuturor participanților</b> care le-au cunoscut la momentul comiterii.',
-          '<b>Circumstanțele personale</b> (referitoare la persoana participantului: recidivă, calitate specială, stare de minoritate): se aplică <b>numai celui la care se referă</b>, nu și celorlalți participanți.',
-          'Dacă complicele nu a cunoscut o circumstanță reală agravantă → nu i se aplică; dacă a cunoscut-o → i se aplică și lui.'
+          '<b>Circumstanțele reale</b>: referitoare la faptă (mijloace periculoase, premeditare, cruzime, loc public) — se răsfrâng asupra <b>tuturor participanților care le-au cunoscut</b> la data comiterii.',
+          '<b>Circumstanțele personale</b>: referitoare la persoana participantului (recidivă, calitate specială, stare de minoritate, buna purtare anterioară) — se aplică <b>numai celui la care se referă</b>.',
+          '<b>Circumstanțe atenuante generale</b> (art. 75 NCP): comportament anterior bun, depășire a limitelor apărării, acoperirea prejudiciului etc. → instanța <b>poate</b> coborî sub minimul special (nu e obligată).',
+          '<b>Circumstanțe agravante generale</b> (art. 77 NCP): comitere prin cruzimi, cu mijloace periculoase, de trei sau mai multe persoane împreună, față de un minor sau persoană vulnerabilă → instanța <b>poate</b> depăși maximul special cu max. 2 ani (sau 1/3).',
+          '⚠️ Circumstanțele speciale (din textul incriminatorului — forma calificată) ≠ circumstanțe generale: circumstanțele speciale modifică <i>însuși tiparul infracțiunii</i>; cele generale modulează pedeapsa în cadrul tipului de bază.'
         ]
       }
     ],
-    grila:'Tentativa imposibilă (mijloace absolut improprii / obiect absolut inexistent) → <b>nepedepsibilă</b>. Desistare = cauză de <b>nepedepsire</b>, nu de înlăturare a infracțiunii. Instigatorul: pedepsit CA autorul. Circumstanțe reale → tuturor participanților care le-au cunoscut; circumstanțe personale → numai celui vizat.'
+    grila:'Tentativă absolut improprie → <b>nepedepsibilă</b>; tentativă relativ improprie → pedepsibilă. Desistare = cauză de <b>nepedepsire</b> (infracțiunea există). Instigatorul: pedepsit CA autorul. Coautor = acte de executare (nu simplu ajutor). Circumstanțe reale → tuturor participanților care le-au <b>cunoscut</b>; circumstanțe personale → numai celui vizat. Circumstanțe atenuante → instanța <i>poate</i> coborî sub minim.'
   },
 
   {
