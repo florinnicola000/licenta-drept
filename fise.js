@@ -159,13 +159,13 @@ var FISE_DATA = [
     sections:[
       { icon:'📦', title:'Obiectul AJC (art. 1225–1234 NCC)',
         items:[
-          'Conduita la care se obligă una sau ambele părți: <b>a da</b> (transferul unui drept real), <b>a face</b> (o prestație pozitivă) sau <b>a nu face</b> (o abținere).',
-          'Bunul trebuie să fie: <b>determinat sau determinabil</b>, <b>licit</b> (în circuitul civil), <b>posibil</b>. Lipsa oricăreia → <b>nulitate absolută</b>.',
+          'NCC distinge: <b>obiectul contractului</b> (art. 1225) = <b>operațiunea juridică</b> convenită (vânzarea, locațiunea, împrumutul); <b>obiectul obligației</b> (art. 1226) = <b>prestația</b> concretă la care se angajează debitorul: <b>a da</b>, <b>a face</b> sau <b>a nu face</b>. Distincție frecvent testată la grile!',
+          'Condiții: obiectul contractului — <b>determinat și licit</b>; obiectul obligației — <b>determinat sau determinabil și licit</b>. Sancțiunea lipsei = <b>nulitate absolută</b> (art. 1225 alin. 2, art. 1226 alin. 2). ⚠️ „Posibil" nu mai e condiție distinctă sub NCC (v. art. 1227).',
           '<b>Bunuri inalienabile</b> prin natură (bunuri publice, domeniu public) sau prin lege → actele de înstrăinare sunt nule absolut. <i>Ex: terenuri forestiere din fondul forestier național protejat.</i>',
-          '<b>Impossibilium nulla est obligatio</b>: imposibilitate inițială absolută → nulitate absolută. Imposibilitate inițială relativă (bunul există dar vânzătorul nu îl poate procura) → poate fi validă ca obligație de a face.',
+          '⚠️ <b>Capcană — imposibilitatea inițială</b> (art. 1227 NCC): contractul este <b>valabil</b> chiar dacă, la momentul încheierii, una dintre părți se află în imposibilitate de a-și executa obligația — debitorul răspunde pentru <b>neexecutare</b> (daune), nu se anulează actul. Vechea maximă <i>impossibilium nulla est obligatio</i> (nulitate pentru imposibilitate inițială) a fost <b>abandonată de NCC</b>.',
           '<b>Imposibilitate ulterioară fortuită</b> → stingerea obligației prin forță majoră/caz fortuit; nu atrage nulitatea.',
           'Obiect <b>viitor</b>: valabil (vânzarea unui bun viitor — art. 1228 NCC). <b>Excepție absolută</b>: pactele asupra unei succesiuni nedeschise a altei persoane = nulitate absolută (art. 956 NCC).',
-          '<b>Prețul vânzării</b> (art. 1660 NCC): trebuie să fie serios (nu derizoriu) și sincer (nu fictiv/simulat). Prețul fictiv → actul nu e vânzare; dacă e derizoriu → vânzare cu preț lezionar sau contract fără cauză.',
+          '<b>Prețul vânzării</b> (art. 1660 NCC): trebuie să fie serios (nu derizoriu) și sincer (nu fictiv/simulat). Sancțiunea (art. 1665 NCC): vânzarea e <b>anulabilă</b> (NR) atât când prețul e <b>fictiv</b> (stabilit fără intenția de a fi plătit), cât și când e <b>derizoriu</b> (atât de disproporționat încât e evident că părțile nu au dorit o vânzare).',
           '<b>Clauza penală</b> (art. 1538 NCC): evaluare anticipată și convențională a daunelor-interese pentru neexecutare. Creditorul nu trebuie să dovedească prejudiciul — simpla neexecutare activează clauza. Cumulul cu executarea în natură e interzis, cu excepția clauzei penale moratorii (pentru întârziere). ⚠️ Instanța poate reduce penalitatea vădit excesivă (art. 1541 NCC) — spre deosebire de daune-interese prestabilite de lege.'
         ]
       },
@@ -176,6 +176,7 @@ var FISE_DATA = [
           'Condiții cumulative (art. 1236 NCC): să <b>existe</b>, să fie <b>reală</b> (nu falsă), <b>licită</b> și <b>morală</b>.',
           '<b>Prezumție de existență și valabilitate</b> a cauzei (art. 1239 NCC): sarcina probei revine celui care contestă. Aplicarea: reclamantul care invocă lipsa cauzei trebuie să facă proba.',
           '<b>Cauza falsă</b> (eroare asupra motivului determinant): de fapt cauza există dar e greșit reprezentată → <b>nulitate relativă</b> (viciu de consimțământ prin eroare).',
+          '⚠️ <b>Capcană — lipsa cauzei</b> (art. 1238 alin. 1 NCC): atrage <b>anulabilitatea</b> (NR), nu nulitatea absolută cum era sub vechiul cod! Excepție: dacă actul a fost doar greșit calificat, poate produce alte efecte juridice (conversiune).',
           '<b>Cauza ilicită sau imorală</b> → <b>nulitate absolută</b> (<i>Fraus omnia corrumpit</i>). <i>Ex: donaţie pentru a menţine o relaţie concubinară contrară bunelor moravuri.</i>',
           'Cauza ilicită <i>a uneia din părți</i> (art. 1238 alin. 2 NCC): nu atrage nulitatea dacă cealaltă parte nu a cunoscut-o și nu trebuia să o cunoască. <b>Excepție</b>: dacă natura actului implică o cauză ilicită pentru ambele → NCA.'
         ]
@@ -184,7 +185,7 @@ var FISE_DATA = [
         items:[
           '<b>Ad validitatem</b> (solemnă): nerespectare → <b>nulitate absolută</b>. Exemple: donație (autentic notarial, art. 1011), ipotecă imobiliară (art. 2378), testament (olograf sau autentic sau mistic), căsătoria, actul constitutiv SA.',
           '<b>Ad probationem</b>: nerespectare → actul e <b>valabil</b>, dar nu poate fi dovedit cu martori sau prezumții dacă valoarea depășește 250 lei. Exemple: contracte &gt;250 lei, contractul de asigurare, CIM.',
-          '<b>Pentru opozabilitate față de terți</b> (publicitate): nerespectare → act valabil între părți, dar <b>inopozabil</b> terților. Exemple: publicitate imobiliară CF, înregistrare AEGRM, publicitate societăților comerciale.',
+          '<b>Pentru opozabilitate față de terți</b> (publicitate): nerespectare → act valabil între părți, dar <b>inopozabil</b> terților. Exemple: publicitate imobiliară CF, înregistrare RNPM, publicitate societăților comerciale.',
           'Actul solemn care nu îndeplinește forma <i>ad validitatem</i> poate valora ca <b>promisiune de a contracta</b>, dacă cuprinde acordul de voință al părților și elementele esențiale (art. 1243 NCC). Promisiunea nu e valabilă dacă legea cere forma solemnă pentru chiar promisiunea de a contracta.',
           '<b>Principiul simetriei formelor</b> (art. 1243 NCC): dacă prin lege sau voința părților forma actului este solemnă, modificarea sau desființarea lui trebuie să respecte aceeași formă.',
           '<b>Forma electronică</b>: semnătura electronică extinsă (calificată) este echivalentul semnăturii olografe (Legea 455/2001). Actele <i>ad validitatem</i> care cer formă autentică nu pot fi încheiate prin simpla semnătură electronică.'
@@ -193,12 +194,12 @@ var FISE_DATA = [
       { icon:'🔴', title:'Nulitatea — clasificare și regim juridic (art. 1246–1265 NCC)',
         items:[
           '<b>Absolută (NCA)</b>: protejează interesul general/ordine publică. Cauze: lipsă capacitate de folosință, cauza ilicită/imorală, formă solemnă nerespectată, obiect ilicit/imposibil.',
-          '<b>Relativă (NR)</b>: protejează interesul particular. Cauze: vicii de consimțământ, nerespectarea capacității de exercițiu, leziunea, cauza falsă.',
+          '<b>Relativă (NR)</b>: protejează interesul particular. Cauze: vicii de consimțământ, nerespectarea capacității de exercițiu, leziunea, cauza falsă, <b>lipsa cauzei</b> (art. 1238 alin. 1 — capcană!), prețul fictiv/derizoriu (art. 1665).',
           'NCA: invocabilă de <b>oricine are interes</b> + din oficiu de instanță; <b>imprescriptibilă</b>; <b>nu se confirmă</b>. NR: numai de <b>persoana protejată</b>; prescrisă în <b>3 ani</b>; acoperibilă prin <b>confirmare</b>.',
           '<b>Nulitate de drept</b> (<i>ope legis</i>): legea prevede că actul e nul de plin drept (ex: art. 1011 alin. 2 — actul de donație verbal e nul absolut). <b>Nulitate judiciară</b> (<i>ope iudicis</i>): trebuie pronunțată de instanță.',
           '<b>Nulitate parțială</b> (art. 1255 NCC): clauza nulă e înlăturată, restul actului rămâne dacă poate exista fără ea. <b>Nulitate totală</b>: dacă clauza era determinantă, actul cade în întregime.',
           '<b>Nulitate virtuală</b> (art. 1253 NCC): sancțiunea se deduce din scopul normei încălcate, chiar dacă legea nu o prevede expres.',
-          'Excepția de nulitate (<i>exceptio nullitatis</i>): poate fi invocată oricând, inclusiv pe cale de excepție în apărare, chiar dacă acțiunea în anulare e prescrisă — pentru NCA; pentru NR, excepția se prescrie la fel ca acțiunea.'
+          '<b>Excepția de nulitate</b> (<i>exceptio nullitatis</i>): NCA — invocabilă oricând, pe cale de acțiune sau de excepție. ⚠️ <b>Capcană NR</b> (art. 1249 alin. 2 NCC): pe cale de <b>acțiune</b> — numai în termenul de prescripție (3 ani); dar partea căreia i se <b>cere executarea</b> poate opune nulitatea relativă <b>oricând</b>, chiar după împlinirea prescripției. <i>Quae temporalia sunt ad agendum, perpetua sunt ad excipiendum.</i>'
         ]
       },
       { icon:'🔄', title:'Simulația (art. 1289–1294 NCC)',
@@ -208,19 +209,19 @@ var FISE_DATA = [
           'Efecte <b>între părți</b>: prevalează întotdeauna <b>actul secret</b> (contraînscrisul), dacă există și e valabil. Actul aparent e lipsit de efecte între ele.',
           'Efecte față de <b>terții de bună-credință</b> (art. 1290 NCC): pot invoca fie actul aparent, fie actul secret, <b>la alegerea lor</b>, după cum le este mai favorabil. Terții de rea-credință (care au cunoscut simulația) nu se pot prevala de actul aparent.',
           'Simulație <b>în frauda terților sau a legii</b>: contraînscrisul este inopozabil terților prejudiciați; aceștia pot cere declararea ca fictiv/nul a actului aparent sau a celui secret.',
-          '<b>Acțiunea în simulație</b>: terții pot cere instanței să constate caracterul simulat al actului aparent. Imprescriptibilă dacă simulația ascunde o NCA; prescriptibilă (3 ani) dacă scopul e altul.'
+          '<b>Acțiunea în simulație</b>: părțile sau terții cer instanței să <b>constate</b> existența și conținutul actului secret. Fiind acțiune în <b>constatare</b>, e <b>imprescriptibilă</b> — întotdeauna. ⚠️ Ce se prescrie separat sunt acțiunile <b>subsecvente</b> exercitate pe baza actului secret dezvăluit (ex: anularea lui, plata unei creanțe din el).'
         ]
       },
       { icon:'💰', title:'Arvuna (art. 1544–1546 NCC)',
         items:[
           '<b>Arvuna confirmatorie</b> (art. 1544 NCC): sumă dată la momentul încheierii <i>contractului</i> (nu a promisiunii) ca dovadă a perfectării lui. Dacă cel care a dat arvuna nu execută: <b>pierde arvuna</b>. Dacă cel care a primit arvuna nu execută: <b>restituie dublul</b>. ⚠️ Funcție reparatorie — arvuna acoperă daunele (nu se cumulează automat cu alte daune; creditorul poate cere și daune suplimentare dacă dovedește un prejudiciu mai mare).',
           '<b>Arvuna penalizatoare</b> (art. 1546 NCC): clauza prin care oricare dintre părți poate denunța unilateral contractul pierzând arvuna sau restituind dublul. Diferit de cea confirmatorie: <b>nu e sancțiune pentru neexecutare</b>, ci preț al dreptului de retractare (similar opțiunii). ⚠️ Contractul poate fi reziliat legal prin simpla manifestare de voință + pierdere/dublu arvunei, fără a fi nevoie de probe privind neexecutarea.',
-          '<b>Distincție arvunã vs. clauza penală</b>: clauza penală (art. 1538 NCC) se activează la neexecutare; arvuna confirmatorie are și funcție probatorie (dovedește acordul de voință) și garantatorie. La arvuna penalizatoare, dreptul de retractare e mutual și nu presupune culpă.',
-          '<b>Arvuna = clauza penală?</b>: Nu automat — depinde de voința părților. Dacă contractul se execută, arvuna se impută asupra prețului (restituie sau se deduce). Dacă nu se stipulează altfel, suma dată în avans e prezumată avans din preț, nu arvunã (art. 1544 alin. 4 NCC).'
+          '<b>Distincție arvună vs. clauza penală</b>: clauza penală (art. 1538 NCC) se activează la neexecutare; arvuna confirmatorie are și funcție probatorie (dovedește acordul de voință) și garantatorie. La arvuna penalizatoare, dreptul de retractare e mutual și nu presupune culpă.',
+          '<b>Arvuna = clauza penală?</b>: Nu automat — depinde de voința părților. Dacă contractul se execută, arvuna se impută asupra prețului (restituie sau se deduce). Dacă nu se stipulează altfel, suma dată în avans e prezumată avans din preț, nu arvună (art. 1544 alin. 4 NCC).'
         ]
       }
     ],
-    grila:'Forma <b>ad validitatem</b> → NCA; <b>ad probationem</b> → valabilă, doar proba afectată. Cauza <b>falsă</b> → NR; cauza <b>ilicită</b> → NCA. NCA: imprescriptibilă, neconfirmabilă; NR: 3 ani, confirmabilă. Simulație: între părți prevalează <b>actul secret</b>; terții de bună-credință pot alege. Pact succesiune nedeschisă altei persoane = NCA. Simetria formelor: modificarea actului solemn cere aceeași formă. Arvuna confirmatorie: cel care nu execută pierde arvuna / restituie dublul. Arvuna penalizatoare: drept de retractare voluntară, nu sancțiune pentru neexecutare.'
+    grila:'Forma <b>ad validitatem</b> → NCA; <b>ad probationem</b> → valabilă, doar proba afectată. Cauza <b>falsă</b> → NR; <b>lipsa cauzei</b> → NR (art. 1238 al.1 — capcană, nu NCA!); cauza <b>ilicită</b> → NCA. Imposibilitate inițială de executare → contract <b>valabil</b> (art. 1227). Preț fictiv/derizoriu → vânzare <b>anulabilă</b> (art. 1665). NCA: imprescriptibilă, neconfirmabilă; NR: 3 ani pe cale de acțiune, dar pe cale de <b>excepție oricând</b> (art. 1249 al.2). Simulație: între părți prevalează <b>actul secret</b>; terții de bună-credință pot alege; acțiunea în simulație = <b>imprescriptibilă</b> (constatare). Pact succesiune nedeschisă altei persoane = NCA. Simetria formelor: modificarea actului solemn cere aceeași formă. Arvuna confirmatorie: cel care nu execută pierde arvuna / restituie dublul. Arvuna penalizatoare: drept de retractare voluntară, nu sancțiune pentru neexecutare.'
   },
 
   {
