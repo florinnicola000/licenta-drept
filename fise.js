@@ -941,31 +941,34 @@ var FISE_DATA = [
     sections:[
       { icon:'⚰️', title:'Infracțiuni contra vieții (art. 188–195 NCP)',
         items:[
-          '<b>Omorul simplu</b> (art. 188): uciderea cu intenție; pedeapsă <b>10–20 ani</b> + interzicerea unor drepturi.',
-          '<b>Omorul calificat</b> (art. 189): forme agravate — cu premeditare, din interes material, prin cruzime, prin mijloace periculoase pentru mai multe persoane, victimă vulnerabilă/funcționar/judecător/polițist, rudă în linie directă sau soț; pedeapsă <b>15–25 ani sau detențiune pe viață</b>.',
-          '<b>Uciderea la cererea victimei</b> (art. 190): cauze speciale (boală gravă incurabilă); pedeapsă redusă.',
-          '<b>Uciderea din culpă</b> (art. 192): moartea cauzată fără intenție; pedeapsă <b>1–5 ani</b>; formă agravată dacă e condus sub alcool/droguri sau abandonate victima.',
-          '<b>Loviri cauzatoare de moarte</b> (art. 195): <b>praeterintenție</b> — intenție de a lovi + culpă față de moarte; pedeapsă <b>6–12 ani</b>.'
+          '<b>Omorul simplu</b> (art. 188): uciderea cu <b>intenție</b> (directă sau indirectă); pedeapsă <b>10–20 ani</b> + interzicerea unor drepturi. Distincție față de loviri cauzatoare de moarte: criteriul = intenția față de <b>deces</b>.',
+          '<b>Omorul calificat</b> (art. 189): premeditare (rezoluție anterioară + act de pregătire + interval de timp) — nu poate coexista cu praeterintenția; din interes material; prin cruzime; mijloace periculoase pentru mai mulți; victimă vulnerabilă/magistrat/polițist/rudă directă/soț; pedeapsă <b>15–25 ani sau detențiune pe viață</b>.',
+          '<b>Determinarea sau înlesnirea sinuciderii</b> (art. 191): pedepsibilă numai dacă persoana chiar se sinucide sau încearcă; formă agravată dacă victima e minoră sub 16 ani sau în imposibilitate de a-și da seama. ⚠️ Simpla încurajare fără efect nu se pedepsește.',
+          '<b>Uciderea la cererea victimei</b> (art. 190): victima suferă o boală gravă sau incurabilă; pedeapsă <b>1–5 ani</b>. Rămâne infracțiune — eutanasia activă e incriminată.',
+          '<b>Uciderea din culpă</b> (art. 192): moartea produsă fără intenție (neglijență/imprudență); pedeapsă <b>1–5 ani</b>; agravat dacă autorul era sub influența alcoolului/drogurilor sau a abandonat victima.',
+          '<b>Loviri cauzatoare de moarte</b> (art. 195): praeterintenție — intenție de a lovi + culpă față de deces; pedeapsă <b>6–12 ani</b>. Dacă autorul urmărea sau accepta decesul → omor (nu loviri).'
         ]
       },
       { icon:'🩹', title:'Infracțiuni contra integrității corporale (art. 193–198 NCP)',
         items:[
-          '<b>Lovirea sau alte violențe</b> (art. 193): loviri ce produc suferințe fizice; pedeapsă amendă sau <b>max 2 ani</b>; se urmărește la <b>plângerea prealabilă</b> a victimei.',
-          '<b>Vătămarea corporală</b> (art. 194): leziuni ce necesită <b>mai mult de 90 zile de îngrijiri</b> medicale; pedeapsă <b>2–7 ani</b>. Sub 90 zile → lovire sau alte violențe.',
-          'Formele agravate ale vătămării: pierderea unui organ/simț, sluțire gravă, avort, punere în pericol a vieții.',
-          '<b>Vătămarea corporală din culpă</b> (art. 196): necesită vătămare ≥90 zile sau consecință gravă; urmărire la plângere prealabilă dacă e minoră.'
+          '<b>Lovirea sau alte violențe</b> (art. 193): suferințe fizice fără a atinge pragul de 90 zile; pedeapsă amendă sau max <b>2 ani</b>. Urmărire la <b>plângere prealabilă</b> — retragerea/împăcarea sting acțiunea penală.',
+          '<b>Vătămarea corporală</b> (art. 194): leziuni ce necesită <b>mai mult de 90 de zile</b> de îngrijiri medicale (stabilite prin certificat medico-legal); pedeapsă <b>2–7 ani</b>. Urmărire <b>din oficiu</b> — nu se stinge prin împăcare.',
+          'Forme agravate ale vătămării corporale (art. 194 alin. 2): pierderea unui organ/simț/abilitate, sluțire gravă, avort, punere în pericol a vieții; pedeapsă <b>3–10 ani</b>.',
+          '<b>Vătămarea corporală din culpă</b> (art. 196): necesită ≥90 zile sau consecință gravă; forma simplă — la plângere prealabilă; forma agravată (alcool, părăsire a locului accidentului) — din oficiu.',
+          'Diferența lovire/vătămare: <b>pragul de 90 zile</b> stabilit de medic legist. Dacă leziunile inițiale sunt sub 90 zile dar se agravează → recalificarea nu e automată; contează starea la momentul comiterii.'
         ]
       },
-      { icon:'🔓', title:'Infracțiuni contra libertății (art. 205–220 NCP)',
+      { icon:'🔓', title:'Infracțiuni contra libertății și vieții private (art. 205–227 NCP)',
         items:[
-          '<b>Lipsirea de libertate</b> (art. 205): reținerea sau deținerea persoanei fără drept; pedeapsă <b>1–7 ani</b>; formă agravată dacă durează >24h, victimă e minor, sau produce suferințe.',
-          '<b>Violul</b> (art. 218): raport sexual sau act sexual oral/anal prin constrângere (violență/amenințare) sau profitând de imposibilitatea victimei de a se apăra/exprima; pedeapsă <b>3–10 ani</b>; formă agravată: victimă minoră sub 16 ani.',
-          '<b>Agresiunea sexuală</b> (art. 219): acte sexuale altele decât penetrare, prin constrângere; pedeapsă <b>2–7 ani</b>.',
-          '<b>Actul sexual cu un minor</b> (art. 220): raport sexual cu persoana sub 15 ani, indiferent de consimțământ.'
+          '<b>Lipsirea de libertate</b> (art. 205): reținere/deținere fără drept; pedeapsă <b>1–7 ani</b>. Agravat: >24h, victimă minor, produce suferințe. Formă deosebit de gravă: răpire + reținere + șantaj.',
+          '<b>Amenințarea</b> (art. 206 NCP): comunicarea intenției de a comite o infracțiune sau faptă păgubitoare față de victimă/persoană apropiată; urmărire la <b>plângere prealabilă</b>; pedeapsă amendă sau max <b>6 luni</b>.',
+          '<b>Hărțuirea</b> (art. 208 NCP): adresarea repetată de cuvinte/gesturi/contacte, împotriva voinței — acțiunea e infracțiune <b>de obicei</b> (necesită repetiție); pedeapsă max <b>6 luni</b>.',
+          '<b>Violarea de domiciliu</b> (art. 224 NCP): intrarea fără drept sau refuzul de a pleca la cerere; pedeapsă max <b>5 ani</b>. Agravat: noapte, 2+ persoane, prin violență, cu arme, funcționar ce abuzează de calitate.',
+          '<b>Violul</b> (art. 218): raport sexual/act oral-anal prin constrângere sau profitând de imposibilitatea victimei de a se exprima; pedeapsă <b>3–10 ani</b>. Victimă <16 ani → <b>3–12 ani</b>. <b>Actul sexual cu un minor</b> (art. 220): sub 15 ani, indiferent de consimțământ.'
         ]
       }
     ],
-    grila:'Omor vs. loviri cauzatoare de moarte: criteriul = <b>intenția față de deces</b>. Cu intenție = omor; praeterintenție = loviri cauzatoare de moarte. Vătămare corporală: prag <b>90 zile îngrijiri</b>. Lovire simplă: urmărire la <b>plângere prealabilă</b>; împăcarea stinge acțiunea. Viol: inclusiv prin profitarea de imposibilitate de exprimare, nu numai prin violență.'
+    grila:'Omor vs. loviri cauzatoare de moarte: intenție față de deces. Premeditare ≠ praeterintenție (nu coexistă). Prag vătămare corporală: <b>90 zile îngrijiri medicale</b>. Lovire simplă: plângere prealabilă; vătămare corporală: din oficiu. Amenințare, hărțuire: plângere prealabilă. Viol: inclusiv prin imposibilitate de exprimare. Eutanasia = infracțiune (art. 190).'
   },
 
   {
