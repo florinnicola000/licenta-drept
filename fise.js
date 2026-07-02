@@ -1005,32 +1005,33 @@ var FISE_DATA = [
     sections:[
       { icon:'💼', title:'Infracțiuni de corupție (art. 289–294 NCP)',
         items:[
-          '<b>Luarea de mită</b> (art. 289): funcționarul public pretinde ori primește foloase necuvenite, sau acceptă promisiunea lor, pentru a îndeplini/nu îndeplini/întârzia un act în exercitarea funcției. Nu contează dacă actul a fost sau nu îndeplinit.',
-          '<b>Darea de mită</b> (art. 290): promiterea/oferirea/darea de foloase funcționarului. Dacă mituitorul a fost <b>constrâns</b> → cauză de nepedepsire. Dacă a dat de bună voie → pedepsit.',
-          '<b>Traficul de influență</b> (art. 291): pretinderea/primirea de foloase necuvenite de o persoană care <b>are sau lasă să se creadă că are influență</b> asupra unui funcționar, pentru a-l determina să facă/nu facă ceva.',
-          '<b>Cumpărarea de influență</b> (art. 292): corelativă traficului; cel care promite/dă foloase pentru a cumpăra influența. Dacă a fost constrâns → cauză de nepedepsire.',
-          'Distincție esențială: traficantul de influență <b>nu trebuie să fie funcționar</b>; el promite că va influența funcționarul (real sau presupus).'
+          '<b>Funcționar public</b> (art. 175 NCP): (1) persoana numită/aleasă/contractată în cadrul autorităților publice sau instituțiilor publice; (2) persoana care exercită prerogative de putere publică sau serviciu public (asimilat). ⚠️ Medicul din sistemul public, notarul, expertul judiciar = funcționar public asimilat.',
+          '<b>Luarea de mită</b> (art. 289): funcționarul pretinde/primește foloase necuvenite sau acceptă promisiunea lor, în legătură cu un act al funcției (indiferent dacă actul a fost sau nu îndeplinit). Consumarea = la momentul <b>pretinderii sau primirii</b>.',
+          '<b>Darea de mită</b> (art. 290): promiterea/oferirea/darea de foloase funcționarului. Constrângere → <b>cauza de nepedepsire</b> pentru mituitor. ⚠️ Mituitorul care denunță înainte de sesizarea organelor → poate beneficia de nepedepsire (art. 290 alin. 3).',
+          '<b>Traficul de influență</b> (art. 291): persoana care are sau lasă să se creadă că are influență asupra unui funcționar pretinde/primește foloase pentru a-l determina să acționeze. ⚠️ <b>Nu trebuie să fie funcționar</b>; influența poate fi reală sau imaginară.',
+          '<b>Cumpărarea de influență</b> (art. 292): promisiunea/darea de foloase pentru a cumpăra influența. Sub constrângere → cauza de nepedepsire. ⚠️ Distinție față de dare de mită: la trafic de influență, persoana coruptă nu e funcționarul însuși, ci un intermediar.'
         ]
       },
       { icon:'🏛️', title:'Infracțiuni de serviciu (art. 295–309 NCP)',
         items:[
-          '<b>Delapidarea</b> (art. 295): funcționarul/angajatul care gestionează bunuri și le însușește/folosește/trafichează. Subiect activ: gestionar sau funcționar.',
-          '<b>Abuzul în serviciu</b> (art. 297): funcționarul nu îndeplinește sau îndeplinește necorespunzător atribuțiile de serviciu → prejudiciu material sau vătămare a drepturilor/intereselor legitime. Săvârșit cu intenție.',
-          '<b>Neglijența în serviciu</b> (art. 298): similar cu abuzul, dar săvârșit din <b>culpă</b>.',
-          '<b>Folosirea abuzivă a funcției</b> (art. 299): funcționarul folosește funcția pentru avantaje proprii sau ale altuia.'
+          '<b>Delapidarea</b> (art. 295): funcționarul/angajatul gestionar care însușește/folosește/trafichează bunurile entității. Subiect activ special: cel care gestionează bunuri în virtutea funcției. ⚠️ Diferit de furt: delapidarea presupune calitate specială + bunuri deja aflate în gestiune.',
+          '<b>Abuzul în serviciu</b> (art. 297): funcționarul nu îndeplinește sau îndeplinește defectuos atribuțiile de serviciu, cauzând prejudiciu sau vătămând drepturile cuiva. Intenție. ⚠️ Decizia CCR nr. 405/2016: abuzul trebuie să decurgă dintr-o nerespectare a <i>legii</i> (nu simplă apreciere de oportunitate).',
+          '<b>Neglijența în serviciu</b> (art. 298): ca abuzul, dar săvârșit din <b>culpă</b>. Limita superioară a pedepsei = mai mică decât la abuz.',
+          '<b>Conflictul de interese</b> (art. 301 NCP): funcționarul participă la luarea unei decizii prin care se realizează un folos material pentru sine, soț, rudă directă sau afinitate de grad I. Nu necesită folos efectiv — e suficientă participarea la decizie.',
+          '<b>Omisiunea sesizării</b> (art. 267 NCP): funcționarul public care, în exercitarea funcției, ia cunoștință de o infracțiune și omite să sesizeze organele de urmărire penală. Subiect activ special: funcționar public.'
         ]
       },
       { icon:'⚖️', title:'Infracțiuni contra înfăptuirii justiției (art. 266–288 NCP)',
         items:[
-          '<b>Denunțul calomnios</b> (art. 268): sesizarea mincinoasă a unui organ de urmărire/judecată cu o faptă penală inexistentă sau necomisă de cel denunțat.',
-          '<b>Mărturia mincinoasă</b> (art. 273): declarații false ca martor/expert/interpret în fața unui organ judiciar. Cauza de nepedepsire: <b>retractarea</b> declarației înainte de condamnare.',
-          '<b>Favorizarea făptuitorului</b> (art. 269): ajutorarea unui infractor să se sustragă urmăririi. Cauza de nepedepsire: <b>soțul și rudele apropiate</b> ale favorizatorului nu se pedepsesc.',
-          '<b>Tăinuirea</b> (art. 270): primirea, dobândirea sau transformarea de bunuri provenite din infracțiune, cunoscând proveniența. Diferit de favorizare: tăinuirea privește bunurile, favorizarea privește persoana infractorului.',
-          '<b>Obstrucționarea justiției</b> (art. 271): împiedicarea actelor de urmărire sau judecată prin violență/amenințare/corupere/alte mijloace.'
+          '<b>Denunțul calomnios</b> (art. 268): sesizarea mincinoasă a organelor judiciare cu o faptă penală neexistentă sau necomisă de persoana denunțată. ⚠️ Dacă autorul denunțului credea sincer că fapta există → nu e infracțiune (lipsă intenție).',
+          '<b>Mărturia mincinoasă</b> (art. 273): declarații false ca martor/expert/interpret în fața unui organ judiciar. Cauza de nepedepsire: <b>retractarea</b> declarației înainte de a se pronunța o hotărâre sau a se da o altă soluție.',
+          '<b>Favorizarea făptuitorului</b> (art. 269): ajutorarea unui infractor să se sustragă urmăririi/judecării. Cauza de nepedepsire: <b>soțul și rudele apropiate</b> ale favorizatorului. ⚠️ Ruda care favorizează nu se pedepsește; ruda care ia parte la comiterea infracțiunii inițiale — se pedepsește.',
+          '<b>Tăinuirea</b> (art. 270): primirea/dobândirea/transformarea de bunuri provenite din infracțiune, cunoscând proveniența. <b>Tăinuire = bunuri; favorizare = persoana infractorului</b>. Tăinuirea nu se pedepsește dacă era previzibil că bunurile sunt ale tale.',
+          '<b>Obstrucționarea justiției</b> (art. 271): împiedicarea actelor de urmărire sau judecată prin violență/amenințare/corupere/orice alte mijloace.'
         ]
       }
     ],
-    grila:'Luare de mită ≠ trafic de influență: luarea = <b>funcționarul însuși</b>; traficul = persoana care pretinde că are <b>influență</b> asupra funcționarului (nu trebuie să fie funcționar). Dare de mită sub constrângere → <b>cauza de nepedepsire</b>. Mărturie mincinoasă: retractarea înainte de condamnare → cauza de nepedepsire. Favorizare: soțul și rudele apropiate <b>nu se pedepsesc</b>. Tăinuire = bunuri; favorizare = persoana.'
+    grila:'Luare de mită = <b>funcționarul însuși</b> primește; trafic de influență = <b>oricine</b> pretinde că influențează funcționarul. Dare de mită sub constrângere → <b>nepedepsire</b>. Abuz în serviciu: numai prin nerespectarea <b>legii</b> (CCR 405/2016). Conflict de interese ≠ abuz: participare la decizie fără folos efectiv. Mărturie mincinoasă: retractare înainte de soluție → nepedepsire. Favorizare: soțul/rudele nu se pedepsesc. Tăinuire = bunuri; favorizare = persoana.'
   },
 
   {
