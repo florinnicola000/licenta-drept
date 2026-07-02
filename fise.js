@@ -933,6 +933,141 @@ var FISE_DATA = [
       }
     ],
     grila:'Conducere sub alcool: ≥ <b>0,80 g/l sânge</b>; infracțiunea există chiar fără accident. Dacă se produce și accident cu victime → <b>concurs</b> cu ucidere/vătămare din culpă. Uzul de fals e săvârșit de <b>altcineva</b> decât autorul falsului. Tăinuire = bunuri; favorizare = persoana. Omor ≠ loviri cauzatoare de moarte: distincția = intenția față de deces.'
+  },
+
+  // ══ PROCEDURĂ CIVILĂ ══════════════════════════════════════════════════════════
+
+  {
+    id:'w26', wk:'W26', dates:'21–27 dec', subj:'pciv',
+    title:'Procedură Civilă — judecata',
+    sections:[
+      { icon:'🏛️', title:'Competența instanțelor (art. 94–147 NCPC)',
+        items:[
+          '<b>Judecătoria</b>: judecă în primă instanță cauzele neatribuite altor instanțe; plângeri contravenționale; cereri provizorii.',
+          '<b>Tribunalul</b>: judecă în primă instanță cauzele cu valoare > <b>200.000 lei</b>, conflicte de muncă, litigii de contencios administrativ sub 3 mil. lei; judecă apelurile împotriva hotărârilor judecătoriei.',
+          '<b>Curtea de Apel</b>: judecă apelurile împotriva hotărârilor tribunalului pronunțate în primă instanță; judecă recursurile împotriva hotărârilor tribunalului pronunțate ca instanță de apel.',
+          '<b>Competența teritorială de drept comun</b> (art. 107): instanța de la domiciliul/sediul pârâtului. Dacă pârâtul are mai multe domicilii → reclamantul alege.',
+          '<b>Competența teritorială alternativă</b>: materie contractuală — și instanța locului de executare; materie delictuală — și instanța locului producerii prejudiciului. Reclamantul alege.',
+          '<b>Competența exclusivă</b>: imobile → instanța locului situării imobilului; societăți → instanța sediului social; succesiuni → instanța locului deschiderii succesiunii (ultimul domiciliu al defunctului).'
+        ]
+      },
+      { icon:'⚖️', title:'Acțiunea civilă și participanții (art. 29–88 NCPC)',
+        items:[
+          '<b>Condițiile exercitării acțiunii civile</b>: drept, interes (actual, născut, personal, direct), calitate procesuală activă (reclamantul) și pasivă (pârâtul), capacitate procesuală.',
+          '<b>Calitatea procesuală</b>: legitimarea de a figura ca parte în proces. Lipsa calității procesuale = excepție peremptoriu → respingerea acțiunii.',
+          '<b>Litispendența</b>: același litigiu pe rolul a două instanțe concomitent → excepție dilatoriu; dosarul mai nou se trimite la instanța mai veche.',
+          '<b>Conexitatea</b>: cauze legate între ele, judecate separat → pot fi reunite la instanța mai întâi sesizată.',
+          '<b>Intervenția voluntară</b> (principală sau accesorie) și <b>intervenția forțată</b> (chemarea în judecată a terțului): mijloace de atragere a terților în procesul civil.'
+        ]
+      },
+      { icon:'📋', title:'Judecata în primă instanță — etape esențiale',
+        items:[
+          '<b>Cererea de chemare în judecată</b>: trebuie să cuprindă instanța, datele de identificare ale părților, obiectul, motivele de fapt și drept, mijloacele de probă. Cerere incompletă → regularizare (completare în termen).',
+          '<b>Întâmpinarea</b>: răspunsul scris al pârâtului; termen general = <b>25 de zile</b> de la comunicarea cererii. Nedepunere = decăderea pârâtului din dreptul de a propune probe.',
+          '<b>Excepțiile procesuale</b>: dilatorii (amână — ex: necompetență, lipsa calității, nulitatea relativă a actelor) vs. peremptorii (sting acțiunea — ex: prescripție, autoritatea de lucru judecat, lipsa capacității procesuale). Peremptorii = respingerea acțiunii.',
+          '<b>Probele</b>: înscrisuri, martori, expertiză, interogatoriu, cercetare la fața locului. Sarcina probei revine celui care afirmă (art. 249 NCPC).',
+          '<b>Dezbaterile</b> și <b>deliberarea</b>: după dezbateri, instanța deliberează în secret și pronunță hotărârea; minuta se semnează imediat; hotărârea se redactează și se comunică.'
+        ]
+      },
+      { icon:'📂', title:'Hotărârea și căile de atac',
+        items:[
+          '<b>Hotărârea definitivă</b>: neapelată în termen sau pronunțată în apel (sau în recursul trimis direct). Produce efecte de lucru judecat și e titlu executoriu.',
+          '<b>Apelul</b>: calea ordinară de atac; termen <b>30 de zile</b> de la comunicarea hotărârii; devoluează în fapt și în drept. Instanța de apel rejudecă fondul.',
+          '<b>Recursul</b>: cale extraordinară, numai în drept; verifică dacă instanța a aplicat corect legea. Nu se readministrează probe; motive limitativ prevăzute de art. 488 NCPC.',
+          '<b>Contestația în anulare</b> (art. 503 NCPC): pentru hotărâri definitive, numai în cazuri expres (ex: necitare legală, hotărâre contrară altei hotărâri irevocabile).',
+          '<b>Revizuirea</b> (art. 509 NCPC): pentru motive de fapt apărute ulterior hotărârii (ex: înscrisuri false descoperite, hotărâri penale contrare, eroare materială).'
+        ]
+      }
+    ],
+    grila:'Competența teritorială de drept comun = domiciliul <b>pârâtului</b> (nu reclamantului). Termenul de apel = <b>30 de zile</b> de la comunicare (nu de la pronunțare). Recursul = numai în drept. Excepție peremptoriu = respingerea acțiunii; dilatoriu = amânarea. Autoritatea de lucru judecat cere triplă identitate: obiect + părți + cauză.'
+  },
+
+  {
+    id:'w27', wk:'W27', dates:'28 dec–3 ian', subj:'pciv',
+    title:'Procedură Civilă — executarea silită',
+    sections:[
+      { icon:'📜', title:'Titlurile executorii și condițiile executării (art. 632–641 NCPC)',
+        items:[
+          '<b>Titlul executoriu</b>: document care conferă dreptul de a porni executarea silită. Hotărâri judecătorești definitive, contracte de credit, contracte autentice notariale (în limita creanței), bilete la ordin, cecuri.',
+          '<b>Învestirea cu formulă executorie</b>: nu mai e necesară pentru hotărârile judecătorești (din 2013); necesară pentru alte titluri la instanța de executare.',
+          '<b>Instanța de executare</b>: judecătoria în circumscripția căreia se va efectua executarea (domiciliu debitor sau locul bunului).',
+          '<b>Executorul judecătoresc</b>: ales de creditor; competent după domiciliul debitorului SAU locul bunului. Sesizat de creditor cu cerere de executare + titlu executoriu + dovada achitării taxelor.',
+          'Termenul general de prescripție a dreptului de a cere executarea silită: <b>3 ani</b> de la data când hotărârea a rămas definitivă.'
+        ]
+      },
+      { icon:'💸', title:'Formele executării silite',
+        items:[
+          '<b>Urmărirea mobilă</b>: sechestrul și valorificarea bunurilor mobile corporale ale debitorului (licitație publică sau prin executor).',
+          '<b>Poprirea</b>: urmărirea sumelor pe care un terț (poprit) le datorează debitorului. Exemple: salariu (angajatorul = terț poprit), cont bancar (banca = terț poprit). Terțul poprit e obligat să consemneze suma sau să declare că nu datorează.',
+          'Limite poprire salariu: max. <b>1/3 din salariul net</b> pentru o creanță; max. <b>1/2</b> pentru mai multe creanțe sau întreținere. Minimul nepoprabil = salariul minim net.',
+          '<b>Urmărirea imobiliară</b>: imobile ale debitorului; procedura = somație (termen min. <b>15 zile</b> pentru plată) → publicare licitație → adjudecare.',
+          '<b>Predarea silită</b>: executarea obligațiilor de a face sau a nu face; și predarea efectivă a unui bun mobil/imobil (ex: evacuare).'
+        ]
+      },
+      { icon:'🛑', title:'Contestația la executare (art. 711–720 NCPC)',
+        items:[
+          'Modalitate de contestare a actelor de executare ilegale sau a titlului însuși (dacă acesta nu e o hotărâre judecătorească).',
+          '<b>Termenul</b>: <b>15 zile</b> de la data când cel interesat a luat cunoștință de actul atacat (dar nu mai târziu de termenele speciale prevăzute de lege).',
+          'Se judecă de <b>instanța de executare</b> (judecătoria), nu de instanța care a pronunțat titlul. Urgent, cu citarea părților.',
+          'Contestația <b>nu suspendă</b> automat executarea; suspendarea se poate cere separat, cu sau fără cauțiune, și e discreționară.'
+        ]
+      },
+      { icon:'⏸️', title:'Suspendarea, perimarea și încheierea executării',
+        items:[
+          '<b>Suspendarea executării</b>: de drept (ex: moartea debitorului, declararea falimentului) sau judecătorească (la cerere). Actele efectuate anterior suspendării rămân valabile; executarea se reia de la ultimul act.',
+          '<b>Perimarea executării</b>: dacă creditorul nu stăruie în executare timp de <b>6 luni</b> de la ultimul act de executare → dosarul se perimă. Stinge dosarul, <b>nu creanța</b> — creditorul poate relua cu un nou dosar.',
+          '<b>Bunuri neurmăribile</b>: haine, mobilier indispensabil, instrumente de lucru, bunuri de uz personal, alimente necesare pe 2 luni, bunuri sacre/culturale. Imobilul locuință poate fi urmărit, dar cu restricții pentru debitorii cu copii minori.',
+          '<b>Încheierea executării</b>: prin realizarea integrală a creanței; prin renunțarea creditorului; prin perimarea dosarului.'
+        ]
+      }
+    ],
+    grila:'Termenul contestație la executare = <b>15 zile</b> (nu 30). Contestația la executare se judecă la <b>instanța de executare</b> (judecătoria), nu la instanța care a dat titlul. Poprire salariu: max. <b>1/3</b> (o creanță) / <b>1/2</b> (mai multe). Perimarea stinge dosarul, nu creanța. Terțul poprit are <b>obligație activă</b> (consemnare sau declarație că nu datorează).'
+  },
+
+  // ══ PROCEDURĂ PENALĂ ══════════════════════════════════════════════════════════
+
+  {
+    id:'w28', wk:'W28', dates:'4–10 ian', subj:'ppen',
+    title:'Procedură Penală — esențial',
+    sections:[
+      { icon:'⚖️', title:'Principii fundamentale (art. 2–12 CPP)',
+        items:[
+          '<b>Legalitatea procesului penal</b>: organele judiciare acționează numai în limitele legii și cu respectarea drepturilor persoanelor.',
+          '<b>Prezumția de nevinovăție</b>: orice persoană e prezumată nevinovată până la condamnare definitivă. Sarcina probei = <b>organele judiciare</b>; in dubio pro reo = dubiul profită inculpatului.',
+          '<b>Aflarea adevărului</b>: organele judiciare au obligația de a strânge toate probele, inclusiv cele în favoarea suspectului/inculpatului.',
+          '<b>Ne bis in idem</b>: nimeni nu poate fi urmărit sau judecat de două ori pentru aceeași faptă. Dacă există hotărâre definitivă → clasare/achitare.',
+          '<b>Dreptul la apărare</b>: asistența juridică obligatorie la inculpat pentru infracțiuni grave, reținut sau arestat, minor.'
+        ]
+      },
+      { icon:'🔍', title:'Urmărirea penală (art. 285–341 CPP)',
+        items:[
+          'Faze: <b>in rem</b> (față de faptă, după sesizare) → <b>in personam</b> (față de suspect → față de inculpat, după punerea în mișcare a acțiunii penale).',
+          '<b>Organele de urmărire penală</b>: procurorul (conduce urmărirea penală) + organele de cercetare penală (poliția judiciară, organe speciale). Procurorul poate efectua personal orice act de urmărire.',
+          '<b>Clasarea</b>: când nu există faptă, fapta nu e prevăzută de lege, fapta nu prezintă pericol social, lipsește plângerea prealabilă, a intervenit prescripția etc.',
+          '<b>Renunțarea la urmărire penală</b>: la infracțiuni cu pedeapsă de max. 7 ani, dacă nu există interes public. Discreție a procurorului (principiul oportunității).',
+          '<b>Trimiterea în judecată</b>: prin rechizitoriu, dacă există probe suficiente că inculpatul a săvârșit infracțiunea.'
+        ]
+      },
+      { icon:'🔒', title:'Măsurile preventive (art. 202–244 CPP)',
+        items:[
+          '<b>Reținerea</b>: max. <b>24 de ore</b>; dispusă de organul de cercetare penală sau procuror; fără aprobare judecătorească.',
+          '<b>Controlul judiciar</b> și <b>controlul judiciar pe cauțiune</b>: dispuse de judecătorul de drepturi și libertăți sau instanță; nu implică privare de libertate; max. 60 de zile în urmărire (prelungibil), nelimitat în judecată.',
+          '<b>Arestul la domiciliu</b>: privare de libertate la domiciliu; durata se contabilizează ca arest preventiv (zile echivalente); necesită mandat de la judecătorul de drepturi și libertăți.',
+          '<b>Arestul preventiv</b> în cursul urmăririi penale: inițial <b>30 de zile</b> (judecătorul de drepturi și libertăți); prelungibil cu câte 30 de zile; maxim total <b>180 de zile</b> în urmărire penală. În cursul judecății: câte <b>60 de zile</b>, fără limită totală.',
+          'Toate măsurile preventive presupun că există probe sau indicii rezonabile că inculpatul a săvârșit infracțiunea + una din condițiile speciale (pericol public, pericol de fugă, obstacularea anchetei).'
+        ]
+      },
+      { icon:'📂', title:'Judecata penală și căile de atac (art. 342–552 CPP)',
+        items:[
+          'Faze ale judecății: <b>camera preliminară</b> (verificarea rechizitoriului și a probelor) → <b>judecata în fond</b> → <b>căile de atac</b>.',
+          '<b>Camera preliminară</b>: judecătorul de cameră preliminară verifică dacă urmărirea e legală și dacă probele pot fi folosite. Poate exclude probe obținute nelegal.',
+          '<b>Apelul</b> (art. 408): calea ordinară de atac; termen <b>10 zile</b> de la comunicarea copiei minutei; devoluează în fapt și în drept.',
+          '<b>Acordul de recunoaștere a vinovăției</b> (art. 478–488): negociat între procuror și inculpat; instanța <b>omologhează sau respinge</b> în totalitate — nu poate modifica pedeapsa convenită. Recunoașterea învinuirii în procedura simplificată (art. 374/396) → reducere cu <b>1/3 a limitelor</b>.',
+          '<b>Achitarea</b>: când fapta nu există, nu e prevăzută de lege, nu a fost săvârșită de inculpat, nu există vinovăție, există cauze justificative/de neimputabilitate. <b>Încetarea procesului penal</b>: când lipsesc condițiile de procedibilitate (ex: plângere prealabilă retrasă, prescripție).'
+        ]
+      }
+    ],
+    grila:'Reținere = max. <b>24h</b>, fără mandat. Arest preventiv în urmărire: max. <b>180 de zile</b> total; câte 30 de zile pe rând. Apel penal: <b>10 zile</b> de la comunicarea minutei (nu 30!). Prezumția de nevinovăție: sarcina probei → <b>organele judiciare</b>. Acord de recunoaștere = instanța omologhează sau respinge, nu modifică. In dubio pro reo = dubiul → achitare.'
   }
 ];
 
@@ -1186,6 +1321,42 @@ var FISE_TIPS={
     '<b>Luare de mită vs. trafic de influență vs. abuz în serviciu</b>: luarea = foloase pentru actul propriu (funcționar); traficul = foloase pentru influența pretinsă asupra altcuiva (nu trebuie să fie funcționar); abuzul = neîndeplinire/îndeplinire necorespunzătoare fără foloase.',
     '<b>Tăinuire vs. favorizare</b>: tăinuirea privește bunurile provenite din infracțiune; favorizarea privește persoana infractorului. Pot concura dacă autorul face ambele acte (ascunde și persoana și bunurile).',
     'La <b>toate infracțiunile din penal special</b>: primul pas e să verifici dacă există o cauza justificativă sau de neimputabilitate. Dacă există → nu e infracțiune (justificative) sau autorul nu răspunde (neimputabilitate). Abia apoi analizezi elementele constitutive.'
+  ],
+
+  w26:[
+    '<b>Competența materială</b>: judecătoria judecă în primă instanță cauzele neatribuite altor instanțe. Tribunalul judecă în primă instanță cauzele cu valoare >200.000 lei și cele expres date în competența sa. Grilă: valoarea obiectului litigiului determină competența materială, nu cea teritorială.',
+    '<b>Competența teritorială de drept comun</b>: instanța de la domiciliul/sediul pârâtului (art. 107 NCPC). Excepție: dacă pârâtul e necunoscut sau nu are domiciliu în țară → instanța de la domiciliul reclamantului.',
+    '<b>Competența teritorială alternativă</b>: în materie contractuală, reclamantul poate alege între instanța domiciliului pârâtului și instanța locului de executare a contractului. Grilă: ambele variante sunt corecte, nu e o eroare de competență.',
+    '<b>Excepțiile procesuale</b>: dilatorii (amână judecata — ex: necompetența, lipsa calității procesuale active) vs. peremptorii (sting acțiunea — ex: prescripția, autoritatea de lucru judecat). Dacă grila spune că excepția duce la respingere → peremptoriu.',
+    '<b>Termenul de apel</b>: <b>30 de zile</b> de la comunicarea hotărârii (nu de la pronunțare!). Nerespectarea termenului → decădere din dreptul de apel. Grilă: comunicarea, nu pronunțarea, face să curgă termenul.',
+    '<b>Apelul</b> (calea ordinară de atac): devoluează cauza în tot (în fapt și în drept). <b>Recursul</b>: cale extraordinară, numai în drept (instanța de recurs nu rejudecă fondul). Grilă: în recurs nu poți invoca motive de fapt.',
+    '<b>Autoritatea de lucru judecat</b>: necesită tripla identitate — același obiect + aceleași părți + aceeași cauză (cauza = temeiul juridic). Dacă una lipșeste → nu există ALC; acțiunea e admisibilă.',
+    '<b>Renunțarea la judecată</b> vs. <b>renunțarea la drept</b>: la judecată → reclamantul poate redeschide acțiunea; la drept → stinge definitiv dreptul subiectiv, nu mai poate reacționa. Grilă: „a renunțat la drept → poate redeschide?" → nu.',
+    '<b>Hotărârea provizorie</b> (ordonanța președințială): condiții — urgență + neprejudecare a fondului + caracter vremelnic. Dacă grila spune că instanța a soluționat fondul în cadrul ordonanței → greșit.'
+  ],
+
+  w27:[
+    '<b>Titlul executoriu</b>: baza executării silite. Hotărârile judecătorești sunt titluri executorii numai când sunt <b>definitive</b> (sau când legea prevede altfel — ex: hotărârea cu execuție provizorie). Contractele autentificate notarial sunt titluri executorii în limita creanței.',
+    '<b>Executorul judecătoresc</b>: competent teritorial după domiciliul/sediul debitorului SAU după locul situării bunului urmărit. Creditorul alege executorul, nu instanța.',
+    '<b>Poprirea</b>: urmărirea creanțelor pe care debitorul le are față de terți (ex: salariu, cont bancar). Terțul poprit e obligat să consemneze sumele. Grilă: poprire = creanțe/sume de bani, nu bunuri fizice.',
+    'Limite la urmărirea salariului: <b>1/3 din salariul net</b> pentru o singură creanță; <b>1/2</b> dacă sunt mai multe creanțe sau pensii de întreținere. Minimul nepoprabil = salariul minim net pe economie.',
+    '<b>Urmărirea silită imobiliară</b>: bunuri imobile (terenuri, clădiri); presupune somație → publicitate → licitație. Termenul de la somație la licitație: min. 30 zile. Grilă: imobilele nu pot fi urmărite prin poprire.',
+    '<b>Contestația la executare</b>: termen de <b>15 zile</b> de la data când cel interesat a luat cunoștință de actul de executare atacat. Se introduce la instanța de executare. Grilă: nu la instanța care a pronunțat titlul, ci la cea de executare.',
+    '<b>Suspendarea executării</b>: de drept (ex: când se fac căile de atac) sau judecătorească (la cerere, cu cauțiune în unele cazuri). Suspendarea nu anulează actele deja efectuate; se reia de la punctul de oprire.',
+    '<b>Perimarea executării</b>: dacă creditorul nu face niciun act de executare timp de <b>6 luni</b> de la ultimul act → executarea se perimă. Perimarea stinge dosarul de executare (nu creanța!).',
+    'Bunuri <b>neurmaribile</b>: bunuri de uz personal și casnic necesare vieții, bunuri legate de exercitarea profesiei, bunuri din patrimoniul cultural/religios. Grilă: „poate fi urmărită hainele de zi cu zi ale debitorului?" → nu.'
+  ],
+
+  w28:[
+    '<b>Principiile fundamentale</b> ale procesului penal: legalitatea procesului penal; prezumția de nevinovăție; aflarea adevărului; dreptul la apărare; limba procesului. Grilă: prezumția de nevinovăție → sarcina probei revine <b>organelor judiciare</b>, nu inculpatului.',
+    '<b>Reținerea</b>: max. <b>24 de ore</b>, dispusă de organul de urmărire penală (poliție/parchet). Nu necesită aprobare judecătorească. Grilă: reținerea de 48h fără mandat → nelegală.',
+    '<b>Arestul preventiv</b>: dispus de judecătorul de drepturi și libertăți la propunerea procurorului. În cursul urmăririi penale: max. <b>30 de zile</b>, prelungibil cu câte 30 de zile, max. 180 zile total. În cursul judecății: câte 60 de zile, fără limită maximă totală.',
+    '<b>Controlul judiciar</b> și <b>controlul judiciar pe cauțiune</b>: alternative mai ușoare la arest, dispuse de judecătorul de drepturi și libertăți. Nu implică privare de libertate, ci obligații și interdicții (ex: să nu părăsească țara).',
+    '<b>Arestul la domiciliu</b>: privare de libertate în spațiul locativ propriu; dispus tot de judecătorul de drepturi și libertăți; durata se calculează similar cu arestul preventiv (30 de zile + prelungiri).',
+    '<b>Urmărirea penală</b>: începe în rem (față de faptă) → continuă in personam (față de suspect/inculpat). Punerea în mișcare a acțiunii penale (inculparea) → inculpat. Clasarea: când nu există faptă, nu e prevăzută de lege sau nu există probe. Renunțarea la urmărire: discreție a procurorului (oportunitate).',
+    '<b>Acord de recunoaștere a vinovăției</b>: inculpatul recunoaște fapta + pedeapsa negociată cu procurorul → instanța omologhează sau respinge. Instanța <b>nu poate modifica</b> acordul, doar îl acceptă sau îl refuză în totalitate.',
+    '<b>Calea de atac în penal</b>: <b>apelul</b> (art. 408 CPP) — calea ordinară, se face în <b>10 zile</b> de la comunicarea copiei minutei (nu de la pronunțare!). Contestația: cale de atac împotriva unor încheieri (nu a sentinței).',
+    '<b>Judecata în lipsă</b> (contumace): în noul CPP, judecata se poate desfășura fără inculpat dacă acesta e legal citat și se sustrage. Condamnarea în lipsă → inculpatul poate solicita rejudecarea la întoarcerea/prinderea sa.'
   ]
 };
 
@@ -1193,11 +1364,75 @@ var FISE_TIPS={
 
 var FISE_CAT_LBL={civ:'⚖️ Drept Civil',pen:'🔒 Drept Penal',pciv:'📜 Procedură Civilă',ppen:'🛡️ Procedură Penală',lat:'🏛️ Latină juridică'};
 
+function _printFisa(id){
+  var f=FISE_DATA.filter(function(x){return x.id===id;})[0]; if(!f) return;
+  var tips=FISE_TIPS[f.id]||[];
+  var catLbl=FISE_CAT_LBL[f.subj]||f.subj;
+  var sectHtml='';
+  f.sections.forEach(function(s){
+    sectHtml+='<div class="sec"><div class="stitle">'+s.icon+' '+s.title+'</div><ul>';
+    s.items.forEach(function(it){sectHtml+='<li>'+it+'</li>';});
+    sectHtml+='</ul></div>';
+  });
+  var gHtml;
+  if(tips.length){
+    gHtml=tips.map(function(p){return '<li>'+p+'</li>';}).join('');
+  } else {
+    var gPts=f.grila.split(/\.\s+(?=[A-ZĂÎȘȚ<])/);
+    gHtml=gPts.map(function(p){return '<li>'+p.replace(/\.$/,'')+'.</li>';}).join('');
+  }
+  var recallHtml='<div class="recall"><div class="recall-lbl">✏️ Recall rapid — răspunde fără să te uiți</div><ol class="recall-list">';
+  f.sections.forEach(function(s){ recallHtml+='<li>Care sunt elementele esențiale la: <em>'+s.title.replace(/^[\S]+\s/,'')+'</em>?</li>'; });
+  recallHtml+='<li>Numește 3 capcane frecvente la grilele despre <em>'+f.title+'</em>.</li></ol></div>';
+  var w=window.open('','_blank','width=820,height=1000');
+  w.document.write('<!DOCTYPE html><html lang="ro"><head><meta charset="UTF-8"><title>Fișă '+f.wk+' — '+f.title+'</title><style>'
+    +'*{margin:0;padding:0;box-sizing:border-box}'
+    +'body{font-family:Georgia,serif;font-size:13px;line-height:1.65;color:#111;background:#fff;padding:24px 32px}'
+    +'.pg-hd{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2.5px solid #1a1a1a;padding-bottom:10px;margin-bottom:18px}'
+    +'.pg-meta{font-size:10px;color:#555;text-transform:uppercase;letter-spacing:.6px}'
+    +'.wk-badge{background:#1a1a1a;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.3px}'
+    +'h1{font-size:17px;font-weight:700;margin:4px 0 2px;line-height:1.2}'
+    +'.sec{margin-bottom:14px;border-left:3px solid #ccc;padding-left:12px}'
+    +'.stitle{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#444;margin-bottom:5px}'
+    +'ul,ol{padding-left:18px;margin:0}'
+    +'li{margin-bottom:4px;font-size:12.5px}'
+    +'b{font-weight:700}'
+    +'i{font-style:italic;color:#555}'
+    +'.grila{background:#f5f5f0;border-left:4px solid #1a1a1a;border-radius:0 6px 6px 0;padding:12px 14px;margin-top:16px}'
+    +'.grila-lbl{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#1a1a1a;margin-bottom:7px}'
+    +'.grila li{font-size:12px;margin-bottom:5px}'
+    +'.recall{margin-top:18px;border:1.5px dashed #aaa;border-radius:6px;padding:12px 14px}'
+    +'.recall-lbl{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#555;margin-bottom:8px}'
+    +'.recall-list li{margin-bottom:16px;font-size:12px;color:#333}'
+    +'.notes{margin-top:18px}'
+    +'.notes-lbl{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#aaa;margin-bottom:6px}'
+    +'.notes-lines div{height:22px;border-bottom:1px solid #ddd;margin-bottom:2px}'
+    +'@media print{'
+    +'  body{padding:12px 18px}'
+    +'  @page{margin:12mm 14mm;size:A4}'
+    +'}'
+    +'</style></head><body>'
+    +'<div class="pg-hd">'
+    +'  <div><div class="pg-meta">'+catLbl+' · '+f.dates+'</div><h1>'+f.title+'</h1></div>'
+    +'  <span class="wk-badge">'+f.wk+'</span>'
+    +'</div>'
+    +sectHtml
+    +'<div class="grila"><div class="grila-lbl">💡 La grilă — capcane de reținut</div><ul>'+gHtml+'</ul></div>'
+    +recallHtml
+    +'<div class="notes"><div class="notes-lbl">📝 Notițe</div><div class="notes-lines">'
+    +'<div></div><div></div><div></div><div></div><div></div><div></div>'
+    +'</div></div>'
+    +'<script>window.onload=function(){window.print();};<\/script>'
+    +'</body></html>');
+  w.document.close();
+}
+
 function _buildCard(f){
   var card=document.createElement('div'); card.className='fisa-card'; card.id='fisa-'+f.id;
   var head=document.createElement('div'); head.className='fisa-head';
-  head.innerHTML='<span class="fisa-wk">'+f.wk+'</span><span class="fisa-dates">'+f.dates+'</span><span class="fisa-title">'+f.title+'</span><span class="fisa-chev">▾</span>';
+  head.innerHTML='<span class="fisa-wk">'+f.wk+'</span><span class="fisa-dates">'+f.dates+'</span><span class="fisa-title">'+f.title+'</span><button class="fisa-print" title="Printează / salvează PDF">🖨️</button><span class="fisa-chev">▾</span>';
   head.onclick=function(){_toggleFisa(f.id);};
+  head.querySelector('.fisa-print').onclick=function(e){e.stopPropagation();_printFisa(f.id);};
   var body=document.createElement('div'); body.className='fisa-body'; body.id='fisab-'+f.id;
   var html='';
   f.sections.forEach(function(s){
@@ -1280,6 +1515,8 @@ function _toggleFisa(id){
     +'.fisa-glbl{display:block;font-size:10px;font-weight:800;color:var(--gr);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}'
     +'.fisa-glist{padding-left:16px;margin:0}'
     +'.fisa-glist li{font-size:12.5px;color:var(--txt);line-height:1.6;margin-bottom:4px}'
-    +'.fisa-glist b{color:var(--lime)}';
+    +'.fisa-glist b{color:var(--lime)}'
+    +'.fisa-print{background:none;border:1px solid var(--sf2);border-radius:8px;color:var(--sub);font-size:13px;padding:3px 8px;cursor:pointer;flex-shrink:0;transition:.15s;line-height:1;margin-left:auto}'
+    +'.fisa-print:hover{background:var(--sf2);color:var(--lime)}';
   var st=document.createElement('style'); st.textContent=css; document.head.appendChild(st);
 })();
