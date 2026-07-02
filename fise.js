@@ -1113,40 +1113,41 @@ var FISE_DATA = [
     sections:[
       { icon:'📜', title:'Titlurile executorii și condițiile executării (art. 632–641 NCPC)',
         items:[
-          '<b>Titlul executoriu</b>: document care conferă dreptul de a porni executarea silită. Hotărâri judecătorești definitive, contracte de credit, contracte autentice notariale (în limita creanței), bilete la ordin, cecuri.',
-          '<b>Învestirea cu formulă executorie</b>: nu mai e necesară pentru hotărârile judecătorești (din 2013); necesară pentru alte titluri la instanța de executare.',
-          '<b>Instanța de executare</b>: judecătoria în circumscripția căreia se va efectua executarea (domiciliu debitor sau locul bunului).',
-          '<b>Executorul judecătoresc</b>: ales de creditor; competent după domiciliul debitorului SAU locul bunului. Sesizat de creditor cu cerere de executare + titlu executoriu + dovada achitării taxelor.',
-          'Termenul general de prescripție a dreptului de a cere executarea silită: <b>3 ani</b> de la data când hotărârea a rămas definitivă.'
+          '<b>Titlul executoriu</b>: hotărâri judecătorești definitive, contracte autentice notariale (în limita creanței), contracte de credit, bilete la ordin, cecuri, chitanțe de consemnare. <b>Nu orice contract</b> — numai dacă legea sau titlul prevede.',
+          '<b>Ordonanța de plată</b> (art. 1014 NCPC): procedură specială pentru creanțe certe, lichide și exigibile, constând în sume de bani. Emitere în maximum <b>45 de zile</b>; dacă debitorul nu contestă = titlu executoriu. Contestația se judecă în fond.',
+          '<b>Instanța de executare</b>: judecătoria din circumscripția domiciliului/sediului debitorului sau a locului bunului. Sesizarea executorului: creditor depune cerere + titlu + taxe; executorul notifică debitorul cu somație.',
+          '<b>Executorul judecătoresc</b>: ales de creditor; ales din circumscripția instanței de executare. Cheltuielile de executare = în sarcina <b>debitorului</b> (inclusiv onorariul executorului), cu excepția cazului în care instanța decide altfel.',
+          'Prescripția dreptului de a cere executarea: <b>3 ani</b> de la rămânerea definitivă a hotărârii (sau de la exigibilitatea titlului). Prescripția se întrerupe prin orice act de executare.'
         ]
       },
       { icon:'💸', title:'Formele executării silite',
         items:[
-          '<b>Urmărirea mobilă</b>: sechestrul și valorificarea bunurilor mobile corporale ale debitorului (licitație publică sau prin executor).',
-          '<b>Poprirea</b>: urmărirea sumelor pe care un terț (poprit) le datorează debitorului. Exemple: salariu (angajatorul = terț poprit), cont bancar (banca = terț poprit). Terțul poprit e obligat să consemneze suma sau să declare că nu datorează.',
-          'Limite poprire salariu: max. <b>1/3 din salariul net</b> pentru o creanță; max. <b>1/2</b> pentru mai multe creanțe sau întreținere. Minimul nepoprabil = salariul minim net.',
-          '<b>Urmărirea imobiliară</b>: imobile ale debitorului; procedura = somație (termen min. <b>15 zile</b> pentru plată) → publicare licitație → adjudecare.',
-          '<b>Predarea silită</b>: executarea obligațiilor de a face sau a nu face; și predarea efectivă a unui bun mobil/imobil (ex: evacuare).'
+          '<b>Urmărirea mobiliară</b>: sechestrul bunurilor mobile corporale → valorificare prin licitație publică sau vânzare directă. Bunuri de valoare redusă → executorul poate vinde direct.',
+          '<b>Poprirea</b> (art. 780 NCPC): terțul (angajator, bancă) care datorează sume debitorului este obligat să le consemneze/vireze creditorului. Terțul poprit trebuie să declare în termen de <b>5 zile</b> dacă datorează sau nu.',
+          'Limite poprire salariu: o creanță = max. <b>1/3 din salariul net</b>; mai multe creanțe sau pensie de întreținere = max. <b>1/2</b>. Minimul nepoprabil = salariul minim net pe economie.',
+          '<b>Urmărirea imobiliară</b>: somație cu termen min. <b>15 zile</b> → publicitate → licitație (cel puțin 2 termene) → adjudecare. Prețul de pornire = evaluare realizată de expert.',
+          '<b>Predarea silită a bunului</b>: remiterea unui bun mobil/imobil; evacuarea forțată; executarea obligației de a face (cu posibilitate de autorizare a creditorului să facă el însuși pe cheltuiala debitorului).'
         ]
       },
       { icon:'🛑', title:'Contestația la executare (art. 711–720 NCPC)',
         items:[
-          'Modalitate de contestare a actelor de executare ilegale sau a titlului însuși (dacă acesta nu e o hotărâre judecătorească).',
-          '<b>Termenul</b>: <b>15 zile</b> de la data când cel interesat a luat cunoștință de actul atacat (dar nu mai târziu de termenele speciale prevăzute de lege).',
-          'Se judecă de <b>instanța de executare</b> (judecătoria), nu de instanța care a pronunțat titlul. Urgent, cu citarea părților.',
-          'Contestația <b>nu suspendă</b> automat executarea; suspendarea se poate cere separat, cu sau fără cauțiune, și e discreționară.'
+          'Cale de atac specifică executării silite, exercitată de <b>debitor, creditor sau orice terț vătămat</b> de actele de executare. Se poate contesta: actele de executare ilegale SAU titlul însuși (dacă nu e hotărâre judecătorească).',
+          '<b>Termenul</b>: <b>15 zile</b> de la data la care cel interesat a luat cunoștință de actul atacat. Termen de prescripție mai lung (până la 30 de zile) dacă actul atacat nu a fost comunicat.',
+          'Se judecă de <b>instanța de executare</b> (judecătoria), nu de instanța care a pronunțat titlul. Judecată de urgență, cu citare. Hotărârea = supusă numai recursului.',
+          'Contestația <b>nu suspendă automat</b> executarea; suspendarea se cere separat de instanța de executare, cu sau fără cauțiune (discreționară). Dacă contestatorul plătește cauțiune = suspendare mai probabilă.',
+          'Efectele admiterii: actul de executare atacat = anulat; cheltuielile de executare ilegale = în sarcina creditorului urmăritor; executarea continuă de la ultimul act valabil.'
         ]
       },
-      { icon:'⏸️', title:'Suspendarea, perimarea și încheierea executării',
+      { icon:'⏸️', title:'Suspendarea, perimarea, bunuri neurmăribile și încheierea executării',
         items:[
-          '<b>Suspendarea executării</b>: de drept (ex: moartea debitorului, declararea falimentului) sau judecătorească (la cerere). Actele efectuate anterior suspendării rămân valabile; executarea se reia de la ultimul act.',
-          '<b>Perimarea executării</b>: dacă creditorul nu stăruie în executare timp de <b>6 luni</b> de la ultimul act de executare → dosarul se perimă. Stinge dosarul, <b>nu creanța</b> — creditorul poate relua cu un nou dosar.',
-          '<b>Bunuri neurmăribile</b>: haine, mobilier indispensabil, instrumente de lucru, bunuri de uz personal, alimente necesare pe 2 luni, bunuri sacre/culturale. Imobilul locuință poate fi urmărit, dar cu restricții pentru debitorii cu copii minori.',
-          '<b>Încheierea executării</b>: prin realizarea integrală a creanței; prin renunțarea creditorului; prin perimarea dosarului.'
+          '<b>Suspendarea de drept</b>: moartea debitorului (până la acceptarea moștenirii), declararea falimentului, intervenirea căii de atac (dacă legea prevede), poprirea asigurătorie anterioară. Actele anterioare suspendării = valabile.',
+          '<b>Perimarea executării</b> (art. 697 NCPC): creditorul nu stăruie în executare <b>6 luni</b> de la ultimul act de executare → dosarul se perimă. Stinge dosarul, <b>nu creanța</b>. Creditorul poate porni un nou dosar, cu un nou executor, dar prescripția termenului de 3 ani curge.',
+          '<b>Bunuri neurmăribile</b>: haine, mobilier de strictă necesitate, instrumente de muncă, alimente necesare pe 2 luni, bunuri sacre/culturale, pensii alimentare. ⚠️ Imobilul locuință = <i>poate fi urmărit</i>, dar cu restricții speciale dacă e singurul imobil al familiei cu minori.',
+          '<b>Măsuri asigurătorii</b> (înainte de executare): sechestrul asigurătoriu (imobilizare bunuri mobile), poprirea asigurătorie (blocare conturi). Se pot solicita înainte sau în cursul judecății, cu sau fără cauțiune.'
         ]
       }
     ],
-    grila:'Termenul contestație la executare = <b>15 zile</b> (nu 30). Contestația la executare se judecă la <b>instanța de executare</b> (judecătoria), nu la instanța care a dat titlul. Poprire salariu: max. <b>1/3</b> (o creanță) / <b>1/2</b> (mai multe). Perimarea stinge dosarul, nu creanța. Terțul poprit are <b>obligație activă</b> (consemnare sau declarație că nu datorează).'
+    grila:'Contestație la executare = <b>15 zile</b> de la cunoaștere; judecată de <b>instanța de executare</b>. Nu suspendă automat. Poprire salariu: <b>1/3</b> (o creanță) / <b>1/2</b> (mai multe). Perimarea (6 luni) stinge dosarul, nu creanța. Ordonanță de plată: creanță certă/lichidă/exigibilă, termen 45 de zile. Cheltuielile de executare: în sarcina debitorului.'
   },
 
   // ══ PROCEDURĂ PENALĂ ══════════════════════════════════════════════════════════
