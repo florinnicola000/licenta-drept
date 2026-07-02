@@ -281,13 +281,13 @@ a{color:var(--gr);text-decoration:none}
 <div id="tabs">
   <button class="tab active" onclick="showPanel('azi')">🏠 Astăzi</button>
   <button class="tab" onclick="showPanel('plan')">📅 Plan</button>
+  <button class="tab" onclick="showPanel('fise')">📋 Fișe</button>
   <button class="tab" onclick="showPanel('cal')">🗓 Calendar</button>
   <button class="tab" onclick="showPanel('met')">📚 Metodologie</button>
   <button class="tab" onclick="showPanel('ritm')">⏱ Ritm</button>
   <button class="tab" onclick="showPanel('surse')">🔗 Surse</button>
   <button class="tab" onclick="showPanel('dict')">📖 Dicționar</button>
   <button class="tab" onclick="showPanel('memory')">🧩 Joc</button>
-  <button class="tab" onclick="showPanel('fise')">📋 Fișe</button>
 </div>
 
 <div id="main">
@@ -1331,7 +1331,7 @@ function showPanel(id){
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('panel-'+id).classList.add('active');
-  const map={azi:0,plan:1,cal:2,met:3,ritm:4,surse:5,dict:6,memory:7,fise:8};
+  const map={azi:0,plan:1,fise:2,cal:3,met:4,ritm:5,surse:6,dict:7,memory:8};
   const tabs=document.querySelectorAll('.tab'); if(map[id]!==undefined) tabs[map[id]].classList.add('active');
   if(id==='cal') renderCalendar();
   if(id==='azi') renderDashboard();
