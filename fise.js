@@ -302,41 +302,55 @@ var FISE_DATA = [
     sections:[
       { icon:'🌿', title:'Uzufructul (art. 703–748 NCC)',
         items:[
-          'Dreptul de a <b>folosi bunul</b> altuia și de a-i culege <b>fructele</b>, cu obligația de a-i conserva <b>substanța</b>.',
-          '<b>Uzufructuarul</b>: suportă reparațiile de întreținere; culege <b>fructele</b> naturale, civile, industriale; <b>nu are drept la producte</b>.',
-          '<b>Nudul proprietar</b>: suportă reparațiile capitale; are drept la producte; poate înstrăina nuda proprietate; poate ipoteca (cu acordul uzufructuarului).',
-          '<b>Stingere</b>: expirarea termenului, <b>moartea uzufructuarului</b> (personal — nu se transmite prin moștenire, dar poate fi cedat), consolidarea, renunțare, neuz 10 ani, pieirea totală a bunului.',
-          'Uzufructul este <b>temporar prin natura sa</b>; constituirea pe durată nelimitată = viager (max pe durata vieții).'
+          'Dreptul de a <b>folosi bunul</b> altuia și de a-i culege <b>fructele</b>, cu obligația conservării <b>substanței</b>. Constituire: prin act juridic (inclusiv testament) sau uzucapiune.',
+          '<b>Uzufructuarul</b>: suportă reparațiile de <i>întreținere</i>; culege fructele naturale, civile, industriale; <b>nu are drept la producte</b>. Poate închiria/arenda bunul — locațiunile consimțite, dacă sunt înregistrate, sunt opozabile nudului proprietar max <b>3 ani</b> după stingerea uzufructului.',
+          '<b>Nudul proprietar</b>: suportă reparațiile <i>capitale</i>; are drept la producte; poate înstrăina nuda proprietate fără acordul uzufructuarului; poate ipoteca nuda proprietate (cu consimțământul uzufructuarului pentru înscrierea în CF).',
+          '<b>Cedarea uzufructului</b> (art. 714 NCC): uzufructuarul poate ceda dreptul sau poate constitui o ipotecă asupra lui. ⚠️ Uzufructul se stinge tot la <b>moartea uzufructuarului inițial</b>, nu a cesionarului.',
+          '<b>Cuaziuzufructul</b> (art. 712 NCC): uzufructul asupra bunurilor consumptibile (bani, grâne). Uzufructuarul devine proprietar al bunului, dar trebuie să restituie la stingere <i>bunuri de aceeași calitate, cantitate și valoare</i>.',
+          '<b>Stingere</b> (art. 746 NCC): expirarea termenului; <b>moartea uzufructuarului</b> (chiar cu beneficiar cesionar); consolidarea (uzufructuarul dobândește nuda proprietate sau invers); renunțare; <b>neuz 10 ani</b>; pieirea totală a bunului.',
+          'Uzufructul este <b>temporar prin natura sa</b>; nu poate depăși viața uzufructuarului (la PJ: max 30 ani).'
         ]
       },
       { icon:'🏠', title:'Uzul și abitația (art. 749–754 NCC)',
         items:[
-          '<b>Uzul</b>: dreptul de a folosi bunul și a culege fructele <b>în limita nevoilor proprii și ale familiei</b> titularului.',
-          '<b>Abitația</b>: dreptul de a locui în casa altuia; specific imobilelor cu destinație de locuință.',
-          'Ambele sunt <b>inalienabile și insesizabile</b>: nu pot fi cedate, nu pot fi urmărite de creditori, nu pot fi ipotecate.',
-          'Locuința familiei: soțul supraviețuitor beneficiază de dreptul de abitație timp de 1 an de la data deschiderii moștenirii (dacă nu este coproprietar sau moștenitor).'
+          '<b>Uzul</b>: dreptul de a folosi bunul și a culege fructele <b>numai în limita nevoilor proprii și ale familiei</b>. ⚠️ Frugele în exces rămân nudului proprietar — spre deosebire de uzufruct.',
+          '<b>Abitația</b>: dreptul de a locui în casa altuia cu familia; specific imobilelor de locuință. Titularul poate locui și cu membrii de familie, chiar dacă nu sunt menționați expres.',
+          'Ambele sunt <b>inalienabile și insesizabile</b> (art. 752 NCC): nu pot fi cedate terților; nu pot fi urmărite de creditori; nu pot fi ipotecate. ⚠️ Uzufructul, în schimb, poate fi cedat.',
+          'Constituire: numai prin act juridic (nu prin uzucapiune sau destinație de proprietar). Regimul juridic al uzufructului se aplică <i>mutatis mutandis</i>.',
+          '<b>Dreptul de abitație al soțului supraviețuitor</b> (art. 973 NCC): timp de <b>1 an</b> de la data deschiderii moștenirii, dacă locuia în acea casă și nu este moștenitor sau coproprietar al ei. Este legatar de uz gratuit.'
         ]
       },
       { icon:'🛤️', title:'Servituțile (art. 755–772 NCC)',
         items:[
-          'Sarcini impuse unui fond (<b>aservit</b>) în folosul unui alt fond (<b>dominant</b>); urmăresc fondurile, <b>nu persoanele</b>.',
-          '<b>Continue</b>: exercitarea nu necesită act uman periodic (scurgerea apelor, vedere, lumină). / <b>Discontinue</b>: necesită acte repetate (dreptul de trecere, de a lua apă).',
-          '<b>Aparente</b>: existența lor e semnalizată printr-un semn vizibil (drum, șanț). / <b>Neaparente</b>: fără semn exterior.',
-          '<b>Uzucapiunea</b>: <b>numai servituțile continue și aparente</b> pot fi dobândite prin uzucapiune sau prin destinație de proprietar. Servituțile discontinue și neaparente: <b>numai prin titlu</b>.',
-          '<b>Stingere</b>: neuz 10 ani (servituți discontinue), confuziune (același proprietar al ambelor fonduri), renunțare, pieirea fondului aservit.'
+          'Sarcini impuse unui fond (<b>aservit</b>) în folosul unui alt fond (<b>dominant</b>); urmăresc fondurile, <b>nu persoanele</b>. Proprietarul fondului dominant nu poate exercita alte drepturi decât cele stabilite prin titlu.',
+          '<b>Continue</b>: exercitarea nu necesită act uman periodic (<i>ex: scurgerea apelor, vederea, lumina</i>). / <b>Discontinue</b>: necesită acte repetate (<i>ex: dreptul de trecere, dreptul de a lua apă</i>).',
+          '<b>Aparente</b>: semnalizate printr-un semn vizibil (drum, șanț). / <b>Neaparente</b>: fără semn exterior (<i>ex: interdicția de a construire la o anumită înălțime</i>).',
+          '<b>Moduri de dobândire</b>: (1) titlu (act juridic); (2) uzucapiune — <b>numai servituțile continue și aparente</b>; (3) destinația de proprietar — servitutea se naște când un proprietar, care deținea ambele fonduri, le înstrăinează separat fără a suprima semnul vizibil al servituții.',
+          '<b>Servituți pozitive</b> (titularul fondului dominant poate face ceva pe fondul aservit: trecere, a lua apă) vs. <b>negative</b> (fondul aservit trebuie să se abțină: interdicția de a construi, de a planta).',
+          '<b>Stingere</b>: neuz <b>10 ani</b> (servituți discontinue sau neaparente); confuziune (ambele fonduri revin aceluiași proprietar); renunțare; pieirea fondului aservit; răscumpărare.'
         ]
       },
       { icon:'🏗️', title:'Superficia (art. 693–702 NCC)',
         items:[
-          'Dreptul real de a <b>edifica sau păstra o construcție pe terenul altei persoane</b>, asociat cu un drept de folosință asupra terenului aferent.',
-          'Superficiarul este proprietar al construcției; terenul rămâne al nudului proprietar.',
-          'Durată: max <b>99 de ani</b>, cu posibilitate de reînnoire.',
-          'La stingere prin expirarea termenului sau reunirea drepturilor: proprietarul terenului poate achiziționa construcția la valoarea de piață sau poate cere desființarea ei (cu despăgubire).',
-          '<b>Nu se confundă cu servitutea</b>: superficia conferă un drept de proprietate asupra construcției + folosință teren; servitutea nu conferă proprietate.'
+          'Dreptul real de a <b>edifica sau păstra o construcție pe terenul altei persoane</b>, asociat cu un drept de folosință (<i>superficie</i> asupra terenului aferent construcției). Superficiarul = proprietarul construcției.',
+          'Constituire: act juridic (convenție sau testament), uzucapiune sau alt mod prevăzut de lege. Înscrierea în CF e obligatorie pentru opozabilitate față de terți.',
+          'Durată: max <b>99 ani</b>, cu posibilitate de reînnoire. La PF — poate fi viageră; la PJ — max 99 ani.',
+          '<b>La stingerea superficiei</b>: proprietarul terenului poate (a) prelua construcția la <i>valoarea de piață</i> sau (b) cere superficiarului să ridice construcția pe cheltuiala sa. ⚠️ Dacă nu se înțeleg, instanța stabilește soluția.',
+          'Superficiarul poate <b>ipoteca construcția</b> separat de teren (art. 696 NCC). Ipoteca se extinde și asupra dreptului de folosință a terenului.',
+          '⚠️ Superficia ≠ servitutea: superficia conferă un <i>drept de proprietate</i> (asupra construcției) + folosință teren; servitutea nu conferă proprietate, ci numai o sarcină. Superficia ≠ accesiunea: superficiarul <i>nu este supus accesiunii</i> — construcția nu se incorporează terenului.'
+        ]
+      },
+      { icon:'🔁', title:'Schemă comparativă: dezmembrăminte',
+        items:[
+          '<b>Uzufruct</b>: fructe + folosință; cedabil + ipotecabil; se stinge la moartea uzufructuarului; durată max viager (PF) sau 30 ani (PJ).',
+          '<b>Uz</b>: fructe doar pentru nevoile proprii + familie; inalienabil + insesizabil; se stinge la moartea titularului.',
+          '<b>Abitație</b>: locuire proprie + familie; inalienabilă + insesizabilă; se stinge la moartea titularului. Toate trei: constituire prin act juridic sau uzucapiune.',
+          '<b>Servitutea</b>: sarcină pe un fond în folosul altui fond (propter rem); urmărește fondurile, nu persoanele; nu conferă proprietate; discontinue/neaparente → numai prin titlu.',
+          '<b>Superficia</b>: drept de proprietate asupra construcției + folosință teren; cedabilă, ipotecabilă; max 99 ani. Deosebire esențială față de servitute și uzufruct: superficiarul <i>are proprietatea construcției</i>.'
         ]
       }
     ],
-    grila:'Uzufructuarul: <b>fructe da, producte nu</b>. Uzufructul <b>nu se transmite prin moștenire</b> (personal). Abitația: <b>inalienabilă și insesizabilă</b> (nu poate fi cedată sau urmărită). Servituțile discontinue: <b>nu prin uzucapiune</b>, numai prin titlu. Superficia: max <b>99 ani</b>. Stingerea servituților discontinue prin neuz: <b>10 ani</b>.'
+    grila:'Uzufructuarul: <b>fructe da, producte nu</b>; uzufruct se stinge la moartea <b>uzufructuarului inițial</b> (nu a cesionarului). Abitația: <b>inalienabilă și insesizabilă</b> (spre deosebire de uzufruct, care e cedabil). Servituți discontinue/neaparente: <b>numai prin titlu</b>, nu prin uzucapiune. Superficia: max <b>99 ani</b>; superficiarul nu e supus accesiunii. Neuz servituți: <b>10 ani</b>.'
   },
 
   {
