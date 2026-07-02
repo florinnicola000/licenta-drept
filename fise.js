@@ -1397,8 +1397,7 @@ var FISE_DATA = [
           '<b>Procedura</b>: judecată de urgență, cu citarea părților (de regulă); hotărârea se pronunță imediat sau în cel mult <b>3 zile</b>; executorie de drept (<b>nu trebuie așteptat apelul</b>). Calea de atac: <b>apel în 5 zile</b> de la pronunțare sau comunicare.',
           '<b>Exemple de aplicare</b>: custodiei provizorii a copilului în divorț; reintegrarea urgentă în posesie; sistarea unei lucrări de urgență; predarea provizorie a unui bun. ⚠️ Nu confunda cu măsurile asigurătorii (sechestrul, poprirea asigurătorie) care sunt mai degrabă de conservare a bunurilor, nu de reglementare provizorie a situației juridice.'
         ]
-      }
-    ],
+      },
       { icon:'🪑', title:'Judecata în lipsă și procedura contumaciei (art. 223–225 NCPC)',
         items:[
           '<b>Judecata în lipsă</b>: dacă una din părți nu se prezintă la termen, judecata continuă în lipsa ei — NCPC nu mai reglementează contumacia clasică din vechiul CPC. Pârâtul care nu depune întâmpinare și nu se prezintă → <b>decăzut din dreptul de a propune probe</b>, dar poate invoca excepții peremptorii.',
@@ -1459,8 +1458,7 @@ var FISE_DATA = [
           '<b>Bunuri neurmăribile</b>: haine, mobilier de strictă necesitate, instrumente de muncă, alimente necesare pe 2 luni, bunuri sacre/culturale, pensii alimentare. ⚠️ Imobilul locuință = <i>poate fi urmărit</i>, dar cu restricții speciale dacă e singurul imobil al familiei cu minori.',
           '<b>Măsuri asigurătorii</b> (înainte de executare): sechestrul asigurătoriu (imobilizare bunuri mobile), poprirea asigurătorie (blocare conturi). Se pot solicita înainte sau în cursul judecății, cu sau fără cauțiune.'
         ]
-      }
-    ],
+      },
       { icon:'🔨', title:'Executarea obligațiilor de a face și insolvenței (art. 905–910 NCPC + Legea 85/2014)',
         items:[
           '<b>Obligațiile de a face intuitu personae</b> (art. 905 NCPC): dacă debitorul refuză să execute o obligație de a face (ex. predarea unui lucru determinat) și numai el o poate executa, creditorul poate cere instanței obligarea debitorului la <b>penalități</b> de <b>100–1.000 lei/zi</b> de întârziere (sau mai mari dacă prejudiciul e mai mare).',
@@ -1527,8 +1525,7 @@ var FISE_DATA = [
           '<b>Reabilitarea judecătorească</b> (art. 166 NCP): cerere la instanța de executare (sau la instanța de la domiciliu); condiții: (1) trecerea unui termen calculat de la executare/stingere: <b>4 ani + durata pedepsei</b> (pentru pedepse 2–5 ani), <b>5 ani + durata pedepsei</b> (pentru pedepse 5–10 ani), <b>7 ani + durata pedepsei</b> (pentru pedepse >10 ani); (2) bună conduită în termenul de reabilitare; (3) achitarea integrală a cheltuielilor de judecată și a despăgubirilor civile (dacă nu e dispensat de instanță).',
           '⚠️ <b>Distincție cheie pentru grile</b>: reabilitarea de drept = automată, fără cerere, la termen; reabilitarea judecătorească = la cerere, necesită condiții suplimentare (bună purtare, achitarea cheltuielilor), pronunțată de instanță. La condamnare cu detenție pe viață: <b>nu există reabilitare judecătorească</b> — condamnatul poate beneficia doar de grațiere.'
         ]
-      }
-    ],
+      },
       { icon:'🔄', title:'Căile extraordinare de atac penale (art. 426–470 CPP)',
         items:[
           '<b>Contestația în anulare</b> (art. 426 CPP): împotriva hotărârilor definitive ale instanței de apel. Motive limitative: (1) instanța nu a fost legal constituită; (2) inculpatul a fost judecat în lipsă deși nu a fost legal citat; (3) o cauză de încetare a procesului penal nu a fost constatată în recurs în casație; (4) inculpatul condamnat definitiv a mai fost judecat definitiv pentru aceeași faptă. Termen: <b>30 de zile</b> de la comunicare / de la cunoaștere.',
@@ -1597,8 +1594,7 @@ var FISE_DATA = [
           '<b>Inopozabilitatea</b>: actul e valabil între părți dar nu produce efecte față de terți (ex: donația neînregistrată în CF; actul fraudulos — acțiunea pauliană → inopozabilitate, nu nulitate). ⚠️ Inopozabilitate ≠ nulitate.',
           '<b>Conversiunea actului nul</b> (art. 1260 NCC): actul nul ca act principal poate valora ca alt act dacă îndeplinește condițiile acestuia și reflectă voința probabilă a părților (ex: testament autentic nul ca testament → poate valora ca testament olograf dacă e scris de mână, datat, semnat).'
         ]
-      }
-    ],
+      },
       { icon:'📌', title:'Termene suplimentare frecvente în grile',
         items:[
           '<b>Preemțiunea NCC</b> (art. 1735): vânzătorul notifică intenția → preemptorul are <b>10 zile</b> (bun mobil) sau <b>30 de zile</b> (bun imobil) să exercite dreptul. Preemțiunea Legea 17/2014 (teren agricol extravilan): <b>30 de zile</b> de la notificare.',
