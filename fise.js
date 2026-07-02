@@ -789,14 +789,14 @@ var FISE_DATA = [
           '<b>Obligațiile locatarului</b>: plata chiriei la termen; folosința conform destinației; <b>reparații locative (de întreținere)</b>; anunțarea locatorului pentru reparații capitale; restituirea bunului în stare corespunzătoare la expirare.',
           '<b>Sublocațiunea</b>: permisă dacă nu e interzisă expres. Cesiunea contractului necesită acordul expres al locatorului.',
           '<b>Tacita relocațiune</b> (art. 1810 NCC): dacă după expirarea termenului locatarul continuă să folosească bunul și locatorul nu se opune → contract nou pe durată nedeterminată în aceleași condiții.',
-          '<b>Opozabilitate față de dobânditorul bunului</b> (<i>emptio non tollit locatum</i>): noul proprietar este ținut de locațiune dacă aceasta e înregistrată (imobile: CF) sau dacă a cunoscut-o. Locatarul cu dată certă anterioară înstrăinării are drept de preferință.'
+          '<b>Opozabilitate față de dobânditorul bunului</b> (art. 1811 NCC, <i>emptio non tollit locatum</i>): noul proprietar e ținut să respecte locațiunea dacă: la imobile înscrise în CF — locațiunea era <b>notată în CF</b>; la imobile neînscrise — data certă a locațiunii e <b>anterioară</b> datei certe a înstrăinării; la mobile — data certă anterioară. (Nu e un „drept de preferință" la cumpărare — doar opozabilitatea contractului.)'
         ]
       },
       { icon:'🌱', title:'Arendarea (art. 1836–1850 NCC)',
         items:[
           '<b>Definiție</b>: locator al unui bun agricol (teren, animale, utilaje) transmite arendașului dreptul de <b>folosință temporară</b>, contra <b>arendei</b> (bani sau produse naturale). Tip special de locațiune, supus normelor specifice din art. 1836–1850 NCC și Legii 17/2014.',
-          '<b>Formă</b>: act scris, înregistrat la consiliul local al localității unde se află bunul arendat, sub sancțiunea nulității absolute. <b>Durata minimă</b>: lege nu impune un minim; dacă nu e stipulată → 7 ani (durata unui asolament). Dacă durată mai mică de 7 ani → poate fi prelungită prin acordul părților.',
-          '<b>Subarendarea</b> e interzisă (art. 1847 NCC) — deosebire esențială față de locațiunea obișnuită unde e permisă dacă nu e exclusă expres. Cesiunea arendării e de asemenea interzisă.',
+          '<b>Formă</b> (art. 1838 NCC): <b>formă scrisă</b>, sub sancțiunea <b>nulității absolute</b>; un exemplar se depune la <b>consiliul local</b> (pentru evidență/opozabilitate). Arendarea autentificată notarial sau înregistrată la consiliul local = <b>titlu executoriu</b> pentru plata arendei (art. 1845). ⚠️ <b>Durata nedeterminată</b> (art. 1837): contractul se consideră încheiat pentru <b>anul agricol</b> în curs (perioada necesară recoltării fructelor) — regula veche „7 ani" era din Legea 16/1994, abrogată.',
+          '<b>Subarendarea</b> e interzisă total, sub sancțiunea nulității absolute (art. 1847 NCC) — deosebire esențială față de locațiunea obișnuită. <b>Cesiunea</b> arendării e permisă <b>limitat</b> (art. 1846): numai cu acordul <b>scris</b> al arendatorului și numai către <b>soțul</b> care participă la exploatare sau <b>descendenții majori</b> ai arendașului.',
           '<b>Dreptul de preemțiune al arendașului</b> (art. 1849 NCC + Legea 17/2014): la vânzarea terenului arendat, arendașul are drept de preemțiune (rândul 2 din ordinea Legii 17/2014). ⚠️ Trebuie să lucreze terenul de cel puțin 1 an.',
           '<b>Arenda</b>: stabilită în bani sau în natură; dacă nu se poate plăti arenda în natură din cauza forței majore → arendașul plătește echivalentul în bani. Arenda în produse → se impozitează ca venit agricol.'
         ]
@@ -808,7 +808,7 @@ var FISE_DATA = [
           '<b>Mandatul aparent</b> (art. 1309 NCC): mandatarul depășește puterile, dar terțul de bună-credință care s-a bazat pe aparența de putere este protejat; mandantul nu poate opune limitele puterilor terțului de bună-credință.',
           '<b>Mandatul fără reprezentare</b> (art. 2039 NCC): mandatarul acționează în <b>nume propriu</b>, dar pe seama mandantului. Terțul nu cunoaște calitatea de mandant. Actele produc efecte față de mandatar → mandantul poate cere cesiunea creanțelor/bunurilor.',
           '<b>Obligațiile mandatarului</b>: executarea cu diligența unui profesionist (dacă e oneros) sau a unui bun proprietar (dacă e gratuit); să nu depășească puterile; să dea socoteală; să remită ceea ce a primit.',
-          '<b>Stingerea mandatului</b>: moartea/incapacitatea oricărei părți; revocarea de mandant (oricând — excepție: mandat în interesul mandatarului sau terțului = irevocabil); renunțare; termen.'
+          '<b>Stingerea mandatului</b> (art. 2030 NCC): moartea/incapacitatea/falimentul oricărei părți; revocarea de către mandant — <b>oricând</b> (<i>ad nutum</i>), chiar dacă mandatul a fost declarat irevocabil; ⚠️ dar la mandatul <b>declarat irevocabil</b> sau dat <b>în interes comun</b>, revocarea nejustificată obligă mandantul la <b>daune-interese</b> (art. 2032); renunțarea mandatarului; expirarea termenului.'
         ]
       },
       { icon:'🔨', title:'Antrepriza (art. 1851–1880 NCC)',
@@ -817,15 +817,14 @@ var FISE_DATA = [
           'Antreprenorul lucrează <b>independent</b> — nu e prepusul clientului; clientul <b>nu răspunde</b> ca comitent pentru faptele antreprenorului.',
           'Prețul: <b>forfetar</b> (global, nenegociabil ulterior, riscul revizuirii e al antreprenorului) sau <b>determinabil</b> (deviz estimativ — poate fi ajustat dacă depășirile sunt semnificative și imprevizibile).',
           '<b>Riscul pieirii</b>: înainte de recepție, material furnizat de antreprenor → riscul e al <b>antreprenorului</b>; material al clientului, pierit din viciul materialului → riscul e al <b>clientului</b>.',
-          '<b>Recepția lucrării</b>: momentul-cheie; după recepție, riscul trece la client și curg garanțiile pentru vicii ascunse (3 ani de la recepție la imobile; 2 ani pentru vicii structurale).',
-          '<b>Denunțarea unilaterală de către client</b> (art. 1869 NCC): clientul poate rezilia oricând, cu preaviz, plătind antreprenorului cheltuielile suportate + beneficiul nerealizat + remunerația cuvenită. Antreprenorul nu poate rezilia unilateral (decât dacă clientul nu cooperează).'
+          '<b>Recepția lucrării</b>: momentul-cheie; după recepție riscul trece la client și încep să curgă termenele de garanție (la construcții: v. secțiunea următoare — 10 ani vicii ascunse, durata existenței pentru structură).',
+          '<b>Denunțarea unilaterală de către client</b>: clientul poate denunța contractul, plătind antreprenorului cheltuielile suportate, munca prestată și beneficiul nerealizat. Antreprenorul nu poate denunța unilateral (poate cere rezilierea dacă clientul nu cooperează sau nu face plățile convenite).'
         ]
       },
       { icon:'🏗️', title:'Garanția contra viciilor în antrepriză și construcții (Legea 10/1995)',
         items:[
-          '<b>Garanția de bună execuție</b>: antreprenorul răspunde față de client pentru viciile lucrării. Termenele de garanție legale: <b>2 ani</b> de la recepție (pentru vicii ascunse la construcții curente); <b>10 ani</b> pentru vicii structurale majore la construcții (Legea 10/1995 privind calitatea în construcții).',
-          '<b>Obligația de garanție decenalã (10 ani)</b>: proiectantul, constructorul și dirigintele de șantier răspund solidar pentru viciile structurale care amenință soliditatea sau siguranța construcției timp de 10 ani de la recepția finală. ⚠️ E o garanție legală, nu convențională — nu poate fi limitată prin contract.',
-          '<b>Răspunderea pe durată nelimitată</b>: dacă viciu a fost cauzat cu intenție sau prin neglijență gravă, termenul de 10 ani nu limitează răspunderea — prescripția de drept comun (3 ani de la cunoașterea viciului) se aplică.',
+          '<b>Regula-cheie (art. 29 din Legea 10/1995)</b>: proiectantul, verificatorul de proiect, fabricanții, executantul și dirigintele de șantier răspund pentru <b>viciile ascunse</b> ale construcției ivite în <b>10 ani de la recepția lucrării</b>, iar pentru viciile <b>structurii de rezistență</b> (din nerespectarea normelor de proiectare/execuție) — pe <b>toată durata de existență a construcției</b>. ⚠️ Capcană frecventă: NU „2 ani vicii ascunse / 10 ani structură"!',
+          '<b>Caracterul garanției</b>: e o garanție <b>legală, de ordine publică</b> — nu poate fi limitată sau înlăturată prin contract. Răspunderea celor implicați e potrivit obligațiilor fiecăruia (proiectant pentru proiect, executant pentru execuție etc.).',
           '<b>Recepția</b>: recepția la terminarea lucrărilor (provizorie) și recepția finală (după expirarea perioadei de garanție). Viciile aparente trebuie semnalate la recepție sub sancțiunea decăderii. Viciile ascunse: pot fi invocate oricând în termenul de garanție, chiar dacă recepția a avut loc.'
         ]
       },
@@ -838,7 +837,7 @@ var FISE_DATA = [
         ]
       }
     ],
-    grila:'Locatarul: <b>reparații locative</b>; locatorul: <b>reparații capitale</b>. Tacita relocațiune → contract pe durată nedeterminată. Mandat = acte juridice; antrepriză = acte materiale. Mandatul PF = prezumție de <b>gratuitate</b>. Mandat fără reprezentare: terțul nu cunoaște mandantul; efectele → mandatar. Antreprenorul ≠ prepus; clientul poate denunța oricând cu despăgubire. Arendare: act scris înregistrat la consiliu local; subarendarea <b>interzisă</b>; arendașul are drept de preemțiune (Legea 17/2014). Garanție construcții: <b>2 ani</b> vicii ascunse obișnuite; <b>10 ani</b> vicii structurale (Legea 10/1995).'
+    grila:'Locatarul: <b>reparații locative</b>; locatorul: <b>reparații capitale</b>. Tacita relocațiune → contract pe durată nedeterminată. Mandat = acte juridice; antrepriză = acte materiale. Mandatul PF = prezumție de <b>gratuitate</b>. Mandat fără reprezentare: terțul nu cunoaște mandantul; efectele → mandatar. Antreprenorul ≠ prepus; clientul poate denunța oricând cu despăgubire. Arendare: formă scrisă <b>ad validitatem</b> (NCA); durată nedeterminată → <b>anul agricol</b> (art. 1837, nu „7 ani"); subarendarea <b>interzisă</b>; cesiunea doar către soț/descendenți majori cu acord scris; arendașul are preemțiune (L. 17/2014). Garanție construcții (art. 29 L. 10/1995): <b>10 ani</b> vicii ascunse; <b>toată durata de existență</b> pentru structura de rezistență (capcană: nu 2/10!).'
   },
 
   {
