@@ -977,26 +977,26 @@ var FISE_DATA = [
     sections:[
       { icon:'💰', title:'Infracțiuni contra patrimoniului — forme principale (art. 228–256 NCP)',
         items:[
-          '<b>Furtul simplu</b> (art. 228): luarea bunului mobil din posesia/detenția altuia, <b>fără consimțământ</b>, cu intenția de a-l însuși pe nedrept.',
-          '<b>Furtul calificat</b> (art. 229): forme agravate — noaptea, de două+ persoane, prin efracție/escaladare, din locuință/dependințe, privind vehicule/produse petroliere; pedeapsă sporită.',
-          '<b>Tâlhăria</b> (art. 233): furt + violență sau amenințare; violența poate fi și <b>ulterioară luării</b> bunului (pentru a păstra bunul sau a asigura scăparea).',
-          '<b>Înșelăciunea</b> (art. 244): inducerea în eroare + prejudiciu patrimonial. Necesită un prejudiciu cert; fără prejudiciu → tentativă.',
-          '<b>Abuzul de încredere</b> (art. 238): bunul a fost primit cu consimțământ, dar nu e restituit sau e folosit altfel decât s-a convenit.',
-          '<b>Gestiunea frauduloasă</b> (art. 242): subiect activ special — cel căruia i s-au încredințat bunuri de administrat; prejudicierea prin acte de gestionare.',
-          '<b>Delapidarea</b> (art. 295): subiect activ special — funcționar gestionar; însușirea/folosirea/traficarea bunurilor entității.'
+          '<b>Furtul simplu</b> (art. 228): luarea bunului mobil din posesia/detenția altuia, <b>fără consimțământ</b>, cu intenția de a-l însuși pe nedrept. <b>Furtul în scop de folosință</b> (art. 230): luarea temporară (fără intenție de apropriere); pedeapsă redusă.',
+          '<b>Furtul calificat</b> (art. 229): noaptea, de 2+ persoane, prin efracție/escaladare/chei false, din locuință/dependințe, vehicule; pedeapsă <b>2–7 ani</b>. ⚠️ Furtul de artă/document = agravat.',
+          '<b>Tâlhăria</b> (art. 233): furt + violență sau amenințare, imediat înainte/în timpul/după luare. Violența <b>ulterioară</b> luării (pentru a-și asigura scăparea sau a păstra bunul) → tot tâlhărie (art. 234 tâlhărie sau piraterie). Forma agravată: vătămare corporală gravă sau moarte.',
+          '<b>Înșelăciunea</b> (art. 244): inducerea în eroare prin acțiune/omisiune + prejudiciu patrimonial. Fără prejudiciu cert → tentativă. ⚠️ Înșelăciunea ≠ abuzul de încredere: la înșelăciune bunul se obține <i>prin eroare</i>; la abuz, e predat <i>de bunăvoie</i> inițial.',
+          '<b>Abuzul de încredere</b> (art. 238): bunul predat cu consimțământ, nestituit sau folosit altfel decât convenit. <b>Gestiunea frauduloasă</b> (art. 242): subiect special — administrator; prejudicierea celui ale cărui bunuri le gestionează.',
+          '<b>Distrugerea</b> (art. 253 NCP): distrugerea/degradarea/aducerea în stare de neîntrebuințare a bunurilor proprii sau ale altuia, dacă producere de consecințe grave; forma simplă — la <b>plângere prealabilă</b>; forma agravată (mijloace periculoase, bun de importanță deosebită) — din oficiu.'
         ]
       },
       { icon:'📄', title:'Infracțiunile de fals (art. 310–328 NCP)',
         items:[
-          '<b>Falsul material în înscrisuri oficiale</b> (art. 320): contrafacerea sau alterarea <b>fizică</b> a înscrisului oficial. Săvârșit de un funcționar public → formă agravată.',
-          '<b>Falsul intelectual</b> (art. 321): funcționarul competent inserează <b>date false</b> în înscris la momentul întocmirii. Subiect activ special: funcționar cu atribuții de autentificare/certificare.',
-          '<b>Falsul în înscrisuri sub semnătură privată</b> (art. 322): falsificarea unui înscris privat, urmată de folosire; infracțiunea e complexă (fals + uz).',
-          '<b>Uzul de fals</b> (art. 323): folosirea unui înscris oficial fals de <b>o altă persoană</b> decât autorul falsului. Autorul falsului care folosește el însuși înscrisul nu comite uz de fals separat (absorbit).',
-          '<b>Falsul în declarații</b> (art. 326): declararea mincinoasă în fața unui organ sau instituție de stat, în scopul producerii de consecințe juridice.'
+          '<b>Falsificarea de monede/valori</b> (art. 310 NCP): contrafacerea sau alterarea monedelor, titlurilor de valoare, instrumentelor de plată; subiect activ orice persoană. Gravitate sporită: punerea în circulație e și ea incriminată separat.',
+          '<b>Falsul material în înscrisuri oficiale</b> (art. 320): contrafacerea sau alterarea <b>fizică</b> a înscrisului oficial. Comis de funcționar → formă agravată. Înscris <b>oficial</b> = emis de autoritate publică sau organ de stat.',
+          '<b>Falsul intelectual</b> (art. 321): funcționarul competent inserează <b>date false</b> la momentul întocmirii actului. Subiect activ special: funcționar cu atribuții de autentificare. ⚠️ Falsul material = alterare post-emitere; falsul intelectual = date false de la bun început.',
+          '<b>Falsul în înscrisuri sub semnătură privată</b> (art. 322): falsificarea unui înscris privat, urmată de folosire sau încredințare spre folosire. Infracțiune complexă (fals + uz = una singură) — uzul separat e absorbit.',
+          '<b>Uzul de fals</b> (art. 323): folosirea unui înscris oficial fals de <b>o altă persoană</b> decât autorul. Autorul care folosește el însuși falsul oficial → uzul e absorbit în fals; o altă persoană care folosește → răspunde pentru uz de fals.',
+          '<b>Falsul în declarații</b> (art. 326): declararea mincinoasă în fața unui organ de stat, cu scopul de a produce consecințe juridice. ⚠️ Subiect activ: orice persoană (nu trebuie să fie funcționar). <b>Falsul informatic</b> (art. 325): introducerea/modificarea/ștergerea de date informatice fără drept, cu consecință juridică = asimilat falsului în înscrisuri.'
         ]
       }
     ],
-    grila:'Furt (fără consimțământ) ≠ abuz de încredere (cu consimțământ inițial). Tâlhăria: violența poate fi și <b>ulterioară</b> luării bunului. Uzul de fals: comis de <b>altcineva</b> decât autorul falsului (autorul care folosește el însuși = uzul e absorbit în fals). Falsul material = alterare fizică; falsul intelectual = inserarea de date false la întocmire (subiect special: funcționar).'
+    grila:'Furt ≠ abuz de încredere: criteriul = <b>cum a intrat în posesie</b> (fără consimțământ / cu consimțământ). Tâlhăria: violența poate fi și <b>ulterioară</b> luării. Falsul material = alterare fizică; falsul intelectual = date false la întocmire (funcționar special). Uzul de fals: comis de <b>altcineva</b> decât autorul (autorul care folosește el însuși = uzul absorbit). Fals în înscrisuri private: fals + uz = o singură infracțiune.'
   },
 
   {
