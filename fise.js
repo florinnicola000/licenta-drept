@@ -682,10 +682,10 @@ var FISE_DATA = [
       { icon:'↔️', title:'Cesiunea de creanță, preluarea datoriei, cesiunea de contract',
         items:[
           '<b>Cesiunea de creanță</b> (art. 1566 NCC): cedentul transmite creanța cesionarului; <b>acordul debitorului cedat NU e necesar</b>, dar notificarea/acceptarea e necesară pentru opozabilitate față de el.',
-          'Opozabilitate față de <b>debitorul cedat</b>: de la notificare sau acceptare → debitorul plătește valabil numai cesionarului. Opozabilitate față de <b>terți</b>: de la data înscrierii în AEGRM sau notificării debitorului.',
+          'Opozabilitate față de <b>debitorul cedat</b>: de la notificare sau acceptare → debitorul plătește valabil numai cesionarului. Opozabilitate față de <b>terți</b>: de la data înscrierii în RNPM sau notificării debitorului.',
           'Cedentul garantează <b>existența creanței</b> la cesiune; <b>nu garantează solvabilitatea</b> debitorului (excepție: stipulație expresă). Debitorul poate opune cesionarului toate excepțiile opozabile cedentului.',
-          '<b>Preluarea datoriei</b> (art. 1599 NCC): terțul preia datoria debitorului cu acordul creditorului. <b>Fără acordul creditorului</b> → datoria veche nu se stinge (cesionarul de datorie e fidejusor, în esență).',
-          '<b>Cesiunea de contract</b> (art. 1315 NCC): transmiterea concomitentă a calității de parte contractantă (drepturi + obligații). <b>Necesită acordul cocontractantului cedat</b> (spre deosebire de cesiunea de creanță). ⚠️ Cedentul rămâne ținut față de cocontractant dacă nu a fost exonerat expres.'
+          '<b>Preluarea datoriei</b> (art. 1599–1608 NCC): prin contract <b>debitor–terț</b> (produce efecte față de creditor numai cu <b>acordul creditorului</b> — art. 1605) sau prin contract <b>creditor–terț</b>. Fără acordul creditorului, contractul debitor–terț produce efecte <b>doar între ei</b>: terțul e ținut să-l libereze pe debitor executând la timp (art. 1608) — creditorul <b>nu dobândește drept direct</b> contra terțului. Debitorul inițial e liberat doar prin acordul creditorului; dacă terțul era insolvabil la preluare, debitorul nu e liberat (art. 1601).',
+          '<b>Cesiunea de contract</b> (art. 1315–1320 NCC): transmiterea calității de parte contractantă (drepturi + obligații). <b>Necesită acordul cocontractantului cedat</b>. ⚠️ <b>Capcană</b> (art. 1318): regula e că cedentul <b>este liberat</b> din momentul în care substituirea produce efecte față de cedat; doar dacă cedatul <b>declară că nu-l liberează</b>, se poate întoarce împotriva cedentului când cesionarul nu execută.'
         ]
       },
       { icon:'🔄', title:'Stingerea obligațiilor',
@@ -705,20 +705,21 @@ var FISE_DATA = [
           '<b>Efecte între părți</b>: actul secret prevalează (dacă e valabil). Dacă actul secret e nul → actul public produce efecte.',
           '<b>Efecte față de terții de bună-credință</b>: pot invoca fie actul aparent, fie cel secret — la alegere. ⚠️ Terții de bună-credință care s-au bazat pe actul aparent sunt protejați chiar dacă actul secret arată altceva.',
           'Simulația în frauda legii sau a terților: contraînscrisul e inopozabil terților prejudiciați; ei pot cere constatarea simulației.',
-          '<b>Acțiunea în simulație</b>: imprescriptibilă față de terți; 3 ani între părți. Proba: terții pot face proba simulației prin orice mijloc (inclusiv martori/prezumții).'
+          '<b>Acțiunea în simulație</b>: acțiune în <b>constatare</b> → <b>imprescriptibilă</b>, atât între părți, cât și față de terți (se prescriu doar acțiunile subsecvente întemeiate pe actul secret). <b>Proba</b>: terții — prin <b>orice mijloc</b> (martori, prezumții); părțile — de regulă numai prin <b>contraînscris</b>, cu excepția fraudei (atunci orice mijloc).'
         ]
       },
-      { icon:'🔀', title:'Delegația (art. 1603–1608 NCC)',
+      { icon:'🔀', title:'Delegația (doctrină — NCC nu o mai reglementează expres)',
         items:[
-          '<b>Noțiune</b>: operațiune prin care un debitor (delegant) desemnează un terț (delegat) să execute față de creditorul (delegatar) o obligație — inlocuind astfel debitorul original sau adăugând un nou debitor.',
-          '<b>Delegația perfectă</b> (novatorie, art. 1608 NCC): creditorul declară expres că îl liberează pe delegant și îl acceptă pe delegat ca unic debitor. Efecte: (1) obligația veche a delegantului se <b>stinge</b>; (2) delegatarul nu mai poate urmări delegantul; (3) garanțiile obligației vechi se sting, dacă nu se stipulează altfel. ⚠️ Liberarea delegantului trebuie să fie expresă (nu se prezumă).',
-          '<b>Delegația imperfectă</b> (art. 1603 NCC): creditorul acceptă pe delegat ca debitor suplimentar, fără a-l libera pe delegant. Efecte: delegatarul are doi debitori (delegant + delegat). ⚠️ Delegantul rămâne ținut și poate fi urmărit. Delegatul poate opune delegatarului excepțiile pe care le are față de delegant (dacă obligația sa față de delegatar izvorăște din raportul cu delegantul).',
+          '⚠️ <b>Atenție</b>: NCC <b>nu mai reglementează delegația</b> ca instituție distinctă (era în doctrina vechiului cod) — funcțiile ei sunt îndeplinite azi de <b>novația prin schimbare de debitor</b> (art. 1609 alin. 2) și de <b>preluarea datoriei</b> (art. 1599–1608). Conceptele rămân însă folosite doctrinar și pot apărea în grile.',
+          '<b>Noțiune</b>: operațiune prin care un debitor (delegant) desemnează un terț (delegat) să execute față de creditorul (delegatar) o obligație — înlocuind debitorul original sau adăugând un nou debitor.',
+          '<b>Delegația perfectă</b> (≈ novație prin schimbare de debitor): creditorul declară expres că îl liberează pe delegant și îl acceptă pe delegat ca unic debitor. Efecte: (1) obligația veche a delegantului se <b>stinge</b>; (2) delegatarul nu mai poate urmări delegantul; (3) garanțiile obligației vechi se sting, dacă nu se stipulează altfel. ⚠️ Liberarea delegantului trebuie să fie expresă (nu se prezumă).',
+          '<b>Delegația imperfectă</b>: creditorul acceptă pe delegat ca debitor suplimentar, fără a-l libera pe delegant. Efecte: delegatarul are doi debitori (delegant + delegat). ⚠️ Delegantul rămâne ținut și poate fi urmărit.',
           '<b>Distincție față de fidejusiune</b>: la fidejusiune, fidejusorul garantează o datorie a altuia (are beneficiul de discuțiune); la delegație imperfectă, delegatul devine debitor principal, nu fidejusor (nu poate invoca beneficiul de discuțiune dacă s-a obligat în mod direct față de delegatar).',
           '<b>Distincție față de novație</b>: novația e mai largă (poate schimba orice element al obligației); delegația perfectă e un tip specific de novație subiectivă prin schimb de debitor.'
         ]
       }
     ],
-    grila:'Cesiunea de creanță: <b>nu necesită acordul debitorului</b> (ci notificarea). Preluarea datoriei: <b>necesită acordul creditorului</b>. Cesiunea de contract: necesită acordul <b>cocontractantului cedat</b>. Compensația legală: certe + lichide + exigibile + aceeași natură. Confuziunea: stinge și garanțiile accesorii. Simulație: între părți prevalează <b>actul secret</b>; terții de bună-credință aleg. Acțiunea în simulație față de terți: <b>imprescriptibilă</b>. Delegație perfectă: liberează delegantul (expres!), stinge garanțiile vechi. Delegație imperfectă: doi debitori, delegantul rămâne ținut. Delegat ≠ fidejusor (nu are beneficiul de discuțiune dacă s-a obligat direct).'
+    grila:'Cesiunea de creanță: <b>nu necesită acordul debitorului</b> (ci notificarea). Preluarea datoriei: <b>necesită acordul creditorului</b>. Cesiunea de contract: necesită acordul <b>cocontractantului cedat</b>. Compensația legală: certe + lichide + exigibile + aceeași natură. Confuziunea: stinge și garanțiile accesorii. Cesiune de contract: cedentul e <b>liberat</b> (regula); rămâne ținut doar dacă cedatul declară că nu-l liberează (art. 1318 — capcană!). Simulație: între părți prevalează <b>actul secret</b>; terții de bună-credință aleg; acțiunea în simulație = <b>imprescriptibilă</b> (și între părți). Delegația: nereglementată de NCC — azi novație prin schimbare de debitor + preluarea datoriei. Delegație perfectă: liberează delegantul (expres!), stinge garanțiile vechi. Delegație imperfectă: doi debitori, delegantul rămâne ținut.'
   },
 
   {
