@@ -287,6 +287,7 @@ a{color:var(--gr);text-decoration:none}
   <button class="tab" onclick="showPanel('surse')">🔗 Surse</button>
   <button class="tab" onclick="showPanel('dict')">📖 Dicționar</button>
   <button class="tab" onclick="showPanel('memory')">🧩 Joc</button>
+  <button class="tab" onclick="showPanel('fise')">📋 Fișe</button>
 </div>
 
 <div id="main">
@@ -496,6 +497,10 @@ a{color:var(--gr);text-decoration:none}
   <div id="mem-win" style="display:none"></div>
 </div>
 
+<div id="panel-fise" class="panel">
+  <div id="fise-container"></div>
+</div>
+
 </div><!-- /main -->
 
 <div id="toast"></div>
@@ -506,6 +511,7 @@ a{color:var(--gr);text-decoration:none}
 
 <script src="dict.js"></script>
 <script src="memory.js"></script>
+<script src="fise.js"></script>
 <script>
 // ══════════════════════════════════════════════════════════════════════════
 //  PLANUL MIRUNEI — Licență Drept UNIBUC · examen Februarie 2027
@@ -1325,11 +1331,12 @@ function showPanel(id){
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('panel-'+id).classList.add('active');
-  const map={azi:0,plan:1,cal:2,met:3,ritm:4,surse:5,dict:6,memory:7};
+  const map={azi:0,plan:1,cal:2,met:3,ritm:4,surse:5,dict:6,memory:7,fise:8};
   const tabs=document.querySelectorAll('.tab'); if(map[id]!==undefined) tabs[map[id]].classList.add('active');
   if(id==='cal') renderCalendar();
   if(id==='azi') renderDashboard();
   if(id==='memory'){ renderMemControls(); startMemory(); }
+  if(id==='fise') renderFise();
 }
 function openWeek(id){
   showPanel('plan');
@@ -1456,7 +1463,7 @@ initReminder();
 renderDict();
 
 // deschidere directă pe un tab via hash (ex. index.html → plan_studiu.html#dict)
-(function(){var h=(location.hash||'').replace('#','');if(['azi','plan','cal','met','ritm','surse','dict','memory'].indexOf(h)>=0)showPanel(h);})();
+(function(){var h=(location.hash||'').replace('#','');if(['azi','plan','cal','met','ritm','surse','dict','memory','fise'].indexOf(h)>=0)showPanel(h);})();
 </script>
 </body>
 </html>

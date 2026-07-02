@@ -1,10 +1,11 @@
-const CACHE = 'ldr-v44';
+const CACHE = 'ldr-v45';
 const ASSETS = [
   '/licenta-drept/',
   '/licenta-drept/index.html',
   '/licenta-drept/plan_studiu.html',
   '/licenta-drept/dict.js',
   '/licenta-drept/memory.js',
+  '/licenta-drept/fise.js',
   '/licenta-drept/manifest.json',
   '/licenta-drept/icons/icon-180.png',
   '/licenta-drept/icons/icon-192.png',
