@@ -201,42 +201,46 @@ var FISE_DATA = [
     sections:[
       { icon:'↩️', title:'Efectele nulității (art. 1254–1265 NCC)',
         items:[
-          '<b>Retroactiv</b> (<i>ex tunc</i>): actul e desființat de la data încheierii, ca și cum n-ar fi existat niciodată.',
-          '<b>Restituirea prestațiilor</b>: fiecare parte restituie ce a primit (repunere în starea anterioară).',
-          '<b>Excepții</b> de la restituire: prestații succesive deja consumate; minorul poate fi obligat la restituire numai în limita îmbogățirii; cauza imorală (<i>nemo auditur propiam turpitudinem allegans</i>) — nici una din părți nu poate cere restituirea.',
-          '<b>Resoluto iure dantis, resolvitur ius accipientis</b>: subdobânditorul pierde dreptul. Excepție: dobânditorul de bună-credință și cu titlu oneros al imobilelor, înscris în CF (<i>principiul publicității</i>).',
-          '<b>Conversiunea</b> actului nul: actul nul ca tip A poate valora ca tip B dacă îndeplinește condițiile lui B și voința probabilă a părților o susține. Ex: testament autentic nul → poate valora ca testament olograf.'
+          '<b>Retroactiv</b> (<i>ex tunc</i>): actul e desființat de la data încheierii. Excepție: contractele cu executare succesivă → nulitatea produce efecte numai pentru viitor (<i>ex nunc</i>) pentru prestațiile deja executate și consumate (art. 1254 alin. 2 NCC).',
+          '<b>Restituirea prestațiilor</b> (art. 1635 NCC): repunere în starea anterioară. <b>În natură</b> (regula): se restituie bunul primit. <b>Prin echivalent</b> (excepție): dacă bunul a pierit, a fost consumat sau înstrăinat → se datorează valoarea bunului la data preluării sau, la alegerea creditorului, valoarea la data pronunțării hotărârii.',
+          '<b>Excepții de la restituire</b>: (1) minorul este ținut la restituire numai în limita <b>îmbogățirii</b> actuale (art. 1647 NCC); (2) cauza imorală sau ilicită a <i>ambelor</i> părți → <i>nemo auditur propriam turpitudinem allegans</i> — niciuna nu poate cere restituirea; (3) contractele cu executare succesivă consumate.',
+          '<b>Resoluto iure dantis, resolvitur ius accipientis</b>: desființarea actului principal antrenează desființarea actelor subsecvente. <b>Excepție</b>: terțul dobânditor cu titlu oneros, de bună-credință, înscris în CF (imobile) sau în alte registre de publicitate → protejat față de efectele retroactive.',
+          '<b>Conversiunea</b> actului nul (art. 1260 NCC): actul nul ca tip A poate valora ca tip B dacă îndeplinește condițiile lui B și voința probabilă a părților o susține. <i>Ex: testament autentic nul de formă → testament olograf dacă e scris, datat și semnat de testator.</i>',
+          '<b>Menținerea actelor de administrare</b>: actele de administrare ale dobânditorului de bună-credință (locațiune, reparații necesare) sunt opozabile proprietarului care redobândește bunul, în limitele uzanțelor (art. 1648 NCC).'
         ]
       },
       { icon:'⏳', title:'Termenul — modalitate a AJC (art. 1411–1420 NCC)',
         items:[
-          '<b>Suspensiv</b>: amână exigibilitatea; creanța există, dar nu poate fi executată înainte de termen. Debitorul care plătește înainte de termen nu poate cere restituirea.',
-          '<b>Extinctiv</b>: stinge dreptul la expirare (ex: contractul de locațiune pe durată determinată).',
-          '<b>Cert</b>: data fixă și sigură. <b>Incert</b>: evenimentul e sigur că va surveni, data e nesigură (ex: moartea).',
-          'Termenul <b>în favoarea debitorului</b> (regula): debitorul poate renunța la beneficiul termenului și plăti anticipat; creditorul nu poate refuza.'
+          '<b>Suspensiv</b>: amână exigibilitatea; creanța există, dar nu poate fi executată înainte de împlinirea termenului. Debitorul care plătește anticipat nu poate cere restituirea (a renunțat tacit la beneficiul termenului).',
+          '<b>Extinctiv</b>: la împlinire se stinge dreptul sau se transformă conținutul obligației. <i>Ex: contractul de locațiune pe durată determinată, contractul de rentă viageră cu termen.</i>',
+          '<b>Cert</b>: data fixă și sigură (calendarul). <b>Incert</b>: evenimentul e <i>sigur</i> că va surveni, dar data e nesigură (<i>ex: termenul = moartea debitorului</i>) — termenul se distinge astfel de condiție (eveniment nesigur).',
+          'Termenul <b>în favoarea debitorului</b> (regula, art. 1413 NCC): debitorul poate renunța la beneficiu și plăti anticipat; creditorul nu poate refuza. Dacă termenul e stipulat în favoarea creditorului → numai creditorul poate renunța.',
+          '<b>Decăderea anticipată din termen</b> (art. 1417 NCC): debitorul decade din beneficiul termenului dacă devine insolvabil, dacă a diminuat garanțiile sau nu le-a constituit. Creanța devine imediat exigibilă.',
+          '<b>Termenul esențial</b>: stipulat expres ca element determinant al contractului; nerespectarea lui constituie o neexecutare de esență, care îndreptățește la rezoluțiune fără punere în întârziere.'
         ]
       },
       { icon:'🎲', title:'Condiția — modalitate a AJC (art. 1399–1410 NCC)',
         items:[
-          '<b>Suspensivă</b>: dreptul se naște la realizarea evenimentului; dacă nu se realizează, actul e lipsit de efecte.',
-          '<b>Rezolutorie</b>: dreptul existent se desființează retroactiv la realizare.',
-          '<b>Pur potestativă</b> din partea celui care se obligă (<i>dacă vreau eu</i>) → <b>nulitate absolută</b> (lipsă de obligație reală).',
-          '<b>Potestativă simplă</b> (<i>dacă mă voi căsători</i>) / <b>cazuală</b> (depinde de hazard) / <b>mixtă</b> (depinde parțial de terț) → valide.',
-          '<b>Sarcina</b>: obligație impusă gratificantului în acte gratuite; neexecutare → revocarea liberalității (după punere în întârziere).'
+          '<b>Suspensivă</b>: dreptul se naște la realizarea evenimentului. Dacă condiția nu se realizează: actul e lipsit de efecte de la bun început (retroactiv). Dacă se realizează: efectele retroactive de la data încheierii actului.',
+          '<b>Rezolutorie</b>: dreptul existent se desființează retroactiv la realizarea condiției. Actele de administrare efectuate între timp: rămân valabile față de terții de bună-credință.',
+          '<b>Pur potestativă din partea debitorului</b> (<i>„mă vând dacă vreau"</i>, art. 1403 NCC) → <b>nulitate absolută</b>. ⚠️ Condiția pur potestativă din partea <i>creditorului</i> e valabilă!',
+          '<b>Potestativă simplă</b> (<i>dacă mă voi căsători</i>) / <b>cazuală</b> (depinde exclusiv de hazard) / <b>mixtă</b> (depinde parțial de terț sau de hazard) → valide.',
+          '<b>Condiția imposibilă, ilicită sau imorală</b> (art. 1402 NCC): dacă e <i>rezolutorie</i> → se consideră nescrisă, actul rămâne pur și simplu. Dacă e <i>suspensivă</i> și determinantă → nulitate absolută a obligației.',
+          '<b>Buna-credință în așteptarea condiției</b> (art. 1409 NCC): în perioada pendentă, niciuna din părți nu poate împiedica realizarea/nerealizarea condiției cu rea-credință. Dacă o face → condiția se consideră îndeplinită.'
         ]
       },
       { icon:'⌛', title:'Prescripția extinctivă (art. 2500–2544 NCC)',
         items:[
-          '<b>Termen general: 3 ani</b> (drepturi personale patrimoniale — art. 2517 NCC).',
-          '<b>Termene speciale</b>: 10 ani (drepturi reale, răspundere contractuală pentru lucrări imobiliare); 2 ani (drepturi din asigurări); 1 an (leziune, unele acțiuni de dreptul muncii); 6 luni (vicii aparente); 30 zile (acțiunile posesorii).',
-          '<b>Suspendarea</b> (oprire temporară, termenul continuă de unde s-a oprit): forță majoră; creditor incapabil fără reprezentant; acțiune între soți; negocieri; retragerea cererii de arbitrare.',
-          '<b>Întreruperea</b> (termenul scurs se șterge, se reia de la zero): recunoașterea dreptului de debitor; cerere de chemare în judecată; arbitrare; punere în întârziere.',
-          '<b>Repunerea în termen</b>: motive temeinice + cerere în 30 zile de la încetarea cauzei.',
-          'Prescripția <b>nu operează de drept</b>: trebuie invocată de debitor (excepție); instanța nu o poate ridica din oficiu dacă debitorul nu o invocă.'
+          '<b>Termen general: 3 ani</b> (drepturi personale patrimoniale — art. 2517 NCC). Curge de la data la care <b>titularul a cunoscut sau trebuia să cunoască</b> atât prejudiciul cât și pe cel răspunzător (art. 2524 NCC).',
+          '<b>Termene speciale</b>: 10 ani (drepturi reale mobiliare, răspundere contractuală pentru lucrări imobiliare — art. 2518); 2 ani (asigurări — art. 2519); 1 an (leziune; unele acțiuni de muncă); 6 luni (vicii aparente ale imobilului; acțiunea în garanție pentru vicii — art. 2531); 30 zile (acțiunile posesorii — art. 949 CPC).',
+          '<b>Suspendarea</b> (termenul se oprește, apoi continuă de unde s-a oprit, art. 2532–2536 NCC): forță majoră; creditor incapabil fără reprezentant; între soți; curs al negocierilor; cerere de mediere; retragerea cererii de arbitrare.',
+          '<b>Întreruperea</b> (termenul scurs se șterge, curge de la zero, art. 2537–2543 NCC): recunoașterea dreptului de debitor; cerere de chemare în judecată; punere în întârziere; arbitrare. ⚠️ Recunoașterea poate fi expresă sau tacită (plată parțială, cerere de reeșalonare).',
+          '<b>Repunerea în termen</b> (art. 2522 NCC): motive temeinice (boală, accident) + cerere în max. <b>30 zile</b> de la încetarea cauzei. Judecătorul apreciază.',
+          'Prescripția <b>nu operează de drept</b> (art. 2512 NCC): trebuie invocată de debitor, pe cale de excepție. Instanța nu o ridică din oficiu. După împlinire, debitorul care execută voluntar <b>nu mai poate cere restituirea</b> (obligația devine naturală, art. 2506 NCC). Renunțarea la prescripție e valabilă numai <b>după împlinire</b> (art. 2507 NCC).'
         ]
       }
     ],
-    grila:'Condiție <b>pur potestativă din partea debitorului</b> = NCA (nu din partea creditorului!). <b>Suspendare</b> (termenul se oprește și continuă de unde era) ≠ <b>Întrerupere</b> (termenul o ia de la zero). Termen general: <b>3 ani</b>; drepturi reale: <b>10 ani</b>. Debitorul care plătește înainte de termen nu poate cere restituirea. Conversiunea: actul nul poate valora ca alt act.'
+    grila:'Condiție <b>pur potestativă din partea debitorului</b> = NCA; din partea creditorului = valabilă. <b>Suspendare</b> (continuă de unde s-a oprit) ≠ <b>Întrerupere</b> (o ia de la zero). Termen general: <b>3 ani</b>; drepturi reale mobiliare: <b>10 ani</b>. Debitorul care plătește înainte de termen nu poate cere restituirea. Conversiunea: actul nul poate valora ca alt act. Minor: restituire numai în limita îmbogățirii. Prescripția împlinită → obligație naturală; debitor care execută voluntar nu poate cere înapoi.'
   },
 
   {
