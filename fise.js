@@ -359,49 +359,54 @@ var FISE_DATA = [
     sections:[
       { icon:'✋', title:'Posesia (art. 916–952 NCC)',
         items:[
-          '<b>Corpus</b> (stăpânire de fapt) + <b>animus</b> (intenția de a stăpâni <i>pentru sine</i>, ca și când ar fi proprietar).',
-          '<b>Detenția precară</b>: stăpânire fără <i>animus domini</i> (chiriaș, depozitar, comodatar) → nu produce efectele posesiei; detentorii nu pot invoca uzucapiunea.',
-          '<b>Calitățile posesiei utile</b>: continuă, pașnică (netulburată), publică, neechivocă.',
-          'Viciile posesiei: discontinuitate, violență, clandestinitate, echivoc — viciile sunt <b>relative</b> (nu pot fi invocate decât de cine e vizat) și <b>temporare</b>.',
-          '<b>Intervertirea detenției precare</b> în posesie: numai în cazuri expres prevăzute de lege (ex: detentor dobândește bunul de la proprietar).'
+          '<b>Corpus</b> (stăpânire de fapt — poate fi exercitat și prin altul, <i>corpore alieno</i>) + <b>animus</b> (intenția de a stăpâni <i>pentru sine</i> — nu se exercită prin altul).',
+          '<b>Detenția precară</b>: stăpânire fără <i>animus domini</i> (chiriaș, depozitar, comodatar, uzufructuar) → nu produce efectele posesiei; detentorul nu poate invoca uzucapiunea.',
+          '<b>Calitățile posesiei utile</b>: continuă (acte repetate la intervale normale), pașnică (netulburată prin violență), publică (nu clandestină), neechivocă (exercitată în mod clar ca proprietar).',
+          'Viciile posesiei: discontinuitate, violență, clandestinitate, echivoc. Viciile sunt <b>relative</b> (invocabile numai de cine e vizat) și <b>temporare</b> (dispar la încetarea cauzei).',
+          '<b>Intervertirea detenției precare</b> în posesie (art. 920 NCC): numai în cazuri expres — ex: detentorul dobândește bunul de la proprietar printr-un act translativ, sau negă în mod ostentativ dreptul celui de la care deține.',
+          '<b>Pierderea posesiei</b>: pierderea corpusului (abandonul material), pierderea animus-ului (recunoașterea dreptului altuia), sau a ambelor elemente. Uzucapiunea se întrerupe la pierderea posesiei.'
         ]
       },
       { icon:'🌱', title:'Efectele posesiei (art. 937–951 NCC)',
         items:[
-          '<b>Prezumția de proprietate</b>: posesorul este prezumat proprietar până la proba contrară.',
-          'Posesor <b>de bună-credință</b>: dobândește <b>fructele</b> (naturale, civile, industriale), dar <b>nu și productele</b>.',
-          'Posesor <b>de rea-credință</b>: trebuie să restituie toate fructele, plus contravaloarea fructelor percepute cu vinovăție.',
-          '<b>Bunuri mobile</b>: posesia de bună-credință valorează titlu de proprietate (<i>en fait de meubles, la possession vaut titre</i> — art. 937 NCC). Excepție: bunuri furate sau pierdute (3 ani de la furt/pierdere).',
-          '<b>Acțiuni posesorii</b>: reintegranda (tulburare violentă); complânda (tulburare simplă sau dezposedate). Termen: 1 an de la tulburare.'
+          '<b>Prezumția de proprietate</b> (art. 919 NCC): posesorul e prezumat proprietar până la proba contrară. Cel care contestă posesia trebuie să facă proba.',
+          'Posesor <b>de bună-credință</b>: dobândește <b>fructele</b> (naturale, civile, industriale), dar <b>nu și productele</b>. Buna-credință se apreciază <i>la data perceperii fiecărui fruct</i>.',
+          'Posesor <b>de rea-credință</b>: restituie toate fructele + contravaloarea celor consumate sau deteriorate cu vinovăție. Datorează și fructele pe care nu le-a perceput dar ar fi putut.',
+          '<b>Bunuri mobile</b> (art. 937 NCC): posesia de bună-credință valorează titlu de proprietate (<i>en fait de meubles, la possession vaut titre</i>). <b>Excepție</b>: bunuri furate sau pierdute — proprietarul poate revendica în <b>3 ani de la furt/pierdere</b>, chiar față de terțul de bună-credință cu titlu oneros.',
+          '<b>Acțiuni posesorii</b> (art. 949 CPC): <b>complânda</b> — orice tulburare/deposedare; <b>reintegranda</b> — tulburare/deposedare prin violență. Termen: <b>1 an</b> de la tulburare. Nu se cere dovedirea dreptului de proprietate, ci numai a posesiei.'
         ]
       },
       { icon:'⌛', title:'Uzucapiunea imobiliară (art. 928–934 NCC)',
         items:[
-          '<b>Uzucapiunea extratabulară</b> (art. 930): 10 ani posesie utilă + bunul nu este înscris în CF sau titularul din CF a decedat/renunțat.',
-          '<b>Uzucapiunea tabulară</b> (art. 931): 5 ani de la înscrierea cu bună-credință în CF, în baza unui titlu translativ de proprietate (chiar dacă autorul nu era proprietar).',
-          '<b>Joncțiunea posesiilor</b>: posesorul actual poate adăuga posesia autorului său (dacă o invocă), dar preia și viciile.',
-          'Uzucapiunea nu operează împotriva statului sau unităților administrativ-teritoriale pentru bunuri publice.'
+          '<b>Uzucapiunea extratabulară</b> (art. 930 NCC): posesie utilă <b>10 ani</b> + bunul nu e înscris în CF, sau titularul înscris a decedat sau a renunțat la drept. Cerere de uzucapiune înregistrată la OCPI.',
+          '<b>Uzucapiunea tabulară</b> (art. 931 NCC): posesorul s-a înscris cu <b>bună-credință</b> în CF pe baza unui titlu translativ (chiar dacă autorul nu era proprietar) + <b>5 ani</b> de la înscrierea în CF fără contestație.',
+          '<b>Joncțiunea posesiilor</b> (art. 933 NCC): posesorul actual poate uni posesia sa cu a autorului (dacă o invocă). Preia și viciile.',
+          '<b>Efectele uzucapiunii</b> (art. 934 NCC): dreptul se dobândește <b>retroactiv</b> de la data la care a început posesia. Uzucapantul dobândește dreptul liber de sarcini constituite după data începerii posesiei.',
+          'Uzucapiunea <b>nu operează</b> împotriva statului sau UAT-urilor pentru bunuri publice. Nu operează nici dacă titularul din CF nu a cunoscut și nu trebuia să cunoască posesia (la uzucapiunea extratabulară).',
+          '<b>Renunțarea la uzucapiune</b>: numai după împlinirea termenului; anterioară = nulă. Uzucapantul renunță la dobândirea dreptului, nu la posesie.'
         ]
       },
-      { icon:'⚔️', title:'Acțiunea în revendicare (art. 563–566 NCC)',
+      { icon:'⚔️', title:'Acțiunea în revendicare și dubla vânzare (art. 563–566 NCC)',
         items:[
-          'Acțiunea proprietarului neposesor contra posesorului neproprietar.',
-          '<b>Imobiliară</b>: imprescriptibilă extinctiv; cedează în fața uzucapiunii.',
-          '<b>Mobiliară</b>: dacă bunul a ajuns la un posesor de bună-credință printr-un act juridic cu <b>titlu oneros</b> → acțiunea este respinsă (proprietarul suportă riscul).',
-          'Dacă bunul mobil a fost <b>furat sau pierdut</b>: proprietarul poate revendica chiar față de terțul de bună-credință cu titlu oneros, în termen de <b>3 ani de la furt/pierdere</b>.'
+          'Acțiunea <i>in rem</i> a proprietarului neposesor contra posesorului neproprietar. Sarcina probei: reclamantul trebuie să probeze că el e proprietar (<i>probatio diabolica</i>).',
+          '<b>Imobiliară</b>: <b>imprescriptibilă</b> extinctiv (se poate formula oricând); cedează în fața uzucapiunii. Admiterea → obligă pârâtul să restituie bunul + fructele (de rea-credință) sau numai bunul (de bună-credință).',
+          '<b>Mobiliară</b>: dacă bunul a ajuns la posesorul de bună-credință printr-un act cu <b>titlu oneros</b> → proprietarul pierde acțiunea. Dacă titlu gratuit → revendicarea e admisă.',
+          '<b>Bunuri mobile furate/pierdute</b>: proprietarul poate revendica față de oricine în <b>3 ani</b> de la furt/pierdere, chiar dacă terțul e de bună-credință și a dobândit cu titlu oneros.',
+          '<b>Dubla vânzare imobiliară</b>: preferat cumpărătorul care a <b>înscris primul în CF</b> de bună-credință, chiar dacă a dobândit ulterior. Câștigătorul CF nu răspunde față de cel vătămat (care are acțiune în daune față de vânzătorul fraudulos).',
+          '<b>Dubla vânzare mobiliară</b>: preferat cel care a intrat <b>primul în posesie</b> de bună-credință (art. 1275 NCC). Dacă niciunul nu e în posesie → cel cu titlu mai vechi.'
         ]
       },
-      { icon:'🔒', title:'Garanții reale (art. 2279–2479 NCC)',
+      { icon:'🔒', title:'Garanții reale și personale (art. 2279–2479 NCC)',
         items:[
-          '<b>Ipoteca imobiliară</b>: accesorie, indivizibilă; publicitate prin CF; rangul → data înscrierii în CF.',
-          '<b>Ipoteca mobiliară</b>: se constituie fără deposedarea debitorului; publicitate prin AEGRM; rangul → data înregistrării.',
-          '<b>Gajul</b> (amanetul): presupune <b>deposedarea</b> debitorului; se predă bunul creditorului sau unui terț.',
-          '<b>Privilegiile</b>: preferință legală (creanțe salariale, fiscale, cheltuieli judiciare, cheltuieli de înmormântare, cheltuieli de conservare).',
-          '<b>Fidejusiunea</b> (cauțiunea): garanție <b>personală</b> (nu reală) — fidejusorul răspunde cu întregul patrimoniu personal; beneficiul de discuțiune și de diviziune.'
+          '<b>Ipoteca imobiliară</b> (art. 2343 NCC): accesorie (urmează soarta creanței), indivizibilă (garantează creanța până la plata integrală), specială (poartă pe un bun determinat). Rang → data înscrierii în CF. Creditorul ipotecar poate urmări bunul indiferent de cine îl deține.',
+          '<b>Ipoteca mobiliară</b> (art. 2387 NCC): se constituie fără deposedarea debitorului (spre deosebire de gaj). Publicitate → înregistrare în AEGRM. Rang → data înregistrării.',
+          '<b>Gajul</b> (art. 2480 NCC): presupune <b>deposedarea</b> debitorului — bunul se predă creditorului sau unui terț custode. Creditorul gajist nu poate folosi bunul (doar să-l păstreze), sub sancțiunea abuzului de gaj.',
+          '<b>Fidejusiunea</b> (art. 2280 NCC): garanție personală — fidejusorul garantează cu întregul său patrimoniu. Beneficii ale fidejusorului: (1) <b>discuțiune</b> — creditorul trebuie să urmărească mai întâi debitorul principal; (2) <b>diviziune</b> — dacă sunt mai mulți fidejusori, fiecare e ținut numai pentru partea sa. ⚠️ Beneficiile pot fi excluse prin clauza de renunțare.',
+          '<b>Privilegiile</b> (art. 2333 NCC): preferință legală, izvorând din natura creanței. Ordinea: (1) cheltuielile de judecată; (2) cheltuielile de conservare/vânzare; (3) creanțele salariale. ⚠️ Super-privilegiu: cheltuielile de conservare a bunului preced ipotecile chiar anterioare.'
         ]
       }
     ],
-    grila:'Detenția precară <b>nu poate duce la uzucapiune</b>. Posesorul de bună-credință: <b>fructe da, producte nu</b>. Uzucapiune extratabulară: <b>10 ani</b>; tabulară: <b>5 ani</b>. Revendicare mobiliară față de dobânditorul de bună-credință cu titlu oneros: proprietarul pierde (excepție: bunuri furate/pierdute → <b>3 ani</b>). Ipoteca ≠ gaj: ipoteca nu implică deposedare.'
+    grila:'Detenția precară <b>nu duce la uzucapiune</b>. Posesorul de bună-credință: <b>fructe da, producte nu</b>. Uzucapiune extratabulară: <b>10 ani</b>; tabulară: <b>5 ani</b>. Dubla vânzare imobiliar: prioritate → <b>înscrierea CF</b> de bună-credință. Dubla vânzare mobiliară: prioritate → <b>prima posesie</b> de bună-credință. Revendicare mobiliară față de dobânditorul oneros de bună-credință: proprietarul pierde (excepție: furate/pierdute → 3 ani). Fidejusiunea: beneficii de discuțiune și diviziune, eliminabile prin clauză.'
   },
 
   {
