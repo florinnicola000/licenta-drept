@@ -595,36 +595,39 @@ var FISE_DATA = [
     id:'w12', wk:'W12', dates:'14–20 sep', subj:'civ',
     title:'Vânzarea și Donația',
     sections:[
-      { icon:'🛒', title:'Contractul de vânzare-cumpărare (art. 1650–1762 NCC)',
+      { icon:'🛒', title:'Contractul de vânzare-cumpărare — esențiale (art. 1650–1762 NCC)',
         items:[
           '<b>Caractere</b>: sinalagmatic, cu titlu oneros, comutativ (de regulă), consensual (de regulă), <b>translativ de proprietate</b>.',
-          '<b>Transferul proprietății</b>: la momentul perfectării contractului pentru bunuri <b>individual determinate</b>. Excepții: bunuri de gen (la individualizare); bunuri viitoare (la existență + individualizare); vânzare cu rezerva proprietății (la plata integrală a prețului).',
-          '<b>Riscul pieirii fortuite</b>: urmărește proprietatea — dacă bunul piere după transfer, riscul e al cumpărătorului; dacă înainte de predare (iar proprietatea nu s-a transferat), riscul e al vânzătorului.',
-          '<b>Cheltuielile vânzării</b> (taxă notarială etc.): în lipsa convenției, sunt <b>în sarcina cumpărătorului</b>.'
+          '<b>Transferul proprietății</b>: la perfectarea contractului pentru bunuri <b>certe</b>. Excepții: bunuri de gen (la individualizare); bunuri viitoare (la existență + individualizare); rezerva proprietății (la plata integrală a prețului — art. 1684 NCC).',
+          '<b>Riscul pieirii fortuite</b>: urmărește proprietatea (<i>res perit domino</i>). Dacă bunul piere înainte de predare, dar după transfer → riscul e al cumpărătorului. Dacă piere și proprietatea nu s-a transferat → vânzătorul suportă riscul.',
+          '<b>Obligațiile vânzătorului</b>: (1) predarea bunului în stare corespunzătoare; (2) transferul proprietății; (3) garanția pentru evicțiune; (4) garanția pentru vicii ascunse.',
+          '<b>Obligațiile cumpărătorului</b>: (1) plata prețului la termenul și locul convenite; (2) preluarea bunului. Neplata prețului → rezoluțiune sau executare silită.',
+          '<b>Vânzarea lucrului altuia</b> (art. 1683 NCC): vânzătorul nu e proprietar la data vânzării. Dacă cumpărătorul <i>nu știa</i> → anulabilitate (NR); dacă cumpărătorul <i>știa</i> → vânzătorul s-a obligat să procure bunul, acțiune în daune dacă nu reiese.',
+          '<b>Vânzarea cu drept de răscumpărare</b> (art. 1758 NCC): vânzătorul poate răscumpăra bunul în termenul stipulat (max <b>5 ani</b>). Terțul dobânditor cu titlu oneros, în CF, nu poate fi obligat să restituie dacă termenul nu era înscris.'
         ]
       },
-      { icon:'⚠️', title:'Garanțiile vânzătorului',
+      { icon:'⚠️', title:'Garanțiile vânzătorului (evicțiune + vicii)',
         items:[
-          '<b>Garanția pentru evicțiune</b>: tulburarea cumpărătorului în exercitarea dreptului de proprietate. Evicțiune totală → rezoluțiunea + restituirea prețului + daune; parțială → reducerea prețului + daune.',
-          'Vânzătorul răspunde și pentru evicțiunea prin fapta proprie (clauza de exonerare e nulă) și pentru evicțiunea prin fapta terților (clauza de exonerare e valabilă dacă e expresă).',
-          '<b>Garanția pentru vicii ascunse</b>: defecte care existau la vânzare, ascunse, care fac bunul impropriu folosirii sau îi reduc valoarea semnificativ.',
-          'Vânzător <b>de bună-credință</b> (nu a cunoscut viciile): restituirea prețului sau înlocuirea bunului; <b>nu datorează daune</b> (numai dacă s-a angajat).',
-          'Vânzător <b>de rea-credință</b> (a cunoscut viciile): restituire + <b>daune-interese</b>.',
-          '<b>Prescripție</b> pentru vicii ascunse: 3 ani (dacă nu există garanție) sau termenul din garanție; cel puțin <b>6 luni de la descoperire</b> pentru vicii aparente.'
+          '<b>Garanția pentru evicțiune</b> (art. 1695–1718 NCC): vânzătorul garantează că cumpărătorul nu va fi tulburat în exercitarea dreptului. <b>Prin fapta proprie</b>: clauza de exonerare = nulă absolut. <b>Prin fapta terților</b>: clauza de exonerare e valabilă dacă e expresă.',
+          'Evicțiune <b>totală</b>: rezoluțiunea + restituirea prețului integral (chiar dacă bunul a scăzut în valoare) + daune-interese. Evicțiune <b>parțială</b>: reducerea prețului proporțional + daune.',
+          '<b>Condițiile viciilor ascunse</b> (art. 1707–1715 NCC): (1) viciu existent la data vânzării; (2) ascuns (nu detectabil la o inspecție atentă de nespecialist); (3) reduce substanțial utilitatea sau valoarea; (4) cumpărătorul nu l-a cunoscut.',
+          'Vânzător <b>de bună-credință</b>: restituirea prețului + cheltuieli aferente; <b>nu datorează daune</b> (dacă nu și le-a asumat). Vânzător <b>de rea-credință</b>: restituire + <b>daune-interese</b>.',
+          'Remedii la dispoziție: (1) reducerea prețului; (2) rezoluțiune; (3) înlocuirea bunului (dacă e fungibil). Instanța poate ordona remedierea viciului dacă e posibilă.',
+          '<b>Prescripție</b>: 3 ani de la descoperire (pentru vicii ascunse); <b>6 luni</b> de la descoperire pentru vicii aparente (dar sesizate în garanție); anunțul viciului trebuie făcut în maxim 3 ani de la predare.'
         ]
       },
       { icon:'🎁', title:'Contractul de donație (art. 1011–1056 NCC)',
         items:[
-          '<b>Caractere</b>: unilateral, cu titlu gratuit (liberalitate), solemn (de regulă), irevocabil.',
-          '<b>Formă</b>: <b>act autentic</b> <i>ad validitatem</i> (excepție: <b>darul manual</b> — remiterea efectivă a unui bun mobil; promisiunea de dar manual nu obligă; excepție: donația indirectă și deghizată).',
-          '<b>Principiul irevocabilității</b>: donația nu poate fi revocată prin voința donatorului; sunt nule clauzele care conferă donatorului posibilitatea de a revoca unilateral sau condiția pur potestativă din partea donatorului.',
-          '<b>Donații indirecte</b>: renunțarea la un drept, remiterea de datorie în favoarea debitorului.',
-          '<b>Donații deghizate</b>: sub aparența unui act cu titlu oneros (vânzare la preț fictiv); valabile dacă nu sunt simulate cu scop fraudulos.',
-          '<b>Cauze de revocare</b>: neîndeplinirea sarcinii; ingratitudinea donatarului (injurie gravă, atentat la viața donatorului, refuz nejustificat de alimente când donatorul e în nevoie); survenire de copil (dacă s-a stipulat expres).'
+          '<b>Caractere</b>: unilateral (numai donatarul are obligații dacă există sarcini), cu titlu gratuit (liberalitate), solemn, irevocabil.',
+          '<b>Formă</b>: <b>act autentic notarial</b> <i>ad validitatem</i>. Excepții: <b>darul manual</b> (remiterea efectivă a unui bun mobil → consensualism + remitere); <b>donația indirectă</b>; <b>donația deghizată</b> (sub aparența unui act oneros).',
+          '<b>Principiul irevocabilității speciale</b>: sunt nule clauzele de revocare voluntară, condiția pur potestativă din partea donatorului, obligația de a plăti datoriile viitoare nedeterminate. ⚠️ Excepție: <b>donația între soți</b> (art. 1031 NCC) — revocabilă oricând de soțul donator.',
+          '<b>Clauza de reîntoarcere convențională</b> (art. 1016 NCC): bunul revine donatorului dacă donatarul moare înainte sau fără descendenți. Valabilă și opozabilă terților prin publicitate.',
+          '<b>Cauze de revocare legale</b>: (1) neîndeplinirea sarcinii (termen + punere în întârziere → revocare sau executare silită); (2) ingratitudine (injurie gravă, atentat la viața donatorului, refuz nejustificat de alimente) — prescripție <b>1 an</b> de la cunoașterea faptei, nepatrimonialp (nu se transmite succesorilor); (3) survenire de copil (dacă s-a stipulat expres).',
+          '<b>Reducțiunea liberalităților excesive</b>: dacă donatorul a depășit cotitatea disponibilă (a vătămat rezerva succesorală), moștenitorii rezervatari pot cere reducțiunea — în ordine inversă (cel mai recent legat, cele mai recente donații).'
         ]
       }
     ],
-    grila:'Transfer proprietate la vânzare: <b>imediat</b> pentru bunuri certe (la perfectarea contractului); riscul urmărește proprietatea. Vicii ascunse: vânzătorul de bună-credință <b>nu datorează daune</b>. Donația: formă autentică <i>ad validitatem</i>, cu excepția darului manual (remitere efectivă). Principiul irevocabilității donației: condiția pur potestativă din partea donatorului = nulitate.'
+    grila:'Transfer proprietate vânzare: <b>imediat la perfectare</b> (bunuri certe); riscul urmărește proprietatea. Vânzarea lucrului altuia: NR dacă cumpărătorul nu știa. Vicii ascunse: vânzătorul BF <b>nu datorează daune</b>. Donație între soți: <b>revocabilă oricând</b>. Principiul irevocabilității: clauza pur potestativă a donatorului = NCA. Ingratitudine: prescripție <b>1 an</b>; nepatrimonial (nu se transmite). Drept de răscumpărare: max <b>5 ani</b>.'
   },
 
   {
