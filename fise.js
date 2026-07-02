@@ -7,48 +7,65 @@ var FISE_DATA = [
     id:'w01', wk:'W01', dates:'29 iun–5 iul', subj:'civ',
     title:'AJC: noțiune, clasificare, capacitate',
     sections:[
-      { icon:'📌', title:'Definiție și esență',
+      { icon:'📌', title:'Definiție și condiții de valabilitate (art. 1179 NCC)',
         items:[
           'Manifestare de voință făcută cu <b>intenția de a produce efecte juridice</b> (a crea, modifica sau stinge raporturi juridice civile). <i>Art. 1166 NCC</i>.',
-          'Spre deosebire de <b>faptul juridic</b>: la AJC efectele sunt voite; la faptul juridic se produc independent de voință (ex: accidentul rutier).',
-          'Elementele esențiale: <b>consimțământ, capacitate, obiect, cauză</b>; forma e esențială numai când legea prevede.'
+          'Spre deosebire de <b>faptul juridic</b>: la AJC efectele sunt voite; la faptul juridic se produc independent de voință (ex: accidentul rutier, nașterea, moartea).',
+          'Cele <b>4 condiții de valabilitate</b> (art. 1179 NCC): <b>capacitate</b> de a contracta + <b>consimțământ</b> valabil + <b>obiect</b> determinat și licit + <b>cauză</b> licită și morală.',
+          '<b>Forma</b> — regulă: nu e condiție de valabilitate (principiul consensualismului, art. 1178 NCC). <b>Excepție:</b> forma <i>ad validitatem</i> (solemnă) e cerută expres de lege → lipsa ei = nulitate absolută. <i>Ex: donația (art. 1011), contractul de ipotecă (art. 2378), testamentul autentic.</i>',
+          '<b>Forma ad probationem</b> (pentru dovadă): lipsa înscrisului nu afectează valabilitatea actului, ci numai posibilitatea de a-l proba. <i>Ex: contractul de asigurare, contractul individual de muncă.</i>'
         ]
       },
       { icon:'🗂', title:'Clasificări esențiale',
         items:[
-          '<b>Unilateral</b> (testament, ofertă, acceptarea moștenirii, denunțarea unui contract) / <b>bilateral</b> (contractul) / <b>multilateral</b> (societatea).',
-          '<b>Cu titlu oneros</b>: comutativ (prestații certe) sau aleatoriu (prestații incerte, legate de un eveniment). / <b>Cu titlu gratuit</b>: liberalitate (donație, legat) sau dezinteresat (comodat, mandat gratuit).',
-          '<b>Consensual</b> (simpla voință) / <b>solemn</b> (formă ad validitatem: donație, ipotecă, testament autentic) / <b>real</b> (remiterea bunului: gaj, comodat, depozit, împrumut).',
-          '<b>Constitutiv</b> (creează un drept nou: uzufruct) / <b>translativ</b> (transferă un drept existent: vânzare) / <b>declarativ</b> (recunoaște un drept preexistent: partajul — efecte <i>ex tunc</i>).',
-          '<b>Inter vivos</b> / <b>mortis causa</b> (testamentul — efecte la moartea testatorului, revocabil oricând).',
-          '<b>Strict personal</b> (intuitu personae: mandatul, antrepriza, donația) vs. <b>impersonal</b>.'
+          '<b>Unilateral</b> (o singură voință: testament, ofertă, acceptarea moștenirii, denunțarea unui contract) / <b>bilateral</b> (contract, art. 1166 NCC) / <b>multilateral</b> (statutul societății cu mai mulți asociați).',
+          '<b>Cu titlu oneros</b>: comutativ (prestații certe de la momentul încheierii: vânzarea) sau aleatoriu (prestații incerte, depind de un eveniment: asigurarea, renta viageră). / <b>Cu titlu gratuit</b>: liberalitate (donație, legat) sau dezinteresat (comodat, mandat gratuit).',
+          '<b>Consensual</b> (simpla voință) / <b>solemn</b> (formă <i>ad validitatem</i>: donație, ipotecă, testament autentic) / <b>real</b> (se formează prin remiterea bunului: gaj, comodat, depozit, împrumut de consumație).',
+          '<b>Constitutiv</b> (creează un drept nou: uzufruct, ipotecă) / <b>translativ</b> (transferă un drept existent: vânzare, donație) / <b>declarativ</b> (recunoaște un drept preexistent: partajul — efecte <i>ex tunc</i>, retroactive).',
+          '<b>Inter vivos</b> (produce efecte în timpul vieții) / <b>mortis causa</b> (testamentul — produce efecte la moartea testatorului; este esențialmente revocabil oricând).',
+          '<b>Strict personal</b> (<i>intuitu personae</i>: calitățile cocontractantului sunt determinante — mandatul, antrepriza artistică, donația) vs. <b>impersonal</b> (nu depinde de identitatea co-contractantului).'
         ]
       },
       { icon:'👤', title:'Capacitatea de folosință',
         items:[
-          '<b>Persoana fizică</b>: dobândită la <b>naștere</b> (excepție: <i>infans conceptus</i> — drepturile copilului conceput se socotesc dobândite de la concepție, dacă se naște viu, chiar și o clipă).',
-          '<b>Persoana juridică</b>: de la data înregistrării sau, după caz, de la data actului de înființare; dobândește drepturi anticipat de la data actului de înființare.',
-          'PJ: principiul <b>specialității</b> capacității de folosință — poate face numai acte conforme cu scopul/obiectul de activitate.',
-          '<b>Incapacități speciale</b> de folosință: medicul față de pacientul său, avocatul față de clientul său (nu pot primi donații sau legate).'
+          '<b>Persoana fizică</b> (art. 34 NCC): dobândită la <b>naștere</b>. Excepție: <i>infans conceptus pro nato habetur quotiens de commodis eius agitur</i> — drepturile copilului conceput se socotesc dobândite de la concepție, dacă se naște <b>viu</b> (chiar și o clipă).',
+          '<b>Persoana juridică</b> (art. 205 NCC): dobândită de la data <b>înregistrării</b> sau, după caz, de la data actului de înființare. Excepție: dobândește anticipat (de la data actului de înființare) drepturile necesare pentru a lua ființă valabil.',
+          'PJ: principiul <b>specialității</b> capacității de folosință (art. 206 NCC) — poate încheia numai acte juridice conforme cu scopul sau obiectul de activitate. Actele contrare = <b>nulitate relativă</b> (nu absolută).',
+          '<b>Incapacități speciale de folosință</b> (art. 990 NCC): medicul/farmacistul/preotul care au îngrijit/asistat persoana în ultima boală nu pot primi donații sau legate de la aceasta. Sancțiunea = nulitate absolută (incapacitate de a primi, nu de a da).',
+          'Absența capacității de folosință → <b>nulitate absolută</b>. Nu se poate acoperi prin confirmare. Distincție: ≠ absența capacității de exercițiu (care e NR și poate fi confirmată).'
         ]
       },
       { icon:'⚖️', title:'Capacitatea de exercițiu',
         items:[
-          '<b>Deplină</b>: de la <b>18 ani</b>; excepție: minorul căsătorit (înainte de 18 ani) dobândește capacitate de exercițiu deplină de la data căsătoriei.',
-          '<b>Restrânsă</b> (14–18 ani): acționează <b>personal</b>, dar <b>asistat</b> de reprezentantul legal; actele fără asistare sunt anulabile (NR). Minorul poate face singur: acte de conservare, acte de mică valoare cu executare imediată, depuneri la CEC, drepturi exclusive personale.',
-          '<b>Lipsă</b> (sub 14 ani): acționează numai prin <b>reprezentant legal</b> (părinți/tutore); excepție: acte de mică valoare cu executare imediată.',
-          '<b>Lipsă</b> (persoana pusă sub interdicție judecătorească): acționează prin <b>tutore</b>; actele anterioare interdicției pot fi anulate dacă cauza a existat notorie la data actului.'
+          '<b>Deplină</b> (art. 38 NCC): de la <b>18 ani</b>. Excepție: minorul căsătorit dobândește capacitate deplină de la data căsătoriei (chiar dacă are 16 sau 17 ani). Dacă căsătoria se desface înainte de 18 ani — capacitatea de exercițiu deplină se menține.',
+          '<b>Restrânsă</b> (14–18 ani, art. 41 NCC): acționează <b>personal</b>, dar cu <b>asistarea</b> (nu reprezentarea!) reprezentantului legal. Actele încheiate fără asistare = <b>nulitate relativă</b>, invocabilă de minor, reprezentant sau moștenitori.',
+          '<b>Acte pe care minorul 14–18 le poate face singur</b> (art. 41–42 NCC): acte de conservare; acte de mică valoare cu executare imediată (cumpărarea unui bilet); depuneri/retrageri de la CEC/bancă; exercitarea drepturilor din raporturi de muncă; drepturi strict personale (recunoașterea unui copil, acceptarea/renunțarea la moștenire dacă e beneficiară).',
+          '<b>Lipsă</b> — sub 14 ani (art. 43 NCC): acționează <b>numai prin reprezentantul legal</b> (părinți/tutore). Excepție: acte de mică valoare cu executare imediată. Actele încheiate personal = nulitate absolută (unii autori — NR; NCC lasă ambiguitate).',
+          '<b>Lipsă</b> — interzisul judecătoresc (art. 164–177 NCC): acționează prin <b>tutore</b>. Actele anterioare punerii sub interdicție pot fi anulate dacă cauza de punere sub interdicție exista și era notorie la data actului.',
+          '<b>Curatela</b> (art. 178 NCC): măsură provizorie de protecție, distinctă de tutelă. Curatorul asistă sau reprezintă persoana cu capacitate deplină dar în imposibilitate temporară de a-și exercita drepturile (boală, absență). ⚠️ Curatela nu afectează capacitatea de exercițiu!'
         ]
       },
-      { icon:'🔴', title:'Sancțiuni pentru nerespectarea capacității',
+      { icon:'⏳', title:'Modalitățile actului juridic civil (condiție, termen, sarcină)',
         items:[
-          'Lipsa capacității de <b>folosință</b> → <b>nulitate absolută</b>.',
-          'Nerespectarea capacității de <b>exercițiu</b> → <b>nulitate relativă</b> (anulabilitate), acoperibilă prin confirmare expresă sau tacită.',
-          'Minorul de rea-credință care a ascuns incapacitatea → nu poate invoca nulitatea relativă (<i>nemo auditur propiam turpitudinem allegans</i>).'
+          '<b>Condiția</b> (art. 1399 NCC): clauză care face să depindă nașterea sau stingerea drepturilor de un eveniment viitor și nesigur. <b>Suspensivă</b>: actul există dar dreptul e suspendat până la eveniment (<i>ex: îți vând mașina dacă obții permisul</i>). <b>Rezolutorie</b>: actul există și produce efecte, dar se desființează retroactiv la îndeplinirea condiției.',
+          '<b>Condiție pur potestativă din partea debitorului</b> (art. 1403 NCC) → <b>nulitate absolută</b> a obligației. <i>Ex: „mă vând dacă vreau" — angajamentul nu există.</i> ⚠️ Condiția pur potestativă din partea creditorului e valabilă!',
+          '<b>Termenul</b> (art. 1411 NCC): eveniment viitor și sigur. <b>Suspensiv</b>: amână exigibilitatea (<i>ex: plătesc la 1 ianuarie</i>). <b>Extinctiv</b>: la împlinire se stinge dreptul (<i>ex: contract de locațiune pe 1 an</i>). Termenul e prezumat în favoarea <b>debitorului</b> (art. 1413 NCC).',
+          '<b>Decăderea anticipată din termen</b> (art. 1417 NCC): dacă debitorul devine insolvabil, a diminuat garanțiile sau nu a constituit garanțiile promise → datoria devine imediat exigibilă, chiar dacă termenul nu s-a împlinit.',
+          '<b>Sarcina (modus)</b>: obligație accesorie impusă donatarului sau legatarului în favoarea donatorului, a unui terț sau a donatarului însuși. ⚠️ Neîndeplinirea sarcinii → revocarea liberalității (nu nulitatea ei). Sarcina imposibilă sau ilicită = nulitate absolută a sarcinii; dacă era determinantă → nulitatea întregii liberalități.'
+        ]
+      },
+      { icon:'🔴', title:'Sancțiuni: nulitate, confirmare, conversiune',
+        items:[
+          'Lipsa capacității de <b>folosință</b> → <b>nulitate absolută</b> (NCA). Nerespectarea capacității de <b>exercițiu</b> → <b>nulitate relativă</b> (NR, anulabilitate).',
+          '<b>Confirmarea NR</b> (art. 1263 NCC): cel îndreptățit să invoce nulitatea renunță la dreptul de a o cere. Poate fi expresă sau tacită (executarea voluntară a actului în cunoașterea cauzei de NR). Are efect retroactiv.',
+          '<b>Ratificarea</b>: actul juridic încheiat fără capacitate sau fără mandat valabil poate fi ratificat ulterior de cel îndreptățit → retroactiv validat de la data încheierii. <i>Ex: actul mandatarului fără mandat, ratificat ulterior de mandant (art. 1311 NCC).</i>',
+          '<b>Conversiunea</b> (art. 1260 NCC): actul nul poate produce efectele unui alt act, dacă îndeplinește condițiile acestuia. <i>Ex: testamentul autentic nul de formă → testament olograf dacă a fost scris în întregime, datat și semnat de testator.</i>',
+          'Minorul de rea-credință care și-a ascuns incapacitatea nu poate invoca nulitatea relativă (<i>nemo auditur propriam turpitudinem allegans</i>). ⚠️ Regula se aplică strict minorului, nu și reprezentantului legal.',
+          '<b>Prescripția acțiunilor</b>: NCA = imprescriptibilă (poate fi invocată oricând, inclusiv pe cale de excepție). NR = se prescrie în <b>3 ani</b> de la data la care cel îndreptățit a cunoscut cauza (art. 2529 NCC).'
         ]
       }
     ],
-    grila:'<b>Capacitate de folosință</b> (lipsa ei → NCA) ≠ <b>capacitate de exercițiu</b> (nerespectarea → NR). Minorul 14–18 ani este <b>asistat</b> (nu reprezentat). Sub 14 ani și interzisul judecătoresc sunt <b>reprezentați</b>. <i>Infans conceptus</i>: drepturile se socotesc dobândite de la concepție dacă se naște viu. Minorul de rea-credință nu poate invoca anulabilitatea.'
+    grila:'<b>Capacitate de folosință</b> (lipsa → NCA, imprescriptibilă) ≠ <b>capacitate de exercițiu</b> (nerespectare → NR, prescriptibilă, confirmabilă). Minorul 14–18 ani: <b>asistat</b> (personal + asistare), nu reprezentat. Sub 14 ani și interzis judecătoresc: <b>reprezentați</b>. <i>Infans conceptus</i>: drepturi de la concepție, dacă se naște viu. Condiție pur potestativă a debitorului → NCA. Sarcina neîndeplinită → revocare, nu nulitate. Confirmare NR → efect retroactiv.'
   },
 
   {
