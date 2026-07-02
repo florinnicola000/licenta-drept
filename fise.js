@@ -83,10 +83,11 @@ var FISE_DATA = [
     sections:[
       { icon:'📌', title:'Condiții de valabilitate a consimțământului',
         items:[
+          '<b>Consimțământul</b> = exteriorizarea hotărârii de a încheia actul juridic. Art. 1204 NCC cere cumulativ: să fie <b>serios</b>, <b>liber</b> și <b>exprimat în cunoștință de cauză</b>. Lipsa totală a consimțământului → nulitate absolută; vicierea lui → nulitate relativă.',
           '<b>Serios</b>: exclus actele făcute în glumă (<i>jocandi causa</i>), în scop didactic sau teatral — lipsa intenției de a produce efecte juridice.',
           '<b>Liber</b>: neviciat de eroare, dol, violență sau leziune (art. 1206 NCC).',
           '<b>Exprimat în cunoștință de cauză</b>: obligație precontractuală de informare (art. 1182–1185 NCC); nerespectarea poate atrage răspundere delictuală sau calificarea ca dol prin reticență.',
-          '<b>Oferta</b>: propunere fermă de a contracta. <b>Irevocabilă</b> dacă are termen sau dacă ofertantul s-a obligat să o mențină (art. 1191 NCC) — revocarea produce efecte dacă ajunge la destinatar înainte de acceptare. <b>Caducă</b>: la decesul sau incapacitatea ofertantului (dacă e vorba de o ofertă cu termen).',
+          '<b>Oferta</b>: propunere fermă de a contracta. <b>Irevocabilă</b> dacă are termen sau dacă ofertantul s-a obligat să o mențină (art. 1191 NCC) — revocarea produce efecte dacă ajunge la destinatar înainte de acceptare. <b>Caducă</b> la decesul sau incapacitatea ofertantului — dar numai la oferta <b>irevocabilă</b> și numai când <b>natura afacerii sau împrejurările o impun</b> (art. 1195 alin. 2 NCC).',
           'Contractul se formează la momentul <b>acceptării ofertei</b>: teoria recepției (art. 1186 NCC) — perfectat când acceptarea <i>a ajuns</i> la ofertant, chiar dacă nu a luat cunoștință de ea. Tăcerea nu valorează acceptare, cu excepțiile prevăzute de lege sau uzanțe.',
           '<b>Promisiunea de a contracta</b> (art. 1279 NCC): obligație de a încheia un contract viitor. Nerespectare → daune <i>sau</i> instanța poate pronunța o hotărâre care ține loc de contract. ≠ <b>Pactul de opțiune</b> (art. 1278): oferta e irevocabilă pe durata opțiunii; beneficiarul acceptă sau nu — dacă acceptă, contractul se formează.'
         ]
@@ -96,9 +97,10 @@ var FISE_DATA = [
           '<b>Eroarea esențială</b> (art. 1207 NCC): poartă asupra naturii/obiectului actului, identității obiectului, persoanei (la acte <i>intuitu personae</i>) sau calității esențiale a bunului → <b>anulabilitate</b>.',
           'Eroarea trebuie să fie <b>scuzabilă</b> (art. 1208 NCC) — cel care nu manifestă diligența unui om rezonabil nu o poate invoca. <i>Ex: un profesionist care nu verifică registrul bunurilor imobile nu poate invoca eroarea.</i>',
           '<b>Eroarea de drept</b> (art. 1207 alin. 3 NCC): eroare asupra conținutului normei juridice; poate fi esențială și atrage anulabilitatea dacă e scuzabilă. ⚠️ Nu se poate invoca pentru a eluda o normă imperativă.',
-          '<b>Eroarea obstacol</b>: <i>in negotio</i> (greșeală asupra naturii actului: X crede că donează, Y că vinde) sau <i>in corpore</i> (identitate totală greșită: bunuri diferite) → lipsă de acord → <b>nulitate absolută</b>.',
-          'Eroarea <b>neesențială</b> (de calcul, aritmetică): nu afectează valabilitatea, atrage numai rectificarea prețului. Eroarea <b>indiferentă</b> (calități neeseențiale): fără efecte.',
-          '<b>Eroarea comună și invincibilă</b> (art. 1213 NCC): dacă ambele părți au ereat identic și eroarea era de neevitat (invincibilă) → actul produce efectele pe care le-ar fi produs în lipsa erorii. ⚠️ Nu se anulează actul!'
+          '<b>Eroarea obstacol</b>: <i>in negotio</i> (greșeală asupra naturii actului: X crede că donează, Y că vinde) sau <i>in corpore</i> (identitate totală greșită: bunuri diferite). ⚠️ <b>Capcană</b>: doctrina veche spunea nulitate absolută (lipsă de acord); sub NCC însă art. 1207 alin. 2 pct. 1 o include expres între erorile <b>esențiale</b> → <b>nulitate relativă</b> (anulabilitate) — acesta e răspunsul corect la grile.',
+          'Eroarea <b>neesențială</b> (de calcul, aritmetică): nu afectează valabilitatea, atrage numai rectificarea (art. 1210). Eroarea <b>indiferentă</b> (calități neesențiale): fără efecte.',
+          '<b>Eroarea comună și invincibilă</b> (art. 17 NCC, <i>error communis facit ius</i>): când toată lumea s-a înșelat la fel și eroarea era de neînlăturat, actul produce efectele pe care le-ar fi produs în lipsa erorii (validitatea aparenței în drept). Nu se aplică în materie de carte funciară și în alte cazuri cu regim special de publicitate.',
+          '<b>Adaptarea contractului</b> (art. 1213 NCC): victima erorii esențiale <b>nu poate obține anularea</b> dacă cealaltă parte declară, în cel mult 3 luni de la notificare, că <b>execută contractul așa cum l-a înțeles victima</b>. Contractul se consideră încheiat cum l-a înțeles partea aflată în eroare — instituție frecvent testată la grile.'
         ]
       },
       { icon:'🎭', title:'Dolul (art. 1214–1216 NCC)',
@@ -107,7 +109,7 @@ var FISE_DATA = [
           '<b>Dolul prin reticență</b> (art. 1214 alin. 1 NCC): tăcere intenționată când există obligație de informare (ex: vânzătorul cunoaște vicii ascunse și nu le divulgă, asiguratorul cunoaște riscul).',
           '<b>Dol de terț</b> → anulabilitate <b>numai dacă</b> cealaltă parte a cunoscut sau <b>trebuia să cunoască</b> manoperele (art. 1215 NCC). ⚠️ Diferit de violența terțului — acolo anulabilitatea e necondiționată!',
           'Sancțiune: <b>anulabilitate + daune-interese</b> (art. 1257 NCC). Cumulul e posibil chiar dacă nu se cere anularea — victima poate păstra contractul și cere numai daune.',
-          'Nu se cere ca eroarea indusă să fie esențială — dolul atrage anulabilitatea chiar pentru o eroare neeseențială, dacă a determinat consimțământul. <b>Proba</b> dolului: celui care îl invocă (nu se prezumă).',
+          'Nu se cere ca eroarea indusă să fie esențială — dolul atrage anulabilitatea chiar pentru o eroare neesențială, dacă a determinat consimțământul. <b>Proba</b> dolului: celui care îl invocă (nu se prezumă).',
           '<b>Dolul incident</b>: eroarea indusă e neesențială (fără dol nu s-ar fi contractat în aceleași condiții) → contractul se menține, dar victima are drept la daune pentru diferența de preț.'
         ]
       },
@@ -126,7 +128,7 @@ var FISE_DATA = [
           '<b>Majori</b> (art. 1221 alin. 2 NCC): disproporție vădită (<b>mai mult de jumătate</b>) din valoarea prestației la momentul încheierii + element subiectiv: profitarea de starea de nevoie, lipsă de experiență sau lipsă de cunoștințe.',
           '<b>Minori 14–18 ani</b> (art. 1221 alin. 3 NCC): orice act lezionar, chiar și actele pentru care au primit asistare; nu se cere procentul de 50%. Prescripție: <b>1 an</b> de la data majoratului.',
           'Sancțiune: <b>anulabilitate</b> <i>sau</i> reducerea/mărirea prestației pentru restabilirea echilibrului (la alegerea instanței sau pârâtului care poate oferi reducerea prețului — art. 1222 NCC).',
-          '<b>Nu se aplică</b> (art. 1224 NCC): acte aleatorii (riscul e inerent), tranzacții (s-au făcut concesii reciproce), actele de partaj.',
+          '<b>Nu se aplică</b> (art. 1224 NCC): contractele <b>aleatorii</b> (riscul e inerent), <b>tranzacția</b> (concesii reciproce prin definiție), precum și alte contracte anume prevăzute de lege.',
           'Termen de prescripție la majori: <b>1 an</b> de la data încheierii actului (nu de la data la care au cunoscut cauza — excepție de la regula generală art. 2529 NCC).'
         ]
       },
@@ -136,19 +138,19 @@ var FISE_DATA = [
           '<b>Dolul</b>: provocat de cealaltă parte sau de un terț cunoscut; nu trebuie să fie esențial dacă a determinat consimțământul; daune cumulabile. Dolul de terț: anulare <b>numai dacă cealaltă parte știa</b>. Prescripție: <b>3 ani</b>.',
           '<b>Violența</b>: amenințare exterioară, injustă și gravă; violența de terț → anulabilitate <b>necondiționat</b>; daune de la autor (chiar terț). Prescripție: <b>3 ani</b>.',
           '<b>Leziunea</b>: disproporție + exploatare (la majori) / orice disproporție (la minori); sancțiune alternativă (anulare sau adaptare contract); prescripție specială <b>1 an</b> (≠ 3 ani). Nu se aplică contractelor aleatorii și tranzacțiilor.',
-          '⚠️ <b>Regulă de reținut</b>: toate viciile atrag <b>nulitate relativă</b> (nu absolută). Excepție: eroarea obstacol (<i>in negotio / in corpore</i>) → nulitate absolută (lipsă de acord, nu viciu).'
+          '⚠️ <b>Regulă de reținut</b>: toate viciile atrag <b>nulitate relativă</b> — inclusiv eroarea obstacol, pe care NCC o tratează ca eroare esențială (art. 1207 alin. 2 pct. 1). Nulitatea absolută apare doar la <b>lipsa totală</b> a consimțământului.'
         ]
       },
       { icon:'⚖️', title:'Culpa in contrahendo și caducitatea ofertei',
         items:[
           '<b>Culpa in contrahendo</b> (art. 1183 NCC): răspunderea precontractuală pentru purtarea negocierilor cu <b>rea-credință</b> sau <b>ruperea intempestivă</b> a acestora. Condiții: negocieri ajunse într-un stadiu avansat; cealaltă parte avea motive rezonabile să creadă că va fi încheiat contractul; rupere fără justificare legitimă. Sancțiune: <b>daune-interese</b> (interesul negativ = cheltuieli efectuate + pierderea altor oportunități). ⚠️ Nu se poate obliga la încheierea contractului.',
           '<b>Obligația de confidențialitate precontractuală</b> (art. 1184 NCC): informațiile confidențiale primite în cursul negocierilor nu pot fi divulgate sau folosite ulterior, chiar dacă nu s-a ajuns la contract. Încălcarea → daune-interese (răspundere delictuală).',
-          '<b>Caducitatea ofertei</b> (art. 1195 NCC): oferta devine caducă (stingere fără efecte, ≠ revocare) în cazurile: (1) decesul sau incapacitatea ofertantului, dacă oferta e cu termen; (2) expirarea termenului fără acceptare; (3) refuzul expres al destinatarului. ⚠️ Oferta fără termen devine caducă după trecerea unui termen rezonabil. Oferta la public: poate fi revocat până la prima acceptare.',
+          '<b>Caducitatea ofertei</b> (art. 1195 NCC): oferta devine caducă (stingere fără efecte, ≠ revocare) când: (1) acceptarea nu ajunge la ofertant în termen; (2) destinatarul o refuză; (3) decesul sau incapacitatea ofertantului — dar numai la oferta <b>irevocabilă</b> și numai când <b>natura afacerii sau împrejurările o impun</b> (alin. 2). ⚠️ Oferta fără termen adresată unei persoane absente trebuie menținută un termen rezonabil. Oferta la public: poate fi revocată până la acceptare.',
           '<b>Distincție</b>: revocare vs. caducitate: <b>revocarea</b> e un act unilateral al ofertantului (art. 1199 NCC), posibilă dacă ajunge la destinatar înainte de acceptare; <b>caducitatea</b> e un fapt juridic (deces, expirare termen, refuz), survine de drept.'
         ]
       }
     ],
-    grila:'<b>Dol de terț ≠ violență de terț</b>: dolul → anulabilitate numai dacă cealaltă parte <i>a știut sau trebuia să știe</i>; violența → anulabilitate <b>întotdeauna</b>. Eroarea: esențială + scuzabilă; eroarea comună invincibilă → nu se anulează (art. 1213). Leziunea la majori: <b>&gt;50% + exploatare + prescripție 1 an</b> (nu 3 ani!). Dolul incident: contract valabil + daune. Amenințarea legitimă cu un drept → nu e violență (art. 1219). Toate viciile → NR (excepție: eroarea obstacol → NCA).'
+    grila:'<b>Dol de terț ≠ violență de terț</b>: dolul → anulabilitate numai dacă cealaltă parte <i>a știut sau trebuia să știe</i>; violența → anulabilitate <b>întotdeauna</b>. Eroarea: esențială + scuzabilă; eroarea comună invincibilă → nu se anulează (art. 17). Adaptarea contractului (art. 1213): cealaltă parte execută cum a înțeles victima → anularea e blocată. Leziunea la majori: <b>&gt;50% + exploatare + prescripție 1 an</b> (nu 3 ani!). Dolul incident: contract valabil + daune. Amenințarea legitimă cu un drept → nu e violență (art. 1219). Toate viciile → NR, <b>inclusiv eroarea obstacol</b> (art. 1207 alin. 2 — capcană: nu mai e NCA sub NCC). Caducitate la deces: doar oferta irevocabilă + natura afacerii o impune.'
   },
 
   {
