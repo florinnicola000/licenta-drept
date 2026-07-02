@@ -514,34 +514,44 @@ var FISE_DATA = [
     sections:[
       { icon:'💳', title:'Plata (art. 1469–1515 NCC)',
         items:[
-          '<b>Cine poate plăti</b>: oricine, inclusiv un terț (excepție: obligații <i>intuitu personae</i> — numai debitorul).',
-          '<b>Cui se plătește</b>: creditorului sau reprezentantului legal/convențional; plata unui terț neautorizat e invalidă (excepție: creditor o ratifică sau a profitat de ea).',
-          '<b>Principiul integrității plății</b>: creditorul nu poate fi forțat să accepte <b>plăți parțiale</b>, chiar dacă datoria e divizibilă.',
-          '<b>Imputația plăților</b>: debitorul cu mai multe datorii față de același creditor poate indica la ce se impută; dacă nu: întâi cheltuieli → dobânzi → capital; dacă mai multe debite egale → cel mai vechi.',
-          '<b>Oferta reală + consemnațiune</b>: dacă creditorul refuză nejustificat plata, debitorul consemnează suma și e liberat (art. 1510–1515 NCC).'
+          '<b>Cine poate plăti</b>: oricine, inclusiv un terț (excepție: obligații <i>intuitu personae</i> — numai debitorul). Terțul care plătește poate fi subrogat în drepturile creditorului.',
+          '<b>Cui se plătește</b>: creditorului sau reprezentantului legal/convențional; plata unui terț neautorizat e invalidă (excepție: creditorul o ratifică sau a profitat de ea — art. 1477 NCC).',
+          '<b>Locul plății</b> (art. 1494 NCC): la <b>domiciliul/sediul debitorului</b> (portabilă — regula); dacă e vorba de predarea unui bun individual determinat → la locul unde se afla bunul la data contractului; plată de sume de bani (debite) — la domiciliul debitorului.',
+          '<b>Principiul integrității plății</b>: creditorul nu poate fi forțat să accepte plăți parțiale, chiar dacă datoria e divizibilă. Excepție: acordul creditorului sau prevedere legală.',
+          '<b>Imputația plăților</b> (art. 1503 NCC): debitorul cu mai multe datorii față de același creditor indică la ce se impută; dacă nu: întâi cheltuieli → dobânzi → capital; dacă mai multe debite egale → cel mai vechi exigibil.',
+          '<b>Oferta reală + consemnațiune</b> (art. 1510–1515 NCC): dacă creditorul refuză nejustificat plata, debitorul consemnează suma la o instituție de credit și e liberat de la data consemnării.'
         ]
       },
-      { icon:'🔗', title:'Solidaritatea (art. 1434–1468 NCC)',
+      { icon:'🔗', title:'Solidaritatea și indivizibilitatea (art. 1434–1468 NCC)',
         items:[
-          '<b>Solidaritate activă</b> (mai mulți creditori): oricare creditor poate pretinde integral întreaga creanță; debitorul se liberează plătind oricăruia.',
-          '<b>Solidaritate pasivă</b> (mai mulți debitori): creditorul poate urmări integral pe oricare debitor solidar; cel care plătește are regres față de codebitori pentru parte lor.',
-          'Solidaritate pasivă: <b>nu se prezumă</b> — trebuie să rezulte expres din lege sau din convenție.',
-          'Excepțiile personale (incapacitate, compensație) pot fi invocate numai de cel care le deține; excepțiile comune pot fi invocate de oricare codebitor.',
-          'Renunțarea la solidaritate față de un codebitor nu liberează pe ceilalți de solidaritate față de creditor.'
+          '<b>Solidaritate activă</b>: oricare creditor poate pretinde integral creanța; debitorul se liberează plătind oricăruia. Repartizarea internă → în raport de cotele fiecărui creditor.',
+          '<b>Solidaritate pasivă</b>: creditorul urmărește integral pe oricare debitor solidar; cel care plătește are <b>regres</b> față de codebitori pentru cota parte a fiecăruia. Dacă un codebitor e insolvabil, diferența se suportă proporțional de ceilalți.',
+          'Solidaritate pasivă: <b>nu se prezumă</b> — trebuie să rezulte expres din lege sau contract. ⚠️ La raporturi comerciale (între profesioniști), solidaritatea e prezumată.',
+          'Excepțiile <b>personale</b> (incapacitate, compensație proprie) pot fi invocate numai de cel care le deține; excepțiile <b>comune</b> (nulitate, remitere) pot fi invocate de oricare codebitor.',
+          '<b>Indivizibilitatea</b> ≠ solidaritate: la indivizibilitate, prestația nu poate fi executată fracționat prin natura sa sau prin convenție (ex: predarea unui imobil). La solidaritate, obligația poate fi divizibilă dar legea/voința o face solidară. Ambele permit urmărirea integrală.'
+        ]
+      },
+      { icon:'🔄', title:'Novația și subrogarea (art. 1593–1614 NCC)',
+        items:[
+          '<b>Novația</b> (art. 1609 NCC): stingerea unei obligații vechi prin crearea uneia noi. Tipuri: obiectivă (se schimbă obiectul sau cauza), subiectivă (se schimbă creditorul sau debitorul — delegație perfectă). ⚠️ Nu se prezumă — trebuie să rezulte indubitabil.',
+          'Efectul novației: obligația veche se stinge (inclusiv garanțiile accesoare) dacă nu se stipulează expres menținerea lor. Creanța nouă e fără garanțiile celei vechi.',
+          '<b>Subrogarea</b> (art. 1593 NCC): terțul care plătește datoria altuia se subrogă în drepturile creditorului față de debitor (dobândește creanța cu toate accesoriile).',
+          '<b>Subrogare legală</b> (art. 1596 NCC): de drept — fidejusorul care plătește, cel care plătește o datorie garantată cu ipotecă pe propriul bun, moștenitorul care plătește un legat.',
+          '<b>Subrogare convențională</b>: prin acordul creditorului cu terțul plătitor (la data plății, în actul de plată) sau prin acordul debitorului cu terțul (împrumut pentru plată, cu subrogare).'
         ]
       },
       { icon:'🔍', title:'Acțiunea oblică și acțiunea pauliană',
         items:[
-          '<b>Acțiunea oblică (indirectă)</b> (art. 1560–1561): creditorul exercită drepturile debitorului <b>neglijent</b> care nu-și valorifică drepturile; acționează în numele debitorului.',
-          'Condiții oblică: creanță certă, lichidă, exigibilă; debitorul să fie neglijent; prejudiciu prin pasivitate.',
-          'Efectele oblicei revin <b>patrimoniului debitorului</b> (nu direct creditorului); alți creditori pot concura.',
-          '<b>Acțiunea pauliană (revocatorie)</b> (art. 1562–1565): revocarea actelor frauduloase prin care debitorul și-a creat/majorat insolvabilitatea în dauna creditorului.',
-          'Condiții pauliană: fraudă (<i>consilium fraudis</i> = cunoașterea stării de insolvabilitate); prejudiciul creditorului; actul trebuie să fie anterior nașterii creanței sau cu intenție de fraudare.',
-          'Terț cu titlu <b>gratuit</b>: revocarea actului e posibilă indiferent de buna sa credință. Terț cu titlu <b>oneros de bună-credință</b>: actul NU poate fi revocat.'
+          '<b>Acțiunea oblică</b> (art. 1560 NCC): creditorul exercită drepturile debitorului <b>neglijent</b> care nu-și valorifică drepturile (ex: nu acceptă moștenirea). Condiții: creanță certă, lichidă, exigibilă; debitorul neglijent; prejudiciu prin pasivitate.',
+          'Efectele oblicei revin <b>patrimoniului debitorului</b> (nu direct creditorului); alți creditori pot concura. ⚠️ Nu e o acțiune directă — creditorul nu poate reține suma.',
+          '<b>Acțiunea pauliană (revocatorie)</b> (art. 1562 NCC): atacă actele frauduloase prin care debitorul și-a creat/agravat insolvabilitatea în dauna creditorului.',
+          'Condiții pauliană: (1) creanță certă (sau supusă judecății), de regulă anterioară actului; (2) prejudiciul creditorului (act care generează/agravează insolvabilitatea); (3) <i>consilium fraudis</i> — la debitor (cunoașterea prejudicierii); la terț cu titlu oneros — cunoașterea stării de insolvabilitate.',
+          'Efectele pauliene: actul nu e nul — e <b>inopozabil</b> față de creditorul reclamant (numai față de el, în limita creanței). Terțul cu titlu <b>gratuit</b>: inopozabilitate indiferent de buna credință. Terțul cu titlu <b>oneros de bună-credință</b>: protejat, acțiunea respinsă.',
+          'Prescripție acțiune pauliană: <b>1 an</b> de la data la care creditorul a cunoscut actul fraudulos (art. 2563 NCC).'
         ]
       }
     ],
-    grila:'Principiul integrității plății: creditorul NU poate fi forțat la plăți parțiale. Acțiunea oblică: efectele revin <b>patrimoniului debitorului</b> (nu direct creditorului). Acțiunea pauliană: terțul de bună-credință cu titlu oneros este <b>protejat</b>; terțul gratificat nu e protejat. Solidaritatea pasivă <b>nu se prezumă</b>.'
+    grila:'Principiul integrității plății: creditorul NU poate fi forțat la plăți parțiale. Acțiunea oblică: efectele revin patrimoniului debitorului (<b>nu direct creditorului</b>). Pauliana: act <b>inopozabil</b> față de creditor (nu nul), prescripție <b>1 an</b>; terțul oneros de bună-credință e protejat. Solidaritate pasivă <b>nu se prezumă</b> (excepție: profesioniști). Novația nu se prezumă. Subrogare legală: fidejusorul care plătește.'
   },
 
   {
