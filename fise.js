@@ -470,39 +470,42 @@ var FISE_DATA = [
       { icon:'📌', title:'Condiții generale (art. 1349 NCC)',
         items:[
           'Patru condiții cumulative: <b>faptă ilicită</b> + <b>prejudiciu</b> + <b>legătură de cauzalitate</b> + <b>vinovăție</b>.',
-          '<b>Fapta ilicită</b>: orice acțiune sau inacțiune care încalcă norma legală sau bunele moravuri și cauzează un prejudiciu altuia.',
-          '<b>Prejudiciul</b>: cert, direct, personal, rezultat din lezarea unui drept sau interes legitim; poate fi material sau moral.',
-          '<b>Vinovăția</b>: intenție (directă/indirectă) sau culpă (neglijență/imprudență); apreciată <i>in abstracto</i> (comparație cu omul diligent).'
+          '<b>Fapta ilicită</b>: orice acțiune sau inacțiune care încalcă norma legală sau bunele moravuri. Poate fi comisivă sau omisivă. Exercitarea abuzivă a unui drept subiectiv = faptă ilicită (art. 15 NCC).',
+          '<b>Prejudiciul</b>: trebuie să fie cert (actual sau viitor sigur), direct, personal și să rezulte din lezarea unui drept sau interes legitim. Poate fi <b>material</b> (pierdere efectivă + câștig nerealizat) sau <b>moral</b> (suferință psihică, onoare, demnitate). ⚠️ Prejudiciul moral se repară la delict; la contract — numai dacă e previzibil.',
+          '<b>Legătura de cauzalitate</b>: aplicăm teoria <b>echivalenței condițiilor</b> (<i>conditio sine qua non</i>) sau teoria cauzei adecvate. La pluralitate de cauze (victimă + autor) → contribuțiile se stabilesc proporțional; răspunderea se reduce.',
+          '<b>Vinovăția</b>: intenție (directă: autorul urmărește rezultatul; indirectă: acceptă producerea lui) sau culpă (neglijență/imprudență). Apreciată <i>in abstracto</i> față de omul diligent. ⚠️ La răspunderea obiectivă (lucruri, animale), vinovăția nu e necesară.',
+          '<b>Răspundere delictuală vs. contractuală</b>: la delict — răspundere pentru orice prejudiciu (inclusiv moral) + vinovăție apreciată <i>in abstracto</i>; la contract — răspundere limitată la prejudiciile <i>previzibile</i> la momentul contractului (excepție: dol sau culpă gravă). Nu pot coexista pentru același prejudiciu.'
         ]
       },
       { icon:'👨‍👩‍👧', title:'Răspunderea pentru fapta altuia (art. 1372–1374 NCC)',
         items:[
-          '<b>Răspunderea părinților</b> (art. 1372): pentru prejudicii cauzate de minori. Prezumție <b>relativă</b> de culpă → părinții pot răsturna dovedind că nu puteau împiedica fapta.',
-          '<b>Răspunderea comitenților pentru prepuși</b> (art. 1373): comitentul răspunde pentru fapta prepusului săvârșită în exercitarea funcțiilor încredințate. Prezumție <b>absolută</b> (irefragabilă) → nu poate fi răsturnată prin probă contrară.',
-          'Prepusul este cel care acționează sub autoritatea și controlul comitentului (raport de subordonare).',
-          'Comitentul care plătește are <b>acțiune în regres</b> față de prepus (dacă prepusul a acționat cu vinovăție).',
-          '<b>Răspunderea institutorilor</b> (art. 1372 alin. 2): prezumție relativă, similară cu părinții, pentru elevii/studenții aflați sub supraveghere.'
+          '<b>Răspunderea părinților</b> (art. 1372): pentru prejudicii cauzate de minori <b>care locuiesc cu ei</b>. Prezumție <b>relativă</b> de culpă → pot răsturna dovedind că nu puteau împiedica fapta (supravegheau, minorul a acționat fără posibilitate de intervenție).',
+          '<b>Răspunderea comitenților pentru prepuși</b> (art. 1373): comitentul răspunde dacă fapta s-a săvârșit în exercitarea <b>funcțiilor încredințate</b>. Prezumție <b>absolută</b> (irefragabilă) — nu poate fi răsturnată. Condiție: raport de subordonare (comitent dă instrucțiuni, controlează).',
+          '⚠️ Dacă prepusul a depășit atribuțiile dar victima a crezut că acționează în limitele lor → tot răspunderea comitentului. Comitentul care plătește are <b>acțiune în regres</b> față de prepus.',
+          '<b>Răspunderea institutorilor și artizanilor</b> (art. 1372 alin. 2): prezumție <b>relativă</b> pentru elevii și ucenicii aflați sub supraveghere la data producerii prejudiciului.',
+          'Minorul <b>cu discernământ</b> răspunde personal solidar cu părinții. Minorul <b>fără discernământ</b>: numai părinții/tutorii răspund. Discernământul se evaluează individual, nu după vârstă fixă (sub 14 ani — prezumție relativă de lipsă de discernământ).'
         ]
       },
       { icon:'🔧', title:'Răspunderea pentru lucruri, animale și ruina edificiului',
         items:[
-          '<b>Răspunderea pentru lucruri</b> (art. 1376): obiectivă (fără vinovăție); răspunde <b>paznicul juridic</b> = cel care are folosința și controlul independent al lucrului (nu neapărat proprietarul).',
-          '<b>Paza juridică ≠ paza materială</b>: cel care predă lucrul spre folosință (<i>ex:</i> cel care împrumută mașina) pierde paza juridică.',
-          '<b>Răspunderea pentru animale</b> (art. 1375): obiectivă; răspunde proprietarul sau cel care se folosește de animal la momentul producerii prejudiciului.',
-          '<b>Ruina edificiului</b> (art. 1378): obiectivă; răspunde <b>proprietarul edificiului</b> indiferent de culpă; ruina poate fi din lipsă de întreținere sau viciu de construcție.'
+          '<b>Răspunderea pentru lucruri</b> (art. 1376): obiectivă; răspunde <b>paznicul juridic</b> = cel care exercită independent folosința și controlul lucrului. <b>Nu</b> e neapărat proprietarul (ex: locatarul are paza juridică a lucrului închiriat).',
+          '<b>Paza juridică ≠ paza materială</b>: cel care predă lucrul spre folosință (cel care împrumută mașina) pierde paza juridică în favoarea celui care primește. <b>Excepție</b>: dacă bunul a fost furat → hoțul nu dobândește paza juridică; proprietarul o păstrează.',
+          '<b>Răspunderea pentru animale</b> (art. 1375): obiectivă; răspunde proprietarul sau cel care <b>se folosea de animal</b> la momentul prejudiciului. Se include și animalul scăpat sau pierdut (momentul prejudiciului contează).',
+          '<b>Ruina edificiului</b> (art. 1378): obiectivă; răspunde <b>proprietarul</b>; nu contează culpa. "Edificiu" = orice construcție legată de sol (imobile, garduri, construcții provizorii fixate). Ruina = prăbușire parțială sau totală, spontan sau la folosire.',
+          '<b>Activitățile periculoase</b> (art. 1359 NCC): cel care desfășoară o activitate cu risc ridicat (față de terți) răspunde obiectiv pentru prejudiciile cauzate. Exonerare: forța majoră sau fapta exclusivă a victimei/terțului.'
         ]
       },
       { icon:'🛡️', title:'Cauze exoneratoare de răspundere',
         items:[
-          '<b>Forța majoră</b>: eveniment extern, imprevizibil, insurmontabil → exonerează la orice tip de răspundere, inclusiv cea obiectivă.',
-          '<b>Cazul fortuit</b>: eveniment intern (propriu sferei de activitate); exonerează <b>numai</b> la răspunderea subiectivă, <b>nu</b> la cea obiectivă (lucruri, animale, ruina edificiului, activități periculoase).',
-          '<b>Fapta victimei</b>: poate reduce sau înlătura răspunderea, în funcție de contribuția cauzală.',
-          '<b>Fapta unui terț</b>: exonerează dacă este cauza exclusivă a prejudiciului.',
-          '<b>Consimțământul victimei</b>: exonerează dacă e informat și privitor la un prejudiciu patrimonial; nu exonerează niciodată pentru vătămările corporale grave.'
+          '<b>Forța majoră</b> (art. 1351 NCC): eveniment <b>extern, imprevizibil, absolut insurmontabil și irezistibil</b> → exonerează la <i>orice</i> tip de răspundere (subiectivă și obiectivă). <i>Ex: cutremur devastator, inundații catastrofale.</i>',
+          '<b>Cazul fortuit</b>: eveniment intern sau propriu sferei de activitate a debitorului; imprevizibil pentru acel debitor. Exonerează <b>numai</b> la răspunderea subiectivă; <b>nu</b> exonerează la răspunderea obiectivă (lucruri, animale, ruina edificiului, activități periculoase).',
+          '<b>Fapta victimei</b>: reduce/înlătură răspunderea proporțional cu contribuția cauzală. Dacă victima e singura cauză → exonerare totală; dacă e o concauză → reducerea despăgubirii.',
+          '<b>Fapta unui terț</b>: exonerează dacă este <b>cauza exclusivă</b> a prejudiciului (de ex: terțul a săvârșit o infracțiune față de victimă, fără implicarea pârâtului). Dacă e concauză → răspundere solidară.',
+          '<b>Consimțământul victimei</b> (<i>volenti non fit iniuria</i>): exonerează dacă e informat, liber și privitor la un prejudiciu patrimonial. <b>Nu exonerează</b> pentru vătămări corporale grave sau moarte (ordinea publică).'
         ]
       }
     ],
-    grila:'Răspunderea comitenților = prezumție <b>absolută</b> (nu poate fi răsturnată). Răspunderea părinților = prezumție <b>relativă</b>. La răspunderea obiectivă (lucruri, animale, ruina), <b>cazul fortuit nu exonerează</b> — numai forța majoră. Paza juridică ≠ paza materială: cel care cedează folosința pierde paza juridică.'
+    grila:'Răspunderea comitenților = prezumție <b>absolută</b> (irefragabilă). Răspunderea părinților = prezumție <b>relativă</b>. La răspunderea obiectivă (lucruri, animale, ruina, activități periculoase): <b>cazul fortuit nu exonerează</b> — numai forța majoră. Paza juridică ≠ paza materială: cel care cedează folosința pierde paza juridică (excepție: bunul furat). Prejudiciu moral: reparat la delict; la contract — numai previzibil. Forța majoră: extern + imprevizibil + irezistibil.'
   },
 
   {
