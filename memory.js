@@ -75,7 +75,7 @@ function memWin(){
   var key=(MEM.mat||'all')+'_'+MEM.pairs; var prev=MEM_BEST[key]; var rec=false;
   if(!prev||MEM.moves<prev){ MEM_BEST[key]=MEM.moves; memSaveBest(); rec=(!!prev); }
   var w=document.getElementById('mem-win'); if(!w) return;
-  var msgs=['Memorie de avocat! 🧠','Bravo, Miruna! 🌟','Perfect — pauză binemeritată. ☕','Ai prins toate perechile! 🎯'];
+  var msgs=['Memorie de avocat! 🧠','Bravo, copile! 🌟','Perfect — pauză binemeritată. ☕','Ai prins toate perechile! 🎯'];
   w.innerHTML='<div class="mw-big">🎉 '+msgs[Math.floor(Math.random()*msgs.length)]+'</div>'+
     '<div class="mw-sub">Ai terminat din <b>'+MEM.moves+'</b> mutări'+(rec?' — <b style="color:var(--gr)">record nou!</b> 🏆':(prev?(' · record: '+MEM_BEST[key]):''))+'</div>'+
     '<button onclick="startMemory()">🔄 Joc nou</button>';

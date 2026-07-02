@@ -331,7 +331,7 @@ a{color:var(--gr);text-decoration:none}
 
 <!-- ASTĂZI -->
 <div id="panel-azi" class="panel active">
-  <div id="hello">Bună, Miruna 🤍</div>
+  <div id="hello">Bună, copile 🤍</div>
   <div id="hello-date">—</div>
 
   <div class="dash-row">
@@ -1313,7 +1313,7 @@ function renderDashboard(){
     // before start or after end
     const firstUndone = ALL_WEEKS.find(x=>!weekDone(x.wk));
     if(firstUndone){ twTitle.textContent='W'+String(firstUndone.wk.n).padStart(2,'0')+' · '+firstUndone.wk.title; twPhase.textContent=firstUndone.ph.title+' · '+firstUndone.wk.dates; const p=weekProgress(firstUndone.wk); twFill.style.width=p.pct+'%'; twLbl.textContent=p.done+' / '+p.total+' sarcini'; }
-    else { twTitle.textContent='🎓 Felicitări, Miruna!'; twPhase.textContent='Ai terminat tot planul.'; twFill.style.width='100%'; twLbl.textContent='100%'; }
+    else { twTitle.textContent='🎓 Felicitări, copile!'; twPhase.textContent='Ai terminat tot planul.'; twFill.style.width='100%'; twLbl.textContent='100%'; }
   }
 
   // today's suggestion
@@ -1392,7 +1392,7 @@ function goAzi(){ showPanel('azi'); window.scrollTo({top:0,behavior:'smooth'}); 
 // toast / celebrate
 let toastT;
 function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'),3500); }
-function celebrate(ph){ toast('🎉 Ai terminat „'+ph.title.replace(/^[①②③④⑤⑥⑦⑧⑨⑩⑪]\s*/,'')+'"! Mândru de tine, Miruna 🤍'); }
+function celebrate(ph){ toast('🎉 Ai terminat „'+ph.title.replace(/^[①②③④⑤⑥⑦⑧⑨⑩⑪]\s*/,'')+'"! Mândru de tine, copile 🤍'); }
 
 // ══════════════════════════════════════════════════════════════════════════
 //  TOP + INIT
