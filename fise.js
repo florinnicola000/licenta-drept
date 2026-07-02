@@ -636,36 +636,44 @@ var FISE_DATA = [
     sections:[
       { icon:'🏠', title:'Locațiunea (art. 1777–1850 NCC)',
         items:[
-          '<b>Definiție</b>: locatorul transmite locatarului dreptul de <b>folosință temporară</b> a unui bun, în schimbul chiriei.',
-          '<b>Caractere</b>: sinalagmatic, cu titlu oneros, comutativ, cu executare succesivă, translativ de folosință (nu de proprietate).',
-          '<b>Obligațiile locatorului</b>: predarea bunului în stare corespunzătoare; menținerea stării; garanția pentru vicii și tulburări; efectuarea <b>reparațiilor capitale</b>.',
-          '<b>Obligațiile locatarului</b>: plata chiriei; folosința conform destinației; efectuarea <b>reparațiilor de întreținere (locative)</b>; anunțarea locatorului despre necesitatea reparațiilor capitale; restituirea la expirare.',
-          '<b>Sublocațiunea</b>: permisă dacă nu e interzisă expres; cesiunea contractului necesită acordul expres al locatorului.',
-          'Efectele înstrăinării bunului dat în locațiune: noul proprietar este ținut de locațiune dacă aceasta era înregistrată sau dacă a cunoscut-o (<i>emptio non tollit locatum</i>).'
+          '<b>Definiție</b>: locatorul transmite locatarului dreptul de <b>folosință temporară</b> a unui bun, în schimbul chiriei. Translativ de folosință (nu de proprietate).',
+          '<b>Obligațiile locatorului</b>: predarea bunului în stare corespunzătoare; menținerea stării pe toată durata; garanția pentru vicii și tulburări; <b>reparații capitale</b>.',
+          '<b>Obligațiile locatarului</b>: plata chiriei la termen; folosința conform destinației; <b>reparații locative (de întreținere)</b>; anunțarea locatorului pentru reparații capitale; restituirea bunului în stare corespunzătoare la expirare.',
+          '<b>Sublocațiunea</b>: permisă dacă nu e interzisă expres. Cesiunea contractului necesită acordul expres al locatorului.',
+          '<b>Tacita relocațiune</b> (art. 1810 NCC): dacă după expirarea termenului locatarul continuă să folosească bunul și locatorul nu se opune → contract nou pe durată nedeterminată în aceleași condiții.',
+          '<b>Opozabilitate față de dobânditorul bunului</b> (<i>emptio non tollit locatum</i>): noul proprietar este ținut de locațiune dacă aceasta e înregistrată (imobile: CF) sau dacă a cunoscut-o. Locatarul cu dată certă anterioară înstrăinării are drept de preferință.'
         ]
       },
       { icon:'🤝', title:'Mandatul (art. 2009–2071 NCC)',
         items:[
-          '<b>Definiție</b>: mandatarul se obligă să încheie <b>acte juridice</b> pe seama și în numele mandantului.',
-          '<b>Caractere</b>: consensual; <b>gratuit</b> (prezumție între persoane fizice); poate fi cu titlu oneros.',
-          '<b>Mandatul aparent</b>: mandatarul depășește puterile, dar terțul de bună-credință care s-a bazat pe aparența de putere este protejat.',
-          '<b>Obligațiile mandatarului</b>: executarea mandatului cu diligența unui bun proprietar; să nu depășească puterile; să dea socoteală; să remită ceea ce a primit.',
-          '<b>Obligațiile mandantului</b>: avansarea cheltuielilor; restituirea cheltuielilor + dobânzi; despăgubirea pentru prejudicii suferite; plata remunerației.',
-          '<b>Stingerea mandatului</b>: moartea/incapacitatea oricăreia din părți; revocarea de către mandant (oricând); renunțarea mandatarului; termenul. <b>Mandatul irevocabil</b>: valabil numai dacă e în interesul mandatarului sau terțului (nu al mandantului).'
+          '<b>Definiție</b>: mandatarul se obligă să încheie <b>acte juridice</b> pe seama și în <b>numele mandantului</b> (reprezentare directă). ≠ Antrepriză (acte materiale).',
+          '<b>Caractere</b>: consensual; prezumție de <b>gratuitate</b> între persoane fizice; cu titlu oneros la profesioniști. Formă: de regulă nu e impusă, dar mandatul pentru acte solemne trebuie să fie tot solemn (art. 2013 NCC).',
+          '<b>Mandatul aparent</b> (art. 1309 NCC): mandatarul depășește puterile, dar terțul de bună-credință care s-a bazat pe aparența de putere este protejat; mandantul nu poate opune limitele puterilor terțului de bună-credință.',
+          '<b>Mandatul fără reprezentare</b> (art. 2039 NCC): mandatarul acționează în <b>nume propriu</b>, dar pe seama mandantului. Terțul nu cunoaște calitatea de mandant. Actele produc efecte față de mandatar → mandantul poate cere cesiunea creanțelor/bunurilor.',
+          '<b>Obligațiile mandatarului</b>: executarea cu diligența unui profesionist (dacă e oneros) sau a unui bun proprietar (dacă e gratuit); să nu depășească puterile; să dea socoteală; să remită ceea ce a primit.',
+          '<b>Stingerea mandatului</b>: moartea/incapacitatea oricărei părți; revocarea de mandant (oricând — excepție: mandat în interesul mandatarului sau terțului = irevocabil); renunțare; termen.'
         ]
       },
       { icon:'🔨', title:'Antrepriza (art. 1851–1880 NCC)',
         items:[
-          '<b>Definiție</b>: antreprenorul se obligă să execute o <b>lucrare materială</b> sau un serviciu pentru client, contra unui preț.',
-          '<b>Deosebire esențială față de mandat</b>: mandatul = acte juridice; antrepriza = acte materiale (lucrări, servicii).',
-          'Antreprenorul lucrează <b>independent</b>, nu e prepusul clientului; clientul nu răspunde ca și comitent pentru faptele antreprenorului.',
-          'Prețul: forfetar (fix, negociat global) sau determinabil (deviz estimativ).',
-          '<b>Riscurile</b>: dacă lucrul piere înainte de recepție din cauze fortuite și antreprenorul a furnizat materialele → riscul e al <b>antreprenorului</b>; dacă materialele sunt ale clientului și pierea se datorează viciului materialului → riscul e al <b>clientului</b>.',
-          '<b>Recepția lucrării</b>: moment-cheie după care riscul trece la client și curg garanțiile (vicii, ruina edificiului).'
+          '<b>Definiție</b>: antreprenorul se obligă să execute o <b>lucrare materială</b> sau un serviciu pentru client (contra unui preț). ≠ Mandat: antrepriza = acte materiale; mandatul = acte juridice.',
+          'Antreprenorul lucrează <b>independent</b> — nu e prepusul clientului; clientul <b>nu răspunde</b> ca comitent pentru faptele antreprenorului.',
+          'Prețul: <b>forfetar</b> (global, nenegociabil ulterior, riscul revizuirii e al antreprenorului) sau <b>determinabil</b> (deviz estimativ — poate fi ajustat dacă depășirile sunt semnificative și imprevizibile).',
+          '<b>Riscul pieirii</b>: înainte de recepție, material furnizat de antreprenor → riscul e al <b>antreprenorului</b>; material al clientului, pierit din viciul materialului → riscul e al <b>clientului</b>.',
+          '<b>Recepția lucrării</b>: momentul-cheie; după recepție, riscul trece la client și curg garanțiile pentru vicii ascunse (3 ani de la recepție la imobile; 2 ani pentru vicii structurale).',
+          '<b>Denunțarea unilaterală de către client</b> (art. 1869 NCC): clientul poate rezilia oricând, cu preaviz, plătind antreprenorului cheltuielile suportate + beneficiul nerealizat + remunerația cuvenită. Antreprenorul nu poate rezilia unilateral (decât dacă clientul nu cooperează).'
+        ]
+      },
+      { icon:'🔁', title:'Schemă comparativă: locațiune, comodat, mandat, antrepriză',
+        items:[
+          '<b>Locațiune</b>: oneroasă, translativ de folosință, locatarul suportă întreținerea; locatorul suportă capital. Sinalagmatic, cu executare succesivă.',
+          '<b>Comodat</b>: esențialmente gratuit (dacă e cu plată = locațiune), real (perfectat prin remitere), proprietatea rămâne la comodant; comodatarul nu poate subînchiria.',
+          '<b>Mandat</b>: acte juridice în numele mandantului; gratuit (PF) sau oneros (profesioniști); revocabil ad nutum (cu excepția mandatului în interesul mandatarului).',
+          '<b>Antrepriză</b>: acte materiale, antreprenorul e independent (nu prepus), prețul e de regulă forfetar; clientul poate denunța oricând (cu despăgubire).'
         ]
       }
     ],
-    grila:'Locatarul: <b>reparații locative (de întreținere)</b>; locatorul: <b>reparații capitale</b>. Mandat = acte juridice; antrepriză = acte materiale. Mandatul între persoane fizice = prezumție de <b>gratuitate</b>. Mandantul poate revoca oricând, chiar dacă l-a declarat irevocabil (excepție: mandat în interesul mandatarului/terțului). Antreprenorul ≠ prepus al clientului.'
+    grila:'Locatarul: <b>reparații locative</b>; locatorul: <b>reparații capitale</b>. Tacita relocațiune → contract pe durată nedeterminată. Mandat = acte juridice; antrepriză = acte materiale. Mandatul PF = prezumție de <b>gratuitate</b>. Mandat fără reprezentare: terțul nu cunoaște mandantul; efectele → mandatar. Antreprenorul ≠ prepus; clientul poate denunța oricând cu despăgubire.'
   },
 
   {
