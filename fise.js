@@ -757,6 +757,7 @@ var FISE_DATA = [
       { icon:'🔁', title:'Reprezentarea succesorală și soțul supraviețuitor',
         items:[
           '<b>Reprezentarea succesorală</b> (art. 965 NCC): descendentul predecedat sau nedemn e înlocuit de propriii descendenți; reprezentanții culeg prin împărțire <b>pe tulpini</b> (nu pe capete). Admisă: la descendenți (cls I) și la colaterali privilegiați (frații cls II). Inadmisă: la ascendenți.',
+          '⚠️ <b>Renunțătorul ≠ nedemnul</b>: copiii <b>nedemnului</b> vin prin <b>reprezentare</b> (iau locul nedemnului, chiar dacă acesta trăiește); copiii <b>renunțătorului</b> nu beneficiază de reprezentare — pot moșteni numai <b>în cont propriu</b>, dacă au propria vocație succesorală și nu sunt excluși de moștenitori mai apropiați în grad.',
           '<b>Soțul supraviețuitor</b>: vine în concurs cu oricare clasă (nu face parte dintr-o clasă). Cote: cls I = <b>1/4</b>; cls II complet (ascendenți + colaterali) = <b>1/3</b>; cls II numai ascendenți = <b>3/8</b>; cls III = <b>1/2</b>; cls IV = <b>3/4</b>; singur = <b>tot</b>.',
           '<b>Drepturile speciale ale soțului</b> (art. 971–975 NCC): drept de abitație timp de <b>1 an</b> în locuința familiei (dacă nu e coproprietar sau moștenitor unic); drept preferențial la mobilierul și obiectele de uz casnic (în afara cotei din moștenire).',
           '<b>Venire în concurs</b>: soțul supraviețuitor poate fi exheredat (dezmoștenit) total sau parțial; rezerva sa protejată = 1/4 din ceea ce ar fi moștenit ca moștenitor legal.'
@@ -789,7 +790,8 @@ var FISE_DATA = [
           '<b>Calculul masei succesorale</b> (art. 1091 NCC): activ brut − pasiv (datorii) = activ net; activ net + reunire fictivă a donațiilor făcute de defunct = masa de calcul a rezervei.',
           'Reunirea fictivă: se adaugă <b>toate donațiile</b> (nu doar cele neraportabile) la masa de calcul pentru determinarea rezervei; valoarea donației = la data facerii, nu la data morții.',
           '<b>Reducțiunea liberalităților</b> (art. 1096 NCC): dacă donațiile + legatele depășesc cotitatea disponibilă, rezervatarii pot cere reducțiunea. Ordinea: <b>mai întâi legatele</b> (în ordine inversă datei — cel mai recent, primul); <b>apoi donațiile</b> (în ordine inversă datei). Reducțiunea = inopozabilitate față de rezervatari (nu nulitate).',
-          'Termen acțiune în reducțiune: <b>3 ani</b> de la data deschiderii succesiunii sau de la cunoașterea dispoziției.'
+          'Termen acțiune în reducțiune: <b>3 ani</b> de la data deschiderii succesiunii sau de la cunoașterea dispoziției.',
+          '<b>Exemplu numeric</b>: masă de calcul = 200.000 lei; vin soțul + 2 copii. Cotă legală soț = 1/4 (50.000 lei) → rezervă soț = 1/2 × 50.000 = <b>25.000 lei</b>. Cotă legală copii = 3/4 (150.000 lei) → rezervă copii total = 1/2 × 150.000 = <b>75.000 lei</b>. Total rezerve = 100.000 lei → cotitate disponibilă = <b>100.000 lei</b> (poate fi lăsată prin testament/donații oricui).'
         ]
       },
       { icon:'🔃', title:'Raportul donațiilor (art. 1146–1165 NCC)',
@@ -847,6 +849,13 @@ var FISE_DATA = [
           '<b>Culpa simplă</b> (neglijența): nu prevede urmarea, deși <b>trebuia și putea</b> să o prevadă.',
           '<b>Praeterintenția</b> (intenție depășită, art. 16 alin. 5 NCP): intenție față de fapta inițială + culpă față de urmarea mai gravă. Exemplu: loviri cauzatoare de moarte (art. 195 NCP) — autorul lovește cu intenție, dar decesul se produce din culpă.',
           '<b>Mobilul</b> (motivul psihologic) și <b>scopul</b>: de regulă nu condiționează existența infracțiunii, dar pot constitui circumstanțe agravante sau elemente ale formei calificate (ex: omor calificat — art. 189 lit. b: din interes material).'
+        ]
+      },
+      { icon:'🔁', title:'Schemă comparativă: cauze justificative vs. neimputabilitate',
+        items:[
+          '<b>Cauze justificative</b> (art. 18–22 NCP): înlătură <b>antijuridicitatea</b> → fapta <i>nu este infracțiune</i>. Efect <b>IN REM</b>: toți participanții beneficiază automat. Exemple: legitima apărare, starea de necesitate, exercitarea unui drept, consimțământul victimei.',
+          '<b>Cauze de neimputabilitate</b> (art. 23–31 NCP): înlătură <b>imputabilitatea</b> → fapta este infracțiune, dar <i>persoana nu răspunde penal</i>. Efect <b>IN PERSONAM</b>: numai cel vizat nu răspunde; ceilalți participanți pot răspunde. Exemple: minoritate, iresponsabilitate, constrângere, eroare, caz fortuit, beție involuntară completă.',
+          '⚠️ <b>Distincția practică pentru grile</b>: dacă autorul a acționat justificat → nici instigatorul/complicele nu răspund (fapta nu există penal). Dacă autorul era minor sub 14 ani (neimputabilitate) → instigatorul/complicele <i>pot fi judecați ca autori mediați</i>.'
         ]
       }
     ],
@@ -966,6 +975,14 @@ var FISE_DATA = [
           '<b>Violarea de domiciliu</b> (art. 224 NCP): intrarea fără drept sau refuzul de a pleca la cerere; pedeapsă max <b>5 ani</b>. Agravat: noapte, 2+ persoane, prin violență, cu arme, funcționar ce abuzează de calitate.',
           '<b>Violul</b> (art. 218): raport sexual/act oral-anal prin constrângere sau profitând de imposibilitatea victimei de a se exprima; pedeapsă <b>3–10 ani</b>. Victimă <16 ani → <b>3–12 ani</b>. <b>Actul sexual cu un minor</b> (art. 220): sub 15 ani, indiferent de consimțământ.'
         ]
+      },
+      { icon:'🔁', title:'Schemă comparativă: omor / loviri cauz. de moarte / ucidere din culpă',
+        items:[
+          '<b>Omor</b> (art. 188–189 NCP): vinovăție față de <b>deces</b> = intenție directă sau indirectă. Autorul voia moartea sau o accepta. Pedeapsă: <b>10–20 ani</b> (simplu) / <b>15–25 ani sau detențiune pe viață</b> (calificat).',
+          '<b>Loviri cauzatoare de moarte</b> (art. 195 NCP — praeterintenție): intenție față de lovire + <b>culpă față de deces</b>. Autorul nu urmărea și nu accepta moartea. Pedeapsă: <b>6–12 ani</b>.',
+          '<b>Ucidere din culpă</b> (art. 192 NCP): culpă față de deces, nicio intenție. Pedeapsă: <b>1–5 ani</b>. Agravat (alcool, abandon victimă): <b>2–7 ani</b>.',
+          '⚠️ <b>Regula de distincție</b>: criteriul = vinovăția față de <b>deces</b> (nu față de lovire). Dacă autorul voia/accepta moartea → omor. Dacă lovea intenționat, dar moartea = culpă → loviri cauzatoare de moarte. Dacă totul din culpă → ucidere din culpă. Premeditarea și praeterintenția <b>nu coexistă</b>.'
+        ]
       }
     ],
     grila:'Omor vs. loviri cauzatoare de moarte: intenție față de deces. Premeditare ≠ praeterintenție (nu coexistă). Prag vătămare corporală: <b>90 zile îngrijiri medicale</b>. Lovire simplă: plângere prealabilă; vătămare corporală: din oficiu. Amenințare, hărțuire: plângere prealabilă. Viol: inclusiv prin imposibilitate de exprimare. Eutanasia = infracțiune (art. 190).'
@@ -1029,6 +1046,14 @@ var FISE_DATA = [
           '<b>Tăinuirea</b> (art. 270): primirea/dobândirea/transformarea de bunuri provenite din infracțiune, cunoscând proveniența. <b>Tăinuire = bunuri; favorizare = persoana infractorului</b>. Tăinuirea nu se pedepsește dacă era previzibil că bunurile sunt ale tale.',
           '<b>Obstrucționarea justiției</b> (art. 271): împiedicarea actelor de urmărire sau judecată prin violență/amenințare/corupere/orice alte mijloace.'
         ]
+      },
+      { icon:'🔁', title:'Schemă comparativă: luare de mită / trafic de influență / abuz în serviciu',
+        items:[
+          '<b>Luarea de mită</b> (art. 289): subiect activ = <b>funcționar public</b>; primește foloase necuvenite pentru <b>actul propriu</b> de serviciu; foloase = obligatorii. Consumare: la pretindere sau primire, indiferent dacă actul a fost îndeplinit.',
+          '<b>Traficul de influență</b> (art. 291): subiect activ = <b>oricine</b> (nu trebuie să fie funcționar); pretinde foloase pentru a influența <b>un alt funcționar</b>; influența poate fi reală sau fictivă (pretinsă). Consumare: la pretindere.',
+          '<b>Abuzul în serviciu</b> (art. 297): subiect activ = <b>funcționar public</b>; îndeplinire defectuoasă a atribuțiilor proprii; <b>nu necesită foloase</b> (dacă există foloase obținute → devine luare de mită). Vinovăție: <b>intenție</b>.',
+          '⚠️ <b>Regula-cheie</b>: luarea de mită = funcționarul + foloase + act propriu. Traficul = oricine + foloase + actul altuia. Abuzul = funcționarul + niciun folos + atribuții proprii neîndeplinite/defectuoase. Dacă funcționarul ia foloase ȘI acționează defectuos → luare de mită (absoarbe abuzul).'
+        ]
       }
     ],
     grila:'Luare de mită = <b>funcționarul însuși</b> primește; trafic de influență = <b>oricine</b> pretinde că influențează funcționarul. Dare de mită sub constrângere → <b>nepedepsire</b>. Abuz în serviciu: numai prin nerespectarea <b>legii</b> (CCR 405/2016). Conflict de interese ≠ abuz: participare la decizie fără folos efectiv. Mărturie mincinoasă: retractare înainte de soluție → nepedepsire. Favorizare: soțul/rudele nu se pedepsesc. Tăinuire = bunuri; favorizare = persoana.'
@@ -1084,7 +1109,8 @@ var FISE_DATA = [
           '<b>Excepțiile dilatorii</b> (amână judecata): necompetența, litispendența, conexitatea, lipsa procedurii prealabile, neregularitatea cererii. Litispendența = același litigiu la două instanțe → dosarul mai nou se trimite la instanța mai veche sesizată.',
           '<b>Excepțiile peremptorii</b> (sting acțiunea): prescripția dreptului la acțiune, autoritatea de lucru judecat, lipsa calității procesuale, lipsa capacității, puterea lucrului judecat.',
           '<b>Cererea reconvențională</b> (art. 209 NCPC): pârâtul formulează pretenții proprii față de reclamant; depusă odată cu întâmpinarea; judecată împreună cu acțiunea principală. Poate fi disjunsă dacă complică excesiv cauza.',
-          '<b>Intervenția voluntară principală</b> (terțul pretinde drept propriu) vs. <b>accesorie</b> (terțul sprijină una din părți); <b>Chemarea în garanție</b>: pârâtul cheamă o terță persoană de la care poate pretinde să îl despăgubească dacă pierde.'
+          '<b>Intervenția voluntară principală</b> (terțul pretinde drept propriu) vs. <b>accesorie</b> (terțul sprijină una din părți); <b>Chemarea în garanție</b>: pârâtul cheamă o terță persoană de la care poate pretinde să îl despăgubească dacă pierde.',
+          '⚠️ <b>Nu confunda</b>: <b>litispendență</b> = același litigiu la 2 instanțe concomitent → excepție <i>dilatoriu</i>, dosarul mai nou se trimite la instanța mai veche. <b>Conexitate</b> = litigii <i>diferite dar legate</i> → reunire <i>facultativă</i> la instanța mai veche. <b>Autoritate de lucru judecat</b> = hotărâre <i>definitivă deja pronunțată</i> → excepție <i>peremptoriu</i>, acțiunea se respinge.'
         ]
       },
       { icon:'📋', title:'Judecata în primă instanță — etape esențiale',
@@ -1197,6 +1223,57 @@ var FISE_DATA = [
       }
     ],
     grila:'Reținere = max. <b>24h</b>, fără mandat. Arest preventiv în urmărire: max. <b>180 de zile</b> total (câte 30). Apel penal: <b>10 zile</b> de la comunicarea minutei (nu 30!). Sarcina probei = <b>organele judiciare</b>; in dubio pro reo = dubiul → achitare. Suspect ≠ inculpat: acțiunea penală pusă în mișcare → inculpat. Acordul de recunoaștere: instanța omologhează sau respinge în bloc. Procedura simplificată (recunoaștere) → 1/3 reducere.'
+  },
+
+  // ══ SINTEZĂ FINALĂ ══════════════════════════════════════════════════════════════
+
+  {
+    id:'tlt', wk:'★', dates:'sinteză', subj:'civ',
+    title:'Termene esențiale și sancțiuni — referință rapidă',
+    sections:[
+      { icon:'📅', title:'Termene — Drept Civil substantiv',
+        items:[
+          '<b>Prescripție extinctivă generală</b>: <b>3 ani</b> (art. 2517 NCC). Se aplică majorității drepturilor de creanță dacă legea nu prevede altfel.',
+          '<b>Nulitate relativă</b> (acțiune în anulare): <b>3 ani</b> de la data când cel îndreptățit a cunoscut cauza nulității (art. 2529 NCC). ⚠️ Excepție: leziunea la majori = <b>1 an</b> de la data actului.',
+          '<b>Acțiunea pauliană</b>: <b>1 an</b> de la data la care creditorul a cunoscut cauza de revocare (art. 2563 NCC).',
+          '<b>Opțiunea succesorală</b> (acceptare / renunțare la moștenire): <b>1 an</b> de la data cunoașterii deschiderii succesiunii (art. 1103 NCC).',
+          '<b>Acțiunea în reducțiunea liberalităților</b>: <b>3 ani</b> de la data deschiderii succesiunii sau de la cunoașterea dispoziției excesive.',
+          '<b>Termenul de drept de abitație</b> al soțului supraviețuitor: <b>1 an</b> de la data decesului.',
+          '<b>Acțiunile reale</b> (revendicare, petiție de ereditate, acțiune negatorie): <b>imprescriptibile</b> extinctiv — se pot exercita oricând.'
+        ]
+      },
+      { icon:'⏱️', title:'Termene — Procedură Civilă',
+        items:[
+          '<b>Apelul civil</b>: <b>30 de zile</b> de la <i>comunicarea</i> hotărârii (art. 468 NCPC). ⚠️ Nu de la pronunțare!',
+          '<b>Recursul civil</b>: <b>30 de zile</b> de la comunicarea hotărârii atacate (art. 485 NCPC).',
+          '<b>Contestația în anulare</b>: <b>15 zile</b> de la comunicare sau de la cunoașterea motivului (art. 504 NCPC).',
+          '<b>Revizuirea</b>: <b>1 lună</b> de la data la care reclamantul a luat cunoștință de motivul de revizuire (art. 511 NCPC).',
+          '<b>Întâmpinarea</b>: <b>25 de zile</b> de la comunicarea cererii de chemare în judecată (art. 201 NCPC). Nedepusă → decădere din dreptul la probe.',
+          '<b>Contestația la executare</b>: <b>15 zile</b> de la data cunoașterii actului de executare (art. 715 NCPC).',
+          '<b>Perimarea executării silite</b>: <b>6 luni</b> de inactivitate a creditorului → stinge dosarul (nu creanța).',
+          '<b>Prescripția dreptului de a cere executarea silită</b>: <b>3 ani</b> de la rămânerea definitivă a hotărârii.'
+        ]
+      },
+      { icon:'🔒', title:'Termene — Drept Penal și Procedură Penală',
+        items:[
+          '<b>Reținerea</b>: max. <b>24 de ore</b> fără mandat judecătoresc (art. 209 CPP).',
+          '<b>Arestul preventiv în urmărire penală</b>: câte <b>30 de zile</b>, maxim total <b>180 de zile</b> (art. 223–236 CPP).',
+          '<b>Arestul preventiv în cursul judecății</b>: câte <b>60 de zile</b>, fără limită totală expresă.',
+          '<b>Apelul penal</b>: <b>10 zile</b> de la comunicarea copiei minutei (art. 410 CPP). ⚠️ Nu 30 de zile ca în civil!',
+          '<b>Recursul în casație penal</b>: <b>30 de zile</b> de la comunicarea deciziei instanței de apel (art. 434 CPP).',
+          '<b>Prescripția răspunderii penale</b>: termenele variază după maximul pedepsei — de la <b>3 ani</b> (infracțiuni cu pedeapsă ≤1 an) la <b>15 ani</b> (infracțiuni cu pedeapsă >15 ani) și <b>imprescriptibilă</b> (omor calificat, genocid, crime de război).'
+        ]
+      },
+      { icon:'❌', title:'Nulitate absolută vs. relativă — când se aplică',
+        items:[
+          '<b>Nulitate absolută (NCA)</b> — cauze principale: lipsa capacității de <i>folosință</i>; obiect ilicit/imposibil; cauză ilicită/imorală; formă <i>ad validitatem</i> nerespectată (ex: donația, testamentul autentic); pactul asupra unei succesiuni nedeschise; clauza penală excesivă în unele cazuri. Imprescriptibilă; invocabilă de oricine; nu se acoperă prin confirmare.',
+          '<b>Nulitate relativă (NR)</b> — cauze principale: vicii de consimțământ (eroare, dol, violență, leziune); lipsa capacității de <i>exercițiu</i>; nerespectarea formei <i>cerute pentru protecție</i>; reprezentare fără putere/cu depășire. Termen: <b>3 ani</b> (excepție: leziune = 1 an). Invocabilă numai de persoana protejată; se acoperă prin confirmare.',
+          '<b>Inopozabilitatea</b>: actul e valabil între părți dar nu produce efecte față de terți (ex: donația neînregistrată în CF; actul fraudulos — acțiunea pauliană → inopozabilitate, nu nulitate). ⚠️ Inopozabilitate ≠ nulitate.',
+          '<b>Conversiunea actului nul</b> (art. 1260 NCC): actul nul ca act principal poate valora ca alt act dacă îndeplinește condițiile acestuia și reflectă voința probabilă a părților (ex: testament autentic nul ca testament → poate valora ca testament olograf dacă e scris de mână, datat, semnat).'
+        ]
+      }
+    ],
+    grila:'Apel civil: <b>30 zile</b> de la comunicare. Apel penal: <b>10 zile</b> de la minută. Contestație executare: <b>15 zile</b>. Opțiune succesorală: <b>1 an</b>. Acțiune pauliană: <b>1 an</b>. Leziune: <b>1 an</b> (excepție de la regula 3 ani). Perimarea executare: <b>6 luni</b>. Arest preventiv urmărire: max <b>180 zile</b>. NCA: imprescriptibilă. NR: 3 ani (leziune 1 an). Inopozabilitate ≠ nulitate.'
   }
 ];
 
@@ -1486,6 +1563,15 @@ var FISE_TIPS={
     '<b>Acord de recunoaștere a vinovăției</b>: inculpatul recunoaște fapta + pedeapsa negociată cu procurorul → instanța omologhează sau respinge. Instanța <b>nu poate modifica</b> acordul, doar îl acceptă sau îl refuză în totalitate.',
     '<b>Calea de atac în penal</b>: <b>apelul</b> (art. 408 CPP) — calea ordinară, se face în <b>10 zile</b> de la comunicarea copiei minutei (nu de la pronunțare!). Contestația: cale de atac împotriva unor încheieri (nu a sentinței).',
     '<b>Judecata în lipsă</b> (contumace): în noul CPP, judecata se poate desfășura fără inculpat dacă acesta e legal citat și se sustrage. Condamnarea în lipsă → inculpatul poate solicita rejudecarea la întoarcerea/prinderea sa.'
+  ],
+  tlt:[
+    'Termenul apel civil vs. apel penal: câte zile fiecare și de la ce moment curge?',
+    '<b>Capcana leziunii</b>: prescripția acțiunii în anulare pentru leziune la majori e de 1 an sau 3 ani? De unde curge?',
+    '<b>Capcana pauliană</b>: termenul de 1 an curge de la data actului fraudulos sau de la data la care creditorul a cunoscut actul?',
+    'Prescripția dreptului de a cere executarea silită: câți ani, de când curge? Perimarea executării: câte luni?',
+    'Reținerea penală: câte ore maximum? Cine o dispune? E necesară aprobare judecătorească?',
+    'NCA vs. NR: dă câte 3 cauze pentru fiecare și diferența de regim (termen / cine invocă / confirmare).',
+    'Opțiunea succesorală și termenul: câte luni? Ce se întâmplă dacă expiră fără să optezi?'
   ]
 };
 
@@ -1724,6 +1810,15 @@ var FISE_RECALL={
     'Acordul de recunoaștere a vinovăției: condiții, ce poate face instanța (omologhează / respinge — poate modifica pedeapsa?).',
     'Aplicație: inculpatul e arestat preventiv de 150 de zile în faza de urmărire penală. Poate fi prelungit arestul? Câte zile mai pot fi adăugate?',
     'La grilă: apelul penal — termen 10 zile de la comunicarea copiei minutei. Ce se întâmplă dacă minuta nu a fost comunicată? Termenul curge oricum?'
+  ],
+  tlt:[
+    'Enumeră termenele de apel: civil vs. penal vs. contencios administrativ. Care curge de la comunicare și care de la minutei?',
+    'Termenele de prescripție speciale (1 an): care sunt cele 3 situații din dreptul civil substantiv unde termenul e 1 an în loc de 3?',
+    'Executare silită: termenul prescripției dreptului de a cere executarea vs. termenul perimării dosarului — ambele de 3 ani/6 luni?',
+    'Cauze de NCA: enumeră 5. Cauze de NR: enumeră 5. Ce diferă ca regim: cine invocă, termen, confirmare?',
+    'Conversiunea actului nul: ce este și când se aplică? Dă un exemplu din dreptul succesoral.',
+    'Schema termenelor preventive penale: reținere (ore) → control judiciar (zile) → arest la domiciliu (zile) → arest preventiv (urmărire vs. judecată).',
+    'Inopozabilitate vs. nulitate: definiție pentru fiecare + câte un exemplu concret din civil și din succesoral.'
   ]
 };
 
