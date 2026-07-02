@@ -63,9 +63,17 @@ var FISE_DATA = [
           'Minorul de rea-credință care și-a ascuns incapacitatea nu poate invoca nulitatea relativă (<i>nemo auditur propriam turpitudinem allegans</i>). ⚠️ Regula se aplică strict minorului, nu și reprezentantului legal.',
           '<b>Prescripția acțiunilor</b>: NCA = imprescriptibilă (poate fi invocată oricând, inclusiv pe cale de excepție). NR = se prescrie în <b>3 ani</b> de la data la care cel îndreptățit a cunoscut cauza (art. 2529 NCC).'
         ]
+      },
+      { icon:'🔗', title:'Efectele AJC față de terți (art. 1280–1286 NCC)',
+        items:[
+          '<b>Principiul relativității efectelor</b> (<i>res inter alios acta</i>, art. 1280 NCC): contractul produce efecte numai față de <b>părți</b>; terții nu sunt nici obligați, nici îndreptățiți prin contract. Excepție principală: stipulația pentru altul.',
+          '<b>Promisiunea faptei altuia</b> (art. 1283 NCC): promitentul garantează că un terț va ratifica sau va executa o obligație. <b>Terțul nu este obligat</b> — numai promitentul răspunde dacă terțul refuză. Sancțiune: daune-interese față de cocontractant. <i>Ex: un asociat promite că celălalt asociat va semna contractul.</i>',
+          '<b>Stipulația pentru altul</b> (<i>pactum in favorem tertii</i>, art. 1284 NCC): stipulantul îl obligă pe promitent să execute o prestație față de un <b>terț beneficiar</b> care nu participă la contract. Terțul dobândește dreptul <b>direct și nemijlocit</b>. ⚠️ Stipulantul poate revoca stipulația înainte de acceptare; după acceptare → dreptul e irevocabil. <i>Ex: asigurarea de viață cu beneficiar; contractul de rentă viageră în favoarea unui terț.</i>',
+          '<b>Opozabilitatea față de terți</b>: deși terții nu sunt ținuți de contract, ei trebuie să-i respecte existența (<i>opozabilitate pasivă</i>) și pot invoca contractul în favoarea lor (<i>opozabilitate activă</i>). Nerespectarea formalităților de publicitate (CF, AEGRM) → actul e inopozabil terților de bună-credință, nu nul.'
+        ]
       }
     ],
-    grila:'<b>Capacitate de folosință</b> (lipsa → NCA, imprescriptibilă) ≠ <b>capacitate de exercițiu</b> (nerespectare → NR, prescriptibilă, confirmabilă). Minorul 14–18 ani: <b>asistat</b> (personal + asistare), nu reprezentat. Sub 14 ani și interzis judecătoresc: <b>reprezentați</b>. <i>Infans conceptus</i>: drepturi de la concepție, dacă se naște viu. Condiție pur potestativă a debitorului → NCA. Sarcina neîndeplinită → revocare, nu nulitate. Confirmare NR → efect retroactiv.'
+    grila:'<b>Capacitate de folosință</b> (lipsa → NCA, imprescriptibilă) ≠ <b>capacitate de exercițiu</b> (nerespectare → NR, prescriptibilă, confirmabilă). Minorul 14–18 ani: <b>asistat</b> (personal + asistare), nu reprezentat. Sub 14 ani și interzis judecătoresc: <b>reprezentați</b>. <i>Infans conceptus</i>: drepturi de la concepție, dacă se naște viu. Condiție pur potestativă a debitorului → NCA. Sarcina neîndeplinită → revocare, nu nulitate. Confirmare NR → efect retroactiv. Relativitate efecte: contractul produce efecte numai față de <b>părți</b>; stipulația pentru altul = excepție (terțul dobândește direct). Promisiunea faptei altuia: terțul nu e obligat, promitentul datorează daune dacă terțul refuză.'
   },
 
   {
@@ -129,6 +137,14 @@ var FISE_DATA = [
           '<b>Leziunea</b>: disproporție + exploatare (la majori) / orice disproporție (la minori); sancțiune alternativă (anulare sau adaptare contract); prescripție specială <b>1 an</b> (≠ 3 ani). Nu se aplică contractelor aleatorii și tranzacțiilor.',
           '⚠️ <b>Regulă de reținut</b>: toate viciile atrag <b>nulitate relativă</b> (nu absolută). Excepție: eroarea obstacol (<i>in negotio / in corpore</i>) → nulitate absolută (lipsă de acord, nu viciu).'
         ]
+      },
+      { icon:'⚖️', title:'Culpa in contrahendo și caducitatea ofertei',
+        items:[
+          '<b>Culpa in contrahendo</b> (art. 1183 NCC): răspunderea precontractuală pentru purtarea negocierilor cu <b>rea-credință</b> sau <b>ruperea intempestivă</b> a acestora. Condiții: negocieri ajunse într-un stadiu avansat; cealaltă parte avea motive rezonabile să creadă că va fi încheiat contractul; rupere fără justificare legitimă. Sancțiune: <b>daune-interese</b> (interesul negativ = cheltuieli efectuate + pierderea altor oportunități). ⚠️ Nu se poate obliga la încheierea contractului.',
+          '<b>Obligația de confidențialitate precontractuală</b> (art. 1184 NCC): informațiile confidențiale primite în cursul negocierilor nu pot fi divulgate sau folosite ulterior, chiar dacă nu s-a ajuns la contract. Încălcarea → daune-interese (răspundere delictuală).',
+          '<b>Caducitatea ofertei</b> (art. 1195 NCC): oferta devine caducă (stingere fără efecte, ≠ revocare) în cazurile: (1) decesul sau incapacitatea ofertantului, dacă oferta e cu termen; (2) expirarea termenului fără acceptare; (3) refuzul expres al destinatarului. ⚠️ Oferta fără termen devine caducă după trecerea unui termen rezonabil. Oferta la public: poate fi revocat până la prima acceptare.',
+          '<b>Distincție</b>: revocare vs. caducitate: <b>revocarea</b> e un act unilateral al ofertantului (art. 1199 NCC), posibilă dacă ajunge la destinatar înainte de acceptare; <b>caducitatea</b> e un fapt juridic (deces, expirare termen, refuz), survine de drept.'
+        ]
       }
     ],
     grila:'<b>Dol de terț ≠ violență de terț</b>: dolul → anulabilitate numai dacă cealaltă parte <i>a știut sau trebuia să știe</i>; violența → anulabilitate <b>întotdeauna</b>. Eroarea: esențială + scuzabilă; eroarea comună invincibilă → nu se anulează (art. 1213). Leziunea la majori: <b>&gt;50% + exploatare + prescripție 1 an</b> (nu 3 ani!). Dolul incident: contract valabil + daune. Amenințarea legitimă cu un drept → nu e violență (art. 1219). Toate viciile → NR (excepție: eroarea obstacol → NCA).'
@@ -191,9 +207,17 @@ var FISE_DATA = [
           'Simulație <b>în frauda terților sau a legii</b>: contraînscrisul este inopozabil terților prejudiciați; aceștia pot cere declararea ca fictiv/nul a actului aparent sau a celui secret.',
           '<b>Acțiunea în simulație</b>: terții pot cere instanței să constate caracterul simulat al actului aparent. Imprescriptibilă dacă simulația ascunde o NCA; prescriptibilă (3 ani) dacă scopul e altul.'
         ]
+      },
+      { icon:'💰', title:'Arvuna (art. 1544–1546 NCC)',
+        items:[
+          '<b>Arvuna confirmatorie</b> (art. 1544 NCC): sumă dată la momentul încheierii <i>contractului</i> (nu a promisiunii) ca dovadă a perfectării lui. Dacă cel care a dat arvuna nu execută: <b>pierde arvuna</b>. Dacă cel care a primit arvuna nu execută: <b>restituie dublul</b>. ⚠️ Funcție reparatorie — arvuna acoperă daunele (nu se cumulează automat cu alte daune; creditorul poate cere și daune suplimentare dacă dovedește un prejudiciu mai mare).',
+          '<b>Arvuna penalizatoare</b> (art. 1546 NCC): clauza prin care oricare dintre părți poate denunța unilateral contractul pierzând arvuna sau restituind dublul. Diferit de cea confirmatorie: <b>nu e sancțiune pentru neexecutare</b>, ci preț al dreptului de retractare (similar opțiunii). ⚠️ Contractul poate fi reziliat legal prin simpla manifestare de voință + pierdere/dublu arvunei, fără a fi nevoie de probe privind neexecutarea.',
+          '<b>Distincție arvunã vs. clauza penală</b>: clauza penală (art. 1538 NCC) se activează la neexecutare; arvuna confirmatorie are și funcție probatorie (dovedește acordul de voință) și garantatorie. La arvuna penalizatoare, dreptul de retractare e mutual și nu presupune culpă.',
+          '<b>Arvuna = clauza penală?</b>: Nu automat — depinde de voința părților. Dacă contractul se execută, arvuna se impută asupra prețului (restituie sau se deduce). Dacă nu se stipulează altfel, suma dată în avans e prezumată avans din preț, nu arvunã (art. 1544 alin. 4 NCC).'
+        ]
       }
     ],
-    grila:'Forma <b>ad validitatem</b> → NCA; <b>ad probationem</b> → valabilă, doar proba afectată. Cauza <b>falsă</b> → NR; cauza <b>ilicită</b> → NCA. NCA: imprescriptibilă, neconfirmabilă; NR: 3 ani, confirmabilă. Simulație: între părți prevalează <b>actul secret</b>; terții de bună-credință pot alege. Pact succesiune nedeschisă altei persoane = NCA. Simetria formelor: modificarea actului solemn cere aceeași formă.'
+    grila:'Forma <b>ad validitatem</b> → NCA; <b>ad probationem</b> → valabilă, doar proba afectată. Cauza <b>falsă</b> → NR; cauza <b>ilicită</b> → NCA. NCA: imprescriptibilă, neconfirmabilă; NR: 3 ani, confirmabilă. Simulație: între părți prevalează <b>actul secret</b>; terții de bună-credință pot alege. Pact succesiune nedeschisă altei persoane = NCA. Simetria formelor: modificarea actului solemn cere aceeași formă. Arvuna confirmatorie: cel care nu execută pierde arvuna / restituie dublul. Arvuna penalizatoare: drept de retractare voluntară, nu sancțiune pentru neexecutare.'
   },
 
   {
@@ -302,9 +326,19 @@ var FISE_DATA = [
           '<b>Cheltuielile comune</b>: proporțional cu cotele. Coproprietarul care face cheltuieli necesare pentru conservarea bunului are acțiune în regres față de ceilalți.',
           '<b>Retractul litigios</b> (art. 1771 NCC): când cineva cumpără un drept litigios (un drept contestat în fața instanței), debitorul acelui drept poate stinge cesiunea plătind cumpărătorului prețul real al cesiunii + cheltuielile + dobânzile. Condiție: dreptul să fie litigios la data cesiunii (process pe fond în curs). Termen: <b>30 de zile</b> de la data la care cesiunea i-a fost comunicată debitorului. ⚠️ Scopul: împiedicarea speculelor pe litigii; nu se aplică dacă cesiunea e făcută unui coproprietar, unui moștenitor sau unui creditor al cedentului în plata creanței sale.'
         ]
+      },
+      { icon:'🌊', title:'Accesiunea naturală și ocupațiunea',
+        items:[
+          '<b>Aluviunea</b> (art. 569 NCC): pământ depus treptat de ape curgătoare pe malul unui fond riveran → devine proprietatea proprietarului fondului fără nicio formalitate. Condiție: depunere lentă și treptată (nu bruscă).',
+          '<b>Avulsiunea</b> (art. 572 NCC): ruperea bruscă a unei bucăți de teren de pe un fond și lipirea ei de alt fond riveran. Proprietarul fondului de origine poate <b>revendica</b> în termen de <b>1 an</b> de la eveniment; după 1 an → devine proprietatea fondului receptor prin aluviune.',
+          '<b>Insulele și prundișurile</b> (art. 570 NCC): insulele formate în albiile nenavigabile aparțin proprietarilor riverani (cel care a ajuns prima dată la mijlocul apei cu insula). Albiile navigabile → proprietate publică a statului.',
+          '<b>Albiile abandonate</b> (art. 571 NCC): dacă un curs de apă curgătoare își schimbă în mod natural cursul, vechea albie aparține proprietarilor riverani proporțional cu cotele acestora.',
+          '<b>Ocupațiunea</b> (art. 941–947 NCC): mod originar de dobândire a proprietății asupra unui bun <b>fără stăpân</b> (<i>res nullius</i>) sau abandonat (<i>res derelicta</i>), prin luarea în posesie cu intenție de a deveni proprietar. Se aplică bunurilor <b>mobile</b> (nu imobile — terenurile fără stăpân revin statului). ⚠️ Bunurile sălbatice (vânat, pește) se dobândesc prin ocupațiune cu respectarea reglementărilor speciale (Legea vânătorii, Legea pisciculturii).',
+          '<b>Comoriența</b> (art. 957 NCC): dacă mai multe persoane mor în același eveniment fără a se putea stabili ordinea deceselor, sunt prezumate a fi murit <b>deodată</b> → nu se moștenesc reciproc. Fiecare lasă moștenirea propriilor moștenitori.'
+        ]
       }
     ],
-    grila:'Efectul <b>declarativ</b> al partajului: retroactiv de la nașterea coproprietății. Regula unanimității: numai acte de <b>dispoziție</b> (nu de administrare). Clauza de inalienabilitate: max <b>49 ani</b> + motiv licit. Coproprietatea forțată: <b>nu se poate partaja</b>. Transfer proprietate imobiliară: prin acord de voință, dar opozabilitate față de terți → înscrierea în CF (efect constitutiv din 2019). Proprietate publică: inalienabilă, insesizabilă, imprescriptibilă. Preempțiune coproprietar: <b>3 luni</b> de la comunicare. Retract litigios: <b>30 de zile</b> de la comunicarea cesiunii; stinge cesiunea plătind prețul real.'
+    grila:'Efectul <b>declarativ</b> al partajului: retroactiv de la nașterea coproprietății. Regula unanimității: numai acte de <b>dispoziție</b> (nu de administrare). Clauza de inalienabilitate: max <b>49 ani</b> + motiv licit. Coproprietatea forțată: <b>nu se poate partaja</b>. Transfer proprietate imobiliară: prin acord de voință, dar opozabilitate față de terți → înscrierea în CF (efect constitutiv din 2019). Proprietate publică: inalienabilă, insesizabilă, imprescriptibilă. Preempțiune coproprietar: <b>3 luni</b> de la comunicare. Retract litigios: <b>30 de zile</b> de la comunicarea cesiunii. Aluviune: depunere lentă → proprietatea riveranului automat. Avulsiune: rupere bruscă → revendicare în <b>1 an</b>, după care aluviune. Ocupațiune: numai bunuri mobile fără stăpân; terenurile fără stăpân → stat.'
   },
 
   {
@@ -359,9 +393,19 @@ var FISE_DATA = [
           '<b>Servitutea</b>: sarcină pe un fond în folosul altui fond (propter rem); urmărește fondurile, nu persoanele; nu conferă proprietate; discontinue/neaparente → numai prin titlu.',
           '<b>Superficia</b>: drept de proprietate asupra construcției + folosință teren; cedabilă, ipotecabilă; max 99 ani. Deosebire esențială față de servitute și uzufruct: superficiarul <i>are proprietatea construcției</i>.'
         ]
+      },
+      { icon:'🥇', title:'Dreptul de preemțiune legal (art. 1730–1740 NCC)',
+        items:[
+          '<b>Noțiune</b>: dreptul unui anumit subiect (<i>preemptor</i>) de a fi preferat oricărui terț la dobândirea unui bun, la preț și condiții egale. E un drept real de dobândire, opozabil erga omnes (dacă e publicizat). ≠ pactul de preferință (convențional, relativ, obligă numai vânzătorul).',
+          '<b>Titular al preemțiunii legale</b> (art. 1730 alin. 1 NCC): (1) <b>coproprietarii</b>, la înstrăinarea cotei-părți de către un coproprietar; (2) <b>arendașii</b> terenurilor agricole (Legea 17/2014); (3) <b>statul</b>, la înstrăinarea terenurilor forestiere; (4) alți titulari prevăzuți de legi speciale.',
+          '<b>Procedura</b> (art. 1732 NCC): vânzătorul notifică preemptorului condițiile vânzării (<i>oferta de vânzare</i>). Preemptorul are la dispoziție: <b>10 zile</b> (bunuri mobile) sau <b>30 de zile</b> (bunuri imobile) de la data comunicării notificării pentru a-și exercita dreptul.',
+          '<b>Sancțiunea nerespectării</b>: contractul cu terțul e inopozabil preemptorului. Preemptorul poate cere <b>subrogarea</b> în drepturile cumpărătorului (se substituie cumpărătorului în aceleași condiții) în termen de <b>3 luni</b> de la data la care a cunoscut încheierea contractului cu terțul (art. 1733 NCC).',
+          '<b>Concursul de preemptori</b>: dacă mai mulți au drept de preemțiune, contractul se poate încheia cu oricare dintre ei, în ordinea de preferință stabilită de lege sau, în lipsa unor dispoziții, cu cel care a acceptat primul.',
+          '⚠️ <b>Distincție</b>: drept de preemțiune <i>legal</i> (art. 1730) vs. <i>convențional</i> (pactul de preferință, art. 1730 alin. 3): pactul obligă numai contractual vânzătorul (sancțiune: daune); dreptul legal → subrogare reală + inopozabilitate față de preemptor.'
+        ]
       }
     ],
-    grila:'Uzufructuarul: <b>fructe da, producte nu</b>; uzufruct se stinge la moartea <b>uzufructuarului inițial</b> (nu a cesionarului). Abitația: <b>inalienabilă și insesizabilă</b> (spre deosebire de uzufruct, care e cedabil). Servituți discontinue/neaparente: <b>numai prin titlu</b>, nu prin uzucapiune. Superficia: max <b>99 ani</b>; superficiarul nu e supus accesiunii. Neuz servituți: <b>10 ani</b>.'
+    grila:'Uzufructuarul: <b>fructe da, producte nu</b>; uzufruct se stinge la moartea <b>uzufructuarului inițial</b> (nu a cesionarului). Abitația: <b>inalienabilă și insesizabilă</b> (spre deosebire de uzufruct, care e cedabil). Servituți discontinue/neaparente: <b>numai prin titlu</b>, nu prin uzucapiune. Superficia: max <b>99 ani</b>; superficiarul nu e supus accesiunii. Neuz servituți: <b>10 ani</b>. Preemțiune legală: notificare → <b>10 zile</b> (mobile) / <b>30 zile</b> (imobile); nerespectare → subrogare în <b>3 luni</b> de la cunoașterea contractului cu terțul. Pact de preferință (convențional) ≠ preemțiune legală (real, opozabil).'
   },
 
   {
@@ -416,9 +460,19 @@ var FISE_DATA = [
           '<b>Fidejusiunea</b> (art. 2280 NCC): garanție personală — fidejusorul garantează cu întregul său patrimoniu. Beneficii ale fidejusorului: (1) <b>discuțiune</b> — creditorul trebuie să urmărească mai întâi debitorul principal; (2) <b>diviziune</b> — dacă sunt mai mulți fidejusori, fiecare e ținut numai pentru partea sa. ⚠️ Beneficiile pot fi excluse prin clauza de renunțare.',
           '<b>Privilegiile</b> (art. 2333 NCC): preferință legală, izvorând din natura creanței. Ordinea: (1) cheltuielile de judecată; (2) cheltuielile de conservare/vânzare; (3) creanțele salariale. ⚠️ Super-privilegiu: cheltuielile de conservare a bunului preced ipotecile chiar anterioare.'
         ]
+      },
+      { icon:'🏅', title:'Rangul garanțiilor și ipoteca legală (art. 2386, 2420–2426 NCC)',
+        items:[
+          '<b>Rangul ipotecii</b> (art. 2420 NCC): determinat de data înscrierii în CF (imobile) sau în AEGRM (mobile). Prima ipotecă înscrisă are rang I; ipotecile ulterioare au ranguri inferioare. Creditorul de rang superior e plătit integral înainte de cei de rang inferior.',
+          '<b>Cesiunea de rang</b> (art. 2421 NCC): creditorul cu rang superior poate ceda rangul său creditorului cu rang inferior, contra unui preț sau cu titlu gratuit. Cesiunea nu afectează ceilalți creditori intermediari.',
+          '<b>Ipotecile legale</b> (art. 2386 NCC) — iau naștere din lege, fără act constitutiv explicit: (1) vânzătorului neplătit, asupra bunului vândut (prețul restant); (2) promitentului achizitor, asupra imobilului promis (dacă prețul a fost plătit); (3) coproprietarilor, pentru sultele datorate la partaj; (4) creditorului obligației de întreținere, pe imobilele debitorului; (5) statului și UAT-urilor, pentru creanțe fiscale.',
+          '<b>Concursul de creditori</b>: la urmărirea silită, ordinea de plată: (1) creanțe garantate prin privilegii generale (cheltuieli de judecată, cheltuieli de conservare); (2) creditori ipotecari / gajisti, în ordinea rangului; (3) creditori chirografari (<i>pari passu</i>, proporțional cu creanțele).',
+          '<b>Urmărirea silită imobiliară</b>: creditorul ipotecar urmărește imobilul indiferent de dobânditorul actual (<i>drept de urmărire</i>). Dobânditorul poate <b>purga ipoteca</b> (art. 2494 NCC): plătește toți creditorii ipotecari înscriși sau abandonează bunul urmăririi — dobândind bunul liber de ipoteci.',
+          '⚠️ <b>Indivizibilitatea ipotecii</b> (art. 2352 NCC): ipoteca rămâne integrală asupra bunului, chiar dacă creanța se stinge parțial sau bunul e împărțit. Fiecare fracțiune din bun garantează întreaga creanță.'
+        ]
       }
     ],
-    grila:'Detenția precară <b>nu duce la uzucapiune</b>. Posesorul de bună-credință: <b>fructe da, producte nu</b>. Uzucapiune extratabulară: <b>10 ani</b>; tabulară: <b>5 ani</b>. Dubla vânzare imobiliar: prioritate → <b>înscrierea CF</b> de bună-credință. Dubla vânzare mobiliară: prioritate → <b>prima posesie</b> de bună-credință. Revendicare mobiliară față de dobânditorul oneros de bună-credință: proprietarul pierde (excepție: furate/pierdute → 3 ani). Fidejusiunea: beneficii de discuțiune și diviziune, eliminabile prin clauză. Acțiunea negatorie: contestă <b>dreptul real pretins de pârât</b> (nu posesia); pârâtul dovedește dreptul; <b>imprescriptibilă</b>.'
+    grila:'Detenția precară <b>nu duce la uzucapiune</b>. Posesorul de bună-credință: <b>fructe da, producte nu</b>. Uzucapiune extratabulară: <b>10 ani</b>; tabulară: <b>5 ani</b>. Dubla vânzare imobiliar: prioritate → <b>înscrierea CF</b> de bună-credință. Dubla vânzare mobiliară: prioritate → <b>prima posesie</b> de bună-credință. Revendicare mobiliară față de dobânditorul oneros de bună-credință: proprietarul pierde (excepție: furate/pierdute → 3 ani). Fidejusiunea: beneficii de discuțiune și diviziune, eliminabile prin clauză. Acțiunea negatorie: <b>imprescriptibilă</b>; pârâtul dovedește dreptul real. Rang ipotecă: data înscrierii CF/AEGRM. Ipotecă legală (art. 2386): vânzător neplătit, promitent achizitor, coproprietari sultă, creditor întreținere. Concurs creditori: privilegii generale → ipotecari în rang → chirografari proporțional.'
   },
 
   {
@@ -470,6 +524,15 @@ var FISE_DATA = [
           '<b>Îmbogățirea fără justă cauză</b>: <i>subsidiară</i> față de celelalte. Restituire = minimul (îmbogățire ↔ sărăcire). Condiție: absența oricărei alte acțiuni.',
           '⚠️ <b>Regula de aur</b>: verifici mai întâi gestiunea → plata nedatorată → în rem verso. Dacă există contract sau delict → nu se aplică niciunul.'
         ]
+      },
+      { icon:'📢', title:'Obligația de informare și obligații speciale (art. 1182–1185 NCC)',
+        items:[
+          '<b>Obligația precontractuală de informare</b> (art. 1182 NCC): fiecare parte este obligată să furnizeze celeilalte <b>informațiile esențiale</b> pe care le cunoaște și pe care cealaltă le ignoră și nu are posibilitatea rezonabilă să le afle singură. Se aplică în special în contractele de adeziune, contractele cu consumatorii și contractele cu profesioniști.',
+          'Sancțiunile nerespectării obligației de informare: (1) dacă informația ascunsă privea un element esențial → <b>dol prin reticență</b> (art. 1214 NCC) → anulabilitate + daune; (2) dacă informația e relevantă dar nu esențială → <b>răspundere precontractuală</b> (art. 1182 alin. 3) → daune-interese (interesul negativ).',
+          '<b>Obligația de confidențialitate</b> (art. 1184 NCC): informațiile confidențiale primite în cursul negocierilor nu pot fi divulgate sau utilizate în alt scop, indiferent dacă s-a ajuns la contract sau nu. Baza: buna-credință în negocieri (art. 1183 NCC).',
+          '<b>Obligațiile <i>propter rem</i></b> (reale, ambulatorii): obligații transmise automat împreună cu dreptul real căruia îi sunt accesorii — noul titular al dreptului real preia obligația, indiferent dacă a fost parte la actul juridic. <i>Ex: obligația de întreținere a digurilor, obligația de plată a cotelor de întreținere la condominiu, obligația de replantare în silvicultură.</i>',
+          '<b>Obligațiile <i>scriptae in rem</i></b>: obligații care izvorăsc dintr-un contract dar care sunt opozabile terților dobânditori ai bunului, dacă aceștia cunosc existența lor la data dobândirii. ≠ propter rem (care se transmit automat). <i>Ex: locatarul poate opune locațiunea dobânditorului imobilului dacă a fost înscrisă în CF sau dacă dobânditorul a cunoscut-o (art. 1811 NCC).</i>'
+        ]
       }
     ],
     grila:'Gestiunea ≠ mandat: la mandat există <b>acordul geratului</b>. Gestiunea contrară voinței geratului → restituire <b>numai în limita îmbogățirii</b>. Îmbogățirea fără justă cauză e <b>subsidiară</b>; limita = <b>minimul</b> dintre îmbogățire și sărăcire. Obligație de rezultat → culpa prezumată; de mijloace → creditorul dovedește culpa. Plata nedatorată = fapt juridic (nu AJC — nu cere capacitate deplină). Accipiens de bună-credință care distruge titlul: exonerat.'
@@ -515,9 +578,27 @@ var FISE_DATA = [
           '<b>Fapta unui terț</b>: exonerează dacă este <b>cauza exclusivă</b> a prejudiciului (de ex: terțul a săvârșit o infracțiune față de victimă, fără implicarea pârâtului). Dacă e concauză → răspundere solidară.',
           '<b>Consimțământul victimei</b> (<i>volenti non fit iniuria</i>): exonerează dacă e informat, liber și privitor la un prejudiciu patrimonial. <b>Nu exonerează</b> pentru vătămări corporale grave sau moarte (ordinea publică).'
         ]
+      },
+      { icon:'🧪', title:'Răspunderea pentru produse cu defect (Legea 240/2004)',
+        items:[
+          '<b>Cadru legal</b>: Legea 240/2004 (transpunere Dir. 85/374/CEE) — răspundere <b>obiectivă</b> a producătorului pentru prejudiciile cauzate de defectele produselor sale. Nu se cere dovedirea culpei.',
+          '<b>„Produs"</b>: orice bun mobil industrial, inclusiv produsele primare (agricole, piscicole) după 1999. Electricitatea = produs. Imobilele = excluse.',
+          '<b>„Defect"</b>: produsul nu oferă siguranța la care consumatorul se poate aștepta în mod legitim, ținând cont de prezentare, utilizare normală, momentul punerii în circulație. ⚠️ Un produs nou și mai sigur apărut pe piață nu face automat defect produsul vechi.',
+          '<b>Persoane responsabile</b>: (1) <b>producătorul</b> (fabricant al produsului finit sau al materiei prime); (2) <b>importatorul</b> în UE; (3) orice furnizor care nu identifică producătorul în 30 de zile la cererea victimei.',
+          '<b>Cauze de exonerare</b> (art. 7 L. 240/2004): produsul nu a fost pus în circulație de producător; defectul nu exista la data punerii în circulație; produsul nu e destinat distribuției comerciale; defectul se datorează conformității cu reglementări imperative; <b>riscul de dezvoltare</b> (defectul nu putea fi cunoscut prin stadiul tehnicii la data punerii în circulație — cauza de exonerare controversată în dreptul farmaceutic).',
+          '<b>Prescripție</b>: 3 ani de la data la care reclamantul a cunoscut sau trebuia să cunoască prejudiciul, defectul și identitatea producătorului. Termen de decădere absolut: <b>10 ani</b> de la data punerii produsului în circulație.'
+        ]
+      },
+      { icon:'📊', title:'Daune moratorii vs. daune compensatorii',
+        items:[
+          '<b>Daune-interese compensatorii</b>: înlocuiesc executarea în natură a obligației (când executarea e imposibilă sau refuzată). Cuprind: <b>damnum emergens</b> (pierderea efectivă suferită) + <b>lucrum cessans</b> (beneficiul nerealizat). Se stabilesc la momentul pronunțării hotărârii (valori actuale).',
+          '<b>Daune-interese moratorii</b>: sancțiune pentru <b>întârzierea</b> în executare; nu înlocuiesc obligația principală (executarea în natură rămâne posibilă și datorată). Exemple: dobânda legală (art. 3 din Legea 72/2013 privind clauzele abuzive); penalitățile de întârziere contractuale.',
+          '⚠️ <b>Cumulul</b>: daune moratorii se pot cumula cu executarea silită în natură sau cu daune compensatorii (pentru că mora și neexecutarea sunt prejudicii distincte). Clauza penală moratorie = evaluare anticipată a dauunelor de întârziere.',
+          '<b>La obligații bănești</b>: creditorul e de drept îndreptățit la dobânzi moratorii (art. 1535 NCC) fără a proba un prejudiciu efectiv — dobânda curge automat de la scadență. La obligații ne-bănești → punerea în întârziere e necesară.'
+        ]
       }
     ],
-    grila:'Răspunderea comitenților = prezumție <b>absolută</b> (irefragabilă). Răspunderea părinților = prezumție <b>relativă</b>. La răspunderea obiectivă (lucruri, animale, ruina, activități periculoase): <b>cazul fortuit nu exonerează</b> — numai forța majoră. Paza juridică ≠ paza materială: cel care cedează folosința pierde paza juridică (excepție: bunul furat). Prejudiciu moral: reparat la delict; la contract — numai previzibil. Forța majoră: extern + imprevizibil + irezistibil.'
+    grila:'Răspunderea comitenților = prezumție <b>absolută</b> (irefragabilă). Răspunderea părinților = prezumție <b>relativă</b>. La răspunderea obiectivă (lucruri, animale, ruina, activități periculoase): <b>cazul fortuit nu exonerează</b> — numai forța majoră. Paza juridică ≠ paza materială: cel care cedează folosința pierde paza juridică (excepție: bunul furat). Prejudiciu moral: reparat la delict; la contract — numai previzibil. Forța majoră: extern + imprevizibil + irezistibil. Produse cu defect: răspundere obiectivă, prescripție 3 ani / decădere 10 ani, riscul de dezvoltare exonerează. Daune compensatorii (înlocuiesc executarea) ≠ moratorii (sancționează întârzierea, cumulabile cu executarea).'
   },
 
   {
@@ -570,9 +651,19 @@ var FISE_DATA = [
           '<b>Pactul comisoriu</b> (art. 1553 NCC): clauza prin care părțile stipulează că rezoluțiunea sau rezilierea se produce de drept la neexecutarea obligației. Pact de grad 1 (simplu rezolutiv); pact de grad 2 (rezoluțiune de drept fără notificare); pact de grad 3 (rezoluțiune de drept fără punere în întârziere).',
           '<b>Dreptul de retenție</b> (art. 2495 NCC): creditorul care deține un bun al debitorului poate refuza restituirea lui până la plata integrală a cheltuielilor făcute cu conservarea sau îmbunătățirea bunului. ⚠️ E o excepție, nu o garanție reală; nu conferă drept de urmărire sau preferință la distribuție. Inopozabil față de creditorii ipotecari anteriori constituirii retenției.'
         ]
+      },
+      { icon:'💸', title:'Daune-interese la neexecutare contractuală (art. 1530–1543 NCC)',
+        items:[
+          '<b>Condiții pentru daune-interese contractuale</b> (art. 1530 NCC): neexecutarea (totală, parțială sau tardivă) + prejudiciu + legătură de cauzalitate + culpa debitorului + <b>punerea în întârziere</b> (cu excepția cazului când debitorul e de drept în întârziere).',
+          '<b>Punerea în întârziere</b> (art. 1521–1523 NCC): prin <b>notificare scrisă</b> cu termen de grație rezonabil. Debitorul e de drept în întârziere fără notificare la: (a) obligații cu termen esențial; (b) obligații delictuale; (c) bunuri perisabile; (d) debitorul a declarat că nu va executa; (e) plata trebuia făcută la sediul creditorului (datorie portabilă) și a trecut termenul.',
+          '<b>Daune-interese compensatorii</b> (art. 1530 NCC): înlocuiesc executarea în natură (imposibilă sau refuzată cu rea-credință). Cuprind: prejudiciul efectiv (damnum emergens) + beneficiul nerealizat (lucrum cessans). Limitate la prejudiciul <b>previzibil</b> la data contractului (excepție: dol sau culpă gravă → tot prejudiciul).',
+          '<b>Daune-interese moratorii</b>: sancțiune pentru executarea tardivă; nu înlocuiesc obligația (care trebuie executată în natură). La obligații bănești: dobânda legală curge de drept de la scadență, fără proba unui prejudiciu (art. 1535 NCC). La alte obligații: curg de la punerea în întârziere.',
+          '⚠️ <b>Interdicția dublei reparații</b>: dacă creditorul obține executarea silită în natură, poate cumula daune moratorii (pentru întârziere) dar NU daune compensatorii (care ar reprezenta o dublă compensare). Clauza penală acoperă integral sau parțial daunele — dacă e moratorie, se cumulează; dacă e compensatorie, exclude dovada prejudiciului.',
+          '<b>Evaluarea judiciară a daunelor</b> (art. 1532 NCC): instanța evaluează prejudiciul actual + viitor cert; nu acordă prejudicii eventuale. Cheltuielile de judecată pentru executarea creanței principale sunt incluse în prejudiciul reparabil.'
+        ]
       }
     ],
-    grila:'Principiul integrității plății: creditorul NU poate fi forțat la plăți parțiale. Acțiunea oblică: efectele revin patrimoniului debitorului (<b>nu direct creditorului</b>). Pauliana: act <b>inopozabil</b> față de creditor (nu nul), prescripție <b>1 an</b>; terțul oneros de bună-credință e protejat. Solidaritate pasivă <b>nu se prezumă</b>. <b>Exceptio non adimpleti contractus</b>: suspendă propria obligație la neexecutarea celuilalt. <b>Rezoluțiune</b> (ex tunc) ≠ <b>Reziliere</b> (ex nunc). Dreptul de retenție ≠ garanție reală: nu dă preferință la distribuție.'
+    grila:'Principiul integrității plății: creditorul NU poate fi forțat la plăți parțiale. Acțiunea oblică: efectele revin patrimoniului debitorului (<b>nu direct creditorului</b>). Pauliana: act <b>inopozabil</b> față de creditor (nu nul), prescripție <b>1 an</b>; terțul oneros de bună-credință e protejat. Solidaritate pasivă <b>nu se prezumă</b>. <b>Exceptio non adimpleti contractus</b>: suspendă propria obligație la neexecutarea celuilalt. <b>Rezoluțiune</b> (ex tunc) ≠ <b>Reziliere</b> (ex nunc). Dreptul de retenție ≠ garanție reală: nu dă preferință la distribuție. Daune compensatorii (înlocuiesc executarea) ≠ moratorii (sancționează tardivitatea, cumulabile cu executarea). Punere în întârziere: notificare scrisă; de drept la termen esențial, delict, perisabile, declarație de neexecutare.'
   },
 
   {
@@ -607,9 +698,18 @@ var FISE_DATA = [
           'Simulația în frauda legii sau a terților: contraînscrisul e inopozabil terților prejudiciați; ei pot cere constatarea simulației.',
           '<b>Acțiunea în simulație</b>: imprescriptibilă față de terți; 3 ani între părți. Proba: terții pot face proba simulației prin orice mijloc (inclusiv martori/prezumții).'
         ]
+      },
+      { icon:'🔀', title:'Delegația (art. 1603–1608 NCC)',
+        items:[
+          '<b>Noțiune</b>: operațiune prin care un debitor (delegant) desemnează un terț (delegat) să execute față de creditorul (delegatar) o obligație — inlocuind astfel debitorul original sau adăugând un nou debitor.',
+          '<b>Delegația perfectă</b> (novatorie, art. 1608 NCC): creditorul declară expres că îl liberează pe delegant și îl acceptă pe delegat ca unic debitor. Efecte: (1) obligația veche a delegantului se <b>stinge</b>; (2) delegatarul nu mai poate urmări delegantul; (3) garanțiile obligației vechi se sting, dacă nu se stipulează altfel. ⚠️ Liberarea delegantului trebuie să fie expresă (nu se prezumă).',
+          '<b>Delegația imperfectă</b> (art. 1603 NCC): creditorul acceptă pe delegat ca debitor suplimentar, fără a-l libera pe delegant. Efecte: delegatarul are doi debitori (delegant + delegat). ⚠️ Delegantul rămâne ținut și poate fi urmărit. Delegatul poate opune delegatarului excepțiile pe care le are față de delegant (dacă obligația sa față de delegatar izvorăște din raportul cu delegantul).',
+          '<b>Distincție față de fidejusiune</b>: la fidejusiune, fidejusorul garantează o datorie a altuia (are beneficiul de discuțiune); la delegație imperfectă, delegatul devine debitor principal, nu fidejusor (nu poate invoca beneficiul de discuțiune dacă s-a obligat în mod direct față de delegatar).',
+          '<b>Distincție față de novație</b>: novația e mai largă (poate schimba orice element al obligației); delegația perfectă e un tip specific de novație subiectivă prin schimb de debitor.'
+        ]
       }
     ],
-    grila:'Cesiunea de creanță: <b>nu necesită acordul debitorului</b> (ci notificarea). Preluarea datoriei: <b>necesită acordul creditorului</b>. Cesiunea de contract: necesită acordul <b>cocontractantului cedat</b>. Compensația legală: certe + lichide + exigibile + aceeași natură. Confuziunea: stinge și garanțiile accesorii. Simulație: între părți prevalează <b>actul secret</b>; terții de bună-credință aleg. Acțiunea în simulație față de terți: <b>imprescriptibilă</b>.'
+    grila:'Cesiunea de creanță: <b>nu necesită acordul debitorului</b> (ci notificarea). Preluarea datoriei: <b>necesită acordul creditorului</b>. Cesiunea de contract: necesită acordul <b>cocontractantului cedat</b>. Compensația legală: certe + lichide + exigibile + aceeași natură. Confuziunea: stinge și garanțiile accesorii. Simulație: între părți prevalează <b>actul secret</b>; terții de bună-credință aleg. Acțiunea în simulație față de terți: <b>imprescriptibilă</b>. Delegație perfectă: liberează delegantul (expres!), stinge garanțiile vechi. Delegație imperfectă: doi debitori, delegantul rămâne ținut. Delegat ≠ fidejusor (nu are beneficiul de discuțiune dacă s-a obligat direct).'
   },
 
   {
@@ -646,9 +746,26 @@ var FISE_DATA = [
           '<b>Cauze de revocare legale</b>: (1) neîndeplinirea sarcinii (termen + punere în întârziere → revocare sau executare silită); (2) ingratitudine (injurie gravă, atentat la viața donatorului, refuz nejustificat de alimente) — prescripție <b>1 an</b> de la cunoașterea faptei, nepatrimonialp (nu se transmite succesorilor); (3) survenire de copil (dacă s-a stipulat expres).',
           '<b>Reducțiunea liberalităților excesive</b>: dacă donatorul a depășit cotitatea disponibilă (a vătămat rezerva succesorală), moștenitorii rezervatari pot cere reducțiunea — în ordine inversă (cel mai recent legat, cele mai recente donații).'
         ]
+      },
+      { icon:'🌾', title:'Preemțiunea la terenuri agricole — Legea 17/2014',
+        items:[
+          '<b>Domeniu de aplicare</b>: înstrăinarea prin vânzare a <b>terenurilor agricole situate în extravilan</b>. Nu se aplică la schimb, donație, aport la capital social sau la înstrăinările între coproprietari/rude până la gradul al III-lea.',
+          '<b>Ordinea de preferință</b> (art. 4 L. 17/2014): (1) <b>coproprietarii</b>; (2) <b>arendașii</b>; (3) <b>proprietarii vecini</b>; (4) <b>statul român</b> — prin Agenția Domeniilor Statului. ⚠️ Ordinea e imperativă; nerespectarea ei atrage nulitatea contractului.',
+          '<b>Procedura</b>: vânzătorul depune la primărie o cerere de afișare a ofertei + documentele tehnice. Primăria afișează 30 de zile. Preemptorii au la dispoziție <b>30 de zile</b> calendaristice de la data afișării ofertei pentru a-și manifesta intenția.',
+          '<b>Sancțiunea nerespectării</b>: contractul de vânzare încheiat cu eludarea dreptului de preemțiune e lovit de <b>nulitate absolută</b> (spre deosebire de preemțiunea de drept comun unde sancțiunea e inopozabilitatea + subrogarea în 3 luni). ⚠️ Aceasta e deosebirea esențială față de art. 1730 NCC.',
+          '<b>Rolul statului</b>: intervenția statului ca preemptor de ultim rang vizează menținerea bunurilor agricole în circuitul agricol și limitarea fragmentării terenurilor. Statul plătește prețul pieței stabilit prin expertiză, nu prețul din ofertă dacă acesta e mai mare.'
+        ]
+      },
+      { icon:'🙏', title:'Donația remuneratorie și donația cu sarcini',
+        items:[
+          '<b>Donația remuneratorie</b>: donație făcută în semn de recunoștință pentru un serviciu anterior prestat de donatar (dar pentru care donatarul nu are drept legal la remunerație). ⚠️ Nu e o plată (serviciul a fost prestat benevol), ci o donație — supusă formei solemne (act notarial) și regulilor donației (inclusiv rezervei succesorale).',
+          'Regim juridic: supusă acelorași reguli ca donația obișnuită — solennnitate, irevocabilitate specială, reducțiune. <b>Nu e contract oneros</b> deoarece serviciul prestat nu constituie o contraprestație în sens contractual (a fost prestat fără obligație).',
+          '<b>Donația cu sarcini</b> (sub modo): donatarul e obligat să execute o prestație în favoarea donatorului, a unui terț sau de utilitate publică. Sarcina poate transforma parțial donația într-un act oneros (în limita valorii sarcinii — aplicabile regulile de vânzare pentru acea parte).',
+          'Neexecutarea sarcinii: (1) executare silită; sau (2) revocare judiciară la cererea donatorului sau creditorului; (3) termenul de grație + punere în întârziere sunt necesare înainte de a cere revocarea. ⚠️ Revocarea pentru neexecutare de sarcini ≠ revocare pentru ingratitudine (regimuri și termene diferite).'
+        ]
       }
     ],
-    grila:'Transfer proprietate vânzare: <b>imediat la perfectare</b> (bunuri certe); riscul urmărește proprietatea. Vânzarea lucrului altuia: NR dacă cumpărătorul nu știa. Vicii ascunse: vânzătorul BF <b>nu datorează daune</b>. Donație între soți: <b>revocabilă oricând</b>. Principiul irevocabilității: clauza pur potestativă a donatorului = NCA. Ingratitudine: prescripție <b>1 an</b>; nepatrimonial (nu se transmite). Drept de răscumpărare: max <b>5 ani</b>.'
+    grila:'Transfer proprietate vânzare: <b>imediat la perfectare</b> (bunuri certe); riscul urmărește proprietatea. Vânzarea lucrului altuia: NR dacă cumpărătorul nu știa. Vicii ascunse: vânzătorul BF <b>nu datorează daune</b>. Donație între soți: <b>revocabilă oricând</b>. Principiul irevocabilității: clauza pur potestativă a donatorului = NCA. Ingratitudine: prescripție <b>1 an</b>; nepatrimonial (nu se transmite). Drept de răscumpărare: max <b>5 ani</b>. Preemțiune L. 17/2014: terenuri agricole extravilan, ordine coproprietari → arendași → vecini → stat; sancțiune <b>nulitate absolută</b> (≠ drept comun: inopozabilitate). Donație remuneratorie: liberalitate solemnă, nu plată a unui serviciu anterior.'
   },
 
   {
@@ -692,9 +809,26 @@ var FISE_DATA = [
           '<b>Mandat</b>: acte juridice în numele mandantului; gratuit (PF) sau oneros (profesioniști); revocabil ad nutum (cu excepția mandatului în interesul mandatarului).',
           '<b>Antrepriză</b>: acte materiale, antreprenorul e independent (nu prepus), prețul e de regulă forfetar; clientul poate denunța oricând (cu despăgubire).'
         ]
+      },
+      { icon:'🌱', title:'Arendarea (art. 1836–1850 NCC)',
+        items:[
+          '<b>Definiție</b>: locator al unui bun agricol (teren, animale, utilaje) transmite arendașului dreptul de <b>folosință temporară</b>, contra <b>arendei</b> (bani sau produse naturale). Tip special de locațiune, supus normelor specifice din art. 1836–1850 NCC și Legii 17/2014.',
+          '<b>Formă</b>: act scris, înregistrat la consiliul local al localității unde se află bunul arendat, sub sancțiunea nulității absolute. <b>Durata minimă</b>: lege nu impune un minim; dacă nu e stipulată → 7 ani (durata unui asolament). Dacă durată mai mică de 7 ani → poate fi prelungită prin acordul părților.',
+          '<b>Subarendarea</b> e interzisă (art. 1847 NCC) — deosebire esențială față de locațiunea obișnuită unde e permisă dacă nu e exclusă expres. Cesiunea arendării e de asemenea interzisă.',
+          '<b>Dreptul de preemțiune al arendașului</b> (art. 1849 NCC + Legea 17/2014): la vânzarea terenului arendat, arendașul are drept de preemțiune (rândul 2 din ordinea Legii 17/2014). ⚠️ Trebuie să lucreze terenul de cel puțin 1 an.',
+          '<b>Arenda</b>: stabilită în bani sau în natură; dacă nu se poate plăti arenda în natură din cauza forței majore → arendașul plătește echivalentul în bani. Arenda în produse → se impozitează ca venit agricol.'
+        ]
+      },
+      { icon:'🏗️', title:'Garanția contra viciilor în antrepriză și construcții (Legea 10/1995)',
+        items:[
+          '<b>Garanția de bună execuție</b>: antreprenorul răspunde față de client pentru viciile lucrării. Termenele de garanție legale: <b>2 ani</b> de la recepție (pentru vicii ascunse la construcții curente); <b>10 ani</b> pentru vicii structurale majore la construcții (Legea 10/1995 privind calitatea în construcții).',
+          '<b>Obligația de garanție decenalã (10 ani)</b>: proiectantul, constructorul și dirigintele de șantier răspund solidar pentru viciile structurale care amenință soliditatea sau siguranța construcției timp de 10 ani de la recepția finală. ⚠️ E o garanție legală, nu convențională — nu poate fi limitată prin contract.',
+          '<b>Răspunderea pe durată nelimitată</b>: dacă viciu a fost cauzat cu intenție sau prin neglijență gravă, termenul de 10 ani nu limitează răspunderea — prescripția de drept comun (3 ani de la cunoașterea viciului) se aplică.',
+          '<b>Recepția</b>: recepția la terminarea lucrărilor (provizorie) și recepția finală (după expirarea perioadei de garanție). Viciile aparente trebuie semnalate la recepție sub sancțiunea decăderii. Viciile ascunse: pot fi invocate oricând în termenul de garanție, chiar dacă recepția a avut loc.'
+        ]
       }
     ],
-    grila:'Locatarul: <b>reparații locative</b>; locatorul: <b>reparații capitale</b>. Tacita relocațiune → contract pe durată nedeterminată. Mandat = acte juridice; antrepriză = acte materiale. Mandatul PF = prezumție de <b>gratuitate</b>. Mandat fără reprezentare: terțul nu cunoaște mandantul; efectele → mandatar. Antreprenorul ≠ prepus; clientul poate denunța oricând cu despăgubire.'
+    grila:'Locatarul: <b>reparații locative</b>; locatorul: <b>reparații capitale</b>. Tacita relocațiune → contract pe durată nedeterminată. Mandat = acte juridice; antrepriză = acte materiale. Mandatul PF = prezumție de <b>gratuitate</b>. Mandat fără reprezentare: terțul nu cunoaște mandantul; efectele → mandatar. Antreprenorul ≠ prepus; clientul poate denunța oricând cu despăgubire. Arendare: act scris înregistrat la consiliu local; subarendarea <b>interzisă</b>; arendașul are drept de preemțiune (Legea 17/2014). Garanție construcții: <b>2 ani</b> vicii ascunse obișnuite; <b>10 ani</b> vicii structurale (Legea 10/1995).'
   },
 
   {
@@ -737,9 +871,20 @@ var FISE_DATA = [
           '<b>Cazuri de nulitate</b>: tranzacție asupra unui drept inexistent; actul de a cărui existență depinde a fost ulterior anulat sau declarat fals; tranzacție bazată pe documente false.',
           '<b>Tranzacția judiciară</b>: consemnată în procesul-verbal de ședință → titlu executoriu fără altă procedură. Tranzacția extrajudiciară: necesită autentificare sau învestire cu formulă executorie pentru executare silită.'
         ]
+      },
+      { icon:'📦', title:'Contractul de depozit (art. 2103–2143 NCC)',
+        items:[
+          '<b>Definiție</b>: depunătorul remite depozitarului un <b>bun mobil</b> spre <b>păstrare</b>, cu obligația de a-l restitui în natură la cerere. ⚠️ Scopul e custodia (nu folosința ca la comodat, și nici transferul proprietății ca la mutuum).',
+          '<b>Caractere</b>: <b>real</b> (se perfectează prin remiterea bunului); <b>unilateral</b> (numai depozitarul are obligații după remitere); de regulă <b>gratuit</b> (prezumție la persoane fizice); oneros la profesioniști (hoteluri, case de valori).',
+          '<b>Depozitarul NU poate folosi bunul</b> (art. 2109 NCC) — spre deosebire de comodatar (care primește bunul spre folosință). Dacă depozitarul folosește bunul fără drept → răspunde față de depunător pentru orice pierdere, inclusiv caz fortuit.',
+          '<b>Diligența depozitarului</b>: la depozit gratuit → diligența unui bun proprietar pentru propriile bunuri (standard variabil, mai puțin sever); la depozit oneros → diligența unui profesionist (standard obiectiv). ⚠️ Răspunde și pentru culpa ușoară la depozit oneros.',
+          '<b>Depozitul neregulat</b> (art. 2115 NCC): depunerea unor bunuri fungibile (bani, metale prețioase) cu dreptul depozitarului de a le consuma, restituind bunuri de același gen, cantitate și calitate. Se aseamănă cu mutuum — depozitarul devine proprietar al bunurilor fungibile. Sancțiune pentru nerestituire: acțiune în restituire + dobânzi.',
+          '<b>Depozitul necesar</b> (art. 2124 NCC): impus de împrejurări extraordinare (incendiu, cutremur, naufragiu) fără posibilitatea alegerii depozitarului. Regulile se aplică, dar proba e mai liberă (inclusiv martori și prezumții indiferent de valoare).',
+          '<b>Restituirea</b>: la cererea depunătorului, oricând, chiar dacă s-a stipulat un termen (termenul e în interesul depunătorului). Dacă depozitarul are o creanță față de depunător legată de depozit, poate exercita dreptul de retenție.'
+        ]
       }
     ],
-    grila:'Mutuum = <b>real</b> + transferă <b>proprietatea și riscul</b> la împrumutat; dobânda max 2× dobânda legală la PF. Comodat = real + gratuit + proprietatea rămâne; comodatarul nu poate subînchiria. Fidejusionar solidar: renunță la discuțiune și diviziune. Fidejusor subrogat: drepturile creditorului + acțiunea proprie. Tranzacție = efecte <b>declarative</b>; concesii <b>reciproce</b> (altfel = remitere de datorie).'
+    grila:'Mutuum = <b>real</b> + transferă <b>proprietatea și riscul</b> la împrumutat; dobânda max 2× dobânda legală la PF. Comodat = real + gratuit + proprietatea rămâne; comodatarul nu poate subînchiria. Fidejusionar solidar: renunță la discuțiune și diviziune. Fidejusor subrogat: drepturile creditorului + acțiunea proprie. Tranzacție = efecte <b>declarative</b>; concesii <b>reciproce</b> (altfel = remitere de datorie). Depozit = real, gratuit (PF), depozitarul <b>nu poate folosi</b> bunul (≠ comodat); restituire la cererea depunătorului oricând. Depozit neregulat: bunuri fungibile, depozitarul devine proprietar + restituie tantundem.'
   },
 
   {
@@ -783,9 +928,19 @@ var FISE_DATA = [
           '<b>Drepturile speciale ale soțului</b> (art. 971–975 NCC): drept de abitație timp de <b>1 an</b> în locuința familiei (dacă nu e coproprietar sau moștenitor unic); drept preferențial la mobilierul și obiectele de uz casnic (în afara cotei din moștenire).',
           '<b>Venire în concurs</b>: soțul supraviețuitor poate fi exheredat (dezmoștenit) total sau parțial; rezerva sa protejată = 1/4 din ceea ce ar fi moștenit ca moștenitor legal.'
         ]
+      },
+      { icon:'📋', title:'Răspunderea moștenitorului pentru datorii + certificatul de moștenitor',
+        items:[
+          '<b>Acceptarea pură și simplă</b>: moștenitorul răspunde pentru datoriile și sarcinile moștenirii <b>ultra vires hereditatis</b> — și cu propriile bunuri. Creditorii moștenirii pot urmări și patrimoniul personal al moștenitorului.',
+          '<b>Acceptarea sub beneficiul de inventar</b> (art. 1114 NCC): moștenitorul răspunde numai <b>intra vires hereditatis</b> — în limita valorii bunurilor moștenite. Protejează patrimoniul personal al moștenitorului; inventarul trebuie întocmit în termen. ⚠️ NCC (din 2011) consacră beneficiul de inventar ca efect automat al acceptării pure și simple: orice acceptare e beneficiară dacă s-a întocmit un inventar; dacă nu → ultra vires.',
+          '<b>Separația de patrimonii</b> (art. 1141 NCC): creditorii defunctului pot cere separarea patrimoniului succesoral de patrimoniul personal al moștenitorului, pentru a fi plătiți cu prioritate din bunurile defunctului față de creditorii personali ai moștenitorului. Termen: 3 ani de la data deschiderii moștenirii.',
+          '<b>Certificatul de moștenitor</b> (Legea 36/1995 — Legea notarilor publici): eliberat de notarul public în urma procedurii succesorale notariale. Constată calitatea de moștenitor, cotele și componența masei succesorale. <b>Forța probantă</b>: face dovada calității de moștenitor față de toți (prezumție legală absolută — <i>iuris et de iure</i> până la anulare). Poate fi anulat pe cale judiciară dacă nu reflectă realitatea.',
+          '⚠️ <b>Certificatul de moștenitor vs. hotărârea judecătorească</b>: ambele pot stabili calitatea de moștenitor; dacă există conflict → hotărârea judecătorească prevalează (are autoritate de lucru judecat). Certificatul se poate contesta prin acțiune în anulare sau petiție de ereditate.',
+          '<b>Succesiunea vacantă</b> (art. 1135 NCC): dacă nu există moștenitori (toți renunță sau nu există) → masa succesorală revine <b>statului</b> (sau unității administrativ-teritoriale unde se afla domiciliul defunctului la deces). Statul nu poate renunța la succesiune.'
+        ]
       }
     ],
-    grila:'Termenul de opțiune succesorală: <b>1 an</b>. Comoriența: nu se moștenesc reciproc. Sezina: descendenți, ascendenți privilegiați, soț supraviețuitor. Nedemnitate de drept ≠ judiciară (aceasta necesită hotărâre). Copiii nedemnului: vin prin <b>reprezentare</b>. Cotele soțului: cls I=<b>1/4</b>; cls II complet=<b>1/3</b>; cls II numai ascendenți=<b>3/8</b>; cls III=<b>1/2</b>; cls IV=<b>3/4</b>. Statul = moștenitor de ultimul resort. Petiția de ereditate: imprescriptibilă.'
+    grila:'Termenul de opțiune succesorală: <b>1 an</b>. Comoriența: nu se moștenesc reciproc. Sezina: descendenți, ascendenți privilegiați, soț supraviețuitor. Nedemnitate de drept ≠ judiciară (aceasta necesită hotărâre). Copiii nedemnului: vin prin <b>reprezentare</b>. Cotele soțului: cls I=<b>1/4</b>; cls II complet=<b>1/3</b>; cls II numai ascendenți=<b>3/8</b>; cls III=<b>1/2</b>; cls IV=<b>3/4</b>. Statul = moștenitor de ultimul resort. Petiția de ereditate: imprescriptibilă. Răspundere moștenitor: ultra vires (acceptare pură și simplă) vs. intra vires (beneficiu inventar). Separația de patrimonii: creditorii defunctului au prioritate; termen 3 ani. Certificat de moștenitor: prezumție absolută; poate fi atacat pe cale judiciară.'
   },
 
   {
@@ -823,9 +978,19 @@ var FISE_DATA = [
           '<b>Dispensa de raport</b>: donatorul poate scuti de raport în actul de donație sau ulterior, prin testament. Donația deghizată sau indirectă se consideră <b>dispensată</b> de raport (nu de rezervă).',
           '<b>Raportul ≠ reducțiunea</b>: raportul asigură egalitate între moștenitori (operează doar între ei); reducțiunea protejează rezerva față de <b>terți</b> (legatari, donatari externi). Ambele operațiuni pot fi necesare în același dosar.'
         ]
+      },
+      { icon:'🎗️', title:'Tipurile de legate și dezmoștenirea (art. 1055–1083, art. 1074 NCC)',
+        items:[
+          '<b>Legatul universal</b> (art. 1055 NCC): atribuie legatarului <b>întreaga moștenire</b> (sau fracțiunea rămasă după achitarea legatelor cu titlu universal sau particular). Legatarul universal are vocație la tot — adică răspunde și pentru datoriile succesiunii.',
+          '<b>Legatul cu titlu universal</b> (art. 1056 NCC): atribuie o <b>fracțiune determinată</b> din moștenire (1/2, 1/3 etc.) sau o universalitate de bunuri (ex: toate mobilele, toate imobilele). Răspunde pentru datoriile succesiunii proporțional cu fracțiunea primită.',
+          '<b>Legatul cu titlu particular</b> (art. 1057 NCC): atribuie <b>bunuri determinate</b> (individual sau generic). Legatarul nu răspunde pentru datoriile succesiunii (excepție: dacă bunul e ipotecat sau dacă testatorul a pus în sarcina legatarului plata unui legat). ⚠️ Distincție-cheie pentru grile: legatul particular → nu răspunde pentru datorii.',
+          '<b>Dezmoștenirea (exheredarea)</b> (art. 1074 NCC): testatorul poate dezmoșteni un moștenitor legal, total sau parțial. Moștenitorul exheredat e exclus de la moștenire, dar dacă e rezervatar → are dreptul la rezervă (nu poate fi dezmoștenit sub rezervă). Dezmoștenirea <b>indirectă</b>: testatorul instituie un legatar universal, fără a desemna moștenitorii legali → aceștia sunt excluși implicit.',
+          '<b>Efectele dezmoștenirii rezervatarilor</b>: rezerva succesorală nu poate fi redusă prin dezmoștenire — legatele sau donațiile care depășesc cotitatea disponibilă sunt reductibile. Exheredarea totală a unui rezervatar = dezmoștenire parțial invalidă (rezerva e protejată).',
+          '⚠️ <b>Legat condiționat</b>: legatul sub condiție suspensivă — dreptul se naște la realizarea condiției. Legat sub condiție rezolutorie — dreptul se stinge la realizarea condiției. Legat cu termen — exigibilitatea e amânată. Legatul sub sarcină — legatarul trebuie să execute o prestație (dacă nu execută → revocare judiciară).'
+        ]
       }
     ],
-    grila:'Testament olograf: <b>integral</b> olograf + datat complet (zi/lună/an) + semnat — lipsa oricăreia = nulitate absolută. Testamentul conjunctiv: <b>interzis</b> (art. 1036). Rezerva: descendenți = <b>1/2</b>; ascendenți privilegiați = <b>1/2</b>; soț = <b>1/4</b>. Reunire fictivă = adaug toate donațiile la activ net. Reducțiunea: întâi legate (ordine inversă datei), apoi donații. Raportul: prin echivalent; dispensa = nu raportez dar rezerva se calculează oricum; raportul ≠ reducțiunea.'
+    grila:'Testament olograf: <b>integral</b> olograf + datat complet (zi/lună/an) + semnat — lipsa oricăreia = nulitate absolută. Testamentul conjunctiv: <b>interzis</b> (art. 1036). Rezerva: descendenți = <b>1/2</b>; ascendenți privilegiați = <b>1/2</b>; soț = <b>1/4</b>. Reunire fictivă = adaug toate donațiile la activ net. Reducțiunea: întâi legate (ordine inversă datei), apoi donații. Raportul: prin echivalent; dispensa = nu raportez dar rezerva se calculează oricum; raportul ≠ reducțiunea. Legat universal → răspunde pentru datorii; legat particular → NU răspunde. Dezmoștenire: nu poate afecta rezerva; exheredarea rezervatarului → păstrează rezerva.'
   },
 
   // ══ DREPT PENAL ══════════════════════════════════════════════════════════════
@@ -880,9 +1045,18 @@ var FISE_DATA = [
           '<b>Cauze de neimputabilitate</b> (art. 23–31 NCP): înlătură <b>imputabilitatea</b> → fapta este infracțiune, dar <i>persoana nu răspunde penal</i>. Efect <b>IN PERSONAM</b>: numai cel vizat nu răspunde; ceilalți participanți pot răspunde. Exemple: minoritate, iresponsabilitate, constrângere, eroare, caz fortuit, beție involuntară completă.',
           '⚠️ <b>Distincția practică pentru grile</b>: dacă autorul a acționat justificat → nici instigatorul/complicele nu răspund (fapta nu există penal). Dacă autorul era minor sub 14 ani (neimputabilitate) → instigatorul/complicele <i>pot fi judecați ca autori mediați</i>.'
         ]
+      },
+      { icon:'🚫', title:'Infracțiunea omisivă improprie (comisivă prin omisiune, art. 17 NCP)',
+        items:[
+          '<b>Definiție</b>: infracțiune tipic comisivă (cu element material activ), săvârșită prin <b>inacțiune</b> de către o persoană care avusese obligația legală de a acționa — numită <b>garant</b>.',
+          '<b>Condiția de la art. 17 NCP</b>: autorul omisiv (garantul) trebuie să fi primit o <b>obligație legală sau convențională</b> de a acționa pentru a preveni producerea rezultatului. Fără această obligație → nu există infracțiune (inacțiunea pură nu e incriminată decât dacă legea o prevede expres).',
+          '<b>Surse ale calității de garant</b>: (1) legea (de ex: art. 203 NCP — lăsarea fără ajutor a persoanei aflate în pericol; obligația medicului față de pacient; părintele față de copilul minor); (2) contractul (salvamarul angajat să supravegheze piscina); (3) asumarea voluntară a supravegherii (soț față de copilul nou-născut); (4) crearea situației de pericol (cel care a creat un pericol pentru victimă are obligația de a-l înlătura).',
+          '<b>Exemplu tipic</b>: mama care nu hrănește deliberat nou-născutul → omor comis prin omisiune (art. 188 NCP + art. 17 NCP). Mama e garantul; inacțiunea ei echivalează cu o acțiune.',
+          '⚠️ <b>Distincție</b>: infracțiunea omisivă proprie (tipică) = elementul material este în sine o omisiune incriminată de lege (ex: nedenunțarea — art. 266 NCP; lăsarea fără ajutor — art. 203 NCP) vs. infracțiunea omisivă improprie = element material normal activ, realizat prin omisiune de garant.'
+        ]
       }
     ],
-    grila:'Trăsături esențiale: tipicitate + antijuridicitate + imputabilitate (toate cumulative). Cauze justificative → înlătură <b>antijuridicitatea</b> (efect in rem). Cauze de neimputabilitate → înlătură <b>imputabilitatea</b> (efect in personam). Nullum crimen sine lege → analogia interzisă. Lex mitior: legea mai favorabilă retroactivează. Intenție indirectă vs. culpă cu prevedere: acceptă / vs. / crede că nu se produce. Praeterintenție = intenție + culpă. <b>Error in persona</b>: o infracțiune consumată (intenție păstrată). <b>Aberratio ictus</b>: concurs — tentativă față de cel vizat + culpă față de cel lovit.'
+    grila:'Trăsături esențiale: tipicitate + antijuridicitate + imputabilitate (toate cumulative). Cauze justificative → înlătură <b>antijuridicitatea</b> (efect in rem). Cauze de neimputabilitate → înlătură <b>imputabilitatea</b> (efect in personam). Nullum crimen sine lege → analogia interzisă. Lex mitior: legea mai favorabilă retroactivează. Intenție indirectă vs. culpă cu prevedere: acceptă / vs. / crede că nu se produce. Praeterintenție = intenție + culpă. <b>Error in persona</b>: o infracțiune consumată (intenție păstrată). <b>Aberratio ictus</b>: concurs — tentativă față de cel vizat + culpă față de cel lovit. Omisivă improprie (art. 17): comisivă prin omisiune, numai de garant (obligație legală/contractuală). Omisivă proprie ≠ improprie: omisivă proprie = elementul material e chiar inacțiunea tipizată.'
   },
 
   {
@@ -916,9 +1090,19 @@ var FISE_DATA = [
           '<b>Circumstanțe agravante generale</b> (art. 77 NCP): comitere prin cruzimi, cu mijloace periculoase, de trei sau mai multe persoane împreună, față de un minor sau persoană vulnerabilă → instanța <b>poate</b> depăși maximul special cu max. 2 ani (sau 1/3).',
           '⚠️ Circumstanțele speciale (din textul incriminatorului — forma calificată) ≠ circumstanțe generale: circumstanțele speciale modifică <i>însuși tiparul infracțiunii</i>; cele generale modulează pedeapsa în cadrul tipului de bază.'
         ]
+      },
+      { icon:'🔂', title:'Unitatea de infracțiune — continuată, complexă, naturală (art. 35–36 NCP)',
+        items:[
+          '<b>Infracțiunea continuată</b> (art. 35 alin. 1 NCP): același autor comite la intervale diferite de timp <b>mai multe acțiuni/inacțiuni</b> care realizează conținutul aceleași infracțiuni, în baza aceleiași <b>rezoluții infracționale</b> (unitate de hotărâre). ⚠️ Condiții: aceeași persoană + aceeași rezoluție (hotărâre luată de la început, nu reînnoită de fiecare dată) + aceeași infracțiune (sau infracțiuni asemănătoare) + interval de timp între acte.',
+          '<b>Sancțiunea infracțiunii continuate</b>: pedeapsa prevăzută de lege pentru infracțiunea comisă, la care se poate adăuga un spor de <b>1–3 ani</b> (dacă sunt pedepse cu închisoarea). Momentul epuizării = ultimul act al activității continue. ⚠️ Prescripția curge de la data epuizării (ultimul act), nu de la data primului act.',
+          '<b>Infracțiunea complexă</b> (art. 35 alin. 2 NCP): în conținutul ei intră, ca element sau circumstanță agravantă, o acțiune sau inacțiune care constituie prin ea însăși o faptă prevăzută de legea penală. Absorbție: infracțiunea absorbantă "înghite" infracțiunea absorbită. <i>Ex: tâlhăria = furt + violență/amenințare; violul + omor = omor deosebit de grav.</i>',
+          '<b>Infracțiunea continuă</b> (tip de unitate naturală): elementul material se prelungește în timp fără întrerupere (ex: lipsirea de libertate, portul nelegal de armă). Se consumă la momentul începerii și se epuizează când acțiunea încetează. Prescripția curge de la epuizare.',
+          '<b>Infracțiunea de obicei</b> (tip de unitate naturală): necesită o repetare a actului pentru a fi consumată; actul izolat nu constituie infracțiune. <i>Ex: hărțuirea (art. 208 NCP) — act izolat = nepedepsibil; repetare = hărțuire consumată.</i> ⚠️ Nu se poate reține tentativa la infracțiunile de obicei.',
+          '⚠️ <b>Tabel comparativ</b>: continuată (aceeași rezoluție + acte repetate) vs. concurs real (rezoluții diferite + acte repetate) — distincția e esențială pentru tratamentul penal: la continuată = o singură infracțiune (cu spor opțional 1–3 ani); la concurs real = mai multe infracțiuni (cumulul juridic cu spor obligatoriu 1/3).'
+        ]
       }
     ],
-    grila:'Tentativă absolut improprie → <b>nepedepsibilă</b>; tentativă relativ improprie → pedepsibilă. Desistare = cauză de <b>nepedepsire</b> (infracțiunea există). Instigatorul: pedepsit CA autorul. Coautor = acte de executare (nu simplu ajutor). Circumstanțe reale → tuturor participanților care le-au <b>cunoscut</b>; circumstanțe personale → numai celui vizat. Circumstanțe atenuante → instanța <i>poate</i> coborî sub minim.'
+    grila:'Tentativă absolut improprie → <b>nepedepsibilă</b>; tentativă relativ improprie → pedepsibilă. Desistare = cauză de <b>nepedepsire</b> (infracțiunea există). Instigatorul: pedepsit CA autorul. Coautor = acte de executare (nu simplu ajutor). Circumstanțe reale → tuturor participanților care le-au <b>cunoscut</b>; circumstanțe personale → numai celui vizat. Circumstanțe atenuante → instanța <i>poate</i> coborî sub minim. Infracțiune continuată: aceeași rezoluție, spor opțional <b>1–3 ani</b>, prescripție de la <b>epuizare</b>. Infracțiune complexă: absorbție (tâlhărie = furt + violență). Infracțiune de obicei: act izolat nepedepsibil, fără tentativă.'
   },
 
   {
@@ -962,9 +1146,19 @@ var FISE_DATA = [
           '<b>Amânarea aplicării pedepsei</b> (art. 83 NCP): pedeapsa e stabilită dar amânată pe <b>2 ani</b> sub supraveghere; dacă nu comite o nouă infracțiune intenționată → instanța poate anula pedeapsa. Dacă revocată → pedeapsa se aplică.',
           '<b>Suspendarea sub supraveghere</b> (art. 91 NCP): pedeapsa e aplicată dar nu se execută; termen de supraveghere = <b>2–4 ani</b>. Condiții: pedeapsă ≤3 ani; nicio condamnare anterioară. Revocare: nouă infracțiune sau nerespectare obligații.'
         ]
+      },
+      { icon:'🔓', title:'Liberarea condiționată (art. 99–106 NCP)',
+        items:[
+          '<b>Definiție</b>: instituție care permite eliberarea condamnatului înainte de executarea integrală a pedepsei, sub condiția bunei purtări pentru restul din durata pedepsei. Se acordă de instanță (judecătorul delegat cu executarea).',
+          '<b>Condiții pentru acordare (pedeapsa cu închisoarea)</b>: (1) executarea a cel puțin <b>2/3</b> din pedeapsă (în cazul celor condamnați prima dată la max. 10 ani); (2) executarea a cel puțin <b>3/4</b> din pedeapsă (pedeapsa depășește 10 ani sau sunt recidiviști); (3) dacă restul de executat este ≤3 ani, instanța poate acorda liberarea anticipată. (4) comportament bun în detenție (nu a comis abateri disciplinare grave); (5) a stăruit în muncă și a avut o conduită bună.',
+          '<b>Termenul de supraveghere</b>: restul de pedeapsă rămas de executat constituie termenul de supraveghere, dar nu mai puțin de <b>2 ani</b> (art. 100 alin. 5 NCP).',
+          '<b>Revocarea liberării condiționate</b> (art. 104 NCP): dacă în termenul de supraveghere condamnatul comite o nouă infracțiune intenționată → se revocă liberarea și execută restul de pedeapsă care rămăsese + pedeapsa nouă (fără contopire obligatorie). Dacă infracțiunea e din culpă → instanța poate sau nu să revoce.',
+          '<b>Anularea liberării condiționate</b> (art. 105 NCP): dacă se descoperă că, la data eliberării, condamnatul mai comisese o infracțiune care impune revocarea → liberarea se anulează și se aplică tratamentul corespunzător concursului sau recidivei.',
+          '⚠️ <b>Distincție față de suspendarea sub supraveghere</b>: la suspendare, pedeapsa nu se execută deloc (cu condiții la pronunțare); la liberarea condiționată, pedeapsa se execută parțial (cel puțin 2/3 sau 3/4).'
+        ]
       }
     ],
-    grila:'Cauze justificative → efect <b>IN REM</b>. Cauze de neimputabilitate → efect <b>IN PERSONAM</b>. Excesul justificat (tulburare/temere) = atenuare, nu înlăturare. Beția <b>voluntară</b> ≠ cauză de neimputabilitate. Minoritate: sub 14 ani = nicio răspundere; 14–16 = cu discernământ. Concurs: cumulul juridic cu spor 1/3. Recidivă: 3 ani de la executare. Amânare pedeapsă: 2 ani supraveghere.'
+    grila:'Cauze justificative → efect <b>IN REM</b>. Cauze de neimputabilitate → efect <b>IN PERSONAM</b>. Excesul justificat (tulburare/temere) = atenuare, nu înlăturare. Beția <b>voluntară</b> ≠ cauză de neimputabilitate. Minoritate: sub 14 ani = nicio răspundere; 14–16 = cu discernământ. Concurs: cumulul juridic cu spor 1/3. Recidivă: 3 ani de la executare. Amânare pedeapsă: 2 ani supraveghere. Liberare condiționată: fracțiune <b>2/3</b> (max 10 ani, prima condamnare) sau <b>3/4</b> (>10 ani sau recidivist); termen supraveghere = restul pedepsei, min. 2 ani; revocare la infracțiune intenționată.'
   },
 
   {
@@ -1008,9 +1202,19 @@ var FISE_DATA = [
           '<b>Ucidere din culpă</b> (art. 192 NCP): culpă față de deces, nicio intenție. Pedeapsă: <b>1–5 ani</b>. Agravat (alcool, abandon victimă): <b>2–7 ani</b>.',
           '⚠️ <b>Regula de distincție</b>: criteriul = vinovăția față de <b>deces</b> (nu față de lovire). Dacă autorul voia/accepta moartea → omor. Dacă lovea intenționat, dar moartea = culpă → loviri cauzatoare de moarte. Dacă totul din culpă → ucidere din culpă. Premeditarea și praeterintenția <b>nu coexistă</b>.'
         ]
+      },
+      { icon:'🚷', title:'Traficul de persoane și agresiunea sexuală (art. 210–219 NCP)',
+        items:[
+          '<b>Traficul de persoane</b> (art. 210 NCP): recrutarea, transportul, transferul, cazarea sau primirea de persoane, prin constrângere/fraudă/abuz de putere/promisiune de beneficii, <b>în scopul exploatării</b>. Pedeapsă: <b>3–10 ani</b> + interzicerea unor drepturi.',
+          '<b>Forma agravată</b> (art. 210 alin. 2): victima e minoră → pedeapsă <b>5–12 ani</b>. Alte agravante: mai mulți fpătuitori împreună; victima e deosebit de vulnerabilă; moartea sau sinuciderea victimei → <b>7–15 ani</b>.',
+          '<b>Traficul de minori</b> (art. 211 NCP): acțiunile din art. 210 săvârșite față de un minor, indiferent dacă s-au folosit mijloacele de constrângere (consimțământul minorului e lipsit de efect juridic). Pedeapsă: <b>3–10 ani</b> (de bază); <b>5–15 ani</b> (formă agravată).',
+          '<b>Agresiunea sexuală</b> (art. 219 NCP): actul de penetrare sexuală (altul decât raportul sexual sau actul oral-anal din art. 218) sau orice altă activitate sexuală, prin constrângere/imposibilitate de exprimare a victimei. Pedeapsă: <b>2–7 ani</b>. Formă agravată (victima <16 ani): <b>3–10 ani</b>.',
+          '⚠️ <b>Distincție viol vs. agresiune sexuală</b>: violul (art. 218) = raport sexual sau act sexual oral/anal prin constrângere; agresiunea sexuală (art. 219) = orice altă activitate sexuală (ex: atingeri sexuale, penetrare cu obiecte). La ambele: lipsa consimțământului e elementul-cheie; victima <16 ani → consimțământul e irelevant.',
+          '<b>Hărțuirea sexuală</b> (art. 223 NCP): promisiunea de beneficii sau amenințarea cu consecințe negative, pentru a obține favori sexuale. ≠ agresiunea sexuală: nu presupune contact fizic. Pedeapsă: amendă sau max <b>2 ani</b>.'
+        ]
       }
     ],
-    grila:'Omor vs. loviri cauzatoare de moarte: intenție față de deces. Premeditare ≠ praeterintenție (nu coexistă). Prag vătămare corporală: <b>90 zile îngrijiri medicale</b>. Lovire simplă: plângere prealabilă; vătămare corporală: din oficiu. Amenințare, hărțuire: plângere prealabilă. Viol: inclusiv prin imposibilitate de exprimare. Eutanasia = infracțiune (art. 190). Violența în familie: maximul se majorează cu <b>½</b>; lovire față de un membre de familie → urmărire <b>din oficiu</b>. Șantaj ≠ amenințare: la șantaj există scopul obținerii unui <b>folos injust</b>.'
+    grila:'Omor vs. loviri cauzatoare de moarte: intenție față de deces. Premeditare ≠ praeterintenție (nu coexistă). Prag vătămare corporală: <b>90 zile îngrijiri medicale</b>. Lovire simplă: plângere prealabilă; vătămare corporală: din oficiu. Amenințare, hărțuire: plângere prealabilă. Viol: inclusiv prin imposibilitate de exprimare. Eutanasia = infracțiune (art. 190). Violența în familie: maximul se majorează cu <b>½</b>; lovire față de un membre de familie → urmărire <b>din oficiu</b>. Șantaj ≠ amenințare: la șantaj există scopul obținerii unui <b>folos injust</b>. Trafic de persoane: <b>3–10 ani</b>; minor → <b>5–12 ani</b>; scop = exploatare. Agresiune sexuală ≠ viol: agresiune = orice activitate sexuală non-penetrare vaginală/orală/anală prin constrângere.'
   },
 
   {
@@ -1036,9 +1240,18 @@ var FISE_DATA = [
           '<b>Uzul de fals</b> (art. 323): folosirea unui înscris oficial fals de <b>o altă persoană</b> decât autorul. Autorul care folosește el însuși falsul oficial → uzul e absorbit în fals; o altă persoană care folosește → răspunde pentru uz de fals.',
           '<b>Falsul în declarații</b> (art. 326): declararea mincinoasă în fața unui organ de stat, cu scopul de a produce consecințe juridice. ⚠️ Subiect activ: orice persoană (nu trebuie să fie funcționar). <b>Falsul informatic</b> (art. 325): introducerea/modificarea/ștergerea de date informatice fără drept, cu consecință juridică = asimilat falsului în înscrisuri.'
         ]
+      },
+      { icon:'💻', title:'Frauda informatică și înșelăciunea agravată (art. 249, 244 alin. 2 NCP)',
+        items:[
+          '<b>Frauda informatică</b> (art. 249 NCP): introducerea, modificarea sau ștergerea de date informatice, restricționarea accesului la date informatice, sau perturbarea funcționării unui sistem informatic, <b>cu intenția de a obține un beneficiu material</b> pentru sine sau pentru altul. Pedeapsă: <b>2–7 ani</b>.',
+          '⚠️ <b>Distincție</b>: frauda informatică (art. 249) = modificare de date informatice + scop patrimonial; vs. accesul neautorizat la sisteme informatice (art. 360 NCP) = simpla accesare fără drept, fără scop patrimonial obligatoriu. Un hacker care modifică solduri bancare pentru profit → art. 249; cel care accesează fără să modifice → art. 360.',
+          '<b>Înșelăciunea în convenții</b> (art. 244 alin. 2 NCP — formă agravată): persoana care, cu ocazia încheierii sau executării unui contract, induce în eroare cealaltă parte cu privire la calitățile, cantitatea sau prețul contraprestației, cauzând un prejudiciu. Pedeapsă: <b>1–5 ani</b> (spre deosebire de înșelăciunea simplă — amendă sau max. 3 ani).',
+          '<b>Condiția prejudiciului</b>: la înșelăciune, prejudiciul cert e necesar pentru consumarea infracțiunii. Simpla inducere în eroare fără prejudiciu = tentativă de înșelăciune sau faptă contravențională.',
+          '⚠️ <b>Concurs între frauda informatică și fals informatic</b> (art. 325 NCP): dacă aceeași persoană modifică date informatice (art. 325 fals informatic) cu scop de a obține un avantaj patrimonial (art. 249 fraudă) → concurs ideal de infracțiuni (o singură acțiune realizează mai multe infracțiuni).'
+        ]
       }
     ],
-    grila:'Furt ≠ abuz de încredere: criteriul = <b>cum a intrat în posesie</b> (fără consimțământ / cu consimțământ). Tâlhăria: violența poate fi și <b>ulterioară</b> luării. Falsul material = alterare fizică; falsul intelectual = date false la întocmire (funcționar special). Uzul de fals: comis de <b>altcineva</b> decât autorul (autorul care folosește el însuși = uzul absorbit). Fals în înscrisuri private: fals + uz = o singură infracțiune.'
+    grila:'Furt ≠ abuz de încredere: criteriul = <b>cum a intrat în posesie</b> (fără consimțământ / cu consimțământ). Tâlhăria: violența poate fi și <b>ulterioară</b> luării. Falsul material = alterare fizică; falsul intelectual = date false la întocmire (funcționar special). Uzul de fals: comis de <b>altcineva</b> decât autorul (autorul care folosește el însuși = uzul absorbit). Fals în înscrisuri private: fals + uz = o singură infracțiune. Fraudă informatică (art. 249): modificare date + scop patrimonial; ≠ acces neautorizat (art. 360). Înșelăciune în convenții (formă agravată): la executare contract, cu prejudiciu cert.'
   },
 
   {
@@ -1079,9 +1292,19 @@ var FISE_DATA = [
           '<b>Abuzul în serviciu</b> (art. 297): subiect activ = <b>funcționar public</b>; îndeplinire defectuoasă a atribuțiilor proprii; <b>nu necesită foloase</b> (dacă există foloase obținute → devine luare de mită). Vinovăție: <b>intenție</b>.',
           '⚠️ <b>Regula-cheie</b>: luarea de mită = funcționarul + foloase + act propriu. Traficul = oricine + foloase + actul altuia. Abuzul = funcționarul + niciun folos + atribuții proprii neîndeplinite/defectuoase. Dacă funcționarul ia foloase ȘI acționează defectuos → luare de mită (absoarbe abuzul).'
         ]
+      },
+      { icon:'💰', title:'Spălarea banilor și evaziunea fiscală',
+        items:[
+          '<b>Spălarea banilor</b> (art. 49 Legea 129/2019, fostul art. 29 Legea 656/2002): (1) schimbarea sau transferul bunurilor provenite din infracțiuni predicat; (2) ascunderea sau disimularea naturii, originii, localizării bunurilor; (3) dobândirea, deținerea sau folosirea bunurilor, știind că provin din infracțiuni. Pedeapsă: <b>3–12 ani</b>.',
+          '<b>Infracțiunea predicat</b>: orice infracțiune care poate genera venituri (trafic de droguri, corupție, evaziune, fraudă etc.). ⚠️ <b>Nu se cere condamnarea</b> pentru infracțiunea predicat pentru a condamna pentru spălare de bani — e suficient să se dovedească că bunurile provin dintr-o activitate infracțională.',
+          '<b>Cauza de nepedepsire</b>: autorul spălării de bani poate fi chiar autorul infracțiunii predicat (auto-spălare). NCC nu exclude auto-spălarea — dacă autorul furtului spală banii rezultați → poate fi condamnat și pentru spălare.',
+          '<b>Evaziunea fiscală</b> (Legea 241/2005, art. 9): sustragerea de la plata obligațiilor fiscale prin: (1) ascunderea bunului sau a sursei impozabile; (2) documente false; (3) evidențe false sau duble. Pedeapsă: <b>2–8 ani</b> (forma de bază); dacă prejudiciul depășește <b>500.000 euro</b> → <b>7–15 ani</b>.',
+          '<b>Cauza de nepedepsire la evaziune</b> (art. 10 L. 241/2005): dacă în cursul urmăririi penale sau al judecății, până la primul termen de judecată, învinuitul/inculpatul acoperă <b>integral</b> prejudiciul cauzat → se aplică o pedeapsă redusă sau se poate dispune renunțarea la urmărire. ⚠️ Acoperirea parțială nu atrage nepedepsirea, ci poate fi circumstanță atenuantă.',
+          '<b>Distincție spălare vs. tăinuire</b>: tăinuirea (art. 270 NCP) = primirea/dobândirea de bunuri provenite dintr-o infracțiune, fără a le integra în circuit financiar legitim; spălarea de bani = acțiuni active de disimulare/integrare. Spălarea e mai gravă și presupune o activitate mai complexă de ascundere.'
+        ]
       }
     ],
-    grila:'Luare de mită = <b>funcționarul însuși</b> primește; trafic de influență = <b>oricine</b> pretinde că influențează funcționarul. Dare de mită sub constrângere → <b>nepedepsire</b>. Abuz în serviciu: numai prin nerespectarea <b>legii</b> (CCR 405/2016). Conflict de interese ≠ abuz: participare la decizie fără folos efectiv. Mărturie mincinoasă: retractare înainte de soluție → nepedepsire. Favorizare: soțul/rudele nu se pedepsesc. Tăinuire = bunuri; favorizare = persoana.'
+    grila:'Luare de mită = <b>funcționarul însuși</b> primește; trafic de influență = <b>oricine</b> pretinde că influențează funcționarul. Dare de mită sub constrângere → <b>nepedepsire</b>. Abuz în serviciu: numai prin nerespectarea <b>legii</b> (CCR 405/2016). Conflict de interese ≠ abuz: participare la decizie fără folos efectiv. Mărturie mincinoasă: retractare înainte de soluție → nepedepsire. Favorizare: soțul/rudele nu se pedepsesc. Tăinuire = bunuri; favorizare = persoana. Spălare bani: <b>3–12 ani</b>; nu cere condamnarea pentru infracțiunea predicat; auto-spălare posibilă. Evaziune fiscală: <b>2–8 ani</b>; acoperire integrală a prejudiciului → cauza de nepedepsire (primul termen de judecată).'
   },
 
   {
@@ -1106,9 +1329,19 @@ var FISE_DATA = [
           '<b>Vătămare corporală / lovire și alte violențe</b>: pragul = 90 zile îngrijiri medicale. Sub 90 zile = lovire (plângere prealabilă). Peste 90 zile sau consecință gravă = vătămare corporală (din oficiu). Prag stabilit de medic legist.',
           '<b>Tăinuire / favorizare</b>: tăinuire = <i>bunuri</i> provenite din infracțiune. Favorizare = <i>persoana</i> infractorului e ajutată să se sustragă. Soțul/rudele apropiate ale favorizatorului → <b>nepedepsire</b>; nu și la tăinuire.'
         ]
+      },
+      { icon:'🖥️', title:'Infracțiunile informatice (art. 360–366 NCP)',
+        items:[
+          '<b>Accesul ilegal la un sistem informatic</b> (art. 360 NCP): accesul, fără drept, la un sistem informatic. Forma agravată: dacă e necesară depășirea unor măsuri de securitate → pedeapsă <b>3–12 ani</b>. Forma simplă (fără depășirea securității): <b>1–5 ani</b>.',
+          '<b>Interceptarea ilegală a unei transmisii informatice</b> (art. 361 NCP): interceptarea fără drept a transmisiilor de date informatice nedestinat publicului. Pedeapsă: <b>2–7 ani</b>.',
+          '<b>Alterarea integrității datelor informatice</b> (art. 362 NCP): modificarea, ștergerea sau deteriorarea de date informatice, accesarea sistematică, blocarea, copierea sau transferul. Pedeapsă: <b>2–7 ani</b>. ⚠️ Diferit de frauda informatică (art. 249): art. 362 nu cere scop patrimonial.',
+          '<b>Perturbarea funcționării sistemelor informatice</b> (art. 363 NCP): transmiterea de date informatice în scopul de a împiedica funcționarea (ex: atacuri DDoS). Pedeapsă: <b>2–7 ani</b>.',
+          '<b>Operațiunile ilegale cu dispozitive sau programe informatice</b> (art. 365 NCP): producerea, comercializarea, importul/exportul de software sau dispozitive concepute pentru săvârșirea infracțiunilor informatice (ex: malware, exploit kits). Pedeapsă: <b>1–5 ani</b>.',
+          '⚠️ <b>Distincție sistematică</b>: art. 360 = acces neautorizat; art. 361 = interceptare; art. 362 = alterare date; art. 363 = perturbarea funcționării; art. 364 = falsul informatic (cu consecință juridică); art. 365 = instrumente de atac. Infracțiunile pot fi în concurs. Baza legală = Legea 161/2003 + transpunere Directiva NIS.'
+        ]
       }
     ],
-    grila:'Conducere sub alcool: ≥ <b>0,80 g/l sânge</b>; consumată fără accident. Dacă accident → concurs cu ucidere/vătămare din culpă. Omor = intenție față de deces; loviri cauzatoare de moarte = praeterintenție. Vătămare corporală: prag <b>90 zile</b>. Luare de mită = funcționar + foloase pentru act propriu; trafic de influență = oricine + influență asupra funcționarului. Tăinuire = bunuri; favorizare = persoana.'
+    grila:'Conducere sub alcool: ≥ <b>0,80 g/l sânge</b>; consumată fără accident. Dacă accident → concurs cu ucidere/vătămare din culpă. Omor = intenție față de deces; loviri cauzatoare de moarte = praeterintenție. Vătămare corporală: prag <b>90 zile</b>. Luare de mită = funcționar + foloase pentru act propriu; trafic de influență = oricine + influență asupra funcționarului. Tăinuire = bunuri; favorizare = persoana. Infracțiuni informatice art. 360–366: acces (<b>1–5</b> / <b>3–12</b> cu securitate depășită), interceptare (<b>2–7</b>), alterare date (<b>2–7</b>), perturbare (<b>2–7</b>). Fraudă informatică (art. 249) ≠ alterare date (art. 362): la fraudă se cere scop patrimonial.'
   },
 
   // ══ PROCEDURĂ CIVILĂ ══════════════════════════════════════════════════════════
@@ -1166,7 +1399,26 @@ var FISE_DATA = [
         ]
       }
     ],
-    grila:'Competența teritorială de drept comun = domiciliul <b>pârâtului</b>. Apel: <b>30 de zile</b> de la <i>comunicare</i>. Recursul = numai în drept. Autoritatea de lucru judecat: tripla identitate obiect + cauză + <b>părți</b>. Excepție peremptoriu → stinge acțiunea. Litispendență = 2 instanțe, același litigiu → dosarul mai nou la instanța mai veche. Cerere reconvențională: depusă cu întâmpinarea. Necompetență absolută (materială/exclusivă): oricând, din oficiu. Necompetență relativă (teritorială): numai pârâtul prin întâmpinare. Ordonanță președințială: urgentă, provizorie, fără prejudecarea fondului; apel în <b>5 zile</b>.'
+      { icon:'🪑', title:'Judecata în lipsă și procedura contumaciei (art. 223–225 NCPC)',
+        items:[
+          '<b>Judecata în lipsă</b>: dacă una din părți nu se prezintă la termen, judecata continuă în lipsa ei — NCPC nu mai reglementează contumacia clasică din vechiul CPC. Pârâtul care nu depune întâmpinare și nu se prezintă → <b>decăzut din dreptul de a propune probe</b>, dar poate invoca excepții peremptorii.',
+          '<b>Cererea de judecată în lipsă</b>: reclamantul poate cere judecarea cauzei chiar dacă nu se va prezenta (art. 223 alin. 2 NCPC). Dacă reclamantul nu se prezintă și nu cere judecata în lipsă → instanța poate <b>suspenda judecata</b> (art. 411 NCPC).',
+          '<b>Suspendarea judecății</b> (art. 411 NCPC): (1) ambele părți lipsesc și nu au cerut judecata în lipsă; (2) reclamantul lipsește, pârâtul cere suspendarea, și reclamantul nu a cerut judecata în lipsă. Dosarul se perimă după <b>6 luni</b> de la suspendare.',
+          '<b>Perimarea instanței</b> (art. 416 NCPC): dacă niciuna din părți nu stăruie în judecată timp de <b>6 luni</b> → perimarea cererii de chemare în judecată. Stinge cererea (nu dreptul), poate fi repusă pe rol; ⚠️ perimarea acțiunii = <b>de drept</b>, constatată de instanță la cerere sau din oficiu.',
+          '<b>Citarea</b>: condiție fundamentală a judecății — nulitate absolută dacă o parte nu a fost citată legal (motiv de contestație în anulare). Citarea prin publicitate = excepțională (adresă necunoscută, public). ⚠️ Prima zi de înfățișare = primul termen la care procedura de citare e legal îndeplinită pentru toate părțile.'
+        ]
+      },
+      { icon:'💰', title:'Cheltuielile de judecată (art. 451–455 NCPC)',
+        items:[
+          '<b>Componente</b>: taxe judiciare de timbru, onorarii avocat, experți, martori, cheltuieli de deplasare, orice cheltuieli necesare și rezonabile ale procesului. Suportate de <b>partea care cade în pretenții</b> (culpa procesuală).',
+          '<b>Principiul</b>: cel care pierde plătește cheltuielile de judecată ale câștigătorului (culpa procesuală = <i>qui perd, paie</i>). Reclamantul câștigă → pârâtul plătește; admitere parțială → cheltuielile se compensează proporțional.',
+          '<b>Reducerea cheltuielilor</b> (art. 451 alin. 2): instanța poate reduce onorariul avocaților dacă e vădit disproporționat față de valoarea sau complexitatea cauzei, cu motivare; onorarul redus rămâne în sarcina celui care l-a plătit.',
+          '<b>Compensarea</b>: la admitere parțială sau la culpă procesuală mixtă — instanța poate compensa total sau parțial cheltuielile de judecată (art. 453 alin. 2 NCPC).',
+          '<b>Termenul de cerere</b>: cheltuielile se cer <b>la instanța care judecă fondul</b>, înainte de închiderea dezbaterilor; ulterior, pe cale separată (acțiune în pretenții) dacă nu s-au cerut în termen. Taxa de timbru = cheltuială judiciară recuperabilă de la cel care pierde.'
+        ]
+      }
+    ],
+    grila:'Competența teritorială de drept comun = domiciliul <b>pârâtului</b>. Apel: <b>30 de zile</b> de la <i>comunicare</i>. Recursul = numai în drept. Autoritatea de lucru judecat: tripla identitate obiect + cauză + <b>părți</b>. Excepție peremptoriu → stinge acțiunea. Litispendență = 2 instanțe, același litigiu → dosarul mai nou la instanța mai veche. Cerere reconvențională: depusă cu întâmpinarea. Necompetență absolută (materială/exclusivă): oricând, din oficiu. Necompetență relativă (teritorială): numai pârâtul prin întâmpinare. Ordonanță președințială: urgentă, provizorie, fără prejudecarea fondului; apel în <b>5 zile</b>. Judecata în lipsă: pârâtul fără întâmpinare = decăzut din probe. Perimarea = <b>6 luni</b> de nediligență → stinge cererea nu dreptul. Cheltuieli: cel care pierde plătește; reducere onorar avocat posibilă.'
   },
 
   {
@@ -1209,7 +1461,18 @@ var FISE_DATA = [
         ]
       }
     ],
-    grila:'Contestație la executare = <b>15 zile</b> de la cunoaștere; judecată de <b>instanța de executare</b>. Nu suspendă automat. Poprire salariu: <b>1/3</b> (o creanță) / <b>1/2</b> (mai multe). Perimarea (6 luni) stinge dosarul, nu creanța. Ordonanță de plată: creanță certă/lichidă/exigibilă, termen 45 de zile. Cheltuielile de executare: în sarcina debitorului.'
+      { icon:'🔨', title:'Executarea obligațiilor de a face și insolvenței (art. 905–910 NCPC + Legea 85/2014)',
+        items:[
+          '<b>Obligațiile de a face intuitu personae</b> (art. 905 NCPC): dacă debitorul refuză să execute o obligație de a face (ex. predarea unui lucru determinat) și numai el o poate executa, creditorul poate cere instanței obligarea debitorului la <b>penalități</b> de <b>100–1.000 lei/zi</b> de întârziere (sau mai mari dacă prejudiciul e mai mare).',
+          '<b>Penalitățile (astreinte)</b> (art. 906 NCPC): se aplică pentru orice obligație de a face ce nu poate fi executată silit direct; instanța poate majora sau reduce penalitățile; se plătesc creditorului, nu statului. ⚠️ Penalitățile curg până la executarea obligației sau până la pronunțarea hotărârii de despăgubire.',
+          '<b>Executarea obligațiilor de a nu face</b> (art. 904 NCPC): dacă debitorul a săvârșit o faptă interzisă — creditorul poate cere instanței să autorizeze el însuși desființarea lucrărilor pe cheltuiala debitorului; penalități pentru fiecare zi de refuz ulterior.',
+          '<b>Procedura insolvenței</b> (Legea 85/2014): aplicabilă profesioniștilor (comercianți, societăți, PFA) cu <b>insolvabilitate</b> — nu pot plăti datorii scadente. Pragul minim: <b>40.000 lei</b> creanță neachitată la scadență. Instanța competentă: <b>tribunalul</b> specializat de la sediul debitorului.',
+          '<b>Proceduri în insolvență</b>: (1) <b>reorganizare judiciară</b> — plan aprobat de creditori, debitorul continuă activitatea sub supraveghere; (2) <b>faliment</b> — lichidarea activelor și distribuirea sumelor creditorilor conform ordinii de preferință (garantați → salariali → bugetari → chirografari). Administratorul/lichidatorul judiciar = practician în insolvență.',
+          '<b>Efectele deschiderii procedurii</b>: suspendarea urmăririi silite individuale, nulitatea plăților preferențiale din ultimele 6 luni (acte de transfer fără valoare echivalentă), administratorul poate contesta actele frauduloase. Creanțele născute după deschidere = creanțe curente, prioritare.'
+        ]
+      }
+    ],
+    grila:'Contestație la executare = <b>15 zile</b> de la cunoaștere; judecată de <b>instanța de executare</b>. Nu suspendă automat. Poprire salariu: <b>1/3</b> (o creanță) / <b>1/2</b> (mai multe). Perimarea (6 luni) stinge dosarul, nu creanța. Ordonanță de plată: creanță certă/lichidă/exigibilă, termen 45 de zile. Cheltuielile de executare: în sarcina debitorului. Obligații de a face: penalități <b>100–1.000 lei/zi</b> (astreinte). Insolvență: prag <b>40.000 lei</b>, tribunal; reorganizare sau faliment.'
   },
 
   // ══ PROCEDURĂ PENALĂ ══════════════════════════════════════════════════════════
@@ -1266,7 +1529,26 @@ var FISE_DATA = [
         ]
       }
     ],
-    grila:'Reținere = max. <b>24h</b>, fără mandat. Arest preventiv în urmărire: max. <b>180 de zile</b> total (câte 30). Apel penal: <b>10 zile</b> de la comunicarea minutei (nu 30!). Sarcina probei = <b>organele judiciare</b>; in dubio pro reo = dubiul → achitare. Suspect ≠ inculpat: acțiunea penală pusă în mișcare → inculpat. Acordul de recunoaștere: instanța omologhează sau respinge în bloc. Procedura simplificată (recunoaștere) → 1/3 reducere. Reabilitare de drept (≤2 ani sau amendă/suspendare): automată după <b>3 ani</b>. Reabilitare judecătorească: la cerere, cu bună conduită + achitarea cheltuielilor; la detenție pe viață — <b>nu există</b>.'
+      { icon:'🔄', title:'Căile extraordinare de atac penale (art. 426–470 CPP)',
+        items:[
+          '<b>Contestația în anulare</b> (art. 426 CPP): împotriva hotărârilor definitive ale instanței de apel. Motive limitative: (1) instanța nu a fost legal constituită; (2) inculpatul a fost judecat în lipsă deși nu a fost legal citat; (3) o cauză de încetare a procesului penal nu a fost constatată în recurs în casație; (4) inculpatul condamnat definitiv a mai fost judecat definitiv pentru aceeași faptă. Termen: <b>30 de zile</b> de la comunicare / de la cunoaștere.',
+          '<b>Revizuirea</b> (art. 452 CPP): cale extraordinară de retractare, bazată pe <b>fapte/împrejurări noi</b> sau <b>probe noi</b> necunoscute instanței la soluționare. Motive: înscrisuri false, mărturii false dovedite prin hotărâre penală, contradicție ireconciliabilă, CEDO a constatat o încălcare. Poate fi cerută <b>oricând</b> (nu e termen extinctiv pentru condamnat). Poate duce la achitare sau la noi cercetări.',
+          '<b>Recursul în casație</b> (art. 433 CPP): cale extraordinară de atac în drept, la Înalta Curte de Casație și Justiție. Motive limitativ prevăzute (art. 438): inculpatul condamnat pentru o faptă neprevăzută de legea penală, pedeapsă mai grea decât maximul, aplicarea greșită a legii de dezincriminare etc. Termen: <b>30 de zile</b> de la comunicarea deciziei de apel. ⚠️ Nu se readministrează probe.',
+          '<b>Recursul în interesul legii</b> (art. 471 CPP): nu e o cale de atac propriu-zisă — exercitat de Procurorul General sau de Colegiul de conducere al ÎCCJ pentru dezlegarea unor chestiuni de drept divergente, fără efect retroactiv asupra cauzei soluționate; obligatoriu pentru instanțe de la data publicării în Monitorul Oficial.',
+          '⚠️ <b>Distincție cheie</b>: contestația în anulare = motive de procedură (necitare, constituire nelegală); revizuirea = fapte/probe noi; recursul în casație = nelegalitate în drept; recursul în interesul legii = unificare jurisprudență, fără efect concret în dosar.'
+        ]
+      },
+      { icon:'🔬', title:'Probele și excluderea lor (art. 97–103, 102 CPP)',
+        items:[
+          '<b>Mijloacele de probă</b> (art. 97 CPP): declarații (suspect, inculpat, persoana vătămată, martor), înscrisuri, rapoarte de expertiză, procese-verbale, fotografii, înregistrări audio-video, alte mijloace tehnice.',
+          '<b>Loialitatea probei</b> (art. 101 CPP): este interzisă obținerea probelor prin tortură, violență, amenințare, promisiuni ilegale, provocare sau prin orice alte mijloace de constrângere. Probele obținute astfel = <b>nule de drept</b>; nu pot fi folosite în proces.',
+          '<b>Excluderea probelor</b> (art. 102 CPP): probele obținute în mod nelegal — prin încălcarea dispoziților legale — nu pot fi folosite în procesul penal. ⚠️ Excluderea nu e automată pentru orice neregularitate — doar pentru încălcarea drepturilor fundamentale sau a normelor esențiale de procedură; instanța apreciază.',
+          '<b>Teoria fructului pomului otrăvit</b>: probele derivate dintr-o probă exclusă sunt și ele excluse dacă nu ar fi existat fără proba nelegală — cu excepția că ar fi putut fi descoperite oricum, independent.',
+          '<b>Aprecierea probelor</b> (art. 103 CPP): judecătorul le apreciază <b>liber</b>, conform convingerii sale intime, bazat pe ansamblul probelor administrate. ⚠️ Nicio probă nu are valoare prestabilită (chiar și mărturisirea poate fi contestată). Condamnarea se pronunță <b>dincolo de orice dubiu rezonabil</b>.'
+        ]
+      }
+    ],
+    grila:'Reținere = max. <b>24h</b>, fără mandat. Arest preventiv în urmărire: max. <b>180 de zile</b> total (câte 30). Apel penal: <b>10 zile</b> de la comunicarea minutei (nu 30!). Sarcina probei = <b>organele judiciare</b>; in dubio pro reo = dubiul → achitare. Suspect ≠ inculpat: acțiunea penală pusă în mișcare → inculpat. Acordul de recunoaștere: instanța omologhează sau respinge în bloc. Procedura simplificată (recunoaștere) → 1/3 reducere. Reabilitare de drept (≤2 ani sau amendă/suspendare): automată după <b>3 ani</b>. Reabilitare judecătorească: la cerere, cu bună conduită + achitarea cheltuielilor; la detenție pe viață — <b>nu există</b>. Contestație în anulare: procedură (necitare/constituire nelegală). Revizuire: fapte/probe noi, oricând. Recurs în casație: în drept, <b>30 de zile</b>. Excluderea probelor (art. 102): probe nelegale = inutilizabile.'
   },
 
   // ══ SINTEZĂ FINALĂ ══════════════════════════════════════════════════════════════
@@ -1317,7 +1599,20 @@ var FISE_DATA = [
         ]
       }
     ],
-    grila:'Apel civil: <b>30 zile</b> de la comunicare. Apel penal: <b>10 zile</b> de la minută. Contestație executare: <b>15 zile</b>. Opțiune succesorală: <b>1 an</b>. Acțiune pauliană: <b>1 an</b>. Leziune: <b>1 an</b> (excepție de la regula 3 ani). Perimarea executare: <b>6 luni</b>. Arest preventiv urmărire: max <b>180 zile</b>. NCA: imprescriptibilă. NR: 3 ani (leziune 1 an). Inopozabilitate ≠ nulitate.'
+      { icon:'📌', title:'Termene suplimentare frecvente în grile',
+        items:[
+          '<b>Preemțiunea NCC</b> (art. 1735): vânzătorul notifică intenția → preemptorul are <b>10 zile</b> (bun mobil) sau <b>30 de zile</b> (bun imobil) să exercite dreptul. Preemțiunea Legea 17/2014 (teren agricol extravilan): <b>30 de zile</b> de la notificare.',
+          '<b>Denunțarea locațiunii</b>: locațiune cu termen nedeterminat → denunțare unilaterală cu preaviz; locuință urbană = <b>60 de zile</b>; bunuri mobile = <b>15 zile</b>; spații agricole = <b>6 luni</b>.',
+          '<b>Reabilitarea de drept</b> (art. 165 NCP): <b>3 ani</b> de la executarea sau stingerea pedepsei (pentru pedeapsă ≤ 2 ani, amendă sau suspendare sub supraveghere).',
+          '<b>Reabilitarea judecătorească</b> — termene: pedeapsă 2–5 ani → <b>4 ani + durata pedepsei</b>; pedeapsă 5–10 ani → <b>5 ani + durata pedepsei</b>; pedeapsă >10 ani → <b>7 ani + durata pedepsei</b> (art. 166 NCP). Calculul se face de la executarea pedepsei.',
+          '<b>Prescripția răspunderii penale</b> (art. 154 NCP): pedeapsă ≤1 an → <b>3 ani</b>; ≤5 ani → <b>5 ani</b>; ≤10 ani → <b>8 ani</b>; ≤15 ani → <b>10 ani</b>; >15 ani sau dețen. pe viață → <b>15 ani</b>. Termenul se calculează de la data săvârșirii faptei.',
+          '<b>Prescripția executării pedepsei penale</b> (art. 162 NCP): pedeapsa amenzii → <b>3 ani</b>; pedeapsa închisorii ≤5 ani → <b>5 ani</b>; ≤15 ani → <b>10 ani</b>; >15 ani sau detențiune → <b>20 ani</b>. ⚠️ Prescripția executării ≠ prescripția răspunderii penale.',
+          '<b>Termenul de garanție contra evicțiunii</b>: vânzare de drept comun — <b>3 ani</b> prescripție. Garanție contra viciilor ascunse: imobile = <b>3 ani</b> de la descoperire (max 10 ani de la predare); mobile = <b>3 ani</b> de la descoperire (max 3 ani de la predare).',
+          '<b>Acceptarea ofertei</b> (art. 1193 NCC): <b>în termenul stabilit</b> de ofertant; dacă nu e termen — <b>termen rezonabil</b> (fără termen, prin poștă: 7 zile uzanță). Oferta retrasă înainte de termen → ofertantul răspunde pentru prejudiciu.'
+        ]
+      }
+    ],
+    grila:'Apel civil: <b>30 zile</b> de la comunicare. Apel penal: <b>10 zile</b> de la minută. Contestație executare: <b>15 zile</b>. Opțiune succesorală: <b>1 an</b>. Acțiune pauliană: <b>1 an</b>. Leziune: <b>1 an</b> (excepție de la regula 3 ani). Perimarea executare: <b>6 luni</b>. Arest preventiv urmărire: max <b>180 zile</b>. NCA: imprescriptibilă. NR: 3 ani (leziune 1 an). Inopozabilitate ≠ nulitate. Preemțiune imobil NCC: <b>30 zile</b>; Legea 17/2014: <b>30 zile</b>. Reabilitare de drept: <b>3 ani</b>. Reabilitare judecătorească: 4/5/7 ani + durata pedepsei. Prescripție penală: 3–15 ani după maximul pedepsei.'
   }
 ];
 
