@@ -782,6 +782,15 @@ var FISE_DATA = [
           '<b>Opozabilitate față de dobânditorul bunului</b> (<i>emptio non tollit locatum</i>): noul proprietar este ținut de locațiune dacă aceasta e înregistrată (imobile: CF) sau dacă a cunoscut-o. Locatarul cu dată certă anterioară înstrăinării are drept de preferință.'
         ]
       },
+      { icon:'🌱', title:'Arendarea (art. 1836–1850 NCC)',
+        items:[
+          '<b>Definiție</b>: locator al unui bun agricol (teren, animale, utilaje) transmite arendașului dreptul de <b>folosință temporară</b>, contra <b>arendei</b> (bani sau produse naturale). Tip special de locațiune, supus normelor specifice din art. 1836–1850 NCC și Legii 17/2014.',
+          '<b>Formă</b>: act scris, înregistrat la consiliul local al localității unde se află bunul arendat, sub sancțiunea nulității absolute. <b>Durata minimă</b>: lege nu impune un minim; dacă nu e stipulată → 7 ani (durata unui asolament). Dacă durată mai mică de 7 ani → poate fi prelungită prin acordul părților.',
+          '<b>Subarendarea</b> e interzisă (art. 1847 NCC) — deosebire esențială față de locațiunea obișnuită unde e permisă dacă nu e exclusă expres. Cesiunea arendării e de asemenea interzisă.',
+          '<b>Dreptul de preemțiune al arendașului</b> (art. 1849 NCC + Legea 17/2014): la vânzarea terenului arendat, arendașul are drept de preemțiune (rândul 2 din ordinea Legii 17/2014). ⚠️ Trebuie să lucreze terenul de cel puțin 1 an.',
+          '<b>Arenda</b>: stabilită în bani sau în natură; dacă nu se poate plăti arenda în natură din cauza forței majore → arendașul plătește echivalentul în bani. Arenda în produse → se impozitează ca venit agricol.'
+        ]
+      },
       { icon:'🤝', title:'Mandatul (art. 2009–2071 NCC)',
         items:[
           '<b>Definiție</b>: mandatarul se obligă să încheie <b>acte juridice</b> pe seama și în <b>numele mandantului</b> (reprezentare directă). ≠ Antrepriză (acte materiale).',
@@ -802,29 +811,20 @@ var FISE_DATA = [
           '<b>Denunțarea unilaterală de către client</b> (art. 1869 NCC): clientul poate rezilia oricând, cu preaviz, plătind antreprenorului cheltuielile suportate + beneficiul nerealizat + remunerația cuvenită. Antreprenorul nu poate rezilia unilateral (decât dacă clientul nu cooperează).'
         ]
       },
-      { icon:'🔁', title:'Schemă comparativă: locațiune, comodat, mandat, antrepriză',
-        items:[
-          '<b>Locațiune</b>: oneroasă, translativ de folosință, locatarul suportă întreținerea; locatorul suportă capital. Sinalagmatic, cu executare succesivă.',
-          '<b>Comodat</b>: esențialmente gratuit (dacă e cu plată = locațiune), real (perfectat prin remitere), proprietatea rămâne la comodant; comodatarul nu poate subînchiria.',
-          '<b>Mandat</b>: acte juridice în numele mandantului; gratuit (PF) sau oneros (profesioniști); revocabil ad nutum (cu excepția mandatului în interesul mandatarului).',
-          '<b>Antrepriză</b>: acte materiale, antreprenorul e independent (nu prepus), prețul e de regulă forfetar; clientul poate denunța oricând (cu despăgubire).'
-        ]
-      },
-      { icon:'🌱', title:'Arendarea (art. 1836–1850 NCC)',
-        items:[
-          '<b>Definiție</b>: locator al unui bun agricol (teren, animale, utilaje) transmite arendașului dreptul de <b>folosință temporară</b>, contra <b>arendei</b> (bani sau produse naturale). Tip special de locațiune, supus normelor specifice din art. 1836–1850 NCC și Legii 17/2014.',
-          '<b>Formă</b>: act scris, înregistrat la consiliul local al localității unde se află bunul arendat, sub sancțiunea nulității absolute. <b>Durata minimă</b>: lege nu impune un minim; dacă nu e stipulată → 7 ani (durata unui asolament). Dacă durată mai mică de 7 ani → poate fi prelungită prin acordul părților.',
-          '<b>Subarendarea</b> e interzisă (art. 1847 NCC) — deosebire esențială față de locațiunea obișnuită unde e permisă dacă nu e exclusă expres. Cesiunea arendării e de asemenea interzisă.',
-          '<b>Dreptul de preemțiune al arendașului</b> (art. 1849 NCC + Legea 17/2014): la vânzarea terenului arendat, arendașul are drept de preemțiune (rândul 2 din ordinea Legii 17/2014). ⚠️ Trebuie să lucreze terenul de cel puțin 1 an.',
-          '<b>Arenda</b>: stabilită în bani sau în natură; dacă nu se poate plăti arenda în natură din cauza forței majore → arendașul plătește echivalentul în bani. Arenda în produse → se impozitează ca venit agricol.'
-        ]
-      },
       { icon:'🏗️', title:'Garanția contra viciilor în antrepriză și construcții (Legea 10/1995)',
         items:[
           '<b>Garanția de bună execuție</b>: antreprenorul răspunde față de client pentru viciile lucrării. Termenele de garanție legale: <b>2 ani</b> de la recepție (pentru vicii ascunse la construcții curente); <b>10 ani</b> pentru vicii structurale majore la construcții (Legea 10/1995 privind calitatea în construcții).',
           '<b>Obligația de garanție decenalã (10 ani)</b>: proiectantul, constructorul și dirigintele de șantier răspund solidar pentru viciile structurale care amenință soliditatea sau siguranța construcției timp de 10 ani de la recepția finală. ⚠️ E o garanție legală, nu convențională — nu poate fi limitată prin contract.',
           '<b>Răspunderea pe durată nelimitată</b>: dacă viciu a fost cauzat cu intenție sau prin neglijență gravă, termenul de 10 ani nu limitează răspunderea — prescripția de drept comun (3 ani de la cunoașterea viciului) se aplică.',
           '<b>Recepția</b>: recepția la terminarea lucrărilor (provizorie) și recepția finală (după expirarea perioadei de garanție). Viciile aparente trebuie semnalate la recepție sub sancțiunea decăderii. Viciile ascunse: pot fi invocate oricând în termenul de garanție, chiar dacă recepția a avut loc.'
+        ]
+      },
+      { icon:'🔁', title:'Schemă comparativă: locațiune, comodat, mandat, antrepriză',
+        items:[
+          '<b>Locațiune</b>: oneroasă, translativ de folosință, locatarul suportă întreținerea; locatorul suportă capital. Sinalagmatic, cu executare succesivă.',
+          '<b>Comodat</b>: esențialmente gratuit (dacă e cu plată = locațiune), real (perfectat prin remitere), proprietatea rămâne la comodant; comodatarul nu poate subînchiria.',
+          '<b>Mandat</b>: acte juridice în numele mandantului; gratuit (PF) sau oneros (profesioniști); revocabil ad nutum (cu excepția mandatului în interesul mandatarului).',
+          '<b>Antrepriză</b>: acte materiale, antreprenorul e independent (nu prepus), prețul e de regulă forfetar; clientul poate denunța oricând (cu despăgubire).'
         ]
       }
     ],
@@ -853,6 +853,17 @@ var FISE_DATA = [
           'Comodantul poate cere restituirea anticipată numai pentru <b>nevoie urgentă și neprevăzută</b> (dacă termenul e stipulat). Fără termen → poate cere oricând, cu preaviz rezonabil.'
         ]
       },
+      { icon:'📦', title:'Contractul de depozit (art. 2103–2143 NCC)',
+        items:[
+          '<b>Definiție</b>: depunătorul remite depozitarului un <b>bun mobil</b> spre <b>păstrare</b>, cu obligația de a-l restitui în natură la cerere. ⚠️ Scopul e custodia (nu folosința ca la comodat, și nici transferul proprietății ca la mutuum).',
+          '<b>Caractere</b>: <b>real</b> (se perfectează prin remiterea bunului); <b>unilateral</b> (numai depozitarul are obligații după remitere); de regulă <b>gratuit</b> (prezumție la persoane fizice); oneros la profesioniști (hoteluri, case de valori).',
+          '<b>Depozitarul NU poate folosi bunul</b> (art. 2109 NCC) — spre deosebire de comodatar (care primește bunul spre folosință). Dacă depozitarul folosește bunul fără drept → răspunde față de depunător pentru orice pierdere, inclusiv caz fortuit.',
+          '<b>Diligența depozitarului</b>: la depozit gratuit → diligența unui bun proprietar pentru propriile bunuri (standard variabil, mai puțin sever); la depozit oneros → diligența unui profesionist (standard obiectiv). ⚠️ Răspunde și pentru culpa ușoară la depozit oneros.',
+          '<b>Depozitul neregulat</b> (art. 2115 NCC): depunerea unor bunuri fungibile (bani, metale prețioase) cu dreptul depozitarului de a le consuma, restituind bunuri de același gen, cantitate și calitate. Se aseamănă cu mutuum — depozitarul devine proprietar al bunurilor fungibile. Sancțiune pentru nerestituire: acțiune în restituire + dobânzi.',
+          '<b>Depozitul necesar</b> (art. 2124 NCC): impus de împrejurări extraordinare (incendiu, cutremur, naufragiu) fără posibilitatea alegerii depozitarului. Regulile se aplică, dar proba e mai liberă (inclusiv martori și prezumții indiferent de valoare).',
+          '<b>Restituirea</b>: la cererea depunătorului, oricând, chiar dacă s-a stipulat un termen (termenul e în interesul depunătorului). Dacă depozitarul are o creanță față de depunător legată de depozit, poate exercita dreptul de retenție.'
+        ]
+      },
       { icon:'🛡️', title:'Fidejusiunea — cauțiunea (art. 2280–2320 NCC)',
         items:[
           '<b>Definiție</b>: fidejusorul se obligă față de creditor să execute obligația debitorului dacă acesta nu o execută. <b>Legală</b>: impusă de lege (ex: obligația moștenitorului de a da garanție creditorului); <b>judiciară</b>: ordonată de instanță; <b>convențională</b>: voluntară.',
@@ -871,20 +882,9 @@ var FISE_DATA = [
           '<b>Cazuri de nulitate</b>: tranzacție asupra unui drept inexistent; actul de a cărui existență depinde a fost ulterior anulat sau declarat fals; tranzacție bazată pe documente false.',
           '<b>Tranzacția judiciară</b>: consemnată în procesul-verbal de ședință → titlu executoriu fără altă procedură. Tranzacția extrajudiciară: necesită autentificare sau învestire cu formulă executorie pentru executare silită.'
         ]
-      },
-      { icon:'📦', title:'Contractul de depozit (art. 2103–2143 NCC)',
-        items:[
-          '<b>Definiție</b>: depunătorul remite depozitarului un <b>bun mobil</b> spre <b>păstrare</b>, cu obligația de a-l restitui în natură la cerere. ⚠️ Scopul e custodia (nu folosința ca la comodat, și nici transferul proprietății ca la mutuum).',
-          '<b>Caractere</b>: <b>real</b> (se perfectează prin remiterea bunului); <b>unilateral</b> (numai depozitarul are obligații după remitere); de regulă <b>gratuit</b> (prezumție la persoane fizice); oneros la profesioniști (hoteluri, case de valori).',
-          '<b>Depozitarul NU poate folosi bunul</b> (art. 2109 NCC) — spre deosebire de comodatar (care primește bunul spre folosință). Dacă depozitarul folosește bunul fără drept → răspunde față de depunător pentru orice pierdere, inclusiv caz fortuit.',
-          '<b>Diligența depozitarului</b>: la depozit gratuit → diligența unui bun proprietar pentru propriile bunuri (standard variabil, mai puțin sever); la depozit oneros → diligența unui profesionist (standard obiectiv). ⚠️ Răspunde și pentru culpa ușoară la depozit oneros.',
-          '<b>Depozitul neregulat</b> (art. 2115 NCC): depunerea unor bunuri fungibile (bani, metale prețioase) cu dreptul depozitarului de a le consuma, restituind bunuri de același gen, cantitate și calitate. Se aseamănă cu mutuum — depozitarul devine proprietar al bunurilor fungibile. Sancțiune pentru nerestituire: acțiune în restituire + dobânzi.',
-          '<b>Depozitul necesar</b> (art. 2124 NCC): impus de împrejurări extraordinare (incendiu, cutremur, naufragiu) fără posibilitatea alegerii depozitarului. Regulile se aplică, dar proba e mai liberă (inclusiv martori și prezumții indiferent de valoare).',
-          '<b>Restituirea</b>: la cererea depunătorului, oricând, chiar dacă s-a stipulat un termen (termenul e în interesul depunătorului). Dacă depozitarul are o creanță față de depunător legată de depozit, poate exercita dreptul de retenție.'
-        ]
       }
     ],
-    grila:'Mutuum = <b>real</b> + transferă <b>proprietatea și riscul</b> la împrumutat; dobânda max 2× dobânda legală la PF. Comodat = real + gratuit + proprietatea rămâne; comodatarul nu poate subînchiria. Fidejusionar solidar: renunță la discuțiune și diviziune. Fidejusor subrogat: drepturile creditorului + acțiunea proprie. Tranzacție = efecte <b>declarative</b>; concesii <b>reciproce</b> (altfel = remitere de datorie). Depozit = real, gratuit (PF), depozitarul <b>nu poate folosi</b> bunul (≠ comodat); restituire la cererea depunătorului oricând. Depozit neregulat: bunuri fungibile, depozitarul devine proprietar + restituie tantundem.'
+    grila:'Mutuum = <b>real</b> + transferă <b>proprietatea și riscul</b> la împrumutat; dobânda max 2× dobânda legală la PF. Comodat = real + gratuit + proprietatea rămâne; comodatarul nu poate subînchiria. Depozit = real, gratuit (PF), depozitarul <b>nu poate folosi</b> bunul (≠ comodat); restituire la cererea depunătorului oricând. Depozit neregulat: bunuri fungibile, depozitarul devine proprietar + restituie tantundem. Fidejusionar solidar: renunță la discuțiune și diviziune. Fidejusor subrogat: drepturile creditorului + acțiunea proprie. Tranzacție = efecte <b>declarative</b>; concesii <b>reciproce</b> (altfel = remitere de datorie).'
   },
 
   {
@@ -958,6 +958,16 @@ var FISE_DATA = [
           '<b>Substituția fideicomisară</b> (art. 994 NCC): testatorul impune legatarului să conserve bunul și să-l transmită la moartea sa altei persoane desemnate. Admisă pe un singur grad (A → B → C interzis dacă C e instituit tot de testator).'
         ]
       },
+      { icon:'🎗️', title:'Tipurile de legate și dezmoștenirea (art. 1055–1083, art. 1074 NCC)',
+        items:[
+          '<b>Legatul universal</b> (art. 1055 NCC): atribuie legatarului <b>întreaga moștenire</b> (sau fracțiunea rămasă după achitarea legatelor cu titlu universal sau particular). Legatarul universal are vocație la tot — adică răspunde și pentru datoriile succesiunii.',
+          '<b>Legatul cu titlu universal</b> (art. 1056 NCC): atribuie o <b>fracțiune determinată</b> din moștenire (1/2, 1/3 etc.) sau o universalitate de bunuri (ex: toate mobilele, toate imobilele). Răspunde pentru datoriile succesiunii proporțional cu fracțiunea primită.',
+          '<b>Legatul cu titlu particular</b> (art. 1057 NCC): atribuie <b>bunuri determinate</b> (individual sau generic). Legatarul nu răspunde pentru datoriile succesiunii (excepție: dacă bunul e ipotecat sau dacă testatorul a pus în sarcina legatarului plata unui legat). ⚠️ Distincție-cheie pentru grile: legatul particular → nu răspunde pentru datorii.',
+          '<b>Dezmoștenirea (exheredarea)</b> (art. 1074 NCC): testatorul poate dezmoșteni un moștenitor legal, total sau parțial. Moștenitorul exheredat e exclus de la moștenire, dar dacă e rezervatar → are dreptul la rezervă (nu poate fi dezmoștenit sub rezervă). Dezmoștenirea <b>indirectă</b>: testatorul instituie un legatar universal, fără a desemna moștenitorii legali → aceștia sunt excluși implicit.',
+          '<b>Efectele dezmoștenirii rezervatarilor</b>: rezerva succesorală nu poate fi redusă prin dezmoștenire — legatele sau donațiile care depășesc cotitatea disponibilă sunt reductibile. Exheredarea totală a unui rezervatar = dezmoștenire parțial invalidă (rezerva e protejată).',
+          '⚠️ <b>Legat condiționat</b>: legatul sub condiție suspensivă — dreptul se naște la realizarea condiției. Legat sub condiție rezolutorie — dreptul se stinge la realizarea condiției. Legat cu termen — exigibilitatea e amânată. Legatul sub sarcină — legatarul trebuie să execute o prestație (dacă nu execută → revocare judiciară).'
+        ]
+      },
       { icon:'🎯', title:'Rezerva succesorală și cotitatea disponibilă (art. 1086–1099 NCC)',
         items:[
           '<b>Rezervatarii</b>: descendenții, ascendenții privilegiați (părinții) și soțul supraviețuitor. Ceilalți moștenitori (frați, bunici etc.) nu au rezervă.',
@@ -977,16 +987,6 @@ var FISE_DATA = [
           'Raportul se face prin <b>echivalent</b> (imputarea valorii donației asupra cotei succesorale, nu restituire în natură). Dacă valoarea donației depășește cota = moștenitorul nu ia nimic din moștenire, dar nu restituie nici excedentul (diferit de reducțiune).',
           '<b>Dispensa de raport</b>: donatorul poate scuti de raport în actul de donație sau ulterior, prin testament. Donația deghizată sau indirectă se consideră <b>dispensată</b> de raport (nu de rezervă).',
           '<b>Raportul ≠ reducțiunea</b>: raportul asigură egalitate între moștenitori (operează doar între ei); reducțiunea protejează rezerva față de <b>terți</b> (legatari, donatari externi). Ambele operațiuni pot fi necesare în același dosar.'
-        ]
-      },
-      { icon:'🎗️', title:'Tipurile de legate și dezmoștenirea (art. 1055–1083, art. 1074 NCC)',
-        items:[
-          '<b>Legatul universal</b> (art. 1055 NCC): atribuie legatarului <b>întreaga moștenire</b> (sau fracțiunea rămasă după achitarea legatelor cu titlu universal sau particular). Legatarul universal are vocație la tot — adică răspunde și pentru datoriile succesiunii.',
-          '<b>Legatul cu titlu universal</b> (art. 1056 NCC): atribuie o <b>fracțiune determinată</b> din moștenire (1/2, 1/3 etc.) sau o universalitate de bunuri (ex: toate mobilele, toate imobilele). Răspunde pentru datoriile succesiunii proporțional cu fracțiunea primită.',
-          '<b>Legatul cu titlu particular</b> (art. 1057 NCC): atribuie <b>bunuri determinate</b> (individual sau generic). Legatarul nu răspunde pentru datoriile succesiunii (excepție: dacă bunul e ipotecat sau dacă testatorul a pus în sarcina legatarului plata unui legat). ⚠️ Distincție-cheie pentru grile: legatul particular → nu răspunde pentru datorii.',
-          '<b>Dezmoștenirea (exheredarea)</b> (art. 1074 NCC): testatorul poate dezmoșteni un moștenitor legal, total sau parțial. Moștenitorul exheredat e exclus de la moștenire, dar dacă e rezervatar → are dreptul la rezervă (nu poate fi dezmoștenit sub rezervă). Dezmoștenirea <b>indirectă</b>: testatorul instituie un legatar universal, fără a desemna moștenitorii legali → aceștia sunt excluși implicit.',
-          '<b>Efectele dezmoștenirii rezervatarilor</b>: rezerva succesorală nu poate fi redusă prin dezmoștenire — legatele sau donațiile care depășesc cotitatea disponibilă sunt reductibile. Exheredarea totală a unui rezervatar = dezmoștenire parțial invalidă (rezerva e protejată).',
-          '⚠️ <b>Legat condiționat</b>: legatul sub condiție suspensivă — dreptul se naște la realizarea condiției. Legat sub condiție rezolutorie — dreptul se stinge la realizarea condiției. Legat cu termen — exigibilitatea e amânată. Legatul sub sarcină — legatarul trebuie să execute o prestație (dacă nu execută → revocare judiciară).'
         ]
       }
     ],
@@ -1027,6 +1027,15 @@ var FISE_DATA = [
           'Clasificări după structura infracțiunii: <b>simplă</b> (un singur act, o singură urmare); <b>complexă</b> (absoarbe altă infracțiune — ex: tâlhăria absoarbe furtul + violența); <b>continuă</b> (acțiunea se prelungește în timp — ex: lipsirea de libertate); <b>de obicei</b> (necesită repetare pentru a fi consumată — ex: hărțuire).'
         ]
       },
+      { icon:'🚫', title:'Infracțiunea omisivă improprie (comisivă prin omisiune, art. 17 NCP)',
+        items:[
+          '<b>Definiție</b>: infracțiune tipic comisivă (cu element material activ), săvârșită prin <b>inacțiune</b> de către o persoană care avusese obligația legală de a acționa — numită <b>garant</b>.',
+          '<b>Condiția de la art. 17 NCP</b>: autorul omisiv (garantul) trebuie să fi primit o <b>obligație legală sau convențională</b> de a acționa pentru a preveni producerea rezultatului. Fără această obligație → nu există infracțiune (inacțiunea pură nu e incriminată decât dacă legea o prevede expres).',
+          '<b>Surse ale calității de garant</b>: (1) legea (de ex: art. 203 NCP — lăsarea fără ajutor a persoanei aflate în pericol; obligația medicului față de pacient; părintele față de copilul minor); (2) contractul (salvamarul angajat să supravegheze piscina); (3) asumarea voluntară a supravegherii (soț față de copilul nou-născut); (4) crearea situației de pericol (cel care a creat un pericol pentru victimă are obligația de a-l înlătura).',
+          '<b>Exemplu tipic</b>: mama care nu hrănește deliberat nou-născutul → omor comis prin omisiune (art. 188 NCP + art. 17 NCP). Mama e garantul; inacțiunea ei echivalează cu o acțiune.',
+          '⚠️ <b>Distincție</b>: infracțiunea omisivă proprie (tipică) = elementul material este în sine o omisiune incriminată de lege (ex: nedenunțarea — art. 266 NCP; lăsarea fără ajutor — art. 203 NCP) vs. infracțiunea omisivă improprie = element material normal activ, realizat prin omisiune de garant.'
+        ]
+      },
       { icon:'🧠', title:'Latura subiectivă (vinovăția — art. 16 NCP)',
         items:[
           '<b>Intenția directă</b>: autorul prevede urmarea și o <b>urmărește</b>.',
@@ -1044,15 +1053,6 @@ var FISE_DATA = [
           '<b>Cauze justificative</b> (art. 18–22 NCP): înlătură <b>antijuridicitatea</b> → fapta <i>nu este infracțiune</i>. Efect <b>IN REM</b>: toți participanții beneficiază automat. Exemple: legitima apărare, starea de necesitate, exercitarea unui drept, consimțământul victimei.',
           '<b>Cauze de neimputabilitate</b> (art. 23–31 NCP): înlătură <b>imputabilitatea</b> → fapta este infracțiune, dar <i>persoana nu răspunde penal</i>. Efect <b>IN PERSONAM</b>: numai cel vizat nu răspunde; ceilalți participanți pot răspunde. Exemple: minoritate, iresponsabilitate, constrângere, eroare, caz fortuit, beție involuntară completă.',
           '⚠️ <b>Distincția practică pentru grile</b>: dacă autorul a acționat justificat → nici instigatorul/complicele nu răspund (fapta nu există penal). Dacă autorul era minor sub 14 ani (neimputabilitate) → instigatorul/complicele <i>pot fi judecați ca autori mediați</i>.'
-        ]
-      },
-      { icon:'🚫', title:'Infracțiunea omisivă improprie (comisivă prin omisiune, art. 17 NCP)',
-        items:[
-          '<b>Definiție</b>: infracțiune tipic comisivă (cu element material activ), săvârșită prin <b>inacțiune</b> de către o persoană care avusese obligația legală de a acționa — numită <b>garant</b>.',
-          '<b>Condiția de la art. 17 NCP</b>: autorul omisiv (garantul) trebuie să fi primit o <b>obligație legală sau convențională</b> de a acționa pentru a preveni producerea rezultatului. Fără această obligație → nu există infracțiune (inacțiunea pură nu e incriminată decât dacă legea o prevede expres).',
-          '<b>Surse ale calității de garant</b>: (1) legea (de ex: art. 203 NCP — lăsarea fără ajutor a persoanei aflate în pericol; obligația medicului față de pacient; părintele față de copilul minor); (2) contractul (salvamarul angajat să supravegheze piscina); (3) asumarea voluntară a supravegherii (soț față de copilul nou-născut); (4) crearea situației de pericol (cel care a creat un pericol pentru victimă are obligația de a-l înlătura).',
-          '<b>Exemplu tipic</b>: mama care nu hrănește deliberat nou-născutul → omor comis prin omisiune (art. 188 NCP + art. 17 NCP). Mama e garantul; inacțiunea ei echivalează cu o acțiune.',
-          '⚠️ <b>Distincție</b>: infracțiunea omisivă proprie (tipică) = elementul material este în sine o omisiune incriminată de lege (ex: nedenunțarea — art. 266 NCP; lăsarea fără ajutor — art. 203 NCP) vs. infracțiunea omisivă improprie = element material normal activ, realizat prin omisiune de garant.'
         ]
       }
     ],
@@ -1073,6 +1073,16 @@ var FISE_DATA = [
           'Tentativa se sancționează numai dacă legea prevede expres; pedeapsa = <b>jumătate din minimul și maximul</b> special. Tentativa nu e posibilă la: infracțiunile din culpă, infracțiunile de obicei, unele infracțiuni omisive.'
         ]
       },
+      { icon:'🔂', title:'Unitatea de infracțiune — continuată, complexă, naturală (art. 35–36 NCP)',
+        items:[
+          '<b>Infracțiunea continuată</b> (art. 35 alin. 1 NCP): același autor comite la intervale diferite de timp <b>mai multe acțiuni/inacțiuni</b> care realizează conținutul aceleași infracțiuni, în baza aceleiași <b>rezoluții infracționale</b> (unitate de hotărâre). ⚠️ Condiții: aceeași persoană + aceeași rezoluție (hotărâre luată de la început, nu reînnoită de fiecare dată) + aceeași infracțiune (sau infracțiuni asemănătoare) + interval de timp între acte.',
+          '<b>Sancțiunea infracțiunii continuate</b>: pedeapsa prevăzută de lege pentru infracțiunea comisă, la care se poate adăuga un spor de <b>1–3 ani</b> (dacă sunt pedepse cu închisoarea). Momentul epuizării = ultimul act al activității continue. ⚠️ Prescripția curge de la data epuizării (ultimul act), nu de la data primului act.',
+          '<b>Infracțiunea complexă</b> (art. 35 alin. 2 NCP): în conținutul ei intră, ca element sau circumstanță agravantă, o acțiune sau inacțiune care constituie prin ea însăși o faptă prevăzută de legea penală. Absorbție: infracțiunea absorbantă "înghite" infracțiunea absorbită. <i>Ex: tâlhăria = furt + violență/amenințare; violul + omor = omor deosebit de grav.</i>',
+          '<b>Infracțiunea continuă</b> (tip de unitate naturală): elementul material se prelungește în timp fără întrerupere (ex: lipsirea de libertate, portul nelegal de armă). Se consumă la momentul începerii și se epuizează când acțiunea încetează. Prescripția curge de la epuizare.',
+          '<b>Infracțiunea de obicei</b> (tip de unitate naturală): necesită o repetare a actului pentru a fi consumată; actul izolat nu constituie infracțiune. <i>Ex: hărțuirea (art. 208 NCP) — act izolat = nepedepsibil; repetare = hărțuire consumată.</i> ⚠️ Nu se poate reține tentativa la infracțiunile de obicei.',
+          '⚠️ <b>Tabel comparativ</b>: continuată (aceeași rezoluție + acte repetate) vs. concurs real (rezoluții diferite + acte repetate) — distincția e esențială pentru tratamentul penal: la continuată = o singură infracțiune (cu spor opțional 1–3 ani); la concurs real = mai multe infracțiuni (cumulul juridic cu spor obligatoriu 1/3).'
+        ]
+      },
       { icon:'👥', title:'Participația penală (art. 46–52 NCP)',
         items:[
           '<b>Autorul</b>: săvârșește nemijlocit elementul material. <b>Coautoratul</b>: fiecare coautor săvârșește acte de executare (nu doar ajutor). Coautoratul nu e posibil la infracțiunile cu subiect activ unic (ex: violul).',
@@ -1089,16 +1099,6 @@ var FISE_DATA = [
           '<b>Circumstanțe atenuante generale</b> (art. 75 NCP): comportament anterior bun, depășire a limitelor apărării, acoperirea prejudiciului etc. → instanța <b>poate</b> coborî sub minimul special (nu e obligată).',
           '<b>Circumstanțe agravante generale</b> (art. 77 NCP): comitere prin cruzimi, cu mijloace periculoase, de trei sau mai multe persoane împreună, față de un minor sau persoană vulnerabilă → instanța <b>poate</b> depăși maximul special cu max. 2 ani (sau 1/3).',
           '⚠️ Circumstanțele speciale (din textul incriminatorului — forma calificată) ≠ circumstanțe generale: circumstanțele speciale modifică <i>însuși tiparul infracțiunii</i>; cele generale modulează pedeapsa în cadrul tipului de bază.'
-        ]
-      },
-      { icon:'🔂', title:'Unitatea de infracțiune — continuată, complexă, naturală (art. 35–36 NCP)',
-        items:[
-          '<b>Infracțiunea continuată</b> (art. 35 alin. 1 NCP): același autor comite la intervale diferite de timp <b>mai multe acțiuni/inacțiuni</b> care realizează conținutul aceleași infracțiuni, în baza aceleiași <b>rezoluții infracționale</b> (unitate de hotărâre). ⚠️ Condiții: aceeași persoană + aceeași rezoluție (hotărâre luată de la început, nu reînnoită de fiecare dată) + aceeași infracțiune (sau infracțiuni asemănătoare) + interval de timp între acte.',
-          '<b>Sancțiunea infracțiunii continuate</b>: pedeapsa prevăzută de lege pentru infracțiunea comisă, la care se poate adăuga un spor de <b>1–3 ani</b> (dacă sunt pedepse cu închisoarea). Momentul epuizării = ultimul act al activității continue. ⚠️ Prescripția curge de la data epuizării (ultimul act), nu de la data primului act.',
-          '<b>Infracțiunea complexă</b> (art. 35 alin. 2 NCP): în conținutul ei intră, ca element sau circumstanță agravantă, o acțiune sau inacțiune care constituie prin ea însăși o faptă prevăzută de legea penală. Absorbție: infracțiunea absorbantă "înghite" infracțiunea absorbită. <i>Ex: tâlhăria = furt + violență/amenințare; violul + omor = omor deosebit de grav.</i>',
-          '<b>Infracțiunea continuă</b> (tip de unitate naturală): elementul material se prelungește în timp fără întrerupere (ex: lipsirea de libertate, portul nelegal de armă). Se consumă la momentul începerii și se epuizează când acțiunea încetează. Prescripția curge de la epuizare.',
-          '<b>Infracțiunea de obicei</b> (tip de unitate naturală): necesită o repetare a actului pentru a fi consumată; actul izolat nu constituie infracțiune. <i>Ex: hărțuirea (art. 208 NCP) — act izolat = nepedepsibil; repetare = hărțuire consumată.</i> ⚠️ Nu se poate reține tentativa la infracțiunile de obicei.',
-          '⚠️ <b>Tabel comparativ</b>: continuată (aceeași rezoluție + acte repetate) vs. concurs real (rezoluții diferite + acte repetate) — distincția e esențială pentru tratamentul penal: la continuată = o singură infracțiune (cu spor opțional 1–3 ani); la concurs real = mai multe infracțiuni (cumulul juridic cu spor obligatoriu 1/3).'
         ]
       }
     ],
@@ -1195,14 +1195,6 @@ var FISE_DATA = [
           '<b>Șantajul</b> (art. 207 NCP): constrângerea unei persoane, prin violență sau amenințare, să dea/să facă/să nu facă/să sufere ceva, în scopul de a dobândi un folos injust. Distincție față de amenințare (art. 206): la șantaj există scopul obținerii unui folos pentru sine/altul; la amenințare, scopul e de a produce teamă. Pedeapsă: <b>1–5 ani</b>; formă agravată (vătămare corporală): <b>2–7 ani</b>.'
         ]
       },
-      { icon:'🔁', title:'Schemă comparativă: omor / loviri cauz. de moarte / ucidere din culpă',
-        items:[
-          '<b>Omor</b> (art. 188–189 NCP): vinovăție față de <b>deces</b> = intenție directă sau indirectă. Autorul voia moartea sau o accepta. Pedeapsă: <b>10–20 ani</b> (simplu) / <b>15–25 ani sau detențiune pe viață</b> (calificat).',
-          '<b>Loviri cauzatoare de moarte</b> (art. 195 NCP — praeterintenție): intenție față de lovire + <b>culpă față de deces</b>. Autorul nu urmărea și nu accepta moartea. Pedeapsă: <b>6–12 ani</b>.',
-          '<b>Ucidere din culpă</b> (art. 192 NCP): culpă față de deces, nicio intenție. Pedeapsă: <b>1–5 ani</b>. Agravat (alcool, abandon victimă): <b>2–7 ani</b>.',
-          '⚠️ <b>Regula de distincție</b>: criteriul = vinovăția față de <b>deces</b> (nu față de lovire). Dacă autorul voia/accepta moartea → omor. Dacă lovea intenționat, dar moartea = culpă → loviri cauzatoare de moarte. Dacă totul din culpă → ucidere din culpă. Premeditarea și praeterintenția <b>nu coexistă</b>.'
-        ]
-      },
       { icon:'🚷', title:'Traficul de persoane și agresiunea sexuală (art. 210–219 NCP)',
         items:[
           '<b>Traficul de persoane</b> (art. 210 NCP): recrutarea, transportul, transferul, cazarea sau primirea de persoane, prin constrângere/fraudă/abuz de putere/promisiune de beneficii, <b>în scopul exploatării</b>. Pedeapsă: <b>3–10 ani</b> + interzicerea unor drepturi.',
@@ -1211,6 +1203,14 @@ var FISE_DATA = [
           '<b>Agresiunea sexuală</b> (art. 219 NCP): actul de penetrare sexuală (altul decât raportul sexual sau actul oral-anal din art. 218) sau orice altă activitate sexuală, prin constrângere/imposibilitate de exprimare a victimei. Pedeapsă: <b>2–7 ani</b>. Formă agravată (victima <16 ani): <b>3–10 ani</b>.',
           '⚠️ <b>Distincție viol vs. agresiune sexuală</b>: violul (art. 218) = raport sexual sau act sexual oral/anal prin constrângere; agresiunea sexuală (art. 219) = orice altă activitate sexuală (ex: atingeri sexuale, penetrare cu obiecte). La ambele: lipsa consimțământului e elementul-cheie; victima <16 ani → consimțământul e irelevant.',
           '<b>Hărțuirea sexuală</b> (art. 223 NCP): promisiunea de beneficii sau amenințarea cu consecințe negative, pentru a obține favori sexuale. ≠ agresiunea sexuală: nu presupune contact fizic. Pedeapsă: amendă sau max <b>2 ani</b>.'
+        ]
+      },
+      { icon:'🔁', title:'Schemă comparativă: omor / loviri cauz. de moarte / ucidere din culpă',
+        items:[
+          '<b>Omor</b> (art. 188–189 NCP): vinovăție față de <b>deces</b> = intenție directă sau indirectă. Autorul voia moartea sau o accepta. Pedeapsă: <b>10–20 ani</b> (simplu) / <b>15–25 ani sau detențiune pe viață</b> (calificat).',
+          '<b>Loviri cauzatoare de moarte</b> (art. 195 NCP — praeterintenție): intenție față de lovire + <b>culpă față de deces</b>. Autorul nu urmărea și nu accepta moartea. Pedeapsă: <b>6–12 ani</b>.',
+          '<b>Ucidere din culpă</b> (art. 192 NCP): culpă față de deces, nicio intenție. Pedeapsă: <b>1–5 ani</b>. Agravat (alcool, abandon victimă): <b>2–7 ani</b>.',
+          '⚠️ <b>Regula de distincție</b>: criteriul = vinovăția față de <b>deces</b> (nu față de lovire). Dacă autorul voia/accepta moartea → omor. Dacă lovea intenționat, dar moartea = culpă → loviri cauzatoare de moarte. Dacă totul din culpă → ucidere din culpă. Premeditarea și praeterintenția <b>nu coexistă</b>.'
         ]
       }
     ],
@@ -1320,16 +1320,6 @@ var FISE_DATA = [
           '<b>Accidente de circulație cu victime</b>: dacă se produce accident → concurs de infracțiuni (conducere sub alcool + ucidere din culpă art. 192 NCP / vătămare corporală din culpă art. 196 NCP). <b>Părăsirea locului accidentului</b> (art. 338): fără acordul polițistului = infracțiune distinctă.'
         ]
       },
-      { icon:'🔍', title:'Recapitulare — delimitări esențiale infracțiuni speciale',
-        items:[
-          '<b>Omor / loviri cauzatoare de moarte / ucidere din culpă</b>: criteriul = <i>intenția față de deces</i>. Omor = intenție directă/indirectă față de moarte. Loviri cauzatoare de moarte = praeterintenție (intenție la lovire + culpă la deces). Ucidere din culpă = culpă față de moarte.',
-          '<b>Furt / abuz de încredere / înșelăciune / tâlhărie</b>: furt = luare fără consimțământ. Abuz de încredere = primit cu consimțământ, nestituit. Înșelăciune = consimțământul viciat prin eroare + prejudiciu. Tâlhărie = furt + violență (chiar ulterioară luării).',
-          '<b>Luare de mită / trafic de influență / abuz în serviciu</b>: luare de mită = funcționarul primește foloase pentru actul propriu. Trafic de influență = oricine pretinde foloase pentru a influența un funcționar. Abuz în serviciu = neîndeplinire/îndeplinire defectuoasă a atribuțiilor, <b>fără foloase</b> (dacă există foloase = luare de mită).',
-          '<b>Delapidare / abuz în serviciu / gestiune frauduloasă</b>: delapidare = funcționar gestionar care <i>însușește</i> bunuri. Abuz în serviciu = funcționar care îndeplinește defectuos atribuțiile. Gestiunea frauduloasă = orice persoană căreia i s-au încredințat bunuri de administrat le prejudiciază.',
-          '<b>Vătămare corporală / lovire și alte violențe</b>: pragul = 90 zile îngrijiri medicale. Sub 90 zile = lovire (plângere prealabilă). Peste 90 zile sau consecință gravă = vătămare corporală (din oficiu). Prag stabilit de medic legist.',
-          '<b>Tăinuire / favorizare</b>: tăinuire = <i>bunuri</i> provenite din infracțiune. Favorizare = <i>persoana</i> infractorului e ajutată să se sustragă. Soțul/rudele apropiate ale favorizatorului → <b>nepedepsire</b>; nu și la tăinuire.'
-        ]
-      },
       { icon:'🖥️', title:'Infracțiunile informatice (art. 360–366 NCP)',
         items:[
           '<b>Accesul ilegal la un sistem informatic</b> (art. 360 NCP): accesul, fără drept, la un sistem informatic. Forma agravată: dacă e necesară depășirea unor măsuri de securitate → pedeapsă <b>3–12 ani</b>. Forma simplă (fără depășirea securității): <b>1–5 ani</b>.',
@@ -1338,6 +1328,16 @@ var FISE_DATA = [
           '<b>Perturbarea funcționării sistemelor informatice</b> (art. 363 NCP): transmiterea de date informatice în scopul de a împiedica funcționarea (ex: atacuri DDoS). Pedeapsă: <b>2–7 ani</b>.',
           '<b>Operațiunile ilegale cu dispozitive sau programe informatice</b> (art. 365 NCP): producerea, comercializarea, importul/exportul de software sau dispozitive concepute pentru săvârșirea infracțiunilor informatice (ex: malware, exploit kits). Pedeapsă: <b>1–5 ani</b>.',
           '⚠️ <b>Distincție sistematică</b>: art. 360 = acces neautorizat; art. 361 = interceptare; art. 362 = alterare date; art. 363 = perturbarea funcționării; art. 364 = falsul informatic (cu consecință juridică); art. 365 = instrumente de atac. Infracțiunile pot fi în concurs. Baza legală = Legea 161/2003 + transpunere Directiva NIS.'
+        ]
+      },
+      { icon:'🔍', title:'Recapitulare — delimitări esențiale infracțiuni speciale',
+        items:[
+          '<b>Omor / loviri cauzatoare de moarte / ucidere din culpă</b>: criteriul = <i>intenția față de deces</i>. Omor = intenție directă/indirectă față de moarte. Loviri cauzatoare de moarte = praeterintenție (intenție la lovire + culpă la deces). Ucidere din culpă = culpă față de moarte.',
+          '<b>Furt / abuz de încredere / înșelăciune / tâlhărie</b>: furt = luare fără consimțământ. Abuz de încredere = primit cu consimțământ, nestituit. Înșelăciune = consimțământul viciat prin eroare + prejudiciu. Tâlhărie = furt + violență (chiar ulterioară luării).',
+          '<b>Luare de mită / trafic de influență / abuz în serviciu</b>: luare de mită = funcționarul primește foloase pentru actul propriu. Trafic de influență = oricine pretinde foloase pentru a influența un funcționar. Abuz în serviciu = neîndeplinire/îndeplinire defectuoasă a atribuțiilor, <b>fără foloase</b> (dacă există foloase = luare de mită).',
+          '<b>Delapidare / abuz în serviciu / gestiune frauduloasă</b>: delapidare = funcționar gestionar care <i>însușește</i> bunuri. Abuz în serviciu = funcționar care îndeplinește defectuos atribuțiile. Gestiunea frauduloasă = orice persoană căreia i s-au încredințat bunuri de administrat le prejudiciază.',
+          '<b>Vătămare corporală / lovire și alte violențe</b>: pragul = 90 zile îngrijiri medicale. Sub 90 zile = lovire (plângere prealabilă). Peste 90 zile sau consecință gravă = vătămare corporală (din oficiu). Prag stabilit de medic legist.',
+          '<b>Tăinuire / favorizare</b>: tăinuire = <i>bunuri</i> provenite din infracțiune. Favorizare = <i>persoana</i> infractorului e ajutată să se sustragă. Soțul/rudele apropiate ale favorizatorului → <b>nepedepsire</b>; nu și la tăinuire.'
         ]
       }
     ],
@@ -1490,6 +1490,15 @@ var FISE_DATA = [
           '<b>Publicitatea</b> (art. 352 CPP): judecata = publică în principiu; excepții (minorii, siguranța națională, viața privată). <b>Dreptul la interpret</b>: dacă inculpatul nu cunoaște limba română — interpret gratuit, din oficiu, în tot cursul procesului.'
         ]
       },
+      { icon:'🔬', title:'Probele și excluderea lor (art. 97–103, 102 CPP)',
+        items:[
+          '<b>Mijloacele de probă</b> (art. 97 CPP): declarații (suspect, inculpat, persoana vătămată, martor), înscrisuri, rapoarte de expertiză, procese-verbale, fotografii, înregistrări audio-video, alte mijloace tehnice.',
+          '<b>Loialitatea probei</b> (art. 101 CPP): este interzisă obținerea probelor prin tortură, violență, amenințare, promisiuni ilegale, provocare sau prin orice alte mijloace de constrângere. Probele obținute astfel = <b>nule de drept</b>; nu pot fi folosite în proces.',
+          '<b>Excluderea probelor</b> (art. 102 CPP): probele obținute în mod nelegal — prin încălcarea dispoziților legale — nu pot fi folosite în procesul penal. ⚠️ Excluderea nu e automată pentru orice neregularitate — doar pentru încălcarea drepturilor fundamentale sau a normelor esențiale de procedură; instanța apreciază.',
+          '<b>Teoria fructului pomului otrăvit</b>: probele derivate dintr-o probă exclusă sunt și ele excluse dacă nu ar fi existat fără proba nelegală — cu excepția că ar fi putut fi descoperite oricum, independent.',
+          '<b>Aprecierea probelor</b> (art. 103 CPP): judecătorul le apreciază <b>liber</b>, conform convingerii sale intime, bazat pe ansamblul probelor administrate. ⚠️ Nicio probă nu are valoare prestabilită (chiar și mărturisirea poate fi contestată). Condamnarea se pronunță <b>dincolo de orice dubiu rezonabil</b>.'
+        ]
+      },
       { icon:'🔍', title:'Urmărirea penală (art. 285–341 CPP)',
         items:[
           '<b>Sesizarea organelor</b>: prin plângere (persoana vătămată), denunț (oricine), sesizare din oficiu (organele constată). La infracțiunile cu plângere prealabilă — fără plângerea victimei, nu se poate porni urmărirea.',
@@ -1518,14 +1527,6 @@ var FISE_DATA = [
           '<b>Achitarea</b> (art. 16 CPP): fapta nu există; nu e prevăzută de lege; nu a comis-o inculpatul; lipsește vinovăția; există cauze justificative/de neimputabilitate. <b>Încetarea procesului penal</b>: lipsesc condițiile de procedibilitate (plângere retrasă, prescripție, amnistie, dezincriminare).'
         ]
       },
-      { icon:'🔄', title:'Reabilitarea (art. 165–171 NCP)',
-        items:[
-          '<b>Efectul reabilitării</b>: înlătură <b>decăderile și incapacitățile</b> ce decurg din condamnare (interdicția de a deține funcții publice, de a exercita profesii etc.). ⚠️ Nu șterge condamnarea din cazierul judiciar în sensul că nu mai poate fi invocată ca prim termen al recidivei — aceasta se verifică separat.',
-          '<b>Reabilitarea de drept</b> (art. 165 NCP): operează <b>automat</b>, fără cerere la instanță, dacă s-a executat pedeapsa sau s-a stins altfel și a trecut termenul: (a) pentru <b>amendă</b> sau <b>pedeapsă cu suspendare</b>: <b>3 ani</b> de la executare/stingere; (b) pentru <b>închisoare ≤ 2 ani</b>: <b>3 ani</b>.',
-          '<b>Reabilitarea judecătorească</b> (art. 166 NCP): cerere la instanța de executare (sau la instanța de la domiciliu); condiții: (1) trecerea unui termen calculat de la executare/stingere: <b>4 ani + durata pedepsei</b> (pentru pedepse 2–5 ani), <b>5 ani + durata pedepsei</b> (pentru pedepse 5–10 ani), <b>7 ani + durata pedepsei</b> (pentru pedepse >10 ani); (2) bună conduită în termenul de reabilitare; (3) achitarea integrală a cheltuielilor de judecată și a despăgubirilor civile (dacă nu e dispensat de instanță).',
-          '⚠️ <b>Distincție cheie pentru grile</b>: reabilitarea de drept = automată, fără cerere, la termen; reabilitarea judecătorească = la cerere, necesită condiții suplimentare (bună purtare, achitarea cheltuielilor), pronunțată de instanță. La condamnare cu detenție pe viață: <b>nu există reabilitare judecătorească</b> — condamnatul poate beneficia doar de grațiere.'
-        ]
-      },
       { icon:'🔄', title:'Căile extraordinare de atac penale (art. 426–470 CPP)',
         items:[
           '<b>Contestația în anulare</b> (art. 426 CPP): împotriva hotărârilor definitive ale instanței de apel. Motive limitative: (1) instanța nu a fost legal constituită; (2) inculpatul a fost judecat în lipsă deși nu a fost legal citat; (3) o cauză de încetare a procesului penal nu a fost constatată în recurs în casație; (4) inculpatul condamnat definitiv a mai fost judecat definitiv pentru aceeași faptă. Termen: <b>30 de zile</b> de la comunicare / de la cunoaștere.',
@@ -1535,13 +1536,12 @@ var FISE_DATA = [
           '⚠️ <b>Distincție cheie</b>: contestația în anulare = motive de procedură (necitare, constituire nelegală); revizuirea = fapte/probe noi; recursul în casație = nelegalitate în drept; recursul în interesul legii = unificare jurisprudență, fără efect concret în dosar.'
         ]
       },
-      { icon:'🔬', title:'Probele și excluderea lor (art. 97–103, 102 CPP)',
+      { icon:'🔄', title:'Reabilitarea (art. 165–171 NCP)',
         items:[
-          '<b>Mijloacele de probă</b> (art. 97 CPP): declarații (suspect, inculpat, persoana vătămată, martor), înscrisuri, rapoarte de expertiză, procese-verbale, fotografii, înregistrări audio-video, alte mijloace tehnice.',
-          '<b>Loialitatea probei</b> (art. 101 CPP): este interzisă obținerea probelor prin tortură, violență, amenințare, promisiuni ilegale, provocare sau prin orice alte mijloace de constrângere. Probele obținute astfel = <b>nule de drept</b>; nu pot fi folosite în proces.',
-          '<b>Excluderea probelor</b> (art. 102 CPP): probele obținute în mod nelegal — prin încălcarea dispoziților legale — nu pot fi folosite în procesul penal. ⚠️ Excluderea nu e automată pentru orice neregularitate — doar pentru încălcarea drepturilor fundamentale sau a normelor esențiale de procedură; instanța apreciază.',
-          '<b>Teoria fructului pomului otrăvit</b>: probele derivate dintr-o probă exclusă sunt și ele excluse dacă nu ar fi existat fără proba nelegală — cu excepția că ar fi putut fi descoperite oricum, independent.',
-          '<b>Aprecierea probelor</b> (art. 103 CPP): judecătorul le apreciază <b>liber</b>, conform convingerii sale intime, bazat pe ansamblul probelor administrate. ⚠️ Nicio probă nu are valoare prestabilită (chiar și mărturisirea poate fi contestată). Condamnarea se pronunță <b>dincolo de orice dubiu rezonabil</b>.'
+          '<b>Efectul reabilitării</b>: înlătură <b>decăderile și incapacitățile</b> ce decurg din condamnare (interdicția de a deține funcții publice, de a exercita profesii etc.). ⚠️ Nu șterge condamnarea din cazierul judiciar în sensul că nu mai poate fi invocată ca prim termen al recidivei — aceasta se verifică separat.',
+          '<b>Reabilitarea de drept</b> (art. 165 NCP): operează <b>automat</b>, fără cerere la instanță, dacă s-a executat pedeapsa sau s-a stins altfel și a trecut termenul: (a) pentru <b>amendă</b> sau <b>pedeapsă cu suspendare</b>: <b>3 ani</b> de la executare/stingere; (b) pentru <b>închisoare ≤ 2 ani</b>: <b>3 ani</b>.',
+          '<b>Reabilitarea judecătorească</b> (art. 166 NCP): cerere la instanța de executare (sau la instanța de la domiciliu); condiții: (1) trecerea unui termen calculat de la executare/stingere: <b>4 ani + durata pedepsei</b> (pentru pedepse 2–5 ani), <b>5 ani + durata pedepsei</b> (pentru pedepse 5–10 ani), <b>7 ani + durata pedepsei</b> (pentru pedepse >10 ani); (2) bună conduită în termenul de reabilitare; (3) achitarea integrală a cheltuielilor de judecată și a despăgubirilor civile (dacă nu e dispensat de instanță).',
+          '⚠️ <b>Distincție cheie pentru grile</b>: reabilitarea de drept = automată, fără cerere, la termen; reabilitarea judecătorească = la cerere, necesită condiții suplimentare (bună purtare, achitarea cheltuielilor), pronunțată de instanță. La condamnare cu detenție pe viață: <b>nu există reabilitare judecătorească</b> — condamnatul poate beneficia doar de grațiere.'
         ]
       }
     ],
