@@ -562,20 +562,21 @@ var FISE_DATA = [
       },
       { icon:'👨‍👩‍👧', title:'Răspunderea pentru fapta altuia (art. 1372–1374 NCC)',
         items:[
-          '<b>Răspunderea părinților</b> (art. 1372): pentru prejudicii cauzate de minori <b>care locuiesc cu ei</b>. Prezumție <b>relativă</b> de culpă → pot răsturna dovedind că nu puteau împiedica fapta (supravegheau, minorul a acționat fără posibilitate de intervenție).',
+          '<b>Răspunderea pentru minor sau interzis</b> (art. 1372 NCC): răspunde <b>cel obligat la supraveghere</b> în temeiul legii, al unui contract sau al unei hotărâri judecătorești (părinți, tutore, școală, spital). ⚠️ <b>Capcană</b>: NCC <b>nu mai cere</b> condiția „locuiește cu părinții" (era vechiul cod). Răspunderea subzistă chiar dacă făptuitorul, lipsit de discernământ, nu răspunde pentru fapta proprie (alin. 2).',
+          '<b>Exonerarea</b> (art. 1372 alin. 3): supraveghetorul scapă doar dovedind că <b>nu a putut împiedica fapta</b>. Pentru <b>părinți/tutori</b> proba e mult mai grea: trebuie să arate că fapta copilului e urmarea <b>altei cauze decât modul de exercitare a autorității părintești</b> — practic o răspundere obiectivă, întemeiată pe garanție.',
           '<b>Răspunderea comitenților pentru prepuși</b> (art. 1373): comitentul răspunde dacă fapta s-a săvârșit în exercitarea <b>funcțiilor încredințate</b>. Prezumție <b>absolută</b> (irefragabilă) — nu poate fi răsturnată. Condiție: raport de subordonare (comitent dă instrucțiuni, controlează).',
           '⚠️ Dacă prepusul a depășit atribuțiile dar victima a crezut că acționează în limitele lor → tot răspunderea comitentului. Comitentul care plătește are <b>acțiune în regres</b> față de prepus.',
-          '<b>Răspunderea institutorilor și artizanilor</b> (art. 1372 alin. 2): prezumție <b>relativă</b> pentru elevii și ucenicii aflați sub supraveghere la data producerii prejudiciului.',
+          '⚠️ Terminologia veche „institutori și artizani" (vechiul cod) nu mai există: școlile, internatele, taberele răspund azi tot pe art. 1372 — ca <b>persoane obligate prin lege sau contract la supraveghere</b> — pentru elevii/minorii aflați sub supravegherea lor la momentul faptei.',
           'Minorul <b>cu discernământ</b> răspunde personal solidar cu părinții. Minorul <b>fără discernământ</b>: numai părinții/tutorii răspund. Discernământul se evaluează individual, nu după vârstă fixă (sub 14 ani — prezumție relativă de lipsă de discernământ).'
         ]
       },
       { icon:'🔧', title:'Răspunderea pentru lucruri, animale și ruina edificiului',
         items:[
           '<b>Răspunderea pentru lucruri</b> (art. 1376): obiectivă; răspunde <b>paznicul juridic</b> = cel care exercită independent folosința și controlul lucrului. <b>Nu</b> e neapărat proprietarul (ex: locatarul are paza juridică a lucrului închiriat).',
-          '<b>Paza juridică ≠ paza materială</b>: cel care predă lucrul spre folosință (cel care împrumută mașina) pierde paza juridică în favoarea celui care primește. <b>Excepție</b>: dacă bunul a fost furat → hoțul nu dobândește paza juridică; proprietarul o păstrează.',
+          '<b>Paza juridică ≠ paza materială</b> (art. 1377 NCC): paza aparține celui care exercită <b>în mod independent controlul și supravegherea</b> lucrului. Cel care predă lucrul spre folosință pierde paza în favoarea primitorului. ⚠️ <b>Capcană — bunul furat</b>: <b>hoțul preia paza juridică</b> (exercită control independent) → hoțul răspunde pentru prejudiciile cauzate de lucru, nu proprietarul deposedat.',
           '<b>Răspunderea pentru animale</b> (art. 1375): obiectivă; răspunde proprietarul sau cel care <b>se folosea de animal</b> la momentul prejudiciului. Se include și animalul scăpat sau pierdut (momentul prejudiciului contează).',
-          '<b>Ruina edificiului</b> (art. 1378): obiectivă; răspunde <b>proprietarul</b>; nu contează culpa. "Edificiu" = orice construcție legată de sol (imobile, garduri, construcții provizorii fixate). Ruina = prăbușire parțială sau totală, spontan sau la folosire.',
-          '<b>Activitățile periculoase</b> (art. 1359 NCC): cel care desfășoară o activitate cu risc ridicat (față de terți) răspunde obiectiv pentru prejudiciile cauzate. Exonerare: forța majoră sau fapta exclusivă a victimei/terțului.'
+          '<b>Ruina edificiului</b> (art. 1378): obiectivă; răspunde <b>proprietarul</b> (chiar neposesor), dar <b>numai dacă</b> ruina e urmarea <b>lipsei de întreținere sau a unui viciu de construcție</b> — condiție esențială, frecvent testată. „Edificiu" = construcție legată durabil de sol. Ruina = dezagregarea/prăbușirea parțială sau totală.',
+          '<b>Activitățile periculoase</b>: nu au un text general propriu în NCC — intră de regulă sub răspunderea pentru <b>lucruri</b> (art. 1376, care acoperă expres și coliziunea vehiculelor) sau sub <b>legi speciale</b> (daune nucleare, mediu). Exonerare la răspunderea obiectivă: numai forța majoră sau fapta exclusivă a victimei/terțului.'
         ]
       },
       { icon:'🛡️', title:'Cauze exoneratoare de răspundere',
@@ -600,13 +601,13 @@ var FISE_DATA = [
       { icon:'📊', title:'Daune moratorii vs. daune compensatorii',
         items:[
           '<b>Daune-interese compensatorii</b>: înlocuiesc executarea în natură a obligației (când executarea e imposibilă sau refuzată). Cuprind: <b>damnum emergens</b> (pierderea efectivă suferită) + <b>lucrum cessans</b> (beneficiul nerealizat). Se stabilesc la momentul pronunțării hotărârii (valori actuale).',
-          '<b>Daune-interese moratorii</b>: sancțiune pentru <b>întârzierea</b> în executare; nu înlocuiesc obligația principală (executarea în natură rămâne posibilă și datorată). Exemple: dobânda legală (art. 3 din Legea 72/2013 privind clauzele abuzive); penalitățile de întârziere contractuale.',
-          '⚠️ <b>Cumulul</b>: daune moratorii se pot cumula cu executarea silită în natură sau cu daune compensatorii (pentru că mora și neexecutarea sunt prejudicii distincte). Clauza penală moratorie = evaluare anticipată a dauunelor de întârziere.',
+          '<b>Daune-interese moratorii</b>: sancțiune pentru <b>întârzierea</b> în executare; nu înlocuiesc obligația principală (executarea în natură rămâne posibilă și datorată). Exemple: dobânda legală (<b>OG 13/2011</b>); penalitățile de întârziere din Legea 72/2013 (plăți între profesioniști); penalitățile de întârziere contractuale.',
+          '⚠️ <b>Cumulul</b>: daune moratorii se pot cumula cu executarea silită în natură sau cu daune compensatorii (pentru că mora și neexecutarea sunt prejudicii distincte). Clauza penală moratorie = evaluare anticipată a daunelor de întârziere.',
           '<b>La obligații bănești</b>: creditorul e de drept îndreptățit la dobânzi moratorii (art. 1535 NCC) fără a proba un prejudiciu efectiv — dobânda curge automat de la scadență. La obligații ne-bănești → punerea în întârziere e necesară.'
         ]
       }
     ],
-    grila:'Răspunderea comitenților = prezumție <b>absolută</b> (irefragabilă). Răspunderea părinților = prezumție <b>relativă</b>. La răspunderea obiectivă (lucruri, animale, ruina, activități periculoase): <b>cazul fortuit nu exonerează</b> — numai forța majoră. Paza juridică ≠ paza materială: cel care cedează folosința pierde paza juridică (excepție: bunul furat). Prejudiciu moral: reparat la delict; la contract — numai previzibil. Forța majoră: extern + imprevizibil + irezistibil. Produse cu defect: răspundere obiectivă, prescripție 3 ani / decădere 10 ani, riscul de dezvoltare exonerează. Daune compensatorii (înlocuiesc executarea) ≠ moratorii (sancționează întârzierea, cumulabile cu executarea).'
+    grila:'Comitent: nu se exonerează prin lipsa culpei (garanție); scapă doar dacă victima știa că prepusul acționa în afara funcțiilor (art. 1373 al.3). Părinți (art. 1372): <b>fără</b> condiția locuinței comune (capcană — vechiul cod); exonerare doar dovedind altă cauză decât exercitarea autorității părintești. La răspunderea obiectivă (lucruri, animale, ruina): <b>cazul fortuit nu exonerează</b> — numai forța majoră. Paza juridică: <b>hoțul o preia</b> — el răspunde, nu proprietarul deposedat. Ruina edificiului: doar din <b>lipsă de întreținere sau viciu de construcție</b>. Prejudiciu moral: reparat la delict; la contract — numai previzibil. Forța majoră: extern + imprevizibil + irezistibil. Produse cu defect: răspundere obiectivă, prescripție 3 ani / decădere 10 ani, riscul de dezvoltare exonerează. Daune compensatorii (înlocuiesc executarea) ≠ moratorii (sancționează întârzierea, cumulabile cu executarea).'
   },
 
   {
