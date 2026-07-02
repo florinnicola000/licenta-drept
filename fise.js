@@ -1436,17 +1436,17 @@ var FISE_DATA = [
       { icon:'📜', title:'Titlurile executorii și condițiile executării (art. 632–641 NCPC)',
         items:[
           '<b>Titlul executoriu</b>: hotărâri judecătorești definitive, contracte autentice notariale (în limita creanței), contracte de credit, bilete la ordin, cecuri, chitanțe de consemnare. <b>Nu orice contract</b> — numai dacă legea sau titlul prevede.',
-          '<b>Ordonanța de plată</b> (art. 1014 NCPC): procedură specială pentru creanțe certe, lichide și exigibile, constând în sume de bani. Emitere în maximum <b>45 de zile</b>; dacă debitorul nu contestă = titlu executoriu. Contestația se judecă în fond.',
-          '<b>Instanța de executare</b>: judecătoria din circumscripția domiciliului/sediului debitorului sau a locului bunului. Sesizarea executorului: creditor depune cerere + titlu + taxe; executorul notifică debitorul cu somație.',
-          '<b>Executorul judecătoresc</b>: ales de creditor; ales din circumscripția instanței de executare. Cheltuielile de executare = în sarcina <b>debitorului</b> (inclusiv onorariul executorului), cu excepția cazului în care instanța decide altfel.',
-          'Prescripția dreptului de a cere executarea: <b>3 ani</b> de la rămânerea definitivă a hotărârii (sau de la exigibilitatea titlului). Prescripția se întrerupe prin orice act de executare.'
+          '<b>Ordonanța de plată</b> (art. 1014–1025 NCPC): procedură specială pentru creanțe <b>certe, lichide și exigibile</b> constând în sume de bani. Etape: <b>somație prealabilă</b> (plata în 15 zile) → cerere la instanța competentă pentru fond → ordonanță cu termen de plată. Atacabilă numai cu <b>cerere în anulare, în 10 zile</b>; neatacată/respinsă → <b>titlu executoriu</b>.',
+          '<b>Instanța de executare</b> (art. 651 NCPC): <b>judecătoria</b> în a cărei circumscripție se află, la data sesizării, domiciliul/sediul <b>debitorului</b>. Încuviințarea executării se dă de instanța de executare.',
+          '<b>Executorul judecătoresc</b>: ales de creditor din circumscripția <b>curții de apel</b> corespunzătoare (domiciliul debitorului la mobile/poprire; locul imobilului la urmărirea imobiliară). Cheltuielile de executare = în sarcina <b>debitorului</b>.',
+          'Prescripția dreptului de a obține executarea (art. 706 NCPC): <b>3 ani</b>; ⚠️ <b>10 ani</b> pentru titlurile care privesc <b>drepturi reale imobiliare</b>. Se întrerupe prin acte de executare.'
         ]
       },
       { icon:'💸', title:'Formele executării silite',
         items:[
           '<b>Urmărirea mobiliară</b>: sechestrul bunurilor mobile corporale → valorificare prin licitație publică sau vânzare directă. Bunuri de valoare redusă → executorul poate vinde direct.',
           '<b>Poprirea</b> (art. 780 NCPC): terțul (angajator, bancă) care datorează sume debitorului este obligat să le consemneze/vireze creditorului. Terțul poprit trebuie să declare în termen de <b>5 zile</b> dacă datorează sau nu.',
-          'Limite poprire salariu: o creanță = max. <b>1/3 din salariul net</b>; mai multe creanțe sau pensie de întreținere = max. <b>1/2</b>. Minimul nepoprabil = salariul minim net pe economie.',
+          'Limite poprire salariu (art. 729 NCPC): pensie de întreținere/alocații copii → până la <b>1/2</b>; orice alte datorii → până la <b>1/3</b>; concurs de urmăriri → total max <b>1/2</b> din venitul lunar net. Veniturile sub salariul minim: urmăribile numai pentru partea ce depășește <b>jumătate din salariul minim net</b>.',
           '<b>Urmărirea imobiliară</b>: somație cu termen min. <b>15 zile</b> → publicitate → licitație (cel puțin 2 termene) → adjudecare. Prețul de pornire = evaluare realizată de expert.',
           '<b>Predarea silită a bunului</b>: remiterea unui bun mobil/imobil; evacuarea forțată; executarea obligației de a face (cu posibilitate de autorizare a creditorului să facă el însuși pe cheltuiala debitorului).'
         ]
@@ -1454,8 +1454,8 @@ var FISE_DATA = [
       { icon:'🛑', title:'Contestația la executare (art. 711–720 NCPC)',
         items:[
           'Cale de atac specifică executării silite, exercitată de <b>debitor, creditor sau orice terț vătămat</b> de actele de executare. Se poate contesta: actele de executare ilegale SAU titlul însuși (dacă nu e hotărâre judecătorească).',
-          '<b>Termenul</b>: <b>15 zile</b> de la data la care cel interesat a luat cunoștință de actul atacat. Termen de prescripție mai lung (până la 30 de zile) dacă actul atacat nu a fost comunicat.',
-          'Se judecă de <b>instanța de executare</b> (judecătoria), nu de instanța care a pronunțat titlul. Judecată de urgență, cu citare. Hotărârea = supusă numai recursului.',
+          '<b>Termenul</b> (art. 715 NCPC): <b>15 zile</b> de la data la care contestatorul a luat cunoștință de actul de executare atacat / de la comunicarea somației / de la înființarea popririi, după caz. Contestația privind <b>lămurirea</b> titlului: oricând înăuntrul prescripției.',
+          'Se judecă de <b>instanța de executare</b> (judecătoria), nu de instanța care a pronunțat titlul. Judecată de urgență, cu citare. ⚠️ Hotărârea = supusă numai <b>apelului</b> (art. 718 — nu recursului!).',
           'Contestația <b>nu suspendă automat</b> executarea; suspendarea se cere separat de instanța de executare, cu sau fără cauțiune (discreționară). Dacă contestatorul plătește cauțiune = suspendare mai probabilă.',
           'Efectele admiterii: actul de executare atacat = anulat; cheltuielile de executare ilegale = în sarcina creditorului urmăritor; executarea continuă de la ultimul act valabil.'
         ]
@@ -1464,22 +1464,22 @@ var FISE_DATA = [
         items:[
           '<b>Suspendarea de drept</b>: moartea debitorului (până la acceptarea moștenirii), declararea falimentului, intervenirea căii de atac (dacă legea prevede), poprirea asigurătorie anterioară. Actele anterioare suspendării = valabile.',
           '<b>Perimarea executării</b> (art. 697 NCPC): creditorul nu stăruie în executare <b>6 luni</b> de la ultimul act de executare → dosarul se perimă. Stinge dosarul, <b>nu creanța</b>. Creditorul poate porni un nou dosar, cu un nou executor, dar prescripția termenului de 3 ani curge.',
-          '<b>Bunuri neurmăribile</b>: haine, mobilier de strictă necesitate, instrumente de muncă, alimente necesare pe 2 luni, bunuri sacre/culturale, pensii alimentare. ⚠️ Imobilul locuință = <i>poate fi urmărit</i>, dar cu restricții speciale dacă e singurul imobil al familiei cu minori.',
+          '<b>Bunuri neurmăribile</b> (art. 727 NCPC): bunurile de uz personal/casnic strict necesare, obiectele de cult, alimentele necesare debitorului și familiei pe <b>3 luni</b> (la agricultori — până la noua recoltă), combustibilul pe 3 luni de iarnă, bunurile destinate exercitării profesiei (condiționat), scrisorile/fotografiile de familie.',
           '<b>Măsuri asigurătorii</b> (înainte de executare): sechestrul asigurătoriu (imobilizare bunuri mobile), poprirea asigurătorie (blocare conturi). Se pot solicita înainte sau în cursul judecății, cu sau fără cauțiune.'
         ]
       },
       { icon:'🔨', title:'Executarea obligațiilor de a face și insolvenței (art. 905–910 NCPC + Legea 85/2014)',
         items:[
-          '<b>Obligațiile de a face intuitu personae</b> (art. 905 NCPC): dacă debitorul refuză să execute o obligație de a face (ex. predarea unui lucru determinat) și numai el o poate executa, creditorul poate cere instanței obligarea debitorului la <b>penalități</b> de <b>100–1.000 lei/zi</b> de întârziere (sau mai mari dacă prejudiciul e mai mare).',
-          '<b>Penalitățile (astreinte)</b> (art. 906 NCPC): se aplică pentru orice obligație de a face ce nu poate fi executată silit direct; instanța poate majora sau reduce penalitățile; se plătesc creditorului, nu statului. ⚠️ Penalitățile curg până la executarea obligației sau până la pronunțarea hotărârii de despăgubire.',
-          '<b>Executarea obligațiilor de a nu face</b> (art. 904 NCPC): dacă debitorul a săvârșit o faptă interzisă — creditorul poate cere instanței să autorizeze el însuși desființarea lucrărilor pe cheltuiala debitorului; penalități pentru fiecare zi de refuz ulterior.',
-          '<b>Procedura insolvenței</b> (Legea 85/2014): aplicabilă profesioniștilor (comercianți, societăți, PFA) cu <b>insolvabilitate</b> — nu pot plăti datorii scadente. Pragul minim: <b>40.000 lei</b> creanță neachitată la scadență. Instanța competentă: <b>tribunalul</b> specializat de la sediul debitorului.',
+          '<b>Obligația de a face care poate fi îndeplinită și de altă persoană</b> (art. 903–904 NCPC): creditorul poate fi <b>autorizat de instanță să o execute el însuși</b>, pe cheltuiala debitorului.',
+          '<b>Penalitățile (astreinte)</b> (art. 906 NCPC) — pentru obligațiile <b>intuitu personae</b> (a face/a nu face ce nu poate fi îndeplinit prin altul): <b>100–1.000 lei/zi</b> la obligații neevaluabile în bani; <b>0,1%–1% pe zi</b> din valoare la cele evaluabile. Se plătesc <b>creditorului</b>, nu statului. După <b>3 luni</b> de la comunicare, creditorul poate cere fixarea sumei definitive; penalitățile pot fi înlăturate/reduse dacă debitorul execută sau dovedește motive temeinice.',
+          '<b>Executarea obligațiilor de a nu face</b> (art. 905 NCPC): dacă debitorul a încălcat interdicția, creditorul poate cere autorizarea să <b>desființeze el însuși</b> lucrările făcute cu încălcarea obligației, pe cheltuiala debitorului.',
+          '<b>Procedura insolvenței</b> (Legea 85/2014): aplicabilă profesioniștilor aflați în <b>insolvență</b> = insuficiența <b>fondurilor bănești disponibile</b> pentru plata datoriilor certe, lichide și exigibile. ⚠️ Nu confunda cu <b>insolvabilitatea</b> (pasiv &gt; activ) — capcană clasică! Valoarea-prag: <b>50.000 lei</b> (majorată în 2022 de la 40.000; pentru salariați: 6 salarii medii brute). Competența: <b>tribunalul</b> de la sediul debitorului (judecătorul-sindic).',
           '<b>Proceduri în insolvență</b>: (1) <b>reorganizare judiciară</b> — plan aprobat de creditori, debitorul continuă activitatea sub supraveghere; (2) <b>faliment</b> — lichidarea activelor și distribuirea sumelor creditorilor conform ordinii de preferință (garantați → salariali → bugetari → chirografari). Administratorul/lichidatorul judiciar = practician în insolvență.',
           '<b>Efectele deschiderii procedurii</b>: suspendarea urmăririi silite individuale, nulitatea plăților preferențiale din ultimele 6 luni (acte de transfer fără valoare echivalentă), administratorul poate contesta actele frauduloase. Creanțele născute după deschidere = creanțe curente, prioritare.'
         ]
       }
     ],
-    grila:'Contestație la executare = <b>15 zile</b> de la cunoaștere; judecată de <b>instanța de executare</b>. Nu suspendă automat. Poprire salariu: <b>1/3</b> (o creanță) / <b>1/2</b> (mai multe). Perimarea (6 luni) stinge dosarul, nu creanța. Ordonanță de plată: creanță certă/lichidă/exigibilă, termen 45 de zile. Cheltuielile de executare: în sarcina debitorului. Obligații de a face: penalități <b>100–1.000 lei/zi</b> (astreinte). Insolvență: prag <b>40.000 lei</b>, tribunal; reorganizare sau faliment.'
+    grila:'Contestație la executare = <b>15 zile</b>; judecată de <b>instanța de executare</b>; hotărârea → numai <b>APEL</b> (art. 718). Nu suspendă automat. Poprire salariu: întreținere <b>1/2</b>; alte datorii <b>1/3</b>; concurs max 1/2. Perimarea (6 luni) stinge dosarul, nu creanța. Ordonanță de plată: somație 15 zile → cerere; atac = cerere în anulare <b>10 zile</b>. Prescripția executării: 3 ani; <b>10 ani</b> la drepturi reale imobiliare. Penalități art. 906: 100–1.000 lei/zi (neevaluabile) / 0,1–1%/zi (evaluabile); fixare definitivă după 3 luni. Insolvență ≠ insolvabilitate (fonduri bănești vs. pasiv&gt;activ — capcană!); prag <b>50.000 lei</b> (din 2022); tribunal/judecător-sindic; reorganizare sau faliment.'
   },
 
   // ══ PROCEDURĂ PENALĂ ══════════════════════════════════════════════════════════
