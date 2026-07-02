@@ -1040,24 +1040,25 @@ var FISE_DATA = [
     sections:[
       { icon:'🚗', title:'Infracțiuni la regimul circulației pe drumuri publice (art. 334–341 NCP)',
         items:[
-          '<b>Conducerea fără permis</b> (art. 335): conducerea pe drumuri publice a unui vehicul de către o persoană fără permis de conducere corespunzător categoriei sau cu permis suspendat/anulat/expirat.',
-          '<b>Conducerea sub influența alcoolului</b> (art. 336): conducerea cu o alcoolemie de <b>≥ 0,80 g/l sânge</b> sau sub influența substanțelor psihoactive. Infracțiunea e consumată indiferent dacă s-a produs un accident.',
-          '<b>Refuzul recoltării de probe biologice</b> (art. 337): refuzul de a se supune testării sau recoltării; infracțiune distinctă de conducerea sub influența alcoolului.',
-          'Dacă se produce un accident cu victime → <b>concurs de infracțiuni</b> (ex: conducere sub alcool + ucidere din culpă sau vătămare corporală din culpă).',
-          '<b>Părăsirea locului accidentului</b> (art. 338): infracțiune distinctă dacă are loc fără acordul polițistului; poate absorbi sau concura cu alte infracțiuni.'
+          '<b>Conducerea fără permis</b> (art. 335): vehicul pe drum public, fără permis valabil pentru categorie, <b>sau cu permis suspendat/anulat</b>. Conducerea cu permis suspendat = aceeași sancțiune. Pedeapsă: <b>1–5 ani</b>.',
+          '<b>Conducerea sub influența alcoolului</b> (art. 336): alcoolemie ≥ <b>0,80 g/l sânge</b> SAU sub influența substanțelor psihoactive. Infracțiunea = consumată indiferent de accident. ⚠️ Sub 0,80 g/l = contravenție (nu infracțiune).',
+          '<b>Refuzul recoltării de probe biologice</b> (art. 337): refuzul de a se supune testării cu aparate sau recoltării de sânge/urină. Infracțiune <b>distinctă</b> față de conducere sub alcool — concurs posibil dacă ulterior se probează și alcoolemia.',
+          '<b>Conducere periculoasă</b> (art. 334 NCP): depășire a limitei de viteză, trecere la roșu, neacordare de prioritate, în mod periculos. Infracțiune de pericol — nu necesită producerea unui accident.',
+          '<b>Accidente de circulație cu victime</b>: dacă se produce accident → concurs de infracțiuni (conducere sub alcool + ucidere din culpă art. 192 NCP / vătămare corporală din culpă art. 196 NCP). <b>Părăsirea locului accidentului</b> (art. 338): fără acordul polițistului = infracțiune distinctă.'
         ]
       },
       { icon:'🔍', title:'Recapitulare — delimitări esențiale infracțiuni speciale',
         items:[
-          '<b>Omor vs. loviri cauzatoare de moarte vs. ucidere din culpă</b>: omor = intenție față de moarte; loviri cauzatoare de moarte = praeterintenție; ucidere din culpă = culpă.',
-          '<b>Furt vs. abuz de încredere vs. înșelăciune vs. tâlhărie</b>: furt = luare fără consimțământ; abuz de încredere = primire cu consimțământ, nerestituire; înșelăciune = inducere în eroare + prejudiciu; tâlhărie = furt + violență.',
-          '<b>Luare de mită vs. trafic de influență vs. abuz în serviciu</b>: luarea = foloase pentru actul propriu; traficul = foloase pentru influența asupra altui funcționar; abuzul = neîndeplinire/îndeplinire necorespunzătoare fără foloase.',
-          '<b>Tăinuire vs. favorizare</b>: tăinuirea = bunuri provenite din infracțiune; favorizarea = ajutorarea persoanei infractorului să se sustragă.',
-          '<b>Fals material vs. fals intelectual vs. uz de fals</b>: falsul material = alterare fizică; falsul intelectual = date false la întocmire (subiect special); uzul = folosirea înscrisului fals de altcineva.'
+          '<b>Omor / loviri cauzatoare de moarte / ucidere din culpă</b>: criteriul = <i>intenția față de deces</i>. Omor = intenție directă/indirectă față de moarte. Loviri cauzatoare de moarte = praeterintenție (intenție la lovire + culpă la deces). Ucidere din culpă = culpă față de moarte.',
+          '<b>Furt / abuz de încredere / înșelăciune / tâlhărie</b>: furt = luare fără consimțământ. Abuz de încredere = primit cu consimțământ, nestituit. Înșelăciune = consimțământul viciat prin eroare + prejudiciu. Tâlhărie = furt + violență (chiar ulterioară luării).',
+          '<b>Luare de mită / trafic de influență / abuz în serviciu</b>: luare de mită = funcționarul primește foloase pentru actul propriu. Trafic de influență = oricine pretinde foloase pentru a influența un funcționar. Abuz în serviciu = neîndeplinire/îndeplinire defectuoasă a atribuțiilor, <b>fără foloase</b> (dacă există foloase = luare de mită).',
+          '<b>Delapidare / abuz în serviciu / gestiune frauduloasă</b>: delapidare = funcționar gestionar care <i>însușește</i> bunuri. Abuz în serviciu = funcționar care îndeplinește defectuos atribuțiile. Gestiunea frauduloasă = orice persoană căreia i s-au încredințat bunuri de administrat le prejudiciază.',
+          '<b>Vătămare corporală / lovire și alte violențe</b>: pragul = 90 zile îngrijiri medicale. Sub 90 zile = lovire (plângere prealabilă). Peste 90 zile sau consecință gravă = vătămare corporală (din oficiu). Prag stabilit de medic legist.',
+          '<b>Tăinuire / favorizare</b>: tăinuire = <i>bunuri</i> provenite din infracțiune. Favorizare = <i>persoana</i> infractorului e ajutată să se sustragă. Soțul/rudele apropiate ale favorizatorului → <b>nepedepsire</b>; nu și la tăinuire.'
         ]
       }
     ],
-    grila:'Conducere sub alcool: ≥ <b>0,80 g/l sânge</b>; infracțiunea există chiar fără accident. Dacă se produce și accident cu victime → <b>concurs</b> cu ucidere/vătămare din culpă. Uzul de fals e săvârșit de <b>altcineva</b> decât autorul falsului. Tăinuire = bunuri; favorizare = persoana. Omor ≠ loviri cauzatoare de moarte: distincția = intenția față de deces.'
+    grila:'Conducere sub alcool: ≥ <b>0,80 g/l sânge</b>; consumată fără accident. Dacă accident → concurs cu ucidere/vătămare din culpă. Omor = intenție față de deces; loviri cauzatoare de moarte = praeterintenție. Vătămare corporală: prag <b>90 zile</b>. Luare de mită = funcționar + foloase pentru act propriu; trafic de influență = oricine + influență asupra funcționarului. Tăinuire = bunuri; favorizare = persoana.'
   },
 
   // ══ PROCEDURĂ CIVILĂ ══════════════════════════════════════════════════════════
