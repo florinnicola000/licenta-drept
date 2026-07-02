@@ -558,36 +558,37 @@ var FISE_DATA = [
     id:'w11', wk:'W11', dates:'7–13 sep', subj:'civ',
     title:'Transmiterea, stingerea obligațiilor + Simulația',
     sections:[
-      { icon:'↔️', title:'Cesiunea de creanță (art. 1566–1592 NCC)',
+      { icon:'↔️', title:'Cesiunea de creanță, preluarea datoriei, cesiunea de contract',
         items:[
-          'Cedentul transmite creanța sa cesionarului; <b>acordul debitorului cedat NU e necesar</b>, dar e necesară <b>notificarea</b> sau <b>acceptarea</b> sa.',
-          'Opozabilitate față de <b>debitorul cedat</b>: de la notificare/acceptare → debitorul nu mai poate plăti valabil cedentului.',
-          'Opozabilitate față de <b>terți</b>: de la data înscrierii în AEGRM sau notificarea debitorului.',
-          'Cedentul garantează <b>existența creanței</b> la momentul cesiunii; <b>nu</b> garantează solvabilitatea debitorului (excepție: stipulație expresă).',
-          'Debitorul cedat poate opune cesionarului toate excepțiile pe care le putea opune cedentului.'
+          '<b>Cesiunea de creanță</b> (art. 1566 NCC): cedentul transmite creanța cesionarului; <b>acordul debitorului cedat NU e necesar</b>, dar notificarea/acceptarea e necesară pentru opozabilitate față de el.',
+          'Opozabilitate față de <b>debitorul cedat</b>: de la notificare sau acceptare → debitorul plătește valabil numai cesionarului. Opozabilitate față de <b>terți</b>: de la data înscrierii în AEGRM sau notificării debitorului.',
+          'Cedentul garantează <b>existența creanței</b> la cesiune; <b>nu garantează solvabilitatea</b> debitorului (excepție: stipulație expresă). Debitorul poate opune cesionarului toate excepțiile opozabile cedentului.',
+          '<b>Preluarea datoriei</b> (art. 1599 NCC): terțul preia datoria debitorului cu acordul creditorului. <b>Fără acordul creditorului</b> → datoria veche nu se stinge (cesionarul de datorie e fidejusor, în esență).',
+          '<b>Cesiunea de contract</b> (art. 1315 NCC): transmiterea concomitentă a calității de parte contractantă (drepturi + obligații). <b>Necesită acordul cocontractantului cedat</b> (spre deosebire de cesiunea de creanță). ⚠️ Cedentul rămâne ținut față de cocontractant dacă nu a fost exonerat expres.'
         ]
       },
       { icon:'🔄', title:'Stingerea obligațiilor',
         items:[
-          '<b>Compensația</b> (art. 1616–1623): stingerea reciprocă a două datorii <b>certe, lichide și exigibile</b> între aceleași persoane. Operează de drept (legal), la cerere sau prin convenție.',
-          '<b>Confuziunea</b> (art. 1624): creditorul devine debitorul aceleiași obligații (prin moștenire sau cesiune); obligația se stinge.',
-          '<b>Remiterea de datorie</b> (art. 1629–1633): renunțarea voluntară a creditorului la creanță; poate fi expresă sau tacită (restituirea titlului de creanță).',
-          '<b>Imposibilitate fortuită</b> (art. 1634): datoria se stinge dacă obiectul cert a pierit fortuit (înainte de transfer) și fără culpa debitorului.',
-          '<b>Darea în plată</b> (art. 1492): creditorul acceptă o altă prestație decât cea datorată; echivalentul novației obiective.'
+          '<b>Compensația legală</b> (art. 1617 NCC): stingerea de drept a două datorii reciproce, <b>certe, lichide și exigibile</b>, de aceeași natură, între aceleași persoane. Operează de drept (nu necesită declarație). Creanțele nesusceptibile de compensație: creanțele alimentare, creanțele insesizabile, creanțele din delict intenționat.',
+          'Compensația cu o creanță prescrisă: posibilă dacă la data la care ambele datorii puteau fi compensate, prescripția nu intervenise. <b>Compensația judiciară</b>: stabilită de instanță când nu sunt îndeplinite condițiile compensației legale.',
+          '<b>Confuziunea</b> (art. 1624 NCC): creditorul devine debitorul aceleiași obligații (prin moștenire sau cesiune). Obligația principală se stinge → se sting și fidejusiunea și ipoteca (accesoriile urmează principalul).',
+          '<b>Remiterea de datorie</b> (art. 1629 NCC): renunțare voluntară a creditorului la creanță; expresă sau tacită (restituirea titlului de creanță, ștergerea creanței din registre). Stinge și garanțiile reale accesoare.',
+          '<b>Imposibilitate fortuită</b> (art. 1634 NCC): datoria se stinge dacă obiectul cert a pierit fortuit, fără culpa debitorului, înainte de transferul proprietății. ⚠️ Riscul pieirii fortuite urmărește proprietatea (res perit domino).',
+          '<b>Darea în plată</b> (art. 1492 NCC): creditorul acceptă o altă prestație decât cea datorată; produce efectele plății de la data acceptării. ⚠️ Legea 77/2016 (darea în plată la credite ipotecare) — mecanism special, diferit de darea în plată de drept comun.'
         ]
       },
-      { icon:'🎭', title:'Simulația (art. 1289–1294 NCC)',
+      { icon:'🎭', title:'Simulația — efecte practice (art. 1289–1294 NCC)',
         items:[
-          'Act public (aparent, ostensibil) + act secret (<i>contraînscris</i>) care modifică/desființează total sau parțial actul public.',
-          'Forme: <b>fictivă</b> (actul public e complet inexistent), <b>deghizată</b> (se ascunde natura reală: donație sub forma vânzării), <b>prin interpunere de persoane</b> (adevăratul beneficiar e ascuns).',
-          '<b>Efecte între părți</b>: actul secret prevalează (dacă e valid; dacă e nul, actul public produce efecte).',
-          '<b>Efecte față de terți de bună-credință</b>: terții pot invoca <b>actul public</b> (care le este opozabil); ei nu sunt prejudiciați de actul secret pe care nu l-au cunoscut.',
-          'Terții de rea-credință sau care au cunoscut actul secret nu pot invoca actul public în detrimentul celorlalți terți.',
-          '<b>Acțiunea în simulație</b>: oricând (imprescriptibilă față de terți), 3 ani între părți (pentru efectele actului secret).'
+          'Existența concomitentă a unui act aparent (public) și a unui contraînscris (secret) care modifică sau desființează actul aparent.',
+          '<b>Scopuri frecvente</b>: (1) ascunderea prețului real al vânzării pentru a reduce impozitele; (2) deghizarea unei donații ca vânzare; (3) simularea insolvabilității pentru a frauda creditorii; (4) interpunere de persoane (pentru a ocoli o incapacitate — ex: medic prin terț).',
+          '<b>Efecte între părți</b>: actul secret prevalează (dacă e valabil). Dacă actul secret e nul → actul public produce efecte.',
+          '<b>Efecte față de terții de bună-credință</b>: pot invoca fie actul aparent, fie cel secret — la alegere. ⚠️ Terții de bună-credință care s-au bazat pe actul aparent sunt protejați chiar dacă actul secret arată altceva.',
+          'Simulația în frauda legii sau a terților: contraînscrisul e inopozabil terților prejudiciați; ei pot cere constatarea simulației.',
+          '<b>Acțiunea în simulație</b>: imprescriptibilă față de terți; 3 ani între părți. Proba: terții pot face proba simulației prin orice mijloc (inclusiv martori/prezumții).'
         ]
       }
     ],
-    grila:'Cesiunea de creanță: <b>nu necesită acordul debitorului</b>, CI notificarea. Compensația: ambele datorii <b>certe + lichide + exigibile</b>. Simulație: între părți prevalează <b>actul secret</b>; față de terți de bună-credință prevalează <b>actul public</b>. Acțiunea în simulație față de terți este <b>imprescriptibilă</b>.'
+    grila:'Cesiunea de creanță: <b>nu necesită acordul debitorului</b> (ci notificarea). Preluarea datoriei: <b>necesită acordul creditorului</b>. Cesiunea de contract: necesită acordul <b>cocontractantului cedat</b>. Compensația legală: certe + lichide + exigibile + aceeași natură. Confuziunea: stinge și garanțiile accesorii. Simulație: între părți prevalează <b>actul secret</b>; terții de bună-credință aleg. Acțiunea în simulație față de terți: <b>imprescriptibilă</b>.'
   },
 
   {
