@@ -249,40 +249,51 @@ var FISE_DATA = [
     sections:[
       { icon:'📌', title:'Dreptul de proprietate privată (art. 555–621 NCC)',
         items:[
-          '<b>Absolut</b>: opozabil tuturor (erga omnes); proprietarul poate opune dreptul față de oricine.',
-          '<b>Exclusiv</b>: proprietarul singur exercită prerogativele; terții nu pot interveni fără consimțământ.',
-          '<b>Perpetuu</b>: nu se stinge prin neuz; se transmite prin moștenire sau acte juridice.',
-          '<b>Conținut</b>: <i>ius utendi</i> (a folosi bunul), <i>ius fruendi</i> (a culege fructele), <i>ius abutendi</i> (dispoziția materială și juridică).',
-          '<b>Dispoziția juridică</b>: înstrăinare, grevare cu sarcini reale, renunțare. Dispoziția materială: transformare, consumare, distrugere.'
+          '<b>Absolut</b>: opozabil tuturor (<i>erga omnes</i>). <b>Exclusiv</b>: numai proprietarul exercită prerogativele — terții nu pot interveni fără consimțământ. <b>Perpetuu</b>: nu se stinge prin neuz; se transmite <i>mortis causa</i>.',
+          '<b>Conținut (triada)</b>: <i>ius utendi</i> (usus — a folosi bunul), <i>ius fruendi</i> (fructus — a culege fructele), <i>ius abutendi</i> (abusus — dispoziția materială și juridică).',
+          '<b>Dispoziția juridică</b>: înstrăinare, grevare cu sarcini reale (ipotecă, servitute), renunțare. <b>Dispoziția materială</b>: transformare, consumare, distrugere.',
+          '<b>Proprietatea publică</b> (art. 858 NCC): aparține statului/unităților administrativ-teritoriale; bunuri de uz sau interes public. Caractere: inalienabilă, insesizabilă, imprescriptibilă. ⚠️ Bunurile publice nu pot fi dobândite prin uzucapiune.',
+          '<b>Exproprierea</b> (art. 44 Constituție, Legea 33/1994): limitare definitivă a proprietății private pentru cauză de utilitate publică, numai cu <b>justă și prealabilă despăgubire</b>. Lipsă despăgubire → expropriere abuzivă (art. 1 Prot. 1 CEDO).'
         ]
       },
       { icon:'🚧', title:'Limitele exercitării dreptului de proprietate',
         items:[
-          '<b>Legale</b>: distanțe minime față de hotar pentru construcții (0,6m–0,6m), arbori (0,5m sau conform regulilor locale); dreptul de trecere forțat (art. 617–621 NCC).',
-          '<b>Judiciare (abuzul de drept)</b>: exercitarea dreptului cu scopul exclusiv de a păgubi pe altul, fără interes legitim propriu → faptă ilicită, antrenează răspundere delictuală.',
-          '<b>Convenționale (clauza de inalienabilitate)</b>: motiv licit și serios; durată max <b>49 de ani</b>; privește numai bunurile proprietarului din patrimoniul său la data clauzei.',
-          'Clauza de inalienabilitate e valabilă și opozabilă terților prin publicitate (CF pentru imobile); fără publicitate → inopozabilă terților de bună-credință.'
+          '<b>Legale</b> (art. 602–625 NCC): distanțe minime față de hotar pentru construcții și arbori; interdicția de a instala geamuri cu vedere laterală la mai puțin de 0,6 m de hotar; <b>dreptul de trecere forțat</b> (art. 617 NCC) — proprietarul fondului înfundat poate cere trecere la drumul public, cu despăgubire.',
+          '<b>Abuzul de drept</b> (art. 15 NCC): exercitarea dreptului cu <i>intenția exclusivă de a păgubi</i> pe altul (<i>théorie des actes d\'émulation</i>) sau cu depășirea limitelor bunei-credințe → faptă ilicită, antrenează răspundere delictuală.',
+          '<b>Clauza de inalienabilitate</b> (art. 627 NCC): valabilă dacă există un <b>motiv licit și serios</b>; durată max <b>49 ani</b>; privește numai bunurile proprietarului la data clauzei. Opozabilă terților prin publicitate (CF); fără publicitate → inopozabilă terților de bună-credință.',
+          '<b>Drepturile vecinilor</b> (art. 630 NCC): proprietarul trebuie să tolereze inconvenientele normale de vecinătate (zgomot, mirosuri). Inconveniențele anormale (depășind pragul rezonabil) → obligarea la încetare sau despăgubiri, indiferent de culpă.'
+        ]
+      },
+      { icon:'⚙️', title:'Dobândirea dreptului de proprietate',
+        items:[
+          '<b>Moduri originare</b> (dobânditorul nu primește dreptul de la un autor anterior): uzucapiunea, accesiunea, ocupațiunea (bunuri fără stăpân — art. 941 NCC), comoriența (dreptul de proprietate se dobândește în momentul morții), munca creatoare (opere de creație).',
+          '<b>Moduri derivate</b> (translative de la un autor): acte juridice (vânzare, donație, schimb), moștenire (testamentară sau legală). Principiu: <i>nemo plus iuris ad alium transferre potest quam ipse habet</i> (nimeni nu poate transmite mai mult decât are).',
+          '<b>Principiul transferului prin simplul acord de voință</b> (art. 1674 NCC): la vânzare, proprietatea se strămută de drept de la vânzător la cumpărător prin simplul acord, chiar dacă bunul nu a fost predat și prețul nu a fost plătit. <b>Excepție</b>: bunuri de gen — transferul se produce la <b>individualizare</b>.',
+          '<b>Cartea Funciară</b> (art. 557 alin. 4 NCC): înscrierea în CF are efect <b>constitutiv</b> (din 2019, data implementării integrale a sistemului CF național) — proprietatea imobiliară se dobândește la data înscrierii. <i>Anterior integralității</i>: înscrierea era de opozabilitate față de terți, nu constitutivă.',
+          '<b>Accesiunea imobiliară artificială</b> (art. 577 NCC): constructorul pe terenul altuia — proprietarul terenului dobândește construcția prin accesiune, cu obligația de a-l despăgubi pe constructor. Dacă constructorul e de bună-credință: despăgubire la valoarea materialelor și manoperei sau valoarea de piață a construcției.'
         ]
       },
       { icon:'🔀', title:'Modalitățile dreptului de proprietate',
         items:[
-          '<b>Proprietatea rezolubilă</b>: drept transmis sub condiție rezolutorie; la realizarea condiției dreptul revine transmițătorului retroactiv.',
-          '<b>Proprietatea anulabilă</b>: dobândită printr-un act anulabil; dacă actul e anulat, dreptul revine (cu efecte față de terți sub rezerva bunei-credințe și publicității).',
-          '<b>Coproprietatea pe cote-părți</b>: fiecare coproprietar are o cotă <i>ideală</i> din drept (nu dintr-un anumit fragment al bunului).',
-          '<b>Devălmășia</b>: soții nu au cote determinate; specific regimului matrimonial al comunității legale.',
-          '<b>Coproprietatea forțată</b>: bunuri comune obligatorii (scări, acoperișuri, fundații, hotarele comune) — nu se poate cere partajul judiciar.'
+          '<b>Proprietatea rezolubilă</b>: drept transmis sub condiție rezolutorie; la realizarea condiției dreptul revine transmițătorului retroactiv (efecte față de terți: dobânditorul subsecvent al terțului pierde dreptul — <i>resoluto iure dantis</i>).',
+          '<b>Proprietatea anulabilă</b>: dobândită printr-un act anulabil; dacă actul e anulat, dreptul revine. Terțul dobânditor cu titlu oneros, de bună-credință, înscris în CF → protejat.',
+          '<b>Coproprietatea obișnuită</b>: rezultă din acte juridice sau lege; fiecare are o cotă ideală; poate fi cerut oricând partajul.',
+          '<b>Devălmășia</b>: soții nu au cote determinate; specifică comunității legale. Partajul se face la desfacerea/încetarea căsătoriei sau în timpul căsătoriei prin schimb de regim matrimonial.',
+          '<b>Coproprietatea forțată</b> (art. 646 NCC): bunuri comune inerente (scări, fundații, pereți despărțitori, hotarele comune) — nu se poate cere partajul; cotele urmează loturile.'
         ]
       },
-      { icon:'🤝', title:'Regimul coproprietății pe cote-părți (art. 634–645 NCC)',
+      { icon:'🤝', title:'Regimul coproprietății pe cote-părți (art. 634–671 NCC)',
         items:[
-          '<b>Acte de conservare</b>: orice coproprietar poate face singur, fără acordul celorlalți.',
-          '<b>Acte de administrare</b>: regula majorității cotelor (nu a numărului de persoane); dacă nu există majoritate → instanța poate autoriza.',
-          '<b>Acte de dispoziție</b>: regula unanimității — toți trebuie să consimtă. Un coproprietar poate înstrăina liber numai <b>propria cotă</b>.',
-          '<b>Partajul</b>: convențional sau judiciar; efecte <b>declarative</b> (nu constitutive sau translative): fiecare e considerat că a deținut întregul lot de la momentul coproprietății.'
+          '<b>Acte de conservare</b>: orice coproprietar poate face singur, pe cheltuiala comună.',
+          '<b>Acte de administrare</b> (art. 641 NCC): regula majorității <b>cotelor</b> (nu a numărului de persoane). Dacă nu există majoritate → instanța poate autoriza dacă actul e util. ⚠️ Actul de administrare cu terții de bună-credință: opozabil și celorlalți coproprietari.',
+          '<b>Acte de dispoziție</b> (art. 641 alin. 4 NCC): regula unanimității — sancțiunea nerespectării: inopozabilitate față de coproprietarii care nu au consimțit (nu nulitate!). Orice coproprietar poate înstrăina liber <b>propria cotă ideală</b>.',
+          '<b>Dreptul de preempțiune</b>: la înstrăinarea cotei prin vânzare, ceilalți coproprietari au <b>drept de preempțiune</b> (art. 641 alin. 1 NCC, cu trimitere la art. 1730–1740). Nerespectarea → coproprietarul preferențial poate substitui cumpărătorul în 3 luni.',
+          '<b>Partajul</b> (art. 669 NCC): poate fi cerut oricând de orice coproprietar (drept imprescriptibil). Convențional sau judiciar. Modalități: atribuire în natură cu sultă, licitație publică (dacă bunul nu se poate împărți). Efecte: <b>declarative</b> (retroactive, de la data nașterii coproprietății).',
+          '<b>Cheltuielile comune</b>: proporțional cu cotele. Coproprietarul care face cheltuieli necesare pentru conservarea bunului are acțiune în regres față de ceilalți.'
         ]
       }
     ],
-    grila:'Efectul <b>declarativ</b> al partajului: nu există transfer de drepturi între coproprietari (deosebit de vânzare). Regula unanimității: <b>numai acte de dispoziție</b>. Acte de administrare: <b>majoritate de cote</b>. Clauza de inalienabilitate: max <b>49 ani</b> + motiv licit și serios. Coproprietatea forțată: <b>nu se poate cere partajul</b>.'
+    grila:'Efectul <b>declarativ</b> al partajului: retroactiv de la nașterea coproprietății. Regula unanimității: numai acte de <b>dispoziție</b> (nu de administrare). Clauza de inalienabilitate: max <b>49 ani</b> + motiv licit. Coproprietatea forțată: <b>nu se poate partaja</b>. Transfer proprietate imobiliară: prin acord de voință, dar opozabilitate față de terți → înscrierea în CF (efect constitutiv din 2019). Proprietate publică: inalienabilă, insesizabilă, imprescriptibilă. Preempțiune coproprietar: <b>3 luni</b> de la comunicare.'
   },
 
   {
