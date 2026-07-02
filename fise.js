@@ -1360,6 +1360,244 @@ var FISE_TIPS={
   ]
 };
 
+// ── Recall activ — întrebări specifice pentru fiecare fișă ───────────────────
+var FISE_RECALL={
+  w01:[
+    'Definește actul juridic civil și enumeră cele 3 condiții de valabilitate (art. 1179 NCC).',
+    'Clasifică actele juridice după numărul de voințe (unilateral / bilateral / multilateral) — câte un exemplu pentru fiecare.',
+    'Eroarea-obstacol vs. eroarea-viciu de consimțământ: ce tip de nulitate atrage fiecare și de ce diferă?',
+    'Schema comparativă — nulitate absolută vs. relativă: cine o invocă / termen de prescripție / poate fi confirmată?',
+    'Aplicație: un minor de 16 ani vinde un teren fără acordul reprezentantului legal. Ce tip de nulitate? Cine o poate invoca? Poate fi confirmată?',
+    'Retroactivitatea nulității (quod nullum est, nullum producit effectum): ce înseamnă și enumeră 2 excepții principale față de terți.',
+    'La grilă: prescripția extinctivă stinge dreptul subiectiv sau dreptul la acțiune? Ce consecință are pentru debitorul care plătește după prescripție?'
+  ],
+  w02:[
+    'Enumeră cele 4 vicii de consimțământ și tipul de nulitate atras de fiecare (absolut sau relativ).',
+    'Dolul: descrie elementul obiectiv (manopere dolosive) + elementul subiectiv (intenție de a induce în eroare). Poate fi comis de un terț?',
+    'Violența: poate fi exercitată de un terț față de contractant? Dar față de persoane dragi contractantului? Cu ce efect?',
+    'Leziunea: ce vârstă trebuie să aibă victima, ce proporție a valorii prestației trebuie depășită și în ce termen se prescrie acțiunea?',
+    'Aplicație: A îl determină pe B să cumpere un teren, susținând mincinos că e construibil. Ce viciu de consimțământ? Ce tip de nulitate? Cine o invocă?',
+    'Eroarea asupra identității cocontractantului vs. eroarea asupra calității esențiale a bunului — care atrage nulitate și ce tip?',
+    'La grilă: violența exercitată de un terț — cumpărătorul care știa de violență vs. cumpărătorul care nu știa: consecințe diferite?'
+  ],
+  w03:[
+    'Schema completă — nulitate absolută: cauze (3 exemple) / cine invocă / termen / confirmare posibilă?',
+    'Schema completă — nulitate relativă: cauze (3 exemple) / cine invocă / termen / confirmare posibilă?',
+    'Conversiunea actului juridic nul: ce presupune și dă exemplul testamentului autentic nul de formă → testament olograf.',
+    'Nulitatea parțială: când se poate aplica și ce condiție trebuie îndeplinită față de restul actului?',
+    'Principiul resoluto iure dantis, resolvitur ius accipientis: ce înseamnă și când nu se aplică față de terții de bună-credință?',
+    'Aplicație: A vinde lui B un imobil; contractul e anulat. Între timp B vânduse imobilul lui C (de bună-credință). Ce se întâmplă cu dreptul lui C?',
+    'Confirmarea nulității relative: cine o poate face, în ce formă și care e efectul retroactiv față de terți?'
+  ],
+  w04:[
+    'Termenul general de prescripție extinctivă în NCC: durată, de la ce moment curge și ce stinge (dreptul sau acțiunea)?',
+    'Suspendarea vs. întreruperea prescripției: ce efect produce fiecare asupra termenului deja scurs?',
+    'Enumeră 3 cauze de suspendare a prescripției (art. 2532 NCC).',
+    'Decăderea vs. prescripția extinctivă — 3 diferențe: cine o poate invoca, regimul convenției contrare, invocare din oficiu.',
+    'Termenele speciale de prescripție: acțiunea în anulare pentru viciu de consimțământ / răspundere delictuală / acțiunea în revendicare imobiliară.',
+    'Aplicație: termenul de prescripție s-a împlinit, dar debitorul plătește. Poate cere restituirea sumei plătite?',
+    'Recunoașterea dreptului de către debitor (art. 2537 NCC): ce efect produce asupra termenului de prescripție în curs?'
+  ],
+  w05:[
+    'Enumeră și explică pe scurt cele 3 atribute ale dreptului de proprietate (usus / fructus / abusus).',
+    'Exproprierea: condiții constituționale (utilitate publică + dreaptă și prealabilă despăgubire) și poate fi contestată valoarea?',
+    'Coproprietatea pe cote-părți: ce drepturi poate exercita singur fiecare coproprietar fără acordul celorlalți?',
+    'Uzucapiunea tabulară (art. 931 NCC) vs. extratabulară (art. 930 NCC): termene și condiții pentru fiecare.',
+    'Aplicație: A construiește o casă pe terenul lui B cu bună-credință. B cere demolarea. Instanța poate ordona demolarea?',
+    'Accesiunea imobiliară artificială — constructorul de rea-credință pe terenul altuia: ce poate cere proprietarul terenului?',
+    'La grilă: proprietarul poate restricționa exercițiul atributelor propriului drept? Enumeră 2 limitări legale.'
+  ],
+  w06:[
+    'Enumeră cele 4 dezmembrăminte ale dreptului de proprietate și caracteristica esențială a fiecăruia.',
+    'Uzufruct: drepturile uzufructuarului (uz + fructus) vs. nudul proprietar (abusus). Cine suportă reparațiile mari (de structură)?',
+    'Uzufructul constituit în favoarea unei persoane juridice: durată maximă legală și ce se întâmplă la expirare?',
+    'Dreptul de superficie: ce include (dreptul asupra construcției + dreptul de a folosi terenul) și durata maximă în NCC.',
+    'Servitutea — clasificare esențială: continuă vs. necontinuă și aparentă vs. neaparentă. Care se poate dobândi prin uzucapiune?',
+    'Aplicație: nudul proprietar vrea să vândă imobilul grevat de uzufruct viager. Este posibil? Ce se întâmplă cu uzufructul?',
+    'La grilă: uzufructuarul poate ceda uzufructul? Dar poate subînchiria bunul? Care e consecința față de nudul proprietar?'
+  ],
+  w07:[
+    'Posesia: elementele constitutive (corpus + animus domini). Ce e detenția precară și cum diferă de posesie?',
+    'Uzucapiunea extratabulară (art. 930 NCC): termen, necesită just titlu și bună-credință?',
+    'Uzucapiunea tabulară (art. 931 NCC): termen, condiții și când operează.',
+    'Ipoteca imobiliară: condiții de constituire (formă autentică) și formalități de opozabilitate față de terți (ANCPI).',
+    'Aplicație: creditorul ipotecar urmărește imobilul, dar debitorul l-a vândut unui terț. Poate creditorul urmări imobilul în mâinile terțului?',
+    'Gajul (amanetul): ce bunuri pot fi gajate, ce formalitate de constituire e necesară și cum se execută?',
+    'Privilegiile vs. ipoteca: prin ce se deosebesc privind rangul, originea și necesitatea înscrierii?'
+  ],
+  w08:[
+    'Contractul de vânzare: momentul transferului proprietății (regulă generală NCC), cine suportă riscul pieirii și 3 obligații principale ale vânzătorului.',
+    'Donația: forma obligatorie (autentică notarială) și 3 categorii de donații valabile fără formă autentică (donații indirecte, deghizate, dar manual).',
+    'Donația: cauze de revocare judiciară (ingratitudine + naștere de copil). Revocarea pentru ingratitudine — termen și efecte față de terți.',
+    'Mandatul cu reprezentare vs. fără reprezentare: față de terți, efectele actelor mandatarului se produc față de cine în fiecare caz?',
+    'Aplicație: A îi dă lui B mandat să vândă terenul cu minimum 50.000 €. B îl vinde cu 45.000 €. Contractul cu cumpărătorul C e valabil?',
+    'Împrumut de consumație (mutuum) vs. împrumut de folosință (comodat): cine devine proprietarul bunului și cine suportă riscul pieirii?',
+    'Clauza de inalienabilitate: condiții de valabilitate în NCC (interes serios și legitim + durată determinată) și efecte față de terți.'
+  ],
+  w09:[
+    'Enumeră și explică succint cele 4 condiții cumulative ale răspunderii civile delictuale.',
+    'Răspunderea comitentului pentru prepus (art. 1373 NCC): ce 3 condiții trebuie dovedite și care e unica cauza de exonerare a comitentului?',
+    'Răspunderea părinților pentru fapta minorului (art. 1372 NCC): condiții și cauze de exonerare.',
+    'Răspunderea pentru animale (art. 1375 NCC) și pentru ruina edificiului (art. 1378 NCC): obiectivă sau subiectivă? Cine răspunde?',
+    'Aplicație: A și B cauzează împreună un prejudiciu de 100.000 lei lui C. Fiecare răspunde solidar sau proporțional față de C?',
+    'Prejudiciul moral: se poate repara în dreptul civil român? Pe ce temei legal și cum îl evaluează instanța?',
+    'La grilă: culpa exclusivă a victimei → exonerare totală sau parțială a autorului? Dar culpa concurentă?'
+  ],
+  w10:[
+    'Enumeră cel puțin 5 izvoare ale obligațiilor civile în NCC.',
+    'Formarea contractului între absenți: momentul perfectării (teoria recepției) și ce se întâmplă dacă acceptarea ajunge tardiv?',
+    'Gestiunea de afaceri (art. 1330 NCC): enumeră 3 condiții și principalele obligații ale gerantului față de gerat.',
+    'Îmbogățirea fără justă cauză — actio de in rem verso: 3 condiții și limita restituirii (cel mai mic din îmbogățire vs. sărăcire).',
+    'Aplicație: A plătește din greșeală o datorie a lui B față de C. Ce acțiune are A și împotriva cui — B sau C?',
+    'Plata nedatorată (art. 1341 NCC): condiții și ce se poate cere la restituire (principiul).',
+    'Solidaritatea pasivă vs. fideiusiunea: cum diferă față de creditor și față de moștenitorii debitorului?'
+  ],
+  w11:[
+    'Enumeră cel puțin 6 moduri de stingere a obligațiilor (art. 1615 NCC).',
+    'Compensația legală (art. 1617 NCC): cele 3 condiții cumulative pentru a opera de drept, fără nicio manifestare de voință.',
+    'Novația (art. 1609 NCC) vs. cesiunea de creanță (art. 1566 NCC): ce se întâmplă cu datoria originală în fiecare caz?',
+    'Cesiunea de creanță: formalitățile față de debitorul cedat (art. 1578 NCC) și față de terți (art. 1581 NCC).',
+    'Fideiusiunea: beneficiul de discuțiune (explicație) + beneficiul de diviziune (explicație) — când fidejusorul le poate invoca?',
+    'Aplicație: creditorul remite datoria unuia dintre codebitorii solidari. Ceilalți codebitori sunt și ei liberați de datorie?',
+    'Daunele-interese moratorii vs. compensatorii: când se acordă fiecare și pot fi cumulate cu executarea în natură?'
+  ],
+  w12:[
+    'Vânzarea — obligațiile vânzătorului: predare (obiect + accesorii + fructe) + garanție contra evicțiunii + garanție contra viciilor. Explică pe scurt fiecare.',
+    'Garanția contra viciilor ascunse: 4 condiții pentru ca viciul să fie ascuns și în ce termen trebuie denunțat viciul descoperit?',
+    'Evicțiunea totală: ce poate cere cumpărătorul de la vânzătorul de bună-credință (art. 1700 NCC)?',
+    'Dreptul de preempțiune la terenuri agricole (Legea 17/2014): ordinea de preferință și termenul de exercitare.',
+    'Aplicație: vânzătorul a ascuns intenționat o crăpătură în fundație. Cumpărătorul o descoperă după 2 ani. Ce acțiuni are și în ce termen?',
+    'Pactul de opțiune vs. promisiunea de vânzare-cumpărare: diferența față de irevocabilitate și posibilitatea transmiterii dreptului.',
+    'La grilă: vânzarea bunului altuia — nulitate absolută sau relativă? Ce se întâmplă dacă vânzătorul dobândește proprietatea ulterior?'
+  ],
+  w13:[
+    'Locațiunea — obligațiile locatarului (cel puțin 3): folosința conform destinației, întreținerea, restituirea la termen.',
+    'Sublocațiunea vs. cesiunea contractului de locațiune: diferența esențială și când sunt permise fără acordul explicit al locatorului?',
+    'Antrepriza: cine răspunde față de beneficiar pentru viciile construcției? Există garanție legală specială pentru construcții?',
+    'Mandatul oneros vs. gratuit: există prezumție de gratuitate sau onerozitate în NCC? Ce consecință are pentru standardul de diligență al mandatarului?',
+    'Aplicație: locatarul a subînchiriat apartamentul fără acordul locatorului. Ce poate face locatorul (3 opțiuni)?',
+    'Mandatul — revocarea de către mandant: când produce efecte față de terții de bună-credință care nu știau de revocare?',
+    'La grilă: antrepriza cu materiale furnizate de antreprenor — când trece proprietatea materialelor la beneficiar?'
+  ],
+  w14:[
+    'Contractul de societate — 3 elemente esențiale: aporturile / participarea la beneficii și pierderi / affectio societatis. Explică fiecare.',
+    'Contractul de asigurare: interesul asigurabil — definiție, cine trebuie să îl aibă și la ce moment (al încheierii sau al producerii riscului)?',
+    'Renta viageră: la decesul credirentierului, ratele scadente și neplătite se transmit moștenitorilor?',
+    'Tranzacția: ce efect produce (echivalent ALC?) și poate fi atacată cu acțiune în anulare pentru eroare de drept?',
+    'Aplicație: A asigură bunul lui B (fără consimțământul lui B și fără interes asigurabil). Este valabil contractul de asigurare?',
+    'Contractul de joc sau pariu: obligația rezultată e civilă perfectă sau naturală? Consecința — poate fi executată silit?',
+    'La grilă: fideiusiunea vs. asigurarea de garanție — care e diferența privind regresul față de debitor după plată?'
+  ],
+  w15:[
+    'Enumeră cele 4 clase de moștenitori legali, inclusiv gradul de rudenie și ordinea de chemare la moștenire.',
+    'Drepturile soțului supraviețuitor: cota succesorală în concurs cu clasa I / clasa a II-a / clasa a III-a / singur (fără alte rude).',
+    'Reprezentarea succesorală: definiție, condiții (reprezentatul să fie predecedat/nedemn) și la ce clase/grade se aplică.',
+    'Nedemnitatea de drept (art. 958 NCC) vs. judiciară (art. 959 NCC): enumeră câte o cauza din fiecare și efectul față de descendenții nedemnului.',
+    'Aplicație: A moare cu 2 copii (B și C). C decedase înaintea lui A, lăsând un copil (D). Cum se împarte moștenirea și în ce proporții?',
+    'Renunțarea la moștenire: termen (1 an), formă (declarație la notar) și efectul față de creditorii renunțătorului.',
+    'La grilă: moștenitorul care a acceptat pur și simplu (fără beneficiu de inventar) răspunde de datoriile defunctului și cu bunurile proprii?'
+  ],
+  w16:[
+    'Testamentul olograf: cele 3 condiții de formă (integral olograf + datat complet + semnat) și sancțiunea lipsei oricăreia.',
+    'Testamentul autentic: avantaje față de cel olograf (forță probantă, securitate). Poate fi convertit în testament olograf dacă e nul de formă autentică?',
+    'Rezerva succesorală: cotele exacte pentru descendenți / ascendenți privilegiați / soț supraviețuitor și cum se calculează masa de calcul.',
+    'Reducțiunea liberalităților: ordinea corectă (legate în ordine inversă creării → donații în ordine inversă) și ce e cotitatea disponibilă.',
+    'Raportul donațiilor: cine e obligat (descendenți + soț supraviețuitor), cum se face (echivalent, nu în natură) și ce e dispensa de raport.',
+    'Aplicație: A lasă prin testament toată averea lui B (prieten), deși are un fiu C. Ce poate face C? Ce primește cel mai puțin?',
+    'Revocarea testamentului: enumeră 3 forme de revocare tacită recunoscute de NCC (testament ulterior incompatibil / distrugerea voluntară / înstrăinarea bunului legat).'
+  ],
+  w18:[
+    'Definește infracțiunea (art. 15 NCP) și enumeră cele 3 trăsături esențiale. Ce se întâmplă dacă oricare lipsește?',
+    'Schema formelor de vinovăție: intenție directă / intenție indirectă / culpă cu prevedere / culpă simplă / praeterintenție — definește fiecare în 1 propoziție.',
+    'Praeterintenția: definiție + exemplul clasic (loviri cauzatoare de moarte). De ce nu e omor și de ce nu e ucidere din culpă?',
+    'Cauze justificative (cel puțin 3) vs. cauze de neimputabilitate (cel puțin 4): ce anume înlătură fiecare categorie?',
+    'Aplicație: A lovește pe B intenționat. B, mai fragil din cauza unei boli necunoscute de A, moare. Ce infracțiune a comis A? Argumentează.',
+    'Obiectul material al infracțiunii: definește și dă câte un exemplu de infracțiune cu obiect material și una fără.',
+    'La grilă: cauze justificative → efect IN REM (față de toți) sau IN PERSONAM (față de un singur participant)?'
+  ],
+  w19:[
+    'Fazele activității infracționale (de la rezoluție la epuizare): enumeră-le și precizează care sunt pedepsibile.',
+    'Tentativa: definiție + tipuri (perfectă / imperfectă / imposibilă). Care e sancțiunea tentativei imposibile și de ce?',
+    'Desistarea vs. împiedicarea rezultatului: definiție pentru fiecare și efectul juridic față de ceilalți participanți care nu s-au desistat.',
+    'Participanți penali: definește autorul / coautorul / instigatorul / complicele și pedeapsa relativă față de autor.',
+    'Participația improprie (art. 52 NCP): când intervine și cine răspunde penal (instigatorul/complicele ca autor mediat)?',
+    'Aplicație: A îl instigă pe B să fure. B, ajuns la fața locului, se desistă. Răspunde A pentru instigare? Dar B pentru tentativă?',
+    'Circumstanțele reale vs. personale: dă câte un exemplu și față de cine se aplică fiecare în cadrul participației penale.'
+  ],
+  w20:[
+    'Cauze justificative (art. 18–22 NCP) — efect IN REM: ce înseamnă concret pentru participanți? Dă exemplu cu legitima apărare.',
+    'Cauze de neimputabilitate (art. 23–31 NCP) — efect IN PERSONAM: enumeră cel puțin 5 și ce înseamnă că e personal.',
+    'Legitima apărare: condițiile atacului (iminent, injust, real) + condițiile apărării (necesară, proporțională). Ce e excesul scuzabil?',
+    'Minoritatea penală: regimul răspunderii sub 14 ani / între 14 și 16 ani (cu discernământ) / 16–18 ani.',
+    'Concursul de infracțiuni: cum se calculează pedeapsa principală conform art. 39 NCP (pedeapsa cea mai grea + spor)?',
+    'Recidiva postcondamnatorie vs. pluralitate intermediară: diferența-cheie și consecința pentru cuantumul pedepsei.',
+    'Aplicație: A, cu o condamnare anterioară la 6 luni pentru furt, comite din nou un furt. Recidivă sau pluralitate intermediară? De ce?'
+  ],
+  w21:[
+    'Omorul simplu vs. omorul calificat (art. 189 NCP): enumeră cel puțin 4 forme calificate.',
+    'Omor (art. 188) vs. loviri cauzatoare de moarte (art. 195) vs. ucidere din culpă (art. 192): criteriul distincției (forma de vinovăție față de deces).',
+    'Vătămare corporală (art. 194 NCP): pragul de zile de îngrijiri medicale și consecințele grave care califică fapta.',
+    'Lovire sau alte violențe (art. 193): regimul procesual (plângere prealabilă) și efectul juridic al împăcării.',
+    'Violul (art. 218): modalitățile de comitere (violență / amenințare / imposibilitate de exprimare sau apărare). Dă exemplu pentru ultima modalitate.',
+    'Aplicație: A îl lovește pe B cu pumnul. B cade, se lovește la cap și moare. Ce infracțiune a comis A? Ce formă de vinovăție?',
+    'La grilă: omorul calificat față de un funcționar public — autorul trebuia să cunoască calitatea victimei în momentul faptei?'
+  ],
+  w22:[
+    'Enumeră cel puțin 5 infracțiuni contra patrimoniului (NCP) și câte un element distinctiv pentru fiecare.',
+    'Furtul calificat (art. 229 NCP): enumeră cel puțin 4 împrejurări care califică furtul simplu.',
+    'Tâlhăria (art. 233): când e consumată și poate violența fi exercitată și după luarea bunului? Explică scopul.',
+    'Fals material (art. 320) vs. fals intelectual (art. 321): diferența esențială. Care necesită subiect activ special și care e acesta?',
+    'Uzul de fals (art. 323): cine poate fi subiect activ și de ce autorul falsului care îl folosește el însuși nu comite separat uz de fals?',
+    'Aplicație: A primește în depozit bijuteriile lui B, le vinde și nu le restituie. Ce infracțiune? Ce diferențiază de furt?',
+    'Delapidare (art. 295) vs. gestiune frauduloasă (art. 242): diferența privind subiectul activ și calitatea acestuia.'
+  ],
+  w23:[
+    'Luarea de mită (art. 289) vs. darea de mită (art. 290): cine sunt subiecții activi și care e elementul material al fiecăreia.',
+    'Traficul de influență (art. 291): subiectul activ trebuie să fie funcționar? Influența trebuie să fie reală? Ce se pedepsește concret?',
+    'Abuzul în serviciu (art. 297) vs. neglijența în serviciu (art. 298): diferența privind forma de vinovăție (intenție vs. culpă).',
+    'Mărturia mincinoasă (art. 273): cauza de nepedepsire a retractării — până la ce moment procesual se poate retracta cu efect?',
+    'Favorizarea făptuitorului (art. 269): cauza de nepedepsire pentru soțul și rudele apropiate — se referă la rudele favorizatorului sau ale infractorului favorizat?',
+    'Aplicație: A îi promite judecătorului X 10.000 € pentru a câștiga un proces. A comite dare de mită sau cumpărare de influență? Argumentează.',
+    'Tăinuire (art. 270) vs. favorizare (art. 269): pe ce se axează fiecare și pot concura dacă autorul face ambele acte?'
+  ],
+  w24:[
+    'Conducere sub alcool (art. 336 NCP): limita exactă de alcoolemie în sânge și este necesar să se fi produs un accident?',
+    'Refuzul recoltării de probe biologice (art. 337): infracțiune autonomă sau componentă a art. 336? Poate concura cu art. 336?',
+    'Conducere sub alcool + accident cu victime: ce infracțiuni se rețin în concurs și care e raportul dintre ele?',
+    'Recap distincții patrimoniu: furt vs. abuz de încredere vs. înșelăciune vs. tâlhărie — criteriul-cheie care le separă pe fiecare.',
+    'Recap fals: fals material vs. fals intelectual vs. uz de fals — subiect activ și diferența modului de săvârșire.',
+    'Recap corupție: luare de mită vs. trafic de influență vs. abuz în serviciu — care nu cere calitatea de funcționar?',
+    'La grilă: autorul unui fals care folosește el însuși înscrisul fals — comite și uz de fals separat? De ce nu?'
+  ],
+  w26:[
+    'Competența materială — ce judecă în primă instanță: judecătoria / tribunalul / curtea de apel? Ce prag valoric separă judecătoria de tribunal?',
+    'Competența teritorială — de drept comun (domiciliul pârâtului) vs. alternativă (materie contractuală) vs. exclusivă (imobile, succesiuni): câte un exemplu pentru fiecare.',
+    'Condițiile exercitării acțiunii civile: enumeră cele 4 (drept, interes, calitate procesuală, capacitate) și ce se întâmplă dacă una lipsește.',
+    'Excepție procesuală peremptoriu vs. dilatoriu: definiție + câte un exemplu + consecința procesuală a fiecăreia.',
+    'Căile de atac: apelul (termen / ce devoluează) vs. recursul (termen / ce controlează) vs. revizuirea (când se poate folosi).',
+    'Aplicație: pârâtul pierde în fond și în apel, apoi face recurs invocând că instanța de apel a apreciat greșit probele. Este admisibil motivul?',
+    'Autoritatea de lucru judecat (ALC): tripla identitate — obiect + părți + cauza (ce e cauza în sens procesual civil)?'
+  ],
+  w27:[
+    'Enumeră cel puțin 4 categorii de documente care pot constitui titluri executorii.',
+    'Poprirea: ce e, față de cine se îndreaptă și care sunt limitele poprire pe salariu (procente pentru 1 creanță vs. mai multe)?',
+    'Urmărirea imobiliară: etapele procedurale (somație → publicitate → licitație) și termenul minim de la somație la licitație.',
+    'Contestația la executare: termenul de exercitare, instanța competentă și suspendă automat executarea sau nu?',
+    'Perimarea executării (art. 698 NCPC): termenul de inactivitate, ce stinge (dosarul sau creanța) și poate fi reluată?',
+    'Aplicație: creditorul are o hotărâre definitivă din 2020 și vrea să înceapă executarea în 2024. Termenul de prescripție a expirat?',
+    'La grilă: poprire pe pensie — același regim ca poprire pe salariu (max 1/3 / 1/2)? Există un minim nepoprabil?'
+  ],
+  w28:[
+    'Prezumția de nevinovăție: conținut, cine suportă sarcina probei și regula in dubio pro reo — ce înseamnă concret?',
+    'Fazele procesului penal: urmărire penală → cameră preliminară → judecată în fond → căi de atac. Rolul specific al camerei preliminare.',
+    'Măsuri preventive — schema completă: reținere (durată / cine dispune) / control judiciar / arest la domiciliu / arest preventiv (durată urmărire vs. judecată).',
+    'Urmărirea penală in rem vs. in personam: ce declanșează trecerea de la una la alta? Ce drepturi dobândește persoana când devine suspect vs. inculpat?',
+    'Acordul de recunoaștere a vinovăției: condiții, ce poate face instanța (omologhează / respinge — poate modifica pedeapsa?).',
+    'Aplicație: inculpatul e arestat preventiv de 150 de zile în faza de urmărire penală. Poate fi prelungit arestul? Câte zile mai pot fi adăugate?',
+    'La grilă: apelul penal — termen 10 zile de la comunicarea copiei minutei. Ce se întâmplă dacă minuta nu a fost comunicată? Termenul curge oricum?'
+  ]
+};
+
 // ── Randare ──────────────────────────────────────────────────────────────────
 
 var FISE_CAT_LBL={civ:'⚖️ Drept Civil',pen:'🔒 Drept Penal',pciv:'📜 Procedură Civilă',ppen:'🛡️ Procedură Penală',lat:'🏛️ Latină juridică'};
@@ -1381,46 +1619,69 @@ function _printFisa(id){
     var gPts=f.grila.split(/\.\s+(?=[A-ZĂÎȘȚ<])/);
     gHtml=gPts.map(function(p){return '<li>'+p.replace(/\.$/,'')+'.</li>';}).join('');
   }
-  var recallHtml='<div class="recall"><div class="recall-lbl">✏️ Recall rapid — răspunde fără să te uiți</div><ol class="recall-list">';
-  f.sections.forEach(function(s){ recallHtml+='<li>Care sunt elementele esențiale la: <em>'+s.title.replace(/^[\S]+\s/,'')+'</em>?</li>'; });
-  recallHtml+='<li>Numește 3 capcane frecvente la grilele despre <em>'+f.title+'</em>.</li></ol></div>';
+  var recallQs=FISE_RECALL[f.id]||[];
+  var recallHtml='<div class="recall">'
+    +'<div class="recall-hd"><span class="recall-lbl">✏️ Recall activ</span>'
+    +'<span class="recall-sub">Acoperă fișa și răspunde pe rând. Verifică după fiecare.</span></div>'
+    +'<ol class="recall-list">';
+  if(recallQs.length){
+    recallQs.forEach(function(q,i){
+      recallHtml+='<li><span class="q-nr">'+(i+1)+'.</span><span class="q-txt">'+q+'</span>'
+        +'<div class="ans-lines"><div></div><div></div><div></div></div></li>';
+    });
+  } else {
+    f.sections.forEach(function(s){
+      recallHtml+='<li><span class="q-nr">—</span><span class="q-txt">Explică: <em>'+s.title.replace(/^[\S]+\s/,'')+'</em> (toate punctele esențiale)</span>'
+        +'<div class="ans-lines"><div></div><div></div><div></div></div></li>';
+    });
+  }
+  recallHtml+='</ol></div>';
   var w=window.open('','_blank','width=820,height=1000');
   w.document.write('<!DOCTYPE html><html lang="ro"><head><meta charset="UTF-8"><title>Fișă '+f.wk+' — '+f.title+'</title><style>'
     +'*{margin:0;padding:0;box-sizing:border-box}'
     +'body{font-family:Georgia,serif;font-size:13px;line-height:1.65;color:#111;background:#fff;padding:24px 32px}'
     +'.pg-hd{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2.5px solid #1a1a1a;padding-bottom:10px;margin-bottom:18px}'
-    +'.pg-meta{font-size:10px;color:#555;text-transform:uppercase;letter-spacing:.6px}'
-    +'.wk-badge{background:#1a1a1a;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.3px}'
-    +'h1{font-size:17px;font-weight:700;margin:4px 0 2px;line-height:1.2}'
-    +'.sec{margin-bottom:14px;border-left:3px solid #ccc;padding-left:12px}'
-    +'.stitle{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#444;margin-bottom:5px}'
-    +'ul,ol{padding-left:18px;margin:0}'
-    +'li{margin-bottom:4px;font-size:12.5px}'
+    +'.pg-meta{font-size:10px;color:#555;text-transform:uppercase;letter-spacing:.6px;margin-bottom:3px}'
+    +'.wk-badge{background:#1a1a1a;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.3px;flex-shrink:0;margin-top:3px}'
+    +'h1{font-size:17px;font-weight:700;margin:0;line-height:1.25}'
+    +'.sec{margin-bottom:14px;padding-left:12px;border-left:3px solid #ddd}'
+    +'.stitle{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#555;margin-bottom:5px}'
+    +'ul{padding-left:17px;margin:0}'
+    +'li{margin-bottom:3px;font-size:12.5px;line-height:1.55}'
     +'b{font-weight:700}'
-    +'i{font-style:italic;color:#555}'
-    +'.grila{background:#f5f5f0;border-left:4px solid #1a1a1a;border-radius:0 6px 6px 0;padding:12px 14px;margin-top:16px}'
-    +'.grila-lbl{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#1a1a1a;margin-bottom:7px}'
+    +'i{font-style:italic;color:#444}'
+    +'.grila{background:#f7f7f3;border-left:4px solid #222;border-radius:0 6px 6px 0;padding:11px 14px;margin-top:16px}'
+    +'.grila-lbl{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#222;margin-bottom:7px}'
+    +'.grila ul{padding-left:16px}'
     +'.grila li{font-size:12px;margin-bottom:5px}'
-    +'.recall{margin-top:18px;border:1.5px dashed #aaa;border-radius:6px;padding:12px 14px}'
-    +'.recall-lbl{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#555;margin-bottom:8px}'
-    +'.recall-list li{margin-bottom:16px;font-size:12px;color:#333}'
-    +'.notes{margin-top:18px}'
-    +'.notes-lbl{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#aaa;margin-bottom:6px}'
-    +'.notes-lines div{height:22px;border-bottom:1px solid #ddd;margin-bottom:2px}'
+    +'.recall{margin-top:20px;border:1.5px solid #bbb;border-radius:7px;padding:14px 16px;page-break-before:always}'
+    +'.recall-hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;gap:8px}'
+    +'.recall-lbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#111}'
+    +'.recall-sub{font-size:10px;color:#888;font-style:italic}'
+    +'.recall-list{padding-left:0;list-style:none}'
+    +'.recall-list li{margin-bottom:14px;display:flex;gap:8px;align-items:flex-start}'
+    +'.q-nr{font-size:10px;font-weight:700;color:#aaa;min-width:16px;flex-shrink:0;padding-top:2px}'
+    +'.q-txt{font-size:12.5px;color:#111;flex:1;line-height:1.5}'
+    +'.ans-lines{margin-top:5px;margin-left:24px}'
+    +'.ans-lines div{height:20px;border-bottom:1px dotted #bbb;margin-bottom:2px}'
+    +'.notes{margin-top:20px;padding-top:12px;border-top:1px solid #eee}'
+    +'.notes-lbl{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#bbb;margin-bottom:8px}'
+    +'.notes-lines div{height:22px;border-bottom:1px solid #eee;margin-bottom:2px}'
     +'@media print{'
-    +'  body{padding:12px 18px}'
-    +'  @page{margin:12mm 14mm;size:A4}'
+    +'  body{padding:10px 16px}'
+    +'  .recall{page-break-before:always}'
+    +'  @page{margin:10mm 12mm;size:A4}'
     +'}'
     +'</style></head><body>'
     +'<div class="pg-hd">'
-    +'  <div><div class="pg-meta">'+catLbl+' · '+f.dates+'</div><h1>'+f.title+'</h1></div>'
+    +'  <div><div class="pg-meta">'+catLbl+' &nbsp;·&nbsp; '+f.dates+'</div><h1>'+f.title+'</h1></div>'
     +'  <span class="wk-badge">'+f.wk+'</span>'
     +'</div>'
     +sectHtml
     +'<div class="grila"><div class="grila-lbl">💡 La grilă — capcane de reținut</div><ul>'+gHtml+'</ul></div>'
     +recallHtml
-    +'<div class="notes"><div class="notes-lbl">📝 Notițe</div><div class="notes-lines">'
-    +'<div></div><div></div><div></div><div></div><div></div><div></div>'
+    +'<div class="notes"><div class="notes-lbl">📝 Notițe suplimentare</div><div class="notes-lines">'
+    +'<div></div><div></div><div></div><div></div><div></div>'
     +'</div></div>'
     +'<script>window.onload=function(){window.print();};<\/script>'
     +'</body></html>');
