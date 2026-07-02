@@ -353,20 +353,20 @@ var FISE_DATA = [
         items:[
           'Dreptul de a <b>folosi bunul</b> altuia și de a-i culege <b>fructele</b>, cu obligația conservării <b>substanței</b>. Constituire: prin act juridic (inclusiv testament) sau uzucapiune.',
           '<b>Uzufructuarul</b>: suportă reparațiile de <i>întreținere</i>; culege fructele naturale, civile, industriale; <b>nu are drept la producte</b>. Poate închiria/arenda bunul — locațiunile consimțite, dacă sunt înregistrate, sunt opozabile nudului proprietar max <b>3 ani</b> după stingerea uzufructului.',
-          '<b>Nudul proprietar</b>: suportă reparațiile <i>capitale</i>; are drept la producte; poate înstrăina nuda proprietate fără acordul uzufructuarului; poate ipoteca nuda proprietate (cu consimțământul uzufructuarului pentru înscrierea în CF).',
+          '<b>Nudul proprietar</b>: suportă reparațiile <i>capitale</i> (mari); are drept la producte; poate înstrăina și ipoteca nuda proprietate <b>liber, fără acordul uzufructuarului</b> — dobânditorul o primește grevată de uzufruct.',
           '<b>Cedarea uzufructului</b> (art. 714 NCC): uzufructuarul poate ceda dreptul sau poate constitui o ipotecă asupra lui. ⚠️ Uzufructul se stinge tot la <b>moartea uzufructuarului inițial</b>, nu a cesionarului.',
-          '<b>Cuaziuzufructul</b> (art. 712 NCC): uzufructul asupra bunurilor consumptibile (bani, grâne). Uzufructuarul devine proprietar al bunului, dar trebuie să restituie la stingere <i>bunuri de aceeași calitate, cantitate și valoare</i>.',
+          '<b>Cvasiuzufructul</b> (art. 712 NCC): uzufructul asupra bunurilor consumptibile (bani, grâne). Uzufructuarul devine proprietar al bunului, dar trebuie să restituie la stingere <i>bunuri de aceeași calitate, cantitate și valoare</i> sau contravaloarea lor.',
           '<b>Stingere</b> (art. 746 NCC): expirarea termenului; <b>moartea uzufructuarului</b> (chiar cu beneficiar cesionar); consolidarea (uzufructuarul dobândește nuda proprietate sau invers); renunțare; <b>neuz 10 ani</b>; pieirea totală a bunului.',
           'Uzufructul este <b>temporar prin natura sa</b>; nu poate depăși viața uzufructuarului (la PJ: max 30 ani).'
         ]
       },
       { icon:'🏠', title:'Uzul și abitația (art. 749–754 NCC)',
         items:[
-          '<b>Uzul</b>: dreptul de a folosi bunul și a culege fructele <b>numai în limita nevoilor proprii și ale familiei</b>. ⚠️ Frugele în exces rămân nudului proprietar — spre deosebire de uzufruct.',
+          '<b>Uzul</b>: dreptul de a folosi bunul și a culege fructele <b>numai în limita nevoilor proprii și ale familiei</b>. ⚠️ Fructele în exces rămân nudului proprietar — spre deosebire de uzufruct.',
           '<b>Abitația</b>: dreptul de a locui în casa altuia cu familia; specific imobilelor de locuință. Titularul poate locui și cu membrii de familie, chiar dacă nu sunt menționați expres.',
           'Ambele sunt <b>inalienabile și insesizabile</b> (art. 752 NCC): nu pot fi cedate terților; nu pot fi urmărite de creditori; nu pot fi ipotecate. ⚠️ Uzufructul, în schimb, poate fi cedat.',
-          'Constituire: numai prin act juridic (nu prin uzucapiune sau destinație de proprietar). Regimul juridic al uzufructului se aplică <i>mutatis mutandis</i>.',
-          '<b>Dreptul de abitație al soțului supraviețuitor</b> (art. 973 NCC): timp de <b>1 an</b> de la data deschiderii moștenirii, dacă locuia în acea casă și nu este moștenitor sau coproprietar al ei. Este legatar de uz gratuit.'
+          'Constituire: ca și uzufructul — act juridic, uzucapiune sau alte moduri prevăzute de lege (art. 754 NCC trimite la regimul uzufructului, care se aplică <i>mutatis mutandis</i>).',
+          '<b>Dreptul de abitație al soțului supraviețuitor</b> (art. 973 NCC): asupra casei în care a locuit, dacă aceasta face parte din moștenire și dacă soțul <b>nu are alt drept real de a folosi o locuință corespunzătoare</b>. Este <b>gratuit</b>, inalienabil și insesizabil. Durata: până la <b>partaj</b>, dar <b>nu mai puțin de 1 an</b> de la deschiderea moștenirii; încetează și la recăsătorire.'
         ]
       },
       { icon:'🛤️', title:'Servituțile (art. 755–772 NCC)',
@@ -374,18 +374,18 @@ var FISE_DATA = [
           'Sarcini impuse unui fond (<b>aservit</b>) în folosul unui alt fond (<b>dominant</b>); urmăresc fondurile, <b>nu persoanele</b>. Proprietarul fondului dominant nu poate exercita alte drepturi decât cele stabilite prin titlu.',
           '<b>Continue</b>: exercitarea nu necesită act uman periodic (<i>ex: scurgerea apelor, vederea, lumina</i>). / <b>Discontinue</b>: necesită acte repetate (<i>ex: dreptul de trecere, dreptul de a lua apă</i>).',
           '<b>Aparente</b>: semnalizate printr-un semn vizibil (drum, șanț). / <b>Neaparente</b>: fără semn exterior (<i>ex: interdicția de a construire la o anumită înălțime</i>).',
-          '<b>Moduri de dobândire</b>: (1) titlu (act juridic); (2) uzucapiune — <b>numai servituțile continue și aparente</b>; (3) destinația de proprietar — servitutea se naște când un proprietar, care deținea ambele fonduri, le înstrăinează separat fără a suprima semnul vizibil al servituții.',
+          '<b>Moduri de dobândire</b> (art. 756 NCC): act juridic sau uzucapiune. ⚠️ <b>Capcană — regula NCC</b> (art. 763): prin uzucapiune <b>tabulară</b> poate fi dobândită <b>orice servitute</b>; prin uzucapiune <b>extratabulară</b> — numai servituțile <b>pozitive</b>. Criteriul vechi „continue și aparente" și „destinația proprietarului" nu mai există sub NCC — grilele testează schimbarea!',
           '<b>Servituți pozitive</b> (titularul fondului dominant poate face ceva pe fondul aservit: trecere, a lua apă) vs. <b>negative</b> (fondul aservit trebuie să se abțină: interdicția de a construi, de a planta).',
-          '<b>Stingere</b>: neuz <b>10 ani</b> (servituți discontinue sau neaparente); confuziune (ambele fonduri revin aceluiași proprietar); renunțare; pieirea fondului aservit; răscumpărare.'
+          '<b>Stingere</b> (art. 770–772 NCC): neuz <b>10 ani</b> — pentru <b>orice</b> servitute (termenul curge de la ultimul act de exercitare la cele discontinue, respectiv de la un act contrar la cele continue — art. 771); consolidarea (ambele fonduri ajung la același proprietar); renunțare; pieirea fondului aservit; expropriere; <b>răscumpărarea</b> servituții de trecere (art. 772).'
         ]
       },
       { icon:'🏗️', title:'Superficia (art. 693–702 NCC)',
         items:[
           'Dreptul real de a <b>edifica sau păstra o construcție pe terenul altei persoane</b>, asociat cu un drept de folosință (<i>superficie</i> asupra terenului aferent construcției). Superficiarul = proprietarul construcției.',
           'Constituire: act juridic (convenție sau testament), uzucapiune sau alt mod prevăzut de lege. Înscrierea în CF e obligatorie pentru opozabilitate față de terți.',
-          'Durată: max <b>99 ani</b>, cu posibilitate de reînnoire. La PF — poate fi viageră; la PJ — max 99 ani.',
+          'Durată (art. 694 NCC): cel mult <b>99 de ani</b>, cu posibilitate de <b>reînnoire</b> la împlinirea termenului.',
           '<b>La stingerea superficiei</b>: proprietarul terenului poate (a) prelua construcția la <i>valoarea de piață</i> sau (b) cere superficiarului să ridice construcția pe cheltuiala sa. ⚠️ Dacă nu se înțeleg, instanța stabilește soluția.',
-          'Superficiarul poate <b>ipoteca construcția</b> separat de teren (art. 696 NCC). Ipoteca se extinde și asupra dreptului de folosință a terenului.',
+          'Superficiarul poate <b>ipoteca dreptul de superficie</b> (art. 2379 lit. d NCC) — deci construcția separat de teren. <b>Acțiunea confesorie de superficie</b> (art. 696 NCC): apără dreptul împotriva <b>oricărei persoane</b>, chiar și a proprietarului terenului; imprescriptibilă.',
           '⚠️ Superficia ≠ servitutea: superficia conferă un <i>drept de proprietate</i> (asupra construcției) + folosință teren; servitutea nu conferă proprietate, ci numai o sarcină. Superficia ≠ accesiunea: superficiarul <i>nu este supus accesiunii</i> — construcția nu se incorporează terenului.'
         ]
       },
@@ -394,22 +394,22 @@ var FISE_DATA = [
           '<b>Uzufruct</b>: fructe + folosință; cedabil + ipotecabil; se stinge la moartea uzufructuarului; durată max viager (PF) sau 30 ani (PJ).',
           '<b>Uz</b>: fructe doar pentru nevoile proprii + familie; inalienabil + insesizabil; se stinge la moartea titularului.',
           '<b>Abitație</b>: locuire proprie + familie; inalienabilă + insesizabilă; se stinge la moartea titularului. Toate trei: constituire prin act juridic sau uzucapiune.',
-          '<b>Servitutea</b>: sarcină pe un fond în folosul altui fond (propter rem); urmărește fondurile, nu persoanele; nu conferă proprietate; discontinue/neaparente → numai prin titlu.',
+          '<b>Servitutea</b>: sarcină pe un fond în folosul altui fond; urmărește fondurile, nu persoanele; nu conferă proprietate. Uzucapiune: tabulară → orice servitute; extratabulară → doar cele <b>pozitive</b> (art. 763).',
           '<b>Superficia</b>: drept de proprietate asupra construcției + folosință teren; cedabilă, ipotecabilă; max 99 ani. Deosebire esențială față de servitute și uzufruct: superficiarul <i>are proprietatea construcției</i>.'
         ]
       },
       { icon:'🥇', title:'Dreptul de preemțiune legal (art. 1730–1740 NCC)',
         items:[
           '<b>Noțiune</b>: dreptul unui anumit subiect (<i>preemptor</i>) de a fi preferat oricărui terț la dobândirea unui bun, la preț și condiții egale. E un drept real de dobândire, opozabil erga omnes (dacă e publicizat). ≠ pactul de preferință (convențional, relativ, obligă numai vânzătorul).',
-          '<b>Titular al preemțiunii legale</b> (art. 1730 alin. 1 NCC): (1) <b>coproprietarii</b>, la înstrăinarea cotei-părți de către un coproprietar; (2) <b>arendașii</b> terenurilor agricole (Legea 17/2014); (3) <b>statul</b>, la înstrăinarea terenurilor forestiere; (4) alți titulari prevăzuți de legi speciale.',
-          '<b>Procedura</b> (art. 1732 NCC): vânzătorul notifică preemptorului condițiile vânzării (<i>oferta de vânzare</i>). Preemptorul are la dispoziție: <b>10 zile</b> (bunuri mobile) sau <b>30 de zile</b> (bunuri imobile) de la data comunicării notificării pentru a-și exercita dreptul.',
-          '<b>Sancțiunea nerespectării</b>: contractul cu terțul e inopozabil preemptorului. Preemptorul poate cere <b>subrogarea</b> în drepturile cumpărătorului (se substituie cumpărătorului în aceleași condiții) în termen de <b>3 luni</b> de la data la care a cunoscut încheierea contractului cu terțul (art. 1733 NCC).',
+          '<b>Titularii preemțiunii legale</b> — numai unde legea o prevede expres: <b>arendașul</b>, la vânzarea terenurilor agricole arendate (art. 1849 NCC, L. 17/2014); <b>coproprietarii și vecinii</b>, la vânzarea terenurilor <b>forestiere</b> (art. 1746 NCC); preemptorii în rang de la terenurile <b>agricole extravilane</b> (L. 17/2014: coproprietari → arendași → vecini → stat). ⚠️ NU există preempțiune generală între coproprietari sub NCC.',
+          '<b>Mecanismul NCC</b> (art. 1730–1732): vânzătorul poate (a) trimite preemptorului <b>oferta</b> — acceptare în <b>10 zile</b> (mobile) / <b>30 zile</b> (imobile); sau (b) vinde direct terțului — dar vânzarea e valabilă numai <b>sub condiția suspensivă a neexercitării preempțiunii</b>, iar cuprinsul contractului trebuie <b>notificat</b> preemptorului.',
+          '<b>Exercitarea după vânzarea către terț</b> (art. 1732–1733 NCC): preemptorul își exercită dreptul în 10/30 de zile <b>de la comunicarea contractului</b>, consemnând prețul la dispoziția vânzătorului → contractul de vânzare se <b>consideră încheiat între preemptor și vânzător</b> în condițiile din contractul cu terțul, iar acesta din urmă se <b>desființează retroactiv</b>.',
           '<b>Concursul de preemptori</b>: dacă mai mulți au drept de preemțiune, contractul se poate încheia cu oricare dintre ei, în ordinea de preferință stabilită de lege sau, în lipsa unor dispoziții, cu cel care a acceptat primul.',
           '⚠️ <b>Distincție</b>: drept de preemțiune <i>legal</i> (art. 1730) vs. <i>convențional</i> (pactul de preferință, art. 1730 alin. 3): pactul obligă numai contractual vânzătorul (sancțiune: daune); dreptul legal → subrogare reală + inopozabilitate față de preemptor.'
         ]
       }
     ],
-    grila:'Uzufructuarul: <b>fructe da, producte nu</b>; uzufruct se stinge la moartea <b>uzufructuarului inițial</b> (nu a cesionarului). Abitația: <b>inalienabilă și insesizabilă</b> (spre deosebire de uzufruct, care e cedabil). Servituți discontinue/neaparente: <b>numai prin titlu</b>, nu prin uzucapiune. Superficia: max <b>99 ani</b>; superficiarul nu e supus accesiunii. Neuz servituți: <b>10 ani</b>. Preemțiune legală: notificare → <b>10 zile</b> (mobile) / <b>30 zile</b> (imobile); nerespectare → subrogare în <b>3 luni</b> de la cunoașterea contractului cu terțul. Pact de preferință (convențional) ≠ preemțiune legală (real, opozabil).'
+    grila:'Uzufructuarul: <b>fructe da, producte nu</b>; uzufruct se stinge la moartea <b>uzufructuarului inițial</b> (nu a cesionarului). Abitația: <b>inalienabilă și insesizabilă</b> (spre deosebire de uzufruct, care e cedabil). Servituți prin uzucapiune: <b>tabulară → orice</b>; <b>extratabulară → doar pozitive</b> (art. 763 — capcană: criteriul „continue+aparente" e vechiul cod). Superficia: max <b>99 ani</b> + reînnoire; superficiarul nu e supus accesiunii; acțiunea confesorie (art. 696) merge chiar contra proprietarului terenului. Neuz servituți: <b>10 ani</b>, orice servitute. Preemțiune: exercitare <b>10 zile</b> (mobile) / <b>30 zile</b> (imobile) de la comunicare; vânzarea către terț = sub <b>condiție suspensivă</b>; exercitarea → contract considerat încheiat cu preemptorul, cel cu terțul desființat retroactiv (art. 1733). Abitația soțului supraviețuitor: gratuită, până la partaj, minim <b>1 an</b>.'
   },
 
   {
