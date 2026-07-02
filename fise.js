@@ -413,46 +413,54 @@ var FISE_DATA = [
     id:'w08', wk:'W08', dates:'17–23 aug', subj:'civ',
     title:'Izvoarele obligațiilor + fapt juridic licit',
     sections:[
-      { icon:'📋', title:'Clasificarea izvoarelor obligațiilor',
+      { icon:'📋', title:'Clasificarea izvoarelor obligațiilor + tipuri de obligații',
         items:[
-          '<b>Contractul</b> (art. 1166 NCC): acordul de voință al două sau mai multor persoane cu intenția de a crea, modifica sau stinge raporturi juridice.',
-          '<b>Actul juridic unilateral</b> (art. 1324 NCC): promisiunea publică de recompensă, oferta, testamentul, gestul de recunoaștere a unui drept.',
-          '<b>Faptul juridic licit</b>: gestiunea de afaceri, plata nedatorată, îmbogățirea fără justă cauză.',
-          '<b>Faptul juridic ilicit</b>: răspunderea civilă delictuală (W09).',
-          '<b>Legea</b>: izvor direct în unele cazuri (obligații legale de întreținere, obligația de garanție legală).'
+          '<b>Contractul</b> (art. 1166 NCC); <b>actul unilateral</b> (art. 1324 NCC — promisiunea publică de recompensă, recunoașterea unui drept); <b>fapte juridice licite</b> (gestiunea de afaceri, plata nedatorată, îmbogățirea); <b>fapte ilicite</b> (delictul, cvasi-delictul); <b>legea</b> (obligația de întreținere, garanția legală).',
+          'Clasificare după obiect: <b>a da</b> (transferul unui drept real), <b>a face</b> (prestație pozitivă), <b>a nu face</b> (abținere). ⚠️ Obligația de a da ≠ predarea bunului (care e o obligație de a face).',
+          '<b>Obligație de rezultat</b>: debitorul se obligă să obțină un rezultat determinat; dacă nu se obține → culpa e <b>prezumată</b> (creditorul nu trebuie să dovedească culpa). <i>Ex: transportatorul obligat să predea marfa la destinație intactă; antreprenorul să predea lucrarea.</i>',
+          '<b>Obligație de mijloace</b> (de diligență): debitorul trebuie să depună diligența unui profesionist rezonabil, fără a garanta rezultatul; culpa trebuie <b>dovedită de creditor</b>. <i>Ex: medicul (obligație de îngrijire, nu de vindecare); avocatul (diligent, nu garantează câștigul).</i>',
+          '<b>Clasificare după sancțiune</b>: obligații civile (sancționabile prin executare silită) vs. obligații naturale (nu pot fi executate silit, dar executarea voluntară nu e repetibilă — ex: datorie prescrisă, obligații morale).'
         ]
       },
       { icon:'🤲', title:'Gestiunea de afaceri (art. 1330–1340 NCC)',
         items:[
-          'Gerantul administrează interesele geratului <b>fără știrea și fără mandatul</b> acestuia, fără a fi obligat prin lege sau contract.',
-          '<b>Condiții</b>: geratul absent sau în imposibilitate de a-și administra interesele; gerantul acționează voluntar; utilitate obiectivă la momentul actului (<b>nu contează rezultatul final</b>).',
-          '<b>Obligațiile gerantului</b>: diligența unui bun proprietar; să continue gestiunea; să informeze geratul; să dea socoteală.',
-          '<b>Obligațiile geratului</b>: restituie <b>cheltuielile utile și necesare</b> + dobânzi; <b>nu datorează cheltuieli voluptuare</b>.',
-          '<b>Atenție!</b> Dacă gestiunea e contrară voinței <b>cunoscute sau prezumate</b> a geratului, gerantul nu poate cere decât restituirea îmbogățirii geratului (și numai în limita acesteia).',
-          'Ratificarea gestiunii: retroactiv, geratul devine mandant și gestiunea produce efectele mandatului.'
+          'Gerantul administrează interesele geratului <b>fără știrea și fără mandatul</b> acestuia, fără a fi obligat prin lege sau contract. ≠ Mandatul (care presupune acordul geratului).',
+          '<b>Condiții</b>: geratul absent sau în imposibilitate de a-și administra interesele; gerantul acționează voluntar și cu intenția de a gera; utilitate obiectivă la momentul actului (<b>nu contează rezultatul final</b>).',
+          '<b>Obligațiile gerantului</b>: diligența unui bun proprietar (standard mai ridicat față de propriile afaceri); să continue gestiunea până la putința geratului de a prelua; să informeze geratul; să dea socoteală și să predea bunurile administrate.',
+          '<b>Obligațiile geratului</b>: restituie cheltuielile <b>utile și necesare</b> + dobânzi de la data efectuării; <b>nu datorează cheltuieli voluptuare</b> (de lux, fără utilitate).',
+          'Gestiunea <b>contrară voinței cunoscute sau prezumate</b> a geratului: gerantul nu poate cere decât restituirea îmbogățirii geratului, în limita îmbogățirii existente la data cererii.',
+          '<b>Ratificarea gestiunii</b>: retroactivă — geratul devine mandant; gestiunea produce efectele mandatului de la data actelor de gestiune. Geratul poate ratifica expres sau tacit (acceptarea beneficiilor gestiunii).'
         ]
       },
       { icon:'💸', title:'Plata nedatorată (art. 1341–1344 NCC)',
         items:[
-          'Solvensul a executat o prestație pe care <b>nu o datora</b> (din eroare sau sub constrângere).',
-          '<b>Condiții</b>: existența plății; absența datoriei față de accipiens (sau datoria aparținea altcuiva).',
+          'Solvensul a executat o prestație pe care <b>nu o datora</b> nimănui sau nu o datora acelui accipiens. ⚠️ Plata nedatorată e un <i>fapt juridic</i> (nu AJC) — nu se cere capacitate deplină la solvens.',
+          '<b>Condiții</b>: existența unei plăți; absența datoriei față de accipiens; <i>eroarea</i> solvensului (deși aceasta nu e necesară în NCC când datoria aparținea altcuiva).',
           'Accipiens <b>de rea-credință</b>: restituie integral + dobânzi de la data plății.',
-          'Accipiens <b>de bună-credință</b> care a distrus titlul sau a lăsat să se prescrie dreptul față de adevăratul debitor → este exonerat de restituire (în limitele prejudiciului cauzat solvensului).',
-          'Accipiens de bună-credință care a cheltuit suma: restituire numai în limita îmbogățirii existente.',
-          '<b>Prescripție</b>: 3 ani de când solvensul a cunoscut sau trebuia să cunoască lipsa datoriei.'
+          'Accipiens <b>de bună-credință care a distrus titlul</b> de creanță față de adevăratul debitor sau a lăsat să se prescrie dreptul → exonerat de restituire (numai în limita prejudiciului cauzat solvensului prin această distugere).',
+          'Accipiens de bună-credință care <b>a cheltuit suma</b>: restituire numai în limita îmbogățirii rămase. Accipiens care a înstrăinat bunul: restituie prețul obținut (sau valoarea dacă prețul e inferior).',
+          '<b>Prescripție</b>: 3 ani de la data la care solvensul a cunoscut sau trebuia să cunoască lipsa datoriei și persoana accipiensului.'
         ]
       },
       { icon:'⚖️', title:'Îmbogățirea fără justă cauză (art. 1345–1347 NCC)',
         items:[
-          '<b>Condiții</b>: îmbogățirea unui patrimoniu + sărăcirea corelativă a altui patrimoniu + legătură de cauzalitate + <b>absența cauzei juste</b>.',
-          '<b>Acțiunea de in rem verso</b>: <b>subsidiară</b> — se aplică numai dacă nu există altă acțiune (contractuală, delictuală, plata nedatorată).',
-          '<b>Limita restituirii</b>: <b>minimul</b> dintre valoarea îmbogățirii și valoarea sărăcirii (la data sesizării instanței).',
-          'Nu se aplică dacă îmbogățirea are o cauză justă (act juridic valabil, liberalitate, obligație legală).',
-          'Interesul legitim sau exercitarea unui drept: îmbogățire justă, acțiunea e inadmisibilă.'
+          '<b>Condiții cumulative</b>: (1) îmbogățirea unui patrimoniu; (2) sărăcirea corelativă a altui patrimoniu; (3) legătură de cauzalitate directă; (4) <b>absența oricărei cauze juste</b> (nu există AJC valabil, liberalitate, obligație legală).',
+          '<b>Acțiunea de <i>in rem verso</i></b>: <b>subsidiară</b> — inadmisibilă dacă există altă acțiune la dispoziția reclamantului (contractuală, delictuală, plata nedatorată, gestiunea de afaceri). Nu e o acțiune în răspundere, ci de restituire.',
+          '<b>Limita restituirii</b>: <b>minimul</b> dintre valoarea îmbogățirii și valoarea sărăcirii — evaluate la data sesizării instanței (nu a producerii lor). Riscul fluctuațiilor e suportat de îmbogățit.',
+          'Nu se aplică dacă îmbogățirea are cauză justă (act juridic valabil, liberalitate, obligație legală) sau dacă sărăcirea rezultă dintr-o culpă proprie a reclamantului.',
+          '⚠️ <b>Distincție față de plata nedatorată</b>: la plata nedatorată există o plată; la îmbogățire fără justă cauză nu e neapărat o plată (ex: îmbunătățiri la bunul altuia, îmbogățire din eroare de fapt).'
+        ]
+      },
+      { icon:'🔁', title:'Schemă comparativă: fapte juridice licite',
+        items:[
+          '<b>Gestiunea</b>: gerant face acte <i>pentru</i> gerat (fără știrea lui). Obligat → geratul (restituie cheltuielile necesare/utile). Condiție specială: utilitate obiectivă.',
+          '<b>Plata nedatorată</b>: solvens plătește ceea ce <i>nu datora</i>. Obligat → accipiens (restituire integrală sau limitată, după buna/reaua-credință).',
+          '<b>Îmbogățirea fără justă cauză</b>: <i>subsidiară</i> față de celelalte. Restituire = minimul (îmbogățire ↔ sărăcire). Condiție: absența oricărei alte acțiuni.',
+          '⚠️ <b>Regula de aur</b>: verifici mai întâi gestiunea → plata nedatorată → în rem verso. Dacă există contract sau delict → nu se aplică niciunul.'
         ]
       }
     ],
-    grila:'Gestiunea ≠ mandat: la mandat există <b>acordul geratului</b>. Gestiunea contrară voinței geratului → gerantul poate cere <b>numai restituirea îmbogățirii</b>. Îmbogățirea fără justă cauză e <b>subsidiară</b>. Limita restituirii: <b>minimul</b> dintre îmbogățire și sărăcire. La plata nedatorată, accipientele de rea-credință: restituie integral + dobânzi; de bună-credință care a distrus titlul: exonerat.'
+    grila:'Gestiunea ≠ mandat: la mandat există <b>acordul geratului</b>. Gestiunea contrară voinței geratului → restituire <b>numai în limita îmbogățirii</b>. Îmbogățirea fără justă cauză e <b>subsidiară</b>; limita = <b>minimul</b> dintre îmbogățire și sărăcire. Obligație de rezultat → culpa prezumată; de mijloace → creditorul dovedește culpa. Plata nedatorată = fapt juridic (nu AJC — nu cere capacitate deplină). Accipiens de bună-credință care distruge titlul: exonerat.'
   },
 
   {
