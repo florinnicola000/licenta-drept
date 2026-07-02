@@ -811,41 +811,46 @@ var FISE_DATA = [
     id:'w18', wk:'W18', dates:'26 oct–1 nov', subj:'pen',
     title:'Infracțiunea: trăsături și elemente constitutive',
     sections:[
-      { icon:'📌', title:'Definiție și trăsăturile esențiale (art. 15 NCP)',
+      { icon:'📌', title:'Definiție, trăsături esențiale și legalitate (art. 1, 15 NCP)',
         items:[
-          '<b>Infracțiunea</b> = fapta prevăzută de legea penală, săvârșită cu vinovăție, nejustificată și imputabilă persoanei care a săvârșit-o (art. 15 NCP).',
-          'Cele trei trăsături esențiale sunt cumulative: <b>tipicitate</b> (prevăzută de lege) + <b>antijuridicitate</b> (nejustificată) + <b>imputabilitate</b> (culpabilitate). Lipsa oricăreia → fapta nu e infracțiune.',
-          '<b>Cauzele justificative</b> (legitima apărare, starea de necesitate etc.) înlătură <b>antijuridicitatea</b>. <b>Cauzele de neimputabilitate</b> (minoritate, iresponsabilitate etc.) înlătură <b>imputabilitatea</b>. Distincție esențială pentru grile.'
+          '<b>Infracțiunea</b> = fapta prevăzută de legea penală, săvârșită cu vinovăție, nejustificată și imputabilă persoanei care a săvârșit-o (art. 15 NCP). Cele patru elemente din definiție corespund celor trei trăsături esențiale.',
+          'Trăsăturile esențiale — cumulative: <b>tipicitate</b> (prevăzută de lege) + <b>antijuridicitate</b> (nejustificată) + <b>imputabilitate</b>. Lipsa oricăreia → fapta nu este infracțiune.',
+          '<b>Nullum crimen sine lege</b> (art. 1 NCP): nicio faptă nu constituie infracțiune dacă nu era prevăzută de lege <i>la momentul comiterii</i>. Analogia = interzisă în dreptul penal (spre deosebire de civil).',
+          '<b>Legea penală mai favorabilă (lex mitior)</b> — art. 5 NCP: dacă de la comiterea faptei și până la judecată definitivă a intervenit o lege mai favorabilă, aceasta se aplică retroactiv. Favorabilitatea = comparare <i>in concreto</i> (pe cazul concret, nu abstract). Dacă fapta a fost dezincriminată → clasare/achitare obligatorie.',
+          '<b>Cauze justificative</b> (art. 18–22 NCP) înlătură <b>antijuridicitatea</b>: legitima apărare, starea de necesitate, exercitarea unui drept, îndeplinirea unei obligații. Efect <i>in rem</i> → se extinde la toți participanții.',
+          '<b>Cauze de neimputabilitate</b> (art. 23–31 NCP) înlătură <b>imputabilitatea</b>: constrângere fizică/morală, caz fortuit, minoritate, iresponsabilitate, intoxicație involuntară, eroare de fapt. Efect <i>in personam</i> → numai pentru cel vizat.'
         ]
       },
       { icon:'🏗️', title:'Elementele constitutive ale infracțiunii',
         items:[
-          '<b>Obiectul juridic</b>: relația socială ocrotită de norma penală (generic = categoria de relații; special = relația concretă lezată).',
-          '<b>Obiectul material</b>: bunul, corpul sau lucrul asupra căruia se răsfrânge activitatea infracțională. <b>Nu toate infracțiunile au obiect material</b> (ex: infracțiunile de pericol pur).',
-          '<b>Subiectul activ</b>: autorul faptei. Poate fi persoană fizică (ce îndeplinește condițiile răspunderii penale) sau <b>persoană juridică</b> (din 2003 în dreptul român, cu excepțiile prevăzute de lege).',
-          '<b>Subiectul pasiv</b>: persoana fizică sau juridică titulară a valorii sociale lezate sau periclitate prin infracțiune.'
+          '<b>Obiectul juridic</b>: relația socială ocrotită (generic = categoria; special = relația concretă). Unele infracțiuni au și obiect juridic complex (două relații sociale lezate simultan — ex: tâlhăria = patrimoniu + integritate fizică).',
+          '<b>Obiectul material</b>: lucrul, corpul sau bunul asupra căruia se răsfrânge acțiunea. <b>Nu toate infracțiunile au obiect material</b> — infracțiunile de pericol pur (ex: conducere fără permis) nu au.',
+          '<b>Subiectul activ persoană fizică</b>: condiții cumulative — vârsta minimă (<b>16 ani</b> în principiu; <b>14–16 ani</b> dacă se dovedește că a acționat cu discernământ); responsabilitate; libertate de voință. Constrângerea fizică absolută → nu există subiect activ.',
+          '<b>Subiectul activ persoană juridică</b>: răspunde penal (cu excepția statului, autorităților publice și instituțiilor publice ce desfășoară activități ce nu pot face obiectul domeniului privat). Sancțiune principală: amenda; complementare: dizolvare, suspendare, închidere de unități.',
+          '<b>Subiectul pasiv</b>: titularul valorii sociale lezate. ⚠️ Subiect pasiv ≠ parte vătămată (distincție procedurală — subiectul pasiv poate să nu participe la proces).',
+          'Infracțiuni <b>proprii</b>: subiect activ trebuie să aibă calitate specială (funcționar, militar, medic etc.). <b>Complicele/instigatorul</b> poate fi orice persoană; calitatea specială e cerută numai autorului.'
         ]
       },
-      { icon:'⚙️', title:'Latura obiectivă',
+      { icon:'⚙️', title:'Latura obiectivă și clasificări',
         items:[
-          '<b>Elementul material</b> (<i>actus reus</i>): acțiunea sau inacțiunea incriminată. La inacțiune, răspunderea există numai dacă exista o <b>obligație legală de a acționa</b>.',
-          '<b>Urmarea imediată</b>: vătămarea efectivă (la infracțiunile de rezultat) sau starea de pericol (la infracțiunile de pericol/de pericol abstract).',
-          '<b>Legătura de cauzalitate</b>: necesară la infracțiunile de rezultat; se verifică prin teoria echivalenței condițiilor (<i>conditio sine qua non</i>).',
-          '<b>Infracțiuni de rezultat</b>: necesită producerea urmării concrete (omorul, furtul). <b>Infracțiuni de pericol</b>: consumate la simpla creare a pericolului (conducerea sub influența alcoolului).'
+          '<b>Elementul material</b> (<i>actus reus</i>): acțiunea sau inacțiunea incriminată. La inacțiune, răspunderea presupune existența unei <b>obligații legale de a acționa</b> (garant).',
+          '<b>Urmarea imediată</b>: vătămarea efectivă (infracțiuni de rezultat) sau starea de pericol (infracțiuni de pericol abstract — pericol prezumat de lege).',
+          '<b>Legătura de cauzalitate</b>: obligatorie la infracțiunile de rezultat. Teorie aplicată: <i>conditio sine qua non</i> (echivalența condițiilor). Cauzalitatea nu există dacă urmarea s-ar fi produs oricum.',
+          'Clasificări după structura infracțiunii: <b>simplă</b> (un singur act, o singură urmare); <b>complexă</b> (absoarbe altă infracțiune — ex: tâlhăria absoarbe furtul + violența); <b>continuă</b> (acțiunea se prelungește în timp — ex: lipsirea de libertate); <b>de obicei</b> (necesită repetare pentru a fi consumată — ex: hărțuire).'
         ]
       },
-      { icon:'🧠', title:'Latura subiectivă (vinovăția)',
+      { icon:'🧠', title:'Latura subiectivă (vinovăția — art. 16 NCP)',
         items:[
-          '<b>Intenția directă</b> (dolus directus): autorul prevede urmarea și o urmărește.',
-          '<b>Intenția indirectă</b> (dolus eventualis): autorul prevede urmarea și, deși n-o urmărește, <b>o acceptă</b>.',
-          '<b>Culpa cu prevedere</b> (ușurința): autorul prevede urmarea dar crede, fără temei, că nu se va produce.',
-          '<b>Culpa simplă</b> (neglijența): autorul nu prevede urmarea, deși trebuia și putea să o prevadă.',
-          '<b>Praeterintenția</b> (intenție depășită): autorul acționează cu intenție față de fapta inițială, dar urmarea mai gravă se produce din culpă. Exemplu clasic: loviri cauzatoare de moarte (art. 195 NCP).',
-          '<b>Mobilul</b> (motivul psihologic) și <b>scopul</b> nu sunt, în general, condiții ale existenței infracțiunii; pot constitui însă circumstanțe agravante sau pot individualiza forma calificată a infracțiunii.'
+          '<b>Intenția directă</b>: autorul prevede urmarea și o <b>urmărește</b>.',
+          '<b>Intenția indirectă</b> (eventuală): autorul prevede urmarea și, deși nu o urmărește, <b>o acceptă</b>. ⚠️ Diferența față de culpa cu prevedere: la intenție indirectă acceptă producerea; la culpă cu prevedere crede că nu se va produce.',
+          '<b>Culpa cu prevedere</b> (ușurința): prevede urmarea dar consideră nejustificat că nu se va produce.',
+          '<b>Culpa simplă</b> (neglijența): nu prevede urmarea, deși <b>trebuia și putea</b> să o prevadă.',
+          '<b>Praeterintenția</b> (intenție depășită, art. 16 alin. 5 NCP): intenție față de fapta inițială + culpă față de urmarea mai gravă. Exemplu: loviri cauzatoare de moarte (art. 195 NCP) — autorul lovește cu intenție, dar decesul se produce din culpă.',
+          '<b>Mobilul</b> (motivul psihologic) și <b>scopul</b>: de regulă nu condiționează existența infracțiunii, dar pot constitui circumstanțe agravante sau elemente ale formei calificate (ex: omor calificat — art. 189 lit. b: din interes material).'
         ]
       }
     ],
-    grila:'Tipicitate + antijuridicitate + imputabilitate — toate trei necesare. Cauze justificative → înlătură <b>antijuridicitatea</b>; cauze de neimputabilitate → înlătură <b>imputabilitatea</b>. Praeterintenția: intenție față de fapta inițială + culpă față de urmarea mai gravă.'
+    grila:'Trăsături esențiale: tipicitate + antijuridicitate + imputabilitate (toate cumulative). Cauze justificative → înlătură <b>antijuridicitatea</b> (efect in rem). Cauze de neimputabilitate → înlătură <b>imputabilitatea</b> (efect in personam). Nullum crimen sine lege → analogia interzisă. Lex mitior: legea mai favorabilă retroactivează. Intenție indirectă vs. culpă cu prevedere: acceptă / vs. / crede că nu se produce. Praeterintenție = intenție + culpă.'
   },
 
   {
