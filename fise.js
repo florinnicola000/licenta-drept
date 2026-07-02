@@ -689,6 +689,250 @@ var FISE_DATA = [
       }
     ],
     grila:'Testament olograf: <b>integral</b> olograf + datat (zi/lună/an) + semnat — lipsa oricăreia = nulitate absolută. Rezerva: descendenți = <b>1/2</b>; ascendenți privilegiați = <b>1/2</b>; soț supraviețuitor = <b>1/4</b>. Reducțiunea legatelor: în <b>ordine inversă creației</b> (cel mai recent se reduce primul). Raportul donațiilor: prin <b>echivalent</b>, nu în natură. Dispensa de raport scutește de egalitate, nu de rezervă.'
+  },
+
+  // ══ DREPT PENAL ══════════════════════════════════════════════════════════════
+
+  {
+    id:'w18', wk:'W18', dates:'26 oct–1 nov', subj:'pen',
+    title:'Infracțiunea: trăsături și elemente constitutive',
+    sections:[
+      { icon:'📌', title:'Definiție și trăsăturile esențiale (art. 15 NCP)',
+        items:[
+          '<b>Infracțiunea</b> = fapta prevăzută de legea penală, săvârșită cu vinovăție, nejustificată și imputabilă persoanei care a săvârșit-o (art. 15 NCP).',
+          'Cele trei trăsături esențiale sunt cumulative: <b>tipicitate</b> (prevăzută de lege) + <b>antijuridicitate</b> (nejustificată) + <b>imputabilitate</b> (culpabilitate). Lipsa oricăreia → fapta nu e infracțiune.',
+          '<b>Cauzele justificative</b> (legitima apărare, starea de necesitate etc.) înlătură <b>antijuridicitatea</b>. <b>Cauzele de neimputabilitate</b> (minoritate, iresponsabilitate etc.) înlătură <b>imputabilitatea</b>. Distincție esențială pentru grile.'
+        ]
+      },
+      { icon:'🏗️', title:'Elementele constitutive ale infracțiunii',
+        items:[
+          '<b>Obiectul juridic</b>: relația socială ocrotită de norma penală (generic = categoria de relații; special = relația concretă lezată).',
+          '<b>Obiectul material</b>: bunul, corpul sau lucrul asupra căruia se răsfrânge activitatea infracțională. <b>Nu toate infracțiunile au obiect material</b> (ex: infracțiunile de pericol pur).',
+          '<b>Subiectul activ</b>: autorul faptei. Poate fi persoană fizică (ce îndeplinește condițiile răspunderii penale) sau <b>persoană juridică</b> (din 2003 în dreptul român, cu excepțiile prevăzute de lege).',
+          '<b>Subiectul pasiv</b>: persoana fizică sau juridică titulară a valorii sociale lezate sau periclitate prin infracțiune.'
+        ]
+      },
+      { icon:'⚙️', title:'Latura obiectivă',
+        items:[
+          '<b>Elementul material</b> (<i>actus reus</i>): acțiunea sau inacțiunea incriminată. La inacțiune, răspunderea există numai dacă exista o <b>obligație legală de a acționa</b>.',
+          '<b>Urmarea imediată</b>: vătămarea efectivă (la infracțiunile de rezultat) sau starea de pericol (la infracțiunile de pericol/de pericol abstract).',
+          '<b>Legătura de cauzalitate</b>: necesară la infracțiunile de rezultat; se verifică prin teoria echivalenței condițiilor (<i>conditio sine qua non</i>).',
+          '<b>Infracțiuni de rezultat</b>: necesită producerea urmării concrete (omorul, furtul). <b>Infracțiuni de pericol</b>: consumate la simpla creare a pericolului (conducerea sub influența alcoolului).'
+        ]
+      },
+      { icon:'🧠', title:'Latura subiectivă (vinovăția)',
+        items:[
+          '<b>Intenția directă</b> (dolus directus): autorul prevede urmarea și o urmărește.',
+          '<b>Intenția indirectă</b> (dolus eventualis): autorul prevede urmarea și, deși n-o urmărește, <b>o acceptă</b>.',
+          '<b>Culpa cu prevedere</b> (ușurința): autorul prevede urmarea dar crede, fără temei, că nu se va produce.',
+          '<b>Culpa simplă</b> (neglijența): autorul nu prevede urmarea, deși trebuia și putea să o prevadă.',
+          '<b>Praeterintenția</b> (intenție depășită): autorul acționează cu intenție față de fapta inițială, dar urmarea mai gravă se produce din culpă. Exemplu clasic: loviri cauzatoare de moarte (art. 195 NCP).',
+          '<b>Mobilul</b> (motivul psihologic) și <b>scopul</b> nu sunt, în general, condiții ale existenței infracțiunii; pot constitui însă circumstanțe agravante sau pot individualiza forma calificată a infracțiunii.'
+        ]
+      }
+    ],
+    grila:'Tipicitate + antijuridicitate + imputabilitate — toate trei necesare. Cauze justificative → înlătură <b>antijuridicitatea</b>; cauze de neimputabilitate → înlătură <b>imputabilitatea</b>. Praeterintenția: intenție față de fapta inițială + culpă față de urmarea mai gravă.'
+  },
+
+  {
+    id:'w19', wk:'W19', dates:'2–8 nov', subj:'pen',
+    title:'Formele infracțiunii și participația penală',
+    sections:[
+      { icon:'🔢', title:'Fazele activității infracționale și tentativa (art. 32–34 NCP)',
+        items:[
+          'Etapele: rezoluție infracțională (internă, nepedepsibilă) → acte pregătitoare → tentativă → consumare → epuizare.',
+          '<b>Actele pregătitoare</b>: de regulă <b>nepedepsibile</b>; pedepsibile numai când legea prevede expres și numai dacă sunt asimilate tentativei.',
+          '<b>Tentativa</b>: punerea în executare a intenției de a săvârși infracțiunea + neproducerea urmării, fie din cauze independente de voința autorului (tentativă proprie), fie prin desistare/împiedicare.',
+          '<b>Tentativa imposibilă</b>: mijloace absolut improprii sau obiect absolut inexistent → <b>nepedepsibilă</b> (art. 32 alin. 2 NCP).',
+          '<b>Desistarea</b> (autorul renunță de bună voie) și <b>împiedicarea rezultatului</b> (autorul împiedică producerea urmării): cauze de <b>nepedepsire</b>, nu de înlăturare a caracterului penal.',
+          'Tentativa se pedepsește numai dacă legea prevede expres; pedeapsa = <b>jumătate din minimul și maximul</b> special al infracțiunii consumate.'
+        ]
+      },
+      { icon:'👥', title:'Participația penală (art. 46–52 NCP)',
+        items:[
+          '<b>Autorul</b> (art. 46): cel care săvârșește nemijlocit fapta. <b>Coautoratul</b>: mai mulți autori, fiecare săvârșind acte de executare.',
+          '<b>Instigatorul</b> (art. 47): cel care determină cu intenție o altă persoană să comită infracțiunea. Pedepsit <b>cu pedeapsa prevăzută de lege pentru autor</b>.',
+          '<b>Complicele</b> (art. 48): cel care ajută la pregătire sau executare (material sau moral). Pedeapsa poate fi redusă față de autor.',
+          '<b>Participația improprie</b> (art. 52): autorul acționează fără vinovăție (e constrâns, e în eroare, e iresponsabil) → numai instigatorul/complicele răspunde, în calitate de <b>autor mediat</b>.',
+          'La infracțiunile cu subiect activ special: calitatea specială trebuie să o aibă autorul; complicele/instigatorul pot fi persoane obișnuite.'
+        ]
+      },
+      { icon:'⚖️', title:'Circumstanțele reale și personale',
+        items:[
+          '<b>Circumstanțele reale</b> (referitoare la faptă: mijloace, metode, loc): se răsfrâng asupra <b>tuturor participanților</b> care le-au cunoscut la momentul comiterii.',
+          '<b>Circumstanțele personale</b> (referitoare la persoana participantului: recidivă, calitate specială, stare de minoritate): se aplică <b>numai celui la care se referă</b>, nu și celorlalți participanți.',
+          'Dacă complicele nu a cunoscut o circumstanță reală agravantă → nu i se aplică; dacă a cunoscut-o → i se aplică și lui.'
+        ]
+      }
+    ],
+    grila:'Tentativa imposibilă (mijloace absolut improprii / obiect absolut inexistent) → <b>nepedepsibilă</b>. Desistare = cauză de <b>nepedepsire</b>, nu de înlăturare a infracțiunii. Instigatorul: pedepsit CA autorul. Circumstanțe reale → tuturor participanților care le-au cunoscut; circumstanțe personale → numai celui vizat.'
+  },
+
+  {
+    id:'w20', wk:'W20', dates:'9–15 nov', subj:'pen',
+    title:'Cauze justificative, de neimputabilitate, concurs, recidivă, pedepse',
+    sections:[
+      { icon:'🛡️', title:'Cauze justificative (art. 18–22 NCP) — efect IN REM',
+        items:[
+          '<b>Legitima apărare</b> (art. 19): pericol iminent, injust, real, față de sine sau altul; apărare necesară și proporțională față de gravitatea atacului.',
+          '<b>Starea de necesitate</b> (art. 20): pericol iminent față de sine/altul/un interes general; acțiunea de salvare produce un rău mai mic decât cel evitat.',
+          '<b>Exercitarea unui drept sau îndeplinirea unei obligații</b> (art. 21): acțiunea e conformă cu o normă legală.',
+          '<b>Consimțământul persoanei vătămate</b> (art. 22): valabil numai la infracțiunile cu bunuri juridice disponibile (nu și la viață, integritate gravă).',
+          'Efect <b>IN REM</b>: fapta nu e infracțiune pentru <b>nimeni</b>, nici pentru participanți. Dacă autorul a acționat în legitimă apărare → nici instigatorul/complicele nu răspund.'
+        ]
+      },
+      { icon:'🧩', title:'Cauze de neimputabilitate (art. 23–31 NCP) — efect IN PERSONAM',
+        items:[
+          '<b>Constrângerea fizică sau morală</b>: fapta nu e imputabilă dacă persoana n-a putut rezista constrângerii.',
+          '<b>Minoritatea</b>: sub 14 ani → nicio răspundere penală; 14–16 ani → răspundere dacă s-a acționat cu <b>discernământ</b>; 16–18 ani → răspundere penală cu pedepse reduse.',
+          '<b>Iresponsabilitatea</b>: alienație mintală sau stare de inconștiență ce nu permite înțelegerea/controlul faptelor.',
+          '<b>Intoxicația involuntară completă</b>: produsă de alcool sau alte substanțe fără voia autorului.',
+          '<b>Eroarea</b>: asupra existenței elementului constitutiv al infracțiunii (fapt) sau asupra normei legale (drept). Înlătură intenția, rămâne culpa dacă eroarea e culpabilă.',
+          '<b>Cazul fortuit</b>: urmarea nu putea fi prevăzută în nicio circumstanță.',
+          'Efect <b>IN PERSONAM</b>: se aplică <b>numai</b> persoanei respective; participanții pot răspunde penal.'
+        ]
+      },
+      { icon:'🔁', title:'Concursul de infracțiuni și recidiva (art. 38–45 NCP)',
+        items:[
+          '<b>Concursul real</b>: mai multe fapte distincte înainte de o condamnare definitivă. <b>Concursul ideal (formal)</b>: o singură acțiune realizează mai multe infracțiuni.',
+          'Pedeapsa la concurs: <b>cumulul juridic cu spor obligatoriu</b> — pedeapsa cea mai grea + spor de până la 1/3 din totalul celorlalte pedepse (art. 39 NCP).',
+          '<b>Recidiva postcondamnatorie</b>: nouă infracțiune intenționată DUPĂ condamnare definitivă la ≥1 an, înainte de executare sau în primii 3 ani după.',
+          '<b>Recidiva postexecutorie</b>: nouă infracțiune în primii 3 ani după executarea/considerarea ca executată a pedepsei.',
+          '<b>Pluralitatea intermediară</b>: situație intermediară — nu e nici concurs (există condamnare definitivă anterioară), nici recidivă (condamnarea anterioară nu îndeplinește condițiile recidivei). Pedeapsa se poate majora.'
+        ]
+      },
+      { icon:'⚖️', title:'Pedepsele și individualizarea (art. 53–106 NCP)',
+        items:[
+          '<b>Pedepse principale</b>: detențiunea pe viață; închisoarea (15 zile – 30 ani); amenda.',
+          '<b>Pedepse complementare</b>: interzicerea exercitării unor drepturi; degradarea militară; publicarea hotărârii de condamnare.',
+          '<b>Pedepse accesorii</b>: decurg de drept din pedeapsa principală, pe durata executării.',
+          'Individualizarea judiciară: instanța ține cont de gravitatea faptei, periculozitatea infractorului, circumstanțele atenuante și agravante, conduita ulterioară.',
+          '<b>Circumstanțele atenuante</b> (art. 75): reduc pedeapsa sub minimul special. <b>Circumstanțele agravante</b> (art. 77): majorează pedeapsa spre maximul special.'
+        ]
+      }
+    ],
+    grila:'Cauze justificative → efect <b>IN REM</b> (fapta nu e infracțiune pentru nimeni). Cauze de neimputabilitate → efect <b>IN PERSONAM</b> (numai cel vizat nu răspunde; participanții pot răspunde). Minoritate: sub 14 ani = nicio răspundere; 14-16 ani = răspundere cu <b>discernământ</b>. Pedeapsa la concurs: <b>cumulul juridic cu spor</b>.'
+  },
+
+  {
+    id:'w21', wk:'W21', dates:'16–22 nov', subj:'pen',
+    title:'Infracțiuni contra persoanei',
+    sections:[
+      { icon:'⚰️', title:'Infracțiuni contra vieții (art. 188–195 NCP)',
+        items:[
+          '<b>Omorul simplu</b> (art. 188): uciderea cu intenție; pedeapsă <b>10–20 ani</b> + interzicerea unor drepturi.',
+          '<b>Omorul calificat</b> (art. 189): forme agravate — cu premeditare, din interes material, prin cruzime, prin mijloace periculoase pentru mai multe persoane, victimă vulnerabilă/funcționar/judecător/polițist, rudă în linie directă sau soț; pedeapsă <b>15–25 ani sau detențiune pe viață</b>.',
+          '<b>Uciderea la cererea victimei</b> (art. 190): cauze speciale (boală gravă incurabilă); pedeapsă redusă.',
+          '<b>Uciderea din culpă</b> (art. 192): moartea cauzată fără intenție; pedeapsă <b>1–5 ani</b>; formă agravată dacă e condus sub alcool/droguri sau abandonate victima.',
+          '<b>Loviri cauzatoare de moarte</b> (art. 195): <b>praeterintenție</b> — intenție de a lovi + culpă față de moarte; pedeapsă <b>6–12 ani</b>.'
+        ]
+      },
+      { icon:'🩹', title:'Infracțiuni contra integrității corporale (art. 193–198 NCP)',
+        items:[
+          '<b>Lovirea sau alte violențe</b> (art. 193): loviri ce produc suferințe fizice; pedeapsă amendă sau <b>max 2 ani</b>; se urmărește la <b>plângerea prealabilă</b> a victimei.',
+          '<b>Vătămarea corporală</b> (art. 194): leziuni ce necesită <b>mai mult de 90 zile de îngrijiri</b> medicale; pedeapsă <b>2–7 ani</b>. Sub 90 zile → lovire sau alte violențe.',
+          'Formele agravate ale vătămării: pierderea unui organ/simț, sluțire gravă, avort, punere în pericol a vieții.',
+          '<b>Vătămarea corporală din culpă</b> (art. 196): necesită vătămare ≥90 zile sau consecință gravă; urmărire la plângere prealabilă dacă e minoră.'
+        ]
+      },
+      { icon:'🔓', title:'Infracțiuni contra libertății (art. 205–220 NCP)',
+        items:[
+          '<b>Lipsirea de libertate</b> (art. 205): reținerea sau deținerea persoanei fără drept; pedeapsă <b>1–7 ani</b>; formă agravată dacă durează >24h, victimă e minor, sau produce suferințe.',
+          '<b>Violul</b> (art. 218): raport sexual sau act sexual oral/anal prin constrângere (violență/amenințare) sau profitând de imposibilitatea victimei de a se apăra/exprima; pedeapsă <b>3–10 ani</b>; formă agravată: victimă minoră sub 16 ani.',
+          '<b>Agresiunea sexuală</b> (art. 219): acte sexuale altele decât penetrare, prin constrângere; pedeapsă <b>2–7 ani</b>.',
+          '<b>Actul sexual cu un minor</b> (art. 220): raport sexual cu persoana sub 15 ani, indiferent de consimțământ.'
+        ]
+      }
+    ],
+    grila:'Omor vs. loviri cauzatoare de moarte: criteriul = <b>intenția față de deces</b>. Cu intenție = omor; praeterintenție = loviri cauzatoare de moarte. Vătămare corporală: prag <b>90 zile îngrijiri</b>. Lovire simplă: urmărire la <b>plângere prealabilă</b>; împăcarea stinge acțiunea. Viol: inclusiv prin profitarea de imposibilitate de exprimare, nu numai prin violență.'
+  },
+
+  {
+    id:'w22', wk:'W22', dates:'23–29 nov', subj:'pen',
+    title:'Infracțiuni contra patrimoniului + infracțiuni de fals',
+    sections:[
+      { icon:'💰', title:'Infracțiuni contra patrimoniului — forme principale (art. 228–256 NCP)',
+        items:[
+          '<b>Furtul simplu</b> (art. 228): luarea bunului mobil din posesia/detenția altuia, <b>fără consimțământ</b>, cu intenția de a-l însuși pe nedrept.',
+          '<b>Furtul calificat</b> (art. 229): forme agravate — noaptea, de două+ persoane, prin efracție/escaladare, din locuință/dependințe, privind vehicule/produse petroliere; pedeapsă sporită.',
+          '<b>Tâlhăria</b> (art. 233): furt + violență sau amenințare; violența poate fi și <b>ulterioară luării</b> bunului (pentru a păstra bunul sau a asigura scăparea).',
+          '<b>Înșelăciunea</b> (art. 244): inducerea în eroare + prejudiciu patrimonial. Necesită un prejudiciu cert; fără prejudiciu → tentativă.',
+          '<b>Abuzul de încredere</b> (art. 238): bunul a fost primit cu consimțământ, dar nu e restituit sau e folosit altfel decât s-a convenit.',
+          '<b>Gestiunea frauduloasă</b> (art. 242): subiect activ special — cel căruia i s-au încredințat bunuri de administrat; prejudicierea prin acte de gestionare.',
+          '<b>Delapidarea</b> (art. 295): subiect activ special — funcționar gestionar; însușirea/folosirea/traficarea bunurilor entității.'
+        ]
+      },
+      { icon:'📄', title:'Infracțiunile de fals (art. 310–328 NCP)',
+        items:[
+          '<b>Falsul material în înscrisuri oficiale</b> (art. 320): contrafacerea sau alterarea <b>fizică</b> a înscrisului oficial. Săvârșit de un funcționar public → formă agravată.',
+          '<b>Falsul intelectual</b> (art. 321): funcționarul competent inserează <b>date false</b> în înscris la momentul întocmirii. Subiect activ special: funcționar cu atribuții de autentificare/certificare.',
+          '<b>Falsul în înscrisuri sub semnătură privată</b> (art. 322): falsificarea unui înscris privat, urmată de folosire; infracțiunea e complexă (fals + uz).',
+          '<b>Uzul de fals</b> (art. 323): folosirea unui înscris oficial fals de <b>o altă persoană</b> decât autorul falsului. Autorul falsului care folosește el însuși înscrisul nu comite uz de fals separat (absorbit).',
+          '<b>Falsul în declarații</b> (art. 326): declararea mincinoasă în fața unui organ sau instituție de stat, în scopul producerii de consecințe juridice.'
+        ]
+      }
+    ],
+    grila:'Furt (fără consimțământ) ≠ abuz de încredere (cu consimțământ inițial). Tâlhăria: violența poate fi și <b>ulterioară</b> luării bunului. Uzul de fals: comis de <b>altcineva</b> decât autorul falsului (autorul care folosește el însuși = uzul e absorbit în fals). Falsul material = alterare fizică; falsul intelectual = inserarea de date false la întocmire (subiect special: funcționar).'
+  },
+
+  {
+    id:'w23', wk:'W23', dates:'30 nov–6 dec', subj:'pen',
+    title:'Corupție, infracțiuni de serviciu și contra justiției',
+    sections:[
+      { icon:'💼', title:'Infracțiuni de corupție (art. 289–294 NCP)',
+        items:[
+          '<b>Luarea de mită</b> (art. 289): funcționarul public pretinde ori primește foloase necuvenite, sau acceptă promisiunea lor, pentru a îndeplini/nu îndeplini/întârzia un act în exercitarea funcției. Nu contează dacă actul a fost sau nu îndeplinit.',
+          '<b>Darea de mită</b> (art. 290): promiterea/oferirea/darea de foloase funcționarului. Dacă mituitorul a fost <b>constrâns</b> → cauză de nepedepsire. Dacă a dat de bună voie → pedepsit.',
+          '<b>Traficul de influență</b> (art. 291): pretinderea/primirea de foloase necuvenite de o persoană care <b>are sau lasă să se creadă că are influență</b> asupra unui funcționar, pentru a-l determina să facă/nu facă ceva.',
+          '<b>Cumpărarea de influență</b> (art. 292): corelativă traficului; cel care promite/dă foloase pentru a cumpăra influența. Dacă a fost constrâns → cauză de nepedepsire.',
+          'Distincție esențială: traficantul de influență <b>nu trebuie să fie funcționar</b>; el promite că va influența funcționarul (real sau presupus).'
+        ]
+      },
+      { icon:'🏛️', title:'Infracțiuni de serviciu (art. 295–309 NCP)',
+        items:[
+          '<b>Delapidarea</b> (art. 295): funcționarul/angajatul care gestionează bunuri și le însușește/folosește/trafichează. Subiect activ: gestionar sau funcționar.',
+          '<b>Abuzul în serviciu</b> (art. 297): funcționarul nu îndeplinește sau îndeplinește necorespunzător atribuțiile de serviciu → prejudiciu material sau vătămare a drepturilor/intereselor legitime. Săvârșit cu intenție.',
+          '<b>Neglijența în serviciu</b> (art. 298): similar cu abuzul, dar săvârșit din <b>culpă</b>.',
+          '<b>Folosirea abuzivă a funcției</b> (art. 299): funcționarul folosește funcția pentru avantaje proprii sau ale altuia.'
+        ]
+      },
+      { icon:'⚖️', title:'Infracțiuni contra înfăptuirii justiției (art. 266–288 NCP)',
+        items:[
+          '<b>Denunțul calomnios</b> (art. 268): sesizarea mincinoasă a unui organ de urmărire/judecată cu o faptă penală inexistentă sau necomisă de cel denunțat.',
+          '<b>Mărturia mincinoasă</b> (art. 273): declarații false ca martor/expert/interpret în fața unui organ judiciar. Cauza de nepedepsire: <b>retractarea</b> declarației înainte de condamnare.',
+          '<b>Favorizarea făptuitorului</b> (art. 269): ajutorarea unui infractor să se sustragă urmăririi. Cauza de nepedepsire: <b>soțul și rudele apropiate</b> ale favorizatorului nu se pedepsesc.',
+          '<b>Tăinuirea</b> (art. 270): primirea, dobândirea sau transformarea de bunuri provenite din infracțiune, cunoscând proveniența. Diferit de favorizare: tăinuirea privește bunurile, favorizarea privește persoana infractorului.',
+          '<b>Obstrucționarea justiției</b> (art. 271): împiedicarea actelor de urmărire sau judecată prin violență/amenințare/corupere/alte mijloace.'
+        ]
+      }
+    ],
+    grila:'Luare de mită ≠ trafic de influență: luarea = <b>funcționarul însuși</b>; traficul = persoana care pretinde că are <b>influență</b> asupra funcționarului (nu trebuie să fie funcționar). Dare de mită sub constrângere → <b>cauza de nepedepsire</b>. Mărturie mincinoasă: retractarea înainte de condamnare → cauza de nepedepsire. Favorizare: soțul și rudele apropiate <b>nu se pedepsesc</b>. Tăinuire = bunuri; favorizare = persoana.'
+  },
+
+  {
+    id:'w24', wk:'W24', dates:'7–13 dec', subj:'pen',
+    title:'Infracțiuni la regimul circulației + recap infracțiuni speciale',
+    sections:[
+      { icon:'🚗', title:'Infracțiuni la regimul circulației pe drumuri publice (art. 334–341 NCP)',
+        items:[
+          '<b>Conducerea fără permis</b> (art. 335): conducerea pe drumuri publice a unui vehicul de către o persoană fără permis de conducere corespunzător categoriei sau cu permis suspendat/anulat/expirat.',
+          '<b>Conducerea sub influența alcoolului</b> (art. 336): conducerea cu o alcoolemie de <b>≥ 0,80 g/l sânge</b> sau sub influența substanțelor psihoactive. Infracțiunea e consumată indiferent dacă s-a produs un accident.',
+          '<b>Refuzul recoltării de probe biologice</b> (art. 337): refuzul de a se supune testării sau recoltării; infracțiune distinctă de conducerea sub influența alcoolului.',
+          'Dacă se produce un accident cu victime → <b>concurs de infracțiuni</b> (ex: conducere sub alcool + ucidere din culpă sau vătămare corporală din culpă).',
+          '<b>Părăsirea locului accidentului</b> (art. 338): infracțiune distinctă dacă are loc fără acordul polițistului; poate absorbi sau concura cu alte infracțiuni.'
+        ]
+      },
+      { icon:'🔍', title:'Recapitulare — delimitări esențiale infracțiuni speciale',
+        items:[
+          '<b>Omor vs. loviri cauzatoare de moarte vs. ucidere din culpă</b>: omor = intenție față de moarte; loviri cauzatoare de moarte = praeterintenție; ucidere din culpă = culpă.',
+          '<b>Furt vs. abuz de încredere vs. înșelăciune vs. tâlhărie</b>: furt = luare fără consimțământ; abuz de încredere = primire cu consimțământ, nerestituire; înșelăciune = inducere în eroare + prejudiciu; tâlhărie = furt + violență.',
+          '<b>Luare de mită vs. trafic de influență vs. abuz în serviciu</b>: luarea = foloase pentru actul propriu; traficul = foloase pentru influența asupra altui funcționar; abuzul = neîndeplinire/îndeplinire necorespunzătoare fără foloase.',
+          '<b>Tăinuire vs. favorizare</b>: tăinuirea = bunuri provenite din infracțiune; favorizarea = ajutorarea persoanei infractorului să se sustragă.',
+          '<b>Fals material vs. fals intelectual vs. uz de fals</b>: falsul material = alterare fizică; falsul intelectual = date false la întocmire (subiect special); uzul = folosirea înscrisului fals de altcineva.'
+        ]
+      }
+    ],
+    grila:'Conducere sub alcool: ≥ <b>0,80 g/l sânge</b>; infracțiunea există chiar fără accident. Dacă se produce și accident cu victime → <b>concurs</b> cu ucidere/vătămare din culpă. Uzul de fals e săvârșit de <b>altcineva</b> decât autorul falsului. Tăinuire = bunuri; favorizare = persoana. Omor ≠ loviri cauzatoare de moarte: distincția = intenția față de deces.'
   }
 ];
 
@@ -858,6 +1102,90 @@ var FISE_TIPS={
     'Incapacitate de a <b>primi</b> prin legat: medicii, farmaciștii, preoții care au îngrijit testatorul în <b>ultima boală</b> → prezumție de captație/sugestie (NR a legatului).',
     'Calculul rezervei include <b>TOATE donațiile</b> (raportabile + neraportabile, indiferent de beneficiar), nu numai donațiile date moștenitorilor.',
     'Testamentul <b>autentic</b> nul din vici de formă poate fi <b>convertit</b> în testament olograf, dacă testatorul l-a scris personal, l-a datat și semnat.'
+  ],
+
+  w18:[
+    'Cele <b>trei trăsături esențiale</b> sunt cumulative: tipicitate + antijuridicitate + imputabilitate. Dacă grila elimină una → fapta <b>nu e infracțiune</b>. Nu confunda: nevinovăția e un principiu procesual, nu o trăsătură a infracțiunii.',
+    '<b>Cauze justificative</b> (legitimă apărare, stare de necesitate, consimțământ) → înlătură <b>antijuridicitatea</b>. <b>Cauze de neimputabilitate</b> (minoritate, iresponsabilitate, eroare, caz fortuit) → înlătură <b>imputabilitatea</b>. Distincția e crucială — grilele o testează frecvent.',
+    '<b>Intenția directă</b>: prevede + urmărește. <b>Intenția indirectă</b>: prevede + <b>acceptă</b> (nu urmărește!). Dacă grila spune „acceptă că s-ar putea produce" → intenție indirectă.',
+    '<b>Culpa cu prevedere</b> (ușurința): prevede + crede fără temei că nu se produce. <b>Culpa simplă</b>: nu prevede, dar trebuia și putea. Dacă grila spune „a prevăzut dar a considerat că evită" → culpă cu prevedere, nu intenție.',
+    '<b>Praeterintenția</b>: intenție față de fapta inițială + culpă față de urmarea mai gravă. Exemplul clasic: loviri cauzatoare de moarte. Dacă grila spune „a vrut să lovească, nu să omoare, dar victima a murit" → praeterintenție.',
+    '<b>Mobilul și scopul</b>: în principiu nu sunt condiții ale existenței infracțiunii. Excepție: când legea cere expres scopul (ex: furtul cere intenția de însușire pe nedrept). Grile tip: „fapta e infracțiune dacă autorul a acționat dintr-un mobil anume" → de regulă fals.',
+    '<b>Infracțiune de rezultat</b> vs. <b>infracțiune de pericol</b>: dacă urmarea produsă e vătămarea concretă → de rezultat (necesită legătură de cauzalitate); dacă urmarea e starea de pericol → de pericol (legătura de cauzalitate se prezumă la consumare).',
+    '<b>Obiect material</b>: nu orice infracțiune are! Infracțiunile de pericol pur sau contra unor valori imateriale (ex: demnitate, libertate de conștiință) nu au obiect material. Grilă tip: „infracțiunea X are obiect material?" → verifică dacă implică un bun/corp fizic.',
+    '<b>Persoana juridică</b> poate fi subiect activ al infracțiunii (art. 135 NCP), cu excepția statului, autorităților publice și a celor care exercită prerogative de putere publică. Grilele testează uneori dacă RP poate fi autor al anumitor infracțiuni.'
+  ],
+
+  w19:[
+    '<b>Tentativa imposibilă</b>: mijloace absolut improprii SAU obiect absolut inexistent → <b>nepedepsibilă</b> (art. 32 alin. 2 NCP). Dacă grila spune „autorul a tras cu un pistol descărcat fără să știe" → tentativă imposibilă = nepedepsibilă.',
+    '<b>Desistarea</b> = renunțare voluntară înainte de consumare; <b>împiedicarea rezultatului</b> = autorul împiedică producerea urmării după actele de executare. Ambele sunt cauze de <b>nepedepsire</b>, nu de înlăturare a caracterului penal al faptei. Participanții care nu s-au desistat pot fi pedepsiți.',
+    'Tentativa se pedepsește cu <b>jumătate din minimul și maximul special</b>. Dacă legea nu prevede expres pedepsibilitatea tentativei → tentativa e <b>nepedepsibilă</b>. Grilă: verifică dacă infracțiunea admite tentativa.',
+    '<b>Actele pregătitoare</b>: de regulă nepedepsibile; pedepsibile numai când legea le asimilează tentativei. Nu confunda actele pregătitoare cu tentativa: executarea n-a început la acte pregătitoare.',
+    '<b>Instigatorul</b> se pedepsește <b>cu pedeapsa prevăzută de lege pentru autor</b> (nu pentru complice). Dacă grila întreabă cine e mai ușor pedepsit → complicele, nu instigatorul.',
+    '<b>Participația improprie</b>: autorul acționează fără vinovăție (constrâns, în eroare, minor sub 14 ani) → instigatorul/complicele răspunde ca <b>autor mediat</b>. Autorul faptic nu răspunde penal.',
+    '<b>Circumstanțe reale</b> (modul de comitere, mijloace, loc, timp): se răsfrâng asupra <b>tuturor participanților care le-au cunoscut</b>. Dacă complicele nu a știut că s-a folosit o armă → circumstanța reală agravantă nu i se aplică.',
+    '<b>Circumstanțe personale</b> (recidivă, calitate specială, stare de minoritate): se aplică <b>numai celui la care se referă</b>. Recidiva unui participant nu afectează pedeapsa celorlalți.',
+    'La infracțiunile cu <b>subiect activ special</b>: calitatea specială trebuie să aparțină autorului; complicele/instigatorul pot fi oricine. Grilă: „poate un particular fi complice la abuz în serviciu?" → da.'
+  ],
+
+  w20:[
+    '<b>Cauze justificative</b> → efect <b>IN REM</b>: fapta nu e infracțiune pentru <b>nimeni</b>. Dacă autorul a acționat în legitimă apărare → nici participanții nu răspund, chiar dacă ei nu s-au apărat.',
+    '<b>Cauze de neimputabilitate</b> → efect <b>IN PERSONAM</b>: se aplică numai celui în cauză. Participanții pot răspunde penal chiar dacă autorul faptic nu răspunde.',
+    '<b>Starea de necesitate</b>: pericolul nu trebuie să fie cauzat de cel care acționează (spre deosebire de legitima apărare unde atacul e al agresorului). Dacă riscul depășit e mai mare decât cel evitat → nu mai e justificată.',
+    'Minoritate: <b>sub 14 ani</b> → nicio răspundere penală, indiferent. <b>14–16 ani</b> → răspundere numai cu <b>discernământ dovedit</b>. <b>16–18 ani</b> → răspundere deplină, dar cu pedepse reduse față de majori.',
+    '<b>Eroarea de fapt</b> (asupra elementului constitutiv) → înlătură intenția. Dacă eroarea e culpabilă → rămâne culpa. <b>Eroarea de drept penal</b>: în principiu nu înlătură răspunderea (nemo censetur ignorare legem); excepție: eroare inevitabilă.',
+    'La <b>concurs de infracțiuni</b>: pedeapsa = pedeapsa cea mai grea + spor de <b>până la 1/3 din totalul celorlalte</b>. Nu se adaugă pur și simplu pedepsele (sistemul nu e cel al cumulului aritmetic).',
+    '<b>Recidiva postcondamnatorie</b> vs. <b>pluralitate intermediară</b>: recidiva cere ca prima condamnare să fie ≥1 an. Dacă prima condamnare a fost la 6 luni → nu e recidivă, ci pluralitate intermediară. Distincție frecventă în grile.',
+    '<b>Circumstanțele atenuante</b>: cobor pedeapsa sub minimul special. <b>Circumstanțele agravante</b>: urcă pedeapsa spre maximul special. Dacă există și atenuante și agravante → se compensează (instanța apreciază).',
+    '<b>Recunoașterea învinuirii</b> (art. 396 CPP) = circumstanță atenuantă legală specială; reduce limitele pedepsei cu 1/3 la închisoare, 1/4 la amendă.'
+  ],
+
+  w21:[
+    '<b>Omor vs. loviri cauzatoare de moarte</b>: distincția = intenția față de deces. Dacă autorul a vrut să omoare (sau a acceptat moartea) → omor. Dacă a vrut să lovească/rănească și moartea s-a produs din culpă → loviri cauzatoare de moarte (praeterintenție).',
+    '<b>Omor vs. ucidere din culpă</b>: omor = intenție; ucidere din culpă = nicio formă de intenție față de deces. Dacă grila spune „nu și-a reprezentat posibilitatea morții și nici nu trebuia" → caz fortuit, nicio infracțiune.',
+    '<b>Omor calificat</b>: premeditarea presupune rezoluție infracțională luată cu timp înainte + acte de pregătire. Nu orice omor cu intenție directă e premeditat. Grilă: „a hotărât să omoare cu 2 ore înainte și a cumpărat arma" → premeditat.',
+    'Vătămare corporală: prag <b>90 de zile de îngrijiri medicale</b>. Sub 90 de zile → lovire sau alte violențe. Dacă grila spune „60 de zile îngrijiri" → lovire, nu vătămare corporală.',
+    'Lovire sau alte violențe: urmărire <b>la plângerea prealabilă</b> a victimei. Împăcarea (în termenul legal) <b>stinge acțiunea penală</b>. Dacă victima se împacă → cazul se clasează.',
+    '<b>Violul</b>: nu necesită violență fizică — e suficientă amenințarea SAU profitarea de imposibilitatea victimei de a se apăra/exprima (ex: victimă inconștientă, adormită). Dacă grila spune „victima era adormită" → viol, nu agresiune sexuală.',
+    '<b>Act sexual cu un minor</b> sub 15 ani: infracțiunea există <b>indiferent de consimțământul minorului</b>. Consimțământul e irelevant juridic sub 15 ani. Grilă: „minorul de 14 ani a consimțit" → infracțiune oricum.',
+    'Lipsire de libertate: infracțiune <b>continuă</b> (se consumă pe toată durata privării). Prescripția curge de la momentul încetării privării. Formă agravată dacă depășește <b>24 de ore</b>.',
+    'La <b>omorul calificat</b> față de un funcționar/polițist/judecător: calitatea victimei trebuie să existe <b>la momentul faptei</b> și autorul trebuie să fi știut de ea. Dacă a omorât un polițist în civil fără să știe că e polițist → nu e omor calificat.'
+  ],
+
+  w22:[
+    '<b>Furt vs. abuz de încredere</b>: la furt, bunul e luat fără consimțământ; la abuz de încredere, bunul a fost primit cu consimțământ dar nu e restituit. Grilă: „a primit bunul în depozit și l-a vândut" → abuz de încredere, nu furt.',
+    '<b>Furt vs. înșelăciune</b>: la furt, victima nu participă la transferul bunului; la înșelăciune, victima transmite bunul singură (e indusă în eroare și acționează voluntar).',
+    '<b>Tâlhăria</b>: violența poate fi exercitată și <b>după luarea bunului</b>, pentru a păstra bunul sau pentru a asigura scăparea autorului. Dacă grila spune „a furat și, prins de victimă, a lovit-o ca să scape" → tâlhărie, nu furt + lovire.',
+    '<b>Uzul de fals</b>: comis de <b>altcineva</b> decât autorul falsului. Autorul falsului care folosește el însuși înscrisul fals → uzul de fals e <b>absorbit</b> în infracțiunea de fals; nu comite două infracțiuni.',
+    '<b>Falsul material</b>: alterare fizică a înscrisului (ștergere, adăugare, contrafacere). <b>Falsul intelectual</b>: inserarea de date false la momentul întocmirii; subiect activ special (funcționar competent). Grilă: „notarul a întocmit un act cu date false" → fals intelectual, nu material.',
+    '<b>Falsul în declarații</b> (art. 326): declararea mincinoasă în fața unui organ de stat <b>în scopul producerii de consecințe juridice</b>. Simpla minciună fără consecință juridică urmărită → nu e infracțiune.',
+    '<b>Gestiunea frauduloasă</b> vs. <b>delapidare</b>: gestiunea frauduloasă → subiect poate fi oricine căruia i s-au încredințat bunuri (inclus particulari); delapidarea → subiect special = funcționar/angajat care gestionează bunuri publice/ale entității.',
+    '<b>Înșelăciunea</b> necesită prejudiciu patrimonial efectiv. Dacă bunul/suma n-a fost efectiv obținută → tentativă de înșelăciune. Grilă: „a trimis un email de phishing dar nimeni n-a dat bani" → tentativă.',
+    '<b>Furtul calificat de tip efracție</b>: presupune distrugerea/deteriorarea unui obstacol fizic (ușă, lacăt). Dacă a intrat printr-o fereastră deschisă → furt simplu (sau calificat pe alt criteriu), nu efracție.'
+  ],
+
+  w23:[
+    '<b>Luarea de mită vs. traficul de influență</b>: luarea de mită → funcționarul primește foloase pentru <b>actul propriu</b> de serviciu; traficul de influență → persoana pretinde foloase pentru a influența <b>un alt funcționar</b>. Traficantul de influență nu trebuie să fie funcționar.',
+    'Luarea de mită: infracțiunea e consumată la momentul <b>pretinderii sau primirii</b> foloaselor, chiar dacă actul de serviciu nu a fost îndeplinit. Grilă: „a primit bani dar n-a făcut nimic" → infracțiunea tot există.',
+    '<b>Darea de mită sub constrângere</b>: dacă mituitorul a fost constrâns → <b>cauza de nepedepsire</b> pentru mituitor. Dacă a dat de bună voie → mituitor pedepsit. Constrângerea trebuie dovedită.',
+    '<b>Trafic de influență</b>: nu trebuie să existe o influență reală — e suficientă <b>pretinderea că are influență</b>. Grilă: „a pretins că are relații cu judecătorul, deși nu era adevărat" → trafic de influență valabil.',
+    '<b>Abuzul în serviciu</b>: cu intenție. <b>Neglijența în serviciu</b>: din culpă. Dacă grila spune „funcționarul a uitat să îndeplinească actul" → neglijență, nu abuz.',
+    '<b>Mărturia mincinoasă</b>: cauza de nepedepsire = <b>retractarea</b> declarației mincinoase înainte de condamnarea definitivă a inculpatului. Retractarea după condamnare → nu mai produce efectul de nepedepsire.',
+    '<b>Favorizarea făptuitorului</b>: cauza de nepedepsire pentru <b>soț și rudele apropiate</b> ale favorizatorului (nu ale infractorului favorizat!). Grilă: „soția l-a ajutat pe soțul ei să se ascundă" → nu se pedepsește.',
+    '<b>Tăinuirea</b> = bunuri provenite din infracțiune; <b>favorizarea</b> = ajutorarea persoanei infractorului. Grilă: „a cumpărat bunuri știind că sunt furate" → tăinuire; „l-a ascuns pe hoț" → favorizare.',
+    '<b>Denunțul calomnios</b>: necesită știința autorului că sesizarea e mincinoasă. Dacă autorul a crezut sincer că sesizarea e întemeiată → nu e denunț calomnios, chiar dacă acuzația s-a dovedit neîntemeiată.'
+  ],
+
+  w24:[
+    'Conducere sub influența alcoolului (art. 336): limita legală = <b>0,80 g/l alcool în sânge</b>. Sub această limită dar cu influență dovedită → contravențional. Infracțiunea e consumată indiferent dacă s-a produs un accident sau nu.',
+    '<b>Refuzul recoltării de probe biologice</b> = infracțiune distinctă și autonomă (art. 337). Nu e condiție a altei infracțiuni. Grilă: „a refuzat testul, deci e condamnat pentru conducere sub influența alcoolului" → fals; sunt infracțiuni diferite.',
+    'Dacă în urma conducerii sub influența alcoolului se produce un accident cu victime → <b>concurs de infracțiuni</b> (art. 336 + art. 192 ucidere din culpă sau art. 196 vătămare din culpă). Nu e absorbită o infracțiune în cealaltă.',
+    '<b>Omor vs. loviri cauzatoare de moarte vs. ucidere din culpă</b> — recapitulare: omor = intenție față de moarte; loviri cauzatoare de moarte = praeterintenție (intenție de a lovi + culpă față de moarte); ucidere din culpă = culpă totală față de moarte.',
+    '<b>Furt vs. abuz de încredere vs. înșelăciune vs. tâlhărie</b>: furt = fără consimțământ; abuz de încredere = cu consimțământ inițial dar nerestituire; înșelăciune = eroare provocată + prejudiciu; tâlhărie = furt + violență (chiar ulterioară luării).',
+    '<b>Uzul de fals</b>: numai când e comis de altcineva decât autorul falsului. Autorul care folosește el însuși înscrisul fals → infracțiunea de fals absoarbe uzul. Grilă: „falsificatorul a prezentat actul fals la bancă" → o singură infracțiune (falsul).',
+    '<b>Luare de mită vs. trafic de influență vs. abuz în serviciu</b>: luarea = foloase pentru actul propriu (funcționar); traficul = foloase pentru influența pretinsă asupra altcuiva (nu trebuie să fie funcționar); abuzul = neîndeplinire/îndeplinire necorespunzătoare fără foloase.',
+    '<b>Tăinuire vs. favorizare</b>: tăinuirea privește bunurile provenite din infracțiune; favorizarea privește persoana infractorului. Pot concura dacă autorul face ambele acte (ascunde și persoana și bunurile).',
+    'La <b>toate infracțiunile din penal special</b>: primul pas e să verifici dacă există o cauza justificativă sau de neimputabilitate. Dacă există → nu e infracțiune (justificative) sau autorul nu răspunde (neimputabilitate). Abia apoi analizezi elementele constitutive.'
   ]
 };
 
