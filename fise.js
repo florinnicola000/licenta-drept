@@ -1069,43 +1069,42 @@ var FISE_DATA = [
     sections:[
       { icon:'🏛️', title:'Competența instanțelor (art. 94–147 NCPC)',
         items:[
-          '<b>Judecătoria</b>: judecă în primă instanță cauzele neatribuite altor instanțe; plângeri contravenționale; cereri provizorii.',
-          '<b>Tribunalul</b>: judecă în primă instanță cauzele cu valoare > <b>200.000 lei</b>, conflicte de muncă, litigii de contencios administrativ sub 3 mil. lei; judecă apelurile împotriva hotărârilor judecătoriei.',
-          '<b>Curtea de Apel</b>: judecă apelurile împotriva hotărârilor tribunalului pronunțate în primă instanță; judecă recursurile împotriva hotărârilor tribunalului pronunțate ca instanță de apel.',
-          '<b>Competența teritorială de drept comun</b> (art. 107): instanța de la domiciliul/sediul pârâtului. Dacă pârâtul are mai multe domicilii → reclamantul alege.',
-          '<b>Competența teritorială alternativă</b>: materie contractuală — și instanța locului de executare; materie delictuală — și instanța locului producerii prejudiciului. Reclamantul alege.',
-          '<b>Competența exclusivă</b>: imobile → instanța locului situării imobilului; societăți → instanța sediului social; succesiuni → instanța locului deschiderii succesiunii (ultimul domiciliu al defunctului).'
+          '<b>Judecătoria</b>: cazuri de drept comun (valoare ≤ 200.000 lei), plângeri contravenționale, cereri provizorii, ordonanță de plată sub 50.000 lei, evacuare, partaj sub 200.000 lei.',
+          '<b>Tribunalul</b>: primă instanță pentru cereri cu valoare > <b>200.000 lei</b>, conflicte de muncă, materie comercială, contencios administrativ sub 3 mil. lei; <b>instanță de apel</b> față de judecătorie.',
+          '<b>Curtea de Apel</b>: apeluri față de tribunal (în primă instanță); recursuri față de tribunal (în apel). Curtea de Apel = instanță de recurs pentru hotărârile tribunalului pronunțate în apel.',
+          '<b>Competența teritorială de drept comun</b> (art. 107): instanța de la domiciliul/sediul <b>pârâtului</b>. Mai multe domicilii → reclamantul alege. ⚠️ Nu domiciliul reclamantului.',
+          '<b>Competența alternativă</b>: contract → și instanța locului de executare a obligației; delict → și instanța locului prejudiciului. Reclamantul alege dintre mai mulți pârâți cu domicilii diferite.',
+          '<b>Competența exclusivă</b> (nu se poate deroga): imobile → locul situării imobilului; societăți → sediul social; succesiuni → ultimul domiciliu al defunctului; evacuare → locul imobilului.'
         ]
       },
-      { icon:'⚖️', title:'Acțiunea civilă și participanții (art. 29–88 NCPC)',
+      { icon:'⚖️', title:'Acțiunea civilă, excepții și participanți (art. 29–88 NCPC)',
         items:[
-          '<b>Condițiile exercitării acțiunii civile</b>: drept, interes (actual, născut, personal, direct), calitate procesuală activă (reclamantul) și pasivă (pârâtul), capacitate procesuală.',
-          '<b>Calitatea procesuală</b>: legitimarea de a figura ca parte în proces. Lipsa calității procesuale = excepție peremptoriu → respingerea acțiunii.',
-          '<b>Litispendența</b>: același litigiu pe rolul a două instanțe concomitent → excepție dilatoriu; dosarul mai nou se trimite la instanța mai veche.',
-          '<b>Conexitatea</b>: cauze legate între ele, judecate separat → pot fi reunite la instanța mai întâi sesizată.',
-          '<b>Intervenția voluntară</b> (principală sau accesorie) și <b>intervenția forțată</b> (chemarea în judecată a terțului): mijloace de atragere a terților în procesul civil.'
+          '<b>Condițiile exercitării acțiunii</b>: drept subiectiv (pretins), interes (actual, născut, personal, direct), calitate procesuală activă/pasivă, capacitate procesuală. Lipsa oricăreia → respingerea acțiunii.',
+          '<b>Autoritatea de lucru judecat</b> (art. 431 NCPC): excepție peremptoriu — necesită <b>tripla identitate</b>: aceleași <i>părți</i> + același <i>obiect</i> + aceeași <i>cauză</i>. Hotărârea definitivă → nu se poate rejudeca. ⚠️ Dacă lipsește una = nu există autoritate de lucru judecat.',
+          '<b>Excepțiile dilatorii</b> (amână judecata): necompetența, litispendența, conexitatea, lipsa procedurii prealabile, neregularitatea cererii. Litispendența = același litigiu la două instanțe → dosarul mai nou se trimite la instanța mai veche sesizată.',
+          '<b>Excepțiile peremptorii</b> (sting acțiunea): prescripția dreptului la acțiune, autoritatea de lucru judecat, lipsa calității procesuale, lipsa capacității, puterea lucrului judecat.',
+          '<b>Cererea reconvențională</b> (art. 209 NCPC): pârâtul formulează pretenții proprii față de reclamant; depusă odată cu întâmpinarea; judecată împreună cu acțiunea principală. Poate fi disjunsă dacă complică excesiv cauza.',
+          '<b>Intervenția voluntară principală</b> (terțul pretinde drept propriu) vs. <b>accesorie</b> (terțul sprijină una din părți); <b>Chemarea în garanție</b>: pârâtul cheamă o terță persoană de la care poate pretinde să îl despăgubească dacă pierde.'
         ]
       },
       { icon:'📋', title:'Judecata în primă instanță — etape esențiale',
         items:[
-          '<b>Cererea de chemare în judecată</b>: trebuie să cuprindă instanța, datele de identificare ale părților, obiectul, motivele de fapt și drept, mijloacele de probă. Cerere incompletă → regularizare (completare în termen).',
-          '<b>Întâmpinarea</b>: răspunsul scris al pârâtului; termen general = <b>25 de zile</b> de la comunicarea cererii. Nedepunere = decăderea pârâtului din dreptul de a propune probe.',
-          '<b>Excepțiile procesuale</b>: dilatorii (amână — ex: necompetență, lipsa calității, nulitatea relativă a actelor) vs. peremptorii (sting acțiunea — ex: prescripție, autoritatea de lucru judecat, lipsa capacității procesuale). Peremptorii = respingerea acțiunii.',
-          '<b>Probele</b>: înscrisuri, martori, expertiză, interogatoriu, cercetare la fața locului. Sarcina probei revine celui care afirmă (art. 249 NCPC).',
-          '<b>Dezbaterile</b> și <b>deliberarea</b>: după dezbateri, instanța deliberează în secret și pronunță hotărârea; minuta se semnează imediat; hotărârea se redactează și se comunică.'
+          '<b>Cererea de chemare în judecată</b>: instanța, datele de identificare ale părților, obiectul, motivele de fapt și drept, mijloacele de probă. Cerere incompletă → regularizare. Timbraj: taxa judiciară de timbru (calculată după valoare).',
+          '<b>Întâmpinarea</b>: termen general <b>25 de zile</b> de la comunicarea cererii. Nedepusă → pârâtul este decăzut din dreptul de a propune probe (dar poate invoca excepții peremptorii).',
+          '<b>Probe</b> (art. 249–388 NCPC): înscrisuri, martori, expertiză, interogatoriu, prezumții, cercetare la fața locului. Sarcina probei = cel care afirmă. Proba cu martori: nu e admisă peste 250 lei pentru acte juridice (cu excepții).',
+          '<b>Dezbaterile și deliberarea</b>: dezbateri publice; deliberare în secret; minuta semnată imediat după deliberare; hotărârea redactată și comunicată în 30 de zile.'
         ]
       },
       { icon:'📂', title:'Hotărârea și căile de atac',
         items:[
-          '<b>Hotărârea definitivă</b>: neapelată în termen sau pronunțată în apel (sau în recursul trimis direct). Produce efecte de lucru judecat și e titlu executoriu.',
-          '<b>Apelul</b>: calea ordinară de atac; termen <b>30 de zile</b> de la comunicarea hotărârii; devoluează în fapt și în drept. Instanța de apel rejudecă fondul.',
-          '<b>Recursul</b>: cale extraordinară, numai în drept; verifică dacă instanța a aplicat corect legea. Nu se readministrează probe; motive limitativ prevăzute de art. 488 NCPC.',
-          '<b>Contestația în anulare</b> (art. 503 NCPC): pentru hotărâri definitive, numai în cazuri expres (ex: necitare legală, hotărâre contrară altei hotărâri irevocabile).',
-          '<b>Revizuirea</b> (art. 509 NCPC): pentru motive de fapt apărute ulterior hotărârii (ex: înscrisuri false descoperite, hotărâri penale contrare, eroare materială).'
+          '<b>Apelul</b>: calea ordinară de atac; termen <b>30 de zile</b> de la <i>comunicarea</i> hotărârii (nu de la pronunțare). Devolutiv: rejudecă fondul în fapt și în drept. Probe noi admisibile în apel în condiții limitate.',
+          '<b>Recursul</b>: cale extraordinară, exclusiv în drept. Motive limitativ prevăzute (art. 488 NCPC): interpretare greșită a legii, omisiune normă, incompetență etc. Nu se readministrează probe. Termen: <b>30 de zile</b> de la comunicare.',
+          '<b>Contestația în anulare</b> (art. 503 NCPC): hotărâri definitive; motive: necitare legală a unei părți, hotărâre incompatibilă cu altă hotărâre irevocabilă. Termen: 15 zile de la comunicare sau de la cunoașterea motivului.',
+          '<b>Revizuirea</b> (art. 509 NCPC): motive de fapt nou descoperite (înscrisuri false, mărturii false, eroare materială, hotărâri penale contrare). Termen: 1 lună de la data la care reclamantul a luat cunoștință de motiv.'
         ]
       }
     ],
-    grila:'Competența teritorială de drept comun = domiciliul <b>pârâtului</b> (nu reclamantului). Termenul de apel = <b>30 de zile</b> de la comunicare (nu de la pronunțare). Recursul = numai în drept. Excepție peremptoriu = respingerea acțiunii; dilatoriu = amânarea. Autoritatea de lucru judecat cere triplă identitate: obiect + părți + cauză.'
+    grila:'Competența teritorială de drept comun = domiciliul <b>pârâtului</b>. Apel: <b>30 de zile</b> de la <i>comunicare</i>. Recursul = numai în drept. Autoritatea de lucru judecat: tripla identitate obiect + cauză + <b>părți</b>. Excepție peremptoriu → stinge acțiunea. Litispendență = 2 instanțe, același litigiu → dosarul mai nou la instanța mai veche. Cerere reconvențională: depusă cu întâmpinarea.'
   },
 
   {
