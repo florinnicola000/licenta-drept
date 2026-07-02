@@ -770,39 +770,39 @@ var FISE_DATA = [
     id:'w16', wk:'W16', dates:'12–18 oct', subj:'civ',
     title:'Testamentul, rezerva succesorală, raportul donațiilor',
     sections:[
-      { icon:'📜', title:'Testamentul (art. 1034–1085 NCC)',
+      { icon:'📜', title:'Testamentul — forme și revocare (art. 1034–1085 NCC)',
         items:[
-          '<b>Caractere</b>: act juridic unilateral, <b>personal</b> (nu poate fi făcut prin reprezentant), <b>revocabil</b> (oricând, până la moarte), solemn.',
-          '<b>Testament olograf</b>: scris <b>în întregime</b> de mână + <b>datat</b> (zi, lună, an) + <b>semnat</b> de testator. Lipsa oricăreia → nulitate absolută.',
-          '<b>Testament autentic</b>: în fața notarului și a doi martori; testatorul dictează sau prezintă conținutul.',
-          '<b>Testament mistic (secret)</b>: scris și semnat de testator, sigilat și depus la notar în fața a doi martori.',
-          '<b>Revocarea</b>: expresă (act autentic sau testament posterior); tacită (testament ulterior incompatibil; distrugerea voluntară a testamentului olograf; înstrăinarea bunului legat).',
-          'Incapacitați de a <b>dispune</b>: minorul sub 16 ani (excepție: legate pentru cheltuieli de înmormântare sau pentru bunuri proprii); pusul sub interdicție.',
-          'Incapacitați de a <b>primi</b> prin legat: medicii/farmaciștii/preoții care au îngrijit testatorul în ultima boală (prezumție de captație).'
+          '<b>Caractere</b>: act juridic unilateral, <b>personal</b> (nu prin reprezentant), <b>revocabil</b> (oricând), solemn. <b>Testamentul conjunctiv este interzis</b> (art. 1036 NCC) — două persoane nu pot testa printr-un singur act; sancțiune: nulitate absolută.',
+          '<b>Testament olograf</b>: scris <b>integral</b> de mână + <b>datat</b> (zi, lună, an) + <b>semnat</b> de testator. Lipsa oricăreia → nulitate absolută. Data incompletă sau eronată poate fi reconstituită dacă nu există dubiu.',
+          '<b>Testament autentic</b>: în fața notarului public și a doi martori. Testatorul dictează sau prezintă scris conținutul; notarul redactează; testatorul semnează și notarul autentifică.',
+          '<b>Revocarea</b>: expresă (act autentic sau testament ulterior); tacită (testament ulterior incompatibil; distrugerea voluntară a olografului; înstrăinarea bunului legat — legatul se stinge automat).',
+          'Incapacitați de a <b>dispune</b> (art. 988 NCC): minorul sub 16 ani; pusul sub interdicție judecătorească. Minorul 16–18 ani poate dispune de <b>1/2</b> din ceea ce putea lăsa ca major.',
+          'Incapacitați de a <b>primi</b> legate (art. 990 NCC): medicii, farmaciștii, preoții care l-au îngrijit în ultima boală; persoane fizice sau juridice furnizoare de servicii de îngrijire — prezumție absolută de captație.',
+          '<b>Substituția fideicomisară</b> (art. 994 NCC): testatorul impune legatarului să conserve bunul și să-l transmită la moartea sa altei persoane desemnate. Admisă pe un singur grad (A → B → C interzis dacă C e instituit tot de testator).'
         ]
       },
       { icon:'🎯', title:'Rezerva succesorală și cotitatea disponibilă (art. 1086–1099 NCC)',
         items:[
-          '<b>Rezervatarii</b>: descendenții, ascendenții privilegiați (părinții) și soțul supraviețuitor.',
-          '<b>Rezerva descendenților</b>: <b>1/2</b> din moștenire (indiferent de numărul lor).',
-          '<b>Rezerva ascendenților privilegiați</b>: <b>1/2</b> din moștenire (indiferent dacă vin unul sau amândoi).',
-          '<b>Rezerva soțului supraviețuitor</b>: <b>1/4</b> din moștenire.',
-          '<b>Cotitatea disponibilă</b> = ce rămâne după deducerea rezervei; ceea ce poate fi dăruit sau legat liber.',
-          'Calculul rezervei: activ net (bunuri − datorii) + donațiile raportabile + donațiile neraportabile (toate donațiile, indiferent de beneficiar).',
-          '<b>Acțiunea în reducțiune</b>: exercitată de rezervatari pentru a anula dispozițiile excesive; termen = <b>3 ani</b> de la data deschiderii sau de la cunoașterea dispoziției; legatele se reduc în <b>ordinea inversă a datei</b> (cel mai recent, primul).'
+          '<b>Rezervatarii</b>: descendenții, ascendenții privilegiați (părinții) și soțul supraviețuitor. Ceilalți moștenitori (frați, bunici etc.) nu au rezervă.',
+          '<b>Rezerva descendenților</b>: <b>1/2</b> din moștenire (indiferent de numărul lor). <b>Rezerva ascendenților privilegiați</b>: <b>1/2</b>. <b>Rezerva soțului supraviețuitor</b>: <b>1/4</b> din moștenire.',
+          'Concurs de rezervatari: rezervele nu se cumulează simplu — se calculează fiecare față de cotele lor legale, iar cotitatea disponibilă e ce rămâne. Ex: dacă vin descendenți + soț → rezerva soțului = 1/4 din 1/4 (cota legală) = 1/16 din moștenire.',
+          '<b>Calculul masei succesorale</b> (art. 1091 NCC): activ brut − pasiv (datorii) = activ net; activ net + reunire fictivă a donațiilor făcute de defunct = masa de calcul a rezervei.',
+          'Reunirea fictivă: se adaugă <b>toate donațiile</b> (nu doar cele neraportabile) la masa de calcul pentru determinarea rezervei; valoarea donației = la data facerii, nu la data morții.',
+          '<b>Reducțiunea liberalităților</b> (art. 1096 NCC): dacă donațiile + legatele depășesc cotitatea disponibilă, rezervatarii pot cere reducțiunea. Ordinea: <b>mai întâi legatele</b> (în ordine inversă datei — cel mai recent, primul); <b>apoi donațiile</b> (în ordine inversă datei). Reducțiunea = inopozabilitate față de rezervatari (nu nulitate).',
+          'Termen acțiune în reducțiune: <b>3 ani</b> de la data deschiderii succesiunii sau de la cunoașterea dispoziției.'
         ]
       },
       { icon:'🔃', title:'Raportul donațiilor (art. 1146–1165 NCC)',
         items:[
-          '<b>Obligația de raport</b>: descendenții și soțul supraviețuitor (când vine în concurs cu descendenți) trebuie să aducă la masa succesorală donațiile primite de la defunct.',
-          'Scop: egalitate între moștenitorii din aceeași clasă (prezumție că donația a fost un avans de moștenire).',
-          'Raportul se face prin <b>echivalent</b> (nu prin restituire în natură) — imputarea valorii donației asupra cotei succesorale.',
-          '<b>Dispensa de raport</b>: donatorul poate scuti de raport (expres sau rezultând din natura actului — donația deghizată/indirectă se consideră dispensată).',
-          'Raportul donațiilor ≠ reducțiunea: raportul = egalitate între moștenitori; reducțiunea = protecția rezervei față de terți.'
+          '<b>Cine raportează</b>: descendenții acceptanți care vin la moștenire; soțul supraviețuitor dacă vine în concurs cu descendenți. Fraților nu li se aplică raportul. Renunțătorul: nu raportează (a ieșit din moștenire).',
+          'Scop: <b>egalitate</b> între moștenitorii din aceeași clasă — donația e prezumată avans din moștenire. Donatorul a vroit egalitate, nu avantajarea unui moștenitor.',
+          'Raportul se face prin <b>echivalent</b> (imputarea valorii donației asupra cotei succesorale, nu restituire în natură). Dacă valoarea donației depășește cota = moștenitorul nu ia nimic din moștenire, dar nu restituie nici excedentul (diferit de reducțiune).',
+          '<b>Dispensa de raport</b>: donatorul poate scuti de raport în actul de donație sau ulterior, prin testament. Donația deghizată sau indirectă se consideră <b>dispensată</b> de raport (nu de rezervă).',
+          '<b>Raportul ≠ reducțiunea</b>: raportul asigură egalitate între moștenitori (operează doar între ei); reducțiunea protejează rezerva față de <b>terți</b> (legatari, donatari externi). Ambele operațiuni pot fi necesare în același dosar.'
         ]
       }
     ],
-    grila:'Testament olograf: <b>integral</b> olograf + datat (zi/lună/an) + semnat — lipsa oricăreia = nulitate absolută. Rezerva: descendenți = <b>1/2</b>; ascendenți privilegiați = <b>1/2</b>; soț supraviețuitor = <b>1/4</b>. Reducțiunea legatelor: în <b>ordine inversă creației</b> (cel mai recent se reduce primul). Raportul donațiilor: prin <b>echivalent</b>, nu în natură. Dispensa de raport scutește de egalitate, nu de rezervă.'
+    grila:'Testament olograf: <b>integral</b> olograf + datat complet (zi/lună/an) + semnat — lipsa oricăreia = nulitate absolută. Testamentul conjunctiv: <b>interzis</b> (art. 1036). Rezerva: descendenți = <b>1/2</b>; ascendenți privilegiați = <b>1/2</b>; soț = <b>1/4</b>. Reunire fictivă = adaug toate donațiile la activ net. Reducțiunea: întâi legate (ordine inversă datei), apoi donații. Raportul: prin echivalent; dispensa = nu raportez dar rezerva se calculează oricum; raportul ≠ reducțiunea.'
   },
 
   // ══ DREPT PENAL ══════════════════════════════════════════════════════════════
