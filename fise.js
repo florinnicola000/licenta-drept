@@ -72,54 +72,66 @@ var FISE_DATA = [
     id:'w02', wk:'W02', dates:'6–12 iul', subj:'civ',
     title:'Consimțământul și viciile de consimțământ',
     sections:[
-      { icon:'📌', title:'Condiții de valabilitate',
+      { icon:'📌', title:'Condiții de valabilitate a consimțământului',
         items:[
-          '<b>Serios</b>: exclus actele făcute în glumă (<i>jocandi causa</i>), didactic, teatral.',
-          '<b>Liber</b>: neviciat de eroare, dol, violență sau leziune.',
-          '<b>Exprimat în cunoștință de cauză</b>: obligație precontractuală de informare (art. 1182–1185 NCC).',
-          '<b>Principiul consensualismului</b>: simpla manifestare de voință e suficientă; excepțiile (solemnitate, tradiție) sunt expres prevăzute de lege.',
-          'Contractul se formează la momentul <b>acceptării ofertei</b> (teoria recepției în NCC — contractul se consideră perfectat când acceptarea a ajuns la ofertant).'
+          '<b>Serios</b>: exclus actele făcute în glumă (<i>jocandi causa</i>), în scop didactic sau teatral — lipsa intenției de a produce efecte juridice.',
+          '<b>Liber</b>: neviciat de eroare, dol, violență sau leziune (art. 1206 NCC).',
+          '<b>Exprimat în cunoștință de cauză</b>: obligație precontractuală de informare (art. 1182–1185 NCC); nerespectarea poate atrage răspundere delictuală sau calificarea ca dol prin reticență.',
+          '<b>Oferta</b>: propunere fermă de a contracta. <b>Irevocabilă</b> dacă are termen sau dacă ofertantul s-a obligat să o mențină (art. 1191 NCC) — revocarea produce efecte dacă ajunge la destinatar înainte de acceptare. <b>Caducă</b>: la decesul sau incapacitatea ofertantului (dacă e vorba de o ofertă cu termen).',
+          'Contractul se formează la momentul <b>acceptării ofertei</b>: teoria recepției (art. 1186 NCC) — perfectat când acceptarea <i>a ajuns</i> la ofertant, chiar dacă nu a luat cunoștință de ea. Tăcerea nu valorează acceptare, cu excepțiile prevăzute de lege sau uzanțe.',
+          '<b>Promisiunea de a contracta</b> (art. 1279 NCC): obligație de a încheia un contract viitor. Nerespectare → daune <i>sau</i> instanța poate pronunța o hotărâre care ține loc de contract. ≠ <b>Pactul de opțiune</b> (art. 1278): oferta e irevocabilă pe durata opțiunii; beneficiarul acceptă sau nu — dacă acceptă, contractul se formează.'
         ]
       },
       { icon:'❓', title:'Eroarea (art. 1207–1213 NCC)',
         items:[
-          '<b>Eroarea esențială</b>: poartă asupra naturii sau obiectului actului, identității obiectului, persoanei (la acte <i>intuitu personae</i>) sau calității esențiale a bunului. → <b>anulabilitate</b>.',
-          'Eroarea trebuie să fie <b>scuzabilă</b> — cel care nu manifestă diligența unui om rezonabil nu o poate invoca.',
-          '<b>Eroarea de drept</b>: eroarea asupra conținutului normei legale; poate fi esențială și atrage anulabilitatea dacă e scuzabilă.',
-          '<b>Eroarea obstacol</b> (<i>in negotio</i>: greșeală asupra naturii actului; <i>in corpore</i>: identitate totală greșită) → lipsă de acord, nulitate absolută.',
-          'Eroarea <b>neesențială</b> (de calcul, aritmetică) → nu afectează valabilitatea; numai rectificarea prețului.',
-          'Eroarea <b>indiferentă</b> (privind calitățile neeseențiale) → nu produce efecte juridice.'
+          '<b>Eroarea esențială</b> (art. 1207 NCC): poartă asupra naturii/obiectului actului, identității obiectului, persoanei (la acte <i>intuitu personae</i>) sau calității esențiale a bunului → <b>anulabilitate</b>.',
+          'Eroarea trebuie să fie <b>scuzabilă</b> (art. 1208 NCC) — cel care nu manifestă diligența unui om rezonabil nu o poate invoca. <i>Ex: un profesionist care nu verifică registrul bunurilor imobile nu poate invoca eroarea.</i>',
+          '<b>Eroarea de drept</b> (art. 1207 alin. 3 NCC): eroare asupra conținutului normei juridice; poate fi esențială și atrage anulabilitatea dacă e scuzabilă. ⚠️ Nu se poate invoca pentru a eluda o normă imperativă.',
+          '<b>Eroarea obstacol</b>: <i>in negotio</i> (greșeală asupra naturii actului: X crede că donează, Y că vinde) sau <i>in corpore</i> (identitate totală greșită: bunuri diferite) → lipsă de acord → <b>nulitate absolută</b>.',
+          'Eroarea <b>neesențială</b> (de calcul, aritmetică): nu afectează valabilitatea, atrage numai rectificarea prețului. Eroarea <b>indiferentă</b> (calități neeseențiale): fără efecte.',
+          '<b>Eroarea comună și invincibilă</b> (art. 1213 NCC): dacă ambele părți au ereat identic și eroarea era de neevitat (invincibilă) → actul produce efectele pe care le-ar fi produs în lipsa erorii. ⚠️ Nu se anulează actul!'
         ]
       },
       { icon:'🎭', title:'Dolul (art. 1214–1216 NCC)',
         items:[
-          'Manopere frauduloase (acțiune sau <b>reticență</b>) care induc în eroare și determină încheierea actului.',
-          '<b>Dolul prin reticență</b>: tăcere intenționată atunci când există obligație de informare (ex: vicii ascunse cunoscute de vânzător).',
-          '<b>Dol de terț</b> → anulabilitate <b>numai dacă</b> cealaltă parte a cunoscut sau <b>trebuia să cunoască</b>. Diferit de violența terțului!',
-          'Sancțiune: <b>anulabilitate + daune-interese</b>, care pot fi cumulate chiar dacă nu se cere anularea (art. 1257 NCC).',
-          'Nu se cere ca eroarea indusă prin dol să fie esențială — dolul atrage anulabilitatea chiar pentru o eroare neeseențială dacă a determinat consimțământul.'
+          'Manopere frauduloase (acțiune sau <b>reticență</b>) care induc în eroare și determină încheierea actului. Elementul obiectiv (manopere) + elementul subiectiv (intenția de a induce în eroare).',
+          '<b>Dolul prin reticență</b> (art. 1214 alin. 1 NCC): tăcere intenționată când există obligație de informare (ex: vânzătorul cunoaște vicii ascunse și nu le divulgă, asiguratorul cunoaște riscul).',
+          '<b>Dol de terț</b> → anulabilitate <b>numai dacă</b> cealaltă parte a cunoscut sau <b>trebuia să cunoască</b> manoperele (art. 1215 NCC). ⚠️ Diferit de violența terțului — acolo anulabilitatea e necondiționată!',
+          'Sancțiune: <b>anulabilitate + daune-interese</b> (art. 1257 NCC). Cumulul e posibil chiar dacă nu se cere anularea — victima poate păstra contractul și cere numai daune.',
+          'Nu se cere ca eroarea indusă să fie esențială — dolul atrage anulabilitatea chiar pentru o eroare neeseențială, dacă a determinat consimțământul. <b>Proba</b> dolului: celui care îl invocă (nu se prezumă).',
+          '<b>Dolul incident</b>: eroarea indusă e neesențială (fără dol nu s-ar fi contractat în aceleași condiții) → contractul se menține, dar victima are drept la daune pentru diferența de preț.'
         ]
       },
       { icon:'💥', title:'Violența (art. 1216–1220 NCC)',
         items:[
-          'Amenințare cu un rău <b>injust</b> și <b>grav</b>, actual și serios, care a determinat încheierea actului.',
-          '<b>Violența de terț</b> → anulabilitate <b>indiferent dacă cealaltă parte a știut sau nu</b>. Aceasta e deosebirea esențială față de dol!',
-          '<b>Starea de necesitate exploatată</b>: contractul poate fi anulat dacă o parte a profitat de starea de dificultate a celeilalte (art. 1218 NCC).',
-          '<b>Temerea reverenționară</b> singură (față de părinți, tutore) nu constituie violență. Dar dacă e însoțită de amenințări → devine viciu.',
-          'Violența poate proveni din fapta unui terț sau chiar din cauze naturale dacă sunt exploatate.'
+          'Amenințare cu un rău <b>injust</b> și <b>grav</b>, actual și serios, care a determinat încheierea actului. Elementul obiectiv (amenințarea) + elementul subiectiv (temerea legitimă indusă).',
+          '<b>Violența de terț</b> (art. 1220 NCC) → anulabilitate <b>indiferent dacă cealaltă parte a știut sau nu</b>. ⚠️ Aceasta e deosebirea esențială față de dolul de terț!',
+          '<b>Starea de necesitate exploatată</b> (art. 1218 NCC): contractul poate fi anulat dacă o parte a profitat în mod abuziv de starea de dificultate a celeilalte. Chiar și calamitățile naturale pot constitui sursă, dacă sunt exploatate.',
+          '<b>Temerea reverenționară</b> singură (respect față de părinți, tutore, superior ierarhic) nu constituie violență (art. 1217 alin. 3 NCC). Devine viciu numai dacă e însoțită de amenințări propriu-zise.',
+          '<b>Amenințarea cu exercitarea unui drept</b> (art. 1219 NCC): nu e violență dacă amenințarea e legitimă și proporțională. <i>Ex: „dacă nu plătești, te dau în judecată" — legitim. „Semnezi sau mă duc la fisc cu acte false" — violență.</i>',
+          'Sancțiune: <b>anulabilitate + daune-interese</b> (art. 1257 NCC), inclusiv de la terțul care a exercitat violența (art. 1257 alin. 2).'
         ]
       },
       { icon:'⚠️', title:'Leziunea (art. 1221–1224 NCC)',
         items:[
-          '<b>Majori</b>: disproporție vădită (<b>mai mult de jumătate</b>) din valoarea prestației la momentul încheierii actului. Termen de prescripție: <b>1 an de la data actului</b>.',
-          '<b>Minori 14–18 ani</b>: orice act lezionar, chiar asistat; nu se cere procentul de 50%.',
-          'Sancțiune: <b>anulabilitate</b> <i>sau</i> reducerea/mărirea prestației pentru restabilirea echilibrului (la alegerea instanței sau a pârâtului).',
-          '<b>Nu se aplică</b> actelor aleatorii (riscul face parte din natura actului), tranzacțiilor și partajelor.',
-          'Leziunea la majori presupune și un element subiectiv: profitarea de starea de nevoie/lipsă de experiență (art. 1221 alin. 2 NCC).'
+          '<b>Majori</b> (art. 1221 alin. 2 NCC): disproporție vădită (<b>mai mult de jumătate</b>) din valoarea prestației la momentul încheierii + element subiectiv: profitarea de starea de nevoie, lipsă de experiență sau lipsă de cunoștințe.',
+          '<b>Minori 14–18 ani</b> (art. 1221 alin. 3 NCC): orice act lezionar, chiar și actele pentru care au primit asistare; nu se cere procentul de 50%. Prescripție: <b>1 an</b> de la data majoratului.',
+          'Sancțiune: <b>anulabilitate</b> <i>sau</i> reducerea/mărirea prestației pentru restabilirea echilibrului (la alegerea instanței sau pârâtului care poate oferi reducerea prețului — art. 1222 NCC).',
+          '<b>Nu se aplică</b> (art. 1224 NCC): acte aleatorii (riscul e inerent), tranzacții (s-au făcut concesii reciproce), actele de partaj.',
+          'Termen de prescripție la majori: <b>1 an</b> de la data încheierii actului (nu de la data la care au cunoscut cauza — excepție de la regula generală art. 2529 NCC).'
+        ]
+      },
+      { icon:'🔁', title:'Schemă comparativă: viciile de consimțământ',
+        items:[
+          '<b>Eroarea</b>: spontană (nicio intervenție externă), trebuie să fie esențială + scuzabilă; <i>nu</i> se pot cumula daune cu anularea (dacă eroarea e pură, fără dol). Prescripție NR: <b>3 ani</b>.',
+          '<b>Dolul</b>: provocat de cealaltă parte sau de un terț cunoscut; nu trebuie să fie esențial dacă a determinat consimțământul; daune cumulabile. Dolul de terț: anulare <b>numai dacă cealaltă parte știa</b>. Prescripție: <b>3 ani</b>.',
+          '<b>Violența</b>: amenințare exterioară, injustă și gravă; violența de terț → anulabilitate <b>necondiționat</b>; daune de la autor (chiar terț). Prescripție: <b>3 ani</b>.',
+          '<b>Leziunea</b>: disproporție + exploatare (la majori) / orice disproporție (la minori); sancțiune alternativă (anulare sau adaptare contract); prescripție specială <b>1 an</b> (≠ 3 ani). Nu se aplică contractelor aleatorii și tranzacțiilor.',
+          '⚠️ <b>Regulă de reținut</b>: toate viciile atrag <b>nulitate relativă</b> (nu absolută). Excepție: eroarea obstacol (<i>in negotio / in corpore</i>) → nulitate absolută (lipsă de acord, nu viciu).'
         ]
       }
     ],
-    grila:'<b>Dol de terț ≠ violență de terț</b>: dolul → anulabilitate numai dacă cealaltă parte <i>a știut sau trebuia să știe</i>; violența → anulabilitate <b>întotdeauna</b>, indiferent de cunoașterea celeilalte părți. Eroarea trebuie să fie <b>scuzabilă</b>. Leziunea la majori: <b>&gt;50% disproporție</b> + prescripție <b>1 an</b>. Dolul și daunele se pot cumula fără anulare.'
+    grila:'<b>Dol de terț ≠ violență de terț</b>: dolul → anulabilitate numai dacă cealaltă parte <i>a știut sau trebuia să știe</i>; violența → anulabilitate <b>întotdeauna</b>. Eroarea: esențială + scuzabilă; eroarea comună invincibilă → nu se anulează (art. 1213). Leziunea la majori: <b>&gt;50% + exploatare + prescripție 1 an</b> (nu 3 ani!). Dolul incident: contract valabil + daune. Amenințarea legitimă cu un drept → nu e violență (art. 1219). Toate viciile → NR (excepție: eroarea obstacol → NCA).'
   },
 
   {
