@@ -895,44 +895,44 @@ var FISE_DATA = [
     sections:[
       { icon:'🛡️', title:'Cauze justificative (art. 18–22 NCP) — efect IN REM',
         items:[
-          '<b>Legitima apărare</b> (art. 19): pericol iminent, injust, real, față de sine sau altul; apărare necesară și proporțională față de gravitatea atacului.',
-          '<b>Starea de necesitate</b> (art. 20): pericol iminent față de sine/altul/un interes general; acțiunea de salvare produce un rău mai mic decât cel evitat.',
-          '<b>Exercitarea unui drept sau îndeplinirea unei obligații</b> (art. 21): acțiunea e conformă cu o normă legală.',
-          '<b>Consimțământul persoanei vătămate</b> (art. 22): valabil numai la infracțiunile cu bunuri juridice disponibile (nu și la viață, integritate gravă).',
-          'Efect <b>IN REM</b>: fapta nu e infracțiune pentru <b>nimeni</b>, nici pentru participanți. Dacă autorul a acționat în legitimă apărare → nici instigatorul/complicele nu răspund.'
+          '<b>Legitima apărare</b> (art. 19): atacul = material, direct, imediat (iminent sau în curs), injust, față de sine/altul/interes general. Apărarea = necesară și <b>proporțională</b> cu atacul. Legitima apărare prezumată (art. 19 alin. 3): intruziune nocturnă în locuință — prezumție relativă.',
+          '<b>Excesul justificat</b> (art. 26 NCP): depășire a limitelor legitimei apărări sau stării de necesitate din <b>tulburare</b> sau <b>temere</b> — nu înlătură infracțiunea, dar e cauză de atenuare. ⚠️ Excesul justificat ≠ cauză de neimputabilitate.',
+          '<b>Starea de necesitate</b> (art. 20): pericol iminent față de sine/altul/interes general; acțiunea produce un rău mai mic decât cel evitat. ⚠️ Dacă răul produs e mai mare sau egal → nu există stare de necesitate; persoana răspunde dar poate beneficia de atenuare.',
+          '<b>Exercitarea unui drept sau îndeplinirea unei obligații</b> (art. 21): conformitate cu o normă legală (ordin al autorității; permisiunea legii). Ordinul evident ilegal trebuie refuzat.',
+          '<b>Consimțământul persoanei vătămate</b> (art. 22): valabil numai la infracțiunile cu bunuri juridice disponibile (patrimoniu, integritate corporală minoră). Nu se aplică la viață, integritate gravă, libertate sexuală a unui minor.',
+          'Efect <b>IN REM</b>: fapta nu e infracțiune pentru <b>nimeni</b> — nici participanții nu răspund dacă autorul a acționat justificat.'
         ]
       },
       { icon:'🧩', title:'Cauze de neimputabilitate (art. 23–31 NCP) — efect IN PERSONAM',
         items:[
-          '<b>Constrângerea fizică sau morală</b>: fapta nu e imputabilă dacă persoana n-a putut rezista constrângerii.',
-          '<b>Minoritatea</b>: sub 14 ani → nicio răspundere penală; 14–16 ani → răspundere dacă s-a acționat cu <b>discernământ</b>; 16–18 ani → răspundere penală cu pedepse reduse.',
-          '<b>Iresponsabilitatea</b>: alienație mintală sau stare de inconștiență ce nu permite înțelegerea/controlul faptelor.',
-          '<b>Intoxicația involuntară completă</b>: produsă de alcool sau alte substanțe fără voia autorului.',
-          '<b>Eroarea</b>: asupra existenței elementului constitutiv al infracțiunii (fapt) sau asupra normei legale (drept). Înlătură intenția, rămâne culpa dacă eroarea e culpabilă.',
-          '<b>Cazul fortuit</b>: urmarea nu putea fi prevăzută în nicio circumstanță.',
-          'Efect <b>IN PERSONAM</b>: se aplică <b>numai</b> persoanei respective; participanții pot răspunde penal.'
+          '<b>Constrângerea fizică sau morală</b>: fapta nu e imputabilă dacă persoana n-a putut rezista. Constrângerea morală = amenințare cu un pericol grav și iminent pentru sine sau altul.',
+          '<b>Minoritatea</b> (art. 27 NCP): sub <b>14 ani</b> → nicio răspundere penală. <b>14–16 ani</b> → răspundere dacă s-a acționat cu discernământ. <b>16–18 ani</b> → răspundere penală deplină, cu pedepse reduse la jumătate.',
+          '<b>Iresponsabilitatea</b> (art. 28 NCP): alienaţie mintală sau stare de inconștiență ce nu permite înțelegerea faptelor sau controlul acțiunilor. Se certifică medico-legal.',
+          '<b>Intoxicația</b> (art. 29 NCP): <b>involuntară completă</b> cu alcool/substanțe → cauză de neimputabilitate. ⚠️ Beția <b>voluntară</b> (provocată voit) nu înlătură imputabilitatea; poate constitui circumstanță agravantă.',
+          '<b>Eroarea</b> (art. 30 NCP): eroarea de fapt (asupra unui element constitutiv) → înlătură intenția; dacă eroarea e culpabilă, rămâne culpa. Eroarea de drept (asupra normei penale) → înlătură imputabilitatea numai în condiții excepționale.',
+          '<b>Cazul fortuit</b> (art. 31 NCP): urmarea nu putea fi prevăzută de nimeni în circumstanțele date. Efect <b>IN PERSONAM</b>: fiecare participant e analizat individual.'
         ]
       },
       { icon:'🔁', title:'Concursul de infracțiuni și recidiva (art. 38–45 NCP)',
         items:[
-          '<b>Concursul real</b>: mai multe fapte distincte înainte de o condamnare definitivă. <b>Concursul ideal (formal)</b>: o singură acțiune realizează mai multe infracțiuni.',
-          'Pedeapsa la concurs: <b>cumulul juridic cu spor obligatoriu</b> — pedeapsa cea mai grea + spor de până la 1/3 din totalul celorlalte pedepse (art. 39 NCP).',
-          '<b>Recidiva postcondamnatorie</b>: nouă infracțiune intenționată DUPĂ condamnare definitivă la ≥1 an, înainte de executare sau în primii 3 ani după.',
-          '<b>Recidiva postexecutorie</b>: nouă infracțiune în primii 3 ani după executarea/considerarea ca executată a pedepsei.',
-          '<b>Pluralitatea intermediară</b>: situație intermediară — nu e nici concurs (există condamnare definitivă anterioară), nici recidivă (condamnarea anterioară nu îndeplinește condițiile recidivei). Pedeapsa se poate majora.'
+          '<b>Concursul real</b>: două sau mai multe fapte distincte, comise înainte de orice condamnare definitivă. <b>Concursul ideal (formal)</b>: o singură acțiune sau inacțiune realizează mai multe infracțiuni (ex: lovire ce produce și vătămare și tulburare de ordine).',
+          'Pedeapsa la concurs: <b>cumulul juridic cu spor obligatoriu</b> — pedeapsa cea mai grea + spor de <b>până la 1/3 din totalul celorlalte</b> pedepse stabilite (art. 39 NCP). Sporurile nu se cumulează recursiv.',
+          '<b>Recidiva postcondamnatorie</b> (art. 41): infracțiune intenționată DUPĂ condamnare definitivă la ≥1 an, comisă înainte de executare sau în primii <b>3 ani</b> de la executare.',
+          '<b>Recidiva postexecutorie</b> (art. 41 alin. 2): infracțiune intenționată în primii <b>3 ani</b> după executarea sau considerarea ca executată a pedepsei. Majorare: instanța poate depăși maximul special cu cel mult jumătate.',
+          '<b>Pluralitatea intermediară</b> (art. 44): există condamnare definitivă anterioară dar nu sunt îndeplinite condițiile recidivei → tratament similar pluralității, pedeapsa se poate majora.'
         ]
       },
-      { icon:'⚖️', title:'Pedepsele și individualizarea (art. 53–106 NCP)',
+      { icon:'⚖️', title:'Pedepsele principale și individualizarea (art. 53–91 NCP)',
         items:[
-          '<b>Pedepse principale</b>: detențiunea pe viață; închisoarea (15 zile – 30 ani); amenda.',
-          '<b>Pedepse complementare</b>: interzicerea exercitării unor drepturi; degradarea militară; publicarea hotărârii de condamnare.',
-          '<b>Pedepse accesorii</b>: decurg de drept din pedeapsa principală, pe durata executării.',
-          'Individualizarea judiciară: instanța ține cont de gravitatea faptei, periculozitatea infractorului, circumstanțele atenuante și agravante, conduita ulterioară.',
-          '<b>Circumstanțele atenuante</b> (art. 75): reduc pedeapsa sub minimul special. <b>Circumstanțele agravante</b> (art. 77): majorează pedeapsa spre maximul special.'
+          '<b>Pedepse principale</b>: detențiunea pe viață; închisoarea (<b>15 zile – 30 ani</b>); amenda (<b>zile-amendă × sumă per zi</b>, art. 61 — zilele se stabilesc după gravitate: 30–400 zile; suma per zi după situația materială: 10–500 lei).',
+          '<b>Pedepse complementare</b>: interzicerea exercitării unor drepturi (1–5 ani); degradarea militară; publicarea hotărârii de condamnare. <b>Pedepse accesorii</b>: decurg de drept din pedeapsa cu închisoarea, pe durata executării.',
+          '<b>Renunțarea la aplicarea pedepsei</b> (art. 80 NCP): instanța constată vinovăția dar nu aplică pedeapsă; condiții — gravitate redusă, nicio condamnare anterioară, repararea prejudiciului. Nu produce antecedente penale.',
+          '<b>Amânarea aplicării pedepsei</b> (art. 83 NCP): pedeapsa e stabilită dar amânată pe <b>2 ani</b> sub supraveghere; dacă nu comite o nouă infracțiune intenționată → instanța poate anula pedeapsa. Dacă revocată → pedeapsa se aplică.',
+          '<b>Suspendarea sub supraveghere</b> (art. 91 NCP): pedeapsa e aplicată dar nu se execută; termen de supraveghere = <b>2–4 ani</b>. Condiții: pedeapsă ≤3 ani; nicio condamnare anterioară. Revocare: nouă infracțiune sau nerespectare obligații.'
         ]
       }
     ],
-    grila:'Cauze justificative → efect <b>IN REM</b> (fapta nu e infracțiune pentru nimeni). Cauze de neimputabilitate → efect <b>IN PERSONAM</b> (numai cel vizat nu răspunde; participanții pot răspunde). Minoritate: sub 14 ani = nicio răspundere; 14-16 ani = răspundere cu <b>discernământ</b>. Pedeapsa la concurs: <b>cumulul juridic cu spor</b>.'
+    grila:'Cauze justificative → efect <b>IN REM</b>. Cauze de neimputabilitate → efect <b>IN PERSONAM</b>. Excesul justificat (tulburare/temere) = atenuare, nu înlăturare. Beția <b>voluntară</b> ≠ cauză de neimputabilitate. Minoritate: sub 14 ani = nicio răspundere; 14–16 = cu discernământ. Concurs: cumulul juridic cu spor 1/3. Recidivă: 3 ani de la executare. Amânare pedeapsă: 2 ani supraveghere.'
   },
 
   {
