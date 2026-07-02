@@ -264,6 +264,43 @@ a{color:var(--gr);text-decoration:none}
 #dict-empty{font-size:13px;color:var(--sub);text-align:center;padding:30px;display:none}
 #dict-count{font-size:11px;color:var(--sub);margin-bottom:8px;text-align:right}
 
+/* ═══ FIȘE SINTEZĂ ═══ */
+#fise-search{width:100%;background:var(--sf);color:var(--txt);border:1.5px solid var(--sf2);border-radius:10px;padding:11px 14px;font-size:14px;font-family:inherit;outline:none;-webkit-appearance:none;margin-bottom:6px}
+#fise-search:focus{border-color:var(--gr)}
+#fise-search-count{font-size:11px;color:var(--sub);padding-bottom:8px}
+.fisa-card{background:var(--sf);border-radius:var(--r);margin-bottom:8px;border:1.5px solid var(--sf2);overflow:hidden}
+.fisa-card.fs-hidden{display:none}
+.fisa-head{display:flex;align-items:center;gap:8px;padding:12px 13px;cursor:pointer;user-select:none;transition:background .12s}
+.fisa-head:hover{background:var(--sf2)}
+.fisa-wk{font-size:10px;font-weight:900;color:var(--gr);min-width:34px;flex-shrink:0}
+.fisa-title{font-size:13.5px;font-weight:800;color:var(--lime);flex:1;line-height:1.3}
+.fisa-subj-badge{font-size:9px;font-weight:800;padding:2px 7px;border-radius:10px;text-transform:uppercase;letter-spacing:.3px;flex-shrink:0}
+.fisa-subj-badge.civ{background:#4caf5022;color:#7bc47f}
+.fisa-subj-badge.pen{background:#ef535022;color:#e98480}
+.fisa-subj-badge.pciv{background:#26c6da22;color:#6fd9e6}
+.fisa-subj-badge.ppen{background:#ab47bc22;color:#c98fd6}
+.fisa-arrow{color:var(--sub);font-size:11px;transition:transform .2s;flex-shrink:0}
+.fisa-card.open .fisa-arrow{transform:rotate(180deg)}
+.fisa-body{display:none;padding:2px 13px 13px}
+.fisa-card.open .fisa-body{display:block}
+.fisa-sec{margin-top:11px}
+.fisa-sec-title{font-size:10.5px;font-weight:800;color:var(--sub);letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px}
+.fisa-item{font-size:12.5px;line-height:1.6;color:var(--txt);padding:6px 9px;background:var(--sf2);border-radius:7px;margin-bottom:4px;border-left:2px solid transparent}
+.fisa-item.fs-match{border-left-color:var(--gr)}
+.fisa-item.fs-hidden{display:none}
+.fisa-grila{font-size:12px;line-height:1.6;color:var(--txt);margin-top:10px;padding:8px 10px;background:#12263a;border:1px solid #2a5580;border-radius:8px;border-left:3px solid #2a5580}
+.fisa-grila.fs-match{border-left-color:var(--gr)}
+.fisa-grila.fs-hidden{display:none}
+.fisa-tips-wrap{margin-top:8px}
+.fisa-tip{font-size:12px;padding:7px 10px;background:#2a2010;border:1px solid #5a4010;color:var(--warn);border-radius:7px;margin-bottom:4px;line-height:1.55;border-left:3px solid #5a4010}
+.fisa-tip.fs-match{border-left-color:var(--warn);background:#3a2a10}
+.fisa-tip.fs-hidden{display:none}
+.fisa-recall-wrap{margin-top:8px;padding:10px;background:var(--sf2);border-radius:8px;border:1px dashed #3a6a3c}
+.fisa-recall-head{font-size:10px;font-weight:800;color:var(--sub);letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px}
+.fisa-recall-q{font-size:12px;color:var(--lime);padding:4px 0;border-bottom:1px solid #2a3f2c;line-height:1.5;border-left:2px solid transparent;padding-left:4px}
+.fisa-recall-q:last-child{border-bottom:none}
+.fisa-recall-q.fs-match{border-left-color:var(--gr)}
+.fisa-recall-q.fs-hidden{display:none}
 </style>
 </head>
 <body>
@@ -498,6 +535,8 @@ a{color:var(--gr);text-decoration:none}
 </div>
 
 <div id="panel-fise" class="panel">
+  <input id="fise-search" type="search" placeholder="Caută în fișe: fidejusiune, recidivă, art. 218…" oninput="filterFise()" autocomplete="off" spellcheck="false">
+  <div id="fise-search-count"></div>
   <div id="fise-container"></div>
 </div>
 
@@ -1461,6 +1500,79 @@ initReminder();
 
 // init dicționar
 renderDict();
+
+// ── Fișe sinteză ──────────────────────────────────────────────────────────
+var _fiseRendered = false;
+var _FISE_SUBJ = {civ:'Civil',pen:'Penal',pciv:'Pr. Civ.',ppen:'Pr. Pen.'};
+function _fEsc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function _fAttr(s){ return (s||'').replace(/"/g,'&#34;').replace(/'/g,'&#39;'); }
+function _fStrip(s){ return (s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().toLowerCase(); }
+function renderFise(){
+  if(_fiseRendered) return; _fiseRendered = true;
+  var c = document.getElementById('fise-container'); if(!c) return;
+  if(typeof FISE_DATA === 'undefined'){ c.innerHTML='<p style="color:var(--sub);padding:20px 0">Fișele nu s-au încărcat.</p>'; return; }
+  c.innerHTML = FISE_DATA.map(function(f){
+    var tips   = (typeof FISE_TIPS   !== 'undefined' && FISE_TIPS[f.id])   || [];
+    var recall = (typeof FISE_RECALL !== 'undefined' && FISE_RECALL[f.id]) || [];
+    var secHtml = f.sections.map(function(s){
+      return '<div class="fisa-sec"><div class="fisa-sec-title">' + s.icon + ' ' + _fEsc(s.title) + '</div>' +
+        s.items.map(function(it){ return '<div class="fisa-item" data-txt="' + _fAttr(_fStrip(it)) + '">' + it + '</div>'; }).join('') + '</div>';
+    }).join('');
+    var grilaHtml = f.grila ? '<div class="fisa-grila" data-txt="' + _fAttr(_fStrip(f.grila)) + '">📝 ' + f.grila + '</div>' : '';
+    var tipsHtml = tips.length ? '<div class="fisa-tips-wrap">' +
+      tips.map(function(t){ return '<div class="fisa-tip" data-txt="' + _fAttr(_fStrip(t)) + '">' + t + '</div>'; }).join('') + '</div>' : '';
+    var recallHtml = recall.length ? '<div class="fisa-recall-wrap"><div class="fisa-recall-head">🧠 Întrebări recall</div>' +
+      recall.map(function(q){ return '<div class="fisa-recall-q" data-txt="' + _fAttr(q.toLowerCase()) + '">' + _fEsc(q) + '</div>'; }).join('') + '</div>' : '';
+    return '<div class="fisa-card" id="fisa-' + f.id + '">' +
+      '<div class="fisa-head" onclick="toggleFisa(\'' + f.id + '\')">' +
+        '<span class="fisa-wk">' + _fEsc(f.wk) + '</span>' +
+        '<span class="fisa-title">' + _fEsc(f.title) + '</span>' +
+        '<span class="fisa-subj-badge ' + f.subj + '">' + (_FISE_SUBJ[f.subj]||f.subj) + '</span>' +
+        '<span class="fisa-arrow">▾</span>' +
+      '</div>' +
+      '<div class="fisa-body">' + secHtml + grilaHtml + tipsHtml + recallHtml + '</div>' +
+    '</div>';
+  }).join('');
+}
+function toggleFisa(id){
+  var el = document.getElementById('fisa-' + id); if(!el) return;
+  el.classList.toggle('open');
+  // when closing via header click during search, re-open it if search active
+  var term = (document.getElementById('fise-search').value||'').trim();
+  if(term.length >= 2 && !el.classList.contains('open')) el.classList.add('open');
+}
+function filterFise(){
+  renderFise();
+  var term = (document.getElementById('fise-search').value||'').trim().toLowerCase();
+  var cnt = document.getElementById('fise-search-count');
+  var cards = document.querySelectorAll('.fisa-card');
+  var searchEls = document.querySelectorAll('.fisa-item,.fisa-tip,.fisa-recall-q,.fisa-grila');
+  if(term.length < 2){
+    cnt.textContent = '';
+    cards.forEach(function(c){ c.classList.remove('fs-hidden','open'); });
+    searchEls.forEach(function(el){ el.classList.remove('fs-hidden','fs-match'); });
+    return;
+  }
+  var words = term.split(/\s+/).filter(Boolean);
+  var found = 0;
+  cards.forEach(function(card){
+    var items = card.querySelectorAll('.fisa-item,.fisa-tip,.fisa-recall-q,.fisa-grila');
+    var titleTxt = (card.querySelector('.fisa-title')||{textContent:''}).textContent.toLowerCase();
+    var titleMatch = words.every(function(w){ return titleTxt.indexOf(w) >= 0; });
+    var itemMatch = false;
+    items.forEach(function(el){
+      var txt = el.getAttribute('data-txt') || '';
+      var m = words.every(function(w){ return txt.indexOf(w) >= 0; });
+      el.classList.toggle('fs-match', m);
+      if(titleMatch){ el.classList.remove('fs-hidden'); } else { el.classList.toggle('fs-hidden', !m); }
+      if(m) itemMatch = true;
+    });
+    var cardMatch = titleMatch || itemMatch;
+    card.classList.toggle('fs-hidden', !cardMatch);
+    if(cardMatch){ card.classList.add('open'); found++; }
+  });
+  cnt.textContent = found ? (found + (found === 1 ? ' fișă' : ' fișe') + ' cu rezultate') : 'Niciun rezultat';
+}
 
 // deschidere directă pe un tab via hash (ex. index.html → plan_studiu.html#dict)
 (function(){var h=(location.hash||'').replace('#','');if(['azi','plan','cal','met','ritm','surse','dict','memory','fise'].indexOf(h)>=0)showPanel(h);})();
