@@ -1752,7 +1752,6 @@ function _toggleFisa(id){
   var css=''
     +'.fise-hdr{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;flex-wrap:wrap;gap:6px}'
     +'.fise-cat-sec{margin-bottom:18px}'
-    +'@media(min-width:860px){.fise-cat-sec{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;align-items:start}.fise-cat-hdr{grid-column:1/-1}}'
     +'.fise-cat-hdr{font-size:12px;font-weight:800;color:var(--sub);text-transform:uppercase;letter-spacing:.8px;padding:6px 0 8px;border-bottom:1.5px solid var(--sf2);margin-bottom:8px}'
     +'.fise-htitle{font-size:17px;font-weight:900;color:var(--lime)}'
     +'.fise-hsub{font-size:11px;color:var(--sub)}'
