@@ -1158,42 +1158,45 @@ var FISE_DATA = [
     sections:[
       { icon:'⚖️', title:'Principii fundamentale (art. 2–12 CPP)',
         items:[
-          '<b>Legalitatea procesului penal</b>: organele judiciare acționează numai în limitele legii și cu respectarea drepturilor persoanelor.',
-          '<b>Prezumția de nevinovăție</b>: orice persoană e prezumată nevinovată până la condamnare definitivă. Sarcina probei = <b>organele judiciare</b>; in dubio pro reo = dubiul profită inculpatului.',
-          '<b>Aflarea adevărului</b>: organele judiciare au obligația de a strânge toate probele, inclusiv cele în favoarea suspectului/inculpatului.',
-          '<b>Ne bis in idem</b>: nimeni nu poate fi urmărit sau judecat de două ori pentru aceeași faptă. Dacă există hotărâre definitivă → clasare/achitare.',
-          '<b>Dreptul la apărare</b>: asistența juridică obligatorie la inculpat pentru infracțiuni grave, reținut sau arestat, minor.'
+          '<b>Legalitatea procesului penal</b>: organele judiciare acționează numai în limitele legii; probele obținute nelegal nu pot fi folosite (excluderea probelor).',
+          '<b>Prezumția de nevinovăție</b> (art. 4 CPP): prezumată nevinovată până la condamnare definitivă. Sarcina probei = <b>organele judiciare</b>. <b>In dubio pro reo</b>: dacă rămâne dubiu rezonabil = achitare (nu condamnare cu dubiu).',
+          '<b>Aflarea adevărului</b> (art. 5 CPP): organele au obligația de a strânge probe atât în defavoarea, cât și <b>în favoarea</b> suspectului/inculpatului — caracter oficial al procesului.',
+          '<b>Ne bis in idem</b> (art. 6 CPP): nimeni nu poate fi urmărit sau judecat de două ori pentru aceeași faptă dacă există hotărâre definitivă (achitare, condamnare, clasare definitivă). ⚠️ Aceeași faptă ≠ aceeași încadrare juridică.',
+          '<b>Dreptul la apărare</b> (art. 10 CPP): dreptul de a fi asistat de avocat ales; asistență juridică <b>obligatorie</b> din oficiu când inculpatul e reținut/arestat, e minor, are infirmitate mintală, sau pedeapsa prevăzută e ≥5 ani.',
+          '<b>Contradictorialitatea</b> (art. 8 CPP): fiecare parte trebuie să poată lua cunoștință de actele și probele celeilalte și să le poată combate. Camera preliminară: contradictorialitate limitată (probe strânse în urmărire).',
+          '<b>Publicitatea</b> (art. 352 CPP): judecata = publică în principiu; excepții (minorii, siguranța națională, viața privată). <b>Dreptul la interpret</b>: dacă inculpatul nu cunoaște limba română — interpret gratuit, din oficiu, în tot cursul procesului.'
         ]
       },
       { icon:'🔍', title:'Urmărirea penală (art. 285–341 CPP)',
         items:[
-          'Faze: <b>in rem</b> (față de faptă, după sesizare) → <b>in personam</b> (față de suspect → față de inculpat, după punerea în mișcare a acțiunii penale).',
-          '<b>Organele de urmărire penală</b>: procurorul (conduce urmărirea penală) + organele de cercetare penală (poliția judiciară, organe speciale). Procurorul poate efectua personal orice act de urmărire.',
-          '<b>Clasarea</b>: când nu există faptă, fapta nu e prevăzută de lege, fapta nu prezintă pericol social, lipsește plângerea prealabilă, a intervenit prescripția etc.',
-          '<b>Renunțarea la urmărire penală</b>: la infracțiuni cu pedeapsă de max. 7 ani, dacă nu există interes public. Discreție a procurorului (principiul oportunității).',
-          '<b>Trimiterea în judecată</b>: prin rechizitoriu, dacă există probe suficiente că inculpatul a săvârșit infracțiunea.'
+          '<b>Sesizarea organelor</b>: prin plângere (persoana vătămată), denunț (oricine), sesizare din oficiu (organele constată). La infracțiunile cu plângere prealabilă — fără plângerea victimei, nu se poate porni urmărirea.',
+          'Faze: <b>in rem</b> (față de faptă) → <b>in personam</b>: suspect (indicii rezonabile că a comis fapta) → inculpat (după punerea în mișcare a acțiunii penale prin ordonanță a procurorului).',
+          '⚠️ <b>Suspect ≠ inculpat</b>: suspectul poate fi audiat ca suspect; inculpatul = persoana față de care s-a pus în mișcare acțiunea penală. Inculpatul are drepturi procedurale suplimentare.',
+          '<b>Organele de urmărire</b>: procurorul (conduce, supraveghează, poate efectua personal orice act) + organele de cercetare penală (poliția judiciară, organe speciale). Actele organelor de cercetare: supuse controlului procurorului.',
+          '<b>Clasarea</b>: nu există faptă, nu e prevăzută de lege, nu are caracter penal, nu e periculoasă social, lipsește plângerea prealabilă, prescripție, amnistie etc. Oricând în cursul urmăririi.',
+          '<b>Renunțarea la urmărire</b> (art. 318 CPP): la infracțiuni cu pedeapsă ≤7 ani, dacă nu e interes public; confirmare de judecătorul de cameră preliminară. <b>Trimiterea în judecată</b>: prin rechizitoriu, când sunt probe suficiente.'
         ]
       },
       { icon:'🔒', title:'Măsurile preventive (art. 202–244 CPP)',
         items:[
-          '<b>Reținerea</b>: max. <b>24 de ore</b>; dispusă de organul de cercetare penală sau procuror; fără aprobare judecătorească.',
-          '<b>Controlul judiciar</b> și <b>controlul judiciar pe cauțiune</b>: dispuse de judecătorul de drepturi și libertăți sau instanță; nu implică privare de libertate; max. 60 de zile în urmărire (prelungibil), nelimitat în judecată.',
-          '<b>Arestul la domiciliu</b>: privare de libertate la domiciliu; durata se contabilizează ca arest preventiv (zile echivalente); necesită mandat de la judecătorul de drepturi și libertăți.',
-          '<b>Arestul preventiv</b> în cursul urmăririi penale: inițial <b>30 de zile</b> (judecătorul de drepturi și libertăți); prelungibil cu câte 30 de zile; maxim total <b>180 de zile</b> în urmărire penală. În cursul judecății: câte <b>60 de zile</b>, fără limită totală.',
-          'Toate măsurile preventive presupun că există probe sau indicii rezonabile că inculpatul a săvârșit infracțiunea + una din condițiile speciale (pericol public, pericol de fugă, obstacularea anchetei).'
+          '<b>Reținerea</b>: max. <b>24 de ore</b>; dispusă de organul de cercetare sau procuror; fără mandat judiciar; condiție: indicii rezonabile. ⚠️ Reținerea ≠ arestul preventiv.',
+          '<b>Controlul judiciar</b> și <b>controlul judiciar pe cauțiune</b>: nu implică privare de libertate; obligații impuse (interdicții, prezentare etc.); max. <b>60 de zile</b> în urmărire (prelungibil la 120 zile), nelimitat în judecată.',
+          '<b>Arestul la domiciliu</b> (art. 218 CPP): privare de libertate la adresă; durata = echivalată cu arestul preventiv; necesită mandat de la judecătorul de drepturi și libertăți. Poate fi înlocuit cu arest preventiv dacă e încălcat.',
+          '<b>Arestul preventiv</b> în urmărire: inițial <b>30 de zile</b> (judecătorul de drepturi și libertăți); prelungibil cu câte 30 de zile; maxim total în urmărire = <b>180 de zile</b>. În judecată: câte <b>60 de zile</b>, fără limită totală expresă.',
+          'Condiții comune ale măsurilor preventive: probe/indicii rezonabile că a comis fapta + <b>una din condițiile speciale</b>: pericol public, pericol de fugă, obstacularea anchetei. Proporționalitate cu scopul urmărit.'
         ]
       },
       { icon:'📂', title:'Judecata penală și căile de atac (art. 342–552 CPP)',
         items:[
-          'Faze ale judecății: <b>camera preliminară</b> (verificarea rechizitoriului și a probelor) → <b>judecata în fond</b> → <b>căile de atac</b>.',
-          '<b>Camera preliminară</b>: judecătorul de cameră preliminară verifică dacă urmărirea e legală și dacă probele pot fi folosite. Poate exclude probe obținute nelegal.',
-          '<b>Apelul</b> (art. 408): calea ordinară de atac; termen <b>10 zile</b> de la comunicarea copiei minutei; devoluează în fapt și în drept.',
-          '<b>Acordul de recunoaștere a vinovăției</b> (art. 478–488): negociat între procuror și inculpat; instanța <b>omologhează sau respinge</b> în totalitate — nu poate modifica pedeapsa convenită. Recunoașterea învinuirii în procedura simplificată (art. 374/396) → reducere cu <b>1/3 a limitelor</b>.',
-          '<b>Achitarea</b>: când fapta nu există, nu e prevăzută de lege, nu a fost săvârșită de inculpat, nu există vinovăție, există cauze justificative/de neimputabilitate. <b>Încetarea procesului penal</b>: când lipsesc condițiile de procedibilitate (ex: plângere prealabilă retrasă, prescripție).'
+          '<b>Camera preliminară</b> (art. 342 CPP): verificarea legalității urmăririi și a actelor de sesizare; excluderea probelor nelegale; verificarea competenței. Pronunță încheiere de începere a judecății sau de restituire a dosarului.',
+          '<b>Judecata în fond</b>: publică, contradictorie; probele se administrează din nou în fața instanței. <b>Procedura simplificată</b> (art. 374/396 CPP): recunoașterea învinuirii de inculpat → reducere cu <b>1/3 din limitele de pedeapsă</b> (la închisoare) sau cu <b>1/4</b> (la amendă).',
+          '<b>Acordul de recunoaștere a vinovăției</b> (art. 478 CPP): negociat procuror-inculpat înainte sau după trimitere în judecată; instanța <b>omologhează sau respinge în totalitate</b> — nu poate modifica pedeapsa convenită.',
+          '<b>Apelul</b> (art. 408 CPP): calea ordinară de atac; termen <b>10 zile</b> de la comunicarea minutei (nu 30!); devoluativ (rejudecă fondul în fapt și în drept). <b>Recursul în casație</b> (art. 433 CPP): cale extraordinară, exclusiv în drept, termen <b>30 de zile</b> de la comunicare; motive limitativ prevăzute.',
+          '<b>Achitarea</b> (art. 16 CPP): fapta nu există; nu e prevăzută de lege; nu a comis-o inculpatul; lipsește vinovăția; există cauze justificative/de neimputabilitate. <b>Încetarea procesului penal</b>: lipsesc condițiile de procedibilitate (plângere retrasă, prescripție, amnistie, dezincriminare).'
         ]
       }
     ],
-    grila:'Reținere = max. <b>24h</b>, fără mandat. Arest preventiv în urmărire: max. <b>180 de zile</b> total; câte 30 de zile pe rând. Apel penal: <b>10 zile</b> de la comunicarea minutei (nu 30!). Prezumția de nevinovăție: sarcina probei → <b>organele judiciare</b>. Acord de recunoaștere = instanța omologhează sau respinge, nu modifică. In dubio pro reo = dubiul → achitare.'
+    grila:'Reținere = max. <b>24h</b>, fără mandat. Arest preventiv în urmărire: max. <b>180 de zile</b> total (câte 30). Apel penal: <b>10 zile</b> de la comunicarea minutei (nu 30!). Sarcina probei = <b>organele judiciare</b>; in dubio pro reo = dubiul → achitare. Suspect ≠ inculpat: acțiunea penală pusă în mișcare → inculpat. Acordul de recunoaștere: instanța omologhează sau respinge în bloc. Procedura simplificată (recunoaștere) → 1/3 reducere.'
   }
 ];
 
