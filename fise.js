@@ -847,9 +847,9 @@ var FISE_DATA = [
       { icon:'💰', title:'Împrumutul de consumație — mutuum (art. 2158–2170 NCC)',
         items:[
           '<b>Definiție</b>: împrumutătorul transferă <b>proprietatea</b> unor bunuri consumptibile (bani, alimente, combustibil). Împrumutatul restituie bunuri de același gen, calitate și cantitate (<i>tantundem eiusdem generis</i>).',
-          '<b>Caractere</b>: <b>real</b> (se perfectează prin remiterea bunului); <b>unilateral</b> (numai împrumutatul are obligații după remitere); <b>gratuit</b> (prezumție la persoane fizice); poate fi cu dobândă (expres stipulată).',
+          '<b>Caractere</b>: <b>real</b> (se perfectează prin remiterea bunului); <b>unilateral</b> (numai împrumutatul are obligații după remitere). ⚠️ <b>Capcană — prezumții</b> (art. 2159 NCC): împrumutul se prezumă <b>gratuit</b>, DAR împrumutul care are ca obiect <b>o sumă de bani se prezumă ONEROS</b> (cu dobândă) până la proba contrară!',
           'La predare, proprietatea și <b>riscul</b> trec la împrumutat. Dacă bunul piere fortuit → împrumutatul tot trebuie să restituie (e proprietar al riscului).',
-          '<b>Dobânda</b>: trebuie stipulată expres. La persoane fizice, dobânda convențională nu poate depăși <b>de 2 ori dobânda legală</b> (OUG 13/2011). Depășirea → reducerea la limita maximă, nu nulitate.',
+          '<b>Plafonul dobânzii convenționale</b> (art. 5 din OG 13/2011): în raporturile care nu decurg din exploatarea unei întreprinderi cu scop lucrativ, dobânda nu poate depăși <b>dobânda legală cu mai mult de 50% pe an</b>. Sancțiunea depășirii: clauza e <b>nulă de drept</b>, iar creditorul e <b>decăzut și din dreptul la dobânda legală</b> (nu simplă reducere la plafon!).',
           '<b>Scadența</b>: termenul stipulat. Dacă nu e termen → instanța îl poate stabili ținând cont de nevoile împrumutatului și de posibilitățile împrumutătorului. Dacă s-a stabilit că împrumutatul plătește când va putea → instanța trebuie să determine un termen rezonabil.'
         ]
       },
@@ -868,32 +868,32 @@ var FISE_DATA = [
           '<b>Caractere</b>: <b>real</b> (se perfectează prin remiterea bunului); <b>unilateral</b> (numai depozitarul are obligații după remitere); de regulă <b>gratuit</b> (prezumție la persoane fizice); oneros la profesioniști (hoteluri, case de valori).',
           '<b>Depozitarul NU poate folosi bunul</b> (art. 2109 NCC) — spre deosebire de comodatar (care primește bunul spre folosință). Dacă depozitarul folosește bunul fără drept → răspunde față de depunător pentru orice pierdere, inclusiv caz fortuit.',
           '<b>Diligența depozitarului</b>: la depozit gratuit → diligența unui bun proprietar pentru propriile bunuri (standard variabil, mai puțin sever); la depozit oneros → diligența unui profesionist (standard obiectiv). ⚠️ Răspunde și pentru culpa ușoară la depozit oneros.',
-          '<b>Depozitul neregulat</b> (art. 2115 NCC): depunerea unor bunuri fungibile (bani, metale prețioase) cu dreptul depozitarului de a le consuma, restituind bunuri de același gen, cantitate și calitate. Se aseamănă cu mutuum — depozitarul devine proprietar al bunurilor fungibile. Sancțiune pentru nerestituire: acțiune în restituire + dobânzi.',
+          '<b>Depozitul neregulat</b> (art. 2105 NCC): depunerea unor bunuri fungibile și consumptibile (bani, metale prețioase) — acestea devin <b>proprietatea depozitarului</b>, care restituie bunuri de același gen, cantitate și calitate. Se aseamănă cu mutuum. Sancțiune pentru nerestituire: acțiune în restituire + dobânzi.',
           '<b>Depozitul necesar</b> (art. 2124 NCC): impus de împrejurări extraordinare (incendiu, cutremur, naufragiu) fără posibilitatea alegerii depozitarului. Regulile se aplică, dar proba e mai liberă (inclusiv martori și prezumții indiferent de valoare).',
-          '<b>Restituirea</b>: la cererea depunătorului, oricând, chiar dacă s-a stipulat un termen (termenul e în interesul depunătorului). Dacă depozitarul are o creanță față de depunător legată de depozit, poate exercita dreptul de retenție.'
+          '<b>Restituirea</b> (art. 2115 NCC): la cererea depunătorului, <b>oricând</b>, chiar dacă s-a stipulat un termen (termenul e în interesul depunătorului). Dacă depozitarul are o creanță față de depunător legată de depozit, poate exercita dreptul de retenție.'
         ]
       },
       { icon:'🛡️', title:'Fidejusiunea — cauțiunea (art. 2280–2320 NCC)',
         items:[
           '<b>Definiție</b>: fidejusorul se obligă față de creditor să execute obligația debitorului dacă acesta nu o execută. <b>Legală</b>: impusă de lege (ex: obligația moștenitorului de a da garanție creditorului); <b>judiciară</b>: ordonată de instanță; <b>convențională</b>: voluntară.',
-          '<b>Caractere</b>: <b>accesorie</b> (urmează soarta obligației principale — dacă aceasta e nulă → fidejusiunea cade); <b>indivizibilă</b> față de creditor; consensuală; poate fi gratuită sau oneroasă.',
-          '<b>Beneficiul de discuțiune</b> (art. 2294 NCC): fidejusorul poate cere creditorului să urmărească mai întâi bunurile debitorului principal. ⚠️ Trebuie invocat la primul termen de judecată cu indicarea bunurilor urmăribile.',
+          '<b>Caractere</b>: <b>accesorie</b> (urmează soarta obligației principale — dacă aceasta e nulă → fidejusiunea cade); ⚠️ <b>solemnă</b> (art. 2282 NCC): trebuie asumată <b>expres, printr-un înscris</b> autentic sau sub semnătură privată, sub sancțiunea <b>nulității absolute</b> — nu e consensuală!; poate fi gratuită sau oneroasă.',
+          '<b>Beneficiul de discuțiune</b> (art. 2294 NCC): fidejusorul poate cere creditorului să urmărească mai întâi bunurile debitorului principal. ⚠️ Trebuie invocat <b>înainte de judecarea fondului</b>, cu indicarea bunurilor urmăribile ale debitorului și avansarea cheltuielilor de urmărire.',
           '<b>Beneficiul de diviziune</b> (art. 2296 NCC): dacă sunt mai mulți fidejusori, fiecare poate cere să fie urmărit numai pentru <b>partea sa</b>. Invocat la primul termen cu indicarea cofidejusorilor solvabili.',
           'Fidejusorul care plătește se <b>subrogă</b> în drepturile creditorului față de debitorul principal (art. 2305 NCC). Are și acțiune personală de regres față de debitor.',
-          '<b>Stingerea fidejusiunii</b>: stingerea obligației principale → stingerea automată a fidejusiunii (accesorie). Dacă creditorul acordă debitorului termen suplimentar fără acordul fidejusorului → fidejusorul se liberează de prelungire. <b>Fidejusiunea solidară</b>: renunțare la discuțiune și diviziune; urmărit ca codebitor solidar.'
+          '<b>Stingerea fidejusiunii</b>: stingerea obligației principale → stingerea automată (accesorie). ⚠️ <b>Capcană</b> (art. 2311 NCC): simpla <b>prelungire a termenului</b> acordată debitorului NU îl liberează pe fidejusor. Liberarea reală (art. 2315): când <b>subrogația devine imposibilă din fapta creditorului</b> (ex. pierde garanțiile) — fidejusorul e liberat în limita sumei pe care n-ar mai putea-o recupera. <b>Fidejusiunea solidară</b>: renunțare la discuțiune și diviziune; urmărit ca un codebitor solidar.'
         ]
       },
       { icon:'🤝', title:'Tranzacția (art. 2267–2278 NCC)',
         items:[
           '<b>Definiție</b>: contract prin care părțile sting un litigiu existent sau previn un litigiu viitor, prin <b>concesii reciproce</b>. ⚠️ Dacă o parte renunță complet (fără concesii din partea celeilalte) → nu e tranzacție, ci remitere de datorie sau recunoaștere a dreptului.',
-          '<b>Caractere</b>: sinalagmatic; cu titlu oneros; efecte <b>declarative</b> (recunoaște drepturi existente, nu creează altele noi) — similar partajului.',
+          '<b>Caractere</b>: sinalagmatic; cu titlu oneros; efecte de regulă <b>declarative</b> (recunoaște drepturi existente, nu creează altele noi — ⚠️ nu comparați cu partajul, care sub NCC e constitutiv!).',
           'Tranzacția are putere de lucru judecat relativ (inter partes). Nu poate fi atacată decât pe motive de nulitate (viciu de consimțământ, lipsă de obiect etc.) sau prin acțiune în constatarea obiectului inexistent.',
           '<b>Cazuri de nulitate</b>: tranzacție asupra unui drept inexistent; actul de a cărui existență depinde a fost ulterior anulat sau declarat fals; tranzacție bazată pe documente false.',
-          '<b>Tranzacția judiciară</b>: consemnată în procesul-verbal de ședință → titlu executoriu fără altă procedură. Tranzacția extrajudiciară: necesită autentificare sau învestire cu formulă executorie pentru executare silită.'
+          '<b>Tranzacția judiciară</b>: consfințită de instanță prin <b>hotărâre de expedient</b> (art. 438–441 CPC) → titlu executoriu. Tranzacția extrajudiciară: devine titlu executoriu dacă e <b>autentificată notarial</b>; altfel, executarea ei se obține pe calea unui proces.'
         ]
       }
     ],
-    grila:'Mutuum = <b>real</b> + transferă <b>proprietatea și riscul</b> la împrumutat; dobânda max 2× dobânda legală la PF. Comodat = real + gratuit + proprietatea rămâne; comodatarul nu poate subînchiria. Depozit = real, gratuit (PF), depozitarul <b>nu poate folosi</b> bunul (≠ comodat); restituire la cererea depunătorului oricând. Depozit neregulat: bunuri fungibile, depozitarul devine proprietar + restituie tantundem. Fidejusionar solidar: renunță la discuțiune și diviziune. Fidejusor subrogat: drepturile creditorului + acțiunea proprie. Tranzacție = efecte <b>declarative</b>; concesii <b>reciproce</b> (altfel = remitere de datorie).'
+    grila:'Mutuum = <b>real</b> + transferă <b>proprietatea și riscul</b> la împrumutat; împrumutul de <b>bani se prezumă ONEROS</b> (art. 2159 — capcană!); plafon dobândă: legală <b>+50%</b> (nu 2×); depășire → clauză nulă + decădere din dobânda legală. Fidejusiunea: <b>solemnă</b> — înscris ad validitatem (art. 2282); prelungirea termenului NU liberează fidejusorul (art. 2311). Comodat = real + gratuit + proprietatea rămâne; comodatarul nu poate subînchiria. Depozit = real, gratuit (PF), depozitarul <b>nu poate folosi</b> bunul (≠ comodat); restituire la cererea depunătorului oricând. Depozit neregulat: bunuri fungibile, depozitarul devine proprietar + restituie tantundem. Fidejusionar solidar: renunță la discuțiune și diviziune. Fidejusor subrogat: drepturile creditorului + acțiunea proprie. Tranzacție = efecte <b>declarative</b>; concesii <b>reciproce</b> (altfel = remitere de datorie).'
   },
 
   {
