@@ -2214,16 +2214,23 @@ var FISE_RECALL={
     'Excepție procesuală peremptoriu vs. dilatoriu: definiție + câte un exemplu + consecința procesuală a fiecăreia.',
     'Căile de atac: apelul (termen / ce devoluează) vs. recursul (termen / ce controlează) vs. revizuirea (când se poate folosi).',
     'Aplicație: pârâtul pierde în fond și în apel, apoi face recurs invocând că instanța de apel a apreciat greșit probele. Este admisibil motivul?',
-    'Autoritatea de lucru judecat (ALC): tripla identitate — obiect + părți + cauza (ce e cauza în sens procesual civil)?'
+    'Autoritatea de lucru judecat (ALC): tripla identitate — obiect + părți + cauza (ce e cauza în sens procesual civil)?',
+    '⚠️ La grilă: până când se invocă necompetența MATERIALĂ (art. 130 — primul termen cu părțile legal citate, nu „oricând"!)? Dar cea generală? Dar cea teritorială de drept comun (cine + prin ce act)?',
+    '⚠️ La grilă: partajul unui imobil de 1.000.000 lei — judecătorie sau tribunal? (art. 94: partaj/moștenire/uzucapiune → judecătorie INDIFERENT de valoare.)',
+    'Ordonanța președințială: cele 3 condiții (urgență, neprejudecarea fondului, caracter provizoriu) + calea de atac (apel 5 zile) + în cât timp se poate amâna pronunțarea (24h)?',
+    'Perimarea judecății (6 luni de la suspendare): ce stinge? Cheltuielile de judecată: cine le suportă (culpa procesuală) și poate instanța reduce onorariul avocațial (art. 451 al. 2)?'
   ],
   w27:[
     'Enumeră cel puțin 4 categorii de documente care pot constitui titluri executorii.',
     'Poprirea: ce e, față de cine se îndreaptă și care sunt limitele poprire pe salariu (procente pentru 1 creanță vs. mai multe)?',
     'Urmărirea imobiliară: etapele procedurale (somație → publicitate → licitație) și termenul minim de la somație la licitație.',
     'Contestația la executare: termenul de exercitare, instanța competentă și suspendă automat executarea sau nu?',
-    'Perimarea executării (art. 698 NCPC): termenul de inactivitate, ce stinge (dosarul sau creanța) și poate fi reluată?',
+    'Perimarea executării (art. 697 NCPC): termenul de inactivitate (6 luni), ce stinge (dosarul sau creanța) și poate fi reluată?',
     'Aplicație: creditorul are o hotărâre definitivă din 2020 și vrea să înceapă executarea în 2024. Termenul de prescripție a expirat?',
-    'La grilă: poprire pe pensie — același regim ca poprire pe salariu (max 1/3 / 1/2)? Există un minim nepoprabil?'
+    'La grilă: poprire pe pensie — același regim ca poprire pe salariu (întreținere 1/2 / alte datorii 1/3)? Ce se poate urmări din veniturile sub salariul minim?',
+    '⚠️ La grilă: hotărârea asupra contestației la executare se atacă cu apel sau recurs (art. 718 — numai APEL)? Prescripția executării: 3 ani — dar la titlurile privind drepturi reale imobiliare (10 ani)?',
+    'Penalitățile (astreinte, art. 906): cuantumul pe zi la obligații neevaluabile (100–1.000 lei) vs. evaluabile (0,1–1%), cui se plătesc și după cât timp se poate cere fixarea sumei definitive (3 luni)?',
+    '⚠️ La grilă: insolvență vs. insolvabilitate — definiții + valoarea-prag actuală (50.000 lei). Un debitor cu active de 10 mil. dar fără lichidități poate fi în insolvență?'
   ],
   w28:[
     'Prezumția de nevinovăție: conținut, cine suportă sarcina probei și regula in dubio pro reo — ce înseamnă concret?',
@@ -2232,10 +2239,13 @@ var FISE_RECALL={
     'Urmărirea penală in rem vs. in personam: ce declanșează trecerea de la una la alta? Ce drepturi dobândește persoana când devine suspect vs. inculpat?',
     'Acordul de recunoaștere a vinovăției: condiții, ce poate face instanța (omologhează / respinge — poate modifica pedeapsa?).',
     'Aplicație: inculpatul e arestat preventiv de 150 de zile în faza de urmărire penală. Poate fi prelungit arestul? Câte zile mai pot fi adăugate?',
-    'La grilă: apelul penal — termen 10 zile de la comunicarea copiei minutei. Ce se întâmplă dacă minuta nu a fost comunicată? Termenul curge oricum?'
+    'La grilă: apelul penal — termen 10 zile de la comunicarea copiei minutei. Ce se întâmplă dacă minuta nu a fost comunicată? Termenul curge oricum?',
+    'Căile extraordinare penale — schema: contestația în anulare (vicii de procedură — 2 exemple) vs. revizuirea (fapte/probe noi — 2 exemple) vs. recursul în casație (nelegalitate în drept). Termene + care poate fi exercitată oricând în favoarea condamnatului?',
+    '⚠️ La grilă: reabilitarea judecătorească — termenele sunt fixe (4/5/7 ani) sau „termen + jumătate din durata pedepsei" (capcană — vechiul cod)? DPV comutată are reabilitare? Ce efect are reabilitarea asupra recidivei?',
+    'Excluderea probelor (art. 102): ce probe se exclud, în ce fază se verifică (camera preliminară) și ce sunt probele derivate („fructul pomului otrăvit")? Loialitatea probei (art. 101): 3 procedee interzise.'
   ],
   tlt:[
-    'Enumeră termenele de apel: civil vs. penal vs. contencios administrativ. Care curge de la comunicare și care de la minutei?',
+    '⚠️ Capcana termenelor de apel: civil (30 de zile de la comunicarea hotărârii) vs. penal (10 zile de la comunicarea copiei minutei) vs. ordonanța președințială (5 zile). Care curge de unde?',
     'Termenele de prescripție speciale (1 an): care sunt cele 3 situații din dreptul civil substantiv unde termenul e 1 an în loc de 3?',
     'Executare silită: termenul prescripției dreptului de a cere executarea vs. termenul perimării dosarului — ambele de 3 ani/6 luni?',
     'Cauze de NCA: enumeră 5. Cauze de NR: enumeră 5. Ce diferă ca regim: cine invocă, termen, confirmare?',
