@@ -291,6 +291,8 @@ a{color:var(--gr);text-decoration:none}
 .fisa-arrow{color:var(--sub);font-size:11px;transition:transform .2s;flex-shrink:0}
 .fisa-card.open .fisa-arrow{transform:rotate(180deg)}
 .fisa-body{display:none;padding:2px 13px 13px}
+.fisa-freq{font-size:11px;font-weight:700;color:var(--gold);background:#ffd54f14;border:1px solid #ffd54f33;border-radius:8px;padding:6px 10px;margin-top:9px}
+body.light .fisa-freq{color:#8a6d00;background:#fff8e1;border-color:#e8d48a}
 .fisa-card.open .fisa-body{display:block}
 .fisa-sec{margin-top:11px}
 .fisa-sec-title{font-size:10.5px;font-weight:800;color:var(--sub);letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px}
@@ -1572,6 +1574,7 @@ function renderFise(){
       return '<div class="fisa-sec"><div class="fisa-sec-title">' + s.icon + ' ' + _fEsc(s.title) + '</div>' +
         s.items.map(function(it){ return '<div class="fisa-item" data-txt="' + _fAttr(_fStrip(it)) + '">' + it + '</div>'; }).join('') + '</div>';
     }).join('');
+    var freqHtml = (typeof FISE_FREQ !== 'undefined' && FISE_FREQ[f.id]) ? '<div class="fisa-freq">' + _fEsc(FISE_FREQ[f.id]) + '</div>' : '';
     var grilaHtml = f.grila ? '<div class="fisa-grila" data-txt="' + _fAttr(_fStrip(f.grila)) + '">📝 ' + f.grila + '</div>' : '';
     var tipsHtml = tips.length ? '<div class="fisa-tips-wrap"><div class="fisa-tips-head">⚠️ Capcane frecvente</div>' +
       tips.map(function(t){ return '<div class="fisa-tip" data-txt="' + _fAttr(_fStrip(t)) + '">' + t + '</div>'; }).join('') + '</div>' : '';
@@ -1585,7 +1588,7 @@ function renderFise(){
         '<button class="fisa-print-btn" onclick="event.stopPropagation();printFisa(\'' + f.id + '\')" title="Printează fișa">🖨️</button>' +
         '<span class="fisa-arrow">▾</span>' +
       '</div>' +
-      '<div class="fisa-body">' + secHtml + grilaHtml + tipsHtml + recallHtml + '</div>' +
+      '<div class="fisa-body">' + freqHtml + secHtml + grilaHtml + tipsHtml + recallHtml + '</div>' +
     '</div>';
   }).join('');
 }

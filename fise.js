@@ -2338,6 +2338,38 @@ var FISE_RECALL={
   ]
 };
 
+// ── Frecvența temelor la grile (analiza pe 1862 întrebări, 19 sesiuni) ──────
+// 🔥 = temă de top; ▲ = frecventă; ● = moderată; ○ = rară
+var FISE_FREQ={
+  w01:'▲ nulitățile (împreună cu W03–W04) ating ~22% din grilele de civil',
+  w02:'▲ ~11% din grilele de civil (viciile de consimțământ)',
+  w03:'🔥 nulitatea + obiect/cauză: ~22% din grilele de civil',
+  w04:'▲ ~12% din grilele de civil (prescripția + decăderea)',
+  w05:'▲ ~10% din grilele de civil (proprietate, accesiune, limite)',
+  w06:'● ~4% din grilele de civil — temă mai rară, dar cu capcane sigure',
+  w07:'▲ ~17% din grilele de civil (posesie + uzucapiune + garanții + CF)',
+  w08:'● ~3% din grilele de civil (fapte juridice licite)',
+  w09:'● ~7% din grilele de civil (răspunderea delictuală)',
+  w10:'🔥 obligațiile (cu W11): ~15% din grilele de civil',
+  w11:'🔥 obligațiile (cu W10): ~15% din grilele de civil',
+  w12:'🔥 TEMA NR. 1 la civil: vânzarea + donația + riscul ≈ 30% din grile',
+  w13:'▲ ~13% din grilele de civil (locațiune + mandat + antrepriză)',
+  w14:'▲ ~12% din grilele de civil (fidejusiunea + împrumuturile)',
+  w15:'🔥 ~14% din grilele de civil (moștenirea legală)',
+  w16:'▲ ~11% din grilele de civil (testament + rezervă)',
+  w18:'▲ ~14% din grilele de penal (trăsături + vinovăție)',
+  w19:'🔥 TEMA NR. 1 la penal: tentativă + participație + concurs ≈ 35% din grile',
+  w20:'🔥 ~16% din grilele de penal (pedepse + recidivă + cauze)',
+  w21:'🔥 ~31% din grilele de penal (omor + libertate + viol)',
+  w22:'🔥 ~33% din grilele de penal (furt + înșelăciune + fals)',
+  w23:'▲ ~15% din grilele de penal (corupție + contra justiției)',
+  w24:'○ ~3% din grilele de penal (rutier + informatice) — temă rară',
+  w26:'🔥 nucleul procedurii civile: probe + căi de atac + competență ≈ 80% din grilele pciv',
+  w27:'▲ ~18% din grilele de pciv (executarea silită)',
+  w28:'🔥 toată procedura penală: 15 întrebări la fiecare examen',
+  tlt:'★ sinteză transversală — de recitit în ultima săptămână'
+};
+
 // ── Randare ──────────────────────────────────────────────────────────────────
 
 var FISE_CAT_LBL={civ:'⚖️ Drept Civil',pen:'🔒 Drept Penal',pciv:'📜 Procedură Civilă',ppen:'🛡️ Procedură Penală',lat:'🏛️ Latină juridică'};
