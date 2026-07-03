@@ -739,6 +739,16 @@ var FISE_DATA = [
           '<b>Vânzarea cu drept de răscumpărare</b> (art. 1758 NCC): vânzătorul poate răscumpăra bunul în termenul stipulat (max <b>5 ani</b>). Terțul dobânditor cu titlu oneros, în CF, nu poate fi obligat să restituie dacă termenul nu era înscris.'
         ]
       },
+      { icon:'📝', title:'Promisiunea de vânzare și varietățile vânzării — tema nr. 1 la grile',
+        items:[
+          '<b>Pactul de opțiune</b> (art. 1278 NCC): promitentul emite o <b>ofertă irevocabilă</b>; dacă beneficiarul o acceptă în termen → contractul se formează <b>automat</b>, fără altă manifestare a promitentului. Trebuie să conțină toate elementele contractului și să respecte <b>forma cerută acestuia</b> (imobil → autentică!).',
+          '<b>Promisiunea bilaterală de vânzare</b> (art. 1669 NCC): ambele părți se obligă să încheie vânzarea în viitor. La refuz → cealaltă parte poate cere <b>hotărâre care ține loc de contract</b> (dacă toate condițiile de validitate sunt îndeplinite). ⚠️ Termen de prescripție special: <b>6 luni</b> de la data la care contractul trebuia încheiat — capcană frecventă (nu 3 ani)!',
+          '<b>Diferența-cheie</b>: la pactul de opțiune, consimțământul promitentului e <b>deja dat</b> (beneficiarul doar acceptă); la promisiune, e nevoie de un <b>nou consimțământ</b> la data vânzării — de aceea doar promisiunea se execută prin hotărâre judecătorească.',
+          '<b>Vânzarea pe încercate</b> (art. 1681): încheiată sub <b>condiția suspensivă</b> ca bunul să corespundă <b>criteriilor obiective</b> (încercarea); dacă nu s-a convenit un termen, condiția se consideră îndeplinită dacă cumpărătorul nu s-a pronunțat în <b>30 de zile</b> de la predare. <b>Vânzarea pe gustate</b> (art. 1682): nu există vânzare până când cumpărătorul <b>nu gustă și declară</b> că îi convine (criteriu subiectiv — nu e condiție, contractul nu e încă format!).',
+          '<b>Vânzarea cu plata prețului în rate + rezerva proprietății</b> (art. 1755–1757): proprietatea se transferă la plata integrală, DAR ⚠️ <b>riscul trece la cumpărător de la PREDARE</b> (excepție expresă de la art. 1274!). Neplata unei singure rate ≤1/8 din preț → nu se poate cere rezoluțiunea.',
+          '<b>Obligația de predare</b> (art. 1685–1692): bunul + <b>accesoriile</b> sale + tot ce e destinat folosinței perpetue + <b>fructele de după transferul proprietății</b> (dacă nu s-a convenit altfel). Cheltuielile predării → vânzător; cheltuielile ridicării → cumpărător. <b>Vânzarea unei moșteniri</b> (art. 1747): numai după deschiderea ei, în formă <b>autentică</b> ad validitatem.'
+        ]
+      },
       { icon:'⚠️', title:'Garanțiile vânzătorului (evicțiune + vicii)',
         items:[
           '<b>Garanția pentru evicțiune</b> (art. 1695–1718 NCC): vânzătorul garantează că cumpărătorul nu va fi tulburat în exercitarea dreptului. <b>Prin fapta proprie</b>: clauza de exonerare = nulă absolut. <b>Prin fapta terților</b>: clauza de exonerare e valabilă dacă e expresă.',
@@ -2125,7 +2135,8 @@ var FISE_RECALL={
     'Evicțiunea totală: ce poate cere cumpărătorul de la vânzătorul de bună-credință (art. 1700 NCC)?',
     'Dreptul de preempțiune la terenuri agricole (Legea 17/2014): ordinea de preferință și termenul de exercitare.',
     'Aplicație: vânzătorul a ascuns intenționat o crăpătură în fundație. Cumpărătorul o descoperă după 2 ani. Ce acțiuni are și în ce termen?',
-    'Pactul de opțiune vs. promisiunea de vânzare-cumpărare: diferența față de irevocabilitate și posibilitatea transmiterii dreptului.',
+    '⚠️ La grilă: pactul de opțiune vs. promisiunea bilaterală — la care se formează contractul prin simpla acceptare și la care e nevoie de hotărâre care ține loc de contract? Termenul special de prescripție la promisiune (6 luni — nu 3 ani!)?',
+    '⚠️ La grilă: la vânzarea cu rezerva proprietății, riscul pieirii fortuite trece la cumpărător de la plata integrală sau de la PREDARE (art. 1755 — excepție de la art. 1274)? Vânzarea pe încercate vs. pe gustate: care e sub condiție suspensivă și la care contractul nici nu s-a format?',
     '⚠️ La grilă: vânzarea bunului altuia (art. 1683) — contract valabil sau anulabil sub NCC? Ce remediu are cumpărătorul la neexecutare și ce se întâmplă automat dacă vânzătorul dobândește ulterior proprietatea?',
     '⚠️ La grilă: bunul vândut piere fortuit după transferul proprietății dar înainte de predare — cine suportă riscul (art. 1274)? Care e singura excepție (creditorul pus în întârziere)?',
     'Donația — revocarea: care sunt cele DOUĂ cauze legale (art. 1020)? De ce „survenirea de copil" e capcană? Donația între soți: până când e revocabilă (art. 1031)?',
