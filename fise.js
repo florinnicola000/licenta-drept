@@ -348,7 +348,8 @@ var FISE_DATA = [
           '<b>Proprietatea anulabilă</b>: dobândită printr-un act anulabil; dacă actul e anulat, dreptul revine. Terțul dobânditor cu titlu oneros, de bună-credință, înscris în CF → protejat.',
           '<b>Coproprietatea obișnuită</b>: rezultă din acte juridice sau lege; fiecare are o cotă ideală; poate fi cerut oricând partajul.',
           '<b>Devălmășia</b>: soții nu au cote determinate; specifică comunității legale. Partajul se face la desfacerea/încetarea căsătoriei sau în timpul căsătoriei prin schimb de regim matrimonial.',
-          '<b>Coproprietatea forțată</b> (art. 646 NCC): bunuri comune inerente (scări, fundații, pereți despărțitori, hotarele comune) — nu se poate cere partajul; cotele urmează loturile.'
+          '<b>Coproprietatea forțată</b> (art. 646 NCC): bunuri comune inerente (scări, fundații, pereți despărțitori, hotarele comune) — nu se poate cere partajul; cotele urmează loturile.',
+          '<b>Proprietatea periodică</b> (art. 646–658 NCC): formă de coproprietate forțată în care fiecare coproprietar exercită în mod exclusiv prerogativele dreptului de proprietate pentru <b>perioade determinate</b>, ce se repetă succesiv și perpetuu (ex: time-sharing imobiliar). ⚠️ Nu există cote ideale permanente — fiecare titular are drept exclusiv pe <b>intervalul său temporal</b>; dreptul se poate înstrăina, ipoteca sau lăsa moștenire, dar numai în limitele perioadei respective. Nu se poate cere partajul care ar pune capăt periodicității.'
         ]
       },
       { icon:'🤝', title:'Regimul coproprietății pe cote-părți (art. 634–671 NCC)',
@@ -584,6 +585,15 @@ var FISE_DATA = [
           '⚠️ <b>Regula de aur</b>: verifici mai întâi gestiunea → plata nedatorată → în rem verso. Dacă există contract sau delict → nu se aplică niciunul.'
         ]
       },
+      { icon:'✍️', title:'Actul juridic unilateral ca izvor de obligații (art. 1324–1329 NCC)',
+        items:[
+          '<b>Definiție</b> (art. 1324 NCC): actul juridic săvârșit de o <b>singură parte</b> prin care aceasta se obligă față de altă persoană, independent de acceptarea acesteia. Nu e contract (bilateral) și nu e fapt juridic.',
+          '<b>Promisiunea publică de recompensă</b> (art. 1327 NCC): cel care promite în mod public o recompensă pentru executarea unei prestații e ținut să o plătească <b>oricui a executat-o</b>, chiar dacă nu a cunoscut promisiunea. Revocabilă numai printr-o publicitate similară și <b>înainte</b> de executare; dacă prestația a fost deja executată → obligația subzistă.',
+          '<b>Promisiunea publică de a contracta</b> (art. 1330 NCC): cel care promite recompensă pentru executarea unei prestații determinate e obligat față de primul care o execută. ⚠️ Distincție față de ofertă: oferta de a contracta devine contract numai la <b>acceptare</b>; promisiunea publică de recompensă se execută independent de acceptare — efectul obligatoriu e unilateral.',
+          '<b>Recunoașterea datoriei</b>: actul prin care o persoană recunoaște că există o obligație față de altul; efecte probatorii și — la datoria prescrisă — dacă e neîndoielnică, poate constitui o renunțare la beneficiul prescripției împlinite.',
+          '⚠️ <b>Nu orice act unilateral e izvor de obligații</b>: testamentul, renunțarea la un drept = acte unilaterale, dar nu nasc obligații față de altcineva în același sens. Actul juridic unilateral obligatoriu trebuie să îndeplinească condițiile generale de validitate ale AJC (consimțământ, capacitate, obiect, cauză).'
+        ]
+      },
       { icon:'📢', title:'Obligația de informare și obligații speciale (art. 1182–1185 NCC)',
         items:[
           '<b>Obligația precontractuală de informare</b> (art. 1182 NCC): fiecare parte este obligată să furnizeze celeilalte <b>informațiile esențiale</b> pe care le cunoaște și pe care cealaltă le ignoră și nu are posibilitatea rezonabilă să le afle singură. Se aplică în special în contractele de adeziune, contractele cu consumatorii și contractele cu profesioniști.',
@@ -665,6 +675,15 @@ var FISE_DATA = [
     id:'w10', wk:'W10', dates:'31 aug–6 sep', subj:'civ',
     title:'Executarea, plata, solidaritatea + protecția creditorului',
     sections:[
+      { icon:'🔍', title:'Interpretarea contractului (art. 1266–1269 NCC)',
+        items:[
+          '<b>Criteriul subiectiv — voința reală</b> (art. 1266 NCC): contractele se interpretează după <b>voința concordantă a părților</b>, nu după sensul literal al termenilor. Judecătorul cercetează voința reală, ținând seama de natura contractului, circumstanțele încheierii, conduita ulterioară a părților și practicile statornicite între ele.',
+          '<b>Interpretarea sistematică</b> (art. 1267 NCC): clauzele unui contract se interpretează unele prin altele, dând fiecăreia înțelesul ce rezultă din <b>ansamblul contractului</b>. O clauză izolată nu se interpretează detașat — înțelesul ei e dat de context.',
+          '<b>Principiul efectului util</b> (<i>favor negotii</i>, art. 1268 NCC): clauza susceptibilă de mai multe înțelesuri se interpretează în sensul ce produce un <b>efect util</b>, nu în cel ce n-ar produce niciun efect. Preferință pentru interpretarea care validează contractul față de cea care îl golește de conținut.',
+          '<b>Regula <i>contra proferentem</i></b> (art. 1269 NCC): în caz de îndoială iremediabilă, contractul se interpretează <b>împotriva celui care a propus clauza</b> și <b>în favoarea celui care s-a obligat</b>. ⚠️ La contractele de adeziune și la contractele cu consumatorii, clauza neclară se interpretează în favoarea aderentului/consumatorului — principiu preluate de Legea 193/2000.',
+          '⚠️ <b>Interpretarea vs. modificarea contractului</b>: instanța <b>nu poate modifica</b> conținutul contractului sub aparența interpretării — se urmărește descoperirea voinței reale, nu corectura ei. Dacă voința reală a ambelor părți e clară, judecătorul nu poate înlocui această voință cu altceva invocând echitatea sau uzanțele.'
+        ]
+      },
       { icon:'💳', title:'Plata (art. 1469–1515 NCC)',
         items:[
           '<b>Cine poate plăti</b>: oricine, inclusiv un terț (excepție: obligații <i>intuitu personae</i> — numai debitorul). Terțul care plătește poate fi subrogat în drepturile creditorului.',
@@ -1212,6 +1231,15 @@ var FISE_DATA = [
     id:'w20', wk:'W20', dates:'9–15 nov', subj:'pen',
     title:'Cauze justificative, de neimputabilitate, concurs, recidivă, pedepse',
     sections:[
+      { icon:'⚖️', title:'Principiile răspunderii penale (art. 1–6 NCP)',
+        items:[
+          '<b>Principiul legalității</b> (art. 1–2 NCP): răspunderea penală se întemeiază <b>exclusiv</b> pe o faptă prevăzută de legea penală (<i>nullum crimen sine lege, nulla poena sine lege</i>); analogia în defavoarea infractorului e interzisă. Legea penală se interpretează strict.',
+          '<b>Principiul personalității</b>: răspunderea penală e personală — numai autorul faptei poate fi tras la răspundere. ⚠️ Moartea inculpatului = cauză de stingere a acțiunii penale (art. 16 lit. f CPP); răspunderea penală nu se transmite moștenitorilor. Persoana juridică răspunde penal distinct de persoanele fizice care au acționat în numele ei.',
+          '<b>Principiul inevitabilității</b> (egalitate în fața legii penale): oricine săvârșește o infracțiune trebuie să răspundă penal, fără privilegii sau discriminări; excepțiile (imunitate parlamentară, prezidențială) sunt expres și limitativ prevăzute de Constituție.',
+          '<b>Principiul <i>non bis in idem</i></b> (unicitate, art. 6 NCP): nimeni nu poate fi urmărit sau judecat de două ori pentru aceeași faptă dacă a intervenit o soluție definitivă. ⚠️ Aceeași faptă ≠ aceeași încadrare juridică — criteriul = identitatea conduitei materiale, nu a calificării juridice.',
+          '<b>Principiul individualizării</b> (art. 74 NCP): sancțiunile se aplică și se execută potrivit particularităților faptei și ale infractorului. Trei forme: (1) <b>legală</b> — legiuitorul fixează limitele; (2) <b>judiciară</b> — instanța stabilește pedeapsa concretă în limite; (3) <b>administrativă</b> — organele de executare adaptează regimul de executare la conduita condamnatului.'
+        ]
+      },
       { icon:'🛡️', title:'Cauze justificative (art. 18–22 NCP) — efect IN REM',
         items:[
           '<b>Legitima apărare</b> (art. 19): atacul = material, direct, imediat (iminent sau în curs), injust, față de sine/altul/interes general. Apărarea = necesară și <b>proporțională</b> cu atacul. Legitima apărare prezumată (art. 19 alin. 3): intruziune nocturnă în locuință — prezumție relativă.',
@@ -1686,7 +1714,9 @@ var FISE_DATA = [
           '<b>Ne bis in idem</b> (art. 6 CPP): nimeni nu poate fi urmărit sau judecat de două ori pentru aceeași faptă dacă există hotărâre definitivă (achitare, condamnare, clasare definitivă). ⚠️ Aceeași faptă ≠ aceeași încadrare juridică.',
           '<b>Dreptul la apărare</b> (art. 10 CPP): dreptul de a fi asistat de avocat ales; asistență juridică <b>obligatorie</b> din oficiu când suspectul/inculpatul e reținut/arestat, e minor, e internat, sau când legea prevede pentru infracțiune detențiunea pe viață ori închisoarea <b>mai mare de 5 ani</b> (art. 90 CPP — strict peste 5, nu ≥!).',
           '<b>Contradictorialitatea</b> (art. 8 CPP): fiecare parte trebuie să poată lua cunoștință de actele și probele celeilalte și să le poată combate. Camera preliminară: contradictorialitate limitată (probe strânse în urmărire).',
-          '<b>Publicitatea</b> (art. 352 CPP): judecata = publică în principiu; excepții (minorii, siguranța națională, viața privată). <b>Dreptul la interpret</b>: dacă inculpatul nu cunoaște limba română — interpret gratuit, din oficiu, în tot cursul procesului.'
+          '<b>Publicitatea</b> (art. 352 CPP): judecata = publică în principiu; excepții (minorii, siguranța națională, viața privată). <b>Dreptul la interpret</b>: dacă inculpatul nu cunoaște limba română — interpret gratuit, din oficiu, în tot cursul procesului.',
+          '<b>Separarea funcțiilor judiciare</b> (art. 3 CPP): procesul penal e structurat pe <b>patru funcții distincte</b>, exercitate de organe diferite: (1) urmărirea penală = Ministerul Public + organele de cercetare penală; (2) dispoziția asupra drepturilor și libertăților = judecătorul de drepturi și libertăți; (3) verificarea legalității trimiterii în judecată = judecătorul de cameră preliminară; (4) judecata = instanța de judecată. ⚠️ Același judecător NU poate exercita mai multe funcții în aceeași cauză — incompatibilitate absolută. Niciunul nu poate prelua atribuțiile altuia.',
+          '<b>Aplicarea legii procesuale în timp și spațiu</b> (art. 13–14 CPP): <b>în timp</b> — principiul <i>tempus regit actum</i>: legea procesual penală se aplică imediat; actele efectuate potrivit legii vechi rămân valabile, dar actele viitoare se fac după legea nouă. <b>În spațiu</b>: legea procesual penală română se aplică pe teritoriul României (inclusiv nave și aeronave cu pavilion/înmatriculare română); pentru infracțiunile comise în afara teritoriului → competența și procedura depind de principiile teritorialității, personalității, realității sau universalității prevăzute de NCP.'
         ]
       },
       { icon:'🔬', title:'Probele și excluderea lor (art. 97–103, 102 CPP)',
@@ -1714,7 +1744,20 @@ var FISE_DATA = [
           '⚠️ <b>Suspect ≠ inculpat</b>: suspectul poate fi audiat ca suspect; inculpatul = persoana față de care s-a pus în mișcare acțiunea penală. Inculpatul are drepturi procedurale suplimentare.',
           '<b>Organele de urmărire</b>: procurorul (conduce, supraveghează, poate efectua personal orice act) + organele de cercetare penală (poliția judiciară, organe speciale). Actele organelor de cercetare: supuse controlului procurorului.',
           '<b>Clasarea</b> (art. 16 CPP): fapta nu există; nu e prevăzută de legea penală; nu există probe că a comis-o suspectul; există o cauză justificativă sau de neimputabilitate; lipsește plângerea prealabilă; a intervenit prescripția, amnistia sau decesul. ⚠️ „Pericolul social" NU mai există ca noțiune (era vechiul cod) — gravitatea redusă se gestionează prin renunțarea la urmărire.',
-          '<b>Renunțarea la urmărire</b> (art. 318 CPP): la infracțiuni cu pedeapsă ≤7 ani, dacă nu e interes public; confirmare de judecătorul de cameră preliminară. <b>Trimiterea în judecată</b>: prin rechizitoriu, când sunt probe suficiente.'
+          '<b>Renunțarea la urmărire</b> (art. 318 CPP): la infracțiuni cu pedeapsă ≤7 ani, dacă nu e interes public; confirmare de judecătorul de cameră preliminară. <b>Trimiterea în judecată</b>: prin rechizitoriu, când sunt probe suficiente.',
+          '<b>Conducerea și supravegherea de procuror</b> (art. 300–305 CPP): procurorul <b>conduce și supraveghează</b> activitatea organelor de cercetare penală; poate prelua orice cauză, poate da instrucțiuni obligatorii, poate infirma actele nelegale ale organelor de cercetare. ⚠️ Organele de cercetare penală funcționează sub <b>autoritatea procurorului</b> — nu sunt independente de Ministerul Public în exercitarea atribuțiilor judiciare.',
+          '<b>Suspendarea urmăririi penale</b> (art. 312 CPP): când se constată că există o chestiune prealabilă (civilă, administrativă) de a cărei soluționare depinde soluția penală sau când suspectul/inculpatul suferă de o boală gravă. Reluarea: de îndată ce a încetat cauza de suspendare.',
+          '<b>Reluarea urmăririi penale</b> (art. 332–337 CPP): prin ordonanța procurorului, când au apărut fapte sau împrejurări noi ori când o cauză de clasare a încetat (ex. prescripția fusese întreruptă, plângerea prealabilă a fost reintrodusă). ⚠️ Reluarea în urma restituirii dosarului de judecătorul de cameră preliminară → procurorul reface actele desfiinațate sau completează urmărirea.',
+          '<b>Plângerea contra actelor și măsurilor de urmărire penală</b> (art. 336–339 CPP): orice persoană interesată poate face plângere <b>la procuror</b> (art. 336) împotriva actelor organelor de cercetare; procurorul ierarhic superior soluționează în 20 de zile. Dacă plângerea e respinsă sau nu se soluționează → <b>contestație la judecătorul de cameră preliminară</b> (art. 340 CPP); judecătorul admite plângerea (infirmă actul/soluția) sau o respinge.'
+        ]
+      },
+      { icon:'📋', title:'Actele procesuale și procedurale comune (art. 257–284 CPP)',
+        items:[
+          '<b>Citarea și comunicarea actelor</b> (art. 257–267 CPP): citarea = înștiințarea participantului să se prezinte la locul, ziua și ora arătate; obligatorie pentru inculpat, martor, expert, parte civilă. Modalități: prin agent procedural, poștă, telefon/email (dacă persoana și-a dat acordul). <b>Mandatul de aducere</b> (art. 265 CPP): înlocuitor al citației la persoana care refuză sau nu răspunde la citație; emis de procuror (în UP) sau judecător. ⚠️ Comunicarea hotărârilor penale se face la adresa indicată de parte.',
+          '<b>Termenele procesuale penale</b> (art. 268–271 CPP): <b>pe ore</b> — curge de la miezul nopții, ziua și ora de la care se calculează nu se socotesc; <b>pe zile</b> — sistemul exclusiv: ziua când termenul începe și ziua când se împlinește <b>nu se socotesc</b>; <b>pe luni/ani</b> — se împlinesc în ultima zi corespunzătoare. Termenul se prorogă dacă ultima zi cade sâmbătă, duminică sau sărbătoare legală. ⚠️ Diferit de dreptul civil: în penal se folosesc frecvent termene în ore (reținerea = 24h; contestația în camera preliminară = 3 zile).',
+          '<b>Cheltuielile judiciare</b> (art. 272–276 CPP): cheltuielile avansate de stat (onorariile experților, martorilor, translatorilor, avocaților din oficiu) + cheltuielile avansate de părți. <b>La condamnare</b>: inculpatul suportă cheltuielile judiciare ale statului; instanța stabilește și cheltuielile avansate de celelalte părți. <b>La achitare sau la încetarea procesului penal</b>: cheltuielile rămân în sarcina statului dacă nu se dovedesc cauze imputabile inculpatului.',
+          '<b>Nulitățile procesual penale</b> (art. 280–282 CPP): <b>Absolute</b> (art. 281): compunerea nelegală a completului; absența participării obligatorii a procurorului; nerespectarea asistanței juridice obligatorii; absența interpretului; publicitatea ședinței — pot fi invocate oricând, inclusiv din oficiu. <b>Relative</b> (art. 282): orice altă neregularitate; invocabile de cel prejudiciat cel mai târziu la încheierea procedurii respective; presupun producerea unui <b>prejudiciu</b> (<i>pas de nullité sans grief</i>). ⚠️ Nulitatea absolută NU operează automat — trebuie constatată de instanță.',
+          '<b>Amenda judiciară</b> (art. 283 CPP): sancțiune procesuală (nu penală!) aplicată pentru abateri judiciare: neprezentarea nejustificată a martorului/expertului, comportament necorespunzător față de organele judiciare, refuzul de a pune la dispoziție datele solicitate. Cuantum: <b>100–5.000 lei</b>. Se aplică prin <b>încheiere motivată</b>; contestație în <b>5 zile</b> de la comunicare la instanța ierarhic superioară. ⚠️ Amenda judiciară ≠ amenda penală (pedeapsă principală) — nu produce antecedente penale și nu apare în cazier.'
         ]
       },
       { icon:'🔒', title:'Măsurile preventive (art. 202–244 CPP)',
@@ -1723,7 +1766,9 @@ var FISE_DATA = [
           '<b>Controlul judiciar</b> și <b>controlul judiciar pe cauțiune</b>: nu implică privare de libertate; obligații impuse (interdicții, prezentare). Durata: câte <b>60 de zile</b>, prelungibil; total în urmărirea penală: <b>max 1 an</b> (pedeapsa prevăzută ≤5 ani) sau <b>max 2 ani</b> (pedeapsa mai mare) — art. 215¹ CPP.',
           '<b>Arestul la domiciliu</b> (art. 218 CPP): privare de libertate la adresă; durata = echivalată cu arestul preventiv; necesită mandat de la judecătorul de drepturi și libertăți. Poate fi înlocuit cu arest preventiv dacă e încălcat.',
           '<b>Arestul preventiv</b> în urmărire: inițial <b>30 de zile</b> (judecătorul de drepturi și libertăți); prelungibil cu câte 30; maxim total în urmărire = <b>180 de zile</b>. În judecată (primă instanță): verificare periodică la <b>60 de zile</b>; durata totală <b>nu poate depăși jumătatea maximului special</b> al pedepsei și în niciun caz <b>5 ani</b> (art. 239 CPP).',
-          'Condiții comune ale măsurilor preventive: probe/indicii rezonabile că a comis fapta + <b>una din condițiile speciale</b>: pericol public, pericol de fugă, obstacularea anchetei. Proporționalitate cu scopul urmărit.'
+          'Condiții comune ale măsurilor preventive: probe/indicii rezonabile că a comis fapta + <b>una din condițiile speciale</b>: pericol public, pericol de fugă, obstacularea anchetei. Proporționalitate cu scopul urmărit.',
+          '<b>Aplicarea provizorie a măsurilor de siguranță medicale</b> (art. 245–248 CPP): în cursul urmăririi penale/judecății, procurorul sau instanța poate dispune <b>obligarea provizorie la tratament medical</b> (art. 245 CPP — când făptuitorul suferă de o boală și prezintă pericol pentru ordinea publică) ori <b>internarea medicală provizorie</b> (art. 247 CPP — când e necesară internarea). Durată: câte <b>30 de zile</b>, prelungibilă; condiție esențială: <b>expertiză medico-legală psihiatrică</b>. ⚠️ Aceste măsuri nu sunt măsuri preventive propriu-zise — nu se înlocuiesc cu arest; scopul e medical (prevenirea pericolului), nu procesual (prezentarea la judecată/obstaculare).',
+          '<b>Măsurile asigurătorii, restituirea lucrurilor și restabilirea situației anterioare</b> (art. 249–256 CPP): <b>Măsurile asigurătorii</b> (sechestrul, poprirea) se dispun pentru garantarea executării pedepsei amenzii, confiscării sau reparării prejudiciului civil; se dispun de procuror (în UP) sau instanță (în judecată); se înscriu în CF dacă privesc imobile. <b>Restituirea lucrurilor</b> (art. 255 CPP): dacă bunurile ridicate nu sunt supuse confiscării → se restituie proprietarului. <b>Restabilirea situației anterioare</b> (art. 256 CPP): instanța poate desființa orice înscris falsificat sau poate dispune restabilirea situației materiale anterioare săvârșirii infracțiunii.'
         ]
       },
       { icon:'📂', title:'Judecata penală și căile de atac (art. 342–552 CPP)',
