@@ -113,6 +113,10 @@ function memWin(){
     +'#mem-win{text-align:center;background:var(--sf);border:1.5px solid var(--gr);border-radius:14px;padding:20px 16px;margin-top:14px}'
     +'#mem-win .mw-big{font-size:22px;font-weight:900;color:var(--gr);margin-bottom:6px}'
     +'#mem-win .mw-sub{font-size:13px;color:var(--sub);margin-bottom:14px;line-height:1.5}'
-    +'#mem-win button{background:var(--gr);color:#0f1b10;border:none;border-radius:22px;padding:10px 22px;font-size:14px;font-weight:800;cursor:pointer}';
+    +'#mem-win button{background:var(--gr);color:#0f1b10;border:none;border-radius:22px;padding:10px 22px;font-size:14px;font-weight:800;cursor:pointer}'
+    +'body.light .mem-back{border-color:#b9d0bb;color:#4a724d}'
+    +'body.light .mb-civ{color:#2e7d32}body.light .mb-pen{color:#c62828}'
+    +'body.light .mb-pciv{color:#00838f}body.light .mb-ppen{color:#8e24aa}'
+    +'body.light .mb-lat{color:#9a7d00}';
   var st=document.createElement('style'); st.textContent=css; document.head.appendChild(st);
 })();

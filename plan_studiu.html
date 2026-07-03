@@ -16,6 +16,9 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,sans-serif;min-height:100vh;padding-bottom:84px}
+body.light{--bg:#eef3ee;--sf:#ffffff;--sf2:#e2ece4;--lime:#163618;--txt:#163618;--sub:#5d7d61}
+body.light .notes-area,body.light #dict-search{background:#ffffff;color:var(--txt)}
+body.light #tw-prog{background:var(--sf2)}
 a{color:var(--gr);text-decoration:none}
 
 /* TOP */
@@ -1081,6 +1084,17 @@ const KEY = 'plan_ldr_v2';
 let ST = JSON.parse(localStorage.getItem(KEY)||'{}');
 if(!ST._examDate) ST._examDate = '2027-02-08';
 function save(){ localStorage.setItem(KEY,JSON.stringify(ST)); }
+
+// ── tema închisă/deschisă: preluată din setarea aplicației de grile (index.html) ──
+function applySharedTheme(){
+  try{
+    var st = JSON.parse(localStorage.getItem('ldr_progress_v2'))||{};
+    document.body.classList.toggle('light', !!(st.opts && st.opts.light));
+  }catch(e){}
+}
+applySharedTheme();
+window.addEventListener('storage', function(e){ if(e.key==='ldr_progress_v2') applySharedTheme(); });
+window.addEventListener('pageshow', applySharedTheme);
 
 const ALL_WEEKS = PHASES.flatMap(ph=>ph.months.flatMap(mo=>mo.weeks.map(w=>({wk:w, ph:ph, month:mo.m}))));
 
