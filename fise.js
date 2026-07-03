@@ -1957,7 +1957,8 @@ var FISE_TIPS={
     '<b>Clauza de inalienabilitate</b>: max <b>49 ani</b> + motiv licit și serios + publicitate pentru opozabilitate față de terți. Fără publicitate → inopozabilă terților de bună-credință.',
     '<b>Devălmășia</b> (bunuri comune ale soților): cotele nu sunt determinate → nu se poate urmări o cotă de creditorii unui soț. Diferit de coproprietatea pe cote-părți.',
     '<b>Abuzul de drept</b>: exercitare cu scopul exclusiv de a prejudicia, fără interes legitim propriu → răspundere delictuală, nu nulitate.',
-    'Proprietatea rezolubilă: la realizarea condiției rezolutorii, dreptul revine transmițătorului <b>retroactiv</b> (<i>resoluto iure dantis...</i>). Terții de bună-credință cu publicitate CF sunt protejați.'
+    'Proprietatea rezolubilă: la realizarea condiției rezolutorii, dreptul revine transmițătorului <b>retroactiv</b> (<i>resoluto iure dantis...</i>). Terții de bună-credință cu publicitate CF sunt protejați.',
+    '⚠️ <b>Proprietatea periodică</b> (art. 646–658 NCC): fiecare titular exercită drepturi exclusive pe <b>perioadele lui</b>, nu există cote ideale permanente. Grilă: „coproprietarul periodică nu are cotă ideală" = ADEVĂRAT; „poate cere partajul care să pună capăt periodicității" = FALS. Nu confunda cu coproprietatea obișnuită (unde există cote).'
   ],
   w06:[
     'Uzufructuarul are drept la <b>fructe</b> (produse periodic, fără a altera substanța). <b>Productele</b> (minereuri, material lemnos) revin <b>nudului proprietar</b>. Distincție frecventă la grile.',
@@ -1988,7 +1989,8 @@ var FISE_TIPS={
     'Accipiens de bună-credință care <b>s-a lipsit de titlu, a renunțat la garanții sau a lăsat să se prescrie</b> dreptul contra adevăratului debitor (art. 1342): <b>exonerat COMPLET</b> de restituire; solvensul are <b>regres contra adevăratului debitor</b>.',
     '⚠️ <b>Capcană — eroarea solvensului</b>: sub NCC eroarea <b>NU mai e condiție</b> a plății nedatorate (art. 1341 — era cerută de vechiul cod). Nu se restituie doar ce s-a plătit cu titlu de <b>liberalitate</b>. Grilă: „restituirea cere ca solvensul să fi plătit din eroare" = FALS.',
     'Utilitatea gestiunii se apreciază <b>la momentul actului</b>, nu după rezultat. Dacă la start actul era util dar a eșuat din cauze externe → geratul tot datorează cheltuielile.',
-    'Obligația de informare precontractuală (art. 1184–1185 NCC): încălcarea ei poate constitui <b>dol prin reticență</b> → anulabilitatea contractului + daune-interese.'
+    'Obligația de informare precontractuală (art. 1184–1185 NCC): încălcarea ei poate constitui <b>dol prin reticență</b> → anulabilitatea contractului + daune-interese.',
+    '⚠️ <b>Actul juridic unilateral izvor de obligații</b>: promisiunea publică de recompensă (art. 1327 NCC) obligă <b>indiferent de acceptare</b> — efectul obligatoriu e unilateral, nu contractual. Grilă: „promisiunea de recompensă devine obligatorie numai dacă cineva o acceptă" = FALS. Distincție: oferta de a contracta → devine contract numai la acceptare; promisiunea de recompensă → obligă de la publicare.'
   ],
   w09:[
     'Răspunderea <b>comitenților pentru prepuși</b>: prezumție <b>absolută (irefragabilă)</b> — nu poate fi răsturnată prin nicio probă. Comitentul nu se poate exonera dovedind că a selectat bine prepusul.',
@@ -2015,7 +2017,9 @@ var FISE_TIPS={
     'Oferta reală de plată + consemnațiune (art. 1510–1515 NCC): dacă creditorul refuză nejustificat, debitorul depune suma la o instituție de credit și e liberat din ziua consemnațiunii.',
     '⚠️ <b>Exceptio non adimpleti contractus</b>: se poate opune numai în contracte <b>sinalagmatice</b> cu executare <b>simultană</b>. Dacă grila spune „A refuză să plătească pentru că B nu a predat bunul" → excepție de neexecutare valabilă.',
     '⚠️ <b>Rezoluțiune vs. reziliere</b>: rezoluțiunea = efecte retroactive (ex tunc) + restituirea prestațiilor → pentru contracte cu executare instantanee. Rezilierea = efecte numai pentru viitor (ex nunc) → pentru contracte cu executare succesivă. Grilă: locațiunea anulată pentru neplatā = <b>reziliere</b>, nu rezoluțiune.',
-    '<b>Dreptul de retenție</b> ≠ garanție reală: creditorul retentor nu are prioritate la distribuirea prețului față de creditorii ipotecari. Beneficiul retenției = presiunea economică de a plăti, nu preferință de rang.'
+    '<b>Dreptul de retenție</b> ≠ garanție reală: creditorul retentor nu are prioritate la distribuirea prețului față de creditorii ipotecari. Beneficiul retenției = presiunea economică de a plăti, nu preferință de rang.',
+    '⚠️ <b>Interpretarea contractului</b> — regula <i>contra proferentem</i> (art. 1269 NCC): în caz de îndoială, contractul se interpretează împotriva celui care a propus clauza și în favoarea celui care s-a obligat. La contractele de adeziune / cu consumatorii → <b>întotdeauna</b> în favoarea aderentului/consumatorului. Grilă: „clauza ambiguă din contractul de adeziune se interpretează după voința celui care a redactat-o" = FALS.',
+    '⚠️ <b>Efectul util</b> (art. 1268 NCC): dacă o clauză are mai multe sensuri, se preferă cel care îi conferă un efect juridic față de cel care n-ar produce niciun efect. Grilă: „clauza cu mai multe înțelesuri se elimină din contract dacă creează ambiguitate" = FALS — se aplică interpretarea în sensul util.'
   ],
   w11:[
     'Cesiunea de creanță: <b>nu necesită acordul debitorului cedat</b>, CI notificarea sau acceptarea sa. Fără notificare, debitorul se poate libera plătind cedentului.',
@@ -2127,7 +2131,8 @@ var FISE_TIPS={
     '<b>Recidiva</b>: primul termen = condamnare la închisoare <b>mai mare de 1 an</b> (strict peste!); al doilea = infracțiune cu pedeapsă legală ≥1 an. Condamnare de 6 luni sau 1 an fix → nu e recidivă, ci <b>pluralitate intermediară</b> (regulile concursului). ⚠️ Efecte diferite: postcondamnatorie → <b>cumul ARITMETIC</b> (pedepsele se adună!); postexecutorie (până la reabilitare, nu „3 ani") → limitele <b>+1/2</b>.',
     '⚠️ <b>Capcana atenuantelor</b> (art. 76): odată reținute, limitele speciale se <b>reduc OBLIGATORIU cu 1/3</b> — nu „instanța poate coborî sub minim" (vechiul cod). Agravantele (art. 78): spor facultativ până la 2 ani (max 1/3 din maxim). Concurs atenuante + agravante (art. 79): se aplică <b>succesiv</b> — întâi reducerea, apoi majorarea; nu „se compensează la aprecierea instanței".',
     '<b>Recunoașterea învinuirii</b> (art. 396 alin. 10 CPP) = cauză legală de <b>reducere a limitelor</b>: cu 1/3 la închisoare, 1/4 la amendă (nu e circumstanță atenuantă propriu-zisă — nu se cumulează regimul).',
-    '⚠️ <b>Liberarea condiționată</b>: fracții după cuantum — <b>2/3</b> (pedeapsă ≤10 ani) / <b>3/4</b> (>10 ani); cu munca prestată: 1/2, respectiv 2/3. NCP <b>nu</b> diferențiază după recidivă (aceea era regula veche).'
+    '⚠️ <b>Liberarea condiționată</b>: fracții după cuantum — <b>2/3</b> (pedeapsă ≤10 ani) / <b>3/4</b> (>10 ani); cu munca prestată: 1/2, respectiv 2/3. NCP <b>nu</b> diferențiază după recidivă (aceea era regula veche).',
+    '⚠️ <b>Principiile răspunderii penale — capcane</b>: principiul personalității = răspunderea nu se transmite; dacă inculpatul moare → stinge acțiunea penală (art. 16 lit. f CPP). Principiul <i>non bis in idem</i> se raportează la <b>fapta materială</b>, nu la încadrarea juridică — re-judecata pentru aceeași conduită cu altă calificare = inadmisibilă. Individualizarea are 3 forme: legală (limite), judiciară (concretă), administrativă (executare).'
   ],
 
   w21:[
@@ -2221,7 +2226,10 @@ var FISE_TIPS={
     '<b>Calea de atac în penal</b>: <b>apelul</b> (art. 408 CPP) — calea ordinară, se face în <b>10 zile</b> de la comunicarea copiei minutei (nu de la pronunțare!). Contestația: cale de atac împotriva unor încheieri (nu a sentinței).',
     '<b>Judecata în lipsă</b> (contumace): în noul CPP, judecata se poate desfășura fără inculpat dacă acesta e legal citat și se sustrage. Condamnarea în lipsă → inculpatul poate solicita rejudecarea la întoarcerea/prinderea sa.',
     '⚠️ <b>Capcana reabilitării judecătorești</b> (art. 166 NCP): termene <b>FIXE</b> — 4 ani (condamnări 2–5 ani), 5 ani (5–10), 7 ani (>10 sau DPV comutată). Formula „termen + jumătate din durata pedepsei" = <b>vechiul cod</b>, răspuns greșit! Iar DPV <b>comutată/înlocuită</b> ARE reabilitare judecătorească.',
-    '⚠️ După reabilitare, condamnarea <b>nu mai poate fi prim termen al recidivei</b> (art. 41: recidiva există doar „până la reabilitare sau împlinirea termenului de reabilitare").'
+    '⚠️ După reabilitare, condamnarea <b>nu mai poate fi prim termen al recidivei</b> (art. 41: recidiva există doar „până la reabilitare sau împlinirea termenului de reabilitare").',
+    '⚠️ <b>Separarea funcțiilor judiciare</b> (art. 3 CPP): același judecător NU poate exercita două funcții în aceeași cauză. Grilă: „judecătorul de drepturi și libertăți care a dispus arestul poate judeca fondul" = FALS (incompatibilitate absolută). Cele 4 funcții: urmărire penală (parchet) / drepturi și libertăți (JDL) / cameră preliminară (JCP) / judecată (instanță).',
+    '⚠️ <b>Nulitățile în penal</b>: nulitatea absolută NU operează de drept — trebuie constatată; poate fi invocată oricând și din oficiu. Nulitatea relativă → principiul <i>pas de nullité sans grief</i>: e necesară dovedirea unui prejudiciu concret, nu orice neregularitate duce la nulitate. Grilă: „orice încălcare procesuală atrage nulitatea actului" = FALS.',
+    '⚠️ <b>Amenda judiciară ≠ amenda penală</b>: amenda judiciară (art. 283 CPP) e sancțiune procesuală pentru abateri judiciare (100–5.000 lei); nu apare în cazier, nu e pedeapsă principală. Grilă: „martorul care refuză să depună mărturie poate fi condamnat la amendă penală" = FALS; sancțiunea e amenda judiciară.'
   ],
   tlt:[
     '⚠️ <b>Capcana apelului</b>: apelul civil = <b>30 de zile</b> de la <i>comunicarea hotărârii</i>; apelul penal = <b>10 zile</b> de la comunicarea <i>minutei</i>. Dacă grila pune 30 zile la penal sau 10 zile la civil → greșit.',
@@ -2291,7 +2299,8 @@ var FISE_RECALL={
     'Accesiunea imobiliară artificială — constructorul de rea-credință pe terenul altuia: ce poate cere proprietarul terenului?',
     'La grilă: proprietarul poate restricționa exercițiul atributelor propriului drept? Enumeră 2 limitări legale.',
     '⚠️ La grilă: partajul — de când produce efecte sub NCC (art. 680)? La imobile, ce formalitate suplimentară e necesară? De ce răspunsul „retroactiv, de la nașterea coproprietății" e greșit?',
-    'Avulsiunea vs. aluviunea: care e treptată și care bruscă? În ce termen poate revendica proprietarul fondului de origine bucata de teren ruptă (1 an) și ce se întâmplă la expirare?'
+    'Avulsiunea vs. aluviunea: care e treptată și care bruscă? În ce termen poate revendica proprietarul fondului de origine bucata de teren ruptă (1 an) și ce se întâmplă la expirare?',
+    'Proprietatea periodică (art. 646–658 NCC): cum se deosebește de coproprietatea obișnuită? Există cote ideale? Se poate cere partajul care să pună capăt periodicității? Dă un exemplu concret (time-sharing).'
   ],
   w06:[
     'Enumeră cele 4 dezmembrăminte ale dreptului de proprietate și caracteristica esențială a fiecăruia.',
@@ -2321,7 +2330,9 @@ var FISE_RECALL={
     'Ce poate cere gerantul de la gerat la finalul gestiunii? Dar dacă gestiunea era contrară voinței cunoscute a geratului — ce se modifică?',
     'Plata nedatorată (art. 1341 NCC): condiții + diferența de regim între accipiens de bună-credință vs. rea-credință privind restituirea.',
     'Îmbogățirea fără justă cauză — actio de in rem verso: cele 4 condiții cumulative, de ce e subsidiară și care e limita restituirii.',
-    'Aplicație: A plătește din greșeală 5.000 lei lui B, deși datoria aparținea lui C. Ce acțiune are A și împotriva cui: B sau C? De ce?'
+    'Aplicație: A plătește din greșeală 5.000 lei lui B, deși datoria aparținea lui C. Ce acțiune are A și împotriva cui: B sau C? De ce?',
+    'Actul juridic unilateral ca izvor de obligații (art. 1324–1327 NCC): dă 3 exemple. La promisiunea publică de recompensă — cine poate pretinde recompensa și e nevoie de o „acceptare" prealabilă? Când se poate revoca promisiunea?',
+    '⚠️ La grilă: oferta de a contracta vs. promisiunea publică de recompensă — prin ce diferă efectul obligatoriu față de momentul nașterii obligației? La care are importanță acceptarea?'
   ],
   w09:[
     'Enumeră și explică succint cele 4 condiții cumulative ale răspunderii civile delictuale.',
@@ -2344,7 +2355,9 @@ var FISE_RECALL={
     'Rezoluțiunea vs. rezilierea: definiție + efecte temporale (ex tunc vs. ex nunc) + când se aplică fiecare?',
     'Aplicație: A nu livrează marfa la termen. B refuză să plătească prețul. Ce excepție invocă B? Dacă A continuă să nu livreze, ce altă cale are B?',
     'La grilă: dreptul de retenție — e garanție reală? Dă preferință la distribuirea prețului? Poate retentorul opri urmărirea silită pornită de alt creditor (art. 2498)?',
-    'Pactul comisoriu (art. 1553): ce condiție de valabilitate are (indicarea expresă a obligațiilor) și când mai e necesară punerea în întârziere? De ce „gradele I–IV" sunt capcană?'
+    'Pactul comisoriu (art. 1553): ce condiție de valabilitate are (indicarea expresă a obligațiilor) și când mai e necesară punerea în întârziere? De ce „gradele I–IV" sunt capcană?',
+    'Interpretarea contractului — enumeră cele 4 reguli din art. 1266–1269 NCC: criteriul subiectiv (voința reală), interpretarea sistematică, principiul efectului util și regula contra proferentem. La care din ele se adaugă o regulă specială pentru contractele de adeziune?',
+    '⚠️ La grilă: clauza ambiguă dintr-un contract de adeziune → se interpretează în favoarea cui (aderentului) și pe ce temei? Poate instanța să modifice conținutul contractului sub aparența „interpretării" (nu — de ce)?'
   ],
   w11:[
     'Enumeră cel puțin 6 moduri de stingere a obligațiilor (art. 1615 NCC).',
@@ -2446,7 +2459,9 @@ var FISE_RECALL={
     '⚠️ La grilă: amnistia vs. grațierea — care înlătură răspunderea și care doar executarea? Care lasă condamnarea în cazier (prim termen de recidivă)? Vreo una afectează măsurile de siguranță sau despăgubirile civile (NU)?',
     '⚠️ La grilă: retragerea plângerii prealabile (până la hotărârea definitivă) vs. împăcarea (până la citirea actului de sesizare) — termene diferite! Împăcarea e posibilă la orice infracțiune sau doar unde legea o prevede expres?',
     '⚠️ La grilă: recidiva postcondamnatorie — pedepsele se contopesc (cumul juridic) sau se ADUNĂ (cumul aritmetic, art. 43 al. 1)? Recidiva postexecutorie — până când există starea de recidivă și ce efect are (limite +1/2)?',
-    'Liberarea condiționată: fracțiile obligatorii (2/3 la pedepse ≤10 ani; 3/4 la >10 ani; cu muncă 1/2 / 2/3), condițiile suplimentare și ce se întâmplă la o nouă infracțiune intenționată în termenul de supraveghere.'
+    'Liberarea condiționată: fracțiile obligatorii (2/3 la pedepse ≤10 ani; 3/4 la >10 ani; cu muncă 1/2 / 2/3), condițiile suplimentare și ce se întâmplă la o nouă infracțiune intenționată în termenul de supraveghere.',
+    'Principiile răspunderii penale (art. 1–6 NCP): enumeră cele 5 principii și explică pe scurt fiecare. La principiul personalității — ce se întâmplă cu acțiunea penală dacă inculpatul moare în cursul judecății?',
+    '⚠️ La grilă: principiul individualizării răspunderii penale are 3 forme — care sunt și cine le realizează? De ce „legea fixează o pedeapsă fixă pentru fiecare infracțiune" ar contrazice individualizarea judiciară?'
   ],
   w21:[
     'Omorul simplu vs. omorul calificat (art. 189 NCP): enumeră cel puțin 4 forme calificate.',
@@ -2535,7 +2550,12 @@ var FISE_RECALL={
     '⚠️ La grilă: reabilitarea judecătorească — termenele sunt fixe (4/5/7 ani) sau „termen + jumătate din durata pedepsei" (capcană — vechiul cod)? DPV comutată are reabilitare? Ce efect are reabilitarea asupra recidivei?',
     'Excluderea probelor (art. 102): ce probe se exclud, în ce fază se verifică (camera preliminară) și ce sunt probele derivate („fructul pomului otrăvit")? Loialitatea probei (art. 101): 3 procedee interzise.',
     '⚠️ La grilă: la achitare pentru „fapta nu există" vs. la încetare pentru prescripție — ce face instanța penală cu acțiunea civilă (respinge vs. lasă nesoluționată)? Până când se poate constitui parte civilă?',
-    'Necompetența în procesul penal: cea materială/după calitate se invocă până când (tot cursul judecății)? Dar cea teritorială (începerea cercetării judecătorești)? Reunirea cauzelor: când e obligatorie?'
+    'Necompetența în procesul penal: cea materială/după calitate se invocă până când (tot cursul judecății)? Dar cea teritorială (începerea cercetării judecătorești)? Reunirea cauzelor: când e obligatorie?',
+    'Separarea funcțiilor judiciare (art. 3 CPP): enumeră cele 4 funcții și organele care le exercită. De ce judecătorul de drepturi și libertăți nu poate judeca fondul cauzei în care a dispus o măsură preventivă?',
+    'Actele procesuale și procedurale comune — schema: citarea (ce e mandatul de aducere și când se emite?), termenele pe zile (sistem exclusiv — explică), nulitățile absolute vs. relative (câte un exemplu pentru fiecare), amenda judiciară (cuantum + contestație).',
+    '⚠️ La grilă: nulitatea absolută în procesul penal operează de drept sau trebuie constatată de instanță? Cine o poate invoca și până când? Ce înseamnă concret „pas de nullité sans grief" la nulitățile relative?',
+    'Plângerea contra actelor de urmărire penală (art. 336–340 CPP): la cine se face mai întâi, în ce termen, și dacă procurorul ierarhic o respinge — ce cale mai are persoana interesată?',
+    'Măsurile asigurătorii (art. 249 CPP): ce bunuri se sechestrează, cine dispune în cursul UP vs. în judecată, și ce se întâmplă cu sechestrul dacă inculpatul e achitat?'
   ],
   tlt:[
     '⚠️ Capcana termenelor de apel: civil (30 de zile de la comunicarea hotărârii) vs. penal (10 zile de la comunicarea copiei minutei) vs. ordonanța președințială (5 zile). Care curge de unde?',
