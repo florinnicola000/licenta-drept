@@ -658,6 +658,8 @@ var FISE_DATA = [
           '<b>Rezoluțiunea</b> (art. 1549 NCC): desființarea retroactivă a contractului sinalagmatic pentru neexecutare culpabilă a uneia din obligațiile esențiale. Efect: <i>ex tunc</i> (retroactiv), restituirea prestațiilor. La alegerea creditorului: rezoluțiune judiciară (prin instanță) sau extrajudiciară (notificare de rezoluțiune cu termen de grație — art. 1552 NCC).',
           '<b>Rezilierea</b> (art. 1549 alin. 2 NCC): desființarea contractelor cu executare succesivă <b>numai pentru viitor</b> (<i>ex nunc</i>). ⚠️ Rezoluțiunea = efecte retroactive (ex tunc); rezilierea = efecte numai pentru viitor (ex nunc).',
           '<b>Pactul comisoriu</b> (art. 1553 NCC): clauza prin care rezoluțiunea/rezilierea operează <b>de drept</b> la neexecutare. Condiție de valabilitate: indicarea <b>expresă</b> a obligațiilor a căror neexecutare o atrage. Punerea în întârziere e necesară, <i>afară de cazul</i> în care s-a convenit că rezoluțiunea rezultă din <b>simplul fapt al neexecutării</b>. ⚠️ <b>Capcană</b>: clasificarea „pacte de gradul I–IV" e doctrina <b>vechiului cod</b> — NCC nu o mai folosește.',
+          '<b>Denunțarea unilaterală</b> (art. 1276–1277 NCC): la contractele pe durată <b>nedeterminată</b>, oricare parte poate denunța <b>oricând</b>, cu preaviz rezonabil — clauza contrară se consideră <b>nescrisă</b>. La contractele cu executare succesivă, denunțarea produce efecte numai pentru viitor; prestația-preț al denunțării (clauza de dezicere) e valabilă. Frecvent la grile: denunțarea NU e sancțiune (nu cere neexecutare) — spre deosebire de rezoluțiune.',
+          '<b>Executarea silită în natură</b> (art. 1527–1529 NCC): creditorul poate cere <b>întotdeauna</b> executarea în natură, cu excepția cazului când e imposibilă; include repararea/înlocuirea bunului. Obligația de a face care poate fi îndeplinită de altul → creditorul autorizat s-o execute pe cheltuiala debitorului; obligațiile de a da sume de bani se execută întotdeauna în natură (poprire, urmărire).',
           '<b>Dreptul de retenție</b> (art. 2495 NCC): creditorul care deține un bun al debitorului poate refuza restituirea lui până la plata integrală a cheltuielilor făcute cu conservarea sau îmbunătățirea bunului. ⚠️ Nu conferă drept de urmărire sau de preferință. Opozabil terților <b>fără nicio formalitate de publicitate</b> (art. 2498 NCC), dar retentorul <b>nu se poate opune urmăririi silite</b> pornite de alt creditor — participă doar la distribuirea prețului.'
         ]
       },
@@ -1153,7 +1155,18 @@ var FISE_DATA = [
           '<b>Pedepse complementare</b>: interzicerea exercitării unor drepturi (1–5 ani); degradarea militară; publicarea hotărârii de condamnare. <b>Pedepse accesorii</b>: decurg de drept din pedeapsa cu închisoarea, pe durata executării.',
           '<b>Renunțarea la aplicarea pedepsei</b> (art. 80 NCP): instanța constată vinovăția dar nu aplică pedeapsă; condiții — gravitate redusă, nicio condamnare anterioară, repararea prejudiciului. Nu produce antecedente penale.',
           '<b>Amânarea aplicării pedepsei</b> (art. 83 NCP): pedeapsa e stabilită dar amânată pe <b>2 ani</b> sub supraveghere; dacă nu comite o nouă infracțiune intenționată → instanța poate anula pedeapsa. Dacă revocată → pedeapsa se aplică.',
-          '<b>Suspendarea sub supraveghere</b> (art. 91 NCP): pedeapsa e aplicată dar nu se execută; termen de supraveghere = <b>2–4 ani</b>. Condiții: pedeapsă ≤3 ani; nicio condamnare anterioară. Revocare: nouă infracțiune sau nerespectare obligații.'
+          '<b>Suspendarea sub supraveghere</b> (art. 91 NCP): pedeapsa e aplicată dar nu se execută; termen de supraveghere = <b>2–4 ani</b>. Condiții: pedeapsă ≤3 ani; nicio condamnare anterioară. Revocare: nouă infracțiune sau nerespectare obligații.',
+          '⚠️ <b>Revocare ≠ anulare</b> (la amânare și suspendare) — capcană frecventă: <b>revocarea</b> = pentru ce se întâmplă <b>în termenul de supraveghere</b> (nouă infracțiune, neîndeplinirea obligațiilor); <b>anularea</b> = se descoperă că <b>înainte de acordare</b> condamnatul mai săvârșise o infracțiune pentru care condițiile nu erau îndeplinite — beneficiul cade retroactiv și se aplică regulile concursului/recidivei.'
+        ]
+      },
+      { icon:'🛑', title:'Măsurile de siguranță (art. 107–112¹ NCP)',
+        items:[
+          '<b>Scop și temei</b> (art. 107): înlăturarea unei <b>stări de pericol</b> și preîntâmpinarea faptelor prevăzute de legea penală. ⚠️ Se pot lua și față de persoana care NU răspunde penal (fapta nejustificată, chiar neimputabilă) — nu presupun o condamnare!',
+          '<b>Obligarea la tratament medical</b> (art. 109) și <b>internarea medicală</b> (art. 110): pentru boală/consum de substanțe care creează pericol; durata — până la însănătoșire/ameliorare (nedeterminată, cu verificare periodică).',
+          '<b>Interzicerea ocupării unei funcții sau exercitării unei profesii</b> (art. 111): când fapta s-a comis din cauza incapacității/nepregătirii în exercitarea acelei funcții/profesii/meserii. ⚠️ <b>Revocarea</b>: la cerere, după cel puțin <b>1 an</b>, dacă temeiurile au încetat; o nouă cerere de revocare — numai după 1 an de la respingere.',
+          '<b>Confiscarea specială</b> (art. 112): bunurile produse prin fapta penală; folosite/destinate la comitere; date pentru a determina comiterea; dobândite prin faptă. Dacă bunul nu se găsește → confiscarea <b>prin echivalent</b> (bani/bunuri).',
+          '<b>Confiscarea extinsă</b> (art. 112¹): pentru infracțiuni cu folos patrimonial și pedeapsă ≥4 ani; valoarea bunurilor dobândite în ultimii <b>5 ani</b> depășește vădit veniturile licite; instanța verifică și bunurile transferate apropiaților. ⚠️ Nu poate depăși diferența dintre averea dobândită și veniturile licite.',
+          '⚠️ <b>La grilă</b>: măsurile de siguranță ≠ pedepse complementare — nu depind de gravitatea faptei, ci de starea de pericol; se pot cumula cu orice pedeapsă și se iau chiar fără condamnare (excepție: confiscarea extinsă cere condamnare).'
         ]
       },
       { icon:'🔓', title:'Liberarea condiționată (art. 99–106 NCP)',
@@ -1398,6 +1411,15 @@ var FISE_DATA = [
           '<b>Revizuirea</b> (art. 509 NCPC): cale de <b>retractare</b>; motive principale: înscrisuri <b>noi</b>, reținute de partea potrivnică sau imposibil de prezentat; condamnarea definitivă a martorului/expertului pentru mărturie mincinoasă; <b>hotărâri definitive potrivnice</b>; obiectul pricinii nu se mai află în ființă; hotărâre CEDO de constatare a încălcării. Termen de regulă: <b>1 lună</b> (calculat diferit după motiv).'
         ]
       },
+      { icon:'⏲️', title:'Termenele procedurale și nulitatea actelor de procedură (art. 174–186 NCPC)',
+        items:[
+          '<b>Calculul termenelor</b> (art. 181): termenul pe <b>zile</b> se calculează pe <b>zile libere</b> — nu intră nici ziua de început, nici ziua de împlinire! Termenul pe ore începe la miezul nopții următoare; pe ani/luni/săptămâni — se împlinește în ziua corespunzătoare. Termenul care se sfârșește într-o zi nelucrătoare → se prelungește până la prima zi lucrătoare.',
+          '<b>Neîndeplinirea în termen</b> → <b>decădere</b> (art. 185): actul făcut peste termen e lovit de nulitate. <b>Repunerea în termen</b> (art. 186): motive temeinice justificate + actul îndeplinit în <b>15 zile</b> de la încetarea împiedicării (cererea de repunere în același termen).',
+          '<b>Nulitatea actelor de procedură</b> (art. 174–179): <b>condiționată</b> de vătămare (regula — art. 175: nulitatea operează doar dacă s-a produs o vătămare ce nu poate fi înlăturată altfel) vs. <b>necondiționată</b> (art. 176: capacitate, reprezentare, competență, compunerea instanței, publicitate, alte cerințe expres prevăzute — vătămarea se prezumă).',
+          '⚠️ <b>La grilă</b>: nulitatea actului de procedură nu operează de drept — trebuie <b>invocată</b> (absolută: oricând în proces, de oricine; relativă: de partea vătămată, la termenul la care s-a săvârșit neregularitatea sau la următorul). Actul nul poate fi <b>refăcut</b>; nulitatea unui act atrage și actele următoare doar dacă nu pot avea existență de sine stătătoare.',
+          '<b>Reprezentarea în proces</b>: mandatul judiciar dat unui <b>avocat</b> se prezumă dat pentru toate actele procesuale (poate fi restrâns expres); mandatarul <b>neavocat</b> nu poate pune concluzii asupra excepțiilor/fondului decât prin avocat (excepții: licențiat în drept pentru rude, mandatarul soț/rudă). Renunțarea la judecată/drept, tranzacția — cer procură <b>specială</b>.'
+        ]
+      },
       { icon:'⚡', title:'Ordonanța președințială (art. 997–1002 NCPC)',
         items:[
           '<b>Definiție și scop</b>: procedură urgentă prin care instanța poate dispune <b>măsuri provizorii</b> în cazuri grabnice, fără a prejudeca fondul cauzei și fără a-l leza pe pârât printr-o hotărâre definitivă. Caracterul provizoriu e esențial — hotărârea se poate modifica sau desființa dacă se schimbă împrejurările.',
@@ -1506,6 +1528,15 @@ var FISE_DATA = [
           '<b>Excluderea probelor</b> (art. 102 CPP): probele obținute în mod nelegal — prin încălcarea dispoziților legale — nu pot fi folosite în procesul penal. ⚠️ Excluderea nu e automată pentru orice neregularitate — doar pentru încălcarea drepturilor fundamentale sau a normelor esențiale de procedură; instanța apreciază.',
           '<b>Teoria fructului pomului otrăvit</b>: probele derivate dintr-o probă exclusă sunt și ele excluse dacă nu ar fi existat fără proba nelegală — cu excepția că ar fi putut fi descoperite oricum, independent.',
           '<b>Aprecierea probelor</b> (art. 103 CPP): judecătorul le apreciază <b>liber</b>, conform convingerii sale intime, bazat pe ansamblul probelor administrate. ⚠️ Nicio probă nu are valoare prestabilită (chiar și mărturisirea poate fi contestată). Condamnarea se pronunță <b>dincolo de orice dubiu rezonabil</b>.'
+        ]
+      },
+      { icon:'⚖️', title:'Acțiunea civilă în procesul penal + competența (art. 19–28, 35–63 CPP)',
+        items:[
+          '<b>Acțiunea civilă</b> (art. 19–20): persoana vătămată se poate <b>constitui parte civilă</b> până la <b>începerea cercetării judecătorești</b>; repararea — în natură sau prin despăgubiri. Poate opta și pentru instanța civilă (electa una via — alegerea făcută e în principiu irevocabilă).',
+          '⚠️ <b>La grilă — soarta acțiunii civile</b> (art. 25–26): la <b>achitare</b> pentru că fapta nu există / nu a fost comisă de inculpat → acțiunea civilă se <b>respinge</b>; la achitare pe alte temeiuri (ex. lipsă vinovăție penală, caz fortuit... ) sau la <b>încetarea</b> procesului (prescripție, retragerea plângerii, amnistie) → instanța penală <b>lasă nesoluționată</b> acțiunea civilă — partea o poate duce la instanța civilă.',
+          '<b>Competența materială penală</b>: judecătoria = plenitudine în primă instanță; <b>tribunalul</b> = infracțiunile cu victime decedate (omor etc.), traficul de droguri/persoane, spălarea banilor ș.a.; <b>curtea de apel</b> și <b>ÎCCJ</b> = după calitatea persoanei (magistrați, parlamentari...).',
+          '<b>Reunirea cauzelor</b> (art. 43): <b>obligatorie</b> când mai multe acte materiale alcătuiesc o singură infracțiune (continuată, complexă); <b>facultativă</b> la concurs, participație, tăinuire/favorizare — pentru buna înfăptuire a justiției.',
+          '⚠️ <b>Necompetența în penal</b> (art. 47): materială și după calitatea persoanei (când instanța e inferioară celei competente) → invocabilă <b>în tot cursul judecății</b>, până la hotărârea definitivă; <b>teritorială</b> → numai până la <b>începerea cercetării judecătorești</b>. Comparați cu regimul NCPC (primul termen)!'
         ]
       },
       { icon:'🔍', title:'Urmărirea penală (art. 285–341 CPP)',
@@ -2161,6 +2192,8 @@ var FISE_RECALL={
     'Concursul de infracțiuni: cum se calculează pedeapsa principală conform art. 39 NCP (pedeapsa cea mai grea + spor)?',
     'Recidiva postcondamnatorie vs. pluralitate intermediară: diferența-cheie și consecința pentru cuantumul pedepsei.',
     'Aplicație: A, cu o condamnare anterioară la 6 luni pentru furt, comite din nou un furt. Recidivă sau pluralitate intermediară? De ce (primul termen cere >1 an)?',
+    'Măsurile de siguranță: se pot lua fără condamnare? Interzicerea exercitării profesiei (art. 111) — după cât timp se poate cere revocarea (1 an)? Confiscarea extinsă: ce condiții (pedeapsă ≥4 ani, folos patrimonial, ultimii 5 ani)?',
+    '⚠️ La grilă: revocarea vs. anularea suspendării/amânării — care privește fapte din termenul de supraveghere și care fapte anterioare acordării, descoperite ulterior?',
     '⚠️ La grilă: recidiva postcondamnatorie — pedepsele se contopesc (cumul juridic) sau se ADUNĂ (cumul aritmetic, art. 43 al. 1)? Recidiva postexecutorie — până când există starea de recidivă și ce efect are (limite +1/2)?',
     'Liberarea condiționată: fracțiile obligatorii (2/3 la pedepse ≤10 ani; 3/4 la >10 ani; cu muncă 1/2 / 2/3), condițiile suplimentare și ce se întâmplă la o nouă infracțiune intenționată în termenul de supraveghere.'
   ],
@@ -2218,7 +2251,9 @@ var FISE_RECALL={
     '⚠️ La grilă: până când se invocă necompetența MATERIALĂ (art. 130 — primul termen cu părțile legal citate, nu „oricând"!)? Dar cea generală? Dar cea teritorială de drept comun (cine + prin ce act)?',
     '⚠️ La grilă: partajul unui imobil de 1.000.000 lei — judecătorie sau tribunal? (art. 94: partaj/moștenire/uzucapiune → judecătorie INDIFERENT de valoare.)',
     'Ordonanța președințială: cele 3 condiții (urgență, neprejudecarea fondului, caracter provizoriu) + calea de atac (apel 5 zile) + în cât timp se poate amâna pronunțarea (24h)?',
-    'Perimarea judecății (6 luni de la suspendare): ce stinge? Cheltuielile de judecată: cine le suportă (culpa procesuală) și poate instanța reduce onorariul avocațial (art. 451 al. 2)?'
+    'Perimarea judecății (6 luni de la suspendare): ce stinge? Cheltuielile de judecată: cine le suportă (culpa procesuală) și poate instanța reduce onorariul avocațial (art. 451 al. 2)?',
+    '⚠️ La grilă: termenul procedural pe zile — intră în calcul ziua de început și cea de împlinire (art. 181: zile LIBERE — nu!)? Termen împlinit duminica — până când se poate face actul?',
+    'Nulitatea actelor de procedură: condiționată de vătămare (regula) vs. necondiționată (art. 176 — enumeră 3 cazuri). Nulitatea operează de drept sau trebuie invocată? Repunerea în termen: condiții + termenul de 15 zile.'
   ],
   w27:[
     'Enumeră cel puțin 4 categorii de documente care pot constitui titluri executorii.',
@@ -2242,7 +2277,9 @@ var FISE_RECALL={
     'La grilă: apelul penal — termen 10 zile de la comunicarea copiei minutei. Ce se întâmplă dacă minuta nu a fost comunicată? Termenul curge oricum?',
     'Căile extraordinare penale — schema: contestația în anulare (vicii de procedură — 2 exemple) vs. revizuirea (fapte/probe noi — 2 exemple) vs. recursul în casație (nelegalitate în drept). Termene + care poate fi exercitată oricând în favoarea condamnatului?',
     '⚠️ La grilă: reabilitarea judecătorească — termenele sunt fixe (4/5/7 ani) sau „termen + jumătate din durata pedepsei" (capcană — vechiul cod)? DPV comutată are reabilitare? Ce efect are reabilitarea asupra recidivei?',
-    'Excluderea probelor (art. 102): ce probe se exclud, în ce fază se verifică (camera preliminară) și ce sunt probele derivate („fructul pomului otrăvit")? Loialitatea probei (art. 101): 3 procedee interzise.'
+    'Excluderea probelor (art. 102): ce probe se exclud, în ce fază se verifică (camera preliminară) și ce sunt probele derivate („fructul pomului otrăvit")? Loialitatea probei (art. 101): 3 procedee interzise.',
+    '⚠️ La grilă: la achitare pentru „fapta nu există" vs. la încetare pentru prescripție — ce face instanța penală cu acțiunea civilă (respinge vs. lasă nesoluționată)? Până când se poate constitui parte civilă?',
+    'Necompetența în procesul penal: cea materială/după calitate se invocă până când (tot cursul judecății)? Dar cea teritorială (începerea cercetării judecătorești)? Reunirea cauzelor: când e obligatorie?'
   ],
   tlt:[
     '⚠️ Capcana termenelor de apel: civil (30 de zile de la comunicarea hotărârii) vs. penal (10 zile de la comunicarea copiei minutei) vs. ordonanța președințială (5 zile). Care curge de unde?',
