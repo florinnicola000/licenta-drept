@@ -12,10 +12,11 @@ Aplicație web de pregătire pentru examenul de licență la Facultatea de Drept
 - **19 sesiuni de examen** (2023–2026), fiecare cu ~100 de întrebări grilă (~1340 întrebări total)
 - **~50 întrebări Drept Civil** + **~50 întrebări Drept Penal** per sesiune (cu etichete și pentru Procedură Civilă / Procedură Penală)
 - Răspunsurile corecte verificate față de baremele oficiale UNIBUC + explicații stil 2026
-- Trei fișiere principale:
+- Fișiere principale:
   - `index.html` — aplicația de grile (toate datele embed-uite ca JSON)
   - `plan_studiu.html` — **plan de studiu pe 1 an** (vezi mai jos)
-  - `dict.js` — **dicționar juridic** partajat (142 termeni, popup pe selecție)
+  - `fise.js` — **fișe de studiu** (27 de fișe pe săptămâni + capcane + recall; vezi mai jos)
+  - `dict.js` — **dicționar juridic** partajat (158 termeni, popup pe selecție)
   - `memory.js` — **joc Memory** partajat (perechi termen ↔ definiție, în ambele pagini)
 
 ### Sesiuni incluse
@@ -38,7 +39,7 @@ Materiile (`MAT` în HTML): `civ` (Drept civil), `pciv` (Procedură civilă), `p
 
 Modul JS partajat inclus în ambele pagini cu `<script src="dict.js"></script>` și precache-uit în service worker.
 
-**Conținut:** 142 termeni în 5 categorii: Civil (58), Penal (27), Proc. Civ. (10), Proc. Pen. (7), Latină juridică (20).
+**Conținut:** 158 termeni în 5 categorii: Civil (65), Penal (27), Proc. Civ. (15), Proc. Pen. (10), Latină juridică (21). La adăugarea unui termen, actualizează și contorul din comentariul din capul fișierului.
 
 **Popup pe selecție text:** `mouseup`/`touchend` → `handleSelection()` → `findDictEntry()` (match exact, apoi cel mai lung substring) → `showPopup()` ancorată cu `position:fixed` la coordonatele selecției (din `getBoundingClientRect()` — **nu adăuga `window.scrollY`**, coordonatele sunt deja viewport-relative).
 
@@ -70,6 +71,22 @@ Pagina oferă doar glue-ul de deschidere + containerele cu id-urile `mem-pairs`,
 
 ---
 
+## Fișe de studiu (`fise.js`)
+
+Modul partajat (tab „🗂 Fișe" în plan_studiu.html), precache-uit în sw. Trei structuri:
+
+- **`FISE_DATA[]`** — 27 de fișe: W01–W16 (Civil), W18–W24 (Penal), W26–W27 (Proc. Civ.), W28 (Proc. Pen.) + `tlt` (sinteză „Termene esențiale"). W17 și W25 nu există (săptămâni de recapitulare). Fiecare: `{id, wk, dates, subj, title, sections:[{icon,title,items[]}], grila}` — `items` sunt string-uri HTML; `grila` = rezumatul „📝 Grila — atenție la".
+- **`FISE_TIPS{}`** — secțiunea „⚠️ Capcane frecvente" per fișă (înaintea recall-ului).
+- **`FISE_RECALL{}`** — „🧠 Întrebări recall" per fișă.
+
+Randare în `plan_studiu.html`: `renderFise()` (accordion cu search) + `printFisa(id)` (fereastră de print). **Print:** `page-break-inside:avoid` se pune DOAR pe unități mici (`.p-item`, `.p-tip`) — pe secțiuni întregi browserul taie conținutul care nu încape într-o pagină (bug reparat la v119).
+
+⚠️ **Regulă editorială (esențială):** tot conținutul juridic trebuie să reflecte **dreptul în vigoare** (NCC 2011, NCP/CPP 2014, NCPC, cu modificările la zi — L. 140/2022, L. 217/2020, reforma vârstei de protecție 2023, L. 175/2020, L. 216/2022 etc.). Sursele de tip manual vechi introduc reguli ale **vechiului cod** prezentate ca actuale — exact capcanele testate la grile. În iul 2026 toate fișele + tips + grile au fost verificate integral (~60 de erori corectate: partajul constitutiv, res perit debitori, intra vires la moștenitori, rezerva = 1/2 din cota legală, excesul neimputabil, măsuri educative pentru minori, necompetența la primul termen, reabilitarea cu termene fixe ș.a.). La orice conținut nou, verifică articolul în forma actuală — nu prelua din memorie doctrina veche; capcanele „vechiul cod vs. NCC" se marchează explicit cu ⚠️ în text.
+
+Validare înainte de commit: `node --check fise.js` (și pentru dict.js/memory.js).
+
+---
+
 ## Plan de studiu „Planul Mirunei" (`plan_studiu.html`)
 
 Pagină separată, autoconținută, personalizată pentru **Miruna** (fiica userului; vezi dedicația „de la Tata" din `index.html`). Program ancorat pe **examenul de licență din Februarie 2027** (UNIBUC): **32 de săptămâni**, de la 29 iun 2026 până la ~7 feb 2027, calibrat pe **2-3 ore/zi**. Structurat în **11 faze** pe cele 4 materii (greutate mare pe Civil + Penal, care sunt cele examinate la grilă; Procedura civilă/penală condensate).
@@ -80,7 +97,7 @@ Pagină separată, autoconținută, personalizată pentru **Miruna** (fiica user
 - **Tab „Astăzi" (default):** salut personal, **numărătoare inversă** până la examen (editabilă, `changeExamDate`), **streak** (zile la rând, `currentStreak`/`touchStreak`), săptămâna curentă, sugestia de azi (după ziua săptămânii), mesaj rotativ „de la Tata", listă „De revăzut" (săptămânile marcate 🔴), **reminder zilnic** (oră setabilă, banner la deschidere, notificări browser).
 - **Per săptămână:** auto-evaluare încredere 🔴🟡🟢 (`conf_<wkid>`), notițe (`note_<wkid>`), concepte-cheie, butoane de testare.
 - **Tracking:** sarcini + încredere + notițe + streak + examen + reminderTime, toate în `localStorage` sub cheia **`plan_miruna_v2`**. Felicitări (toast) la finalizarea fiecărei faze.
-- **7 tab-uri:** Astăzi / Plan / Calendar lunar / Metodologie / Ritm zilnic / Surse / **📖 Dicționar**.
+- **9 tab-uri:** Astăzi / Plan / Calendar lunar / Metodologie / Ritm zilnic / Surse / **📖 Dicționar** / **🗂 Fișe** / **🧩 Joc**.
 - **Tab „Surse":** linkuri reale verificate — legislație oficială (legislatie.just.ro: Cod civil 109884, Cod penal 109855, Cod pr. civilă 140271, Cod pr. penală 120611), codulcivil.ro, arhiva de subiecte + fișele de disciplină UNIBUC, grile online (universuljuridic.ro, aplicația proprie, studocu) și manuale de referință (Boroi, Streteanu/Nițu, Udroiu, culegeri C.H. Beck). Toate URL-urile au fost verificate ca valide (legislatie.just.ro dă 403 la curl = anti-bot, dar paginile sunt reale).
 - **Integrare cu grilele:** fiecare săptămână are buton „Testează-te" care deschide `index.html?mat=<civ|pciv|pen|ppen>` → pornește direct antrenamentul pe materie (handler URLSearchParams la finalul scriptului din `index.html` apelează `startMaterie(m)`).
 - **Test pe temă (`WEEK_KW`):** întrebările NU au etichetă de subtemă (doar materia dedusă din poziție). Ca testul săptămânal să fie relevant pe tema studiată, fiecare săptămână (mai puțin simulările/buffer W17,W25,W29-W32) are în `WEEK_KW[wid]` un set de cuvinte-cheie (termeni juridici din titlu+concepte). Butonul „📖 Testează-te pe această temă" deschide `index.html?mat=<m>&kw=<termeni>&tl=<titlu>`. În `index.html`, `startMaterieTopic(k,kws,label)` filtrează grilele materiei al căror text (stem+opțiuni+explicație, normalizat cu `normTerm`) conține vreun cuvânt-cheie; dacă rezultă <6 întrebări, revine la materia întreagă (`startMaterie`). Buton secundar „toată materia" păstrează testul larg. Cuvintele-cheie au fost validate pe datele reale (toate săptămânile ≥10 potriviri).
@@ -110,13 +127,21 @@ Pagină separată, autoconținută, personalizată pentru **Miruna** (fiica user
 
 ---
 
+## Temă închisă/deschisă
+
+- Sursa unică a setării: **index.html** → Opțiuni → „☀️ Temă deschisă" → `STATE.opts.light` în `ldr_progress_v2`; aplicată prin clasa **`body.light`**, care suprascrie variabilele CSS (`--bg/--sf/--sf2/--lime/--txt/--sub`).
+- **plan_studiu.html preia tema automat** din aceeași cheie localStorage (`applySharedTheme()` la load + evenimentele `storage` și `pageshow` pentru sincronizare live între taburi). Nu are toggle propriu.
+- Ambele pagini definesc `body.light{...}` cu aceleași valori. **Regulă:** nu hardcoda fundaluri închise în componente — folosește `var(--sf)`/`var(--sf2)`; dacă e nevoie de o culoare fixă (ex. `.fisa-grila` albastru), adaugă și override `body.light ...`. dict.js și memory.js (stiluri injectate) folosesc variabile cu fallback la culorile închise.
+
+---
+
 ## Service worker (`sw.js`) — cache
 
-**Versiune curentă: `ldr-v36`**
+**Versiunea curentă e în `const CACHE = 'ldr-vNNN'`** (la data actualizării: v124).
 
-**Strategie (de la v26):** *network-first pentru HTML* (paginile se iau mereu proaspete de pe rețea, cache doar ca backup offline) + *cache-first pentru assets* (icoane, manifest, dict.js). Asta evită problema „trebuie curățat cache după deploy".
+**Strategie (de la v26):** *network-first pentru HTML* (paginile se iau mereu proaspete de pe rețea, cache doar ca backup offline) + *cache-first pentru assets*. Asta evită problema „trebuie curățat cache după deploy".
 
-La fiecare modificare de assets precache-uite **bumpează `const CACHE = 'ldr-vNN'`** ca să forțezi invalidarea pe toate dispozitivele. `ASSETS` include `index.html`, `plan_studiu.html` și **`dict.js`**.
+La **fiecare modificare a fișierelor .js precache-uite** (fise.js, dict.js, memory.js) bumpează `const CACHE` — fiind cache-first, altfel utilizatorii PWA nu primesc versiunea nouă. `ASSETS` include `index.html`, `plan_studiu.html`, `fise.js`, `dict.js`, `memory.js`, manifest + icoane.
 
 ---
 
@@ -258,10 +283,12 @@ Orice `git push` pe `main` actualizează site-ul în ~1 minut.
 ```bash
 # Repo local pentru push rapid:
 cd /private/tmp/licenta-drept
-git add index.html plan_studiu.html dict.js memory.js sw.js
+git add index.html plan_studiu.html fise.js dict.js memory.js sw.js
 git commit -m "..."
 git push
 ```
+
+Verificare deploy: `gh run list --repo florinnicola000/licenta-drept --limit 3` și `curl -s https://florinnicola000.github.io/licenta-drept/sw.js | head -1` (versiunea live). GitHub Pages are ocazional eșecuri tranzitorii de infrastructură (deploy „queued" → timeout) — nu e vina codului; re-declanșează cu `git commit --allow-empty -m "retrigger pages deploy" && git push`. Fiecare deploy publică întregul site, deci un deploy reușit acoperă și push-urile anterioare eșuate.
 
 ---
 
