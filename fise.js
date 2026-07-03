@@ -1403,6 +1403,16 @@ var FISE_DATA = [
           '<b>Dezbaterile și deliberarea</b>: dezbateri publice; deliberare în secret; minuta semnată imediat după deliberare; hotărârea redactată și comunicată în 30 de zile.'
         ]
       },
+      { icon:'🔬', title:'Probele în procesul civil (art. 249–358 NCPC) — tema nr. 1 la grile pciv',
+        items:[
+          '<b>Sarcina probei</b> (art. 249): cel care face o susținere trebuie să o dovedească (<i>actori incumbit probatio</i>); pârâtul care invocă o excepție o probează el. Judecătorul poate ordona probe din oficiu, chiar dacă părțile se împotrivesc — dar părțile nu pot invoca omisiunea ca motiv de apel.',
+          '<b>Înscrisul autentic</b> (art. 269–271): constatările <b>personale</b> ale agentului instrumentator (ce a văzut/auzit el: prezența părților, data, semnăturile) fac dovadă <b>până la înscrierea în fals</b>; <b>declarațiile părților</b> consemnate fac dovadă doar <b>până la proba contrară</b>. Distincția e capcana clasică!',
+          '<b>Înscrisul sub semnătură privată</b> (art. 272–281): face dovadă între părți <b>dacă e recunoscut</b> sau verificat; față de <b>terți</b>, data e opozabilă doar de la <b>data certă</b> (prezentarea la o autoritate, mențiunea într-un act oficial, moartea unui semnatar etc.). Formalități speciale: „multiplul exemplar" (contracte sinalagmatice) și „bun și aprobat" (obligații unilaterale de sume de bani).',
+          '⚠️ <b>Proba cu martori</b> (art. 309): inadmisibilă pentru actele juridice <b>peste 250 lei</b> și <b>împotriva sau peste</b> conținutul unui înscris. Excepții (se admite oricum): imposibilitate <b>materială sau morală</b> de a preconstitui înscris (rude, soți!), <b>început de dovadă scrisă</b> (art. 310), pierderea înscrisului din motiv de forță majoră, terții pot proba cu orice mijloc (pentru ei actul e fapt juridic).',
+          '<b>Mărturisirea</b> (art. 348–350): cea <b>judiciară</b> face <b>deplină dovadă</b> împotriva autorului, e <b>irevocabilă</b> (afară de eroarea de fapt scuzabilă) și <b>indivizibilă</b> doar când e complexă; cea <b>extrajudiciară</b> — apreciată liber de instanță. Interogatoriul: refuzul nejustificat de a răspunde poate fi socotit mărturisire deplină sau început de dovadă.',
+          '<b>Expertiza</b> (art. 330–340): obligatorie doar când legea o cere; instanța <b>nu e legată</b> de concluziile expertului — le apreciază liber. <b>Prezumțiile</b> (art. 327–329): legale <b>absolute</b> (nu admit probă contrară — ex. autoritatea de lucru judecat) vs. <b>relative</b> (răsturnate prin proba contrară); prezumțiile <b>judiciare</b> — admise numai unde e admisă și <b>proba cu martori</b> (capcană frecventă!).'
+        ]
+      },
       { icon:'📂', title:'Hotărârea și căile de atac',
         items:[
           '<b>Apelul</b>: calea ordinară de atac; termen <b>30 de zile</b> de la <i>comunicarea</i> hotărârii (nu de la pronunțare). Devolutiv: rejudecă fondul în fapt și în drept. Probe noi admisibile în apel în condiții limitate.',
@@ -2253,7 +2263,9 @@ var FISE_RECALL={
     'Ordonanța președințială: cele 3 condiții (urgență, neprejudecarea fondului, caracter provizoriu) + calea de atac (apel 5 zile) + în cât timp se poate amâna pronunțarea (24h)?',
     'Perimarea judecății (6 luni de la suspendare): ce stinge? Cheltuielile de judecată: cine le suportă (culpa procesuală) și poate instanța reduce onorariul avocațial (art. 451 al. 2)?',
     '⚠️ La grilă: termenul procedural pe zile — intră în calcul ziua de început și cea de împlinire (art. 181: zile LIBERE — nu!)? Termen împlinit duminica — până când se poate face actul?',
-    'Nulitatea actelor de procedură: condiționată de vătămare (regula) vs. necondiționată (art. 176 — enumeră 3 cazuri). Nulitatea operează de drept sau trebuie invocată? Repunerea în termen: condiții + termenul de 15 zile.'
+    'Nulitatea actelor de procedură: condiționată de vătămare (regula) vs. necondiționată (art. 176 — enumeră 3 cazuri). Nulitatea operează de drept sau trebuie invocată? Repunerea în termen: condiții + termenul de 15 zile.',
+    '⚠️ La grilă: înscrisul autentic — ce face dovadă până la înscrierea în fals (constatările personale ale notarului) și ce doar până la proba contrară (declarațiile părților)?',
+    '⚠️ La grilă: proba cu martori la un contract de 10.000 lei între FRAȚI — admisibilă? (imposibilitatea morală de preconstituire!) Dar prezumțiile judiciare — când sunt admise (doar unde e admisă și proba cu martori)?'
   ],
   w27:[
     'Enumeră cel puțin 4 categorii de documente care pot constitui titluri executorii.',
