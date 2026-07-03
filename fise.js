@@ -865,6 +865,14 @@ var FISE_DATA = [
           '<b>Donația cu sarcini</b> (sub modo): donatarul e obligat să execute o prestație în favoarea donatorului, a unui terț sau de utilitate publică. Sarcina poate transforma parțial donația într-un act oneros (în limita valorii sarcinii — aplicabile regulile de vânzare pentru acea parte).',
           'Neexecutarea sarcinii: (1) executare silită; sau (2) revocare judiciară la cererea donatorului sau creditorului; (3) termenul de grație + punere în întârziere sunt necesare înainte de a cere revocarea. ⚠️ Revocarea pentru neexecutare de sarcini ≠ revocare pentru ingratitudine (regimuri și termene diferite).'
         ]
+      },
+      { icon:'🏛️', title:'Vânzarea moștenirii (art. 1747–1754 NCC)',
+        items:[
+          '<b>Definiție și condiții</b> (art. 1747 NCC): vânzarea drepturilor succesorale e posibilă numai după <b>deschiderea moștenirii</b>; pactele asupra unei succesiuni nedeschise a altei persoane = nule absolut (art. 956 NCC — capcană frecventă!). Forma: act <b>autentic notarial</b> <i>ad validitatem</i>.',
+          '<b>Garanția calității de moștenitor</b> (art. 1748 NCC): vânzătorul garantează numai că are calitatea de <b>moștenitor</b> și dreptul de a înstrăina cota sa succesorală — NU garantează compoziția masei succesorale (existența, valoarea sau natura bunurilor concrete). ⚠️ Capcană: cumpărătorul nu poate cere rezoluțiunea dacă masa e mai mică decât se anticipa; vânzătorul a garantat calitatea, nu conținutul.',
+          '<b>Regimul activului și pasivului</b> (art. 1749–1754 NCC): cumpărătorul preia <b>activul</b> (bunuri, creanțe) și <b>pasivul</b> (datorii + sarcini) proporțional cu cota vândută. Vânzătorul rămâne solidar față de creditorii moștenirii, dar are drept de regres contra cumpărătorului. Dacă vânzătorul a achitat datorii din bunuri proprii → poate cere rambursarea de la cumpărător; invers: cumpărătorul care a plătit → regres contra vânzătorului.',
+          '⚠️ <b>Distincție față de vânzarea unui bun singular din moștenire</b>: vânzarea moștenirii = transmiterea universalității (cotei-parts din întreaga masă); vânzarea unui bun determinat din moștenire = vânzare obișnuită (regulile art. 1650–1746 NCC). Garanția calității de moștenitor se aplică numai la vânzarea universalității/cotei, nu la vânzarea unui bun concret.'
+        ]
       }
     ],
     grila:'Transfer proprietate vânzare: <b>imediat la perfectare</b> (bunuri certe); dar riscul rămâne la <b>vânzător până la predare</b>, chiar cu proprietatea transferată (art. 1274 — <i>res perit debitori</i>, capcană!). Vânzarea bunului altuia: contract <b>VALABIL</b> (art. 1683) — neexecutare → rezoluțiune + daune (nu NR!). Vicii ascunse: vânzătorul BF <b>nu datorează daune</b>; prescripția curge cel târziu de la 1 an de la predare (art. 2531). Dar manual: max <b>25.000 lei</b>. Donație între soți: revocabilă <b>numai în timpul căsătoriei</b>. Revocare legală donație: doar <b>sarcină + ingratitudine</b> (survenirea de copil NU mai e — capcană!). Principiul irevocabilității: clauza pur potestativă a donatorului = NCA. Ingratitudine: prescripție <b>1 an</b>; nepatrimonial (nu se transmite). Drept de răscumpărare: max <b>5 ani</b>. Preemțiune L. 17/2014: terenuri agricole extravilan, ordine coproprietari → arendași → vecini → stat; sancțiune <b>nulitate absolută</b> (≠ drept comun: inopozabilitate). Donație remuneratorie: liberalitate solemnă, nu plată a unui serviciu anterior.'
@@ -882,6 +890,15 @@ var FISE_DATA = [
           '<b>Sublocațiunea</b>: permisă dacă nu e interzisă expres. Cesiunea contractului necesită acordul expres al locatorului.',
           '<b>Tacita relocațiune</b> (art. 1810 NCC): dacă după expirarea termenului locatarul continuă să folosească bunul și locatorul nu se opune → contract nou pe durată nedeterminată în aceleași condiții.',
           '<b>Opozabilitate față de dobânditorul bunului</b> (art. 1811 NCC, <i>emptio non tollit locatum</i>): noul proprietar e ținut să respecte locațiunea dacă: la imobile înscrise în CF — locațiunea era <b>notată în CF</b>; la imobile neînscrise — data certă a locațiunii e <b>anterioară</b> datei certe a înstrăinării; la mobile — data certă anterioară. (Nu e un „drept de preferință" la cumpărare — doar opozabilitatea contractului.)'
+        ]
+      },
+      { icon:'🏘️', title:'Reguli particulare la închirierea locuințelor (art. 1820–1835 NCC)',
+        items:[
+          '<b>Domeniu de aplicare</b>: art. 1820–1835 NCC conțin reguli speciale (derogatorii față de locațiunea generală) pentru contractele de <b>locațiune a locuinței</b> (chiria pentru uz de locuit). Sunt norme de ordine publică de protecție a chiriașului — clauzele mai defavorabile chiriașului sunt nule.',
+          '<b>Preavizul la denunțarea de către locator</b> (art. 1824 NCC): la contractele <b>pe durată nedeterminată</b>, locatorul trebuie să acorde chiriașului un preaviz de <b>cel puțin 60 de zile</b> (față de regimul general al locațiunii). ⚠️ Capcană: regula generală a locațiunii nu fixează un termen minim de preaviz — termenul special de 60 de zile se aplică numai la locuință.',
+          '<b>Dreptul chiriașului la reînnoire</b> (art. 1828 NCC): la expirarea contractului pe durată determinată, chiriașul are dreptul să solicite reînnoirea; locatorul poate refuza reînnoirea numai din motive prevăzute de lege (vânzarea imobilului cu obligația de a-l lăsa liber, folosința personală a proprietarului/familiei, reparații care impun eliberarea) și numai dacă a comunicat refuzul motivat în termenul legal.',
+          '<b>Succesiunea în contract la decesul chiriașului</b> (art. 1834 NCC): contractul NU încetează de drept la decesul chiriașului — continuă cu <b>soțul/partenerul sau rudele</b> care locuiau împreună cu chiriașul la data decesului, până la expirarea termenului contractat (sau 1 an la durată nedeterminată). ⚠️ Capcană frecventă: chiriașul moare → contractul rămâne viu!',
+          '<b>Evacuarea</b>: la expirarea contractului sau după epuizarea preavizului, locatorul poate cere evacuarea pe cale judecătorească (ordonanță de evacuare, NCPC art. 1033–1047 — procedură specială rapidă). ⚠️ Evacuarea faptică (schimbarea lacătului, scoaterea bunurilor fără hotărâre) = <b>ilegală</b> și angajează răspunderea locatorului.'
         ]
       },
       { icon:'🌱', title:'Arendarea (art. 1836–1850 NCC)',
@@ -1002,6 +1019,13 @@ var FISE_DATA = [
     id:'w15', wk:'W15', dates:'5–11 oct', subj:'civ',
     title:'Moștenirea legală',
     sections:[
+      { icon:'🔄', title:'Transmisiunea moștenirii — caractere juridice (art. 953–956 NCC)',
+        items:[
+          '<b>Caracterele juridice ale transmisiunii</b>: (1) <b>Universalitate</b> — obiectul transmisiunii = patrimoniul succesoral ca universalitate juridică (activ + pasiv), nu bunuri izolate; moștenitorul dobândește o fracțiune din patrimoniu, nu drepturi determinate; (2) <b>Simultaneitate</b> — la data deschiderii, toți moștenitorii cu vocație dobândesc cota lor <b>în același moment</b>, fără nicio formalitate prealabilă; (3) <b>Caracter legal/ipso jure</b> — transmisiunea operează de drept; opțiunea succesorală ulterioară are efect retroactiv de la deschidere (art. 1108 NCC).',
+          '<b>Obiectul transmisiunii — activul</b>: drepturile patrimoniale transmisibile (proprietate, creanțe, drepturi reale). <b>Pasivul</b>: datoriile și sarcinile moștenirii (datorii ale defunctului + cheltuieli de înmormântare + sarcini legale). <b>Nu se transmit</b> drepturile și obligațiile <b>intuitu personae</b>: dreptul la pensie alimentară al defunctului, uzufructul viager al defunctului, dreptul la repararea unui prejudiciu moral personal neexercitat de defunct.',
+          '⚠️ <b>Moștenitorul e continuatorul de drept al defunctului</b>: dobândește drepturile și obligațiile in statu quo (cu viciile, sarcinile și accesoriile lor). Dacă o creanță a defunctului era prescrisă la data deschiderii → prescrisă rămâne și față de moștenitor; dacă termenul de prescripție nu se împlinise → moștenitorul poate exercita acțiunea în restul termenului.'
+        ]
+      },
       { icon:'📌', title:'Principii generale: deschidere, opțiune, sezină (art. 953–965 NCC)',
         items:[
           '<b>Deschiderea succesiunii</b>: la data <b>morții</b> defunctului. La moartea declarată judecătorește, data morții e cea stabilită prin <b>hotărâre</b>; în lipsă de indicii, ultima zi a termenului după care se poate cere declararea morții (art. 52 NCC). <b>Comoriența</b> (art. 957 alin. 2 NCC): persoanele decedate în aceeași împrejurare, fără a se putea stabili ordinea deceselor, sunt prezumate că au murit <b>deodată</b> → nu se moștenesc reciproc.',
@@ -1333,6 +1357,14 @@ var FISE_DATA = [
           '⚠️ Art. 194 <b>alin. 2</b> nu e o listă de consecințe, ci fapta săvârșită <b>în scopul producerii</b> acestor consecințe (intenție directă) → <b>3–10 ani</b>.',
           '<b>Vătămarea corporală din culpă</b> (art. 196): necesită ≥90 zile sau consecință gravă; forma simplă — la plângere prealabilă; forma agravată (alcool, părăsire a locului accidentului) — din oficiu.',
           'Diferența lovire/vătămare: <b>pragul de 90 zile</b> stabilit de medic legist. Dacă leziunile inițiale sunt sub 90 zile dar se agravează → recalificarea nu e automată; contează starea la momentul comiterii.'
+        ]
+      },
+      { icon:'🤱', title:'Uciderea/vătămarea nou-născutului și agresiunile asupra fătului (art. 200–201 NCP)',
+        items:[
+          '<b>Uciderea sau vătămarea nou-născutului săvârșită de mamă</b> (art. 200 NCP): uciderea sau vătămarea copilului <b>nou-născut</b> de către mamă, <b>imediat după naștere</b>, dacă aceasta se află într-o <b>stare de tulburare psihică</b> cauzată de naștere. Tratament sancționator <b>atenuat</b> față de omor/vătămare — circumstanță atenuantă legală specială. ⚠️ Dacă fapta e săvârșită de alt autor (nu mamă) → omor sau vătămare corporală obișnuită (art. 188–194 NCP).',
+          '<b>Întreruperea cursului sarcinii</b> (art. 201 NCP): (a) <b>Forma de bază</b> (alin. 1): provocarea avortului <b>fără consimțământul</b> femeii gravide; pedeapsă <b>3–10 ani</b>; (b) <b>Forme agravate</b>: dacă fapta a cauzat vătămarea corporală a femeii → <b>5–15 ani</b>; dacă a cauzat moartea femeii → <b>7–18 ani</b>; dacă e comisă de medic → și pedeapsa complementară a interzicerii dreptului de a exercita profesia (art. 201 alin. 4). Subiect activ: orice persoană (inclusiv medicul fără drept de practică sau care acționează fără consimțămînt).',
+          '<b>Avortul legal</b> (art. 201 alin. 6): nu constituie infracțiune întreruperea sarcinii efectuată în condițiile legii — cu <b>consimțămîntul femeii gravide</b>, de un <b>medic autorizat</b>, în condițiile prevăzute de lege. ⚠️ Medicul care efectuează avortul legal e pe deplin protejat; cel care acționează fără consimțămînt sau fără autorizare răspunde penal.',
+          '⚠️ <b>Distincție față de vătămarea corporală (art. 194 alin. 1 lit. d)</b>: art. 194 incriminează fapta care a cauzat avortul ca urmare a unui atac îndreptat contra <b>femeii</b>; art. 201 incriminează fapta îndreptată direct contra <b>sarcinii/fătului</b>, fără sau contra voinței femeii. Criteriu: <b>obiectul material</b> al acțiunii — femeia vs. fătul.'
         ]
       },
       { icon:'🔓', title:'Infracțiuni contra libertății și vieții private (art. 205–227 NCP)',
@@ -2043,7 +2075,8 @@ var FISE_TIPS={
     'Evicțiune totală → <b>rezoluțiunea</b> vânzării + restituire preț + daune. Evicțiune parțială → <b>reducerea prețului</b> + daune. Nu confunda efectele.',
     'Donație: formă autentică <b>ad validitatem</b>. Excepție: <b>darul manual</b> = remiterea efectivă (tradițiunea) a unui bun mobil; simpla promisiune de dar manual nu obligă.',
     'Principiul irevocabilității donațiilor: clauzele care dau donatorului posibilitatea revocării unilaterale sau condiția pur potestativă din partea donatorului → <b>nulitate absolută a donației</b>.',
-    'Donație <b>deghizată</b> sub forma vânzării cu preț fictiv: dacă prețul e fictiv → simulație; actul secret (donația) trebuie să respecte forma autentică pentru a fi valabil.'
+    'Donație <b>deghizată</b> sub forma vânzării cu preț fictiv: dacă prețul e fictiv → simulație; actul secret (donația) trebuie să respecte forma autentică pentru a fi valabil.',
+    '⚠️ <b>Vânzarea moștenirii</b> (art. 1748 NCC): vânzătorul garantează numai <b>calitatea de moștenitor</b>, nu conținutul masei succesorale — cumpărătorul nu poate cere rezoluțiunea dacă masa e mai mică decât spera. Numai după deschiderea moștenirii; formă <b>autentică</b> ad validitatem (art. 1747). Cumpărătorul preia activul + pasivul proporțional; vânzătorul rămâne solidar față de creditori, cu drept de regres contra cumpărătorului (art. 1749–1754).'
   ],
   w13:[
     'Locatarul: obligat la <b>reparații locative (de întreținere)</b> (văruit, mici reparații). Locatorul: obligat la <b>reparații capitale</b> (care afectează structura, instalații majore). Inversarea lor → răspuns greșit.',
@@ -2055,7 +2088,8 @@ var FISE_TIPS={
     '<b>Emptio non tollit locatum</b>: vânzarea bunului dat în locațiune nu pune capăt locațiunii; noul proprietar este ținut de contract (dacă era înregistrat sau dacă a cunoscut locațiunea).',
     '<b>Comodatul</b> e esențialmente gratuit: dacă se stipulează o sumă de bani pentru folosință → recalificat ca locațiune, cu toate efectele acesteia.',
     '⚠️ <b>Capcana garanției în construcții</b> (art. 29 L. 10/1995): vicii ascunse → <b>10 ani</b> de la recepție; vicii ale <b>structurii de rezistență</b> → <b>toată durata de existență</b> a construcției. „2 ani vicii / 10 ani structură" = greșit!',
-    '⚠️ <b>Arendarea</b>: formă scrisă <b>ad validitatem</b> (NCA); durată nedeterminată → <b>anul agricol</b> în curs (art. 1837 — nu „7 ani", regula veche); subarendarea <b>total interzisă</b>; cesiunea doar către soț/descendenți majori, cu acord scris.'
+    '⚠️ <b>Arendarea</b>: formă scrisă <b>ad validitatem</b> (NCA); durată nedeterminată → <b>anul agricol</b> în curs (art. 1837 — nu „7 ani", regula veche); subarendarea <b>total interzisă</b>; cesiunea doar către soț/descendenți majori, cu acord scris.',
+    '⚠️ <b>Chirierea locuinței — regim special</b> (art. 1820–1835 NCC): preaviz locator la durată nedeterminată = <b>minim 60 de zile</b> (regimul general nu prevede un minim fix); contractul NU încetează la decesul chiriașului (continuă cu soțul/rudele care locuiau împreună — art. 1834); evacuarea faptică (schimbat lacătul, scos bunurile fără hotărâre) = <b>ilegală</b>!'
   ],
   w14:[
     '<b>Mutuum</b>: contract <b>real</b> (perfectat prin remiterea bunului, nu prin simplul acord). Transferă <b>proprietatea</b> lucrurilor consumptibile; împrumutatul restituie <i>tantundem</i>. Riscul → împrumutat.',
@@ -2079,7 +2113,8 @@ var FISE_TIPS={
     'Reprezentarea: <b>numai la descendenți (cls I) și colaterali privilegiați (frați, cls II)</b>. Nu funcționează pentru ascendenți (cls III, IV).',
     'Termenul de opțiune succesorală: <b>1 an de la data DESCHIDERII moștenirii</b> (art. 1103 — regula; de la cunoaștere doar în excepțiile legale). Dacă grila pune 6 luni sau 3 ani → greșit.',
     'Acceptarea <b>forțată</b>: moștenitorul care a sustras sau ascuns bunuri succesorale este socotit acceptant pur și simplu; nu mai poate renunța.',
-    'În clasa II: dacă vin <b>și părinți și frați</b> → părinții primesc câte <b>1/4</b> fiecare (max 1/2 total); restul revine colateralilor privilegiați.'
+    'În clasa II: dacă vin <b>și părinți și frați</b> → părinții primesc câte <b>1/4</b> fiecare (max 1/2 total); restul revine colateralilor privilegiați.',
+    '⚠️ <b>Transmisiunea moștenirii — caractere juridice</b>: (1) <b>universalitate</b> = se transmite activul + pasivul ca universalitate juridică, nu bunuri izolate; (2) <b>simultaneitate</b> = toți moștenitorii dobândesc cota în același moment, la data decesului; (3) <b>ipso jure</b> = fără nicio formalitate, opțiunea succesorală are efect retroactiv la deschidere (art. 1108). Nu se transmit drepturile <b>intuitu personae</b> (pensie alimentară a defunctului, uzufruct viager al defunctului).'
   ],
   w16:[
     'Testament <b>olograf</b>: trebuie scris <b>în întregime de mână</b> + <b>datat complet</b> (zi, lună, an) + <b>semnat</b>. Lipsa oricăreia din aceste condiții → <b>nulitate absolută</b>. Dactilografiat → nul.',
@@ -2145,7 +2180,8 @@ var FISE_TIPS={
     '<b>Act sexual cu un minor</b>: după reforma din 2023, vârsta de protecție = <b>16 ani</b> — infracțiunea există <b>indiferent de consimțământul minorului</b> sub 16 ani (cu excepția legală a diferenței mici de vârstă între parteneri). Grilă: „minorul de 14–15 ani a consimțit" → infracțiune oricum.',
     'Lipsire de libertate: infracțiune <b>continuă</b> (se consumă pe toată durata privării). Prescripția curge de la momentul încetării privării. Formă agravată dacă depășește <b>24 de ore</b>.',
     '⚠️ <b>Capcană — calitatea victimei</b>: uciderea unui polițist/magistrat NU e literă la omorul calificat (art. 189 nu o prevede!) — se valorifică prin <b>ultraj</b> (art. 257) / <b>ultraj judiciar</b> (art. 279): limitele infracțiunii contra funcționarului se majorează. Grilă care o pune la art. 189 → greșit.',
-    '⚠️ <b>Violența în familie</b> (art. 199): maximul se majorează cu <b>O PĂTRIME</b> (nu cu jumătate!); la lovire/vătămare din culpă în familie acțiunea penală pornește și din oficiu, dar <b>împăcarea</b> înlătură răspunderea.'
+    '⚠️ <b>Violența în familie</b> (art. 199): maximul se majorează cu <b>O PĂTRIME</b> (nu cu jumătate!); la lovire/vătămare din culpă în familie acțiunea penală pornește și din oficiu, dar <b>împăcarea</b> înlătură răspunderea.',
+    '⚠️ <b>Art. 200 NCP</b>: uciderea/vătămarea nou-născutului de <b>mamă</b> în stare de tulburare psihică = infracțiune atenuată (nu omor simplu!). Dacă alt autor ucide nou-născutul → omor art. 188. ⚠️ <b>Art. 201 NCP</b>: avortul fără consimțămînt = 3–10 ani; avortul legal cu consimțămînt = nepedepsit (art. 201 al. 6). Distincție față de art. 194 lit. d (vătămare → avort ca urmare a atacului contra femeii) vs. art. 201 (atac direct contra fătului).'
   ],
 
   w22:[
@@ -2381,7 +2417,9 @@ var FISE_RECALL={
     '⚠️ La grilă: vânzarea bunului altuia (art. 1683) — contract valabil sau anulabil sub NCC? Ce remediu are cumpărătorul la neexecutare și ce se întâmplă automat dacă vânzătorul dobândește ulterior proprietatea?',
     '⚠️ La grilă: bunul vândut piere fortuit după transferul proprietății dar înainte de predare — cine suportă riscul (art. 1274)? Care e singura excepție (creditorul pus în întârziere)?',
     'Donația — revocarea: care sunt cele DOUĂ cauze legale (art. 1020)? De ce „survenirea de copil" e capcană? Donația între soți: până când e revocabilă (art. 1031)?',
-    'Darul manual: plafonul valoric (25.000 lei) și celelalte excepții de la forma autentică (donația indirectă, deghizată). Ce sancțiune are donația verbală peste plafon?'
+    'Darul manual: plafonul valoric (25.000 lei) și celelalte excepții de la forma autentică (donația indirectă, deghizată). Ce sancțiune are donația verbală peste plafon?',
+    'Vânzarea moștenirii (art. 1747–1754): ce garantează vânzătorul conform art. 1748 și ce NU garantează? Poate cumpărătorul cere rezoluțiunea dacă masa succesorală e mai mică decât se anticipa?',
+    'Regimul pasivului la vânzarea moștenirii: cumpărătorul preia și datoriile? Dacă vânzătorul plătește datorii din bunuri proprii, ce drept are față de cumpărător (art. 1753–1754)?'
   ],
   w13:[
     'Locațiunea — obligațiile locatarului (cel puțin 3): folosința conform destinației, întreținerea, restituirea la termen.',
@@ -2392,7 +2430,9 @@ var FISE_RECALL={
     'Mandatul — revocarea de către mandant: când produce efecte față de terții de bună-credință care nu știau de revocare?',
     'La grilă: antrepriza cu materiale furnizate de antreprenor — când trece proprietatea materialelor la beneficiar?',
     'Arendarea: forma cerută (scrisă, ad validitatem — ce sancțiune?), durata la contract fără termen (anul agricol — de ce „7 ani" e capcană?) și regimul subarendării (interzisă) vs. cesiunii (limitată la soț/descendenți).',
-    '⚠️ La grilă: garanția în construcții (art. 29 L. 10/1995) — câți ani pentru viciile ascunse (10) și cât pentru viciile structurii de rezistență (toată durata de existență)? De ce „2 ani/10 ani" e greșit?'
+    '⚠️ La grilă: garanția în construcții (art. 29 L. 10/1995) — câți ani pentru viciile ascunse (10) și cât pentru viciile structurii de rezistență (toată durata de existență)? De ce „2 ani/10 ani" e greșit?',
+    'Reguli speciale la locațiunea locuinței (art. 1824): care e termenul minim de preaviz la durată nedeterminată pentru locator? Ce se întâmplă la decesul chiriașului (art. 1834) — contractul încetează sau continuă?',
+    'De ce evacuarea faptică (schimbarea lacătului, scoaterea bunurilor fără hotărâre judecătorească) e ilegală în cazul chiriei locuinței și ce remediu are chiriașul?'
   ],
   w14:[
     'Împrumutul de consumație (mutuum, art. 2158 NCC): caractere (real, unilateral) + ce se transferă la împrumutat (proprietate + risc) + cum se restituie. ⚠️ La grilă: împrumutul de BANI se prezumă gratuit sau oneros (art. 2159 al. 2)?',
@@ -2413,7 +2453,9 @@ var FISE_RECALL={
     'Aplicație: A moare cu 2 copii (B și C). C decedase înaintea lui A, lăsând un copil (D). Cum se împarte moștenirea și în ce proporții?',
     'Renunțarea la moștenire: termen (1 an), formă (declarație la notar) și efectul față de creditorii renunțătorului.',
     'La grilă: cum răspund moștenitorii pentru datoriile moștenirii sub NCC (art. 1114 alin. 2 — intra vires, numai cu bunurile succesorale) și care e singura excepție ultra vires (acceptarea forțată, art. 1119)?',
-    'Comoriența (art. 957 al. 2) și sezina (art. 1126): cine sunt moștenitorii sezinari și cum dobândesc nesezinarii stăpânirea moștenirii (certificatul de moștenitor)?'
+    'Comoriența (art. 957 al. 2) și sezina (art. 1126): cine sunt moștenitorii sezinari și cum dobândesc nesezinarii stăpânirea moștenirii (certificatul de moștenitor)?',
+    'Caracterele juridice ale transmisiunii moștenirii (art. 953–956): enumeră și explică universalitate, simultaneitate și caracterul ipso jure. Ce înseamnă că opțiunea are efect retroactiv?',
+    'Ce drepturi și obligații NU se transmit prin moștenire (drepturile intuitu personae)? Dă cel puțin 3 exemple concrete.'
   ],
   w16:[
     'Testamentul olograf: cele 3 condiții de formă (integral olograf + datat complet + semnat) și sancțiunea lipsei oricăreia.',
@@ -2472,7 +2514,9 @@ var FISE_RECALL={
     'Aplicație: A îl lovește pe B cu pumnul. B cade, se lovește la cap și moare. Ce infracțiune a comis A? Ce formă de vinovăție?',
     '⚠️ La grilă: uciderea unui polițist aflat în exercițiul funcțiunii — omor calificat (art. 189) sau infracțiune contra victimei + regimul ultrajului (art. 257: limitele majorate)? De ce „omor calificat pe calitatea victimei" e capcană?',
     'Violența în familie (art. 199): cu cât se majorează maximul special (o PĂTRIME — nu jumătate!) și ce efect are împăcarea la lovirea unui membru de familie?',
-    'Traficul de persoane (art. 210) vs. traficul de minori (art. 211): la care nu se cer mijloace de constrângere? Consimțământul victimei/minorului are vreo valoare (art. 210 al. 3)?'
+    'Traficul de persoane (art. 210) vs. traficul de minori (art. 211): la care nu se cer mijloace de constrângere? Consimțământul victimei/minorului are vreo valoare (art. 210 al. 3)?',
+    'Art. 200 NCP — uciderea/vătămarea nou-născutului de mamă: ce condiție specială trebuie îndeplinită (starea de tulburare psihică cauzată de naștere)? De ce e tratată diferit față de omor obișnuit?',
+    'Art. 201 NCP — agresiunile asupra fătului: care e pedeapsa formei de bază și cum se agravează (vătămare corporală/moarte a femeii, medic)? Cum se distinge față de art. 194 alin. 1 lit. d (criteriu: obiectul material al acțiunii)?'
   ],
   w22:[
     'Enumeră cel puțin 5 infracțiuni contra patrimoniului (NCP) și câte un element distinctiv pentru fiecare.',
