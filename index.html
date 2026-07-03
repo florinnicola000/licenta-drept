@@ -119,8 +119,8 @@ body.light #abs-hint{background:#fff8e1;border-color:#f0c040;color:#7a5c00}
 .tbtn{background:var(--sf2);color:var(--txt);border:1.5px solid transparent;border-radius:20px;padding:7px 12px;font-size:12.5px;font-weight:700;cursor:pointer;transition:.15s}
 .tbtn:hover{border-color:var(--gr)}
 .tbtn.active{background:var(--gr);color:#0f1b10}
-#stats,#search-panel,#memory{display:none;width:100%;max-width:760px;padding:10px 16px 0}
-#stats.show,#search-panel.show,#memory.show{display:block}
+#stats,#search-panel,#memory,#tf-panel{display:none;width:100%;max-width:760px;padding:10px 16px 0}
+#stats.show,#search-panel.show,#memory.show,#tf-panel.show{display:block}
 .panel-head{display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:800;color:var(--gr);margin:6px 0 10px}
 .panel-sub{font-size:12px;color:var(--sub);margin-bottom:14px;line-height:1.5}
 .stat-row{margin-bottom:15px}
@@ -212,6 +212,8 @@ body.light #chart-body{background:var(--sf2)}
     <button class="tbtn" data-mode="exam" onclick="startExam()">🎓 Simulare examen</button>
     <button class="tbtn" data-mode="flash" onclick="startFlash()">🃏 Flashcards</button>
     <button class="tbtn" data-mode="memory" onclick="openMemory()">🧩 Memory</button>
+    <button class="tbtn" data-mode="speed" onclick="startSpeed()">🏎 Cursă rapidă</button>
+    <button class="tbtn" data-mode="tf" onclick="openTF()">✅ Adevărat/Fals</button>
     <button class="tbtn" data-mode="wrong" onclick="startWrong()">📌 Greșelile mele</button>
     <button class="tbtn" data-mode="materie" onclick="toggleMatChooser()">🎯 Pe materie</button>
     <button class="tbtn" data-mode="marked" onclick="startMarked()">⭐ Marcate</button>
@@ -256,6 +258,23 @@ body.light #chart-body{background:var(--sf2)}
   <div id="mem-status"></div>
   <div id="mem-grid"></div>
   <div id="mem-win" style="display:none"></div>
+</div>
+<div id="tf-panel">
+  <div class="panel-head"><span>✅ Adevărat / Fals juridic</span><button class="tbtn" onclick="backToQuiz()">← Înapoi</button></div>
+  <div class="panel-sub">Afirmație juridică — e adevărată sau falsă? Afli imediat explicația. Record personal salvat local. 🏆</div>
+  <div id="tf-controls"></div>
+  <div id="tf-score"></div>
+  <div class="tf-card" id="tf-card">
+    <div id="tf-mat"></div>
+    <div id="tf-stmt">Se încarcă…</div>
+  </div>
+  <div id="tf-feedback" class="tf-fb"></div>
+  <div id="tf-btns">
+    <button id="tf-false-btn" onclick="answerTF(false)">✗ Fals</button>
+    <button id="tf-true-btn" onclick="answerTF(true)">✓ Adevărat</button>
+  </div>
+  <div id="tf-next" style="display:none"><button onclick="nextTF()">→ Următoarea</button></div>
+  <div id="tf-win" style="display:none"></div>
 </div>
 <div id="header">
   <div id="session-name"></div>
@@ -328,7 +347,7 @@ function qid(q){return (q._sk||sessionKey)+'#'+q.n;}
 function timerFmt(s){const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),ss=s%60;if(h>0)return(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(ss<10?'0':'')+ss;return(m<10?'0':'')+m+':'+(ss<10?'0':'')+ss;}
 function updTimer(){
   const box=document.getElementById('timer-val'),lbl=document.getElementById('timer-label');
-  if(timed&&timeLimit>0){const rem=Math.max(0,timeLimit-timerSecs);box.textContent=timerFmt(rem);lbl.textContent=mode==='exam'?'🎓 Examen':'Rămas';box.style.color=rem<=(mode==='exam'?600:300)?'var(--err)':'';box.classList.toggle('hms',rem>=3600);}
+  if(timed&&timeLimit>0){const rem=Math.max(0,timeLimit-timerSecs);box.textContent=timerFmt(rem);lbl.textContent=mode==='exam'?'🎓 Examen':(mode==='speed'?'🏎 Timp':'Rămas');box.style.color=rem<=(mode==='speed'?10:(mode==='exam'?600:300))?'var(--err)':'';box.classList.toggle('hms',rem>=3600);}
   else{box.textContent=timerFmt(timerSecs);lbl.textContent='Timp';box.style.color='';box.classList.remove('hms');}
 }
 function startTimer(from){clearInterval(timerInterval);timerSecs=from||0;updTimer();timerInterval=setInterval(function(){timerSecs++;updTimer();if(timed&&timeLimit>0&&timerSecs>=timeLimit){stopTimer();showResult();}},1000);}
@@ -359,6 +378,7 @@ function startSet(qs,m,sk){
   document.getElementById('stats').classList.remove('show');
   document.getElementById('search-panel').classList.remove('show');
   document.getElementById('memory').classList.remove('show');
+  document.getElementById('tf-panel').classList.remove('show');
   toggleMatChooser(false);
   showQuiz(true);
   timed=!!STATE.opts.timed;timeLimit=timed?QUESTIONS.length*SECPERQ:0;
@@ -378,6 +398,7 @@ function startExam(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS
 function startMarked(){var pool=[];Object.keys(STATE.marked).forEach(function(id){var p=id.split('#'),s=p[0],n=+p[1];var q=(ALL_SESSIONS[s]||[]).find(function(x){return x.n==n;});if(q)pool.push(Object.assign({_sk:s},q));});if(!pool.length){alert('Nu ai nicio întrebare marcată.\nApasă ☆ în dreptul unei întrebări ca s-o salvezi pentru recapitulare.');return;}shuffle(pool);document.getElementById('session-name').textContent='⭐ Marcate — '+pool.length+' de recapitulat';startSet(pool,'marked','');}
 function secLabel(){
   if(mode==='flash')return '🃏 Flashcards — apasă „Arată răspunsul" apoi navighează';
+  if(mode==='speed')return '🏎 Cursă rapidă — răspunde la cât mai multe în 60 de secunde!';
   if(mode==='exam')return '🎓 Simulare examen UNIBUC · fără feedback · poți schimba răspunsul · limită 3 ore';
   if(mode==='mixt')return '🎲 Examen mixt — întrebări din toate sesiunile';
   if(mode==='materie')return '🎯 '+matLabelByKey(matKey)+' — din toate sesiunile';
@@ -460,6 +481,7 @@ function selectAnswer(letter){
     if(letter===q.correct){if(idx>=0)arr.splice(idx,1);if(!arr.length)delete STATE.wrong[q._sk];}
     else{if(idx<0)arr.push(q.n);var fk=q._sk+':'+q.n;STATE.wrongFreq[fk]=(STATE.wrongFreq[fk]||0)+1;}}
   saveProgress();saveState();render();
+  if(mode==='speed'){setTimeout(function(){if(current<QUESTIONS.length-1)go(1);else showResult();},650);}
 }
 function go(dir){current=Math.max(0,Math.min(QUESTIONS.length-1,current+dir));if(mode==='flash')flashRevealed=false;saveProgress();render();window.scrollTo(0,0);}
 function renderGrid(){
@@ -476,6 +498,7 @@ function showResult(){
   document.getElementById('r-total').textContent=total;
   if(mode==='exam'){document.getElementById('r-grade').textContent=correct>=50?'✅ Promovat (≥50/100)':'❌ Nepromovat (<50/100)';}
   else if(mode==='normal'){document.getElementById('r-grade').textContent=correct>=60?'✅ Promovat (≥60 puncte)':'❌ Nepromovat (<60 puncte)';}
+  else if(mode==='speed'){const pct=total?Math.round(correct/total*100):0;document.getElementById('r-grade').textContent='🏎 '+correct+' corecte în 60 s — '+pct+'%';}
   else{const pct=total?Math.round(correct/total*100):0;document.getElementById('r-grade').textContent=pct>=60?('✅ Foarte bine — '+pct+'%'):('💪 Continuă exersarea — '+pct+'%');}
   document.getElementById('r-ok').textContent=correct;document.getElementById('r-ko').textContent=wrong;document.getElementById('r-sk').textContent=skip;
   var pdfBtn=document.getElementById('btn-pdf');if(pdfBtn)pdfBtn.style.display=wrong>0?'block':'none';
@@ -488,6 +511,7 @@ function showResult(){
       QUESTIONS.forEach(function(q,i){var letter=userAnswers[i];if(letter===undefined)return;var mk=materieKey(q.n);STATE.stats[mk]=STATE.stats[mk]||{c:0,t:0};STATE.stats[mk].t++;if(letter===q.correct)STATE.stats[mk].c++;if(q._sk){STATE.wrong[q._sk]=STATE.wrong[q._sk]||[];var arr=STATE.wrong[q._sk];var idx=arr.indexOf(q.n);if(letter===q.correct){if(idx>=0)arr.splice(idx,1);if(!arr.length)delete STATE.wrong[q._sk];}else{if(idx<0)arr.push(q.n);var fk=q._sk+':'+q.n;STATE.wrongFreq[fk]=(STATE.wrongFreq[fk]||0)+1;}}});
     }
     if(mode==='normal'){if(!prevBest||correct>prevBest.correct)STATE.best[sessionKey]={correct:correct,total:total,date:Date.now()};delete STATE.prog[sessionKey];}
+    if(mode==='speed'){var sb=STATE.best['__speed']||0;if(correct>sb)STATE.best['__speed']=correct;}
     if(ans>0){STATE.hist.push({d:Date.now(),mode:mode,correct:correct,total:total,sk:mode==='normal'?sessionKey:'',matk:mode==='materie'?matKey:''});if(STATE.hist.length>60)STATE.hist=STATE.hist.slice(-60);}
     saveState();refreshOptions();
   }
@@ -502,12 +526,14 @@ function showResult(){
   }else if(mode==='materie'){extra='🎯 '+matLabelByKey(matKey)+' — '+correct+'/'+total;}
   else if(mode==='marked'){extra='⭐ Marcate — '+correct+'/'+total;}
   else if(mode==='exam'){extra='🎓 Simulare examen — '+correct+'/100 · '+Math.round(correct)+'%';}
+  else if(mode==='speed'){var spBest=STATE.best['__speed']||0;extra='🏎 Cursă rapidă — '+correct+'/'+total+(spBest?' · 🏆 Record: '+spBest:'');}
   else{extra='🎲 Examen mixt din toate sesiunile';}
   document.getElementById('r-extra').textContent=extra;
   window.scrollTo(0,0);
 }
 function restart(){
   if(mode==='flash'){startFlash();return;}
+  if(mode==='speed'){startSpeed();return;}
   if(mode==='exam'){startExam();return;}
   if(mode==='mixt'){startMixt();return;}
   if(mode==='materie'){if(topicKws&&topicKws.length)startMaterieTopic(matKey,topicKws,topicLabel);else startMaterie(matKey);return;}
@@ -544,11 +570,15 @@ function toggleToolbar(){var tb=document.querySelector('.toolbar');var tg=docume
 function closeToolbar(){var tb=document.querySelector('.toolbar');var tg=document.getElementById('toolbar-toggle');if(tb)tb.classList.remove('open');if(tg){tg.classList.remove('open');tg.textContent='☰ Meniu';}}
 function setActiveTab(m){var bs=document.querySelectorAll('.tbtn[data-mode]');for(var i=0;i<bs.length;i++){bs[i].classList.toggle('active',bs[i].getAttribute('data-mode')===m);}closeToolbar();}
 function toggleMatChooser(force){var p=document.getElementById('mat-chooser');if(!p)return;var show=(force===undefined)?!p.classList.contains('show'):force;p.classList.toggle('show',show);}
-function openStats(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');toggleMatChooser(false);document.getElementById('stats').classList.add('show');setActiveTab('stats');renderStats();renderChart();window.scrollTo(0,0);}
-function openSearch(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('memory').classList.remove('show');toggleMatChooser(false);document.getElementById('search-panel').classList.add('show');setActiveTab('search');var si=document.getElementById('search-input');if(si)si.focus();window.scrollTo(0,0);}
-function backToQuiz(){document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');showQuiz(true);setActiveTab(mode);startTimer(timerSecs);window.scrollTo(0,0);}
+function openStats(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('stats').classList.add('show');setActiveTab('stats');renderStats();renderChart();window.scrollTo(0,0);}
+function openSearch(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('memory').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('search-panel').classList.add('show');setActiveTab('search');var si=document.getElementById('search-input');if(si)si.focus();window.scrollTo(0,0);}
+function backToQuiz(){document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');showQuiz(true);setActiveTab(mode);startTimer(timerSecs);window.scrollTo(0,0);}
 /* ---- 🧩 Memory juridic — logica + stilul în memory.js (modul comun) ---- */
-function openMemory(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('memory').classList.add('show');setActiveTab('memory');renderMemControls();startMemory();window.scrollTo(0,0);}
+function openMemory(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('memory').classList.add('show');setActiveTab('memory');renderMemControls();startMemory();window.scrollTo(0,0);}
+/* ---- 🏎 Cursă rapidă (speed) ---- */
+function startSpeed(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);var qs=pool.slice(0,Math.min(150,pool.length));document.getElementById('session-name').textContent='🏎 Cursă rapidă — 60 secunde';document.getElementById('tf-panel').classList.remove('show');timed=true;timeLimit=60;startSet(qs,'speed','');}
+/* ---- ✅ Adevărat / Fals — module tf.js ---- */
+function openTF(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');toggleMatChooser(false);document.getElementById('tf-panel').classList.add('show');setActiveTab('tf');if(typeof renderTFControls==='function'){renderTFControls();startTF();}window.scrollTo(0,0);}
 function renderStats(){
   const wrap=document.getElementById('stats-body');wrap.innerHTML='';var any=false;
   MAT.forEach(function(m){var k=m[0],lbl=m[1];var s=STATE.stats[k];var t=s?s.t:0,c=s?s.c:0;var pct=t?Math.round(c/t*100):0;if(t)any=true;
@@ -652,6 +682,7 @@ card.addEventListener('touchend',function(e){
 var origFlip=window.doFlip;window.doFlip=function(){if(swiped){swiped=false;return;}flashRevealed=true;render();};
 })();
 </script>
+<script src="tf.js"></script>
 <script src="dict.js"></script>
 <script src="memory.js"></script>
 <script>
