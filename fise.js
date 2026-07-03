@@ -2138,25 +2138,31 @@ var FISE_RECALL={
     'Cauze justificative (cel puțin 3) vs. cauze de neimputabilitate (cel puțin 4): ce anume înlătură fiecare categorie?',
     'Aplicație: A lovește pe B intenționat. B, mai fragil din cauza unei boli necunoscute de A, moare. Ce infracțiune a comis A? Argumentează.',
     'Obiectul material al infracțiunii: definește și dă câte un exemplu de infracțiune cu obiect material și una fără.',
-    'La grilă: cauze justificative → efect IN REM (față de toți) sau IN PERSONAM (față de un singur participant)?'
+    'La grilă: cauze justificative → efect IN REM (față de toți) sau IN PERSONAM (față de un singur participant)?',
+    'Infracțiunea omisivă improprie (art. 17 NCP): cine e „garantul", care sunt sursele poziției de garant (lege/contract/acțiune anterioară) și exemplul clasic (mama care nu hrănește nou-născutul = omor prin omisiune).',
+    '⚠️ La grilă: A trage spre X, dar glonțul deviază și îl ucide pe Y (aberratio ictus). Soluția majoritară română: câte infracțiuni și cu ce formă de vinovăție? Compară cu error in persona.'
   ],
   w19:[
     'Fazele activității infracționale (de la rezoluție la epuizare): enumeră-le și precizează care sunt pedepsibile.',
     'Tentativa: definiție + tipuri (perfectă / imperfectă / imposibilă). Care e sancțiunea tentativei imposibile și de ce?',
     'Desistarea vs. împiedicarea rezultatului: definiție pentru fiecare și efectul juridic față de ceilalți participanți care nu s-au desistat.',
     'Participanți penali: definește autorul / coautorul / instigatorul / complicele și pedeapsa relativă față de autor.',
-    'Participația improprie (art. 52 NCP): când intervine și cine răspunde penal (instigatorul/complicele ca autor mediat)?',
+    'Participația improprie (art. 52 NCP): cele două modalități (intenție la culpă / intenție la lipsă de vinovăție) și cu ce pedeapsă răspunde instigatorul/complicele. De ce „autorul mediat" e capcană (nu există în NCP)?',
     'Aplicație: A îl instigă pe B să fure. B, ajuns la fața locului, se desistă. Răspunde A pentru instigare? Dar B pentru tentativă?',
-    'Circumstanțele reale vs. personale: dă câte un exemplu și față de cine se aplică fiecare în cadrul participației penale.'
+    'Circumstanțele reale vs. personale: dă câte un exemplu și față de cine se aplică fiecare în cadrul participației penale.',
+    '⚠️ La grilă: infracțiunea continuată — mai e necesară condiția „același subiect pasiv" (CCR 368/2017)? Cu cât se poate majora maximul special (cel mult 3 ani)? De când curge prescripția (epuizare)?',
+    '⚠️ La grilă: instanța reține circumstanțe atenuante — „poate" coborî sub minim sau limitele se reduc OBLIGATORIU cu 1/3 (art. 76)? Ce se întâmplă când coexistă cu agravante (art. 79 — aplicare succesivă)?'
   ],
   w20:[
     'Cauze justificative (art. 18–22 NCP) — efect IN REM: ce înseamnă concret pentru participanți? Dă exemplu cu legitima apărare.',
     'Cauze de neimputabilitate (art. 23–31 NCP) — efect IN PERSONAM: enumeră cel puțin 5 și ce înseamnă că e personal.',
-    'Legitima apărare: condițiile atacului (iminent, injust, real) + condițiile apărării (necesară, proporțională). Ce e excesul scuzabil?',
-    'Minoritatea penală: regimul răspunderii sub 14 ani / între 14 și 16 ani (cu discernământ) / 16–18 ani.',
+    'Legitima apărare: condițiile atacului (material, direct, imediat, injust) + condițiile apărării (necesară, proporțională). ⚠️ La grilă: depășirea limitelor din tulburare/temere = exces NEIMPUTABIL (art. 26 — nu răspunde!) vs. depășirea conștientă = doar atenuantă. Care e care?',
+    'Minoritatea penală: pragurile răspunderii (sub 14 / 14–16 cu discernământ / 16–18). ⚠️ La grilă: ce sancțiuni primesc minorii — pedepse reduse sau EXCLUSIV măsuri educative? Enumeră cele 4 neprivative și cele 2 privative.',
     'Concursul de infracțiuni: cum se calculează pedeapsa principală conform art. 39 NCP (pedeapsa cea mai grea + spor)?',
     'Recidiva postcondamnatorie vs. pluralitate intermediară: diferența-cheie și consecința pentru cuantumul pedepsei.',
-    'Aplicație: A, cu o condamnare anterioară la 6 luni pentru furt, comite din nou un furt. Recidivă sau pluralitate intermediară? De ce?'
+    'Aplicație: A, cu o condamnare anterioară la 6 luni pentru furt, comite din nou un furt. Recidivă sau pluralitate intermediară? De ce (primul termen cere >1 an)?',
+    '⚠️ La grilă: recidiva postcondamnatorie — pedepsele se contopesc (cumul juridic) sau se ADUNĂ (cumul aritmetic, art. 43 al. 1)? Recidiva postexecutorie — până când există starea de recidivă și ce efect are (limite +1/2)?',
+    'Liberarea condiționată: fracțiile obligatorii (2/3 la pedepse ≤10 ani; 3/4 la >10 ani; cu muncă 1/2 / 2/3), condițiile suplimentare și ce se întâmplă la o nouă infracțiune intenționată în termenul de supraveghere.'
   ],
   w21:[
     'Omorul simplu vs. omorul calificat (art. 189 NCP): enumeră cel puțin 4 forme calificate.',
@@ -2165,25 +2171,30 @@ var FISE_RECALL={
     'Lovire sau alte violențe (art. 193): regimul procesual (plângere prealabilă) și efectul juridic al împăcării.',
     'Violul (art. 218): modalitățile de comitere (violență / amenințare / imposibilitate de exprimare sau apărare). Dă exemplu pentru ultima modalitate.',
     'Aplicație: A îl lovește pe B cu pumnul. B cade, se lovește la cap și moare. Ce infracțiune a comis A? Ce formă de vinovăție?',
-    'La grilă: omorul calificat față de un funcționar public — autorul trebuia să cunoască calitatea victimei în momentul faptei?'
+    '⚠️ La grilă: uciderea unui polițist aflat în exercițiul funcțiunii — omor calificat (art. 189) sau infracțiune contra victimei + regimul ultrajului (art. 257: limitele majorate)? De ce „omor calificat pe calitatea victimei" e capcană?',
+    'Violența în familie (art. 199): cu cât se majorează maximul special (o PĂTRIME — nu jumătate!) și ce efect are împăcarea la lovirea unui membru de familie?',
+    'Traficul de persoane (art. 210) vs. traficul de minori (art. 211): la care nu se cer mijloace de constrângere? Consimțământul victimei/minorului are vreo valoare (art. 210 al. 3)?'
   ],
   w22:[
     'Enumeră cel puțin 5 infracțiuni contra patrimoniului (NCP) și câte un element distinctiv pentru fiecare.',
     'Furtul calificat (art. 229 NCP): enumeră cel puțin 4 împrejurări care califică furtul simplu.',
     'Tâlhăria (art. 233): când e consumată și poate violența fi exercitată și după luarea bunului? Explică scopul.',
     'Fals material (art. 320) vs. fals intelectual (art. 321): diferența esențială. Care necesită subiect activ special și care e acesta?',
-    'Uzul de fals (art. 323): cine poate fi subiect activ și de ce autorul falsului care îl folosește el însuși nu comite separat uz de fals?',
+    '⚠️ La grilă: autorul unui fals material în înscrisuri OFICIALE îl folosește el însuși — o infracțiune sau CONCURS (fals + uz de fals)? De ce la înscrisurile sub semnătură privată e o singură infracțiune (art. 322)?',
     'Aplicație: A primește în depozit bijuteriile lui B, le vinde și nu le restituie. Ce infracțiune? Ce diferențiază de furt?',
-    'Delapidare (art. 295) vs. gestiune frauduloasă (art. 242): diferența privind subiectul activ și calitatea acestuia.'
+    'Delapidare (art. 295) vs. gestiune frauduloasă (art. 242): diferența privind subiectul activ și calitatea acestuia.',
+    'Frauda informatică (art. 249) vs. accesul ilegal (art. 360) vs. alterarea datelor (art. 362): care cere scop patrimonial? Un hacker care doar intră în sistem fără să modifice nimic — ce infracțiune comite?'
   ],
   w23:[
     'Luarea de mită (art. 289) vs. darea de mită (art. 290): cine sunt subiecții activi și care e elementul material al fiecăreia.',
     'Traficul de influență (art. 291): subiectul activ trebuie să fie funcționar? Influența trebuie să fie reală? Ce se pedepsește concret?',
     'Abuzul în serviciu (art. 297) vs. neglijența în serviciu (art. 298): diferența privind forma de vinovăție (intenție vs. culpă).',
     'Mărturia mincinoasă (art. 273): cauza de nepedepsire a retractării — până la ce moment procesual se poate retracta cu efect?',
-    'Favorizarea făptuitorului (art. 269): cauza de nepedepsire pentru soțul și rudele apropiate — se referă la rudele favorizatorului sau ale infractorului favorizat?',
+    'Favorizarea făptuitorului (art. 269): cauza de nepedepsire pentru <b>membrul de familie</b> (art. 177) — se referă la familia favorizatorului sau a făptuitorului favorizat? Se aplică și la tăinuire (art. 270 al. 3)?',
     'Aplicație: A îi promite judecătorului X 10.000 € pentru a câștiga un proces. A comite dare de mită sau cumpărare de influență? Argumentează.',
-    'Tăinuire (art. 270) vs. favorizare (art. 269): pe ce se axează fiecare și pot concura dacă autorul face ambele acte?'
+    'Tăinuire (art. 270) vs. favorizare (art. 269): pe ce se axează fiecare și pot concura dacă autorul face ambele acte?',
+    '⚠️ La grilă: hoțul care doar FOLOSEȘTE banii furați comite și spălare de bani? Dar dacă îi transferă prin conturi pentru a le ascunde originea? (auto-spălarea: doar lit. a-b, nu lit. c — CCR 418/2018)',
+    'Evaziunea fiscală (L. 241/2005): pedeapsa de bază (2–8) + majorările la prejudicii de 100.000 € (+5 ani) și 500.000 € (+7 ani). Ce efect are plata prejudiciului + 20% + dobânzi până la primul termen (art. 10 — limite reduse la jumătate)?'
   ],
   w24:[
     'Conducere sub alcool (art. 336 NCP): limita exactă de alcoolemie în sânge și este necesar să se fi produs un accident?',
@@ -2192,7 +2203,9 @@ var FISE_RECALL={
     'Recap distincții patrimoniu: furt vs. abuz de încredere vs. înșelăciune vs. tâlhărie — criteriul-cheie care le separă pe fiecare.',
     'Recap fals: fals material vs. fals intelectual vs. uz de fals — subiect activ și diferența modului de săvârșire.',
     'Recap corupție: luare de mită vs. trafic de influență vs. abuz în serviciu — care nu cere calitatea de funcționar?',
-    'La grilă: autorul unui fals care folosește el însuși înscrisul fals — comite și uz de fals separat? De ce nu?'
+    '⚠️ La grilă: autorul unui fals în înscrisuri oficiale care folosește el însuși înscrisul — comite și uz de fals? (DA — concurs; absorbția e doar la înscrisurile sub semnătură privată.)',
+    'Infracțiunile informatice: treptele pedepsei la accesul ilegal (art. 360: simplu / în scopul obținerii de date / cu încălcarea măsurilor de securitate) și unde e reglementat falsul informatic (art. 325 — la falsuri, nu la 360–366!).',
+    '⚠️ La grilă: conducerea cu permisul SUSPENDAT — aceeași pedeapsă ca lipsa totală a permisului? (art. 335: al. 1 → 1–5 ani; al. 2 → 6 luni–3 ani sau amendă.) Alcoolemia exact 0,80 g/l — infracțiune sau contravenție?'
   ],
   w26:[
     'Competența materială — ce judecă în primă instanță: judecătoria / tribunalul / curtea de apel? Ce prag valoric separă judecătoria de tribunal?',
