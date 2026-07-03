@@ -317,6 +317,9 @@ body.light .fisa-freq{color:#8a6d00;background:#fff8e1;border-color:#e8d48a}
 
 /* ═══ TESTEAZĂ-MĂ GLOBAL ═══ */
 #fise-test-btn{width:100%;background:linear-gradient(90deg,var(--gr),#66bb6a);color:#0f1b10;border:none;border-radius:var(--r);padding:12px 14px;font-size:14px;font-weight:800;cursor:pointer;margin-bottom:6px;transition:opacity .15s}
+#fise-tipquiz-btn{width:100%;background:linear-gradient(90deg,#f9a825,#ffb74d);color:#231a00;border:none;border-radius:var(--r);padding:12px 14px;font-size:14px;font-weight:800;cursor:pointer;margin-bottom:6px;transition:opacity .15s}
+#azi-recall-due{background:var(--sf);border:1.5px solid var(--warn);border-radius:var(--r);padding:12px 14px;margin-bottom:10px;font-size:13px;color:var(--txt);display:none}
+#azi-recall-due button{background:var(--warn);color:#231a00;border:none;border-radius:16px;padding:6px 14px;font-size:12px;font-weight:800;cursor:pointer;margin-top:8px}
 #fise-test-btn:hover{opacity:.9}
 #fise-test-last{font-size:11px;color:var(--sub);margin-bottom:10px;text-align:center}
 .ftest-prog{height:5px;background:var(--sf2);border-radius:3px;overflow:hidden;margin-bottom:12px}
@@ -374,6 +377,7 @@ body.light .fisa-freq{color:#8a6d00;background:#fff8e1;border-color:#e8d48a}
 <div id="panel-azi" class="panel active">
   <div id="hello">Bună, copile 🤍</div>
   <div id="hello-date">—</div>
+  <div id="azi-recall-due"></div>
 
   <div class="dash-row">
     <div class="dash-card" id="cd-card">
@@ -577,6 +581,7 @@ body.light .fisa-freq{color:#8a6d00;background:#fff8e1;border-color:#e8d48a}
 
 <div id="panel-fise" class="panel">
   <button id="fise-test-btn" onclick="startFiseTest()">🎯 Testează-mă — câte o întrebare din fiecare fișă</button>
+  <button id="fise-tipquiz-btn" onclick="startTipQuiz()">⚠️ Quiz capcane — le știi?</button>
   <div id="fise-test-last"></div>
   <div id="fise-test"></div>
   <input id="fise-search" type="search" placeholder="Caută în fișe: fidejusiune, recidivă, art. 218…" oninput="filterFise()" autocomplete="off" spellcheck="false">
@@ -1428,7 +1433,7 @@ function showPanel(id){
   const map={azi:0,plan:1,fise:2,cal:3,met:4,ritm:5,surse:6,dict:7,memory:8};
   const tabs=document.querySelectorAll('.tab'); if(map[id]!==undefined) tabs[map[id]].classList.add('active');
   if(id==='cal') renderCalendar();
-  if(id==='azi') renderDashboard();
+  if(id==='azi'){ renderDashboard(); renderRecallDue(); }
   if(id==='memory'){ renderMemControls(); startMemory(); }
   if(id==='fise') renderFise();
 }
@@ -1555,6 +1560,7 @@ initReminder();
 
 // init dicționar
 renderDict();
+renderRecallDue();
 
 // ── Fișe sinteză ──────────────────────────────────────────────────────────
 var _fiseRendered = false;
@@ -1682,17 +1688,28 @@ function renderFTestLast(){
     el.textContent = last ? ('Ultimul test: ' + last.ok + '/' + last.total + ' (' + Math.round(last.ok/last.total*100) + '%) · ' + last.date) : '';
   }catch(e){ el.textContent=''; }
 }
-function startFiseTest(){
+function startFiseTest(onlyMissed){
   renderFise();
   if(typeof FISE_RECALL === 'undefined' || typeof FISE_DATA === 'undefined'){ toast('Fișele nu s-au încărcat.'); return; }
+  ST.recallMiss = ST.recallMiss || {};
   var qs = [];
   FISE_DATA.forEach(function(f){
     var r = FISE_RECALL[f.id] || [];
-    if(r.length) qs.push({id:f.id, wk:f.wk, title:f.title, q:r[Math.floor(Math.random()*r.length)]});
+    if(!r.length) return;
+    if(onlyMissed){
+      r.forEach(function(q,qi){ if(ST.recallMiss[f.id+':'+qi]) qs.push({id:f.id, qi:qi, wk:f.wk, title:f.title, q:q}); });
+    } else {
+      // spaced repetition: dacă fișa are întrebări ratate anterior, alege una dintre ele; altfel aleator
+      var missed = [];
+      r.forEach(function(q,qi){ if(ST.recallMiss[f.id+':'+qi]) missed.push(qi); });
+      var qi = missed.length ? missed[Math.floor(Math.random()*missed.length)] : Math.floor(Math.random()*r.length);
+      qs.push({id:f.id, qi:qi, wk:f.wk, title:f.title, q:r[qi]});
+    }
   });
+  if(onlyMissed && !qs.length){ toast('Nicio întrebare ratată — bravo! 🌟'); return; }
   for(var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
   FTEST = {qs:qs, i:0, ok:0, miss:[]};
-  ['fise-container','fise-search','fise-search-count','fise-test-btn','fise-test-last'].forEach(function(id){
+  ['fise-container','fise-search','fise-search-count','fise-test-btn','fise-tipquiz-btn','fise-test-last'].forEach(function(id){
     var el=document.getElementById(id); if(el) el.style.display='none';
   });
   renderFiseTest();
@@ -1732,14 +1749,108 @@ function renderFiseTest(){
 }
 function answerFiseTest(ok){
   if(!FTEST) return;
-  if(ok) FTEST.ok++; else FTEST.miss.push(FTEST.qs[FTEST.i]);
+  var cur = FTEST.qs[FTEST.i];
+  ST.recallMiss = ST.recallMiss || {};
+  if(cur && cur.qi !== undefined){
+    var k = cur.id + ':' + cur.qi;
+    if(ok){ delete ST.recallMiss[k]; } else { ST.recallMiss[k] = (ST.recallMiss[k]||0) + 1; }
+    save();
+  }
+  if(ok) FTEST.ok++; else FTEST.miss.push(cur);
   FTEST.i++;
   renderFiseTest();
+}
+
+// ── „De reluat" (spaced repetition pe recall) ──
+function recallDueCount(){
+  ST.recallMiss = ST.recallMiss || {};
+  return Object.keys(ST.recallMiss).length;
+}
+function renderRecallDue(){
+  var el = document.getElementById('azi-recall-due'); if(!el) return;
+  var n = recallDueCount();
+  if(!n){ el.style.display='none'; el.innerHTML=''; return; }
+  el.style.display='block';
+  el.innerHTML = '🧠 <b>De reluat:</b> ' + n + ' întrebăr' + (n===1?'e':'i') + ' recall ratate la ultimele testări.' +
+    '<br><button onclick="showPanel(\'fise\');startFiseTest(true)">🔁 Reia-le acum</button>';
+}
+
+// ── Quiz capcane (⚠️ FISE_TIPS, cu prioritate pe cele ratate) ──
+var TQUIZ = null;
+function startTipQuiz(){
+  renderFise();
+  if(typeof FISE_TIPS === 'undefined' || typeof FISE_DATA === 'undefined'){ toast('Fișele nu s-au încărcat.'); return; }
+  ST.tipMiss = ST.tipMiss || {};
+  var all = [];
+  FISE_DATA.forEach(function(f){
+    (FISE_TIPS[f.id]||[]).forEach(function(t,ti){
+      all.push({id:f.id, ti:ti, wk:f.wk, title:f.title, t:t, missed: !!ST.tipMiss[f.id+':'+ti]});
+    });
+  });
+  for(var i=all.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var tmp=all[i]; all[i]=all[j]; all[j]=tmp; }
+  var missed = all.filter(function(x){return x.missed;});
+  var fresh  = all.filter(function(x){return !x.missed;});
+  var deck = missed.concat(fresh).slice(0, 15);
+  TQUIZ = {qs:deck, i:0, ok:0, miss:[]};
+  ['fise-container','fise-search','fise-search-count','fise-test-btn','fise-tipquiz-btn','fise-test-last'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.style.display='none';
+  });
+  renderTipQuiz();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function renderTipQuiz(){
+  var box = document.getElementById('fise-test'); if(!box || !TQUIZ) return;
+  var t = TQUIZ;
+  if(t.i >= t.qs.length){
+    var pct = Math.round(t.ok/t.qs.length*100);
+    var msg = pct>=75 ? 'Capcanele nu te mai prind! 🌟' : (pct>=50 ? 'Bine — ratatele revin la următorul quiz. 💪' : 'Reia fișele marcate — capcanele astea pică des. 📖');
+    var missHtml = t.miss.length ? '<div class="ftest-miss-head">📖 Fișe de revăzut (' + t.miss.length + ' capcane)</div>' +
+      t.miss.map(function(m){ return '<div class="ftest-miss" onclick="endTipQuiz();ftestOpenFisa(\'' + m.id + '\')"><span class="ftest-miss-wk">' + _fEsc(m.wk) + '</span> <span class="ftest-miss-t">' + _fEsc(m.title) + '</span></div>'; }).join('') : '';
+    box.innerHTML = '<div class="ftest-card ftest-final">' +
+      '<div class="ftest-score' + (pct>=75?'':(pct>=50?' mid':' low')) + '">' + t.ok + '/' + t.qs.length + '</div>' +
+      '<div class="ftest-sub">' + pct + '% · ' + msg + '</div>' + missHtml +
+      '<div class="ftest-final-btns">' +
+        '<button class="ftest-btn ok" onclick="startTipQuiz()">🔄 Încă un quiz</button>' +
+        '<button class="ftest-btn ko" onclick="endTipQuiz()">← Înapoi la fișe</button>' +
+      '</div></div>';
+    return;
+  }
+  var cur = t.qs[t.i];
+  box.innerHTML = '<div class="ftest-prog"><div class="ftest-prog-fill" style="width:' + Math.round(t.i/t.qs.length*100) + '%"></div></div>' +
+    '<div class="ftest-card">' +
+      '<div class="ftest-count">Capcana ' + (t.i+1) + ' din ' + t.qs.length + (cur.missed?' · 🔁 ratată data trecută':'') + '</div>' +
+      '<div class="ftest-meta">' + _fEsc(cur.wk) + ' · ' + _fEsc(cur.title) + '</div>' +
+      '<div class="ftest-q" style="text-align:left">' + cur.t + '</div>' +
+      '<div class="ftest-btns">' +
+        '<button class="ftest-btn ok" onclick="answerTipQuiz(true)">✅ O știam</button>' +
+        '<button class="ftest-btn ko" onclick="answerTipQuiz(false)">❌ N-o știam</button>' +
+      '</div>' +
+      '<button class="ftest-quit" onclick="endTipQuiz()">Ieși din quiz</button>' +
+    '</div>';
+}
+function answerTipQuiz(ok){
+  if(!TQUIZ) return;
+  var cur = TQUIZ.qs[TQUIZ.i];
+  ST.tipMiss = ST.tipMiss || {};
+  var k = cur.id + ':' + cur.ti;
+  if(ok){ delete ST.tipMiss[k]; } else { ST.tipMiss[k] = (ST.tipMiss[k]||0) + 1; }
+  save();
+  if(ok) TQUIZ.ok++; else TQUIZ.miss.push(cur);
+  TQUIZ.i++;
+  renderTipQuiz();
+}
+function endTipQuiz(){
+  TQUIZ = null;
+  var box = document.getElementById('fise-test'); if(box) box.innerHTML='';
+  ['fise-container','fise-search','fise-search-count','fise-test-btn','fise-tipquiz-btn','fise-test-last'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.style.display='';
+  });
+  renderFTestLast();
 }
 function endFiseTest(){
   FTEST = null;
   var box = document.getElementById('fise-test'); if(box) box.innerHTML='';
-  ['fise-container','fise-search','fise-search-count','fise-test-btn','fise-test-last'].forEach(function(id){
+  ['fise-container','fise-search','fise-search-count','fise-test-btn','fise-tipquiz-btn','fise-test-last'].forEach(function(id){
     var el=document.getElementById(id); if(el) el.style.display='';
   });
   renderFTestLast();
