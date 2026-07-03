@@ -1962,11 +1962,13 @@ var FISE_RECALL={
   w01:[
     'Definește actul juridic civil și enumeră cele 3 condiții de valabilitate (art. 1179 NCC).',
     'Clasifică actele juridice după numărul de voințe (unilateral / bilateral / multilateral) — câte un exemplu pentru fiecare.',
-    'Eroarea-obstacol vs. eroarea-viciu de consimțământ: ce tip de nulitate atrage fiecare și de ce diferă?',
+    'Emanciparea (art. 40 NCC): la ce vârstă, cine o încuviințează și pentru ce motive? La grilă: e automată sau cere hotărârea instanței de tutelă? Compară cu capacitatea dobândită prin căsătorie (art. 39).',
     'Schema comparativă — nulitate absolută vs. relativă: cine o invocă / termen de prescripție / poate fi confirmată?',
     'Aplicație: un minor de 16 ani vinde un teren fără acordul reprezentantului legal. Ce tip de nulitate? Cine o poate invoca? Poate fi confirmată?',
-    'Retroactivitatea nulității (quod nullum est, nullum producit effectum): ce înseamnă și enumeră 2 excepții principale față de terți.',
-    'La grilă: prescripția extinctivă stinge dreptul subiectiv sau dreptul la acțiune? Ce consecință are pentru debitorul care plătește după prescripție?'
+    'Condiție suspensivă vs. rezolutorie vs. termen: definiții + un exemplu. La grilă: de ce condiția pur potestativă din partea debitorului („îți vând dacă vreau") nu produce niciun efect, dar cea din partea creditorului e valabilă (art. 1403)?',
+    'Stipulația pentru altul vs. promisiunea faptei altuia: la care dobândește terțul dreptul direct și la care terțul nu e obligat deloc? Până când poate stipulantul revoca stipulația?',
+    '⚠️ La grilă: partajul sub NCC — act declarativ sau constitutiv (art. 680)? De la ce moment devine coproprietarul proprietar exclusiv? De ce e capcană față de vechiul cod?',
+    'La grilă: prescripția extinctivă stinge dreptul subiectiv sau dreptul la acțiune? Ce consecință are pentru debitorul care plătește după prescripție? Plafonul de 18 luni de la act (art. 2529) — la ce vicii se aplică?'
   ],
   w02:[
     'Enumeră cele 4 vicii de consimțământ și tipul de nulitate atras de fiecare (absolut sau relativ).',
@@ -1975,7 +1977,8 @@ var FISE_RECALL={
     'Leziunea: ce vârstă trebuie să aibă victima, ce proporție a valorii prestației trebuie depășită și în ce termen se prescrie acțiunea?',
     'Aplicație: A îl determină pe B să cumpere un teren, susținând mincinos că e construibil. Ce viciu de consimțământ? Ce tip de nulitate? Cine o invocă?',
     'Eroarea asupra identității cocontractantului vs. eroarea asupra calității esențiale a bunului — care atrage nulitate și ce tip?',
-    'La grilă: violența exercitată de un terț — cumpărătorul care știa de violență vs. cumpărătorul care nu știa: consecințe diferite?'
+    '⚠️ La grilă: violența de terț atrage anularea <b>indiferent</b> dacă cocontractantul a cunoscut-o; dolul de terț — <b>numai dacă</b> a cunoscut sau trebuia să cunoască. De ce diferă regimul (art. 1215 vs. 1220)?',
+    'Adaptarea contractului (art. 1213 NCC): cum poate cealaltă parte bloca anularea pentru eroare esențială? În ce termen trebuie să declare că execută contractul cum l-a înțeles victima? — întrebare frecventă la grile.'
   ],
   w03:[
     'Schema completă — nulitate absolută: cauze (3 exemple) / cine invocă / termen / confirmare posibilă?',
@@ -1984,7 +1987,10 @@ var FISE_RECALL={
     'Nulitatea parțială: când se poate aplica și ce condiție trebuie îndeplinită față de restul actului?',
     'Principiul resoluto iure dantis, resolvitur ius accipientis: ce înseamnă și când nu se aplică față de terții de bună-credință?',
     'Aplicație: A vinde lui B un imobil; contractul e anulat. Între timp B vânduse imobilul lui C (de bună-credință). Ce se întâmplă cu dreptul lui C?',
-    'Confirmarea nulității relative: cine o poate face, în ce formă și care e efectul retroactiv față de terți?'
+    'Confirmarea nulității relative: cine o poate face, în ce formă și care e efectul retroactiv față de terți?',
+    '⚠️ La grilă: imposibilitatea inițială de executare — contractul e valabil sau nul (art. 1227)? Dar vânzarea cu preț derizoriu — nulă absolut sau anulabilă (art. 1665)? Dar lipsa cauzei (art. 1238 al. 1)?',
+    'Simulația: ce prevalează între părți și ce pot alege terții de bună-credință? Acțiunea în simulație se prescrie? Cum se probează actul secret de către părți vs. de către terți?',
+    'Arvuna confirmatorie vs. penalizatoare: în care „cel care dă pierde arvuna / cel care primește restituie dublul" e sancțiune pentru neexecutare și în care e prețul unui drept de răzgândire?'
   ],
   w04:[
     'Termenul general de prescripție extinctivă în NCC: durată, de la ce moment curge și ce stinge (dreptul sau acțiunea)?',
@@ -1993,7 +1999,9 @@ var FISE_RECALL={
     'Decăderea vs. prescripția extinctivă — 3 diferențe: cine o poate invoca, regimul convenției contrare, invocare din oficiu.',
     'Termenele speciale de prescripție: acțiunea în anulare pentru viciu de consimțământ / răspundere delictuală / acțiunea în revendicare imobiliară.',
     'Aplicație: termenul de prescripție s-a împlinit, dar debitorul plătește. Poate cere restituirea sumei plătite?',
-    'Recunoașterea dreptului de către debitor (art. 2537 NCC): ce efect produce asupra termenului de prescripție în curs?'
+    'Recunoașterea dreptului de către debitor (art. 2537 NCC): ce efect produce asupra termenului de prescripție în curs?',
+    '⚠️ La grilă: A îi transferă lui B bani în temeiul unui contract cu cauză imorală; contractul e desființat. B poate refuza restituirea invocând „nemo auditur"? (art. 1638 — răspunsul corect sub NCC!)',
+    'Restituirea prin echivalent (art. 1641): bunul primit a pierit — ce valoare plătește debitorul de bună-credință vs. cel de rea-credință (cea mai mică / cea mai mare — între ce momente)?'
   ],
   w05:[
     'Enumeră și explică pe scurt cele 3 atribute ale dreptului de proprietate (usus / fructus / abusus).',
@@ -2002,16 +2010,19 @@ var FISE_RECALL={
     'Uzucapiunea tabulară (art. 931 NCC) vs. extratabulară (art. 930 NCC): termene și condiții pentru fiecare.',
     'Aplicație: A construiește o casă pe terenul lui B cu bună-credință. B cere demolarea. Instanța poate ordona demolarea?',
     'Accesiunea imobiliară artificială — constructorul de rea-credință pe terenul altuia: ce poate cere proprietarul terenului?',
-    'La grilă: proprietarul poate restricționa exercițiul atributelor propriului drept? Enumeră 2 limitări legale.'
+    'La grilă: proprietarul poate restricționa exercițiul atributelor propriului drept? Enumeră 2 limitări legale.',
+    '⚠️ La grilă: partajul — de când produce efecte sub NCC (art. 680)? La imobile, ce formalitate suplimentară e necesară? De ce răspunsul „retroactiv, de la nașterea coproprietății" e greșit?',
+    'Avulsiunea vs. aluviunea: care e treptată și care bruscă? În ce termen poate revendica proprietarul fondului de origine bucata de teren ruptă (1 an) și ce se întâmplă la expirare?'
   ],
   w06:[
     'Enumeră cele 4 dezmembrăminte ale dreptului de proprietate și caracteristica esențială a fiecăruia.',
     'Uzufruct: drepturile uzufructuarului (uz + fructus) vs. nudul proprietar (abusus). Cine suportă reparațiile mari (de structură)?',
     'Uzufructul constituit în favoarea unei persoane juridice: durată maximă legală și ce se întâmplă la expirare?',
     'Dreptul de superficie: ce include (dreptul asupra construcției + dreptul de a folosi terenul) și durata maximă în NCC.',
-    'Servitutea — clasificare esențială: continuă vs. necontinuă și aparentă vs. neaparentă. Care se poate dobândi prin uzucapiune?',
+    '⚠️ La grilă: uzucapiunea servituților sub NCC (art. 763) — ce servituți se dobândesc prin uzucapiune tabulară și ce servituți prin cea extratabulară? De ce criteriul „continue și aparente" e capcană (vechiul cod)?',
     'Aplicație: nudul proprietar vrea să vândă imobilul grevat de uzufruct viager. Este posibil? Ce se întâmplă cu uzufructul?',
-    'La grilă: uzufructuarul poate ceda uzufructul? Dar poate subînchiria bunul? Care e consecința față de nudul proprietar?'
+    'La grilă: uzufructuarul poate ceda uzufructul? Dar poate subînchiria bunul? Care e consecința față de nudul proprietar?',
+    'Dreptul de abitație al soțului supraviețuitor (art. 973): condiții (locuința să facă parte din moștenire + fără altă locuință), durata (până la partaj, minim 1 an) și caractere (gratuit, inalienabil, insesizabil).'
   ],
   w07:[
     'Posesia: elementele constitutive (corpus + animus domini). Ce e detenția precară și cum diferă de posesie?',
@@ -2020,7 +2031,9 @@ var FISE_RECALL={
     'Ipoteca imobiliară: condiții de constituire (formă autentică) și formalități de opozabilitate față de terți (ANCPI).',
     'Aplicație: creditorul ipotecar urmărește imobilul, dar debitorul l-a vândut unui terț. Poate creditorul urmări imobilul în mâinile terțului?',
     'Gajul (amanetul): ce bunuri pot fi gajate, ce formalitate de constituire e necesară și cum se execută?',
-    'Privilegiile vs. ipoteca: prin ce se deosebesc privind rangul, originea și necesitatea înscrierii?'
+    'Privilegiile vs. ipoteca: prin ce se deosebesc privind rangul, originea și necesitatea înscrierii?',
+    'Complânda vs. reintegranda: care cere posesie utilă de cel puțin 1 an și care e deschisă oricărui posesor (chiar detentor)? Termenul comun de introducere (1 an). Instanța cercetează fondul dreptului?',
+    '⚠️ La grilă: compararea titlurilor la revendicare — același autor (cine câștigă?), autori diferiți (ce criteriu?), niciun titlu (cine e preferat?). Plus: cheltuielile posesorului la restituire — necesare/utile/voluptuare.'
   ],
   w08:[
     'Enumeră cele 5 izvoare ale obligațiilor civile (art. 1165 NCC) și câte un exemplu concret pentru fiecare.',
@@ -2038,16 +2051,21 @@ var FISE_RECALL={
     'Răspunderea pentru animale (art. 1375 NCC) și pentru ruina edificiului (art. 1378 NCC): obiectivă sau subiectivă? Cine răspunde?',
     'Aplicație: A și B cauzează împreună un prejudiciu de 100.000 lei lui C. Fiecare răspunde solidar sau proporțional față de C?',
     'Prejudiciul moral: se poate repara în dreptul civil român? Pe ce temei legal și cum îl evaluează instanța?',
-    'La grilă: culpa exclusivă a victimei → exonerare totală sau parțială a autorului? Dar culpa concurentă?'
+    'La grilă: culpa exclusivă a victimei → exonerare totală sau parțială a autorului? Dar culpa concurentă?',
+    '⚠️ La grilă: mașina furată provoacă un accident — cine răspunde, hoțul sau proprietarul deposedat? De ce (paza juridică = control independent, art. 1377)?',
+    'Răspunderea pentru produse cu defect (L. 240/2004): obiectivă sau subiectivă? Termenele (prescripție 3 ani / decădere 10 ani de la punerea în circulație) și ce e „riscul de dezvoltare".'
   ],
   w10:[
-    'Plata: imputația plăților la mai multe datorii față de același creditor — care e ordinea legală (art. 1503 NCC)?',
+    'Plata: imputația plăților la mai multe datorii față de același creditor — ordinea în cadrul unei datorii (cheltuieli → dobânzi → capital) și ordinea legală între datorii (art. 1506–1509 NCC)?',
+    '⚠️ La grilă: unde se execută obligațiile bănești — la domiciliul creditorului sau al debitorului (art. 1494)? Dar predarea unui bun individual determinat? Dar celelalte obligații? (portabil vs. cherabil — capcană NCC!)',
     'Solidaritate pasivă vs. solidaritate activă: ce drepturi are creditorul față de fiecare debitor solidar și ce se întâmplă dacă unul e insolvabil?',
     'Acțiunea oblică (art. 1560 NCC): condiții, față de cine se exercită și unde revin efectele?',
     'Acțiunea pauliană (art. 1562 NCC): cele 3 condiții cumulative + diferența de efect (inopozabilitate, nu nulitate) + termenul de prescripție.',
     'Excepția de neexecutare (art. 1556 NCC): condiții de admisibilitate + cum diferă de rezoluțiune?',
     'Rezoluțiunea vs. rezilierea: definiție + efecte temporale (ex tunc vs. ex nunc) + când se aplică fiecare?',
-    'Aplicație: A nu livrează marfa la termen. B refuză să plătească prețul. Ce excepție invocă B? Dacă A continuă să nu livreze, ce altă cale are B?'
+    'Aplicație: A nu livrează marfa la termen. B refuză să plătească prețul. Ce excepție invocă B? Dacă A continuă să nu livreze, ce altă cale are B?',
+    'La grilă: dreptul de retenție — e garanție reală? Dă preferință la distribuirea prețului? Poate retentorul opri urmărirea silită pornită de alt creditor (art. 2498)?',
+    'Pactul comisoriu (art. 1553): ce condiție de valabilitate are (indicarea expresă a obligațiilor) și când mai e necesară punerea în întârziere? De ce „gradele I–IV" sunt capcană?'
   ],
   w11:[
     'Enumeră cel puțin 6 moduri de stingere a obligațiilor (art. 1615 NCC).',
@@ -2056,7 +2074,9 @@ var FISE_RECALL={
     'Cesiunea de creanță: formalitățile față de debitorul cedat (art. 1578 NCC) și față de terți (art. 1581 NCC).',
     'Fideiusiunea: beneficiul de discuțiune (explicație) + beneficiul de diviziune (explicație) — când fidejusorul le poate invoca?',
     'Aplicație: creditorul remite datoria unuia dintre codebitorii solidari. Ceilalți codebitori sunt și ei liberați de datorie?',
-    'Daunele-interese moratorii vs. compensatorii: când se acordă fiecare și pot fi cumulate cu executarea în natură?'
+    'Daunele-interese moratorii vs. compensatorii: când se acordă fiecare și pot fi cumulate cu executarea în natură?',
+    '⚠️ La grilă: cesiunea de contract (art. 1318) — cedentul rămâne obligat după ce substituirea produce efecte față de cedat? Care e singura situație în care cedatul se mai poate întoarce împotriva cedentului?',
+    'Preluarea datoriei fără acordul creditorului: între cine produce efecte și ce obligație are terțul (art. 1608)? Poate creditorul să-l urmărească direct pe terț?'
   ],
   w12:[
     'Vânzarea — obligațiile vânzătorului: predare (obiect + accesorii + fructe) + garanție contra evicțiunii + garanție contra viciilor. Explică pe scurt fiecare.',
@@ -2065,7 +2085,10 @@ var FISE_RECALL={
     'Dreptul de preempțiune la terenuri agricole (Legea 17/2014): ordinea de preferință și termenul de exercitare.',
     'Aplicație: vânzătorul a ascuns intenționat o crăpătură în fundație. Cumpărătorul o descoperă după 2 ani. Ce acțiuni are și în ce termen?',
     'Pactul de opțiune vs. promisiunea de vânzare-cumpărare: diferența față de irevocabilitate și posibilitatea transmiterii dreptului.',
-    'La grilă: vânzarea bunului altuia — nulitate absolută sau relativă? Ce se întâmplă dacă vânzătorul dobândește proprietatea ulterior?'
+    '⚠️ La grilă: vânzarea bunului altuia (art. 1683) — contract valabil sau anulabil sub NCC? Ce remediu are cumpărătorul la neexecutare și ce se întâmplă automat dacă vânzătorul dobândește ulterior proprietatea?',
+    '⚠️ La grilă: bunul vândut piere fortuit după transferul proprietății dar înainte de predare — cine suportă riscul (art. 1274)? Care e singura excepție (creditorul pus în întârziere)?',
+    'Donația — revocarea: care sunt cele DOUĂ cauze legale (art. 1020)? De ce „survenirea de copil" e capcană? Donația între soți: până când e revocabilă (art. 1031)?',
+    'Darul manual: plafonul valoric (25.000 lei) și celelalte excepții de la forma autentică (donația indirectă, deghizată). Ce sancțiune are donația verbală peste plafon?'
   ],
   w13:[
     'Locațiunea — obligațiile locatarului (cel puțin 3): folosința conform destinației, întreținerea, restituirea la termen.',
@@ -2074,16 +2097,20 @@ var FISE_RECALL={
     'Mandatul oneros vs. gratuit: există prezumție de gratuitate sau onerozitate în NCC? Ce consecință are pentru standardul de diligență al mandatarului?',
     'Aplicație: locatarul a subînchiriat apartamentul fără acordul locatorului. Ce poate face locatorul (3 opțiuni)?',
     'Mandatul — revocarea de către mandant: când produce efecte față de terții de bună-credință care nu știau de revocare?',
-    'La grilă: antrepriza cu materiale furnizate de antreprenor — când trece proprietatea materialelor la beneficiar?'
+    'La grilă: antrepriza cu materiale furnizate de antreprenor — când trece proprietatea materialelor la beneficiar?',
+    'Arendarea: forma cerută (scrisă, ad validitatem — ce sancțiune?), durata la contract fără termen (anul agricol — de ce „7 ani" e capcană?) și regimul subarendării (interzisă) vs. cesiunii (limitată la soț/descendenți).',
+    '⚠️ La grilă: garanția în construcții (art. 29 L. 10/1995) — câți ani pentru viciile ascunse (10) și cât pentru viciile structurii de rezistență (toată durata de existență)? De ce „2 ani/10 ani" e greșit?'
   ],
   w14:[
-    'Împrumutul de consumație (mutuum, art. 2158 NCC): caractere (real, unilateral, de regulă gratuit) + ce se transferă la împrumutat (proprietate + risc) + cum se restituie.',
+    'Împrumutul de consumație (mutuum, art. 2158 NCC): caractere (real, unilateral) + ce se transferă la împrumutat (proprietate + risc) + cum se restituie. ⚠️ La grilă: împrumutul de BANI se prezumă gratuit sau oneros (art. 2159 al. 2)?',
     'Comodatul (art. 2146 NCC): caractere esențiale + diferența față de mutuum privind proprietatea și riscul bunului + obligațiile comodatarului.',
-    'Fidejusiunea (art. 2280 NCC): definiție + caractere (accesorie, indivizibilă, consensuală) + beneficiul de discuțiune: ce e și când se invocă?',
+    'Fidejusiunea (art. 2280 NCC): definiție + caractere — accesorie, indivizibilă și ⚠️ SOLEMNĂ (art. 2282: înscris ad validitatem, sub sancțiunea NCA — nu consensuală!) + beneficiul de discuțiune: ce e și când se invocă?',
     'Fidejusiunea solidară: ce beneficii pierde fidejusorul solidar față de fidejusorul simplu? Ce drepturi dobândește față de debitorul principal după ce plătește?',
     'Tranzacția (art. 2267 NCC): definiție + de ce efectele sunt declarative (nu constitutive) + puterea de lucru judecat relativă + poate fi atacată pentru eroare de drept?',
     'Aplicație: A împrumută lui B 10.000 lei (mutuum, fără dobândă). B restituie integral suma, apoi pretinde că a plătit nedatorat. Poate cere înapoierea sumei? De ce?',
-    'La grilă: fidejusorul care plătește întreaga datorie față de creditor — ce acțiuni are față de debitorul principal (subrogare + acțiune proprie)?'
+    'La grilă: fidejusorul care plătește întreaga datorie față de creditor — ce acțiuni are față de debitorul principal (subrogare + acțiune proprie)? Prelungirea termenului acordată debitorului îl liberează pe fidejusor (art. 2311)?',
+    'Depozitul: poate depozitarul folosi bunul (art. 2109)? Când poate deponentul cere restituirea, chiar cu termen stipulat? Ce e depozitul neregulat (art. 2105) și cu ce contract se aseamănă?',
+    '⚠️ La grilă: plafonul dobânzii convenționale între particulari — dobânda legală +50%/an (art. 5 OG 13/2011). Ce pățește creditorul care stipulează peste plafon (nulitate + decădere din dobânda legală)?'
   ],
   w15:[
     'Enumeră cele 4 clase de moștenitori legali, inclusiv gradul de rudenie și ordinea de chemare la moștenire.',
@@ -2092,7 +2119,8 @@ var FISE_RECALL={
     'Nedemnitatea de drept (art. 958 NCC) vs. judiciară (art. 959 NCC): enumeră câte o cauza din fiecare și efectul față de descendenții nedemnului.',
     'Aplicație: A moare cu 2 copii (B și C). C decedase înaintea lui A, lăsând un copil (D). Cum se împarte moștenirea și în ce proporții?',
     'Renunțarea la moștenire: termen (1 an), formă (declarație la notar) și efectul față de creditorii renunțătorului.',
-    'La grilă: cum răspund moștenitorii pentru datoriile moștenirii sub NCC (art. 1114 alin. 2 — intra vires, numai cu bunurile succesorale) și care e singura excepție ultra vires (acceptarea forțată, art. 1119)?'
+    'La grilă: cum răspund moștenitorii pentru datoriile moștenirii sub NCC (art. 1114 alin. 2 — intra vires, numai cu bunurile succesorale) și care e singura excepție ultra vires (acceptarea forțată, art. 1119)?',
+    'Comoriența (art. 957 al. 2) și sezina (art. 1126): cine sunt moștenitorii sezinari și cum dobândesc nesezinarii stăpânirea moștenirii (certificatul de moștenitor)?'
   ],
   w16:[
     'Testamentul olograf: cele 3 condiții de formă (integral olograf + datat complet + semnat) și sancțiunea lipsei oricăreia.',
