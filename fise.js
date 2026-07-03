@@ -1567,10 +1567,10 @@ var FISE_DATA = [
         items:[
           '<b>Prescripție extinctivă generală</b>: <b>3 ani</b> (art. 2517 NCC). Se aplică majorității drepturilor de creanță dacă legea nu prevede altfel.',
           '<b>Nulitate relativă</b> (acțiune în anulare): <b>3 ani</b> de la data când cel îndreptățit a cunoscut cauza nulității (art. 2529 NCC). ⚠️ Excepție: leziunea la majori = <b>1 an</b> de la data actului.',
-          '<b>Acțiunea pauliană</b>: <b>1 an</b> de la data la care creditorul a cunoscut cauza de revocare (art. 2563 NCC).',
-          '<b>Opțiunea succesorală</b> (acceptare / renunțare la moștenire): <b>1 an</b> de la data cunoașterii deschiderii succesiunii (art. 1103 NCC).',
+          '<b>Acțiunea pauliană</b>: <b>1 an</b> de la data la care creditorul a cunoscut sau trebuia să cunoască prejudiciul (art. 1564 NCC).',
+          '<b>Opțiunea succesorală</b> (acceptare / renunțare la moștenire): <b>1 an</b> de la data <b>deschiderii</b> moștenirii (art. 1103 NCC — regula; excepții de la cunoaștere).',
           '<b>Acțiunea în reducțiunea liberalităților</b>: <b>3 ani</b> de la data deschiderii succesiunii sau de la cunoașterea dispoziției excesive.',
-          '<b>Termenul de drept de abitație</b> al soțului supraviețuitor: <b>1 an</b> de la data decesului.',
+          '<b>Dreptul de abitație</b> al soțului supraviețuitor: până la <b>partaj</b>, dar nu mai puțin de <b>1 an</b> de la deschiderea moștenirii (încetează la recăsătorire).',
           '<b>Acțiunile reale</b> (revendicare, petiție de ereditate, acțiune negatorie): <b>imprescriptibile</b> extinctiv — se pot exercita oricând.'
         ]
       },
@@ -1590,10 +1590,10 @@ var FISE_DATA = [
         items:[
           '<b>Reținerea</b>: max. <b>24 de ore</b> fără mandat judecătoresc (art. 209 CPP).',
           '<b>Arestul preventiv în urmărire penală</b>: câte <b>30 de zile</b>, maxim total <b>180 de zile</b> (art. 223–236 CPP).',
-          '<b>Arestul preventiv în cursul judecății</b>: câte <b>60 de zile</b>, fără limită totală expresă.',
+          '<b>Arestul preventiv în cursul judecății</b>: verificare la câte <b>60 de zile</b>; în primă instanță — max <b>jumătate din maximul special</b>, plafon <b>5 ani</b> (art. 239 CPP).',
           '<b>Apelul penal</b>: <b>10 zile</b> de la comunicarea copiei minutei (art. 410 CPP). ⚠️ Nu 30 de zile ca în civil!',
           '<b>Recursul în casație penal</b>: <b>30 de zile</b> de la comunicarea deciziei instanței de apel (art. 434 CPP).',
-          '<b>Prescripția răspunderii penale</b>: termenele variază după maximul pedepsei — de la <b>3 ani</b> (infracțiuni cu pedeapsă ≤1 an) la <b>15 ani</b> (infracțiuni cu pedeapsă >15 ani) și <b>imprescriptibilă</b> (omor calificat, genocid, crime de război).'
+          '<b>Prescripția răspunderii penale</b> (art. 154 NCP): de la <b>3 ani</b> (pedeapsă ≤1 an) la <b>15 ani</b> (DPV sau închisoare >20 ani). <b>Imprescriptibile</b>: genocid, contra umanității, de război, omorul și infracțiunile intenționate urmate de moartea victimei.'
         ]
       },
       { icon:'❌', title:'Nulitate absolută vs. relativă — când se aplică',
@@ -1606,18 +1606,18 @@ var FISE_DATA = [
       },
       { icon:'📌', title:'Termene suplimentare frecvente în grile',
         items:[
-          '<b>Preemțiunea NCC</b> (art. 1735): vânzătorul notifică intenția → preemptorul are <b>10 zile</b> (bun mobil) sau <b>30 de zile</b> (bun imobil) să exercite dreptul. Preemțiunea Legea 17/2014 (teren agricol extravilan): <b>30 de zile</b> de la notificare.',
+          '<b>Preemțiunea NCC</b> (art. 1730–1732): preemptorul are <b>10 zile</b> (bun mobil) sau <b>30 de zile</b> (bun imobil) de la comunicarea ofertei/contractului. Preemțiunea Legea 17/2014 (teren agricol extravilan): oferta se afișează <b>45 de zile lucrătoare</b> la primărie (termen majorat în 2020 de la 30 de zile).',
           '<b>Denunțarea locațiunii</b>: locațiune cu termen nedeterminat → denunțare unilaterală cu preaviz; locuință urbană = <b>60 de zile</b>; bunuri mobile = <b>15 zile</b>; spații agricole = <b>6 luni</b>.',
           '<b>Reabilitarea de drept</b> (art. 165 NCP): <b>3 ani</b> de la executarea sau stingerea pedepsei (pentru pedeapsă ≤ 2 ani, amendă sau suspendare sub supraveghere).',
-          '<b>Reabilitarea judecătorească</b> — termene: pedeapsă 2–5 ani → <b>4 ani + durata pedepsei</b>; pedeapsă 5–10 ani → <b>5 ani + durata pedepsei</b>; pedeapsă >10 ani → <b>7 ani + durata pedepsei</b> (art. 166 NCP). Calculul se face de la executarea pedepsei.',
-          '<b>Prescripția răspunderii penale</b> (art. 154 NCP): pedeapsă ≤1 an → <b>3 ani</b>; ≤5 ani → <b>5 ani</b>; ≤10 ani → <b>8 ani</b>; ≤15 ani → <b>10 ani</b>; >15 ani sau dețen. pe viață → <b>15 ani</b>. Termenul se calculează de la data săvârșirii faptei.',
-          '<b>Prescripția executării pedepsei penale</b> (art. 162 NCP): pedeapsa amenzii → <b>3 ani</b>; pedeapsa închisorii ≤5 ani → <b>5 ani</b>; ≤15 ani → <b>10 ani</b>; >15 ani sau detențiune → <b>20 ani</b>. ⚠️ Prescripția executării ≠ prescripția răspunderii penale.',
-          '<b>Termenul de garanție contra evicțiunii</b>: vânzare de drept comun — <b>3 ani</b> prescripție. Garanție contra viciilor ascunse: imobile = <b>3 ani</b> de la descoperire (max 10 ani de la predare); mobile = <b>3 ani</b> de la descoperire (max 3 ani de la predare).',
+          '<b>Reabilitarea judecătorească</b> (art. 166 NCP) — termene <b>fixe</b> de la executare: condamnare 2–5 ani → <b>4 ani</b>; 5–10 ani → <b>5 ani</b>; peste 10 ani sau DPV comutată → <b>7 ani</b>. ⚠️ Capcană: formula „+ durata pedepsei" era <b>vechiul cod</b>!',
+          '<b>Prescripția răspunderii penale</b> (art. 154 NCP): pedeapsă ≤1 an → <b>3 ani</b>; >1 și ≤5 ani → <b>5 ani</b>; >5 și ≤10 → <b>8 ani</b>; >10 și ≤20 → <b>10 ani</b>; DPV sau >20 ani → <b>15 ani</b>. Curge de la săvârșire (la continuate — de la epuizare).',
+          '<b>Prescripția executării pedepsei</b> (art. 162 NCP): amenda → <b>3 ani</b>; închisoarea → <b>5 ani + durata pedepsei</b> de executat (dar nu mai mult de 15 ani); DPV sau închisoare >15 ani → <b>20 de ani</b>. ⚠️ Prescripția executării ≠ prescripția răspunderii.',
+          '<b>Garanția contra viciilor ascunse</b>: prescripție <b>3 ani</b>; începe să curgă cel târziu de la împlinirea <b>unui an de la predare</b> (bunuri) sau <b>3 ani de la predare</b> (construcții), dacă viciul nu a fost descoperit mai devreme (art. 2531 NCC).',
           '<b>Acceptarea ofertei</b> (art. 1193 NCC): <b>în termenul stabilit</b> de ofertant; dacă nu e termen — <b>termen rezonabil</b> (fără termen, prin poștă: 7 zile uzanță). Oferta retrasă înainte de termen → ofertantul răspunde pentru prejudiciu.'
         ]
       }
     ],
-    grila:'Apel civil: <b>30 zile</b> de la comunicare. Apel penal: <b>10 zile</b> de la minută. Contestație executare: <b>15 zile</b>. Opțiune succesorală: <b>1 an</b>. Acțiune pauliană: <b>1 an</b>. Leziune: <b>1 an</b> (excepție de la regula 3 ani). Perimarea executare: <b>6 luni</b>. Arest preventiv urmărire: max <b>180 zile</b>. NCA: imprescriptibilă. NR: 3 ani (leziune 1 an). Inopozabilitate ≠ nulitate. Preemțiune imobil NCC: <b>30 zile</b>; Legea 17/2014: <b>30 zile</b>. Reabilitare de drept: <b>3 ani</b>. Reabilitare judecătorească: 4/5/7 ani + durata pedepsei. Prescripție penală: 3–15 ani după maximul pedepsei.'
+    grila:'Apel civil: <b>30 zile</b> de la comunicare. Apel penal: <b>10 zile</b> de la minută. Contestație executare: <b>15 zile</b>. Opțiune succesorală: <b>1 an</b>. Acțiune pauliană: <b>1 an</b>. Leziune: <b>1 an</b> (excepție de la regula 3 ani). Perimarea executare: <b>6 luni</b>. Arest preventiv urmărire: max <b>180 zile</b>. NCA: imprescriptibilă. NR: 3 ani (leziune 1 an). Inopozabilitate ≠ nulitate. Preemțiune imobil NCC: <b>30 zile</b>; Legea 17/2014: afișare <b>45 zile lucrătoare</b>. Reabilitare de drept: <b>3 ani</b>. Reabilitare judecătorească: termene <b>fixe 4/5/7 ani</b> (fără „+durata" — capcană!). Prescripție penală: 3/5/8/10/15 ani după maximul pedepsei (praguri 1/5/10/20 ani).'
   }
 ];
 
@@ -1630,7 +1630,7 @@ var FISE_TIPS={
     'Sub 14 ani și interzisul judecătoresc sunt <b>reprezentați</b>. Excepție pentru ambii: acte de <b>mică valoare cu executare imediată</b> (cumpărat o pâine) — le pot face singuri.',
     'Minorul care și-a ascuns incapacitatea prin dol (a mințit că e major) <b>nu poate invoca nulitatea relativă</b> — nimeni nu beneficiază de propria fraudă.',
     '<b>Infans conceptus</b>: drepturile se socotesc dobândite de la concepție <b>dacă se naște viu</b>, chiar și o clipă. Dacă grila spune „copilul s-a născut mort" → nu a dobândit niciun drept.',
-    'Actul <b>declarativ</b> (partajul, recunoașterea unui drept) ≠ actul <b>translativ</b> (vânzarea) ≠ actul <b>constitutiv</b> (uzufructul). Efectele declarative sunt retroactive (<i>ex tunc</i>).',
+    'Actul <b>declarativ</b> (tranzacția, recunoașterea unui drept — efecte <i>ex tunc</i>) ≠ <b>translativ</b> (vânzarea) ≠ <b>constitutiv</b> (uzufructul). ⚠️ Capcană: sub NCC <b>partajul e CONSTITUTIV</b> (art. 680) — efecte de la data partajului, nu retroactive!',
     'Actul juridic unilateral (testamentul, oferta, acceptarea moștenirii) se formează prin <b>voința unei singure persoane</b>. Nu confunda cu contractul bilateral.',
     'Capacitatea de exercițiu a minorului căsătorit: dobândește capacitate <b>deplină</b> de la data căsătoriei, chiar dacă nu a împlinit 18 ani.'
   ],
@@ -1638,7 +1638,7 @@ var FISE_TIPS={
     '<b>Violența de terț → NR întotdeauna</b>, indiferent dacă cealaltă parte a știut sau nu. <b>Dolul de terț → NR numai dacă</b> cealaltă parte a știut sau trebuia să știe. Această distincție apare frecvent.',
     'Eroarea trebuie să fie <b>scuzabilă</b>: dacă cel care invocă eroarea nu a manifestat diligența unui om rezonabil, instanța respinge acțiunea. Ex: cumpărătorul care nu a verificat actele bunului.',
     'Dolul prin <b>reticență</b>: tăcerea deliberată atunci când există obligație de informare. Ex: vânzătorul care nu spune că bunul are vicii cunoscute de el.',
-    'Dolul nu trebuie să fie cauza <b>esențială</b> a contractului (spre deosebire de eroare). Chiar o eroare neeseențială indusă prin dol → anulabilitate.',
+    'Dolul nu trebuie să fie cauza <b>esențială</b> a contractului (spre deosebire de eroare). Chiar o eroare neesențială indusă prin dol → anulabilitate.',
     '<b>Leziunea la majori</b>: disproporție <b>mai mare de jumătate</b> + prescripție <b>1 an de la data actului</b> (nu de la descoperire). Dacă grila spune „2 ani de la contract" → acțiunea e prescrisă.',
     'Starea de necesitate <b>exploatată</b> de cealaltă parte = asimilată violenței (art. 1218 NCC). Dacă grila spune că o parte a profitat de dificultatea extremă a celeilalte → viciu de consimțământ.',
     'Temerea reverenționară <b>singură</b> (față de părinți, tutore) nu e viciu de consimțământ. Devine viciu numai dacă e însoțită de amenințări.',
@@ -1692,7 +1692,7 @@ var FISE_TIPS={
     'Posesorul de <b>bună-credință</b> dobândește <b>fructele</b> (nu productele). Posesorul de <b>rea-credință</b> trebuie să restituie toate fructele + contravaloarea celor consumate cu vinovăție.',
     'Revendicare <b>mobiliară</b> față de un dobânditor de bună-credință cu <b>titlu oneros</b>: proprietarul <b>pierde acțiunea</b>. Excepție: bun <b>furat sau pierdut</b> → proprietarul poate revendica în <b>3 ani</b> de la furt/pierdere.',
     'Viciile posesiei sunt <b>relative</b> (numai cel afectat le poate invoca) și <b>temporare</b> (odată încetat viciul, posesia devine utilă). Nu sunt absolute sau permanente.',
-    '<b>Ipoteca</b>: fără deposedare, publicitate prin CF sau AEGRM, rang după data înscrierii. <b>Gajul</b>: necesită deposedarea debitorului (predarea bunului). Nu confunda în grile.',
+    '<b>Ipoteca</b>: fără deposedare, publicitate prin CF sau RNPM, rang după data înscrierii. <b>Gajul</b>: necesită deposedarea debitorului (predarea bunului). Nu confunda în grile.',
     'Paza <b>juridică</b> ≠ paza <b>materială</b>: cel care cedează controlul independent al lucrului pierde paza juridică și nu mai răspunde pentru prejudicii cauzate de lucru.',
     'Acțiunile posesorii (reintegranda, complânda): termen <b>1 an</b> de la tulburare; se pot exercita fără a proba dreptul de proprietate — numai faptul posesiei.'
   ],
@@ -1860,9 +1860,9 @@ var FISE_TIPS={
     '<b>Trafic de influență</b>: nu trebuie să existe o influență reală — e suficientă <b>pretinderea că are influență</b>. Grilă: „a pretins că are relații cu judecătorul, deși nu era adevărat" → trafic de influență valabil.',
     '<b>Abuzul în serviciu</b>: cu intenție. <b>Neglijența în serviciu</b>: din culpă. Dacă grila spune „funcționarul a uitat să îndeplinească actul" → neglijență, nu abuz.',
     '<b>Mărturia mincinoasă</b>: cauza de nepedepsire = <b>retractarea</b> declarației mincinoase înainte de condamnarea definitivă a inculpatului. Retractarea după condamnare → nu mai produce efectul de nepedepsire.',
-    '<b>Favorizarea făptuitorului</b>: cauza de nepedepsire pentru <b>soț și rudele apropiate</b> ale favorizatorului (nu ale infractorului favorizat!). Grilă: „soția l-a ajutat pe soțul ei să se ascundă" → nu se pedepsește.',
-    '<b>Tăinuirea</b> = bunuri provenite din infracțiune; <b>favorizarea</b> = ajutorarea persoanei infractorului. Grilă: „a cumpărat bunuri știind că sunt furate" → tăinuire; „l-a ascuns pe hoț" → favorizare.',
-    '<b>Denunțul calomnios</b>: necesită știința autorului că sesizarea e mincinoasă. Dacă autorul a crezut sincer că sesizarea e întemeiată → nu e denunț calomnios, chiar dacă acuzația s-a dovedit neîntemeiată.'
+    '<b>Favorizarea făptuitorului</b>: cauza de nepedepsire = <b>membrul de familie</b> al făptuitorului favorizat (art. 269 alin. 3 + art. 177 NCP). Grilă: „soția l-a ajutat pe soțul ei să se ascundă" → nu se pedepsește.',
+    '<b>Tăinuirea</b> = bunuri provenite din faptă penală; <b>favorizarea</b> = ajutorarea persoanei făptuitorului. Grilă: „a cumpărat bunuri știind că sunt furate" → tăinuire; „l-a ascuns pe hoț" → favorizare. Membrul de familie: nepedepsit în ambele cazuri.',
+    '<b>Inducerea în eroare a organelor judiciare</b> (art. 268 — fostul „denunț calomnios"): necesită știința autorului că sesizarea e mincinoasă. Dacă a crezut sincer că sesizarea e întemeiată → lipsă de intenție, nu e infracțiune.'
   ],
 
   w24:[
@@ -2058,13 +2058,13 @@ var FISE_RECALL={
     'Nedemnitatea de drept (art. 958 NCC) vs. judiciară (art. 959 NCC): enumeră câte o cauza din fiecare și efectul față de descendenții nedemnului.',
     'Aplicație: A moare cu 2 copii (B și C). C decedase înaintea lui A, lăsând un copil (D). Cum se împarte moștenirea și în ce proporții?',
     'Renunțarea la moștenire: termen (1 an), formă (declarație la notar) și efectul față de creditorii renunțătorului.',
-    'La grilă: moștenitorul care a acceptat pur și simplu (fără beneficiu de inventar) răspunde de datoriile defunctului și cu bunurile proprii?'
+    'La grilă: cum răspund moștenitorii pentru datoriile moștenirii sub NCC (art. 1114 alin. 2 — intra vires, numai cu bunurile succesorale) și care e singura excepție ultra vires (acceptarea forțată, art. 1119)?'
   ],
   w16:[
     'Testamentul olograf: cele 3 condiții de formă (integral olograf + datat complet + semnat) și sancțiunea lipsei oricăreia.',
     'Testamentul autentic: avantaje față de cel olograf (forță probantă, securitate). Poate fi convertit în testament olograf dacă e nul de formă autentică?',
-    'Rezerva succesorală: cotele exacte pentru descendenți / ascendenți privilegiați / soț supraviețuitor și cum se calculează masa de calcul.',
-    'Reducțiunea liberalităților: ordinea corectă (legate în ordine inversă creării → donații în ordine inversă) și ce e cotitatea disponibilă.',
+    'Rezerva succesorală: regula unică NCC (1/2 din cota legală a fiecărui rezervatar — art. 1088) și cum se calculează masa de calcul (art. 1091).',
+    'Reducțiunea liberalităților: ordinea corectă (legatele toate deodată și proporțional → donațiile în ordinea inversă a datei) și ce e cotitatea disponibilă.',
     'Raportul donațiilor: cine e obligat (descendenți + soț supraviețuitor), cum se face (echivalent, nu în natură) și ce e dispensa de raport.',
     'Aplicație: A lasă prin testament toată averea lui B (prieten), deși are un fiu C. Ce poate face C? Ce primește cel mai puțin?',
     'Revocarea testamentului: enumeră 3 forme de revocare tacită recunoscute de NCC (testament ulterior incompatibil / distrugerea voluntară / înstrăinarea bunului legat).'
