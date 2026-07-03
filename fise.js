@@ -1314,7 +1314,11 @@ var FISE_DATA = [
           '<b>Mărturia mincinoasă</b> (art. 273): declarații false ca martor/expert/interpret în fața unui organ judiciar. Cauza de nepedepsire: <b>retractarea</b> declarației înainte de a se pronunța o hotărâre sau a se da o altă soluție.',
           '<b>Favorizarea făptuitorului</b> (art. 269): ajutorul dat făptuitorului pentru a împiedica sau îngreuna cercetările, tragerea la răspundere ori executarea pedepsei. Cauza de nepedepsire: favorizarea săvârșită de un <b>membru de familie</b> (art. 177 NCP — soț, rude apropiate, persoane care conviețuiesc). ⚠️ Membrul de familie care a participat la infracțiunea inițială răspunde pentru aceea.',
           '<b>Tăinuirea</b> (art. 270): primirea/dobândirea/transformarea/înlesnirea valorificării unui bun, cunoscând că provine dintr-o faptă prevăzută de legea penală. <b>Tăinuire = bunuri; favorizare = persoana făptuitorului</b>. Cauza de nepedepsire: tăinuirea săvârșită de un <b>membru de familie</b>. Pedeapsa tăinuitorului nu poate depăși pedeapsa faptei din care provine bunul.',
-          '<b>Obstrucționarea justiției</b> (art. 271): împiedicarea actelor de urmărire sau judecată prin violență/amenințare/corupere/orice alte mijloace.'
+          '<b>Obstrucționarea justiției</b> (art. 271): împiedicarea organului judiciar să efectueze un act procedural ori refuzul de a pune la dispoziție datele/obiectele cerute explicit, după avertisment.',
+          '⚠️ <b>Nedenunțarea (art. 266) vs. omisiunea sesizării (art. 267)</b> — distincție clasică: nedenunțarea = <b>orice persoană</b> care nu denunță o infracțiune <b>contra vieții</b> (sau cu urmarea morții); <b>membrul de familie nu se pedepsește</b>, iar denunțarea chiar tardivă (înainte de punerea în mișcare a acțiunii penale) → nepedepsire. Omisiunea sesizării = <b>funcționarul public</b> care nu sesizează o faptă legată de serviciul său.',
+          '<b>Evadarea</b> (art. 285): din starea legală de <b>reținere sau deținere</b> (inclusiv de sub escortă). ⚠️ Pedeapsa pentru evadare <b>se ADAUGĂ</b> la restul rămas neexecutat (cumul aritmetic expres!). <b>Înlesnirea evadării</b> (art. 286): mai grav dacă e comisă de <b>cel cu paza</b>; incriminată și <b>din culpă</b> (paznicul neglijent)!',
+          '<b>Ultrajul</b> (art. 257): amenințare/lovire/vătămare contra unui <b>funcționar public cu autoritate de stat</b>, în exercițiul funcțiunii → limitele infracțiunii de bază majorate cu <b>1/3</b>; polițist/jandarm → cu <b>1/2</b>. <b>Ultrajul judiciar</b> (art. 279): victimă judecător, procuror sau <b>avocat</b> → limitele majorate cu <b>1/2</b>.',
+          '<b>Compromiterea intereselor justiției</b> (art. 277): divulgarea de informații confidențiale din urmărirea penală de către cel care le-a aflat în virtutea funcției; <b>nerespectarea hotărârilor judecătorești</b> (art. 287): împotrivirea la executare, refuzul de a înapoia copilul, neexecutarea hotărârii privind plata salariilor etc. — la plângere prealabilă în unele modalități.'
         ]
       },
       { icon:'🔁', title:'Schemă comparativă: luare de mită / trafic de influență / abuz în serviciu',
@@ -2248,7 +2252,10 @@ var FISE_RECALL={
     'Aplicație: A îi promite judecătorului X 10.000 € pentru a câștiga un proces. A comite dare de mită sau cumpărare de influență? Argumentează.',
     'Tăinuire (art. 270) vs. favorizare (art. 269): pe ce se axează fiecare și pot concura dacă autorul face ambele acte?',
     '⚠️ La grilă: hoțul care doar FOLOSEȘTE banii furați comite și spălare de bani? Dar dacă îi transferă prin conturi pentru a le ascunde originea? (auto-spălarea: doar lit. a-b, nu lit. c — CCR 418/2018)',
-    'Evaziunea fiscală (L. 241/2005): pedeapsa de bază (2–8) + majorările la prejudicii de 100.000 € (+5 ani) și 500.000 € (+7 ani). Ce efect are plata prejudiciului + 20% + dobânzi până la primul termen (art. 10 — limite reduse la jumătate)?'
+    'Evaziunea fiscală (L. 241/2005): pedeapsa de bază (2–8) + majorările la prejudicii de 100.000 € (+5 ani) și 500.000 € (+7 ani). Ce efect are plata prejudiciului + 20% + dobânzi până la primul termen (art. 10 — limite reduse la jumătate)?',
+    '⚠️ La grilă: nedenunțarea (art. 266) vs. omisiunea sesizării (art. 267) — cine e subiectul activ la fiecare și ce infracțiuni vizează? Membrul de familie se pedepsește pentru nedenunțare?',
+    '⚠️ La grilă: pedeapsa pentru evadare se contopește cu restul rămas sau se ADAUGĂ (art. 285 al. 4 — cumul aritmetic)? Înlesnirea evadării din culpă — incriminată (da, pentru cel cu paza)?',
+    'Ultraj (art. 257) vs. ultraj judiciar (art. 279): cine sunt victimele și cu cât se majorează limitele (1/3 funcționar; 1/2 polițist/jandarm; 1/2 judecător/procuror/avocat)?'
   ],
   w24:[
     'Conducere sub alcool (art. 336 NCP): limita exactă de alcoolemie în sânge și este necesar să se fi produs un accident?',
