@@ -2957,6 +2957,591 @@ function _toggleFisa(id){
     +'.fisa-glist li{font-size:12.5px;color:var(--txt);line-height:1.6;margin-bottom:4px}'
     +'.fisa-glist b{color:var(--lime)}'
     +'.fisa-print{background:none;border:1px solid var(--sf2);border-radius:8px;color:var(--sub);font-size:13px;padding:3px 8px;cursor:pointer;flex-shrink:0;transition:.15s;line-height:1;margin-left:auto}'
-    +'.fisa-print:hover{background:var(--sf2);color:var(--lime)}';
+    +'.fisa-print:hover{background:var(--sf2);color:var(--lime)}'
+    +'.fisa-ex{background:var(--sf);border-left:3px solid var(--lime);border-radius:6px;padding:8px 10px;margin-top:8px;font-size:13px;line-height:1.55}'
+    +'.fisa-ex-tag{display:block;font-size:11px;color:var(--sub);margin-bottom:3px}'
+    +'.fisa-ex-stem{display:block;font-weight:600;margin-bottom:3px}'
+    +'.fisa-ex-opts{display:block;color:var(--sub);font-size:12px;margin-bottom:4px}'
+    +'.fisa-ex-ans{display:block;font-size:12.5px}';
   var st=document.createElement('style'); st.textContent=css; document.head.appendChild(st);
+})();
+
+// ── Exemple din examenul Iulie 2026 — generate automat ──────────────────
+(function() {
+  var IUL2026 = [
+  {
+    "fid": "w03",
+    "g": 1,
+    "n": 1,
+    "stem": "În materia izvoarelor dreptului civil",
+    "a": "practicile constante pe care A și B le utilizează în relația contractuală dintre ele au natura juridică a unor uzanțe normative",
+    "b": "principiile generale ale dreptului civil se pot aplica în lipsa uzanțelor normative, dar prioritar față de dispoziții legale privitoare la situații asemănătoare.",
+    "c": "caracterul normativ al uzanțelor este independent de publicarea acestora într-o culegere elaborată de un organism autorizat",
+    "correct": "C",
+    "expl": "potrivit art. 1 alin. (5) C.civ., publicarea uzanțelor în culegeri elaborate de entități autorizate creează doar o prezumție de existență a acestora; caracterul normativ nu depinde de publicare. a) greșită: practicile statornicite doar între părțile A și B sunt uzanțe convenționale (art. 1272 C.civ.), nu uzanțe normative, cărora le lipsește generalitatea. b) greșită: conform art. 1 alin. (2) C.civ., principiile generale ale dreptului se aplică doar în lipsa uzanțelor și a dispozițiilor legale privitoare la situații asemănătoare (analogia legii are prioritate față de principii)."
+  },
+  {
+    "fid": "w03",
+    "g": 1,
+    "n": 2,
+    "stem": "Aveți în vedere următoarea situație: i) la 10.01.2023 intră în vigoare o lege care, sub sancțiunea anulabilității, plafonează chiriile care pot fi prevăzute în contractele de închiriere a locuințelor, ii) legea nouă nu cuprinde dispoziții tranzitorii, iar iii) legea veche nu stipula niciun plafon pentru chirie. În această situație",
+    "a": "contractul de închiriere semnat la data de 10.06.2022, pentru o durată de 5 ani și o chirie lunară superioară plafonului, este valabil, dar chiriașul va datora, începând cu data intrării în vigoare a legii noi, o chirie egală cu plafonul",
+    "b": "contractul de închiriere încheiat înainte de intrarea în vigoare a legii noi este valabil, iar chiriașul va datora chiria prevăzută în contract și după data intrării în vigoare a legii noi, chiar dacă aceasta ar fi superioară plafonului impus de legea nouă",
+    "c": "contractul de închiriere semnat înainte de intrarea în vigoare a legii noi va fi parțial anulabil dacă prevede o chirie superioară plafonului rezultat din legea nouă. refacerea actului; b) îndeplinirea condiției de validitate ulterior încheierii actului nu este o cauză generală de acoperire a nulității, aplicabilă pentru orice act juridic și pentru orice motiv de nulitate; c) în cazul unui contract anulabil pentru leziune, confirmarea este o cauză de acoperire a nulității aflată la dispoziția cocontractantului celui lezat, dacă menționatul cocontractant al celui lezat oferă, în mod echitabil, majorarea propriei prestații",
+    "correct": "B",
+    "expl": "potrivit art. 6 alin. (2) și (3) C.civ. și principiului neretroactivității (art. 15 alin. (2) Constituție), validitatea și efectele contractului rămân guvernate de legea în vigoare la data încheierii (tempus regit actum); contractul din 10.06.2022 rămâne valabil, iar chiria contractuală se datorează în continuare. a) greșită: legea nouă nu se aplică efectelor viitoare ale contractelor în curs de executare, în lipsa unei dispoziții tranzitorii exprese de aplicare imediată. c) greșită: cauzele de nulitate se apreciază după legea în vigoare la momentul încheierii actului (art. 6 alin. (3) C.civ.), deci legea nouă nu poate atrage anulabilitatea, nici parțială."
+  },
+  {
+    "fid": "w03",
+    "g": 1,
+    "n": 5,
+    "stem": "Actul juridic civil",
+    "a": "ca regulă, dacă este un contract cu executare succesivă încheiat pentru o perioadă determinată, în lipsa unei stipulații exprese contrare, poate să fie denunțat înainte de împlinirea termenului de către oricare dintre părți, cu un preaviz rezonabil",
+    "b": "abstract reprezintă o categorie care constituie excepția în cadrul clasificării din care face parte",
+    "c": "poate fi ori cu titlul oneros, ori cu titlul gratuit, orice terță categorie fiind exclusă",
+    "correct": "B",
+    "expl": "în clasificarea acte cauzale – acte abstracte, regula o constituie actele cauzale (art. 1235-1239 C.civ., cauza fiind condiție de validitate); actele abstracte (ex. titlurile de valoare) sunt excepția. a) greșită: denunțarea unilaterală cu preaviz rezonabil este regula doar la contractele cu executare succesivă pe durată nedeterminată (art. 1277 C.civ.); cele pe durată determinată sunt guvernate de forța obligatorie (art. 1270 C.civ.) și nu pot fi denunțate unilateral fără stipulație. c) greșită: există și acte care nu se încadrează în niciuna dintre categorii (acte nepatrimoniale sau neutre, ex. căsătoria, recunoașterea filiației)."
+  },
+  {
+    "fid": "w04",
+    "g": 1,
+    "n": 3,
+    "stem": "În materia cauzelor de acoperire a nulității actului juridic civil",
+    "a": "confirmarea actului produce efect retroactiv, ca și refacerea actului",
+    "b": "îndeplinirea condiției de validitate ulterior încheierii actului nu este o cauză generală de acoperire a nulității, aplicabilă pentru orice act juridic și pentru orice motiv de nulitate",
+    "c": "în cazul unui contract anulabil pentru leziune, confirmarea este o cauză de acoperire a nulității aflată la dispoziția cocontractantului celui lezat, dacă menționatul cocontractant al celui lezat oferă, în mod echitabil, majorarea propriei prestații",
+    "correct": "B",
+    "expl": "potrivit art. 1261 alin. (2) C.civ., nulitatea poate fi acoperită prin confirmare sau prin alte moduri anume prevăzute de lege; îndeplinirea ulterioară a condiției de validitate operează doar în cazurile expres prevăzute, nefiind o cauză generală de acoperire. a) greșită: confirmarea retroactivează (art. 1265 C.civ.), dar refacerea contractului nul produce efecte numai pentru viitor, de la data refacerii (art. 1259 C.civ.). c) greșită: confirmarea aparține părții ocrotite (celui lezat); oferta echitabilă de majorare a prestației făcută de cocontractant ține de adaptarea contractului (art. 1222 alin. (3) C.civ.), nu de confirmare."
+  },
+  {
+    "fid": "w04",
+    "g": 1,
+    "n": 7,
+    "stem": "Dacă A vinde către C un imobil pentru care legea specială pretinde respectarea dreptului de preempțiune al lui B, sub sancțiunea nulității relative, atunci dreptul material la acțiune al lui B curge de la data",
+    "a": "înscrierii imobilului în cartea funciară de către C, dacă acest moment este anterior cunoașterii efective a vânzării de către B",
+    "b": "întotdeauna de la data cunoașterii efective, de către B, a vânzării menționate",
+    "c": "de la data cunoașterii efective a vânzării de către B, dar nu mai târziu de împlinirea unui termen de 18 luni de la data vânzării;",
+    "correct": "B",
+    "expl": "B este un terț îndreptățit să invoce nulitatea relativă, iar potrivit art. 2529 alin. (2) C.civ., când nulitatea relativă poate fi invocată de o terță persoană, prescripția curge de la data când terțul a cunoscut existența cauzei de nulitate, fără vreo limită obiectivă. a) greșită: înscrierea în cartea funciară nu marchează începutul prescripției; legea cere cunoașterea efectivă de către terț. c) greșită: plafonul de 18 luni din art. 2529 alin. (1) lit. c) C.civ. privește dolul invocat de partea contractantă, nu ipoteza terțului de la alin. (2)."
+  },
+  {
+    "fid": "w04",
+    "g": 1,
+    "n": 8,
+    "stem": "Dacă în interiorul termenului de repunere în termenul de prescripție extinctivă a acțiunii condamnatorii creditorul se căsătorește cu debitorul",
+    "a": "se suspendă termenul de prescripție aplicabil dreptului la realizarea creanței, pentru că acesta se prelungește până la expirarea termenului de repunere în termen",
+    "b": "se suspendă de drept cursul termenului de repunere în termen, pentru că acesta este un termen de prescripție",
+    "c": "termenul de repunere în termen nu se suspendă, pentru că este un termen de decădere",
+    "correct": "B",
+    "expl": "termenul de 30 de zile pentru repunerea în termen (art. 2522 alin. (2) C.civ.) este calificat, în doctrina majoritară, ca termen de prescripție, fiind deci supus suspendării; căsătoria dintre creditor și debitor suspendă de drept prescripția între soți, cât durează căsătoria și nu sunt separați în fapt (art. 2532 pct. 1 C.civ.). a) greșită: nu se suspendă termenul de prescripție al dreptului la realizarea creanței (deja împlinit, de vreme ce operează repunerea) și acesta nu se „prelungește\" până la expirarea termenului de repunere. c) greșită: termenul de repunere nu este de decădere, ci de prescripție."
+  },
+  {
+    "fid": "w02",
+    "g": 1,
+    "n": 4,
+    "stem": "În materia viciilor de consimțământ",
+    "a": "atunci când dolul provine de la un terț, cocontractantul victimei nu trebuie să fi încheiat contractul cu intenția de a induce în eroare victima dolului",
+    "b": "Codul civil prevede posibilitatea adaptării atât în caz de eroare esențială cât și în caz de dol, întrucât acesta reprezintă o eroare provocată",
+    "c": "dacă X, vecinul lui Y, profită de incendiul izbucnit în timpul nopții în locuința lui Y pentru a obține de la acesta un preț de 3 ori mai mare decât prețul mediu de piață, pentru vânzarea unui extinctor, contractul este anulabil numai pentru leziune",
+    "correct": "A",
+    "expl": "potrivit art. 1215 C.civ., când dolul provine de la un terț, anularea se poate cere dacă cocontractantul a cunoscut sau trebuia să cunoască dolul; nu se cere ca acesta să fi avut el însuși intenția de a induce în eroare. b) greșită: adaptarea contractului este reglementată doar pentru eroarea esențială (art. 1213 C.civ.), nu și pentru dol, unde sancțiunea este anularea și/sau daunele-interese (art. 1257 C.civ.). c) greșită: profitarea de starea de necesitate a lui Y atrage anulabilitatea pentru violență (art. 1218 C.civ.), nu «numai pentru leziune»."
+  },
+  {
+    "fid": "w12",
+    "g": 1,
+    "n": 6,
+    "stem": "În cazul incapacității speciale de folosință a persoanei fizice",
+    "a": "persoana afectată de incapacitate nu poate încheia actul personal și acționând singură, dar îl poate încheia valabil prin reprezentant sau cu încuviințare, ori, după caz, cu autorizare prealabilă",
+    "b": "persoana afectată de incapacitate nu poate încheia valabil actul nici personal și nici acționând cu încuviințare sau autorizare prealabilă",
+    "c": "încheierea actului cu încălcarea unei incapacități absolute atrage întotdeauna nulitatea absolută a acelui act",
+    "correct": "B",
+    "expl": "incapacitatea de folosință înseamnă lipsa aptitudinii de a avea dreptul însuși (art. 34, 206 C.civ.; ex. art. 1653-1654 C.civ.), deci actul nu poate fi încheiat valabil nici personal, nici prin reprezentant, nici cu încuviințare/autorizare — lipsa nu poate fi suplinită. a) greșită: descrie regimul incapacității de exercițiu (art. 41-43 C.civ.), unde lipsa poate fi suplinită prin reprezentare sau încuviințare. c) greșită: sancțiunea depinde de natura interesului ocrotit (art. 1246-1247 C.civ.); incapacitățile care ocrotesc un interes privat (ex. art. 1654 C.civ. pentru mandatari) atrag nulitatea relativă, deci nu „întotdeauna\" nulitate absolută."
+  },
+  {
+    "fid": "w12",
+    "g": 1,
+    "n": 24,
+    "stem": "A îi vinde lui B un utilaj industrial cu plata prețului în rate, obligația de plată fiind garantată cu rezerva dreptului de proprietate până la achitarea integrală a prețului. Utilajul este predat lui B, care îl folosește în activitatea sa. Înainte de plata ultimelor rate și fără ca vreuna dintre părți să fi fost pusă în întârziere, utilajul piere fortuit, într-un incendiu neimputabil niciuneia dintre părți. B refuză plata ratelor rămase. In acest caz",
+    "a": "B rămâne obligat la plata ratelor rămase",
+    "b": "B este liberat de plata ratelor rămase, întrucât, riscul pieirii fortuite rămâne în sarcina vânzătorului, ca proprietar (res perit domino)",
+    "c": "riscul se suportă în mod egal de ambele părți, proporțional cu ratele deja achitate și, respectiv, cu cele rămase neachitate",
+    "correct": "A",
+    "expl": "art. 1755 C.civ. prevede că, în vânzarea cu plata prețului în rate și rezerva proprietății, riscul bunului este transferat cumpărătorului de la momentul predării. Utilajul fiind predat lui B, acesta suportă riscul pieirii fortuite și rămâne obligat la plata ratelor. b) greșită: regula res perit domino (art. 1274 C.civ.) este înlăturată aici prin norma specială a art. 1755 C.civ., care leagă riscul de predare, nu de proprietate. c) greșită: nu există niciun temei legal pentru o suportare proporțională a riscului; legea îl plasează integral asupra cumpărătorului căruia i s-a predat bunul."
+  },
+  {
+    "fid": "w12",
+    "g": 1,
+    "n": 25,
+    "stem": "B cumpără de la A un echipament, pe care îl folosește potrivit destinației sale. La scurt timp, B descoperă un viciu ascuns, existent la data predării, care îi diminuează considerabil utilitatea. B îl cheamă în judecată pe A, solicitând rezoluțiunea vânzării. În cursul procesului, A, dovedind că viciul este remediabil cu cheltuieli reduse și că bunul poate fi adus la parametrii normali de funcționare, cere instanței să dispună înlăturarea viciului pe cheltuiala sa, iar nu rezoluțiunea. In acest caz",
+    "a": "instanța nu poate acorda decât remediul ales de cumpărător, întrucât, potrivit dreptului comun, alegerea mijlocului de remediere a neexecutării aparține creditorului obligației neexecutate",
+    "b": "la cererea vânzătorului, instanța poate dispune o altă măsură decât rezoluțiunea solicitată de cumpărător, ținând seama de gravitatea viciilor și de scopul pentru care contractul a fost încheiat, precum și de alte împrejurări",
+    "c": "instanța poate înlocui remediul ales de cumpărător numai dacă acesta din urmă consimte la aceasta",
+    "correct": "B",
+    "expl": "art. 1710 alin. (2) C.civ. permite instanței ca, la cererea vânzătorului, ținând seama de gravitatea viciilor și de scopul pentru care contractul a fost încheiat, precum și de alte împrejurări, să dispună o altă măsură dintre cele prevăzute la alin. (1) (de ex. înlăturarea viciilor) decât cea solicitată de cumpărător. a) greșită: dreptul comun al opțiunii creditorului (art. 1516 C.civ.) este înlăturat de norma specială din materia garanției contra viciilor. c) greșită: textul art. 1710 alin. (2) nu condiționează înlocuirea remediului de consimțământul cumpărătorului, ci doar de cererea vânzătorului și de aprecierea instanței."
+  },
+  {
+    "fid": "w13",
+    "g": 1,
+    "n": 11,
+    "stem": "În cazul încheierii, în numele persoanei juridice, a unui contract pentru care legea cere forma autentică notarială, ad validitatem",
+    "a": "contractul este valabil numai dacă persona juridică este reprezentată de către organul său de conducere",
+    "b": "organul de administrare al persoanei juridice poate să reprezinte valabil persona juridică, chiar fără a avea o procură specială care să îmbrace forma autentică",
+    "c": "dacă reprezentantul legal își depășește puterile de reprezentare fixate prin actele constitutive regulat publicate, contractul nu va fi al persoanei juridice, chiar dacă cealaltă parte contractantă nu a cunoscut efectiv această neregularitate",
+    "correct": "B",
+    "expl": "organul de administrare este reprezentant legal al persoanei juridice (art. 209 C.civ.), iar cerința simetriei formei procurii (art. 2013 alin. 2 C.civ.) privește doar mandatul convențional, nu reprezentarea organică; deci nu e necesară o procură specială autentică. a) greșită: reprezentarea se realizează prin organele de administrare, nu exclusiv de conducere, iar persoana juridică poate fi reprezentată și convențional, prin mandatar cu procură autentică. c) greșită: potrivit art. 218 alin. (2) C.civ., persoana juridică este ținută de actele organelor sale chiar dacă depășesc puterea de reprezentare, afară de cazul când terțul o cunoștea; simpla publicare a actului constitutiv nu constituie, singură, dovada cunoașterii."
+  },
+  {
+    "fid": "w13",
+    "g": 1,
+    "n": 26,
+    "stem": "Prin contractul de locațiune având ca obiect un garaj, părțile au inserat o clauză prin care i-au interzis expres locatarului L să cedeze locațiunea. Ulterior, fără a obține vreun acord suplimentar din partea locatorului, L încheie cu terțul S o sublocațiune parțială a spațiului. Locatorul contestă operațiunea. În acest caz",
+    "a": "sublocațiunea parțială este permisă",
+    "b": "sublocațiunea este interzisă, întrucât interdicția de a ceda locațiunea o include și pe aceea de a subînchiria, fie și parțial",
+    "c": "sublocațiunea este întotdeauna supusă încuviințării scrise al locatorului",
+    "correct": "A",
+    "expl": "potrivit art. 1806 alin. (1) C.civ., interdicția de a ceda locațiunea nu o include pe aceea de a încheia o sublocațiune; cum părțile au interzis doar cesiunea, sublocațiunea (fie și parțială) rămâne permisă conform art. 1805 C.civ., care o îngăduie dacă nu a fost interzisă expres. b) greșită: inversează regula legală — doar interdicția de a subînchiria o include pe cea de a ceda, nu și invers (art. 1806 alin. 1 C.civ.). c) greșită: încuviințarea scrisă a locatorului nu este cerută ca regulă generală; ea privește locuințele (art. 1833 C.civ.), nu un garaj."
+  },
+  {
+    "fid": "w13",
+    "g": 1,
+    "n": 27,
+    "stem": "A îl însărcinează pe B să cumpere pe seama lui A, dar în numele lui B, un tablou expus de galeria T, fără ca existența mandatului să fie dezvăluită terțului. B încheie contractul de vânzare cu T, acționând în nume propriu. Întrucât B nu achită prețul, după ce află de raportul dintre A și B, T dorește să acționeze contra lui A. La rândul său, A urmărește să obțină predarea tabloului de la T. În acest caz",
+    "a": "T îl poate acționa direct pe A pentru plata prețului, întrucât A este adevăratul cumpărător",
+    "b": "vânzarea este încheiată între B și T, drept care T nu se poate întemeia pe vânzare pentru a pretinde plata prețului de la A",
+    "c": "A poate pretinde în toate cazurile executarea obligației de predare a bunului de către T",
+    "correct": "B",
+    "expl": "în mandatul fără reprezentare, mandatarul contractează în nume propriu, iar potrivit art. 2040 alin. (1) C.civ. terții nu au niciun raport juridic cu mandantul; vânzarea s-a încheiat între B și T, deci T poate cere prețul doar de la B. a) greșită: T nu îl poate acționa pe A în temeiul vânzării, chiar dacă a aflat ulterior de mandat, tocmai pentru că art. 2040 alin. (1) exclude raportul direct terț–mandant. c) greșită: art. 2040 alin. (2) C.civ. permite mandantului să exercite drepturile de creanță ale mandatarului substituindu-se acestuia, dar numai cu condiția să își fi executat propriile obligații față de mandatar, deci nu «în toate cazurile»."
+  },
+  {
+    "fid": "w07",
+    "g": 1,
+    "n": 12,
+    "stem": "Posesia",
+    "a": "viciată nu produce niciun efect juridic",
+    "b": "poate avea ca obiect bunuri corporale care fac parte dintr-o succesiune",
+    "c": "încetează atunci când exercitarea elementului material se face prin intermediul altei persoane (corpore alieno)",
+    "correct": "B",
+    "expl": "potrivit art. 916 C.civ., posesia este exercitarea în fapt a prerogativelor dreptului de proprietate asupra unui bun corporal; bunurile corporale individual determinate dintr-o succesiune pot fi posedate (doar universalitatea ca atare nu poate forma obiect al posesiei). a) greșită: posesia viciată produce efecte juridice, viciile doar suspendă anumite efecte (ex. uzucapiunea) și numai față de persoana față de care posesia e viciată (art. 926-927 C.civ.). c) greșită: posesia poate fi exercitată corpore alieno, prin intermediul altei persoane (art. 917 C.civ.); acesta nu este caz de încetare, cazurile de încetare fiind cele din art. 921 C.civ."
+  },
+  {
+    "fid": "w07",
+    "g": 1,
+    "n": 17,
+    "stem": "Uzucapiunea tabulară presupune",
+    "a": "o durată a posesiei de 10 ani",
+    "b": "o posesie de bună-credință până la momentul introducerii cererii de chemare în judecată de către adevăratul proprietar",
+    "c": "un drept real principal înscris, fără cauză legitimă, în cartea funciară",
+    "correct": "C",
+    "expl": "potrivit art. 931 C.civ., uzucapiunea tabulară privește dreptul real principal înscris fără cauză legitimă în cartea funciară, dobândit de cel care l-a posedat cu bună-credință timp de 5 ani. a) e greșită: durata este de 5 ani, nu 10 (10 ani caracterizează uzucapiunea extratabulară, art. 930 C.civ.). b) e greșită: buna-credință trebuie să existe la momentul înregistrării cererii de înscriere și la intrarea în posesie (art. 931 alin. 2), nu până la introducerea cererii de chemare în judecată de adevăratul proprietar."
+  },
+  {
+    "fid": "w05",
+    "g": 1,
+    "n": 13,
+    "stem": "În materia folosinței ce intră în conținutul dreptului de proprietate privată",
+    "a": "posibilitatea proprietarului de a nu utiliza bunul este limitată de lege în anumite cazuri în funcție de natura și destinația bunului",
+    "b": "fructele civile se dobândesc prin acte materiale sau juridice",
+    "c": "pasivitatea proprietarului de a culege fructele naturale nu reprezintă un act de dispoziție materială",
+    "correct": "A",
+    "expl": "legea limitează în anumite cazuri posibilitatea de a nu folosi bunul, în funcție de natura și destinația sa (ex. obligația de cultivare a terenurilor agricole – Legea nr. 18/1991; obligații propter rem). b) greșită: fructele civile se dobândesc zi cu zi, prin simpla scurgere a timpului (art. 550 alin. 4 C.civ.), nu prin acte materiale; prin percepere/separare (acte materiale) se dobândesc fructele naturale și industriale (art. 550 alin. 2). c) greșită: pasivitatea proprietarului care lasă fructele naturale să piară echivalează, potrivit doctrinei, cu un act de dispoziție materială (consumarea/distrugerea substanței fructelor)."
+  },
+  {
+    "fid": "w05",
+    "g": 2,
+    "n": 14,
+    "stem": "In materia folosinței ce intră în conținutul dreptului de proprietate privată",
+    "a": "posibilitatea proprietarului de a nu utiliza bunul este limitată de lege în anumite cazuri în funcție de natura și destinația bunului",
+    "b": "fructele civile se dobândesc prin acte materiale sau juridice",
+    "c": "pasivitatea proprietarului de a culege fructele naturale nu reprezintă un act de dispoziție",
+    "correct": "A",
+    "expl": "libertatea proprietarului de a nu uza de bun este limitată legal în anumite cazuri, în funcție de natura și destinația bunului – ex. obligația de cultivare a terenurilor agricole (Legea nr. 18/1991) sau de întreținere a monumentelor istorice (Legea nr. 422/2001), limite ale exercitării proprietății (art. 556 C.civ.). b) greșită: fructele civile se dobândesc zi cu zi, prin simpla scurgere a timpului (art. 550 alin. 3 C.civ.); prin separare (act material) se dobândesc fructele naturale și industriale (art. 550 alin. 2). c) greșită: doctrina califică pasivitatea în culegerea fructelor naturale, lăsate să piară, ca act de dispoziție materială, nu de simplă folosință."
+  },
+  {
+    "fid": "w05",
+    "g": 1,
+    "n": 16,
+    "stem": "Partajul",
+    "a": "de folosință presupune încetarea stării de coproprietate",
+    "b": "judiciar nu presupune participarea tuturor coproprietarilor",
+    "c": "dă naștere între coproprietari la obligația de garanție pentru evicțiune și vicii ascunse",
+    "correct": "C",
+    "expl": "potrivit art. 683 alin. (1) C.civ., coproprietarii își datorează, în limita cotelor-părți, garanție pentru evicțiune și vicii ascunse, dispozițiile în materia vânzării aplicându-se corespunzător. a) greșită: partajul de folosință (art. 639 C.civ.) reglementează doar modul de utilizare a bunului comun, fără a pune capăt stării de coproprietate; doar partajul propriu-zis o încetează. b) greșită: partajul făcut fără participarea tuturor coproprietarilor este lovit de nulitate absolută (art. 684 alin. 2 C.civ.), deci partajul judiciar presupune obligatoriu participarea tuturor."
+  },
+  {
+    "fid": "w06",
+    "g": 1,
+    "n": 15,
+    "stem": "Dreptul de uzufruct",
+    "a": "se poate dobândi prin testament",
+    "b": "spre deosebire de dreptul de uz și de dreptul de abitație, este cesibil și viager",
+    "c": "se stinge prin neuz timp de 5 ani",
+    "correct": "A",
+    "expl": "uzufructul se poate constitui prin act juridic – deci și prin testament – potrivit art. 704 alin. (1) C.civ. b) greșită: uzufructul este într-adevăr cesibil (art. 714 C.civ.), spre deosebire de uz și abitație (art. 752 C.civ.), dar caracterul viager nu îl deosebește de acestea, uzul și abitația fiind de asemenea drepturi cel mult viagere (art. 708 C.civ. aplicabil corespunzător). c) greșită: uzufructul se stinge prin neuz timp de 10 ani, respectiv 2 ani în cazul uzufructului asupra unei creanțe (art. 746 alin. 1 lit. e C.civ.), nu 5 ani."
+  },
+  {
+    "fid": "w10",
+    "g": 1,
+    "n": 18,
+    "stem": "Rezoluțiunea unilaterală a contractului",
+    "a": "poate opera și pe cale judiciară",
+    "b": "poate fi declarată și de creditorul care a cauzat prin inacțiunea sa neexecutarea obligației",
+    "c": "nu înlătură dreptul creditorului de a obține daune-interese în condițiile legii",
+    "correct": "C",
+    "expl": "potrivit art. 1549 și art. 1554 alin. 3 C.civ., rezoluțiunea (inclusiv cea unilaterală) nu înlătură dreptul creditorului la daune-interese, dacă i se cuvin. a) e greșită: rezoluțiunea unilaterală operează prin declarația creditorului (art. 1552 C.civ.), fiind un mod extrajudiciar; cea care operează pe cale judiciară este rezoluțiunea judiciară (art. 1550 alin. 1). b) e greșită: potrivit art. 1517 C.civ., o parte nu poate invoca neexecutarea cauzată chiar prin acțiunea sau omisiunea sa, deci creditorul culpabil de neexecutare nu poate declara rezoluțiunea."
+  },
+  {
+    "fid": "w10",
+    "g": 1,
+    "n": 21,
+    "stem": "Obligația de a da o sumă de bani",
+    "a": "asumată de o pluralitate de debitori poate fi indivizibilă, prin convenția părților",
+    "b": "poate fi executată în natură sau prin echivalent",
+    "c": "neexecutată la termen dă creditorului dreptul la daune-interese moratorii de la data punerii în întârziere a debitorului până la data plății",
+    "correct": "A",
+    "expl": "potrivit art. 1425 C.civ., indivizibilitatea poate rezulta din convenția părților, deci o obligație bănească (divizibilă prin natura ei) asumată de mai mulți debitori poate fi convențional indivizibilă. b) e greșită: obligațiile pecuniare se execută întotdeauna în natură (art. 1488 C.civ.), executarea prin echivalent fiind de neconceput, banii fiind chiar obiectul prestației. c) e greșită: potrivit art. 1535 alin. 1 C.civ., pentru obligațiile bănești daunele moratorii curg de drept de la scadență până la plată, fără a fi necesară punerea în întârziere și fără dovada vreunui prejudiciu."
+  },
+  {
+    "fid": "w09",
+    "g": 1,
+    "n": 19,
+    "stem": "Paznicul juridic",
+    "a": "se poate exonera prin invocarea unui eveniment fortuit, cum ar fi forța majoră, fapta victimei și fapta unui terț, dacă acestea din urmă îndeplinesc condițiile forței majore sau cazului fortuit",
+    "b": "are un drept de regres împotriva paznicului material în condițiile recunoscute de lege pentru cel care răspunde pentru fapta altuia",
+    "c": "poate avea această calitate în baza legii, a unui contract sau a unui fapt juridic",
+    "correct": "C",
+    "expl": "paza juridică (art. 1377 C.civ.) aparține celui care exercită controlul și supravegherea lucrului în temeiul legii, al unui contract sau chiar al unui fapt juridic (ex. posesia, inclusiv dobândită prin fapt ilicit). a) e greșită: potrivit art. 1380 C.civ., paznicul juridic se exonerează doar prin forță majoră, fapta victimei sau a terțului (acestea din urmă dacă au caracteristicile forței majore); cazul fortuit nu exonerează în răspunderea pentru lucruri. b) e greșită: regresul de la art. 1384 C.civ. privește răspunderea pentru fapta altuia; paznicul juridic răspunde pentru lucru, nu pentru paznicul material, neavând acest regres specific."
+  },
+  {
+    "fid": "w01",
+    "g": 1,
+    "n": 20,
+    "stem": "Acțiunea revocatorie",
+    "a": "introdusă cu succes de către un creditor chirografar profită tuturor creditorilor chirografari ai respectivului debitor",
+    "b": "nu se aplică faptelor juridice stricto sensu",
+    "c": "dacă se referă la un contract de donație, presupune condiția fraudei debitorului și a complicității terțului la fraudă",
+    "correct": "B",
+    "expl": "acțiunea revocatorie (pauliană) vizează, potrivit art. 1562 C.civ., actele juridice încheiate de debitor în frauda creditorului, nu faptele juridice stricto sensu (evenimente sau acțiuni fără intenția de a produce efecte juridice). a) e greșită: potrivit art. 1565 alin. 1 C.civ., actul e declarat inopozabil doar față de creditorul reclamant și de creditorii care au intervenit în cauză, nu profită tuturor chirografarilor. c) e greșită: la actele cu titlu gratuit (donație) nu se cere complicitatea terțului la fraudă; art. 1562 alin. 2 impune cunoașterea fraudei de către terț doar la actele cu titlu oneros."
+  },
+  {
+    "fid": "w01",
+    "g": 4,
+    "n": 9,
+    "stem": "In cazul încheierii, în numele persoanei juridice, a unui contract pentru care legea cere forma autentică notarială, ad validitatem",
+    "a": "contractul este valabil numai dacă persona juridică este reprezentată de către organul său de conducere",
+    "b": "organul de administrare al persoanei juridice poate să reprezinte valabil persona juridică, chiar fără a avea o procură specială care să îmbrace forma autentică",
+    "c": "dacă reprezentantul legal își depășește puterile de reprezentare fixate prin actele constitutive regulat publicate, contractul nu va fi al persoanei juridice, chiar dacă cealaltă parte contractantă nu a cunoscut efectiv această neregularitate",
+    "correct": "B",
+    "expl": "persoana juridică își exercită drepturile prin organele de administrare, care o reprezintă în temeiul legii, nu al unui mandat (art. 209 C.civ.); regula simetriei formei procurii (art. 1301 C.civ.) nu se aplică, deci nu e nevoie de procură autentică specială. a) greșită: reprezentarea nu e limitată la organul de conducere; poate fi făcută și prin reprezentanți împuterniciți. c) greșită: limitările puterilor de reprezentare, deși publicate, nu sunt opozabile terților de bună-credință care nu le-au cunoscut efectiv (art. 218 alin. 2-3 C.civ.), deci contractul angajează persoana juridică."
+  },
+  {
+    "fid": "w11",
+    "g": 1,
+    "n": 22,
+    "stem": "Compensația",
+    "a": "între un codebitor solidar și creditor stinge în integralitate obligația solidară, dacă datoria creditorului are o valoare mai mare decât datoria ce face obiectul obligației solidare",
+    "b": "nu poate fi opusă de către autorul furtului adevăratului proprietar, ca mod de stingere a obligației de a restitui bunurile furate",
+    "c": "judiciară, spre deosebire de cea convențională, poate avea loc și dacă obiectul obligației părților privește prestarea unui serviciu",
+    "correct": "B",
+    "expl": "conform art. 1618 lit. a) C.civ., compensația nu are loc când datoria rezultă dintr-un act făcut cu intenția de a păgubi; hoțul nu poate opune proprietarului compensația pentru a se libera de obligația de restituire a bunurilor furate. a) greșită: potrivit art. 1450 alin. (1) C.civ., compensația nu operează între creditor și un debitor solidar decât în limita părții din datorie ce revine acestuia, deci nu stinge integral obligația solidară. c) greșită: compensația judiciară presupune tot datorii reciproce având ca obiect sume de bani sau bunuri fungibile de aceeași natură (art. 1617 C.civ.); doar cea convențională, prin acordul părților, poate privi alte prestații."
+  },
+  {
+    "fid": "w11",
+    "g": 1,
+    "n": 23,
+    "stem": "Cesiunea de creanță",
+    "a": "spre deosebire de preluarea de datorie realizată prin contract încheiat între creditor și noul debitor, nu presupune pentru încheierea valabilă a actului juridic, ca regulă, consimțământul debitorului din raportul juridic obligațional inițial",
+    "b": "poate fi făcută opozabilă debitorului cedat și prin comunicarea acesteia odată cu cererea de chemare în judecată formulată de creditorul cesionar",
+    "c": "are ca efect transmiterea drepturilor de garanție accesorii creanței cedate doar dacă acest lucru s-a prevăzut expres în contractul de cesiune. 2 ATEA-DE-DILED. CERCETARI SAVERSITAPE",
+    "correct": "B",
+    "expl": "potrivit art. 1578 alin. (1) lit. b) și art. 1580 C.civ., cesiunea poate fi comunicată debitorului cedat odată cu cererea de chemare în judecată formulată de cesionar, devenind astfel opozabilă (debitorul nefiind obligat la cheltuieli de judecată dacă plătește până la primul termen). a) greșită: comparația e falsă — nici preluarea de datorie prin contract între creditor și noul debitor (art. 1599 lit. b C.civ.) nu presupune consimțământul debitorului inițial, deci nu există deosebire sub acest aspect. c) greșită: conform art. 1568 alin. (1) lit. b) C.civ., garanțiile și celelalte accesorii se transmit de drept, fără a fi necesară o stipulație expresă."
+  },
+  {
+    "fid": "w14",
+    "g": 1,
+    "n": 29,
+    "stem": "A îi împrumută cu titlu gratuit lui B un autoturism, pentru o durată determinată. Pe parcursul folosinței, B suportă cheltuielile curente de combustibil și de întreținere periodică. Survine însă o defecțiune majoră, imprevizibilă la încheierea contractului și de remediere urgentă. Neputând să îl înștiințeze pe A în timp util, B efectuează pe cheltuiala sa reparația necesară pentru păstrarea bunului. La restituirea autoturismului, B îi cere lui A rambursarea atât a cheltuielilor curente, cât și a celor de reparație menționate. În acest caz",
+    "a": "A nu datorează cheltuielile curente de folosință, pe care comodatarul le suportă, însă datorează cheltuielile pentru lucrările necesare, neprevăzute și urgente, efectuate fără posibilitatea înștiințării prealabile",
+    "b": "A datorează rambursarea tuturor cheltuielilor făcute de B în legătură cu bunul",
+    "c": "A nu datorează nicio cheltuială",
+    "correct": "A",
+    "expl": "Conform art. 2151 alin. (1) C.civ., comodatarul suportă cheltuielile pe care le-a făcut pentru a folosi bunul (combustibil, întreținere curentă). Însă, potrivit art. 2151 alin. (2) C.civ., el are dreptul la rambursarea cheltuielilor pentru lucrările necesare asupra bunului care nu puteau fi prevăzute la încheierea contractului, atunci când, din cauza urgenței, comodantul nu putea fi înștiințat în timp util — exact ipoteza speței. b) e greșită: cheltuielile curente de folosință rămân în sarcina comodatarului, comodatul fiind gratuit. c) e greșită: cheltuielile necesare, neprevăzute și urgente se rambursează în condițiile art. 2151 alin. (2) C.civ."
+  },
+  {
+    "fid": "w14",
+    "g": 1,
+    "n": 30,
+    "stem": "A i-a transmis lui B, prin contract de întreținere încheiat în formă autentică, nuda proprietate a unui imobil, în schimbul întreținerii sale viagere. După câțiva ani, raporturile dintre părți se deteriorează în asemenea măsură încât prestarea și primirea întreținerii în natură nu mai pot continua din motive obiective, fără ca aceasta să se datoreze culpei exclusive a vreuneia dintre părți. În acest caz",
+    "a": "dacă A solicită rezoluțiunea, cererea sa va fi admisă, întrucât imposibilitatea de executare a obligației de întreținere este prin ipoteză gravă și atrage desființarea contractului",
+    "b": "întrucât imposibilitatea continuării întreținerii în natură provine din motive obiective, instanța poate, la cererea oricăreia dintre părți, să înlocuiască întreținerea în natură cu o sumă de bani corespunzătoare, fie și numai temporar",
+    "c": "contractul încetează de drept, iar debitorul, restituind nuda proprietate, are dreptul la restituirea integrală a prestațiilor de întreținere deja executate. 3 1-DE-DILET CERCE",
+    "correct": "B",
+    "expl": "Potrivit art. 2261 alin. (1) C.civ., dacă prestarea sau primirea în natură a întreținerii nu mai poate continua din motive obiective, instanța judecătorească poate să înlocuiască, la cererea oricăreia dintre părți, fie și numai temporar, întreținerea în natură cu o rentă în bani corespunzătoare. a) e greșită: rezoluțiunea contractului de întreținere (art. 2263 C.civ.) presupune un comportament culpabil al debitorului sau neexecutarea fără justificare; imposibilitatea obiectivă, neimputabilă, nu atrage rezoluțiunea, ci înlocuirea cu renta. c) e greșită: contractul nu încetează de drept în această ipoteză, iar caracterul aleatoriu al întreținerii exclude restituirea integrală a prestațiilor deja executate."
+  },
+  {
+    "fid": "w15",
+    "g": 1,
+    "n": 31,
+    "stem": "Față de moștenirea lui D, reclamă drepturi fiul său, F2, și nepotul de fiu al defunctului, N, copilul celuilalt fiu al lui D, FI. Fl fusese declarat nedemn față de moștenirea lui D. Fl a renunțat la mostenirea lui D, la 2 luni de la deschiderea acesteia. N pretinde că vine la moştenire prin reprezentarea tatălui său. În acest caz",
+    "a": "N nu poate veni prin reprezentare, întrucât nu este posibilă reprezentarea renunțătorului",
+    "b": "N poate veni la moștenire prin reprezentarea tatălui său nedemn",
+    "c": "N nu poate veni prin reprezentare, dar culege moștenirea în nume propriu, în concurs cu F2, fiecare câte o jumătate",
+    "correct": "B",
+    "expl": "Potrivit art. 967 alin. (1) C.civ., poate fi reprezentată persoana lipsită de capacitatea de a moșteni, precum și nedemnul, chiar aflat în viață la data deschiderii moștenirii. F1 fiind nedemn, N urcă în locul și gradul tatălui său prin reprezentare succesorală (art. 965 C.civ.). a) e greșită: deși renunțătorul nu poate fi reprezentat, temeiul reprezentării aici este nedemnitatea, care l-a exclus pe F1 de la moștenire de la data deschiderii ei; renunțarea sa ulterioară este lipsită de relevanță, neavând un drept la care să renunțe. c) e greșită: în nume propriu, N (rudă de gradul II) ar fi înlăturat de F2 (gradul I) prin principiul proximității gradului de rudenie (art. 964 C.civ.)."
+  },
+  {
+    "fid": "w15",
+    "g": 1,
+    "n": 32,
+    "stem": "D decedează, lăsând ca moștenitori pe soția supraviețuitoare, S, pe fiul său, F, precum și pe cei doi nepoți de fiică, N1 și N2, copiii fiicei sale predecedate FP. Toți acceptă moștenirea. Care dintre următoarele afirmații privind cotele succesorale este corectă?",
+    "a": "S culege 1/4 din moștenire; restul de 3/4 se împarte pe tulpini între descendenți, astfel încât F culege 3/8, iar N1 și N2 câte 3/16 fiecare",
+    "b": "S culege 1/4 din moștenire, iar restul se împarte pe capete, în mod egal, între F, N1 și N2, fiecare culegând câte 1/4 din moștenire",
+    "c": "S culege 1/3 din moștenire, iar restul de 2/3 se împarte pe tulpini între F și tulpina fiicei predecedate",
+    "correct": "A",
+    "expl": "Potrivit art. 975 alin. (3) C.civ., soțul supraviețuitor în concurs cu descendenții culege 1/4 din moștenire. Restul de 3/4 revine descendenților, iar N1 și N2 vin prin reprezentarea mamei predecedate FP (art. 965-967 C.civ.), împărțirea făcându-se pe tulpini (art. 968 C.civ.): F ia 3/8 (o tulpină), iar N1 și N2 împart tulpina lui FP, câte 3/16 fiecare. b) e greșită: în caz de reprezentare, partajul se face pe tulpini, nu pe capete (art. 968 alin. (1) C.civ.), nepoții împărțind doar partea autorului lor. c) e greșită: cota soțului supraviețuitor în concurs cu descendenții este 1/4, nu 1/3 (art. 972 alin. (1) lit. a) și art. 975 alin. (3) C.civ.)."
+  },
+  {
+    "fid": "w15",
+    "g": 1,
+    "n": 35,
+    "stem": "S, succesibil al defunctului D, a dat o declarație autentică de renunțare la moștenire. Ulterior se constată că, anterior acestei declarații, S sustrăsese cu rea-credință un bun mobil de valoare din patrimoniul succesoral. Ceilalți moştenitori invocă acceptarea forțată a moștenirii de către S. In acest caz",
+    "a": "S rămâne renunțător, sustragerea atrăgând numai obligația de a restitui bunul și, eventual, de a plăti daune-interese",
+    "b": "S este considerat că a acceptat moștenirea, chiar dacă anterior renunțase, însă nu va avea niciun drept cu privire la bunul sustras",
+    "c": "S este decăzut din dreptul de opțiune și devine cu desăvârșire străin de moștenire, ca și cum nu ar fi fost niciodată chemat la aceasta",
+    "correct": "B",
+    "expl": "potrivit art. 1119 alin. (1) C.civ., succesibilul care, cu rea-credință, a sustras ori a ascuns bunuri din patrimoniul succesoral este considerat că a acceptat moștenirea, chiar dacă anterior renunțase la ea; el nu va avea însă niciun drept cu privire la bunurile sustrase sau ascunse. Renunțarea anterioară este astfel lipsită de efecte. a): greșită — sancțiunea legală este acceptarea forțată, nu menținerea calității de renunțător cu simpla obligație de restituire. c): greșită — S nu devine străin de moștenire; dimpotrivă, dobândește calitatea de acceptant, fiind decăzut numai din drepturile asupra bunului sustras (și ținut de datorii peste partea sa, conform art. 1119 alin. 2 C.civ.)."
+  },
+  {
+    "fid": "w16",
+    "g": 1,
+    "n": 33,
+    "stem": "La decesul lui D vin la moștenire soția sa supraviețuitoare, S, și doi copii ai defunctului: C1, copil comun al lui D și S, și C2, copil al lui D dintr-o căsătorie anterioară (care nu este descendent comun al lui D și S). Prin testament, D a făcut o liberalitate neraportabilă în favoarea soției S. În acest caz",
+    "a": "liberalitatea rămâne pe deplin eficace în măsura în care este cel mult egală cu ½ din moștenire",
+    "b": "liberalitatea făcută în favoarea lui S nu poate depăși un sfert din moștenire și nici partea descendentului care a primit cel mai puțin",
+    "c": "liberalitatea nu este susceptibilă de reducțiune, întrucât soțul supraviețuitor are calitatea de moştenitor rezervatar",
+    "correct": "B",
+    "expl": "potrivit art. 1090 alin. (1) C.civ., liberalitățile neraportabile făcute soțului supraviețuitor care vine la moștenire în concurs cu descendenți ce nu provin din căsătoria sa cu defunctul (cotitatea disponibilă specială) nu pot depăși un sfert din moștenire și nici partea descendentului care a primit cel mai puțin. a): greșită — limita de ½ corespunde cotității disponibile ordinare (art. 1089 C.civ.), care nu se aplică singură când există descendenți dintr-o căsătorie anterioară. c): greșită — calitatea de rezervatar a soțului (art. 1087 C.civ.) nu exclude reducțiunea liberalității primite de acesta, care rămâne supusă limitelor art. 1089 și 1090 C.civ."
+  },
+  {
+    "fid": "w26",
+    "g": 1,
+    "n": 36,
+    "stem": "În situația transmisiunii, în condițiile legii, a calității procesuale",
+    "a": "succesorul cu titlu particular nu este obligat să intervină în cauză, dacă are cunoștință de existența procesului",
+    "b": "hotărârea pronunțată contra înstrăinătorului sau succesorului universal ori cu titlu universal al acestuia va produce de drept efecte și contra succesorului cu titlu particular și va fi întotdeauna opozabilă acestuia din urmă, fără excepție",
+    "c": "dacă în cursul procesului dreptul litigios este transmis prin acte între vii cu titlu particular, judecata va continua între părțile inițiale",
+    "correct": "C",
+    "expl": "potrivit art. 39 alin. (1) C.proc.civ., dacă în cursul procesului dreptul litigios este transmis prin acte între vii cu titlu particular, judecata va continua între părțile inițiale, transmițătorul păstrând calitatea procesuală. a): greșită — art. 39 alin. (2) C.proc.civ. prevede că succesorul cu titlu particular este obligat să intervină în cauză, dacă are cunoștință de existența procesului. b): greșită — deși hotărârea produce de drept efecte și contra succesorului cu titlu particular, art. 39 alin. (3) C.proc.civ. instituie excepții: hotărârea nu îi este opozabilă când a dobândit dreptul cu bună-credință și nu mai poate fi evins, potrivit legii, de adevăratul titular."
+  },
+  {
+    "fid": "w26",
+    "g": 3,
+    "n": 38,
+    "stem": "In situația transmisiunii, în condițiile legii, a calității procesuale",
+    "a": "succesorul cu titlu particular nu este obligat să intervină în cauză, dacă are cunoștință de existența procesului",
+    "b": "hotărârea pronunțată contra înstrăinătorului sau succesorului universal ori cu titlu universal al acestuia va produce de drept efecte și contra succesorului cu titlu particular și va fi întotdeauna opozabilă acestuia din urmă, fără excepție",
+    "c": "dacă. în cursul procesului dreptul litigios este transmis prin acte între vii cu titlu particular, judecata va continua între părțile inițiale",
+    "correct": "C",
+    "expl": "Art. 39 alin. (1) C. proc. civ. prevede expres că dacă în cursul procesului dreptul litigios este transmis prin acte între vii cu titlu particular, judecata va continua între părțile inițiale. Varianta a): greșită - Art. 39 alin. (2) prevede că succesorul cu titlu particular ESTE obligat să intervină în cauză dacă are cunoștință de existența procesului, nu invers. Varianta b): greșită - Art. 39 alin. (3) prevede că opozabilitatea față de succesorul cu titlu particular operează cu excepția cazului în care acesta a dobândit dreptul cu bună-credință și nu mai poate fi evins; deci nu este 'fără excepție'."
+  },
+  {
+    "fid": "w26",
+    "g": 1,
+    "n": 37,
+    "stem": "În cazul coparticipării procesuale",
+    "a": "dacă prin natura raportului juridic , efectele hotărârii se întind asupra tuturor reclamanților ori pârâților, termenele încuviințate numai unora dintre ei pentru îndeplinirea actelor de procedură profită și celorlalți",
+    "b": "pârâții care nu s-au înfățișat, vor continua să fie citați, chiar dacă au termen în cunoștință",
+    "c": "principiul independenței procesuale se aplică în toate cazurile",
+    "correct": "A",
+    "expl": "potrivit art. 60 alin. (2) C.proc.civ., dacă prin natura raportului juridic sau în temeiul unei dispoziții a legii, efectele hotărârii se întind asupra tuturor reclamanților ori pârâților, actele de procedură îndeplinite numai de unii dintre ei sau termenele încuviințate numai unora dintre ei pentru îndeplinirea actelor de procedură profită și celorlalți. b): greșită — potrivit art. 229 alin. (1) C.proc.civ., partea care are termen în cunoștință nu mai este citată, regulă aplicabilă și pârâților coparticipanți. c): greșită — principiul independenței procesuale (art. 60 alin. 1 C.proc.civ.) nu se aplică în toate cazurile, excepția fiind tocmai coparticiparea obligatorie/unitară din alin. (2)."
+  },
+  {
+    "fid": "w18",
+    "g": 1,
+    "n": 51,
+    "stem": "Alegeți afirmația corectă",
+    "a": "Atât în cazul intenției indirecte cât și în cazul culpei cu prevedere făptuitorul acceptă producerea rezultatului faptei sale",
+    "b": "Spre deosebire de intenția directă, în cazul culpei simple făptuitorul nu prevede rezultatul faptei sale",
+    "c": "Atât în cazul intenției directe cât și în cazul culpei cu prevedere, făptuitorul nu prevede rezultatul faptei sale.",
+    "correct": "B",
+    "expl": "potrivit art. 16 alin. (4) lit. b) CP, în cazul culpei simple (neglijenței) făptuitorul nu prevede rezultatul faptei, deși trebuia și putea să îl prevadă, spre deosebire de intenția directă, unde prevede și urmărește rezultatul (art. 16 alin. 3 lit. a CP). a) greșită: la culpa cu prevedere făptuitorul nu acceptă rezultatul, ci socotește fără temei că el nu se va produce (art. 16 alin. 4 lit. a CP); acceptarea caracterizează doar intenția indirectă. c) greșită: atât la intenția directă, cât și la culpa cu prevedere, făptuitorul prevede rezultatul faptei sale."
+  },
+  {
+    "fid": "w18",
+    "g": 2,
+    "n": 63,
+    "stem": "In cazul liberării condiționate, instanța face aplicarea dispozițiilor de la concurs, recidivă ori pluralitate intermediară, cu îndeplinirea și altor condiții",
+    "a": "numai în cazul anulării măsurii respective",
+    "b": "atât în cazul revocării cât si al anulării măsurii liberării condiționate",
+    "c": "numai în cazul revocării acelei măsuri",
+    "correct": "A",
+    "expl": "potrivit art. 105 alin. (1) C. pen., anularea liberării condiționate (când se descoperă o infracțiune săvârșită înainte de acordarea liberării) atrage aplicarea, după caz, a dispozițiilor privind concursul de infracțiuni, recidiva sau pluralitatea intermediară. b) și c) sunt greșite: în cazul revocării (art. 104 alin. (2) C. pen.), pentru infracțiunea nouă săvârșită în termenul de supraveghere se aplică doar dispozițiile privind recidiva sau pluralitatea intermediară, niciodată cele privind concursul, întrucât noua infracțiune este comisă după rămânerea definitivă a condamnării; deci ansamblul celor trei instituții (concurs, recidivă, pluralitate intermediară) operează numai la anulare."
+  },
+  {
+    "fid": "w18",
+    "g": 3,
+    "n": 64,
+    "stem": "În cauză inculpatul a fost condamnat la 2 ani închisoare pentru o infracțiune de furt calificat, la 2 ani închisoare pentru o tentativă la infracțiunea de tâlhărie calificată și la 1 an închisoare pentru o infracțiune de vătămare corporală din culpă. Din datele aflate la dosar s-a mai reținut că inculpatul mai fusese condamnat anterior pentru o infracțiune de furt la o pedeapsă de 1 an și 3 luni din care executase efectiv 1 an, fiind în termenul de supraveghere a liberării condiționate la data săvârșirii celor trei infracțiuni de mai sus. În speță",
+    "a": "sunt realizate condițiile recidivei postcondamnatorii, iar inculpatului urmează să i se aplice pedeapsa rezultantă de 3 ani și 3 luni",
+    "b": "sunt realizate condițiile recidivei postcondamnatorii, iar inculpatul va fi condamnat la 3 ani și 5 luni închisoare din care se va scădea pedeapsa de 1 an executată deja",
+    "c": "nu sunt realizate condițiile unei recidive deoarece anterior condamnatul executase pedeapsa de doar 1",
+    "correct": "A",
+    "expl": "primul termen al recidivei postcondamnatorii există (art. 41 C.pen.): condamnare de 1 an și 3 luni (peste 1 an), neexecutată integral, faptele fiind comise în termenul de supraveghere al liberării condiționate (rest neexecutat 3 luni). Conform art. 43 alin. (2) C.pen., infracțiunile concurente se contopesc mai întâi: 2 ani + 1/3×(2+1) = 3 ani, iar rezultanta se adaugă aritmetic la restul neexecutat de 3 luni → 3 ani și 3 luni. b) greșită: noul Cod nu mai permite contopirea cu întreaga pedeapsă anterioară și deducerea părții executate; se cumulează doar restul neexecutat. c) greșită: liberarea condiționată nu echivalează cu executarea pedepsei; restul de 3 luni era neexecutat la data faptelor."
+  },
+  {
+    "fid": "w20",
+    "g": 1,
+    "n": 59,
+    "stem": "Pedepsele complementare constând în interzicerea exercitării unor drepturi, stabilite pe lângă pedepsele principale, în cazul concursului de infracțiuni, se aplică pe lângă pedeapsa rezultantă",
+    "a": "toate dacă sunt de aceeași natură și cu același conținut",
+    "b": "toate dacă sunt de aceeași natură, dar cu un conținut diferit",
+    "c": "numai dacă au fost stabilite pe lângă pedeapsa cea mai grea",
+    "correct": "B",
+    "expl": "conform art. 45 alin. (2) C.pen., când s-au stabilit mai multe pedepse complementare de natură diferită sau de aceeași natură, dar cu conținut diferit, acestea se aplică toate alături de pedeapsa principală rezultantă. a) greșită: dacă pedepsele complementare sunt de aceeași natură și cu același conținut, în caz de concurs se aplică doar cea mai grea dintre ele (art. 45 alin. 3 lit. a), nu toate. c) greșită: legea nu condiționează aplicarea pedepselor complementare de stabilirea lor pe lângă pedeapsa cea mai grea; se aplică toate cele de natură/conținut diferit, indiferent de pedeapsa principală pe lângă care au fost stabilite."
+  },
+  {
+    "fid": "w20",
+    "g": 1,
+    "n": 61,
+    "stem": "În cazul persoanei juridice",
+    "a": "dacă după o condamnare definitivă și mai înainte de executarea acesteia se săvârșește din nou o infracțiune în condițiile recidivei, se va stabili o pedeapsă între limitele prevăzute de lege majorate cu jumătate și aceasta se va adăuga la restul rămas neexecutat din condamnarea anterioară",
+    "b": "dacă termenul de prescripție a răspunderii penale a fost depășit cu încă jumătate va fi considerat îndeplinit oricâte întreruperi ar interveni",
+    "c": "pedepsele cu amenda stabilite pentru infracțiunile concurente se contopesc prin aplicarea pedepsei celei mai grele la care se va adăuga un spor de o pătrime din totalul celorlalte pedepse",
+    "correct": "A",
+    "expl": "în caz de recidivă a persoanei juridice, limitele speciale ale pedepsei pentru noua infracțiune se majorează cu jumătate (art. 146 alin. 2 C.pen.), iar dacă amenda anterioară nu a fost executată integral, amenda nouă se adaugă la pedeapsa anterioară sau la restul rămas neexecutat (art. 146 alin. 3). b) greșită: prescripția specială operează dacă termenul a fost depășit cu încă o dată, nu cu jumătate (art. 155 alin. 4 C.pen.). c) greșită: la concursul de infracțiuni, persoanei juridice i se aplică amenda cea mai grea plus un spor de o treime din totalul celorlalte (art. 147 alin. 1 raportat la art. 39 alin. 1 lit. c C.pen.), nu o pătrime."
+  },
+  {
+    "fid": "w20",
+    "g": 1,
+    "n": 62,
+    "stem": "Spre deosebire de amânarea aplicării pedepsei, în cazul suspendării executării pedepsei sub supraveghere",
+    "a": "nu există o condiție referitoare la maximul special prevăzut de lege pentru infracțiunea săvârșită",
+    "b": "nu se va executa pedeapsa amenzii stabilită pentru săvârșirea uneia dintre infracțiunile concurente deduse judecății",
+    "c": "va putea fi dispusă dacă pentru o condamnare anterioară a intervenit reabilitarea de drept",
+    "correct": "A",
+    "expl": "amânarea aplicării pedepsei cere ca pedeapsa prevăzută de lege să fie mai mică de 7 ani (art. 83 alin. 2 C.pen.), pe când suspendarea sub supraveghere nu are o condiție privind maximul special, ci doar ca pedeapsa aplicată, inclusiv în caz de concurs, să fie de cel mult 3 ani (art. 91 alin. 1 lit. a C.pen.). b) greșită: amenda care însoțește pedeapsa închisorii se execută chiar dacă executarea închisorii a fost suspendată (art. 91 alin. 2 C.pen.). c) greșită: nu este o deosebire — și la amânare condamnarea pentru care a intervenit reabilitarea nu constituie impediment (art. 83 alin. 1 lit. b, respectiv art. 91 alin. 1 lit. b C.pen.)."
+  },
+  {
+    "fid": "w21",
+    "g": 1,
+    "n": 69,
+    "stem": "X a lovit victima cu o bâtă și cu picioarele de mai multe ori în zona capului și a abdomenului, având drept consecință extirparea splinei și punerea în primejdie a vieții victimei. În sarcina lui X se va reține",
+    "a": "tentativă la infracțiunea de omor",
+    "b": "infracțiunea de vătămare corporală",
+    "c": "infracțiunea de loviri sau alte violențe",
+    "correct": "A",
+    "expl": "lovirea repetată cu bâta și picioarele în zone vitale (cap), cu intensitate care a dus la extirparea splinei și punerea în primejdie a vieții, relevă intenția (cel puțin indirectă) de a ucide — art. 32 rap. la art. 188 C.pen. Obiectul apt, zona vizată și repetarea loviturilor dovedesc animus necandi. b) greșită: vătămarea corporală (art. 194 C.pen.) presupune intenția de a vătăma, nu de a ucide; aici poziția subiectivă vizează suprimarea vieții. c) greșită: lovirile sau alte violențe (art. 193 C.pen.) presupun urmări minore (cel mult 90 zile îngrijiri), incompatibile cu punerea în primejdie a vieții și intenția de ucidere."
+  },
+  {
+    "fid": "w21",
+    "g": 3,
+    "n": 71,
+    "stem": "X a lovit victima cu o bâtä și cu picioarele de mai multe ori în zona capului și a abdomenului, având drept consecință extirparea splinei și punerea în primejdie a vieții victimei. În sarcina lui X se va reține",
+    "a": "tentativă la infracțiunea de omor",
+    "b": "infracțiunea de vătămare corporală",
+    "c": "infracțiunea de loviri sau alte violențe",
+    "correct": "A",
+    "expl": "lovirea repetată cu bâta și picioarele în zone vitale (cap, abdomen), cu consecința extirpării splinei și punerii în primejdie a vieții, relevă intenția (cel puțin indirectă) de a ucide — art. 32 rap. la art. 188 C.pen. Intensitatea, aptitudinea obiectului și zonele vizate atestă animus necandi, nu doar intenția de vătămare. b) greșită: vătămarea corporală (art. 194) presupune praeterintenție față de rezultatul grav; aici făptuitorul a acceptat/urmărit moartea. c) greșită: lovirile (art. 193) presupun cel mult 90 zile de îngrijiri medicale, prag evident depășit."
+  },
+  {
+    "fid": "w21",
+    "g": 1,
+    "n": 71,
+    "stem": "După ce sustrage bunuri din locuința lui A, X este surprins de V, un trecător. Pentru a-și asigura scăparea și a nu fi denunțat, X îi aplică lui V o lovitură cu un cuțit în zona gâtului, V decedând într-un interval de aproximativ 15 minute. În sarcina lui X se va reține",
+    "a": "tâlhărie urmată de moartea victimei",
+    "b": "un concurs între infracțiunile de furt și omor calificat săvârșit pentru a înlesni sau a ascunde săvârșirea altei infracțiuni",
+    "c": "un concurs între infracțiunile de tâlhărie și omor calificat săvârșit pentru a înlesni sau a ascunde săvârșirea altei infracțiuni",
+    "correct": "C",
+    "expl": "furtul urmat de violențe pentru asigurarea scăpării constituie tâlhărie (art. 233 C.pen. — ipoteza furtului urmat de întrebuințarea de violențe pentru păstrarea bunului sau înlăturarea urmelor ori pentru a-și asigura scăparea); uciderea intenționată a lui V (lovitură de cuțit în gât, zonă vitală) pentru a ascunde fapta este omor calificat — art. 189 alin. (1) lit. d) C.pen., reținut în concurs. a) greșită: tâlhăria urmată de moartea victimei (art. 236 C.pen.) presupune praeterintenție; aici moartea a fost produsă cu intenție. b) greșită: nu se reține furt simplu, deoarece violența exercitată pentru scăpare transformă furtul în tâlhărie."
+  },
+  {
+    "fid": "w22",
+    "g": 1,
+    "n": 72,
+    "stem": "X îi administrează lui V, fără știrea acestuia, un somnifer puternic în băutură, V bea din respectiva băutură, iar după ce V adoarme, îi sustrage portofelul. În sarcina lui X se va reține infracțiunea de",
+    "a": "furt calificat",
+    "b": "tâlhărie",
+    "c": "furt",
+    "correct": "B",
+    "expl": "art. 233 C.pen. include în tâlhărie furtul săvârșit prin punerea victimei în stare de inconștiență sau neputință de a se apăra. Administrarea pe ascuns a somniferului este tocmai un asemenea mijloc, energia fizică a victimei fiind anihilată pentru a face posibilă sustragerea — fapta este tâlhărie, nu furt. a) greșită: furtul calificat (art. 229 C.pen.) nu acoperă ipoteza aducerii victimei în stare de inconștiență, care este element al tâlhăriei. c) greșită: furtul simplu (art. 228 C.pen.) presupune o sustragere fără violență și fără punerea victimei în imposibilitate de a se apăra."
+  },
+  {
+    "fid": "w22",
+    "g": 1,
+    "n": 75,
+    "stem": "X și Y se întâlnesc pentru prima oară la un bar. La finalul serii, având în vedere că cei doi descoperă că locuiesc în aceeași zonă, decid să împartă același autoturism taxi. Luând în considerare aceste premise, dacă X",
+    "a": "îi sustrage lui Y telefonul în incinta taxiului fără ca Y să-și dea seama, în sarcina lui X se va reține infracțiunea de furt calificat săvârșit într-un mijloc de transport în comun",
+    "b": "îi sustrage lui Y telefonul în incinta taxiului prin adresarea de amenințări, în sarcina lui X se va reține infracțiunea de tâlhărie calificată (comisă într-un mijloc de transport sau asupra unui mijloc de transport)",
+    "c": "își însușește telefonul uitat de Y în taxi, împrejurare observată de X, în sarcina lui se va reține infracțiunea de însușire a bunului găsit",
+    "correct": "B",
+    "expl": "tâlhăria calificată de la art. 234 alin. (1) lit. b) C.pen. se reține când fapta e comisă într-un mijloc de transport sau asupra unui mijloc de transport, fără a se cere ca acesta să fie de transport în comun; taxiul se încadrează. a) greșită: agravanta de la art. 229 alin. (1) lit. a) C.pen. vizează exclusiv mijloacele de transport în comun, iar taxiul nu are acest caracter, transportând persoane determinate; fapta rămâne furt simplu. c) greșită: telefonul uitat nu este bun pierdut atunci când X a observat momentul uitării și cunoaște cui aparține; însușirea lui constituie furt (art. 228 C.pen.), nu însușirea bunului găsit (art. 243 C.pen.)."
+  },
+  {
+    "fid": "w22",
+    "g": 1,
+    "n": 77,
+    "stem": "Asupra unui autovehicul s-a aplicat măsura asigurătorie a sechestrului. Care dintre următoarele afirmații este adevărată?",
+    "a": "dacă X este un terț care, cunoscând că respectivul autovehicul se află sub sechestru, sustrage bunul în scop de însușire, în sarcina lui se vor reține în concurs infracțiunile de sustragere de sub sechestru și furt",
+    "b": "dacă X, custodele bunului sechestrat, dispune de respectivul autovehicul, în condițiile în care nu este și proprietar al bunului, în sarcina sa se vor reține în concurs infracțiunile de sustragere de sub sechestru și furt",
+    "c": "dacă X este proprietarul bunului sechestrat și, cu scopul de a eluda măsura asigurătorie, vinde autovehiculul unui prieten, în sarcina lui X se vor reține în concurs infracțiunile de sustragere de sub sechestru și abuz de încredere",
+    "correct": "A",
+    "expl": "terțul care, cunoscând existența sechestrului, ia bunul în scop de însușire lezează două valori sociale distincte — patrimoniul (furt, art. 228 C.pen.) și autoritatea măsurii asigurătorii (sustragere de sub sechestru, art. 261 C.pen.) — reținându-se concursul de infracțiuni. b) greșită: custodele are detenția bunului, deci nu poate comite furt; dispunerea de bun constituie abuz de încredere (art. 238 C.pen.), eventual în concurs cu sustragerea de sub sechestru. c) greșită: abuzul de încredere presupune un bun al altuia; proprietarul nu poate comite această infracțiune asupra propriului bun, reținându-se doar sustragerea de sub sechestru (art. 261 C.pen.)."
+  },
+  {
+    "fid": "w19",
+    "g": 1,
+    "n": 80,
+    "stem": "În cazul infracțiunii de luare de mită",
+    "a": "persoana juridică nu poate răspunde în calitate de autor",
+    "b": "persoana juridică nu poate răspunde în calitate de complice",
+    "c": "persoana căreia i se pretind bani sau alte foloase nu poate fi și o persoană juridică",
+    "correct": "A",
+    "expl": "luarea de mită (art. 289 C.pen.) are subiect activ nemijlocit calificat — funcționarul public (art. 175 C.pen.) sau persoana prevăzută de art. 308 C.pen. — calitate care nu poate aparține decât unei persoane fizice, astfel că persoana juridică nu poate fi autor. b) greșită: pentru complicitate nu se cere calitatea specială a autorului, deci persoana juridică poate răspunde penal ca complice, în condițiile art. 135 C.pen. c) greșită: pretinderea banilor sau foloaselor se poate adresa și unei persoane juridice (ex. unei societăți i se cere mită pentru emiterea unui act), legea nedistingând sub acest aspect."
+  },
+  {
+    "fid": "w28",
+    "g": 1,
+    "n": 86,
+    "stem": "În ceea ce privește renunțarea la urmărirea penală",
+    "a": "în cazul în care, în urma verificării sub aspectul legalității și temeiniciei, ordonanța de renunțare este infirmată de către procurorul ierarhic superior, o nouă renunțare nu mai poate fi dispusă, indiferent de motivul invocat",
+    "b": "renunțarea poate fi dispusă în cazul unei infracțiuni de ucidere din culpă",
+    "c": "prin ordonanța de renunțare procurorul poate sesiza judecătorul de cameră preliminară cu propunerea de luare a măsurii de siguranță a confiscării speciale",
+    "correct": "C",
+    "expl": "conform art. 318 alin. (8) raportat la art. 315 alin. (2) lit. c) C.proc.pen., prin ordonanța de renunțare procurorul poate sesiza judecătorul de cameră preliminară cu propunerea de luare a măsurii de siguranță a confiscării speciale. a) greșită: interdicția unei noi renunțări operează doar când judecătorul de cameră preliminară respinge cererea de confirmare (art. 318 alin. 16), nu și în cazul infirmării de procurorul ierarhic superior, care poate fi urmată de o nouă soluție. b) greșită: art. 318 alin. (5) C.proc.pen. interzice renunțarea în cazul infracțiunilor care au avut ca urmare moartea victimei, deci și pentru uciderea din culpă (art. 192 C.pen.)."
+  },
+  {
+    "fid": "w28",
+    "g": 2,
+    "n": 92,
+    "stem": "În cazul în care persoana interesatä formulează in termen de 20 de zile de la comunicare plângere împotriva soluției de clasare direct la judecătorul de cameră preliminară fără să o fi atacat în prealabil la procurorul ierarhic superior",
+    "a": "judecătorul de cameră preliminară va respinge plângerea ca inadmisibilă",
+    "b": "judecătorul de cameră preliminară trimite pe cale administrativă plângerea organului judiciar competent",
+    "c": "judecătorul de cameră preliminară va proceda la",
+    "correct": "B",
+    "expl": "plângerea la judecătorul de cameră preliminară (art. 340 alin. (1) CPP) presupune parcurgerea prealabilă a procedurii de la art. 339 CPP (plângere la procurorul ierarhic superior); potrivit art. 340 CPP (astfel cum a fost modificat prin OUG nr. 18/2016), plângerea greșit îndreptată se trimite pe cale administrativă organului judiciar competent, deci procurorului. a) este greșită: legea prevede expres trimiterea administrativă, nu respingerea ca inadmisibilă a plângerii greșit îndreptate. c) este greșită: judecătorul nu poate proceda la examinarea plângerii pe fond, procedura prealabilă în fața procurorului ierarhic superior fiind obligatorie."
+  },
+  {
+    "fid": "w28",
+    "g": 3,
+    "n": 95,
+    "stem": "In cazul în care persoana interesată formulează în termen de 20 de zile de la comunicare plângere împotriva soluției de clasare direct la judecătorul de cameră preliminară fără să o fi atacat în prealabil la procurorul ierarhic superior",
+    "a": "judecătorul de cameră preliminară va respinge plângerea ca inadmisibilă",
+    "b": "judecătorul de cameră preliminară trimite pe cale administrativă plângerea organului judiciar competent",
+    "c": "judecătorul de cameră preliminară va proceda la soluționarea plângerii pe fond. E2323",
+    "correct": "B",
+    "expl": "plângerea la judecătorul de cameră preliminară presupune parcurgerea prealabilă a procedurii la procurorul ierarhic superior (art. 339-340 C.proc.pen.); plângerea greșit îndreptată se trimite pe cale administrativă organului judiciar competent (regulă consacrată de art. 289 alin. (9) C.proc.pen. și de practica judiciară), fiind formulată în termenul de 20 de zile. a) greșită: respingerea ca inadmisibilă ar lipsi persoana de un drept exercitat în termen, doar greșit îndreptat; sancțiunea nu operează aici. c) greșită: judecătorul nu poate soluționa pe fond o plângere pentru care nu s-a parcurs etapa obligatorie prevăzută de art. 339 C.proc.pen."
+  }
+];
+
+  IUL2026.forEach(function(e) {
+    var fisa = FISE_DATA.find(function(f) { return f.id === e.fid; });
+    if (!fisa || !fisa.sections || !fisa.sections[0]) return;
+    var item =
+      '<div class="fisa-ex">' +
+      '<span class="fisa-ex-tag">📌 <b>Iul 2026 · G' + e.g + ' · Q' + e.n + '</b></span>' +
+      '<span class="fisa-ex-stem">' + e.stem + '</span>' +
+      '<span class="fisa-ex-opts">a) ' + e.a + ' <b>·</b> b) ' + e.b + ' <b>·</b> c) ' + e.c + '</span>' +
+      '<span class="fisa-ex-ans">✅ Răspuns: <b>' + e.correct + ')</b> — ' + e.expl + '</span>' +
+      '</div>';
+    fisa.sections[0].items.push(item);
+  });
 })();
