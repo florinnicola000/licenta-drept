@@ -14,7 +14,10 @@ var FISE_DATA = [
           '<b>Proba uzanțelor</b> (art. 1 alin. 5 NCC): sarcina probei revine <b>celui care le invocă</b>. Uzanțele publicate în culegeri de către organisme autorizate se prezumă că există, până la proba contrară.',
           '<b>Principiile generale</b> ale dreptului (ex: buna-credință, echitatea, <i>nemo censetur ignorare legem</i>) — izvor subsidiar, aplicabil în lipsa legii și a uzanțelor.',
           '⚠️ <b>Bunele moravuri și practica judiciară</b>: bunele moravuri sunt un <b>standard</b> (limită a libertății contractuale), nu un izvor distinct enumerat de art. 1. Jurisprudența (practica judiciară) și doctrina <b>NU sunt izvoare formale</b> ale dreptului civil român — excepție: deciziile <b>obligatorii</b> ale ÎCCJ (recurs în interesul legii, hotărâri prealabile) și deciziile CCR, care au caracter general obligatoriu.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> În materia izvoarelor dreptului civil — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1 alin. (5) C.civ., publicarea uzanțelor în culegeri elaborate de entități autorizate creează doar o prezu…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> În materia izvoarelor dreptului civil — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1 alin. 5 C.civ., publicarea uzanțelor în culegeri elaborate de organisme autorizate creează doar o prezum…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> În materia izvoarelor dreptului civil — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1 alin. (5) C.civ., publicarea uzanțelor în culegeri elaborate de organisme autorizate creează doar o prez…</span>']
       },
       { icon:'🕰️', title:'Aplicarea legii civile în timp și spațiu (art. 6 NCC)',
         items:[
@@ -131,7 +134,10 @@ var FISE_DATA = [
           'Eroarea <b>neesențială</b> (de calcul, aritmetică): nu afectează valabilitatea, atrage numai rectificarea (art. 1210). Eroarea <b>indiferentă</b> (calități neesențiale): fără efecte.',
           '<b>Eroarea comună și invincibilă</b> (art. 17 NCC, <i>error communis facit ius</i>): când toată lumea s-a înșelat la fel și eroarea era de neînlăturat, actul produce efectele pe care le-ar fi produs în lipsa erorii (validitatea aparenței în drept). Nu se aplică în materie de carte funciară și în alte cazuri cu regim special de publicitate.',
           '<b>Adaptarea contractului</b> (art. 1213 NCC): victima erorii esențiale <b>nu poate obține anularea</b> dacă cealaltă parte declară, în cel mult 3 luni de la notificare, că <b>execută contractul așa cum l-a înțeles victima</b>. Contractul se consideră încheiat cum l-a înțeles partea aflată în eroare — instituție frecvent testată la grile.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> În materia viciilor de consimțământ — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1215 C.civ., când dolul provine de la un terț, anularea se poate cere dacă cocontractantul a cunoscut sau…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> În materia viciilor de consimțământ — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1215 alin. (1) C.civ., când dolul provine de la un terț, anularea se poate cere dacă cocontractantul a cun…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> În materia viciilor de consimțământ — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1215 alin. 1 C.civ., când dolul provine de la un terț, anularea se poate cere dacă cocontractantul a cunos…</span>']
       },
       { icon:'🎭', title:'Dolul (art. 1214–1216 NCC)',
         items:[
@@ -230,7 +236,10 @@ var FISE_DATA = [
           '<b>Nulitate parțială</b> (art. 1255 NCC): clauza nulă e înlăturată, restul actului rămâne dacă poate exista fără ea. <b>Nulitate totală</b>: dacă clauza era determinantă, actul cade în întregime.',
           '<b>Nulitate virtuală</b> (art. 1253 NCC): sancțiunea se deduce din scopul normei încălcate, chiar dacă legea nu o prevede expres.',
           '<b>Excepția de nulitate</b> (<i>exceptio nullitatis</i>): NCA — invocabilă oricând, pe cale de acțiune sau de excepție. ⚠️ <b>Capcană NR</b> (art. 1249 alin. 2 NCC): pe cale de <b>acțiune</b> — numai în termenul de prescripție (3 ani); dar partea căreia i se <b>cere executarea</b> poate opune nulitatea relativă <b>oricând</b>, chiar după împlinirea prescripției. <i>Quae temporalia sunt ad agendum, perpetua sunt ad excipiendum.</i>'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> În materia cauzelor de acoperire a nulității actului juridic civil — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1261 alin. (2) C.civ., nulitatea poate fi acoperită prin confirmare sau prin alte moduri anume prevăzute d…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> În materia cauzelor de acoperire a nulității actului juridic civil — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1261 alin. 2 C.civ., nulitatea poate fi acoperită prin confirmare sau prin alte moduri anume prevăzute de…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> În materia cauzelor de acoperire a nulității actului juridic civil — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">îndeplinirea ulterioară a condiției de validitate acoperă nulitatea doar în cazurile expres prevăzute de lege (art. 1246…</span>']
       },
       { icon:'🔄', title:'Simulația (art. 1289–1294 NCC)',
         items:[
@@ -267,7 +276,10 @@ var FISE_DATA = [
           '<b>Resoluto iure dantis, resolvitur ius accipientis</b>: desființarea actului principal antrenează desființarea actelor subsecvente. <b>Excepție</b>: terțul dobânditor cu titlu oneros, de bună-credință, înscris în CF (imobile) sau în alte registre de publicitate → protejat față de efectele retroactive.',
           '<b>Conversiunea</b> actului nul (art. 1260 NCC): actul nul ca tip A poate valora ca tip B dacă îndeplinește condițiile lui B și voința probabilă a părților o susține. <i>Ex: testament autentic nul de formă → testament olograf dacă e scris, datat și semnat de testator.</i>',
           '<b>Menținerea actelor de administrare</b>: actele de administrare ale dobânditorului de bună-credință (locațiune, reparații necesare) sunt opozabile proprietarului care redobândește bunul, în limitele uzanțelor (art. 1649 NCC).'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Dacă A vinde către C un imobil pentru care legea specială pretinde respectarea dreptului d… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">B este un terț îndreptățit să invoce nulitatea relativă, iar potrivit art. 2529 alin. (2) C.civ., când nulitatea relativ…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Dacă în interiorul termenului de repunere în termenul de prescripție extinctivă a acțiunii… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">termenul de 30 de zile pentru repunerea în termen (art. 2522 alin. 2 C.civ.) este calificat ca termen de prescripție, de…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Dacă A vinde către C un imobil pentru care legea specială pretinde respectarea dreptului d… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 2529 alin. (2) C.civ., când nulitatea relativă poate fi invocată de un terț (aici B, titularul preempțiuni…</span>']
       },
       { icon:'⏳', title:'Termenul — modalitate a AJC (art. 1411–1420 NCC)',
         items:[
@@ -323,7 +335,10 @@ var FISE_DATA = [
           '<b>Dispoziția juridică</b>: înstrăinare, grevare cu sarcini reale (ipotecă, servitute), renunțare. <b>Dispoziția materială</b>: transformare, consumare, distrugere.',
           '<b>Proprietatea publică</b> (art. 858 NCC): aparține statului/unităților administrativ-teritoriale; bunuri de uz sau interes public. Caractere: inalienabilă, insesizabilă, imprescriptibilă. ⚠️ Bunurile publice nu pot fi dobândite prin uzucapiune.',
           '<b>Exproprierea</b> (art. 44 Constituție, Legea 33/1994): limitare definitivă a proprietății private pentru cauză de utilitate publică, numai cu <b>justă și prealabilă despăgubire</b>. Lipsă despăgubire → expropriere abuzivă (art. 1 Prot. 1 CEDO).'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Partajul — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 683 alin. (1) C.civ., coproprietarii își datorează, în limita cotelor-părți, garanție pentru evicțiune și…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> In materia folosinței ce intră în conținutul dreptului de proprietate privată — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">libertatea proprietarului de a nu uza de bun este limitată legal în anumite cazuri, în funcție de natura și destinația b…</span>',
+          '📌 <b>[Iul 2026 · G4]</b> În materia folosinței ce intră în conținutul dreptului de proprietate privată — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">jus utendi include și libertatea de a nu folosi bunul, însă legea o limitează după natura și destinația bunului (ex. ter…</span>']
       },
       { icon:'🚧', title:'Limitele exercitării dreptului de proprietate',
         items:[
@@ -399,7 +414,10 @@ var FISE_DATA = [
           '<b>Cvasiuzufructul</b> (art. 712 NCC): uzufructul asupra bunurilor consumptibile (bani, grâne). Uzufructuarul devine proprietar al bunului, dar trebuie să restituie la stingere <i>bunuri de aceeași calitate, cantitate și valoare</i> sau contravaloarea lor.',
           '<b>Stingere</b> (art. 746 NCC): expirarea termenului; <b>moartea uzufructuarului</b> (chiar cu beneficiar cesionar); consolidarea (uzufructuarul dobândește nuda proprietate sau invers); renunțare; <b>neuz 10 ani</b>; pieirea totală a bunului.',
           'Uzufructul este <b>temporar prin natura sa</b>; nu poate depăși viața uzufructuarului (la PJ: max 30 ani).'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Dreptul de uzufruct — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">uzufructul se poate constitui prin act juridic – deci și prin testament – potrivit art. 704 alin. (1) C.civ. b) greșită:…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Dreptul de uzufruct — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 704 alin. (1) C.civ., uzufructul se constituie prin act juridic, uzucapiune sau alte moduri prevăzute de l…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Dreptul de uzufruct — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">uzufructul se poate constitui prin act juridic – deci și prin testament – prin uzucapiune sau alte moduri prevăzute de l…</span>']
       },
       { icon:'🏠', title:'Uzul și abitația (art. 749–754 NCC)',
         items:[
@@ -466,7 +484,10 @@ var FISE_DATA = [
           'Viciile posesiei (art. 926–927 NCC): discontinuitate, violență, clandestinitate. <b>Discontinuitatea e absolută</b> — o poate invoca orice persoană interesată; <b>violența și clandestinitatea sunt relative</b> — le invocă numai cel față de care s-au exercitat. Toate viciile sunt <b>temporare</b>: posesia redevine utilă la încetarea cauzei.',
           '<b>Intervertirea detenției precare</b> în posesie (art. 920 NCC): numai în cazuri expres prevăzute — (a) detentorul încheie cu bună-credință un act translativ cu titlu particular <b>cu altă persoană decât proprietarul</b> (crede că dobândește de la adevăratul titular); (b) detentorul săvârșește <b>acte de rezistență neechivoce</b> față de cel pentru care deține (neagă deschis dreptul acestuia); (c) detentorul strămută posesia printr-un act translativ cu titlu particular către un terț de bună-credință.',
           '<b>Pierderea posesiei</b>: pierderea corpusului (abandonul material), pierderea animus-ului (recunoașterea dreptului altuia), sau a ambelor elemente. Uzucapiunea se întrerupe la pierderea posesiei.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Posesia — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 916 C.civ., posesia este exercitarea în fapt a prerogativelor dreptului de proprietate asupra unui bun cor…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Posesia — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">posesia poartă asupra bunurilor corporale individual determinate (art. 916 C.civ.)</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Posesia — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 916 C.civ., posesia poartă asupra bunurilor corporale</span>']
       },
       { icon:'🌱', title:'Efectele posesiei (art. 937–951 NCC)',
         items:[
@@ -619,7 +640,10 @@ var FISE_DATA = [
           '<b>Legătura de cauzalitate</b>: aplicăm teoria <b>echivalenței condițiilor</b> (<i>conditio sine qua non</i>) sau teoria cauzei adecvate. La pluralitate de cauze (victimă + autor) → contribuțiile se stabilesc proporțional; răspunderea se reduce.',
           '<b>Vinovăția</b>: intenție (directă: autorul urmărește rezultatul; indirectă: acceptă producerea lui) sau culpă (neglijență/imprudență). Apreciată <i>in abstracto</i> față de omul diligent. ⚠️ La răspunderea obiectivă (lucruri, animale), vinovăția nu e necesară.',
           '<b>Răspundere delictuală vs. contractuală</b>: la delict — răspundere pentru orice prejudiciu (inclusiv moral) + vinovăție apreciată <i>in abstracto</i>; la contract — răspundere limitată la prejudiciile <i>previzibile</i> la momentul contractului (excepție: dol sau culpă gravă). Nu pot coexista pentru același prejudiciu.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Paznicul juridic — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">paza juridică (art. 1377 C.civ.) aparține celui care exercită controlul și supravegherea lucrului în temeiul legii, al u…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Paznicul juridic — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1377 C.civ., are paza juridică cel care, în temeiul legii, al unui contract ori chiar numai al unei simple…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Paznicul juridic — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">Potrivit art. 1377 C.civ., are paza lucrului/animalului proprietarul ori cel care, în temeiul unei dispoziții legale sau…</span>']
       },
       { icon:'👨‍👩‍👧', title:'Răspunderea pentru fapta altuia (art. 1372–1374 NCC)',
         items:[
@@ -682,7 +706,10 @@ var FISE_DATA = [
           '<b>Principiul efectului util</b> (<i>favor negotii</i>, art. 1268 NCC): clauza susceptibilă de mai multe înțelesuri se interpretează în sensul ce produce un <b>efect util</b>, nu în cel ce n-ar produce niciun efect. Preferință pentru interpretarea care validează contractul față de cea care îl golește de conținut.',
           '<b>Regula <i>contra proferentem</i></b> (art. 1269 NCC): în caz de îndoială iremediabilă, contractul se interpretează <b>împotriva celui care a propus clauza</b> și <b>în favoarea celui care s-a obligat</b>. ⚠️ La contractele de adeziune și la contractele cu consumatorii, clauza neclară se interpretează în favoarea aderentului/consumatorului — principiu preluate de Legea 193/2000.',
           '⚠️ <b>Interpretarea vs. modificarea contractului</b>: instanța <b>nu poate modifica</b> conținutul contractului sub aparența interpretării — se urmărește descoperirea voinței reale, nu corectura ei. Dacă voința reală a ambelor părți e clară, judecătorul nu poate înlocui această voință cu altceva invocând echitatea sau uzanțele.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Rezoluțiunea unilaterală a contractului — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1549 și art. 1554 alin. 3 C.civ., rezoluțiunea (inclusiv cea unilaterală) nu înlătură dreptul creditorului…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Rezoluțiunea unilaterală a contractului — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1549 alin. (1) C.civ., creditorul are dreptul la rezoluțiune, precum și la daune-interese, dacă i se cuvin…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Obligația de a da o sumă de bani — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1424-1425 C.civ., obligația este divizibilă de plin drept, dar părțile pot conveni indivizibilitatea (indi…</span>']
       },
       { icon:'💳', title:'Plata (art. 1469–1515 NCC)',
         items:[
@@ -758,7 +785,10 @@ var FISE_DATA = [
           'Cedentul garantează <b>existența creanței</b> la cesiune; <b>nu garantează solvabilitatea</b> debitorului (excepție: stipulație expresă). Debitorul poate opune cesionarului toate excepțiile opozabile cedentului.',
           '<b>Preluarea datoriei</b> (art. 1599–1608 NCC): prin contract <b>debitor–terț</b> (produce efecte față de creditor numai cu <b>acordul creditorului</b> — art. 1605) sau prin contract <b>creditor–terț</b>. Fără acordul creditorului, contractul debitor–terț produce efecte <b>doar între ei</b>: terțul e ținut să-l libereze pe debitor executând la timp (art. 1608) — creditorul <b>nu dobândește drept direct</b> contra terțului. Debitorul inițial e liberat doar prin acordul creditorului; dacă terțul era insolvabil la preluare, debitorul nu e liberat (art. 1601).',
           '<b>Cesiunea de contract</b> (art. 1315–1320 NCC): transmiterea calității de parte contractantă (drepturi + obligații). <b>Necesită acordul cocontractantului cedat</b>. ⚠️ <b>Capcană</b> (art. 1318): regula e că cedentul <b>este liberat</b> din momentul în care substituirea produce efecte față de cedat; doar dacă cedatul <b>declară că nu-l liberează</b>, se poate întoarce împotriva cedentului când cesionarul nu execută.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Compensația — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">conform art. 1618 lit. a) C.civ., compensația nu are loc când datoria rezultă dintr-un act făcut cu intenția de a păgubi…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Cesiunea de creanță — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">comunicarea cesiunii poate fi făcută debitorului cedat și odată cu cererea de chemare în judecată a cesionarului (art. 1…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Compensația — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1618 lit. a) C.civ., compensația nu are loc când creanța rezultă dintr-un act făcut cu intenția de a păgub…</span>']
       },
       { icon:'🔄', title:'Stingerea obligațiilor',
         items:[
@@ -817,7 +847,10 @@ var FISE_DATA = [
           '<b>Obligațiile cumpărătorului</b>: (1) plata prețului la termenul și locul convenite; (2) preluarea bunului. Neplata prețului → rezoluțiune sau executare silită.',
           '⚠️ <b>Capcană — vânzarea bunului altuia</b> (art. 1683 NCC): contractul este <b>VALABIL</b> (nu anulabil, cum era sub vechiul cod!) — vânzătorul e obligat să asigure transmiterea proprietății (dobândind bunul ori obținând ratificarea proprietarului). Dacă nu reușește → cumpărătorul poate cere <b>rezoluțiunea + daune-interese</b> (și restituirea prețului); proprietatea se transmite automat în momentul în care vânzătorul o dobândește.',
           '<b>Vânzarea cu drept de răscumpărare</b> (art. 1758 NCC): vânzătorul poate răscumpăra bunul în termenul stipulat (max <b>5 ani</b>). Terțul dobânditor cu titlu oneros, în CF, nu poate fi obligat să restituie dacă termenul nu era înscris.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> A îi vinde lui B un utilaj industrial cu plata prețului în rate, obligația de plată fiind… — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">art. 1755 C.civ. prevede că, în vânzarea cu plata prețului în rate și rezerva proprietății, riscul bunului este transfer…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Terțul T îl cheamă în judecată pe cumpărătorul B, pretinzând un drept de proprietate, ante… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">art. 1705 alin. (1) C.civ. (exceptio mali processus) prevede că cumpărătorul chemat în judecată de un terț trebuie să îl…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> În cazul incapacității speciale de folosință a persoanei fizice — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">incapacitatea specială de folosință înseamnă lipsa aptitudinii de a dobândi dreptul respectiv (ex. interdicțiile de a cu…</span>']
       },
       { icon:'📝', title:'Promisiunea de vânzare și varietățile vânzării — tema nr. 1 la grile',
         items:[
@@ -890,7 +923,10 @@ var FISE_DATA = [
           '<b>Sublocațiunea</b>: permisă dacă nu e interzisă expres. Cesiunea contractului necesită acordul expres al locatorului.',
           '<b>Tacita relocațiune</b> (art. 1810 NCC): dacă după expirarea termenului locatarul continuă să folosească bunul și locatorul nu se opune → contract nou pe durată nedeterminată în aceleași condiții.',
           '<b>Opozabilitate față de dobânditorul bunului</b> (art. 1811 NCC, <i>emptio non tollit locatum</i>): noul proprietar e ținut să respecte locațiunea dacă: la imobile înscrise în CF — locațiunea era <b>notată în CF</b>; la imobile neînscrise — data certă a locațiunii e <b>anterioară</b> datei certe a înstrăinării; la mobile — data certă anterioară. (Nu e un „drept de preferință" la cumpărare — doar opozabilitatea contractului.)'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Prin contractul de locațiune având ca obiect un garaj, părțile au inserat o clauză prin ca… — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1806 alin. (1) C.civ., interdicția de a ceda locațiunea nu o include pe aceea de a încheia o sublocațiune</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Prin contractul de locațiune având ca obiect un garaj, părțile au inserat o clauză prin ca… — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1806 alin. (1) teza a II-a C.civ., interdicția de a ceda locațiunea NU o include pe aceea de a încheia o s…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> A îl însărcinează pe B să cumpere pe seama lui A, dar în numele lui B, un tablou expus de… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">fiind un mandat fără reprezentare (art. 2039 C.civ.), B contractează în nume propriu, iar contractul de vânzare se înche…</span>']
       },
       { icon:'🏘️', title:'Reguli particulare la închirierea locuințelor (art. 1820–1835 NCC)',
         items:[
@@ -1009,7 +1045,10 @@ var FISE_DATA = [
           '<b>Nulitate specială</b> (art. 2256 NCC): este <b>nul absolut</b> contractul de întreținere încheiat în favoarea unei persoane care, la data contractului, suferea de o boală de care a murit în <b>interval de 30 de zile de la data încheierii</b>. Rațiunea: caracterul aleatoriu dispare dacă moartea era iminentă și certă.',
           '<b>Rezoluțiunea</b> (art. 2263 NCC): creditorul poate cere rezoluțiunea dacă debitorul nu-și execută obligațiile. La rezoluțiune, bunul se întoarce la creditor; prestatiile de întreținere deja executate NU se restituie (sunt consumate). ⚠️ Alternativ, creditorul poate cere <b>transformarea obligației de întreținere în rentă viageră</b> sau o <b>sumă globală</b>, la latitudinea instanței.',
           '<b>Incapacități și interdicții</b>: obligația de întreținere e <b>netransmisibilă</b> la moștenitorii debitorului (intuitu personae) — ⚠️ diferit de locațiune, care se transmite! Dacă debitorul moare, moștenitorii NU sunt obligați la întreținere (pot fi obligați la valoarea echivalentă dacă există clauze speciale). Creditorul întreținerii nu poate renunța anticipat la dreptul de a cere rezoluțiunea (renunțarea e considerată nescrisă — art. 2263 alin. 3).'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> A îi împrumută cu titlu gratuit lui B un autoturism, pentru o durată determinată. Pe parcu… — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">Conform art. 2151 alin. (1) C.civ., comodatarul suportă cheltuielile pe care le-a făcut pentru a folosi bunul (combustib…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> A i-a transmis lui B, prin contract de întreținere încheiat în formă autentică, nuda propr… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">art. 2261 alin. (1) C.civ. prevede că, dacă prestarea sau primirea în natură a întreținerii nu mai poate continua din mo…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> A îi împrumută cu titlu gratuit lui B un autoturism, pentru o durată determinată. Pe parcu… — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">Conform art. 2151 alin. (1) C.civ., comodatarul suportă cheltuielile de folosință a bunului (combustibil, întreținere cu…</span>']
       }
     ],
     grila:'Mutuum = <b>real</b> + transferă <b>proprietatea și riscul</b> la împrumutat; împrumutul de <b>bani se prezumă ONEROS</b> (art. 2159 — capcană!); plafon dobândă: legală <b>+50%</b> (nu 2×); depășire → clauză nulă + decădere din dobânda legală. Fidejusiunea: <b>solemnă</b> — înscris ad validitatem (art. 2282); prelungirea termenului NU liberează fidejusorul (art. 2311). Comodat = real + gratuit + proprietatea rămâne; comodatarul nu poate subînchiria. Depozit = real, gratuit (PF), depozitarul <b>nu poate folosi</b> bunul (≠ comodat); restituire la cererea depunătorului oricând. Depozit neregulat: bunuri fungibile, depozitarul devine proprietar + restituie tantundem. Fidejusionar solidar: renunță la discuțiune și diviziune. Fidejusor subrogat: drepturile creditorului + acțiunea proprie. Tranzacție = efecte <b>declarative</b>; concesii <b>reciproce</b> (altfel = remitere de datorie).'
@@ -1035,7 +1074,10 @@ var FISE_DATA = [
           '<b>Renunțarea</b>: în termenul de 1 an, în formă autentică la notar. Renunțătorul = nu a existat niciodată; copiii săi pot moșteni numai în cont propriu (nu prin reprezentare). Renunțarea poate fi revocată înainte de expirare, dacă succesiunea nu a fost acceptată de alți moștenitori.',
           '<b>Sezina</b> (art. 1126–1127 NCC): moștenitorii sezinari (soțul supraviețuitor, descendenții, ascendenții privilegiați) au de drept stăpânirea de fapt a moștenirii de la deschidere. Nesezinarii dobândesc sezina prin <b>eliberarea certificatului de moștenitor</b>, cu efect retroactiv de la deschiderea moștenirii.',
           '<b>Petiția de ereditate</b>: acțiunea moștenitorului real față de posesorul eredității. <b>Imprescriptibilă</b> extinctiv (drept real). Efecte: restituire bunuri + fructe (dacă pârâtul a fost de rea-credință).'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Față de moștenirea lui D, reclamă drepturi fiul său, F2, și nepotul de fiu al defunctului,… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">Potrivit art. 967 alin. (1) C.civ., poate fi reprezentată persoana lipsită de capacitatea de a moșteni, precum și nedemn…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> S, succesibil al defunctului D, a dat o declarație autentică de renunțare la moștenire. Ul… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1119 alin. (1) C.civ., succesibilul care, cu rea-credință, a sustras bunuri din patrimoniul succesoral est…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> S, succesibil al defunctului D, a dat o declarație autentică de renunțare la mostenire. Ul… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">art. 1119 C.civ. prevede că succesibilul care, cu rea-credință, a sustras bunuri din patrimoniul succesoral este conside…</span>']
       },
       { icon:'⚖️', title:'Nedemnitatea succesorală (art. 958–961 NCC)',
         items:[
@@ -1102,7 +1144,10 @@ var FISE_DATA = [
           '⚠️ <b>Capcană — incapacitatea de a dispune</b> (art. 988 NCC): cel <b>lipsit de capacitate de exercițiu sau cu capacitate restrânsă NU poate face liberalități deloc</b> (nici testament, nici donație) — regula veche „minorul 16–18 ani dispune de 1/2" a fost <b>abandonată de NCC</b>! În plus (alin. 2): nici după dobândirea capacității depline nu poate dispune în favoarea <b>fostului reprezentant legal</b>, înainte de descărcarea de gestiune.',
           'Incapacități de a <b>primi</b> liberalități (art. 990 NCC): medicii, farmaciștii care l-au îngrijit pentru boala cauză a decesului; preoții care l-au asistat religios. Sancțiune: liberalitățile sunt <b>anulabile</b> (NR — art. 990 spune expres). Excepții: liberalitățile remuneratorii și cele către rude apropiate.',
           '<b>Substituția fideicomisară</b> (art. 994 NCC): testatorul impune legatarului să conserve bunul și să-l transmită la moartea sa altei persoane desemnate. Admisă pe un singur grad (A → B → C interzis dacă C e instituit tot de testator).'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> La decesul lui D vin la moștenire soția sa supraviețuitoare, S, și doi copii ai defunctulu… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 1090 alin. (1) C.civ., liberalitățile neraportabile făcute soțului supraviețuitor care vine la moștenire î…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> La decesul lui D vin la moștenire soția sa supraviețuitoare, S, și doi copii ai defunctulu… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">Art. 1090 alin. (1) C.civ. instituie o cotitate disponibilă specială: liberalitățile neraportabile făcute soțului suprav…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> La decesul lui D vin la moștenire soția sa supraviețuitoare, S, și doi copii ai defunctulu… — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">art. 1090 alin. 1 C.civ. instituie o rezervă specială: liberalitățile neraportabile făcute soțului supraviețuitor, care…</span>']
       },
       { icon:'🎗️', title:'Tipurile de legate și dezmoștenirea (art. 1055–1083, art. 1074 NCC)',
         items:[
@@ -1192,7 +1237,10 @@ var FISE_DATA = [
           '<b>Mobilul</b> (motivul psihologic) și <b>scopul</b>: de regulă nu condiționează existența infracțiunii, dar pot constitui circumstanțe agravante sau elemente ale formei calificate (ex: omor calificat — art. 189 lit. b: din interes material).',
           '<b>Error in persona</b> (eroarea asupra identității victimei): autorul confundă identitatea victimei (crede că este X, dar e Y). Consecință: <b>intenția rămâne</b> — infracțiunea se consumă față de persoana lovită efectiv, cu pedeapsa prevăzută pentru forma respectivă. ⚠️ Error in persona NU produce concurs de infracțiuni — o singură infracțiune consumată.',
           '<b>Aberratio ictus</b> (devierea loviturii): autorul vizează o persoană (A) dar, din executarea defectuoasă (devierea proiectilului), lovește o altă persoană (B). ⚠️ <b>Soluția majoritară în doctrina și practica română</b>: infracțiune <b>unică intenționată consumată</b> față de victima efectiv lovită — la fel ca la error in persona (identitatea victimei nu e element al tipicității). Opinia <b>minoritară</b> (întâlnită și în alte sisteme): concurs — tentativă față de A + faptă din culpă față de B. La grile, verifică formularea — de regulă se cere soluția unității.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Alegeți afirmația corectă — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 16 alin. (4) lit. b) CP, în cazul culpei simple (neglijenței) făptuitorul nu prevede rezultatul faptei, de…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Alegeți afirmația corectă — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">la intenția directă făptuitorul prevede rezultatul și urmărește producerea lui (art. 16 alin. 3 lit. a C.pen.), pe când…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Alegeți afirmația corectă — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">în culpa simplă (neglijență), art. 16 alin. (4) lit. b) C.pen., făptuitorul nu prevede rezultatul, deși trebuia și putea…</span>']
       },
       { icon:'🔁', title:'Schemă comparativă: cauze justificative vs. neimputabilitate',
         items:[
@@ -1227,7 +1275,10 @@ var FISE_DATA = [
           '<b>Infracțiunea continuă</b> (tip de unitate naturală): elementul material se prelungește în timp fără întrerupere (ex: lipsirea de libertate, portul nelegal de armă). Se consumă la momentul începerii și se epuizează când acțiunea încetează. Prescripția curge de la epuizare.',
           '<b>Infracțiunea de obicei</b> (tip de unitate naturală): necesită o repetare a actului pentru a fi consumată; actul izolat nu constituie infracțiune. <i>Ex: hărțuirea (art. 208 NCP) — act izolat = nepedepsibil; repetare = hărțuire consumată.</i> ⚠️ Nu se poate reține tentativa la infracțiunile de obicei.',
           '⚠️ <b>Tabel comparativ</b>: continuată (aceeași rezoluție + acte repetate) vs. concurs real (rezoluții diferite + acte repetate) — distincția e esențială pentru tratamentul penal: la continuată = o singură infracțiune (cu spor opțional 1–3 ani); la concurs real = mai multe infracțiuni (cumulul juridic cu spor obligatoriu 1/3).'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Alegeți afirmația corectă — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">Eroarea asupra identității victimei (error in personam) constituie, potrivit doctrinei, o formă a infracțiunii deviate:…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Alegeți afirmația corectă — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">uciderea fratelui geamăn în locul victimei vizate, ca urmare a confuziei, constituie error in personam, formă a infracți…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Alegeți afirmația corectă — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">eroarea asupra identității victimei (error in personam) — uciderea fratelui geamăn în locul victimei vizate — caracteriz…</span>']
       },
       { icon:'👥', title:'Participația penală (art. 46–52 NCP)',
         items:[
@@ -1272,7 +1323,10 @@ var FISE_DATA = [
           '<b>Exercitarea unui drept sau îndeplinirea unei obligații</b> (art. 21): conformitate cu o normă legală (ordin al autorității; permisiunea legii). Ordinul evident ilegal trebuie refuzat.',
           '<b>Consimțământul persoanei vătămate</b> (art. 22): valabil numai la infracțiunile cu bunuri juridice disponibile (patrimoniu, integritate corporală minoră). Nu se aplică la viață, integritate gravă, libertate sexuală a unui minor.',
           'Efect <b>IN REM</b>: fapta nu e infracțiune pentru <b>nimeni</b> — nici participanții nu răspund dacă autorul a acționat justificat.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Pentru existența recidivei, în reglementarea Codului penal în vigoare, este necesar ca — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">art. 41 alin. (1) CP cere ca al doilea termen al recidivei să fie o infracțiune de o anumită gravitate — săvârșită cu in…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Pentru existența recidivei, în reglementarea Codului penal în vigoare, este necesar ca — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">art. 41 alin. (1) C.pen. cere ca al doilea termen să aibă o anumită gravitate: o infracțiune intenționată sau praeterint…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Alegeți afirmația corectă — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">conform art. 18 alin. (2) C.pen., efectul cauzelor justificative se extinde și asupra participanților, regulă valabilă a…</span>']
       },
       { icon:'🧩', title:'Cauze de neimputabilitate (art. 23–31 NCP) — efect IN PERSONAM',
         items:[
@@ -1348,7 +1402,10 @@ var FISE_DATA = [
           '<b>Uciderea la cererea victimei</b> (art. 190): victima suferă o boală gravă sau incurabilă; pedeapsă <b>1–5 ani</b>. Rămâne infracțiune — eutanasia activă e incriminată.',
           '<b>Uciderea din culpă</b> (art. 192): moartea produsă fără intenție (neglijență/imprudență); pedeapsă <b>1–5 ani</b>; agravat (2–7 ani): culpă profesională (nerespectarea măsurilor de prevedere în exercitarea profesiei) sau autor în stare de ebrietate/sub influența substanțelor psihoactive.',
           '<b>Loviri cauzatoare de moarte</b> (art. 195): praeterintenție — intenție de a lovi + culpă față de deces; pedeapsă <b>6–12 ani</b>. Dacă autorul urmărea sau accepta decesul → omor (nu loviri).'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> X a lovit victima cu o bâtă și cu picioarele de mai multe ori în zona capului și a abdomen… — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">lovirea repetată cu bâta și picioarele în zone vitale (cap), cu intensitate care a dus la extirparea splinei și punerea…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> X a lovit victima cu o bâtă și cu picioarele de mai multe ori în zona capului și a abdomen… — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">intenția (cel puțin indirectă) de a ucide se deduce din criteriile obiective: folosirea unui obiect apt să producă moart…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Se poate reține infracțiunea de ultraj în sarcina — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">art. 257 alin. (1) și (4) C.pen. incriminează ultrajul ca amenințare săvârșită împotriva unui funcționar public ce exerc…</span>']
       },
       { icon:'🩹', title:'Infracțiuni contra integrității corporale (art. 193–198 NCP)',
         items:[
@@ -1414,7 +1471,10 @@ var FISE_DATA = [
           '<b>Distrugerea</b> (art. 253 NCP): distrugerea/degradarea/aducerea în stare de neîntrebuințare a unui bun <b>al altuia</b>; forma simplă — la <b>plângere prealabilă</b>. Distrugerea prin <b>incendiere, explozie sau alt mijloc periculos</b> (pericol public) → 2–7 ani, din oficiu — și se pedepsește <b>chiar dacă bunul e al făptuitorului</b>. Bun din patrimoniul cultural → agravat.',
           '<b>Tulburarea de posesie</b> (art. 256 NCP): ocuparea, în întregime sau în parte, <b>fără drept</b>, prin violență/amenințare ori prin desființarea semnelor de hotar, a unui imobil aflat în <b>posesia altuia</b>; plângere prealabilă. ⚠️ Protejează <b>posesia ca stare de fapt</b> — chiar proprietarul poate fi subiect activ contra posesorului!',
           '<b>Sustragerea de sub sechestru</b> (art. 261 NCP — contra autorității): sustragerea unui bun <b>legal sechestrat</b>; ⚠️ capcană frecventă: <b>chiar PROPRIETARUL</b> care își vinde/ascunde bunul propriu pus sub sechestru comite infracțiunea (bunul e indisponibilizat!). Comisă de custode → agravat. Vezi și ruperea de sigilii (art. 260).'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> După ce sustrage bunuri din locuința lui A, X este surprins de V, un trecător. Pentru a-și… — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">furtul urmat de violențe pentru asigurarea scăpării constituie tâlhărie (art. 233 C.pen. — ipoteza furtului urmat de înt…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Se va reține infracțiunea de furt în sarcina — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 228 alin. (3) C.pen., fapta constituie furt și dacă bunul aparține în întregime sau în parte făptuitorului…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Se va reține infracțiunea de furt în sarcina — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">art. 228 alin. (2) C.pen. prevede că există furt și când bunul aparține în întregime sau în parte făptuitorului, dacă în…</span>']
       },
       { icon:'📄', title:'Infracțiunile de fals (art. 310–328 NCP)',
         items:[
@@ -1459,7 +1519,10 @@ var FISE_DATA = [
           '<b>Darea de mită</b> (art. 290): promiterea/oferirea/darea de foloase funcționarului. Constrângere → <b>cauza de nepedepsire</b> pentru mituitor. ⚠️ Mituitorul care denunță înainte de sesizarea organelor → poate beneficia de nepedepsire (art. 290 alin. 3).',
           '<b>Traficul de influență</b> (art. 291): persoana care are sau lasă să se creadă că are influență asupra unui funcționar pretinde/primește foloase pentru a-l determina să acționeze. ⚠️ <b>Nu trebuie să fie funcționar</b>; influența poate fi reală sau imaginară.',
           '<b>Cumpărarea de influență</b> (art. 292): promisiunea/darea de foloase pentru a cumpăra influența. Sub constrângere → cauza de nepedepsire. ⚠️ Distinție față de dare de mită: la trafic de influență, persoana coruptă nu e funcționarul însuși, ci un intermediar.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> Inculpatul X, fiind la volanul autoturismului, din neatenție, a lovit o persoană aflată pe… — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">mărturia mincinoasă (art. 273 C.pen.) are subiect activ calificat – martor, expert sau interpret</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Favorizarea făptuitorului — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">art. 269 C.pen. incriminează și ajutorul dat pentru împiedicarea sau îngreunarea executării unei pedepse ori măsuri priv…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Favorizarea făptuitorului — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">art. 269 C.pen. incriminează și ajutorul dat pentru împiedicarea sau îngreunarea executării unei pedepse sau măsuri priv…</span>']
       },
       { icon:'🏛️', title:'Infracțiuni de serviciu (art. 295–309 NCP)',
         items:[
@@ -1558,7 +1621,10 @@ var FISE_DATA = [
           '<b>Competența exclusivă</b> (nu se poate deroga): imobile → locul situării imobilului; societăți → sediul social; succesiuni → ultimul domiciliu al defunctului; evacuare → locul imobilului.',
           '⚠️ <b>Capcană majoră — invocarea necompetenței</b> (art. 130 NCPC): doar necompetența <b>generală</b> (cauza nu e de competența instanțelor judecătorești) poate fi invocată <b>în orice stare a pricinii</b>. Necompetența <b>materială și teritorială exclusivă</b> (deși de ordine publică!) trebuie invocată <b>la primul termen de judecată la care părțile sunt legal citate în fața primei instanțe</b> — altfel se acoperă. Schimbare majoră față de vechiul CPC, testată constant la grile.',
           '<b>Necompetența relativă</b> (art. 130 NCPC): privește competența teritorială de drept comun (alternativă); poate fi invocată <b>numai de pârât prin întâmpinare</b> (sau cel târziu la primul termen dacă nu s-a depus întâmpinare). Dacă pârâtul nu o invocă în termen → <b>se acoperă</b> (proroga tacită). ⚠️ Dacă nici una din părți nu invocă și instanța are competență relativă → judecă valabil.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> În situația transmisiunii, în condițiile legii, a calității procesuale — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">potrivit art. 39 alin. (1) C.proc.civ., dacă în cursul procesului dreptul litigios este transmis prin acte între vii cu…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> Nedepunerea întâmpinării în termenul prevăzut de lege, atrage — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">Art. 208 alin. (2) C.proc.civ. prevede că nedepunerea întâmpinării în termenul legal atrage decăderea pârâtului din drep…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> Contestația în anulare — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">conform art. 506 alin. (1) CPC, contestația în anulare poate fi introdusă în termen de 15 zile de la comunicarea hotărâr…</span>']
       },
       { icon:'⚖️', title:'Acțiunea civilă, excepții și participanți (art. 29–88 NCPC)',
         items:[
@@ -1690,7 +1756,8 @@ var FISE_DATA = [
           '<b>Instanța de executare</b> (art. 651 NCPC): <b>judecătoria</b> în a cărei circumscripție se află, la data sesizării, domiciliul/sediul <b>debitorului</b>. Încuviințarea executării se dă de instanța de executare.',
           '<b>Executorul judecătoresc</b>: ales de creditor din circumscripția <b>curții de apel</b> corespunzătoare (domiciliul debitorului la mobile/poprire; locul imobilului la urmărirea imobiliară). Cheltuielile de executare = în sarcina <b>debitorului</b>.',
           'Prescripția dreptului de a obține executarea (art. 706 NCPC): <b>3 ani</b>; ⚠️ <b>10 ani</b> pentru titlurile care privesc <b>drepturi reale imobiliare</b>. Se întrerupe prin acte de executare.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G3]</b> Cererea de sechestru asigurător formulată de cel care a obținut o hotărâre judecătorească… — Răspuns: <b>C)</b> <span style="color:var(--sub);font-size:0.92em">art. 954 alin. (1) CPC prevede expres că creditorul nu este dator să individualizeze bunurile asupra cărora cere sechest…</span>']
       },
       { icon:'💸', title:'Formele executării silite',
         items:[
@@ -1827,7 +1894,10 @@ var FISE_DATA = [
           '<b>Reabilitarea de drept</b> (art. 165 NCP): operează <b>automat</b>, fără cerere, la împlinirea a <b>3 ani</b> de la executarea/stingerea pedepsei — pentru condamnările la <b>amendă</b>, închisoare de <b>cel mult 2 ani</b> sau închisoare cu <b>suspendarea sub supraveghere</b>, dacă în acest interval nu s-a comis o altă infracțiune.',
           '<b>Reabilitarea judecătorească</b> (art. 166 NCP) — termene <b>fixe</b> de la executare/stingere: <b>4 ani</b> — condamnări între 2 și 5 ani; <b>5 ani</b> — între 5 și 10 ani; <b>7 ani</b> — peste 10 ani sau <b>detențiune pe viață comutată/înlocuită</b> cu închisoarea (calculat de la executarea închisorii). ⚠️ Formula veche „termen + jumătate din durata pedepsei" era <b>vechiul cod</b>! Condiții: nu a săvârșit altă infracțiune în interval + a achitat integral cheltuielile și despăgubirile civile (sau dovedește imposibilitatea).',
           '⚠️ <b>Distincție cheie pentru grile</b>: reabilitarea de drept = automată, la termen (3 ani); reabilitarea judecătorească = la cerere, cu condiții, pronunțată de instanță. La detențiunea pe viață <b>comutată sau înlocuită</b> există reabilitare judecătorească (7 ani); reînnoirea cererii respinse: după 1 an.'
-        ]
+        ,
+          '📌 <b>[Iul 2026 · G1]</b> O infracțiune continuă, săvârșită cu intenție — Răspuns: <b>B)</b> <span style="color:var(--sub);font-size:0.92em">Reabilitarea de drept operează doar dacă în termenul prevăzut de art. 165 CP condamnatul nu a săvârșit o altă infracțiun…</span>',
+          '📌 <b>[Iul 2026 · G2]</b> În speță s-a reținut că X a fost condamnat pentru un concurs de infracțiuni la o pedeapsă… — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">în caz de condamnări succesive, termenul de reabilitare se calculează în raport cu pedeapsa cea mai grea și curge de la…</span>',
+          '📌 <b>[Iul 2026 · G3]</b> În speță s-a reținut că X a fost condamnat pentru un concurs de infracțiuni la o pedeapsă… — Răspuns: <b>A)</b> <span style="color:var(--sub);font-size:0.92em">fiind condamnări succesive, art. 167 alin. (5) C.pen. prevede că termenul de reabilitare curge de la data executării ult…</span>']
       },
       { icon:'🔎', title:'Participanții în procesul penal — judecătorul de drepturi, incompatibilitate, avocat (art. 30–92 CPP)',
         items:[
