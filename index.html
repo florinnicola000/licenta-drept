@@ -119,8 +119,41 @@ body.light #abs-hint{background:#fff8e1;border-color:#f0c040;color:#7a5c00}
 .tbtn{background:var(--sf2);color:var(--txt);border:1.5px solid transparent;border-radius:20px;padding:7px 12px;font-size:12.5px;font-weight:700;cursor:pointer;transition:.15s}
 .tbtn:hover{border-color:var(--gr)}
 .tbtn.active{background:var(--gr);color:#0f1b10}
-#stats,#search-panel,#memory,#tf-panel{display:none;width:100%;max-width:760px;padding:10px 16px 0}
-#stats.show,#search-panel.show,#memory.show,#tf-panel.show{display:block}
+#stats,#search-panel,#memory,#tf-panel,#strat-panel{display:none;width:100%;max-width:760px;padding:10px 16px 0}
+#stats.show,#search-panel.show,#memory.show,#tf-panel.show,#strat-panel.show{display:block}
+#strat-panel{padding-bottom:40px}
+.strat-intro{font-size:13px;color:var(--sub);line-height:1.6;margin-bottom:14px}
+.strat-sec{background:var(--sf);border:1px solid var(--sf2);border-radius:var(--r);padding:14px 15px;margin-bottom:12px}
+.strat-sec h3{font-size:15px;color:var(--gr);margin-bottom:4px;display:flex;align-items:center;gap:7px}
+.strat-sec .lead{font-size:12px;color:var(--sub);margin-bottom:10px;line-height:1.55}
+.strat-sec.warn{border-color:var(--warn);background:linear-gradient(180deg,#2a2410,var(--sf))}
+.strat-sec.warn h3{color:var(--warn)}
+.strat-tbl{width:100%;border-collapse:collapse;font-size:13px}
+.strat-tbl th,.strat-tbl td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--sf2)}
+.strat-tbl th{color:var(--sub);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+.strat-tbl td.big{font-weight:800;color:var(--lime)}
+.strat-tbl tr.hot td{color:var(--gr)}
+.let-row{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:13px}
+.let-row .lbl{width:150px;color:var(--lime);font-weight:600;flex-shrink:0}
+.let-bars{display:flex;gap:3px;flex:1;min-width:90px}
+.let-seg{height:22px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#0f1b10}
+.let-a{background:var(--sub)}.let-b{background:#7cb342}.let-c{background:var(--gr)}
+.let-note{font-size:11px;color:var(--warn);margin-top:8px;line-height:1.5}
+.mat-block{margin-bottom:12px}
+.mat-block:last-child{margin-bottom:0}
+.mat-title{font-size:13px;font-weight:800;color:var(--lime);margin-bottom:6px;padding-bottom:4px;border-bottom:1px dashed var(--sf2)}
+.mat-title small{color:var(--sub);font-weight:600;font-size:11px}
+.tag-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:7px}
+.tag{background:var(--sf2);border-radius:20px;padding:3px 10px;font-size:11.5px;color:var(--lime);white-space:nowrap}
+.tag b{color:var(--gr);font-weight:800}
+.tag.hot{background:#2e4a1e;border:1px solid var(--gr)}
+.arts{font-size:11.5px;color:var(--sub);line-height:1.7}
+.arts b{color:var(--warn);font-weight:700}
+.plan-list{list-style:none;counter-reset:pl}
+.plan-list li{position:relative;padding:7px 0 7px 34px;font-size:13px;color:var(--lime);line-height:1.5;border-bottom:1px solid var(--sf2)}
+.plan-list li:last-child{border-bottom:none}
+.plan-list li::before{counter-increment:pl;content:counter(pl);position:absolute;left:0;top:6px;width:24px;height:24px;border-radius:50%;background:var(--gr);color:#0f1b10;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center}
+.strat-foot{font-size:11px;color:var(--sub);text-align:center;margin-top:6px;font-style:italic}
 .panel-head{display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:800;color:var(--gr);margin:6px 0 10px}
 .panel-sub{font-size:12px;color:var(--sub);margin-bottom:14px;line-height:1.5}
 .stat-row{margin-bottom:15px}
@@ -217,6 +250,7 @@ body.light #chart-body{background:var(--sf2)}
     <button class="tbtn" data-mode="wrong" onclick="startWrong()">📌 Greșelile mele</button>
     <button class="tbtn" data-mode="materie" onclick="toggleMatChooser()">🎯 Pe materie</button>
     <button class="tbtn" data-mode="marked" onclick="startMarked()">⭐ Marcate</button>
+    <button class="tbtn" data-mode="strat" onclick="openStrat()">🎯 Strategie & ponturi</button>
     <button class="tbtn" data-mode="stats" onclick="openStats()">📊 Statistici</button>
     <button class="tbtn" data-mode="search" onclick="openSearch()">🔎 Caută</button>
     <a class="tbtn" href="plan_studiu.html" style="text-decoration:none;display:inline-flex;align-items:center">📅 Plan studiu</a>
@@ -240,6 +274,76 @@ body.light #chart-body{background:var(--sf2)}
   <div class="ch-wrap">
     <div class="ch-head">📈 Ultimele 20 sesiuni finalizate</div>
     <div id="chart-body"></div>
+  </div>
+</div>
+<div id="strat-panel">
+  <div class="panel-head"><span>🎯 Strategie &amp; ponturi</span><button class="tbtn" onclick="backToQuiz()">← Înapoi</button></div>
+  <div class="strat-intro">Concluzii scoase din <b style="color:var(--lime)">2262 de întrebări</b> reale (23 grile, 2023–2026). Nu sunt păreri — sunt tipare din barem.</div>
+
+  <div class="strat-sec">
+    <h3>📐 Unde sunt punctele — structura e fixă</h3>
+    <div class="lead">Fiecare grilă respectă exact același tipar pe poziții. Nu se schimbă.</div>
+    <table class="strat-tbl">
+      <tr><th>Întrebări</th><th>Materie</th><th>Nr.</th><th>Pondere</th></tr>
+      <tr class="hot"><td>1–35</td><td class="big">Drept civil</td><td>35</td><td>35%</td></tr>
+      <tr><td>36–50</td><td>Proc. civilă</td><td>15</td><td>15%</td></tr>
+      <tr class="hot"><td>51–85</td><td class="big">Drept penal</td><td>35</td><td>35%</td></tr>
+      <tr><td>86–100</td><td>Proc. penală</td><td>15</td><td>15%</td></tr>
+    </table>
+    <div class="lead" style="margin-top:9px;margin-bottom:0"><b style="color:var(--gr)">Civil + Penal = 70% din notă.</b> Aici se câștigă examenul. Procedurile (30%) sunt mai mecanice — punct sigur cu puțin tocit.</div>
+  </div>
+
+  <div class="strat-sec warn">
+    <h3>🚫 Nu memora grile vechi!</h3>
+    <div class="lead" style="margin-bottom:0">Din 2262 de întrebări, <b style="color:var(--warn)">doar 5</b> reapar în sesiuni diferite, și <b style="color:var(--warn)">niciuna</b> în 3+ sesiuni. Fiecare an e ~99% nou.<br><br>
+    → Tocitul răspunsurilor pe de rost = timp pierdut. Trebuie <b style="color:var(--lime)">înțeleasă instituția juridică</b> (de ce e greșit distractorul), pentru că întrebarea vine mereu reformulată.<br><br>
+    <span style="color:var(--sub)">Iluzie de evitat: cele 4 grile <i>din aceeași sesiune</i> sunt aceeași întrebări amestecate — de aia par „multe". La examen primești una singură.</span></div>
+  </div>
+
+  <div class="strat-sec">
+    <h3>🎲 Tie-breaker statistic <small style="color:var(--sub);font-weight:600;font-size:11px">— doar când chiar nu știi</small></h3>
+    <div class="lead">Distribuția răspunsului corect în tot istoricul. Folosește-o <b>numai</b> la 50/50 real.</div>
+    <div class="let-row"><span class="lbl">Global (2262)</span><div class="let-bars"><div class="let-seg let-a" style="width:28%">a 28%</div><div class="let-seg let-b" style="width:36%">b 36%</div><div class="let-seg let-c" style="width:36%">c 36%</div></div></div>
+    <div class="let-row"><span class="lbl">⚖️ Drept civil</span><div class="let-bars"><div class="let-seg let-a" style="width:24%">24</div><div class="let-seg let-b" style="width:35%">35</div><div class="let-seg let-c" style="width:41%">c 41%</div></div></div>
+    <div class="let-row"><span class="lbl">📜 Proc. civilă</span><div class="let-bars"><div class="let-seg let-a" style="width:28%">28</div><div class="let-seg let-b" style="width:33%">33</div><div class="let-seg let-c" style="width:40%">c 40%</div></div></div>
+    <div class="let-row"><span class="lbl">🔒 Drept penal</span><div class="let-bars"><div class="let-seg let-a" style="width:33%">33</div><div class="let-seg let-b" style="width:39%">b 39%</div><div class="let-seg let-c" style="width:28%">28</div></div></div>
+    <div class="let-row"><span class="lbl">🛡️ Proc. penală</span><div class="let-bars"><div class="let-seg let-a" style="width:28%">28</div><div class="let-seg let-b" style="width:35%">35</div><div class="let-seg let-c" style="width:37%">c 37%</div></div></div>
+    <div class="let-note">Regulă de ultimă instanță: <b>nu ghici niciodată „a" pe orb</b> (cel mai rar peste tot). Pe civil/proceduri înclină spre <b>c</b>, pe penal spre <b>b</b>. E o cârjă de 2–3 puncte, nu strategie.</div>
+  </div>
+
+  <div class="strat-sec">
+    <h3>🔥 Temele fierbinți — ce înveți întâi</h3>
+    <div class="mat-block">
+      <div class="mat-title">⚖️ Drept civil <small>— aici e concentrat totul</small></div>
+      <div class="tag-row"><span class="tag hot">Contracte <b>40%</b></span><span class="tag hot">Obligații <b>26%</b></span><span class="tag">Proprietate <b>14%</b></span><span class="tag">Nulitate <b>12%</b></span><span class="tag">Rezoluțiune <b>12%</b></span><span class="tag">Vânzare <b>10%</b></span><span class="tag">Moștenire <b>10%</b></span></div>
+      <div class="arts">Articole-vedetă: <b>art. 1552</b> (rezoluțiune unilaterală) · <b>1274</b> (riscul contractului) · <b>1538</b> (clauza penală) · <b>627/630</b> (clauza de inalienabilitate, limitele proprietății) · <b>2015</b> (mandat) · <b>1015</b> (irevocabilitatea donației)</div>
+    </div>
+    <div class="mat-block">
+      <div class="mat-title">🔒 Drept penal</div>
+      <div class="tag-row"><span class="tag hot">Pedeapsa <b>31%</b></span><span class="tag hot">Concurs de infracțiuni <b>23%</b></span><span class="tag">Intenție/culpă <b>~18%</b></span><span class="tag">Furt <b>15%</b></span><span class="tag">Tentativă <b>10%</b></span><span class="tag">Omor <b>10%</b></span><span class="tag">Recidivă</span></div>
+      <div class="arts">Infracțiuni-vedetă: <b>art. 228</b> (furt) · <b>233</b> (tâlhărie) · <b>188</b> (omor) · <b>238</b> (abuz de încredere) · <b>269</b> (favorizarea făptuitorului) · <b>273</b> (mărturie mincinoasă) · <b>322</b> (fals sub semnătură privată) · <b>41</b> (recidiva)</div>
+    </div>
+    <div class="mat-block">
+      <div class="mat-title">📜 Procedură civilă</div>
+      <div class="tag-row"><span class="tag hot">Termene <b>36%</b></span><span class="tag hot">Hotărârea <b>29%</b></span><span class="tag">Apel <b>18%</b></span><span class="tag">Citare <b>12%</b></span><span class="tag">Competență <b>11%</b></span></div>
+      <div class="arts">Nu citi tot — <b>tocește termenele și competența</b>, sunt punct aproape sigur.</div>
+    </div>
+    <div class="mat-block">
+      <div class="mat-title">🛡️ Procedură penală</div>
+      <div class="tag-row"><span class="tag hot">Apel <b>21%</b></span><span class="tag hot">Camera preliminară <b>20%</b></span><span class="tag">Competență <b>10%</b></span><span class="tag">Clasare <b>10%</b></span><span class="tag">Plângere <b>9%</b></span></div>
+    </div>
+  </div>
+
+  <div class="strat-sec">
+    <h3>📌 Plan de atac</h3>
+    <ol class="plan-list">
+      <li><b>80% din timp pe Civil + Penal</b> — fac 70% din notă și sunt cele „grele".</li>
+      <li>La Civil: stăpânește <b>contracte + obligații</b> ca pe apă — 2 din 5 întrebări.</li>
+      <li>La Penal: <b>concursul, recidiva și forma de vinovăție</b> + cele ~8 infracțiuni de mai sus.</li>
+      <li>La Proceduri: nu citi tot — <b>tocește termenele și competența</b>.</li>
+      <li>Antrenează-te pe <b>înțelegerea distractorilor</b>, nu pe memorat răspunsuri (nu se repetă).</li>
+    </ol>
+    <div class="strat-foot">Poți sări direct la antrenament pe materie din meniul „🎯 Pe materie". Mult succes, Miruna! 🤍</div>
   </div>
 </div>
 <div id="search-panel">
@@ -378,7 +482,7 @@ function startSet(qs,m,sk){
   document.getElementById('stats').classList.remove('show');
   document.getElementById('search-panel').classList.remove('show');
   document.getElementById('memory').classList.remove('show');
-  document.getElementById('tf-panel').classList.remove('show');
+  document.getElementById('tf-panel').classList.remove('show');document.getElementById('strat-panel').classList.remove('show');
   toggleMatChooser(false);
   showQuiz(true);
   timed=!!STATE.opts.timed;timeLimit=timed?QUESTIONS.length*SECPERQ:0;
@@ -570,15 +674,16 @@ function toggleToolbar(){var tb=document.querySelector('.toolbar');var tg=docume
 function closeToolbar(){var tb=document.querySelector('.toolbar');var tg=document.getElementById('toolbar-toggle');if(tb)tb.classList.remove('open');if(tg){tg.classList.remove('open');tg.textContent='☰ Meniu';}}
 function setActiveTab(m){var bs=document.querySelectorAll('.tbtn[data-mode]');for(var i=0;i<bs.length;i++){bs[i].classList.toggle('active',bs[i].getAttribute('data-mode')===m);}closeToolbar();}
 function toggleMatChooser(force){var p=document.getElementById('mat-chooser');if(!p)return;var show=(force===undefined)?!p.classList.contains('show'):force;p.classList.toggle('show',show);}
-function openStats(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('stats').classList.add('show');setActiveTab('stats');renderStats();renderChart();window.scrollTo(0,0);}
-function openSearch(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('memory').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('search-panel').classList.add('show');setActiveTab('search');var si=document.getElementById('search-input');if(si)si.focus();window.scrollTo(0,0);}
-function backToQuiz(){document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');showQuiz(true);setActiveTab(mode);startTimer(timerSecs);window.scrollTo(0,0);}
+function openStats(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');document.getElementById('strat-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('stats').classList.add('show');setActiveTab('stats');renderStats();renderChart();window.scrollTo(0,0);}
+function openStrat(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('strat-panel').classList.add('show');setActiveTab('strat');window.scrollTo(0,0);}
+function openSearch(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('memory').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');document.getElementById('strat-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('search-panel').classList.add('show');setActiveTab('search');var si=document.getElementById('search-input');if(si)si.focus();window.scrollTo(0,0);}
+function backToQuiz(){document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');document.getElementById('strat-panel').classList.remove('show');showQuiz(true);setActiveTab(mode);startTimer(timerSecs);window.scrollTo(0,0);}
 /* ---- 🧩 Memory juridic — logica + stilul în memory.js (modul comun) ---- */
-function openMemory(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('memory').classList.add('show');setActiveTab('memory');renderMemControls();startMemory();window.scrollTo(0,0);}
+function openMemory(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('tf-panel').classList.remove('show');document.getElementById('strat-panel').classList.remove('show');toggleMatChooser(false);document.getElementById('memory').classList.add('show');setActiveTab('memory');renderMemControls();startMemory();window.scrollTo(0,0);}
 /* ---- 🏎 Cursă rapidă (speed) ---- */
-function startSpeed(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);var qs=pool.slice(0,Math.min(150,pool.length));document.getElementById('session-name').textContent='🏎 Cursă rapidă — 60 secunde';document.getElementById('tf-panel').classList.remove('show');timed=true;timeLimit=60;startSet(qs,'speed','');}
+function startSpeed(){var pool=[];SESSION_ORDER.forEach(function(k){(ALL_SESSIONS[k]||[]).forEach(function(q){if(q.correct&&!isAnulata(q))pool.push(Object.assign({_sk:k},q));});});shuffle(pool);var qs=pool.slice(0,Math.min(150,pool.length));document.getElementById('session-name').textContent='🏎 Cursă rapidă — 60 secunde';document.getElementById('tf-panel').classList.remove('show');document.getElementById('strat-panel').classList.remove('show');timed=true;timeLimit=60;startSet(qs,'speed','');}
 /* ---- ✅ Adevărat / Fals — module tf.js ---- */
-function openTF(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');toggleMatChooser(false);document.getElementById('tf-panel').classList.add('show');setActiveTab('tf');if(typeof renderTFControls==='function'){renderTFControls();startTF();}window.scrollTo(0,0);}
+function openTF(){document.body.classList.remove('flash-active');stopTimer();showQuiz(false);document.getElementById('stats').classList.remove('show');document.getElementById('search-panel').classList.remove('show');document.getElementById('memory').classList.remove('show');toggleMatChooser(false);document.getElementById('strat-panel').classList.remove('show');document.getElementById('tf-panel').classList.add('show');setActiveTab('tf');if(typeof renderTFControls==='function'){renderTFControls();startTF();}window.scrollTo(0,0);}
 function renderStats(){
   const wrap=document.getElementById('stats-body');wrap.innerHTML='';var any=false;
   MAT.forEach(function(m){var k=m[0],lbl=m[1];var s=STATE.stats[k];var t=s?s.t:0,c=s?s.c:0;var pct=t?Math.round(c/t*100):0;if(t)any=true;
